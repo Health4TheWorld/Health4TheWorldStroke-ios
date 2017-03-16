@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC4C10B11E7A26DE00515CDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10B01E7A26DE00515CDC /* main.m */; };
+		CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10B31E7A26DE00515CDC /* AppDelegate.m */; };
+		CC4C10B71E7A26DE00515CDC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10B61E7A26DE00515CDC /* ViewController.m */; };
+		CC4C10BA1E7A26DE00515CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4C10B81E7A26DE00515CDC /* Main.storyboard */; };
+		CC4C10BD1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10BB1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld */; };
+		CC4C10BF1E7A26DE00515CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4C10BE1E7A26DE00515CDC /* Assets.xcassets */; };
+		CC4C10C21E7A26DE00515CDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4C10C01E7A26DE00515CDC /* LaunchScreen.storyboard */; };
+		CC4C10CD1E7A26DE00515CDC /* H4TWStrokeHopeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10CC1E7A26DE00515CDC /* H4TWStrokeHopeTests.m */; };
+		CC4C10D81E7A26DE00515CDC /* H4TWStrokeHopeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10D71E7A26DE00515CDC /* H4TWStrokeHopeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC4C10C91E7A26DE00515CDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC4C10A41E7A26DE00515CDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC4C10AB1E7A26DE00515CDC;
+			remoteInfo = H4TWStrokeHope;
+		};
+		CC4C10D41E7A26DE00515CDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC4C10A41E7A26DE00515CDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC4C10AB1E7A26DE00515CDC;
+			remoteInfo = H4TWStrokeHope;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC4C10AC1E7A26DE00515CDC /* H4TWStrokeHope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H4TWStrokeHope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4C10B01E7A26DE00515CDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC4C10B21E7A26DE00515CDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CC4C10B31E7A26DE00515CDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CC4C10B51E7A26DE00515CDC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CC4C10B61E7A26DE00515CDC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CC4C10B91E7A26DE00515CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC4C10BC1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = H4TWStrokeHope.xcdatamodel; sourceTree = "<group>"; };
+		CC4C10BE1E7A26DE00515CDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC4C10C11E7A26DE00515CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC4C10C31E7A26DE00515CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC4C10C81E7A26DE00515CDC /* H4TWStrokeHopeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = H4TWStrokeHopeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4C10CC1E7A26DE00515CDC /* H4TWStrokeHopeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H4TWStrokeHopeTests.m; sourceTree = "<group>"; };
+		CC4C10CE1E7A26DE00515CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC4C10D31E7A26DE00515CDC /* H4TWStrokeHopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = H4TWStrokeHopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4C10D71E7A26DE00515CDC /* H4TWStrokeHopeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H4TWStrokeHopeUITests.m; sourceTree = "<group>"; };
+		CC4C10D91E7A26DE00515CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC4C10A91E7A26DE00515CDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC4C10C51E7A26DE00515CDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC4C10D01E7A26DE00515CDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC4C10A31E7A26DE00515CDC = {
+			isa = PBXGroup;
+			children = (
+				CC4C10AE1E7A26DE00515CDC /* H4TWStrokeHope */,
+				CC4C10CB1E7A26DE00515CDC /* H4TWStrokeHopeTests */,
+				CC4C10D61E7A26DE00515CDC /* H4TWStrokeHopeUITests */,
+				CC4C10AD1E7A26DE00515CDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC4C10AD1E7A26DE00515CDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC4C10AC1E7A26DE00515CDC /* H4TWStrokeHope.app */,
+				CC4C10C81E7A26DE00515CDC /* H4TWStrokeHopeTests.xctest */,
+				CC4C10D31E7A26DE00515CDC /* H4TWStrokeHopeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC4C10AE1E7A26DE00515CDC /* H4TWStrokeHope */ = {
+			isa = PBXGroup;
+			children = (
+				CC4C10B21E7A26DE00515CDC /* AppDelegate.h */,
+				CC4C10B31E7A26DE00515CDC /* AppDelegate.m */,
+				CC4C10B51E7A26DE00515CDC /* ViewController.h */,
+				CC4C10B61E7A26DE00515CDC /* ViewController.m */,
+				CC4C10B81E7A26DE00515CDC /* Main.storyboard */,
+				CC4C10BE1E7A26DE00515CDC /* Assets.xcassets */,
+				CC4C10C01E7A26DE00515CDC /* LaunchScreen.storyboard */,
+				CC4C10C31E7A26DE00515CDC /* Info.plist */,
+				CC4C10BB1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld */,
+				CC4C10AF1E7A26DE00515CDC /* Supporting Files */,
+			);
+			path = H4TWStrokeHope;
+			sourceTree = "<group>";
+		};
+		CC4C10AF1E7A26DE00515CDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC4C10B01E7A26DE00515CDC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC4C10CB1E7A26DE00515CDC /* H4TWStrokeHopeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC4C10CC1E7A26DE00515CDC /* H4TWStrokeHopeTests.m */,
+				CC4C10CE1E7A26DE00515CDC /* Info.plist */,
+			);
+			path = H4TWStrokeHopeTests;
+			sourceTree = "<group>";
+		};
+		CC4C10D61E7A26DE00515CDC /* H4TWStrokeHopeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC4C10D71E7A26DE00515CDC /* H4TWStrokeHopeUITests.m */,
+				CC4C10D91E7A26DE00515CDC /* Info.plist */,
+			);
+			path = H4TWStrokeHopeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC4C10AB1E7A26DE00515CDC /* H4TWStrokeHope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC4C10DC1E7A26DE00515CDC /* Build configuration list for PBXNativeTarget "H4TWStrokeHope" */;
+			buildPhases = (
+				CC4C10A81E7A26DE00515CDC /* Sources */,
+				CC4C10A91E7A26DE00515CDC /* Frameworks */,
+				CC4C10AA1E7A26DE00515CDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = H4TWStrokeHope;
+			productName = H4TWStrokeHope;
+			productReference = CC4C10AC1E7A26DE00515CDC /* H4TWStrokeHope.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC4C10C71E7A26DE00515CDC /* H4TWStrokeHopeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC4C10DF1E7A26DE00515CDC /* Build configuration list for PBXNativeTarget "H4TWStrokeHopeTests" */;
+			buildPhases = (
+				CC4C10C41E7A26DE00515CDC /* Sources */,
+				CC4C10C51E7A26DE00515CDC /* Frameworks */,
+				CC4C10C61E7A26DE00515CDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC4C10CA1E7A26DE00515CDC /* PBXTargetDependency */,
+			);
+			name = H4TWStrokeHopeTests;
+			productName = H4TWStrokeHopeTests;
+			productReference = CC4C10C81E7A26DE00515CDC /* H4TWStrokeHopeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC4C10D21E7A26DE00515CDC /* H4TWStrokeHopeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC4C10E21E7A26DE00515CDC /* Build configuration list for PBXNativeTarget "H4TWStrokeHopeUITests" */;
+			buildPhases = (
+				CC4C10CF1E7A26DE00515CDC /* Sources */,
+				CC4C10D01E7A26DE00515CDC /* Frameworks */,
+				CC4C10D11E7A26DE00515CDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC4C10D51E7A26DE00515CDC /* PBXTargetDependency */,
+			);
+			name = H4TWStrokeHopeUITests;
+			productName = H4TWStrokeHopeUITests;
+			productReference = CC4C10D31E7A26DE00515CDC /* H4TWStrokeHopeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC4C10A41E7A26DE00515CDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Rachel;
+				TargetAttributes = {
+					CC4C10AB1E7A26DE00515CDC = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					CC4C10C71E7A26DE00515CDC = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CC4C10AB1E7A26DE00515CDC;
+					};
+					CC4C10D21E7A26DE00515CDC = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CC4C10AB1E7A26DE00515CDC;
+					};
+				};
+			};
+			buildConfigurationList = CC4C10A71E7A26DE00515CDC /* Build configuration list for PBXProject "H4TWStrokeHope" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC4C10A31E7A26DE00515CDC;
+			productRefGroup = CC4C10AD1E7A26DE00515CDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC4C10AB1E7A26DE00515CDC /* H4TWStrokeHope */,
+				CC4C10C71E7A26DE00515CDC /* H4TWStrokeHopeTests */,
+				CC4C10D21E7A26DE00515CDC /* H4TWStrokeHopeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC4C10AA1E7A26DE00515CDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC4C10C21E7A26DE00515CDC /* LaunchScreen.storyboard in Resources */,
+				CC4C10BF1E7A26DE00515CDC /* Assets.xcassets in Resources */,
+				CC4C10BA1E7A26DE00515CDC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC4C10C61E7A26DE00515CDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC4C10D11E7A26DE00515CDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC4C10A81E7A26DE00515CDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC4C10B71E7A26DE00515CDC /* ViewController.m in Sources */,
+				CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */,
+				CC4C10BD1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld in Sources */,
+				CC4C10B11E7A26DE00515CDC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC4C10C41E7A26DE00515CDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC4C10CD1E7A26DE00515CDC /* H4TWStrokeHopeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC4C10CF1E7A26DE00515CDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC4C10D81E7A26DE00515CDC /* H4TWStrokeHopeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC4C10CA1E7A26DE00515CDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC4C10AB1E7A26DE00515CDC /* H4TWStrokeHope */;
+			targetProxy = CC4C10C91E7A26DE00515CDC /* PBXContainerItemProxy */;
+		};
+		CC4C10D51E7A26DE00515CDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC4C10AB1E7A26DE00515CDC /* H4TWStrokeHope */;
+			targetProxy = CC4C10D41E7A26DE00515CDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC4C10B81E7A26DE00515CDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC4C10B91E7A26DE00515CDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC4C10C01E7A26DE00515CDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC4C10C11E7A26DE00515CDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC4C10DA1E7A26DE00515CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC4C10DB1E7A26DE00515CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC4C10DD1E7A26DE00515CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.H4TWStrokeHope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CC4C10DE1E7A26DE00515CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.H4TWStrokeHope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CC4C10E01E7A26DE00515CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = H4TWStrokeHopeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.H4TWStrokeHopeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H4TWStrokeHope.app/H4TWStrokeHope";
+			};
+			name = Debug;
+		};
+		CC4C10E11E7A26DE00515CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = H4TWStrokeHopeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.H4TWStrokeHopeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H4TWStrokeHope.app/H4TWStrokeHope";
+			};
+			name = Release;
+		};
+		CC4C10E31E7A26DE00515CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = H4TWStrokeHopeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.H4TWStrokeHopeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = H4TWStrokeHope;
+			};
+			name = Debug;
+		};
+		CC4C10E41E7A26DE00515CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = H4TWStrokeHopeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.H4TWStrokeHopeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = H4TWStrokeHope;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC4C10A71E7A26DE00515CDC /* Build configuration list for PBXProject "H4TWStrokeHope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC4C10DA1E7A26DE00515CDC /* Debug */,
+				CC4C10DB1E7A26DE00515CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC4C10DC1E7A26DE00515CDC /* Build configuration list for PBXNativeTarget "H4TWStrokeHope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC4C10DD1E7A26DE00515CDC /* Debug */,
+				CC4C10DE1E7A26DE00515CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC4C10DF1E7A26DE00515CDC /* Build configuration list for PBXNativeTarget "H4TWStrokeHopeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC4C10E01E7A26DE00515CDC /* Debug */,
+				CC4C10E11E7A26DE00515CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC4C10E21E7A26DE00515CDC /* Build configuration list for PBXNativeTarget "H4TWStrokeHopeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC4C10E31E7A26DE00515CDC /* Debug */,
+				CC4C10E41E7A26DE00515CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CC4C10BB1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CC4C10BC1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodel */,
+			);
+			currentVersion = CC4C10BC1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodel */;
+			path = H4TWStrokeHope.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CC4C10A41E7A26DE00515CDC /* Project object */;
+}
