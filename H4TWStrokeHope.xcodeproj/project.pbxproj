@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		CC4C10B11E7A26DE00515CDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10B01E7A26DE00515CDC /* main.m */; };
 		CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10B31E7A26DE00515CDC /* AppDelegate.m */; };
-		CC4C10B71E7A26DE00515CDC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10B61E7A26DE00515CDC /* ViewController.m */; };
 		CC4C10BA1E7A26DE00515CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4C10B81E7A26DE00515CDC /* Main.storyboard */; };
 		CC4C10BD1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10BB1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld */; };
 		CC4C10BF1E7A26DE00515CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4C10BE1E7A26DE00515CDC /* Assets.xcassets */; };
 		CC4C10C21E7A26DE00515CDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4C10C01E7A26DE00515CDC /* LaunchScreen.storyboard */; };
 		CC4C10CD1E7A26DE00515CDC /* H4TWStrokeHopeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10CC1E7A26DE00515CDC /* H4TWStrokeHopeTests.m */; };
 		CC4C10D81E7A26DE00515CDC /* H4TWStrokeHopeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10D71E7A26DE00515CDC /* H4TWStrokeHopeUITests.m */; };
+		CC4C10E71E7A272C00515CDC /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10E61E7A272C00515CDC /* Constants.m */; };
+		CC4C10EA1E7A2A3C00515CDC /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10E91E7A2A3C00515CDC /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +41,6 @@
 		CC4C10B01E7A26DE00515CDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC4C10B21E7A26DE00515CDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CC4C10B31E7A26DE00515CDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CC4C10B51E7A26DE00515CDC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CC4C10B61E7A26DE00515CDC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CC4C10B91E7A26DE00515CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC4C10BC1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = H4TWStrokeHope.xcdatamodel; sourceTree = "<group>"; };
 		CC4C10BE1E7A26DE00515CDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +52,10 @@
 		CC4C10D31E7A26DE00515CDC /* H4TWStrokeHopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = H4TWStrokeHopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4C10D71E7A26DE00515CDC /* H4TWStrokeHopeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H4TWStrokeHopeUITests.m; sourceTree = "<group>"; };
 		CC4C10D91E7A26DE00515CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC4C10E51E7A272C00515CDC /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CC4C10E61E7A272C00515CDC /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		CC4C10E81E7A2A3C00515CDC /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		CC4C10E91E7A2A3C00515CDC /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,14 +108,16 @@
 			children = (
 				CC4C10B21E7A26DE00515CDC /* AppDelegate.h */,
 				CC4C10B31E7A26DE00515CDC /* AppDelegate.m */,
-				CC4C10B51E7A26DE00515CDC /* ViewController.h */,
-				CC4C10B61E7A26DE00515CDC /* ViewController.m */,
 				CC4C10B81E7A26DE00515CDC /* Main.storyboard */,
+				CC4C10E81E7A2A3C00515CDC /* HomeViewController.h */,
+				CC4C10E91E7A2A3C00515CDC /* HomeViewController.m */,
 				CC4C10BE1E7A26DE00515CDC /* Assets.xcassets */,
 				CC4C10C01E7A26DE00515CDC /* LaunchScreen.storyboard */,
 				CC4C10C31E7A26DE00515CDC /* Info.plist */,
 				CC4C10BB1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld */,
 				CC4C10AF1E7A26DE00515CDC /* Supporting Files */,
+				CC4C10E51E7A272C00515CDC /* Constants.h */,
+				CC4C10E61E7A272C00515CDC /* Constants.m */,
 			);
 			path = H4TWStrokeHope;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 				TargetAttributes = {
 					CC4C10AB1E7A26DE00515CDC = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = X7FF3N72Z3;
 						ProvisioningStyle = Automatic;
 					};
 					CC4C10C71E7A26DE00515CDC = {
@@ -276,9 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC4C10B71E7A26DE00515CDC /* ViewController.m in Sources */,
+				CC4C10E71E7A272C00515CDC /* Constants.m in Sources */,
 				CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */,
 				CC4C10BD1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld in Sources */,
+				CC4C10EA1E7A2A3C00515CDC /* HomeViewController.m in Sources */,
 				CC4C10B11E7A26DE00515CDC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X7FF3N72Z3;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.H4TWStrokeHope;
@@ -437,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X7FF3N72Z3;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.H4TWStrokeHope;

@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "Constants.h"
 
 @interface HomeViewController ()
 
@@ -16,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.view setBackgroundColor:HFTW_PRIMARY_BLUE];
 }
 
 - (void)didReceiveMemoryWarning {
