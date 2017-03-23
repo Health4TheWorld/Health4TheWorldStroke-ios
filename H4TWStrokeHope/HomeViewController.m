@@ -8,16 +8,34 @@
 
 #import "HomeViewController.h"
 #import "Constants.h"
+#import "Utils.h"
 
 @interface HomeViewController ()
-
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIView *contentView;
+@property UILabel *quote;
 @end
 
 @implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundColor:HFTW_PRIMARY_BLUE];
+
+    [self layoutView];
+}
+
+- (void)layoutView {
+    /* QUOTE */
+    self.quote = [[UILabel alloc] init];
+    [self.quote setText:@"Sometimes the bad things that happen in our lives put us directly on the path to the best things that will ever happen to us."];
+    self.quote.font = [UIFont fontWithName:@"Lato" size:14.0];
+    self.quote.textColor = [UIColor whiteColor];
+    self.quote.textAlignment = NSTextAlignmentLeft;
+    [self.quote sizeToFit];
+    CGRect quoteFrame = self.quote.frame;
+    quoteFrame.origin.y = 10;
+    quoteFrame.size.width = self.view.frame.size.width - (10 * 2);
+    
 }
 
 - (void)didReceiveMemoryWarning {

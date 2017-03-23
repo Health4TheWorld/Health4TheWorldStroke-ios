@@ -17,6 +17,21 @@
 		CC4C10D81E7A26DE00515CDC /* H4TWStrokeHopeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10D71E7A26DE00515CDC /* H4TWStrokeHopeUITests.m */; };
 		CC4C10E71E7A272C00515CDC /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10E61E7A272C00515CDC /* Constants.m */; };
 		CC4C10EA1E7A2A3C00515CDC /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10E91E7A2A3C00515CDC /* HomeViewController.m */; };
+		CC73E4271E841875001131AF /* EnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC73E4261E841875001131AF /* EnterViewController.m */; };
+		CC73E42B1E841CAC001131AF /* Patagonia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC73E42A1E841CAC001131AF /* Patagonia.jpg */; };
+		CC73E42F1E841EF4001131AF /* GraphicUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CC73E42E1E841EF4001131AF /* GraphicUtils.m */; };
+		CC73E43E1E842370001131AF /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E4331E842370001131AF /* Lato-Black.ttf */; };
+		CC73E43F1E842370001131AF /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E4341E842370001131AF /* Lato-BlackItalic.ttf */; };
+		CC73E4401E842370001131AF /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E4351E842370001131AF /* Lato-Bold.ttf */; };
+		CC73E4411E842370001131AF /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E4361E842370001131AF /* Lato-BoldItalic.ttf */; };
+		CC73E4421E842370001131AF /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E4371E842370001131AF /* Lato-Hairline.ttf */; };
+		CC73E4431E842370001131AF /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E4381E842370001131AF /* Lato-HairlineItalic.ttf */; };
+		CC73E4441E842370001131AF /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E4391E842370001131AF /* Lato-Italic.ttf */; };
+		CC73E4451E842370001131AF /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E43A1E842370001131AF /* Lato-Light.ttf */; };
+		CC73E4461E842370001131AF /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E43B1E842370001131AF /* Lato-LightItalic.ttf */; };
+		CC73E4471E842370001131AF /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E43C1E842370001131AF /* Lato-Regular.ttf */; };
+		CC73E4481E842370001131AF /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC73E43D1E842370001131AF /* OFL.txt */; };
+		CCAE42A81E7C2F33006F490E /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAE42A71E7C2F33006F490E /* Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +71,24 @@
 		CC4C10E61E7A272C00515CDC /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		CC4C10E81E7A2A3C00515CDC /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		CC4C10E91E7A2A3C00515CDC /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		CC73E4251E841875001131AF /* EnterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterViewController.h; sourceTree = "<group>"; };
+		CC73E4261E841875001131AF /* EnterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterViewController.m; sourceTree = "<group>"; };
+		CC73E42A1E841CAC001131AF /* Patagonia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Patagonia.jpg; sourceTree = "<group>"; };
+		CC73E42D1E841EF4001131AF /* GraphicUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicUtils.h; sourceTree = "<group>"; };
+		CC73E42E1E841EF4001131AF /* GraphicUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicUtils.m; sourceTree = "<group>"; };
+		CC73E4331E842370001131AF /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		CC73E4341E842370001131AF /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		CC73E4351E842370001131AF /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		CC73E4361E842370001131AF /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CC73E4371E842370001131AF /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		CC73E4381E842370001131AF /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
+		CC73E4391E842370001131AF /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		CC73E43A1E842370001131AF /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		CC73E43B1E842370001131AF /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		CC73E43C1E842370001131AF /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		CC73E43D1E842370001131AF /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		CCAE42A61E7C2F33006F490E /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = ../Utils.h; sourceTree = "<group>"; };
+		CCAE42A71E7C2F33006F490E /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = ../Utils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,18 +139,19 @@
 		CC4C10AE1E7A26DE00515CDC /* H4TWStrokeHope */ = {
 			isa = PBXGroup;
 			children = (
+				CC73E42C1E841EE0001131AF /* Utilities */,
 				CC4C10B21E7A26DE00515CDC /* AppDelegate.h */,
 				CC4C10B31E7A26DE00515CDC /* AppDelegate.m */,
+				CC73E4251E841875001131AF /* EnterViewController.h */,
+				CC73E4261E841875001131AF /* EnterViewController.m */,
 				CC4C10B81E7A26DE00515CDC /* Main.storyboard */,
 				CC4C10E81E7A2A3C00515CDC /* HomeViewController.h */,
 				CC4C10E91E7A2A3C00515CDC /* HomeViewController.m */,
-				CC4C10BE1E7A26DE00515CDC /* Assets.xcassets */,
 				CC4C10C01E7A26DE00515CDC /* LaunchScreen.storyboard */,
 				CC4C10C31E7A26DE00515CDC /* Info.plist */,
 				CC4C10BB1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld */,
+				CC73E4311E842354001131AF /* Resources */,
 				CC4C10AF1E7A26DE00515CDC /* Supporting Files */,
-				CC4C10E51E7A272C00515CDC /* Constants.h */,
-				CC4C10E61E7A272C00515CDC /* Constants.m */,
 			);
 			path = H4TWStrokeHope;
 			sourceTree = "<group>";
@@ -146,6 +180,47 @@
 				CC4C10D91E7A26DE00515CDC /* Info.plist */,
 			);
 			path = H4TWStrokeHopeUITests;
+			sourceTree = "<group>";
+		};
+		CC73E42C1E841EE0001131AF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CC4C10E51E7A272C00515CDC /* Constants.h */,
+				CC4C10E61E7A272C00515CDC /* Constants.m */,
+				CCAE42A61E7C2F33006F490E /* Utils.h */,
+				CCAE42A71E7C2F33006F490E /* Utils.m */,
+				CC73E42D1E841EF4001131AF /* GraphicUtils.h */,
+				CC73E42E1E841EF4001131AF /* GraphicUtils.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		CC73E4311E842354001131AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC73E4321E842369001131AF /* Fonts */,
+				CC73E42A1E841CAC001131AF /* Patagonia.jpg */,
+				CC4C10BE1E7A26DE00515CDC /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CC73E4321E842369001131AF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CC73E4331E842370001131AF /* Lato-Black.ttf */,
+				CC73E4341E842370001131AF /* Lato-BlackItalic.ttf */,
+				CC73E4351E842370001131AF /* Lato-Bold.ttf */,
+				CC73E4361E842370001131AF /* Lato-BoldItalic.ttf */,
+				CC73E4371E842370001131AF /* Lato-Hairline.ttf */,
+				CC73E4381E842370001131AF /* Lato-HairlineItalic.ttf */,
+				CC73E4391E842370001131AF /* Lato-Italic.ttf */,
+				CC73E43A1E842370001131AF /* Lato-Light.ttf */,
+				CC73E43B1E842370001131AF /* Lato-LightItalic.ttf */,
+				CC73E43C1E842370001131AF /* Lato-Regular.ttf */,
+				CC73E43D1E842370001131AF /* OFL.txt */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,9 +330,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC73E4481E842370001131AF /* OFL.txt in Resources */,
+				CC73E4401E842370001131AF /* Lato-Bold.ttf in Resources */,
+				CC73E42B1E841CAC001131AF /* Patagonia.jpg in Resources */,
+				CC73E4431E842370001131AF /* Lato-HairlineItalic.ttf in Resources */,
+				CC73E4451E842370001131AF /* Lato-Light.ttf in Resources */,
 				CC4C10C21E7A26DE00515CDC /* LaunchScreen.storyboard in Resources */,
+				CC73E4441E842370001131AF /* Lato-Italic.ttf in Resources */,
+				CC73E4411E842370001131AF /* Lato-BoldItalic.ttf in Resources */,
+				CC73E43F1E842370001131AF /* Lato-BlackItalic.ttf in Resources */,
+				CC73E4421E842370001131AF /* Lato-Hairline.ttf in Resources */,
 				CC4C10BF1E7A26DE00515CDC /* Assets.xcassets in Resources */,
+				CC73E43E1E842370001131AF /* Lato-Black.ttf in Resources */,
+				CC73E4471E842370001131AF /* Lato-Regular.ttf in Resources */,
 				CC4C10BA1E7A26DE00515CDC /* Main.storyboard in Resources */,
+				CC73E4461E842370001131AF /* Lato-LightItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +369,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC73E42F1E841EF4001131AF /* GraphicUtils.m in Sources */,
 				CC4C10E71E7A272C00515CDC /* Constants.m in Sources */,
 				CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */,
 				CC4C10BD1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld in Sources */,
+				CCAE42A81E7C2F33006F490E /* Utils.m in Sources */,
 				CC4C10EA1E7A2A3C00515CDC /* HomeViewController.m in Sources */,
 				CC4C10B11E7A26DE00515CDC /* main.m in Sources */,
+				CC73E4271E841875001131AF /* EnterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +608,7 @@
 				CC4C10DE1E7A26DE00515CDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC4C10DF1E7A26DE00515CDC /* Build configuration list for PBXNativeTarget "H4TWStrokeHopeTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +617,7 @@
 				CC4C10E11E7A26DE00515CDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC4C10E21E7A26DE00515CDC /* Build configuration list for PBXNativeTarget "H4TWStrokeHopeUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +626,7 @@
 				CC4C10E41E7A26DE00515CDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
