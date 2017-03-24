@@ -16,6 +16,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EnterViewController : UIViewController
+@interface EnterViewController : UIViewController <UIGestureRecognizerDelegate>
 
 @end

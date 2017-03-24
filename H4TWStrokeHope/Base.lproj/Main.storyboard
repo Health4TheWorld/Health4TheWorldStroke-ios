@@ -40,6 +40,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmb-28-OWU">
                                 <rect key="frame" x="65" y="112" width="245" height="163"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="163" id="Kas-mg-OsV"/>
                                     <constraint firstAttribute="width" constant="245" id="tjs-iq-kc6"/>
