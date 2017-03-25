@@ -8,6 +8,7 @@
 
 #import "EnterViewController.h"
 #import "GraphicUtils.h"
+#import "HomeViewController.h"
 
 @interface EnterViewController ()
 @property (strong, nonatomic) IBOutlet UIButton *enterButton;
@@ -39,6 +40,11 @@
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedRight:)];
     [swipeRight setDirection:UISwipeGestureRecognizerDirectionRight ];
     [self.view addGestureRecognizer:swipeRight];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 /* Adds the background image programatically to ensure we maintain proportions regardless of screne size. */
@@ -74,7 +80,7 @@
     static int circleWidth = 10;
     float totalWidth = (self.quotes.count * circleWidth) + ((self.quotes.count - 1) * spaceBetweenCircles);
     float startingX = self.view.center.x - (totalWidth/2);
-    float startingY = self.authorLabel.frame.origin.y + self.authorLabel.frame.size.height + 20;
+    float startingY = self.authorLabel.frame.origin.y + self.authorLabel.frame.size.height + 40;
     for (int i=0; i < self.quotes.count; i++) {
         UIView *circle = [[UIView alloc] initWithFrame:CGRectMake(startingX, startingY, circleWidth, circleWidth)];
         if (i > 0) {
@@ -93,6 +99,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)enterPressed:(id)sender {
+    HomeViewController *hvc = [[HomeViewController alloc] init];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+
+    [self.navigationController pushViewController:hvc animated:YES];
 }
 
 #pragma mark – Swipe Gesture Recognizer
