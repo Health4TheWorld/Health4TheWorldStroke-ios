@@ -253,29 +253,56 @@
     }
 }
 
-/* Tag of button indicates its index. */
+/* Shifts the given label to the left by one screen width. */
++ (void)shiftLabelScreenWidthLeft:(UILabel *)labelToMove {
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    CGRect frame = labelToMove.frame;
+    frame.origin.x -= screenWidth;
+    labelToMove.frame = frame;
+}
+
+/* Shifts the given label to the right by one screen width. */
++ (void)shiftLabelScreenWidthRight:(UILabel *)labelToMove {
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    CGRect frame = labelToMove.frame;
+    frame.origin.x += screenWidth;
+    labelToMove.frame = frame;
+}
+
+/* Called when the user clicks on one of the circle buttons below the quotes. Should change the quote to display the index of that quote. */
 - (void)clickedButton:(UIButton*)sender {
     int buttonIndex = (int)sender.tag;
-    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut  animations:^{
         if (self.currentQuoteIndex < buttonIndex) {
             /* Quote will be coming from the right. */
-            /* All the quotes between currentQuoteIndex and buttonIndex (inclusive) need to move to the left. */
-            for (int i=self.currentQuoteIndex; i <= buttonIndex; i++) {
-                UILabel *quoteToMoveLeft = [self.quotes objectAtIndex:i];
-                CGRect quoteFrame = quoteToMoveLeft.frame;
-                quoteFrame.origin.x -= screenWidth;
-                quoteToMoveLeft.frame = quoteFrame;
+            /* Move the currently on screen quote off screen to the left. */
+            [EnterViewController shiftLabelScreenWidthLeft:[self.quotes objectAtIndex:self.currentQuoteIndex]];
+            [EnterViewController shiftLabelScreenWidthLeft:[self.authors objectAtIndex:self.currentQuoteIndex]];
+            /* Move any quotes between the currently on screen one and the target on screen one off screen (2 screen widths to the left, because they were already off screen to the right) */
+            for (int i=self.currentQuoteIndex + 1; i < buttonIndex; i++) {
+                [EnterViewController shiftLabelScreenWidthLeft:[self.quotes objectAtIndex:i]];
+                [EnterViewController shiftLabelScreenWidthLeft:[self.quotes objectAtIndex:i]];
+                [EnterViewController shiftLabelScreenWidthLeft:[self.authors objectAtIndex:i]];
+                [EnterViewController shiftLabelScreenWidthLeft:[self.authors objectAtIndex:i]];
             }
+            /* Move the target on screen quote on screen by moving it one screen width over to the left. */
+            [EnterViewController shiftLabelScreenWidthLeft:[self.quotes objectAtIndex:buttonIndex]];
+            [EnterViewController shiftLabelScreenWidthLeft:[self.authors objectAtIndex:buttonIndex]];
         } else if (self.currentQuoteIndex > buttonIndex) {
             /* Quote will be coming from the left. */
-            /* All the quotes between buttonIndex and currentQuoteIndex (inclusive) need to move to the right. */
-            for (int i=buttonIndex; i <= self.currentQuoteIndex; i++) {
-                UILabel *quoteToMoveRight = [self.quotes objectAtIndex:i];
-                CGRect quoteFrame = quoteToMoveRight.frame;
-                quoteFrame.origin.x += screenWidth;
-                quoteToMoveRight.frame = quoteFrame;
+            /* Move the currently on screen quote off screen to the right. */
+            [EnterViewController shiftLabelScreenWidthRight:[self.quotes objectAtIndex:self.currentQuoteIndex]];
+            [EnterViewController shiftLabelScreenWidthRight:[self.authors objectAtIndex:self.currentQuoteIndex]];
+            /* Move any quotes between the currently on screen one and the target on screen one off screen (2 screen widths to the right, because they were already off screen to the left) */
+            for (int i=buttonIndex + 1; i < self.currentQuoteIndex; i++) {
+                [EnterViewController shiftLabelScreenWidthRight:[self.quotes objectAtIndex:i]];
+                [EnterViewController shiftLabelScreenWidthRight:[self.quotes objectAtIndex:i]];
+                [EnterViewController shiftLabelScreenWidthRight:[self.authors objectAtIndex:i]];
+                [EnterViewController shiftLabelScreenWidthRight:[self.authors objectAtIndex:i]];
             }
+            /* Move the target on screen quote on screen by moving it one screen width over to the right. */
+            [EnterViewController shiftLabelScreenWidthRight:[self.quotes objectAtIndex:buttonIndex]];
+            [EnterViewController shiftLabelScreenWidthRight:[self.authors objectAtIndex:buttonIndex]];
         }
 
     } completion:^(BOOL finished) {
