@@ -10,9 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Lato-Light.ttf">
-            <string>Lato-Light</string>
-        </array>
         <array key="Lato-Regular.ttf">
             <string>Lato-Regular</string>
         </array>
@@ -41,46 +38,18 @@
                                     <action selector="enterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q2m-sA-mt7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmb-28-OWU">
-                                <rect key="frame" x="65" y="92" width="245" height="163"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="163" id="Kas-mg-OsV"/>
-                                    <constraint firstAttribute="width" constant="245" id="tjs-iq-kc6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="– Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pv0-RG-XMR">
-                                <rect key="frame" x="0.0" y="273" width="375" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="fJV-eK-gWP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="pv0-RG-XMR" secondAttribute="trailing" constant="-16" id="E6F-cQ-jCu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vL5-7R-kNE" secondAttribute="trailing" constant="10" id="Jfk-3n-uqj"/>
-                            <constraint firstItem="pv0-RG-XMR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X28-pw-VPx"/>
-                            <constraint firstItem="pv0-RG-XMR" firstAttribute="top" secondItem="Cmb-28-OWU" secondAttribute="bottom" constant="18" id="dyC-MH-mRE"/>
-                            <constraint firstItem="Cmb-28-OWU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="92" id="fva-cj-3Cl"/>
-                            <constraint firstItem="Cmb-28-OWU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hrb-EE-4nA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vL5-7R-kNE" secondAttribute="bottom" constant="20" id="oJy-LM-J4h"/>
-                            <constraint firstItem="pv0-RG-XMR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="pbz-a2-3GD"/>
                             <constraint firstItem="vL5-7R-kNE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="pzC-6b-9kY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MFA-fg-uMh"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
-                        <outlet property="authorLabel" destination="pv0-RG-XMR" id="ktv-1k-XQH"/>
                         <outlet property="enterButton" destination="vL5-7R-kNE" id="vA2-zX-Uou"/>
-                        <outlet property="quoteLabel" destination="Cmb-28-OWU" id="o4O-3k-VWL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -91,7 +60,7 @@
         <scene sceneID="CSY-Tp-36Z">
             <objects>
                 <navigationController id="UhO-rG-aJk" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="O9o-gS-IRr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O9o-gS-IRr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
