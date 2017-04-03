@@ -45,12 +45,12 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
-/* Creates a quote label with the given text in Lato-light 22.0, 90 pixels from the top of the screen, centered horizontally, with 20 pixel borders on left and right. */
+/* Creates a quote label with the given text in Lato-light 22.0, 120 pixels from the top of the screen, centered horizontally, with 20 pixel borders on left and right. */
 + (UILabel *)getQuoteLabelWithText:(NSString *)quoteText offscreen:(BOOL)isOffscreen {
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     UIFont *quoteFont = [UIFont fontWithName:@"Lato-light" size:22.0];
     /* QUOTE */
-    UILabel *quote = [[UILabel alloc] initWithFrame:CGRectMake(20, 90, screenWidth, 0)];
+    UILabel *quote = [[UILabel alloc] initWithFrame:CGRectMake(20, 120, screenWidth, 0)];
     quote.font = quoteFont;
     quote.textAlignment = NSTextAlignmentCenter;
     quote.text = quoteText;

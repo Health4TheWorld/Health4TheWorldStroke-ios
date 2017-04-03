@@ -10,8 +10,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Lato-Regular.ttf">
-            <string>Lato-Regular</string>
+        <array key="Lato-Light.ttf">
+            <string>Lato-Light</string>
         </array>
     </customFonts>
     <scenes>
@@ -32,7 +32,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="JEy-sz-GEt"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="17"/>
                                 <state key="normal" title="Enter"/>
                                 <connections>
                                     <action selector="enterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q2m-sA-mt7"/>
@@ -60,7 +60,7 @@
         <scene sceneID="CSY-Tp-36Z">
             <objects>
                 <navigationController id="UhO-rG-aJk" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O9o-gS-IRr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="O9o-gS-IRr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

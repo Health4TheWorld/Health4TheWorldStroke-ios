@@ -26,14 +26,14 @@
 		CC73E4421E842370001131AF /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E4371E842370001131AF /* Lato-Hairline.ttf */; };
 		CC73E4431E842370001131AF /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E4381E842370001131AF /* Lato-HairlineItalic.ttf */; };
 		CC73E4441E842370001131AF /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E4391E842370001131AF /* Lato-Italic.ttf */; };
-		CC73E4451E842370001131AF /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E43A1E842370001131AF /* Lato-Light.ttf */; };
 		CC73E4461E842370001131AF /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E43B1E842370001131AF /* Lato-LightItalic.ttf */; };
-		CC73E4471E842370001131AF /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E43C1E842370001131AF /* Lato-Regular.ttf */; };
 		CC73E4481E842370001131AF /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC73E43D1E842370001131AF /* OFL.txt */; };
 		CC73E4511E86AB1C001131AF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC73E44F1E86AB1C001131AF /* HomeViewController.m */; };
 		CC73E4521E86AB1C001131AF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC73E4501E86AB1C001131AF /* HomeViewController.xib */; };
 		CC73E4591E86BD65001131AF /* HomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CC73E4581E86BD65001131AF /* HomeButton.m */; };
 		CCAE42A81E7C2F33006F490E /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAE42A71E7C2F33006F490E /* Utils.m */; };
+		CCB7B3F01E8FF7E90058C32E /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E43A1E842370001131AF /* Lato-Light.ttf */; };
+		CCB7B3F11E8FF7ED0058C32E /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E43C1E842370001131AF /* Lato-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -350,7 +350,6 @@
 				CC73E4401E842370001131AF /* Lato-Bold.ttf in Resources */,
 				CC73E42B1E841CAC001131AF /* Patagonia.jpg in Resources */,
 				CC73E4431E842370001131AF /* Lato-HairlineItalic.ttf in Resources */,
-				CC73E4451E842370001131AF /* Lato-Light.ttf in Resources */,
 				CC4C10C21E7A26DE00515CDC /* LaunchScreen.storyboard in Resources */,
 				CC73E4441E842370001131AF /* Lato-Italic.ttf in Resources */,
 				CC73E4411E842370001131AF /* Lato-BoldItalic.ttf in Resources */,
@@ -358,10 +357,11 @@
 				CC73E4421E842370001131AF /* Lato-Hairline.ttf in Resources */,
 				CC4C10BF1E7A26DE00515CDC /* Assets.xcassets in Resources */,
 				CC73E43E1E842370001131AF /* Lato-Black.ttf in Resources */,
-				CC73E4471E842370001131AF /* Lato-Regular.ttf in Resources */,
+				CCB7B3F11E8FF7ED0058C32E /* Lato-Regular.ttf in Resources */,
 				CC4C10BA1E7A26DE00515CDC /* Main.storyboard in Resources */,
 				CC73E4461E842370001131AF /* Lato-LightItalic.ttf in Resources */,
 				CC73E4521E86AB1C001131AF /* HomeViewController.xib in Resources */,
+				CCB7B3F01E8FF7E90058C32E /* Lato-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
