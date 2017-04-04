@@ -10,6 +10,13 @@
 #import "Constants.h"
 #import "HomeButton.h"
 
+#import "HelpMeSpeakViewController.h"
+#import "ExercisesViewController.h"
+#import "LearnViewController.h"
+#import "RemindersViewController.h"
+#import "GeneralInfoViewController.h"
+#import "SurveysViewController.h"
+
 @interface HomeViewController ()
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -20,12 +27,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage *backBtnImage = [UIImage imageNamed:@"WhiteBackArrow"]  ;
+    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
     [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
     backBtn.frame = CGRectMake(0, 0, 15, 25);
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     self.navigationItem.leftBarButtonItem = backButton;
+    
     self.title = @"HOME";
     
     [self setUpView];
@@ -85,27 +93,33 @@
 }
 
 - (void)helpMeSpeakPressed {
-    NSLog(@"Help me speak pressed");
+    HelpMeSpeakViewController *vc = [[HelpMeSpeakViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)exercisePressed {
-    NSLog(@"Exercises pressed");
+    ExercisesViewController *vc = [[ExercisesViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)learnPressed {
-    NSLog(@"Learn pressed");
+    LearnViewController *vc = [[LearnViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)remindersPressed {
-    NSLog(@"Reminders pressed");
+    RemindersViewController *vc = [[RemindersViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)generalInfoPressed {
-    NSLog(@"General Info pressed");
+    GeneralInfoViewController *vc = [[GeneralInfoViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)surveysPressed {
-    NSLog(@"Surveys pressed");
+    SurveysViewController *vc = [[SurveysViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*

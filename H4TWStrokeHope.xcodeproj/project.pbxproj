@@ -34,6 +34,18 @@
 		CCAE42A81E7C2F33006F490E /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAE42A71E7C2F33006F490E /* Utils.m */; };
 		CCB7B3F01E8FF7E90058C32E /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E43A1E842370001131AF /* Lato-Light.ttf */; };
 		CCB7B3F11E8FF7ED0058C32E /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E43C1E842370001131AF /* Lato-Regular.ttf */; };
+		CCB7B3FD1E9412510058C32E /* HelpMeSpeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB7B3FB1E9412510058C32E /* HelpMeSpeakViewController.m */; };
+		CCB7B3FE1E9412510058C32E /* HelpMeSpeakViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB7B3FC1E9412510058C32E /* HelpMeSpeakViewController.xib */; };
+		CCB7B4031E9413260058C32E /* ExercisesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB7B4011E9413260058C32E /* ExercisesViewController.m */; };
+		CCB7B4041E9413260058C32E /* ExercisesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB7B4021E9413260058C32E /* ExercisesViewController.xib */; };
+		CCB7B4091E9413590058C32E /* LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB7B4071E9413590058C32E /* LearnViewController.m */; };
+		CCB7B40A1E9413590058C32E /* LearnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB7B4081E9413590058C32E /* LearnViewController.xib */; };
+		CCB7B40F1E94136C0058C32E /* RemindersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB7B40D1E94136C0058C32E /* RemindersViewController.m */; };
+		CCB7B4101E94136C0058C32E /* RemindersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB7B40E1E94136C0058C32E /* RemindersViewController.xib */; };
+		CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB7B4131E9413820058C32E /* GeneralInfoViewController.m */; };
+		CCB7B4161E9413820058C32E /* GeneralInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB7B4141E9413820058C32E /* GeneralInfoViewController.xib */; };
+		CCB7B41B1E94139A0058C32E /* SurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB7B4191E94139A0058C32E /* SurveysViewController.m */; };
+		CCB7B41C1E94139A0058C32E /* SurveysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB7B41A1E94139A0058C32E /* SurveysViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +106,24 @@
 		CC73E4581E86BD65001131AF /* HomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeButton.m; sourceTree = "<group>"; };
 		CCAE42A61E7C2F33006F490E /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = ../Utils.h; sourceTree = "<group>"; };
 		CCAE42A71E7C2F33006F490E /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = ../Utils.m; sourceTree = "<group>"; };
+		CCB7B3FA1E9412510058C32E /* HelpMeSpeakViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpMeSpeakViewController.h; sourceTree = "<group>"; };
+		CCB7B3FB1E9412510058C32E /* HelpMeSpeakViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpMeSpeakViewController.m; sourceTree = "<group>"; };
+		CCB7B3FC1E9412510058C32E /* HelpMeSpeakViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpMeSpeakViewController.xib; sourceTree = "<group>"; };
+		CCB7B4001E9413260058C32E /* ExercisesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExercisesViewController.h; sourceTree = "<group>"; };
+		CCB7B4011E9413260058C32E /* ExercisesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExercisesViewController.m; sourceTree = "<group>"; };
+		CCB7B4021E9413260058C32E /* ExercisesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExercisesViewController.xib; sourceTree = "<group>"; };
+		CCB7B4061E9413590058C32E /* LearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnViewController.h; sourceTree = "<group>"; };
+		CCB7B4071E9413590058C32E /* LearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnViewController.m; sourceTree = "<group>"; };
+		CCB7B4081E9413590058C32E /* LearnViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearnViewController.xib; sourceTree = "<group>"; };
+		CCB7B40C1E94136C0058C32E /* RemindersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemindersViewController.h; sourceTree = "<group>"; };
+		CCB7B40D1E94136C0058C32E /* RemindersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemindersViewController.m; sourceTree = "<group>"; };
+		CCB7B40E1E94136C0058C32E /* RemindersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemindersViewController.xib; sourceTree = "<group>"; };
+		CCB7B4121E9413820058C32E /* GeneralInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralInfoViewController.h; sourceTree = "<group>"; };
+		CCB7B4131E9413820058C32E /* GeneralInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralInfoViewController.m; sourceTree = "<group>"; };
+		CCB7B4141E9413820058C32E /* GeneralInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneralInfoViewController.xib; sourceTree = "<group>"; };
+		CCB7B4181E94139A0058C32E /* SurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveysViewController.h; sourceTree = "<group>"; };
+		CCB7B4191E94139A0058C32E /* SurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveysViewController.m; sourceTree = "<group>"; };
+		CCB7B41A1E94139A0058C32E /* SurveysViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveysViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,13 +178,13 @@
 				CC73E4531E86AC18001131AF /* Storyboards */,
 				CC4C10B21E7A26DE00515CDC /* AppDelegate.h */,
 				CC4C10B31E7A26DE00515CDC /* AppDelegate.m */,
-				CC73E4251E841875001131AF /* EnterViewController.h */,
-				CC73E4261E841875001131AF /* EnterViewController.m */,
-				CC73E44E1E86AB1C001131AF /* HomeViewController.h */,
-				CC73E44F1E86AB1C001131AF /* HomeViewController.m */,
-				CC73E4501E86AB1C001131AF /* HomeViewController.xib */,
-				CC73E4571E86BD65001131AF /* HomeButton.h */,
-				CC73E4581E86BD65001131AF /* HomeButton.m */,
+				CCB7B3F81E9410340058C32E /* Home/Enter Screen */,
+				CCB7B3F91E94106B0058C32E /* Help Me Speak */,
+				CCB7B3FF1E9413170058C32E /* Exercises */,
+				CCB7B4051E9413490058C32E /* Learn */,
+				CCB7B40B1E94135F0058C32E /* Reminders */,
+				CCB7B4111E9413720058C32E /* General Info */,
+				CCB7B4171E9413870058C32E /* Surveys */,
 				CC4C10C31E7A26DE00515CDC /* Info.plist */,
 				CC4C10BB1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld */,
 				CC73E4311E842354001131AF /* Resources */,
@@ -237,6 +267,80 @@
 				CC4C10C01E7A26DE00515CDC /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		CCB7B3F81E9410340058C32E /* Home/Enter Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CC73E4571E86BD65001131AF /* HomeButton.h */,
+				CC73E4581E86BD65001131AF /* HomeButton.m */,
+				CC73E4261E841875001131AF /* EnterViewController.m */,
+				CC73E4251E841875001131AF /* EnterViewController.h */,
+				CC73E44E1E86AB1C001131AF /* HomeViewController.h */,
+				CC73E44F1E86AB1C001131AF /* HomeViewController.m */,
+				CC73E4501E86AB1C001131AF /* HomeViewController.xib */,
+			);
+			name = "Home/Enter Screen";
+			sourceTree = "<group>";
+		};
+		CCB7B3F91E94106B0058C32E /* Help Me Speak */ = {
+			isa = PBXGroup;
+			children = (
+				CCB7B3FA1E9412510058C32E /* HelpMeSpeakViewController.h */,
+				CCB7B3FB1E9412510058C32E /* HelpMeSpeakViewController.m */,
+				CCB7B3FC1E9412510058C32E /* HelpMeSpeakViewController.xib */,
+			);
+			name = "Help Me Speak";
+			sourceTree = "<group>";
+		};
+		CCB7B3FF1E9413170058C32E /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				CCB7B4001E9413260058C32E /* ExercisesViewController.h */,
+				CCB7B4011E9413260058C32E /* ExercisesViewController.m */,
+				CCB7B4021E9413260058C32E /* ExercisesViewController.xib */,
+			);
+			name = Exercises;
+			sourceTree = "<group>";
+		};
+		CCB7B4051E9413490058C32E /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				CCB7B4061E9413590058C32E /* LearnViewController.h */,
+				CCB7B4071E9413590058C32E /* LearnViewController.m */,
+				CCB7B4081E9413590058C32E /* LearnViewController.xib */,
+			);
+			name = Learn;
+			sourceTree = "<group>";
+		};
+		CCB7B40B1E94135F0058C32E /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				CCB7B40C1E94136C0058C32E /* RemindersViewController.h */,
+				CCB7B40D1E94136C0058C32E /* RemindersViewController.m */,
+				CCB7B40E1E94136C0058C32E /* RemindersViewController.xib */,
+			);
+			name = Reminders;
+			sourceTree = "<group>";
+		};
+		CCB7B4111E9413720058C32E /* General Info */ = {
+			isa = PBXGroup;
+			children = (
+				CCB7B4121E9413820058C32E /* GeneralInfoViewController.h */,
+				CCB7B4131E9413820058C32E /* GeneralInfoViewController.m */,
+				CCB7B4141E9413820058C32E /* GeneralInfoViewController.xib */,
+			);
+			name = "General Info";
+			sourceTree = "<group>";
+		};
+		CCB7B4171E9413870058C32E /* Surveys */ = {
+			isa = PBXGroup;
+			children = (
+				CCB7B4181E94139A0058C32E /* SurveysViewController.h */,
+				CCB7B4191E94139A0058C32E /* SurveysViewController.m */,
+				CCB7B41A1E94139A0058C32E /* SurveysViewController.xib */,
+			);
+			name = Surveys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,15 +454,21 @@
 				CC73E4401E842370001131AF /* Lato-Bold.ttf in Resources */,
 				CC73E42B1E841CAC001131AF /* Patagonia.jpg in Resources */,
 				CC73E4431E842370001131AF /* Lato-HairlineItalic.ttf in Resources */,
+				CCB7B4041E9413260058C32E /* ExercisesViewController.xib in Resources */,
 				CC4C10C21E7A26DE00515CDC /* LaunchScreen.storyboard in Resources */,
 				CC73E4441E842370001131AF /* Lato-Italic.ttf in Resources */,
 				CC73E4411E842370001131AF /* Lato-BoldItalic.ttf in Resources */,
+				CCB7B4101E94136C0058C32E /* RemindersViewController.xib in Resources */,
 				CC73E43F1E842370001131AF /* Lato-BlackItalic.ttf in Resources */,
 				CC73E4421E842370001131AF /* Lato-Hairline.ttf in Resources */,
 				CC4C10BF1E7A26DE00515CDC /* Assets.xcassets in Resources */,
 				CC73E43E1E842370001131AF /* Lato-Black.ttf in Resources */,
+				CCB7B3FE1E9412510058C32E /* HelpMeSpeakViewController.xib in Resources */,
 				CCB7B3F11E8FF7ED0058C32E /* Lato-Regular.ttf in Resources */,
+				CCB7B40A1E9413590058C32E /* LearnViewController.xib in Resources */,
+				CCB7B4161E9413820058C32E /* GeneralInfoViewController.xib in Resources */,
 				CC4C10BA1E7A26DE00515CDC /* Main.storyboard in Resources */,
+				CCB7B41C1E94139A0058C32E /* SurveysViewController.xib in Resources */,
 				CC73E4461E842370001131AF /* Lato-LightItalic.ttf in Resources */,
 				CC73E4521E86AB1C001131AF /* HomeViewController.xib in Resources */,
 				CCB7B3F01E8FF7E90058C32E /* Lato-Light.ttf in Resources */,
@@ -387,10 +497,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC73E4591E86BD65001131AF /* HomeButton.m in Sources */,
+				CCB7B4091E9413590058C32E /* LearnViewController.m in Sources */,
 				CC73E42F1E841EF4001131AF /* GraphicUtils.m in Sources */,
+				CCB7B4031E9413260058C32E /* ExercisesViewController.m in Sources */,
 				CC4C10E71E7A272C00515CDC /* Constants.m in Sources */,
+				CCB7B40F1E94136C0058C32E /* RemindersViewController.m in Sources */,
 				CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */,
+				CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */,
+				CCB7B3FD1E9412510058C32E /* HelpMeSpeakViewController.m in Sources */,
 				CC4C10BD1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld in Sources */,
+				CCB7B41B1E94139A0058C32E /* SurveysViewController.m in Sources */,
 				CCAE42A81E7C2F33006F490E /* Utils.m in Sources */,
 				CC4C10B11E7A26DE00515CDC /* main.m in Sources */,
 				CC73E4271E841875001131AF /* EnterViewController.m in Sources */,
