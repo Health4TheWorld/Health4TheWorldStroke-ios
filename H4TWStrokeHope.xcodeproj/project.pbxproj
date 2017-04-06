@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC38386E1E95FCF400001213 /* InformationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC38386C1E95FCF400001213 /* InformationalViewController.m */; };
+		CC38386F1E95FCF400001213 /* InformationalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC38386D1E95FCF400001213 /* InformationalViewController.xib */; };
 		CC4C10B11E7A26DE00515CDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10B01E7A26DE00515CDC /* main.m */; };
 		CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10B31E7A26DE00515CDC /* AppDelegate.m */; };
 		CC4C10BA1E7A26DE00515CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4C10B81E7A26DE00515CDC /* Main.storyboard */; };
@@ -66,6 +68,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC38386B1E95FCF400001213 /* InformationalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationalViewController.h; sourceTree = "<group>"; };
+		CC38386C1E95FCF400001213 /* InformationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationalViewController.m; sourceTree = "<group>"; };
+		CC38386D1E95FCF400001213 /* InformationalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationalViewController.xib; sourceTree = "<group>"; };
 		CC4C10AC1E7A26DE00515CDC /* H4TWStrokeHope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H4TWStrokeHope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4C10B01E7A26DE00515CDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC4C10B21E7A26DE00515CDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -329,6 +334,9 @@
 				CCB7B4121E9413820058C32E /* GeneralInfoViewController.h */,
 				CCB7B4131E9413820058C32E /* GeneralInfoViewController.m */,
 				CCB7B4141E9413820058C32E /* GeneralInfoViewController.xib */,
+				CC38386B1E95FCF400001213 /* InformationalViewController.h */,
+				CC38386C1E95FCF400001213 /* InformationalViewController.m */,
+				CC38386D1E95FCF400001213 /* InformationalViewController.xib */,
 			);
 			name = "General Info";
 			sourceTree = "<group>";
@@ -472,6 +480,7 @@
 				CC73E4461E842370001131AF /* Lato-LightItalic.ttf in Resources */,
 				CC73E4521E86AB1C001131AF /* HomeViewController.xib in Resources */,
 				CCB7B3F01E8FF7E90058C32E /* Lato-Light.ttf in Resources */,
+				CC38386F1E95FCF400001213 /* InformationalViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +515,7 @@
 				CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */,
 				CCB7B3FD1E9412510058C32E /* HelpMeSpeakViewController.m in Sources */,
 				CC4C10BD1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld in Sources */,
+				CC38386E1E95FCF400001213 /* InformationalViewController.m in Sources */,
 				CCB7B41B1E94139A0058C32E /* SurveysViewController.m in Sources */,
 				CCAE42A81E7C2F33006F490E /* Utils.m in Sources */,
 				CC4C10B11E7A26DE00515CDC /* main.m in Sources */,

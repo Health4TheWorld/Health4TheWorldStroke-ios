@@ -9,9 +9,13 @@
 #import "GeneralInfoViewController.h"
 #import "Constants.h"
 #import "Utils.h"
+#import "InformationalViewController.h"
 
 @interface GeneralInfoViewController ()
-
+@property NSArray *generalInfoCategories;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+/* When they select a cell, store the index path here so we can deselect it when this view appears again. */
+@property NSIndexPath *selectedIndexPath;
 @end
 
 @implementation GeneralInfoViewController
@@ -19,6 +23,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"GENERAL INFO";
+    self.generalInfoCategories = @[ABOUT_US_SECTION_TITLE, TERMS_SECTION_TITLE, PRIVACY_POLICY_SECTION_TITLE, COPYRIGHT_SECTION_TITLE];
+    
+    /* Gets rid of extra blank cells */
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -30,24 +38,53 @@
     self.navigationItem.leftBarButtonItem = backButton;
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    if (self.selectedIndexPath) {
+        [self.tableView deselectRowAtIndexPath:self.selectedIndexPath animated:YES];
+    }
+}
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - TableView Delegate
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
 }
-*/
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.generalInfoCategories.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *MyIdentifier = @"GeneralInfoCellIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                       reuseIdentifier:MyIdentifier];
+    }
+    cell.textLabel.text = [self.generalInfoCategories objectAtIndex:indexPath.row];
+    cell.textLabel.font = [UIFont fontWithName:@"Lato-light" size:16.0];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.selectedIndexPath = indexPath;
+    InformationalViewController *vc = [[InformationalViewController alloc] init];
+    vc.pageTitle = [self.generalInfoCategories objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end
