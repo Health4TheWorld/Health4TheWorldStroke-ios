@@ -20,7 +20,7 @@
 @end
 
 #define PAGE_MARGIN 20
-
+#define VERTICAL_SPACE_BETWEEN_LABELS 10
 @implementation InformationalViewController
 
 - (void)viewDidLoad {
@@ -52,6 +52,12 @@
     
     if ([self.pageTitle isEqualToString:ABOUT_US_SECTION_TITLE]) {
         [self layoutAboutUs];
+    } else if ([self.pageTitle isEqualToString:TERMS_SECTION_TITLE]) {
+        [self layoutTerms];
+    } else if ([self.pageTitle isEqualToString:PRIVACY_POLICY_SECTION_TITLE]) {
+        [self layoutPrivacyPolicy];
+    } else if ([self.pageTitle isEqualToString:COPYRIGHT_SECTION_TITLE]) {
+        [self layoutCopyright];
     }
     
     self.scrollView.contentSize = CGSizeMake(self.contentView.frame.size.width, self.currentY);
@@ -59,12 +65,28 @@
     self.alreadyCreatedView = YES;
 }
 
+/* Lays out all the text (programatically) for the "About Us" section. */
 - (void)layoutAboutUs {
-    [self addHeaderWithText:@"First header"];
-    self.currentY += 10;
+    [self addHeaderWithText:@"ABOUT THE APP"];
     [self addSeparator];
-    self.currentY += 10;
     [self addMainText:ABOUT_US_PARAGRAPH_ONE];
+    [self addMainText:ABOUT_US_PARAGRAPH_TWO];
+    [self addMainText:ABOUT_US_PARAGRAPH_THREE];
+}
+
+/* Lays out all the text (programatically) for the "Terms & Conditions" section. */
+- (void)layoutTerms {
+    
+}
+
+/* Lays out all the text (programatically) for the "Privacy Policy" section. */
+- (void)layoutPrivacyPolicy {
+    
+}
+
+/* Lays out all the text (programatically) for the "Copyright" section. */
+- (void)layoutCopyright {
+    
 }
 
 - (void)addHeaderWithText:(NSString *)text {
@@ -76,20 +98,23 @@
     [header sizeToFit];
     [self.contentView addSubview:header];
     self.currentY += header.frame.size.height;
+    self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
 }
 
 - (void)addSeparator {
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     UIView *separator = [[UIView alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, screenWidth - (2 * PAGE_MARGIN), 1)];
-    separator.backgroundColor = HFTW_TEXT_GRAY;
+    separator.backgroundColor = HFTW_LIGHT_GRAY;
     [self.contentView addSubview:separator];
     self.currentY += 1;
+    self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
 }
 
 - (void)addMainText:(NSString *)text {
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     UILabel *mainText = [[UILabel alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, 0, 0)];
-    mainText.font = [UIFont fontWithName:@"Lato-light" size:16.0];
+    mainText.font = [UIFont fontWithName:@"Lato-regular" size:12.0];
+
     mainText.textAlignment = NSTextAlignmentLeft;
     mainText.textColor = HFTW_TEXT_GRAY;
     mainText.numberOfLines = 0;
@@ -102,6 +127,7 @@
     
     [self.contentView addSubview:mainText];
     self.currentY += mainText.frame.size.height;
+    self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
 }
 
 - (void)didReceiveMemoryWarning {
