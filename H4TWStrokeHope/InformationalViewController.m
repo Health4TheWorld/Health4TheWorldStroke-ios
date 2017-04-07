@@ -69,7 +69,6 @@
 /* Lays out all the text (programatically) for the "About Us" section. */
 - (void)layoutAboutUs {
     [self addHeaderWithText:@"ABOUT THE APP"];
-    [self addSeparator];
     [self addMainText:ABOUT_US_PARAGRAPH_ONE];
     [self addMainText:ABOUT_US_PARAGRAPH_TWO];
     [self addMainText:ABOUT_US_PARAGRAPH_THREE];
@@ -77,21 +76,20 @@
     [self addBulletsPointWithText:features];
     self.currentY += 15;
     [self addHeaderWithText:@"TEAM"];
-    [self addSeparator];
     [self addMainText:@"This application wouldn’t have been possible without work of a dream team!"];
-    [self addHeaderWithText:@"Founders"];
+    [self addSubheaderWithText:@"Founders"];
     [self addMainText:@"Dr. Bhavya Rehani, Dr. Bill Dillon & Dr. Ankur Bharija"];
-    [self addHeaderWithText:@"Developer"];
+    [self addSubheaderWithText:@"Developer"];
     [self addMainText:@"Rachel Grau"];
-    [self addHeaderWithText:@"Animations"];
+    [self addSubheaderWithText:@"Animations"];
     [self addMainText:@"Ernesto Aguilar"];
-    [self addHeaderWithText:@"Illustrations"];
+    [self addSubheaderWithText:@"Illustrations"];
     [self addMainText:@"Julie Kim, Bhavya Rehani, Ankur Bharija"];
-    [self addHeaderWithText:@"Content editing"];
+    [self addSubheaderWithText:@"Content editing"];
     [self addMainText:@"Dr. Lilly Zhang, Isaiah Brown and Dr Bhavya Rehani"];
-    [self addHeaderWithText:@"Movies"];
+    [self addSubheaderWithText:@"Movies"];
     [self addMainText:@"Jack McGill"];
-    [self addHeaderWithText:@"Medical Advisory Board for the App"];
+    [self addSubheaderWithText:@"Medical Advisory Board for the App"];
     
     NSArray *medicalAdvisoryBoard = @[@"Dr. Marc Fisher:  Dr Fisher currently serves as editor-in-chief of Stroke and Senior Physician on the Stroke Service at BIDMC, Harvard Medical School. He is well renowned and has published extensively over 260 peer-reviewed articles and has edited or co-edited 13 books.", @"Dr. Jeffrey Teraoke: Dr. Teraoke is Chief, PM &R at Palo Alto VA Medical Center. He is the program director of PM&R Residency Program and Director, Polytrauma, VA Palo Alto Health System", @"Dr. Erica A Pitsch, PT, MPT, DPT, NCS: Health Science Assistant Clinical Professor, UCSF. Dr. Pitsch specializes in neurologic physical therapy and uses several treatment strategies and approaches, all focused on promoting optimal challenge, function, and recovery in persons with neurologic illness", @"Loren Ward, PT, DPT is licensed Physical Therapist who began her career in Physical Therapy in 2007, while earning her Doctorate at MGH Institute of Health Professions in Massachusetts. She did internships at Rehabilitation of Chicago, Spaulding Rehabilitation and National Rehabilitation Hospital and now works at Stanford Veteran’s Affairs System. Loren is an advocate of functional independence and strives to help her patients reach their own level of independence regardless of their limitations.", @"Rose Hamm, PT, DPT, CWS, FACCWS: Rose received a BS in Physical Therapy from the University of North Carolina, Chapel Hill, and an MS and post-graduate DPT from the University of Southern California.  She is currently Adjunct Assistant Professor of Clinical Physical Therapy at the University of Southern California and practices at Keck Hospital at USC."];
     [self addBulletsPointWithText:medicalAdvisoryBoard];
@@ -99,7 +97,120 @@
 
 /* Lays out all the text (programatically) for the "Terms & Conditions" section. */
 - (void)layoutTerms {
+    static int SPACE_BETWEEN_SECTIONS = 15;
+    [self addHeaderWithText:@"THANK YOU FOR USING HEALTH4THEWORLD!"];
+    [self addMainText:THANK_YOU_PARAGRAPH_ONE];
+    [self addMainText:THANK_YOU_PARAGRAPH_TWO];
+    [self addMainText:THANK_YOU_PARAGRAPH_THREE];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:@"USING HEALTH4THEWORLD"];
+    [self addSubheaderWithText:USE_SECTION_ONE_HEADER];
+    [self addMainText:USE_SECTION_ONE_PARAGRAPH_ONE];
+    [self addBulletsPointWithText:USE_SECTION_ONE_BULLETS];
+    [self addMainText:USE_SECTION_ONE_PARAGRAPH_TWO];
+    [self addSubheaderWithText:USE_SECTION_TWO_HEADER];
+    [self addMainText:USE_SECTION_TWO_PARAGRAPH];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:@"OUR EDUCATIONAL CONTENT"];
+    [self addSubheaderWithText:EDU_SECTION_ONE_HEADER];
+    [self addMainText:EDU_SECTION_ONE_PARAGRAPH];
+    [self addSubheaderWithText:EDU_SECTION_TWO_HEADER];
+    [self addMainText:EDU_SECTION_TWO_PARAGRAPH];
+    [self addSubheaderWithText:EDU_SECTION_THREE_HEADER];
+    [self addMainText:EDU_SECTION_THREE_PARAGRAPH];
+    [self addSubheaderWithText:EDU_SECTION_FOUR_HEADER];
+    [self addMainText:EDU_SECTION_FOUR_PARAGRAPH];
+    [self addMainText:EDU_SECTION_FIVE_HEADER];
+    [self addMainText:EDU_SECTION_FIVE_PARAGRAPH];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:@"YOUR CONTENT"];
+    [self addSubheaderWithText:YOUR_CONTENT_SECTION_ONE_HEADER];
+    [self addMainText:YOUR_CONTENT_SECTION_ONE_PARAGRAPH];
+    [self addSubheaderWithText:YOUR_CONTENT_SECTION_TWO_HEADER];
+    [self addMainText:YOUR_CONTENT_SECTION_TWO_PARAGRAPH];
+    [self addSubheaderWithText:YOUR_CONTENT_SECTION_THREE_HEADER];
+    [self addMainText:YOUR_CONTENT_SECTION_THREE_PARAGRAPH];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:@"SECURITY"];
+    [self addMainText:SECURITY_PARAGRAPH];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:@"THIRD PARTY CONTENT"];
+    [self addMainText:THIRD_PARTY_CONTENT_PARAGRAPH];
+    [self addMainText:SECURITY_PARAGRAPH];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addSubheaderWithText:@"COPYRIGHT AND TRADEMARK POLICY"];
+    [self addMainText:COPYRIGHT_PARAGRAPH];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:@"MODIFYING AND TERMINATING OUR SERVICES"];
+    [self addMainText:MODIFYING_PARAGRAPH];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:@"DISCLAIMERS"];
+    [self addMainText:DISCLAIMERS_PARAGRAPH_ONE];
+    [self addMainText:DISCLAIMERS_PARAGRAPH_TWO];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:@"LIMITATIONS"];
+    [self addMainText:LIMITATIONS_PARAGRAPH_ONE];
+    [self addMainText:LIMITATIONS_PARAGRAPH_TWO];
+    [self addMainText:LIMITATIONS_PARAGRAPH_THREE];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:@"IDEMNIFICATION"];
+    [self addMainText:IDEMNIFICATION_PARAGRAPH];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:@"GOVERNING LAW AND JURISDICTION"];
+    [self addMainText:GOVERNING_PARAGRAPH_ONE];
+    [self addMainText:GOVERNING_PARAGRAPH_TWO];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:@"GENERAL TERMS"];
+    [self addSubheaderWithText:GENERAL_TERMS_SECTION_ONE_HEADER];
+    [self addMainText:GENERAL_TERMS_SECTION_ONE_PARAGRAPH];
+    [self addSubheaderWithText:GENERAL_TERMS_SECTION_TWO_HEADER];
+    [self addMainText:GENERAL_TERMS_SECTION_TWO_PARAGRAPH];
+    [self addSubheaderWithText:GENERAL_TERMS_SECTION_THREE_HEADER];
+    [self addMainText:GENERAL_TERMS_SECTION_THREE_PARAGRAPH];
+    [self addSubheaderWithText:GENERAL_TERMS_SECTION_FOUR_HEADER];
+    [self addMainText:GENERAL_TERMS_SECTION_FOUR_PARAGRAPH];
+    [self addSubheaderWithText:GENERAL_TERMS_SECTION_FIVE_HEADER];
+    [self addMainText:GENERAL_TERMS_SECTION_FIVE_PARAGRAPH];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:@"REFERENCED POLICIES"];
+    [self addBulletsPointWithText:REFERENCED_POLICIES_BULLETS];
     
+    /* ACCEPTALBE USE POLICY */
+    [self addBigHeader:@"Acceptable Use Policy"];
+    [self addMainText:ACCEPTABLE_USE_PARAGRAPH_ONE];
+    [self addSubheaderWithText:ACCEPTABLE_USE_SECTION_ONE_HEADER];
+    [self addBulletsPointWithText:ACCEPTABLE_USE_SECTION_ONE_BULLETS];
+    [self addSubheaderWithText:ACCEPTABLE_USE_SECTION_TWO_HEADER];
+    [self addBulletsPointWithText:ACCEPTABLE_USE_SECTION_TWO_BULLETS];
+    [self addSubheaderWithText:ACCEPTABLE_USE_SECTION_THREE_HEADER];
+    [self addBulletsPointWithText:ACCEPTABLE_USE_SECTION_THREE_BULLETS];
+    [self addMainText:ACCEPTABLE_USE_SECTION_THREE_PARAGRAPH_ONE];
+    [self addHeaderWithText:@"USER CONTENT"];
+    [self addSubheaderWithText:AU_USER_CONTENT_SECTION_ONE_HEADER];
+    [self addMainText:AU_USER_CONTENT_SECTION_ONE_PARAGRAPH];
+    [self addSubheaderWithText:AU_USER_CONTENT_SECTION_TWO_HEADER];
+    [self addMainText:AU_USER_CONTENT_SECTION_TWO_PARAGRAPH];
+    [self addSubheaderWithText:AU_USER_CONTENT_SECTION_THREE_HEADER];
+    [self addMainText:AU_USER_CONTENT_SECTION_THREE_PARAGRAPH];
+    
+    /* COPYRIGHT AND TRADEMARK  POLICY */
+    [self addBigHeader:@"Copyright and Trademark Policy"];
+    [self addMainText:COPYRIGHT_PARAGRAPH_ONE];
+    [self addSubheaderWithText:COPYRIGHT_SECTION_ONE_HEADER];
+    [self addMainText:COPYRIGHT_SECTION_ONE_PARAGRAPH_ONE];
+    [self addMainText:COPYRIGHT_SECTION_ONE_PARAGRAPH_TWO];
+    [self addMainText:COPYRIGHT_SECTION_ONE_PARAGRAPH_THREE];
+    [self addNumberedBulletsWithText:COPYRIGHT_SECTION_ONE_BULLETS_ONE];
+    [self addMainText:COPYRIGHT_SECTION_ONE_PARAGRAPH_FOUR];
+    [self addNumberedBulletsWithText:COPYRIGHT_SECTION_ONE_BULLETS_TWO];
+    [self addMainText:COPYRIGHT_SECTION_ONE_PARAGRAPH_FIVE];
+    [self addSubheaderWithText:COPYRIGHT_SECTION_TWO_HEADER];
+    [self addMainText:COPYRIGHT_SECTION_TWO_PARAGRAPH];
+    
+    /* HONOR CODE */
+    [self addBigHeader:@"Honor Code"];
+    [self addMainText:HONOR_CODE_PARAGRAPH_ONE];
+    [self addNumberedBulletsWithText:HONOR_CODE_BULLETS];
 }
 
 /* Lays out all the text (programatically) for the "Privacy Policy" section. */
@@ -112,14 +223,71 @@
     
 }
 
-- (void)addHeaderWithText:(NSString *)text {
+/* Adds a big centered title with a light gray background. */
+- (void)addBigHeader:(NSString *)text {
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    UIView *background = [[UIView alloc] initWithFrame:CGRectMake(0, self.currentY, screenWidth, 50)];
+    [background setBackgroundColor:[UIColor groupTableViewBackgroundColor]];
+    
     UILabel *header = [[UILabel alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, 0, 0)];
     header.font = [UIFont fontWithName:@"Lato-bold" size:18.0];
     header.font = [UIFont boldSystemFontOfSize:18.0];
+    header.textAlignment = NSTextAlignmentCenter;
     header.textColor = HFTW_TEXT_GRAY;
-    header.textAlignment = NSTextAlignmentLeft;
+    header.numberOfLines = 0;
     header.text = text;
     [header sizeToFit];
+    header.center = background.center;
+    CGRect headerFrame = header.frame;
+    headerFrame.origin.x = PAGE_MARGIN;
+    headerFrame.size.width = screenWidth - (2 * PAGE_MARGIN);
+    headerFrame.size.height = [Utils heightOfString:text containedToWidth:headerFrame.size.width withFont:header.font];
+    header.frame = headerFrame;
+    
+    [self.contentView addSubview:background];
+    [self.contentView addSubview:header];
+    
+    self.currentY += background.frame.size.height;
+    self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
+}
+
+/* Adds header with a separator below. */
+- (void)addHeaderWithText:(NSString *)text {
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    UILabel *header = [[UILabel alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, 0, 0)];
+    header.font = [UIFont fontWithName:@"Lato-bold" size:18.0];
+    header.font = [UIFont boldSystemFontOfSize:18.0];
+    header.textAlignment = NSTextAlignmentLeft;
+    header.textColor = HFTW_TEXT_GRAY;
+    header.numberOfLines = 0;
+    header.text = text;
+    [header sizeToFit];
+    CGRect headerFrame = header.frame;
+    headerFrame.size.width = screenWidth - (2 * PAGE_MARGIN);
+    headerFrame.size.height = [Utils heightOfString:text containedToWidth:headerFrame.size.width withFont:header.font];
+    header.frame = headerFrame;
+    
+    [self.contentView addSubview:header];
+    self.currentY += header.frame.size.height;
+    self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
+    [self addSeparator];
+}
+
+- (void)addSubheaderWithText:(NSString *)text {
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    UILabel *header = [[UILabel alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, 0, 0)];
+    header.font = [UIFont fontWithName:@"Lato-bold" size:18.0];
+    header.font = [UIFont boldSystemFontOfSize:18.0];
+    header.textAlignment = NSTextAlignmentLeft;
+    header.textColor = HFTW_TEXT_GRAY;
+    header.numberOfLines = 0;
+    header.text = text;
+    [header sizeToFit];
+    CGRect headerFrame = header.frame;
+    headerFrame.size.width = screenWidth - (2 * PAGE_MARGIN);
+    headerFrame.size.height = [Utils heightOfString:text containedToWidth:headerFrame.size.width withFont:header.font];
+    header.frame = headerFrame;
+    
     [self.contentView addSubview:header];
     self.currentY += header.frame.size.height;
     self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
@@ -153,6 +321,7 @@
     self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
 }
 
+/* Adds  bullet points (e.g. • bullet one • bullet two) */
 - (void)addBulletsPointWithText:(NSArray *)bulletPoints {
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     for (NSString *bulletPoint in bulletPoints) {
@@ -160,6 +329,38 @@
         bullet.font = [UIFont fontWithName:@"Lato-regular" size:12.0];
         bullet.textAlignment = NSTextAlignmentLeft;
         bullet.text = @"•";
+        bullet.textColor = HFTW_TEXT_GRAY;
+        [bullet sizeToFit];
+        [self.contentView addSubview:bullet];
+        
+        float textStartingX = bullet.frame.origin.x + bullet.frame.size.width + 10;
+        UILabel *bulletLabel = [[UILabel alloc] initWithFrame:CGRectMake(textStartingX, self.currentY, 0, 0)];
+        bulletLabel.font = [UIFont fontWithName:@"Lato-regular" size:12.0];
+        bulletLabel.textAlignment = NSTextAlignmentLeft;
+        bulletLabel.textColor = HFTW_TEXT_GRAY;
+        bulletLabel.numberOfLines = 0;
+        bulletLabel.text = bulletPoint;
+        [bulletLabel sizeToFit];
+        CGRect bulletFrame = bulletLabel.frame;
+        bulletFrame.size.width = screenWidth - (2 * textStartingX);
+        bulletFrame.size.height = [Utils heightOfString:bulletPoint containedToWidth:bulletFrame.size.width withFont:bulletLabel.font];
+        bulletLabel.frame = bulletFrame;
+        [self.contentView addSubview:bulletLabel];
+        self.currentY += bulletLabel.frame.size.height;
+        self.currentY += 5;
+    }
+    self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
+}
+
+/* Adds numbered bullet points (e.g. 1. bullet one 2. bullet two) */
+- (void)addNumberedBulletsWithText:(NSArray *)bulletPoints {
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    for (int i=0; i < bulletPoints.count; i++) {
+        NSString *bulletPoint = [bulletPoints objectAtIndex:i];
+        UILabel *bullet = [[UILabel alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, 0, 0)];
+        bullet.font = [UIFont fontWithName:@"Lato-regular" size:12.0];
+        bullet.textAlignment = NSTextAlignmentLeft;
+        bullet.text = [NSString stringWithFormat:@"%d.", i + 1];
         bullet.textColor = HFTW_TEXT_GRAY;
         [bullet sizeToFit];
         [self.contentView addSubview:bullet];
