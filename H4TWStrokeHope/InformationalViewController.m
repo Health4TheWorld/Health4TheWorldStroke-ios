@@ -211,11 +211,92 @@
     [self addBigHeader:@"Honor Code"];
     [self addMainText:HONOR_CODE_PARAGRAPH_ONE];
     [self addNumberedBulletsWithText:HONOR_CODE_BULLETS];
+    
+    self.currentY += SPACE_BETWEEN_SECTIONS;
 }
 
 /* Lays out all the text (programatically) for the "Privacy Policy" section. */
 - (void)layoutPrivacyPolicy {
-    
+    static int SPACE_BETWEEN_SECTIONS = 15;
+    [self addHeaderWithText:PP_SECTION_ONE_HEADER];
+    [self addMainText:PP_SECTION_ONE_PARAGRAPH_ONE];
+    [self addMainText:PP_SECTION_ONE_PARAGRAPH_TWO];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:PP_SECTION_TWO_HEADER];
+    [self addMainText:PP_SECTION_TWO_PARAGRAPH_ONE];
+    [self addMainText:PP_SECTION_TWO_PARAGRAPH_TWO];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:PP_SECTION_THREE_HEADER];
+    [self addMainText:PP_SECTION_THREE_PARAGRAPH];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:PP_SECTION_FOUR_HEADER];
+    [self addMainText:PP_SECTION_FOUR_PARAGRAPH_ONE];
+    [self addSubheaderWithText:PP_SECTION_FOUR_SUBHEADER_ONE];
+    [self addMainText:PP_SECTION_FOUR_SUBHEADER_ONE_INFO];
+    [self addSubheaderWithText:PP_SECTION_FOUR_SUBHEADER_TWO];
+    [self addMainText:PP_SECTION_FOUR_SUBHEADER_TWO_INFO];
+    [self addSubheaderWithText:PP_SECTION_FOUR_SUBHEADER_THREE];
+    [self addMainText:PP_SECTION_FOUR_SUBHEADER_THREE_INFO];
+    [self addSubheaderWithText:PP_SECTION_FOUR_SUBHEADER_FOUR];
+    [self addMainText:PP_SECTION_FOUR_SUBHEADER_FOUR_INFO];
+    [self addSubheaderWithText:PP_SECTION_FOUR_SUBHEADER_FIVE];
+    [self addMainText:PP_SECTION_FOUR_SUBHEADER_FIVE_INFO];
+    [self addSubheaderWithText:PP_SECTION_FOUR_SUBHEADER_SIX];
+    [self addMainText:PP_SECTION_FOUR_SUBHEADER_SIX_INFO_ONE];
+    [self addMainText:PP_SECTION_FOUR_SUBHEADER_SIX_INFO_TWO];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:PP_SECTION_FIVE_HEADER];
+    [self addMainText:PP_SECTION_FIVE_PARAGRAPH_ONE];
+    [self addSubheaderWithText:PP_SECTION_FIVE_SUBHEADER_ONE];
+    [self addMainText:PP_SECTION_FIVE_SUBHEADER_ONE_INFO];
+    [self addSubheaderWithText:PP_SECTION_FIVE_SUBHEADER_TWO];
+    [self addMainText:PP_SECTION_FIVE_SUBHEADER_TWO_INFO];
+    [self addSubheaderWithText:PP_SECTION_FIVE_SUBHEADER_THERE];
+    [self addMainText:PP_SECTION_FIVE_SUBHEADER_THREE_INFO];
+    [self addSubheaderWithText:PP_SECTION_FIVE_SUBHEADER_FOUR];
+    [self addMainText:PP_SECTION_FIVE_SUBHEADER_FOUR_INFO];
+    [self addSubheaderWithText:PP_SECTION_FIVE_SUBHEADER_FIVE];
+    [self addMainText:PP_SECTION_FIVE_SUBHEADER_FIVE_INFO];
+    [self addSubheaderWithText:PP_SECTION_FIVE_SUBHEADER_SIX];
+    [self addMainText:PP_SECTION_FIVE_SUBHEADER_SIX_INFO];
+    [self addSubheaderWithText:PP_SECTION_FIVE_SUBHEADER_SEVEN];
+    [self addMainText:PP_SECTION_FIVE_SUBHEADER_SEVEN_INFO];
+    [self addSubheaderWithText:PP_SECTION_FIVE_SUBHEADER_EIGHT];
+    [self addMainText:PP_SECTION_FIVE_SUBHEADER_EIGHT_INFO];
+    [self addSubheaderWithText:PP_SECTION_FIVE_SUBHEADER_NINE];
+    [self addMainText:PP_SECTION_FIVE_SUBHEADER_NINE_INFO];
+    [self addSubheaderWithText:PP_SECTION_FIVE_SUBHEADER_TEN];
+    [self addMainText:PP_SECTION_FIVE_SUBHEADER_TEN_INFO];
+    [self addSubheaderWithText:PP_SECTION_FIVE_SUBHEADER_ELEVEN];
+    [self addMainText:PP_SECTION_FIVE_SUBHEADER_ELEVEN_INFO];
+    [self addSubheaderWithText:PP_SECTION_FIVE_SUBHEADER_TWELVE];
+    [self addMainText:PP_SECTION_FIVE_SUBHEADER_TWELVE_INFO];
+    [self addSubheaderWithText:PP_SECTION_FIVE_SUBHEADER_THIRTEEN];
+    [self addMainText:PP_SECTION_FIVE_SUBHEADER_THIRTEEN_INFO];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:PP_SECTION_SIX_HEADER];
+    [self addMainText:PP_SECTION_SIX_PARAGRAPH];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:PP_SECTION_SEVEN_HEADER];
+    [self addMainText:PP_SECTION_SEVEN_PARAGRAPH];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:PP_SECTION_EIGHT_HEADER];
+    [self addMainText:PP_SECTION_EIGHT_PARAGRAPH_ONE];
+    [self addMainText:PP_SECTION_EIGHT_PARAGRAPH_TWO];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:PP_SECTION_NINE_HEADER];
+    [self addMainText:PP_SECTION_NINE_PARAGRAPH_ONE];
+    [self addMainText:PP_SECTION_NINE_PARAGRAPH_TWO];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:PP_SECTION_TEN_HEADER];
+    [self addMainText:PP_SECTION_TEN_PARAGRAPH];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:PP_SECTION_ELEVEN_HEADER];
+    [self addMainText:PP_SECTION_ELEVEN_PARAGRAPH];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
+    [self addHeaderWithText:PP_SECTION_TWELVE_HEADER];
+    [self addMainText:PP_SECTION_TWELVE_PARAGRAPH];
+    self.currentY += SPACE_BETWEEN_SECTIONS;
 }
 
 /* Lays out all the text (programatically) for the "Copyright" section. */
