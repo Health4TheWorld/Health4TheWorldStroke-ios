@@ -49,16 +49,18 @@
     [helpMeSpeakButton addTarget:self action:@selector(helpMeSpeakPressed) forControlEvents:UIControlEventTouchUpInside];
     
     HomeButton *exercisesButton = [[HomeButton alloc] initWithText:@"Exercises" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
+    [exercisesButton addImageRightCenter:[UIImage imageNamed:EXERCISE_ICON]];
     [exercisesButton addTarget:self action:@selector(exercisePressed) forControlEvents:UIControlEventTouchUpInside];
 
     startingY += cellWidth;
     startingY += SPACE_BETWEEN_CELLS;
     
     HomeButton *learnButton = [[HomeButton alloc] initWithText:@"Learn" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
+    [learnButton addImageBottomRight:[UIImage imageNamed:LEARN_ICON]];
     [learnButton addTarget:self action:@selector(learnPressed) forControlEvents:UIControlEventTouchUpInside];
     
     HomeButton *remindersButton = [[HomeButton alloc] initWithText:@"Reminders" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
-    [remindersButton addTarget:self action:@selector(remindersPressed) forControlEvents:UIControlEventTouchUpInside];
+    [remindersButton addTarget:self action:@selector(remindersPressed) forControlEvents:UIControlEventTouchUpInside];    
     
     startingY += cellWidth;
     startingY += SPACE_BETWEEN_CELLS;

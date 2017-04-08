@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeButton : UIButton
+/* Creates a square blue button with rounded corners. Adds the text to the top left corner. */
 - (id)initWithText:(NSString *)text withFrame:(CGRect)frame;
+/* Scales image and adds it to the bottom right. */
+- (void)addImageBottomRight:(UIImage *)image;
+/* Scales image and adds it to the right of the button, vertically centered. */
+- (void)addImageRightCenter:(UIImage *)image;
 @end

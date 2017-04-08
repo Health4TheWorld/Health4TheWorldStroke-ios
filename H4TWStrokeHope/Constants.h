@@ -18,6 +18,8 @@
 
 /* IMAGES */
 #define WHITE_BACK_BUTTON @"WhiteBackArrow"
+#define EXERCISE_ICON @"ExerciseIcon"
+#define LEARN_ICON @"LearnIcon"
 
 /* STRINGS */
 #define ABOUT_US_SECTION_TITLE @"About Us"
