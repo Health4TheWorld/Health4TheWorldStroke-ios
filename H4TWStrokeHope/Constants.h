@@ -20,6 +20,10 @@
 #define WHITE_BACK_BUTTON @"WhiteBackArrow"
 #define EXERCISE_ICON @"ExerciseIcon"
 #define LEARN_ICON @"LearnIcon"
+#define REMINDERS_ICON @"RemindersIcon"
+#define SURVEYS_ICON @"SurveysIcon"
+#define HELP_ME_SPEAK_ICON @"HelpMeSpeakIcon"
+#define GENERAL_INFO_ICON @"GeneralInfoIcon"
 
 /* STRINGS */
 #define ABOUT_US_SECTION_TITLE @"About Us"

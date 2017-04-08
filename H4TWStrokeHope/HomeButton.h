@@ -15,4 +15,6 @@
 - (void)addImageBottomRight:(UIImage *)image;
 /* Scales image and adds it to the right of the button, vertically centered. */
 - (void)addImageRightCenter:(UIImage *)image;
+/* Scales image and adds it to the center of the button. */
+- (void)addImageCentered:(UIImage *)image;
 @end

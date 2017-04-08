@@ -46,6 +46,7 @@
     float startingY = SPACE_BETWEEN_CELLS;
     
     HomeButton *helpMeSpeakButton = [[HomeButton alloc] initWithText:@"Help Me Speak" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
+    [helpMeSpeakButton addImageBottomRight:[UIImage imageNamed:HELP_ME_SPEAK_ICON]];
     [helpMeSpeakButton addTarget:self action:@selector(helpMeSpeakPressed) forControlEvents:UIControlEventTouchUpInside];
     
     HomeButton *exercisesButton = [[HomeButton alloc] initWithText:@"Exercises" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
@@ -60,15 +61,18 @@
     [learnButton addTarget:self action:@selector(learnPressed) forControlEvents:UIControlEventTouchUpInside];
     
     HomeButton *remindersButton = [[HomeButton alloc] initWithText:@"Reminders" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
-    [remindersButton addTarget:self action:@selector(remindersPressed) forControlEvents:UIControlEventTouchUpInside];    
+    [remindersButton addImageBottomRight:[UIImage imageNamed:REMINDERS_ICON]];
+    [remindersButton addTarget:self action:@selector(remindersPressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellWidth;
     startingY += SPACE_BETWEEN_CELLS;
     
     HomeButton *generalInfoButton = [[HomeButton alloc] initWithText:@"General Info" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
+    [generalInfoButton addImageCentered:[UIImage imageNamed:GENERAL_INFO_ICON]];
     [generalInfoButton addTarget:self action:@selector(generalInfoPressed) forControlEvents:UIControlEventTouchUpInside];
     
     HomeButton *surveysButton = [[HomeButton alloc] initWithText:@"Surveys" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
+    [surveysButton addImageBottomRight:[UIImage imageNamed:SURVEYS_ICON]];
     [surveysButton addTarget:self action:@selector(surveysPressed) forControlEvents:UIControlEventTouchUpInside];
 
     [self.contentView addSubview:helpMeSpeakButton];

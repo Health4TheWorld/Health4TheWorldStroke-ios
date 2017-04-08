@@ -66,4 +66,24 @@
     [self addSubview:imgView];
 }
 
+- (void)addImageCentered:(UIImage *)image {
+    float imgWidth, imgHeight;
+    if (image.size.width > image.size.height) {
+        /* If the image is wider than it is tall, then set the width to be this button's width - 30 and scale the height proportionally. */
+        imgWidth = self.frame.size.width - 60;
+        imgHeight = (image.size.height * imgWidth) / (image.size.width);
+    } else {
+        /* If the image is taller than it is wide, then set the height to be this button's width - 30 and scale the height proportionally. */
+        imgHeight = self.frame.size.height - 60;
+        imgWidth = (image.size.width * imgHeight) / (image.size.height);
+    }
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, imgWidth, imgHeight)];
+    [imgView setImage:image];
+    CGRect frame = imgView.frame;
+    frame.origin.x = (self.frame.size.width / 2.0) - (imgView.frame.size.width / 2.0);
+    frame.origin.y = (self.frame.size.height / 2.0) - (imgView.frame.size.height / 2.0) + 15;
+    imgView.frame = frame;
+    [self addSubview:imgView];
+}
+
 @end
