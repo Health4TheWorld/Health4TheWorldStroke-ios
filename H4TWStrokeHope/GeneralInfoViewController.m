@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"GENERAL INFO";
-    self.generalInfoCategories = @[ABOUT_US_SECTION_TITLE, TERMS_SECTION_TITLE, PRIVACY_POLICY_SECTION_TITLE, COPYRIGHT_SECTION_TITLE];
+    self.generalInfoCategories = @[ABOUT_US_SECTION_TITLE, TERMS_SECTION_TITLE, PRIVACY_POLICY_SECTION_TITLE];
     
     /* Gets rid of extra blank cells */
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -76,7 +76,7 @@
                                        reuseIdentifier:MyIdentifier];
     }
     cell.textLabel.text = [self.generalInfoCategories objectAtIndex:indexPath.row];
-    cell.textLabel.font = [UIFont fontWithName:@"Lato-light" size:16.0];
+    cell.textLabel.font = [UIFont fontWithName:@"Lato-light" size:20.0];
     return cell;
 }
 
@@ -86,5 +86,11 @@
     vc.pageTitle = [self.generalInfoCategories objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    return 75;
+}
+
 
 @end
