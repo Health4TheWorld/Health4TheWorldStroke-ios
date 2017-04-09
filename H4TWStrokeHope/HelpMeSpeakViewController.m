@@ -98,8 +98,12 @@
      ];
 }
 
-/* Animates the bottom bar back to how it was before. */
+/* Animates the bottom bar back to how it was before. If there is no search text, then display all speak objects. */
 -(void)exitSearchMode {
+    if (self.searchTextField.text.length == 0) {
+        self.speakObjectsToDisplay = [self.allSpeakObjects mutableCopy];
+        [self.collectionView reloadData];
+    }
     [self.view layoutIfNeeded];
     self.searchUnderBarLeading.constant = SEARCH_UNDERBAR_LEADING_CONSTRAINT;
     [UIView animateWithDuration:0.3
