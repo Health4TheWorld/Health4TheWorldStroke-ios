@@ -15,6 +15,7 @@
 #define HFTW_DARK [UIColor colorWithRed:0.24 green:0.65 blue:0.68 alpha:1.0] //#3CA7AE, darker turquoise
 #define HFTW_TEXT_GRAY [UIColor colorWithRed:0.29 green:0.29 blue:0.29 alpha:1.0] // 4A4A4A
 #define HFTW_LIGHT_GRAY [UIColor colorWithRed:0.78 green:0.78 blue:0.78 alpha:1.0] // C6C6C6
+#define HFTW_LIGHTEST_GRAY [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1.0] // F1F1F1 
 
 /* IMAGES */
 #define WHITE_BACK_BUTTON @"WhiteBackArrow"
@@ -26,12 +27,32 @@
 #define GENERAL_INFO_ICON @"GeneralInfoIcon"
 #define X_ICON @"XIcon"
 #define SEARCH_ICON @"SearchIcon"
+#define YES_ICON @"YesIcon"
+#define NO_ICON @"NoIcon"
+#define THANK_YOU_ICON @"ThankYouIcon"
+#define WATER_ICON @"WaterIcon"
+#define BATHROOM_ICON @"BathroomIcon"
+#define CANT_SPEAK_ICON @"CantSpeakIcon"
+#define FOOD_ICON @"FoodIcon"
+#define NOT_GIVING_UP_ICON @"NotGivingUpIcon"
+#define PAIN_ICON @"PainIcon"
 
 /* STRINGS */
 #define ABOUT_US_SECTION_TITLE @"About Us"
 #define TERMS_SECTION_TITLE @"Terms of Use"
 #define PRIVACY_POLICY_SECTION_TITLE @"Privacy Policy"
 #define COPYRIGHT_SECTION_TITLE @"Copyright"
+
+/* HELP ME SPEAK WORDS */
+#define HELP_ME_SPEAK_YES @"Yes"
+#define HELP_ME_SPEAK_NO @"No"
+#define HELP_ME_SPEAK_THANK_YOU @"Thank you"
+#define HELP_ME_SPEAK_BATHROOM @"I need a bathroom"
+#define HELP_ME_SPEAK_WATER @"I need water"
+#define HELP_ME_SPEAK_FOOD @"I'm hungry"
+#define HELP_ME_SPEAK_NOT_GIVING_UP @"I'm not giving up"
+#define HELP_ME_SPEAK_PAIN @"I am in pain"
+#define HELP_ME_SPEAK_CANT_SPEAK @"Sorry, I can't speak"
 
 /* ABOUT US SECTION */
 #define ABOUT_US_PARAGRAPH_ONE @"The HEALTH4THEWORLD STROKE HOPE APP is a free of cost educational tool to spread knowledge about stroke risk factors, secondary prevention, post stroke mobility & exercise education and speech strategies.  It has been created by Health4TheWorld which is a non profit organization inspired by the unmet medical needs worldwide. The mission of the organization is solving health inequities through innovation & technology and bringing smiles around the world. Please learn more about us at health4theworld.org."

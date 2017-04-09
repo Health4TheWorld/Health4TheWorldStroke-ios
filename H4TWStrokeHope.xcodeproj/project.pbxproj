@@ -48,6 +48,8 @@
 		CCB7B4161E9413820058C32E /* GeneralInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB7B4141E9413820058C32E /* GeneralInfoViewController.xib */; };
 		CCB7B41B1E94139A0058C32E /* SurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB7B4191E94139A0058C32E /* SurveysViewController.m */; };
 		CCB7B41C1E94139A0058C32E /* SurveysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB7B41A1E94139A0058C32E /* SurveysViewController.xib */; };
+		CCEF72EB1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEF72E91E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m */; };
+		CCEF72EC1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCEF72EA1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +131,9 @@
 		CCB7B4181E94139A0058C32E /* SurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveysViewController.h; sourceTree = "<group>"; };
 		CCB7B4191E94139A0058C32E /* SurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveysViewController.m; sourceTree = "<group>"; };
 		CCB7B41A1E94139A0058C32E /* SurveysViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveysViewController.xib; sourceTree = "<group>"; };
+		CCEF72E81E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpMeSpeakCollectionViewCell.h; sourceTree = "<group>"; };
+		CCEF72E91E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpMeSpeakCollectionViewCell.m; sourceTree = "<group>"; };
+		CCEF72EA1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpMeSpeakCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +299,9 @@
 				CCB7B3FA1E9412510058C32E /* HelpMeSpeakViewController.h */,
 				CCB7B3FB1E9412510058C32E /* HelpMeSpeakViewController.m */,
 				CCB7B3FC1E9412510058C32E /* HelpMeSpeakViewController.xib */,
+				CCEF72E81E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.h */,
+				CCEF72E91E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m */,
+				CCEF72EA1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib */,
 			);
 			name = "Help Me Speak";
 			sourceTree = "<group>";
@@ -466,6 +474,7 @@
 				CC4C10C21E7A26DE00515CDC /* LaunchScreen.storyboard in Resources */,
 				CC73E4441E842370001131AF /* Lato-Italic.ttf in Resources */,
 				CC73E4411E842370001131AF /* Lato-BoldItalic.ttf in Resources */,
+				CCEF72EC1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib in Resources */,
 				CCB7B4101E94136C0058C32E /* RemindersViewController.xib in Resources */,
 				CC73E43F1E842370001131AF /* Lato-BlackItalic.ttf in Resources */,
 				CC73E4421E842370001131AF /* Lato-Hairline.ttf in Resources */,
@@ -506,6 +515,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC73E4591E86BD65001131AF /* HomeButton.m in Sources */,
+				CCEF72EB1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m in Sources */,
 				CCB7B4091E9413590058C32E /* LearnViewController.m in Sources */,
 				CC73E42F1E841EF4001131AF /* GraphicUtils.m in Sources */,
 				CCB7B4031E9413260058C32E /* ExercisesViewController.m in Sources */,
