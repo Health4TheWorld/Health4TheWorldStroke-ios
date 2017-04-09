@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HelpMeSpeakViewController : UIViewController
+@interface HelpMeSpeakViewController : UIViewController <UIGestureRecognizerDelegate>
 
 @end

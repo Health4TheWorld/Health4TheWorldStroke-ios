@@ -10,9 +10,9 @@
 
 @interface Constants : NSObject
 /* COLORS */
-#define HFTW_ACCENT [UIColor colorWithRed:0.99 green:0.37 blue:0.38 alpha:1.0] //#FC5F62
-#define HFTW_PRIMARY [UIColor colorWithRed:0.40 green:0.80 blue:0.83 alpha:1.0] //#66CCD3
-#define HFTW_DARK [UIColor colorWithRed:0.24 green:0.65 blue:0.68 alpha:1.0] //#3CA7AE
+#define HFTW_ACCENT [UIColor colorWithRed:0.99 green:0.37 blue:0.38 alpha:1.0] //#FC5F62, reddish-pinkish color
+#define HFTW_PRIMARY [UIColor colorWithRed:0.40 green:0.80 blue:0.83 alpha:1.0] //#66CCD3, lighter turquoise
+#define HFTW_DARK [UIColor colorWithRed:0.24 green:0.65 blue:0.68 alpha:1.0] //#3CA7AE, darker turquoise
 #define HFTW_TEXT_GRAY [UIColor colorWithRed:0.29 green:0.29 blue:0.29 alpha:1.0] // 4A4A4A
 #define HFTW_LIGHT_GRAY [UIColor colorWithRed:0.78 green:0.78 blue:0.78 alpha:1.0] // C6C6C6
 
@@ -24,6 +24,8 @@
 #define SURVEYS_ICON @"SurveysIcon"
 #define HELP_ME_SPEAK_ICON @"HelpMeSpeakIcon"
 #define GENERAL_INFO_ICON @"GeneralInfoIcon"
+#define X_ICON @"XIcon"
+#define SEARCH_ICON @"SearchIcon"
 
 /* STRINGS */
 #define ABOUT_US_SECTION_TITLE @"About Us"
