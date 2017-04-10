@@ -8,6 +8,7 @@
 
 #import "HelpMeSpeakViewController.h"
 #import "Constants.h"
+#import <AVFoundation/AVFoundation.h>
 #import "Utils.h"
 #import "HelpMeSpeakCollectionViewCell.h"
 
@@ -19,6 +20,7 @@
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property NSArray *allSpeakObjects;
 @property NSMutableArray *speakObjectsToDisplay;
+@property UITapGestureRecognizer *tapRecognizer;
 @end
 
 #define SEARCH_UNDERBAR_LEADING_CONSTRAINT 26
@@ -47,10 +49,6 @@
     [self.searchTextField addTarget:self
                                action:@selector(textFieldDidChange:)
                      forControlEvents:UIControlEventEditingChanged];
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
-    tap.delegate = self;
-    [tap setCancelsTouchesInView:NO];
-    [self.view addGestureRecognizer:tap];
     
     /* Set up speak objects */
     self.allSpeakObjects = @[HELP_ME_SPEAK_YES, HELP_ME_SPEAK_NO, HELP_ME_SPEAK_THANK_YOU, HELP_ME_SPEAK_BATHROOM, HELP_ME_SPEAK_WATER, HELP_ME_SPEAK_FOOD, HELP_ME_SPEAK_NOT_GIVING_UP, HELP_ME_SPEAK_PAIN, HELP_ME_SPEAK_CANT_SPEAK];
@@ -58,6 +56,7 @@
     
     /* Collection view set up */
     [self.collectionView registerNib:[UINib nibWithNibName:@"HelpMeSpeakCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:HELP_ME_SPEAK_CELL_IDENTIFIER];
+    self.collectionView.allowsSelection = YES;
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     [self setUpColors];
@@ -164,13 +163,6 @@
     [self exitSearchMode];
 }
 
-#pragma mark - UITextField Methods
-
-- (void)dismissKeyboard {
-    [self.searchTextField resignFirstResponder];
-    [self exitSearchMode];
-}
-
 #pragma mark – UICollectionView data source
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
@@ -190,7 +182,6 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"HelpMeSpeakCollectionViewCell" owner:self options:nil];
         cell = (HelpMeSpeakCollectionViewCell *)[nib objectAtIndex:0];
     }
-    
     NSString *labelText = [self.speakObjectsToDisplay objectAtIndex:indexPath.row];
     UIImage *image = nil;
     
@@ -224,7 +215,19 @@
     float collectionViewWidth = CGRectGetWidth(self.collectionView.frame);
     float cellWidth = (collectionViewWidth - (SPACE_BETWEEN_CELLS * 2)) / (3.0);
     return CGSizeMake(cellWidth, cellWidth + HEIGHT_ADDED_TO_CELL);
+}
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.searchTextField resignFirstResponder];
+    NSString *itemSelected = [self.speakObjectsToDisplay objectAtIndex:indexPath.item];
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:itemSelected];
+    AVSpeechSynthesizer *syn = [[AVSpeechSynthesizer alloc] init];
+    [syn speakUtterance:utterance];
+}
+
+-(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
 }
 
 @end
