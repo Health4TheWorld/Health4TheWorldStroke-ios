@@ -386,7 +386,7 @@
 - (void)addMainText:(NSString *)text {
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     UILabel *mainText = [[UILabel alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, 0, 0)];
-    mainText.font = [UIFont fontWithName:@"Lato-regular" size:12.0];
+    mainText.font = [UIFont fontWithName:@"Lato-regular" size:16.0];
     mainText.textAlignment = NSTextAlignmentLeft;
     mainText.textColor = HFTW_TEXT_GRAY;
     mainText.numberOfLines = 0;
@@ -407,7 +407,7 @@
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     for (NSString *bulletPoint in bulletPoints) {
         UILabel *bullet = [[UILabel alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, 0, 0)];
-        bullet.font = [UIFont fontWithName:@"Lato-regular" size:12.0];
+        bullet.font = [UIFont fontWithName:@"Lato-regular" size:16.0];
         bullet.textAlignment = NSTextAlignmentLeft;
         bullet.text = @"•";
         bullet.textColor = HFTW_TEXT_GRAY;
@@ -416,7 +416,7 @@
         
         float textStartingX = bullet.frame.origin.x + bullet.frame.size.width + 10;
         UILabel *bulletLabel = [[UILabel alloc] initWithFrame:CGRectMake(textStartingX, self.currentY, 0, 0)];
-        bulletLabel.font = [UIFont fontWithName:@"Lato-regular" size:12.0];
+        bulletLabel.font = [UIFont fontWithName:@"Lato-regular" size:16.0];
         bulletLabel.textAlignment = NSTextAlignmentLeft;
         bulletLabel.textColor = HFTW_TEXT_GRAY;
         bulletLabel.numberOfLines = 0;
@@ -439,7 +439,7 @@
     for (int i=0; i < bulletPoints.count; i++) {
         NSString *bulletPoint = [bulletPoints objectAtIndex:i];
         UILabel *bullet = [[UILabel alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, 0, 0)];
-        bullet.font = [UIFont fontWithName:@"Lato-regular" size:12.0];
+        bullet.font = [UIFont fontWithName:@"Lato-regular" size:16.0];
         bullet.textAlignment = NSTextAlignmentLeft;
         bullet.text = [NSString stringWithFormat:@"%d.", i + 1];
         bullet.textColor = HFTW_TEXT_GRAY;
@@ -448,7 +448,7 @@
         
         float textStartingX = bullet.frame.origin.x + bullet.frame.size.width + 10;
         UILabel *bulletLabel = [[UILabel alloc] initWithFrame:CGRectMake(textStartingX, self.currentY, 0, 0)];
-        bulletLabel.font = [UIFont fontWithName:@"Lato-regular" size:12.0];
+        bulletLabel.font = [UIFont fontWithName:@"Lato-regular" size:16.0];
         bulletLabel.textAlignment = NSTextAlignmentLeft;
         bulletLabel.textColor = HFTW_TEXT_GRAY;
         bulletLabel.numberOfLines = 0;

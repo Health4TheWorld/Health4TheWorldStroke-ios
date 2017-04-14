@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		CC38386E1E95FCF400001213 /* InformationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC38386C1E95FCF400001213 /* InformationalViewController.m */; };
 		CC38386F1E95FCF400001213 /* InformationalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC38386D1E95FCF400001213 /* InformationalViewController.xib */; };
+		CC3CB6481EA11EC800CA9429 /* LearnContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3CB6461EA11EC800CA9429 /* LearnContentViewController.m */; };
+		CC3CB6491EA11EC800CA9429 /* LearnContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC3CB6471EA11EC800CA9429 /* LearnContentViewController.xib */; };
+		CC3CB64D1EA11F9E00CA9429 /* LearnContent.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3CB64C1EA11F9E00CA9429 /* LearnContent.m */; };
 		CC4C10B11E7A26DE00515CDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10B01E7A26DE00515CDC /* main.m */; };
 		CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4C10B31E7A26DE00515CDC /* AppDelegate.m */; };
 		CC4C10BA1E7A26DE00515CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4C10B81E7A26DE00515CDC /* Main.storyboard */; };
@@ -73,6 +76,11 @@
 		CC38386B1E95FCF400001213 /* InformationalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationalViewController.h; sourceTree = "<group>"; };
 		CC38386C1E95FCF400001213 /* InformationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationalViewController.m; sourceTree = "<group>"; };
 		CC38386D1E95FCF400001213 /* InformationalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationalViewController.xib; sourceTree = "<group>"; };
+		CC3CB6451EA11EC800CA9429 /* LearnContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnContentViewController.h; sourceTree = "<group>"; };
+		CC3CB6461EA11EC800CA9429 /* LearnContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnContentViewController.m; sourceTree = "<group>"; };
+		CC3CB6471EA11EC800CA9429 /* LearnContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearnContentViewController.xib; sourceTree = "<group>"; };
+		CC3CB64B1EA11F9E00CA9429 /* LearnContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnContent.h; sourceTree = "<group>"; };
+		CC3CB64C1EA11F9E00CA9429 /* LearnContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnContent.m; sourceTree = "<group>"; };
 		CC4C10AC1E7A26DE00515CDC /* H4TWStrokeHope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H4TWStrokeHope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4C10B01E7A26DE00515CDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC4C10B21E7A26DE00515CDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -161,6 +169,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC3CB64A1EA11F8A00CA9429 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC3CB64B1EA11F9E00CA9429 /* LearnContent.h */,
+				CC3CB64C1EA11F9E00CA9429 /* LearnContent.m */,
+			);
+			name = "Data Models";
+			sourceTree = "<group>";
+		};
 		CC4C10A31E7A26DE00515CDC = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +212,7 @@
 				CCB7B40B1E94135F0058C32E /* Reminders */,
 				CCB7B4111E9413720058C32E /* General Info */,
 				CCB7B4171E9413870058C32E /* Surveys */,
+				CC3CB64A1EA11F8A00CA9429 /* Data Models */,
 				CC4C10C31E7A26DE00515CDC /* Info.plist */,
 				CC4C10BB1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld */,
 				CC73E4311E842354001131AF /* Resources */,
@@ -322,6 +340,9 @@
 				CCB7B4061E9413590058C32E /* LearnViewController.h */,
 				CCB7B4071E9413590058C32E /* LearnViewController.m */,
 				CCB7B4081E9413590058C32E /* LearnViewController.xib */,
+				CC3CB6451EA11EC800CA9429 /* LearnContentViewController.h */,
+				CC3CB6461EA11EC800CA9429 /* LearnContentViewController.m */,
+				CC3CB6471EA11EC800CA9429 /* LearnContentViewController.xib */,
 			);
 			name = Learn;
 			sourceTree = "<group>";
@@ -474,6 +495,7 @@
 				CC4C10C21E7A26DE00515CDC /* LaunchScreen.storyboard in Resources */,
 				CC73E4441E842370001131AF /* Lato-Italic.ttf in Resources */,
 				CC73E4411E842370001131AF /* Lato-BoldItalic.ttf in Resources */,
+				CC3CB6491EA11EC800CA9429 /* LearnContentViewController.xib in Resources */,
 				CCEF72EC1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib in Resources */,
 				CCB7B4101E94136C0058C32E /* RemindersViewController.xib in Resources */,
 				CC73E43F1E842370001131AF /* Lato-BlackItalic.ttf in Resources */,
@@ -520,9 +542,11 @@
 				CC73E42F1E841EF4001131AF /* GraphicUtils.m in Sources */,
 				CCB7B4031E9413260058C32E /* ExercisesViewController.m in Sources */,
 				CC4C10E71E7A272C00515CDC /* Constants.m in Sources */,
+				CC3CB64D1EA11F9E00CA9429 /* LearnContent.m in Sources */,
 				CCB7B40F1E94136C0058C32E /* RemindersViewController.m in Sources */,
 				CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */,
 				CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */,
+				CC3CB6481EA11EC800CA9429 /* LearnContentViewController.m in Sources */,
 				CCB7B3FD1E9412510058C32E /* HelpMeSpeakViewController.m in Sources */,
 				CC4C10BD1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld in Sources */,
 				CC38386E1E95FCF400001213 /* InformationalViewController.m in Sources */,
@@ -680,7 +704,7 @@
 				DEVELOPMENT_TEAM = X7FF3N72Z3;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.H4TWStrokeHope;
+				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -692,7 +716,7 @@
 				DEVELOPMENT_TEAM = X7FF3N72Z3;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.H4TWStrokeHope;
+				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

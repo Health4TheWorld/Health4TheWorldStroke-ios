@@ -13,12 +13,14 @@
 #define HFTW_ACCENT [UIColor colorWithRed:0.99 green:0.37 blue:0.38 alpha:1.0] //#FC5F62, reddish-pinkish color
 #define HFTW_PRIMARY [UIColor colorWithRed:0.40 green:0.80 blue:0.83 alpha:1.0] //#66CCD3, lighter turquoise
 #define HFTW_DARK [UIColor colorWithRed:0.24 green:0.65 blue:0.68 alpha:1.0] //#3CA7AE, darker turquoise
+#define HFTW_RED [UIColor colorWithRed:0.91 green:0.20 blue:0.29 alpha:1.0] //#E8324A red
 #define HFTW_TEXT_GRAY [UIColor colorWithRed:0.29 green:0.29 blue:0.29 alpha:1.0] // 4A4A4A
 #define HFTW_LIGHT_GRAY [UIColor colorWithRed:0.78 green:0.78 blue:0.78 alpha:1.0] // C6C6C6
-#define HFTW_LIGHTEST_GRAY [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1.0] // F1F1F1 
+#define HFTW_LIGHTEST_GRAY [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1.0] // F1F1F1
 
 /* IMAGES */
 #define WHITE_BACK_BUTTON @"WhiteBackArrow"
+#define RED_BACK_BUTTON @"RedBackArrow"
 #define EXERCISE_ICON @"ExerciseIcon"
 #define LEARN_ICON @"LearnIcon"
 #define REMINDERS_ICON @"RemindersIcon"
