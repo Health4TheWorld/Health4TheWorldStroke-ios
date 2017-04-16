@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LearnViewController">
             <connections>
+                <outlet property="tableView" destination="yq8-nC-dfM" id="l6a-vh-Isy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,37 +20,24 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-9r-A3h">
-                    <rect key="frame" x="32" y="67" width="104" height="30"/>
-                    <state key="normal" title="Blood pressure"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yq8-nC-dfM">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
-                        <action selector="bloodPressurePressed:" destination="-1" eventType="touchUpInside" id="oPy-gi-I5N"/>
+                        <outlet property="dataSource" destination="-1" id="ro2-vL-ZYf"/>
+                        <outlet property="delegate" destination="-1" id="XcI-OU-FlY"/>
                     </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrL-A7-7Kq">
-                    <rect key="frame" x="32" y="105" width="82" height="30"/>
-                    <state key="normal" title="Blood sugar"/>
-                    <connections>
-                        <action selector="bloodSugarPressed:" destination="-1" eventType="touchUpInside" id="uaK-oz-Luw"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BX7-JQ-xaE">
-                    <rect key="frame" x="38" y="143" width="70" height="30"/>
-                    <state key="normal" title="Heart rate"/>
-                    <connections>
-                        <action selector="heartRatPressed:" destination="-1" eventType="touchUpInside" id="c4T-e2-orS"/>
-                    </connections>
-                </button>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="BX7-JQ-xaE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="38" id="04O-yA-rUp"/>
-                <constraint firstItem="Hz6-9r-A3h" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="67" id="Bqy-1M-GKZ"/>
-                <constraint firstItem="nrL-A7-7Kq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="105" id="FNn-H7-zbL"/>
-                <constraint firstItem="BX7-JQ-xaE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="143" id="Wfg-x9-ovb"/>
-                <constraint firstItem="Hz6-9r-A3h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="ZK3-kG-e4D"/>
-                <constraint firstItem="nrL-A7-7Kq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="rkK-0u-gqd"/>
+                <constraint firstItem="yq8-nC-dfM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6ZP-GX-42h"/>
+                <constraint firstAttribute="bottom" secondItem="yq8-nC-dfM" secondAttribute="bottom" id="Cfr-gy-DA3"/>
+                <constraint firstAttribute="trailing" secondItem="yq8-nC-dfM" secondAttribute="trailing" id="Jb9-ad-hPe"/>
+                <constraint firstItem="yq8-nC-dfM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VR0-u1-13W"/>
             </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="81.5" y="53.5"/>
         </view>
     </objects>
 </document>

@@ -36,6 +36,8 @@
 		CC73E4511E86AB1C001131AF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC73E44F1E86AB1C001131AF /* HomeViewController.m */; };
 		CC73E4521E86AB1C001131AF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC73E4501E86AB1C001131AF /* HomeViewController.xib */; };
 		CC73E4591E86BD65001131AF /* HomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CC73E4581E86BD65001131AF /* HomeButton.m */; };
+		CC9604931EA3DE110030D2C7 /* LearnContentTypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9604911EA3DE110030D2C7 /* LearnContentTypeTableViewCell.m */; };
+		CC9604941EA3DE110030D2C7 /* LearnContentTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC9604921EA3DE110030D2C7 /* LearnContentTypeTableViewCell.xib */; };
 		CCAE42A81E7C2F33006F490E /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAE42A71E7C2F33006F490E /* Utils.m */; };
 		CCB7B3F01E8FF7E90058C32E /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E43A1E842370001131AF /* Lato-Light.ttf */; };
 		CCB7B3F11E8FF7ED0058C32E /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC73E43C1E842370001131AF /* Lato-Regular.ttf */; };
@@ -119,6 +121,9 @@
 		CC73E4501E86AB1C001131AF /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = ../HomeViewController.xib; sourceTree = "<group>"; };
 		CC73E4571E86BD65001131AF /* HomeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeButton.h; sourceTree = "<group>"; };
 		CC73E4581E86BD65001131AF /* HomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeButton.m; sourceTree = "<group>"; };
+		CC9604901EA3DE110030D2C7 /* LearnContentTypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnContentTypeTableViewCell.h; sourceTree = "<group>"; };
+		CC9604911EA3DE110030D2C7 /* LearnContentTypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnContentTypeTableViewCell.m; sourceTree = "<group>"; };
+		CC9604921EA3DE110030D2C7 /* LearnContentTypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearnContentTypeTableViewCell.xib; sourceTree = "<group>"; };
 		CCAE42A61E7C2F33006F490E /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = ../Utils.h; sourceTree = "<group>"; };
 		CCAE42A71E7C2F33006F490E /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = ../Utils.m; sourceTree = "<group>"; };
 		CCB7B3FA1E9412510058C32E /* HelpMeSpeakViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpMeSpeakViewController.h; sourceTree = "<group>"; };
@@ -340,6 +345,9 @@
 				CCB7B4061E9413590058C32E /* LearnViewController.h */,
 				CCB7B4071E9413590058C32E /* LearnViewController.m */,
 				CCB7B4081E9413590058C32E /* LearnViewController.xib */,
+				CC9604901EA3DE110030D2C7 /* LearnContentTypeTableViewCell.h */,
+				CC9604911EA3DE110030D2C7 /* LearnContentTypeTableViewCell.m */,
+				CC9604921EA3DE110030D2C7 /* LearnContentTypeTableViewCell.xib */,
 				CC3CB6451EA11EC800CA9429 /* LearnContentViewController.h */,
 				CC3CB6461EA11EC800CA9429 /* LearnContentViewController.m */,
 				CC3CB6471EA11EC800CA9429 /* LearnContentViewController.xib */,
@@ -499,6 +507,7 @@
 				CCEF72EC1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib in Resources */,
 				CCB7B4101E94136C0058C32E /* RemindersViewController.xib in Resources */,
 				CC73E43F1E842370001131AF /* Lato-BlackItalic.ttf in Resources */,
+				CC9604941EA3DE110030D2C7 /* LearnContentTypeTableViewCell.xib in Resources */,
 				CC73E4421E842370001131AF /* Lato-Hairline.ttf in Resources */,
 				CC4C10BF1E7A26DE00515CDC /* Assets.xcassets in Resources */,
 				CC73E43E1E842370001131AF /* Lato-Black.ttf in Resources */,
@@ -548,6 +557,7 @@
 				CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */,
 				CC3CB6481EA11EC800CA9429 /* LearnContentViewController.m in Sources */,
 				CCB7B3FD1E9412510058C32E /* HelpMeSpeakViewController.m in Sources */,
+				CC9604931EA3DE110030D2C7 /* LearnContentTypeTableViewCell.m in Sources */,
 				CC4C10BD1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld in Sources */,
 				CC38386E1E95FCF400001213 /* InformationalViewController.m in Sources */,
 				CCB7B41B1E94139A0058C32E /* SurveysViewController.m in Sources */,

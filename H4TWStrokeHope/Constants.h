@@ -68,8 +68,21 @@
 #define BLOOD_PRESSURE_PROBLEM_BOLD_PART @"High blood pressure"
 #define BLOOD_PRESSURE_PROBLEM_NONBOLD_PART @" can cause strokes by damaging arteries throughout the body, causing them to burst or clog more easily."
 #define BLOOD_PRESSURE_WHAT_TO_DO @"In the general population aged 60 years or older, treating high BP to a goal of lower than 150/90 mm Hg reduces stroke."
-#define BLOOD_PRESSURE_WHAT_TO_DO @"In the general population aged 60 years or older, treating high BP to a goal of lower than 150/90 mm Hg reduces stroke. "
 #define BLOOD_PRESSURE_WHAT_TO_DO_BOLD_PART @"lower than 150/90 mm Hg"
+
+/* LEARN – BLOOD SUGAR */
+#define BLOOD_SUGAR_PROBLEM @"High blood sugar can increase the risk of developing strokes and heart disease. A blood test called HbA1c gives a picture of your average blood sugar control for the past 2 to 3 months."
+#define BLOOD_SUGAR_PROBLEM_BOLD_PART @"High blood sugar"
+#define BLOOD_SUGAR_WHAT_TO_DO @"The American Heart Association recommends keeping blood sugar levels (Hgb1A1c) below 6% for patients with pre diabetes and below 7% for diabetic patients."
+#define BLOOD_SUGAR_WHAT_TO_DO_FIRST_BOLD_PART @"below 6%"
+#define BLOOD_SUGAR_WHAT_TO_DO_SECOND_BOLD_PART @"below 7%"
+
+/* LEARN – HEART RATE */
+#define HEART_RATE_PROBLEM @"Atrial Fibrillation, or irregular heart rate, is a risk factor for stroke."
+#define HEART_RATE_PROBLEM_BOLD_PART @"Atrial Fibrillation"
+#define HEART_RATE_WHAT_TO_DO @"If you have suspicion of an irregular heart rate, contact your doctor immediately for testing, which might include electrocardiogram (ECG/EKG). Based on your past medical history and your risk for having a future stroke, there are several options for medications, like anticoagulants, that will help manage AFib."
+#define HEART_RATE_WHAT_TO_DO_FIRST_BOLD_PART @"electrocardiogram"
+#define HEART_RATE_WHAT_TO_DO_SECOND_BOLD_PART @"anticoagulants"
 
 /* ABOUT US SECTION */
 #define ABOUT_US_PARAGRAPH_ONE @"The HEALTH4THEWORLD STROKE HOPE APP is a free of cost educational tool to spread knowledge about stroke risk factors, secondary prevention, post stroke mobility & exercise education and speech strategies.  It has been created by Health4TheWorld which is a non profit organization inspired by the unmet medical needs worldwide. The mission of the organization is solving health inequities through innovation & technology and bringing smiles around the world. Please learn more about us at health4theworld.org."
