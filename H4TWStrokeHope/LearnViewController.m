@@ -16,6 +16,8 @@
 #define SPACE_BETWEEN_BEFAST_BUTTONS 10
 
 @interface LearnViewController ()
+@property (strong, nonatomic) IBOutlet UILabel *signsOfStrokeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *topicsLabel;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property NSArray *learnCategories;
 @property (strong, nonatomic) IBOutlet UIView *befastContainer;
@@ -29,7 +31,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"LEARN";
-    self.learnCategories = @[CONTENT_TYPE_BLOOD_PRESSURE, CONTENT_TYPE_BLOOD_SUGAR, CONTENT_TYPE_HEART_RATE];
+    self.befastExplanationLabel.text = BEFAST_B;
+    self.learnCategories = @[CONTENT_TYPE_FAQ, CONTENT_TYPE_BLOOD_PRESSURE, CONTENT_TYPE_HEART_RATE, CONTENT_TYPE_BLOOD_SUGAR, CONTENT_TYPE_DIET, CONTENT_TYPE_BLADDER_BOWEL, CONTENT_TYPE_EXERCISES, CONTENT_TYPE_SHOWER_BATH, CONTENT_TYPE_HOME_MOD];
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     /* Gets rid of extra blank cells */
@@ -45,6 +48,13 @@
     self.navigationItem.leftBarButtonItem = backButton;
     
     [self setUpBeFastButtons];
+    [self setUpColors];
+}
+
+- (void)setUpColors {
+    self.topicsLabel.textColor = HFTW_TEXT_GRAY;
+    self.signsOfStrokeLabel.textColor = HFTW_TEXT_GRAY;
+    self.befastExplanationLabel.textColor = HFTW_TEXT_GRAY;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -121,17 +131,17 @@
         }
     }
     if (selectedIndex == 0) {
-        self.befastExplanationLabel.text = @"B:";
+        self.befastExplanationLabel.text = BEFAST_B;
     } else if (selectedIndex == 1) {
-        self.befastExplanationLabel.text = @"E:";
+        self.befastExplanationLabel.text = BEFAST_E;
     } else if (selectedIndex == 2) {
-        self.befastExplanationLabel.text = @"F:";
+        self.befastExplanationLabel.text = BEFAST_F;
     } else if (selectedIndex == 3) {
-        self.befastExplanationLabel.text = @"A:";
+        self.befastExplanationLabel.text = BEFAST_A;
     } else if (selectedIndex == 4) {
-        self.befastExplanationLabel.text = @"S:";
+        self.befastExplanationLabel.text = BEFAST_S;
     } else if (selectedIndex == 5) {
-        self.befastExplanationLabel.text = @"T:";
+        self.befastExplanationLabel.text = BEFAST_T;
     }
 }
 

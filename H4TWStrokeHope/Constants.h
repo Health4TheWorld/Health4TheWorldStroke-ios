@@ -63,6 +63,14 @@
 #define HELP_ME_SPEAK_PAIN @"I am in pain"
 #define HELP_ME_SPEAK_CANT_SPEAK @"Sorry, I can't speak"
 
+/* BEFAST */
+#define BEFAST_B @"Balance: Sudden loss of balance."
+#define BEFAST_E @"Eye: Sudden loss of vision in one or both eyes."
+#define BEFAST_F @"Face drooping on one side when asked to smile."
+#define BEFAST_A @"Arm weakness; can't raise arms and keep them there."
+#define BEFAST_S @"Speech difficulty."
+#define BEFAST_T @"Time to call an ambulance."
+
 /* LEARN - BLOOD PRESSURE */
 #define BLOOD_PRESSURE_PROBLEM @"High blood pressure can cause strokes by damaging arteries throughout the body, causing them to burst or clog more easily."
 #define BLOOD_PRESSURE_PROBLEM_BOLD_PART @"High blood pressure"

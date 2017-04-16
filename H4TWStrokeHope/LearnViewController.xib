@@ -9,6 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
         <array key="Lato-Light.ttf">
             <string>Lato-Light</string>
         </array>
@@ -18,7 +21,9 @@
             <connections>
                 <outlet property="befastContainer" destination="ema-U7-fjY" id="KFi-u6-gi7"/>
                 <outlet property="befastExplanationLabel" destination="oWC-YL-w04" id="Y6l-dq-UgC"/>
+                <outlet property="signsOfStrokeLabel" destination="VH2-aV-F0f" id="fYW-qY-xze"/>
                 <outlet property="tableView" destination="yq8-nC-dfM" id="l6a-vh-Isy"/>
+                <outlet property="topicsLabel" destination="lRL-pe-Udp" id="7Lc-uw-Of1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,52 +32,76 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQM-Ce-amr">
+                    <rect key="frame" x="0.0" y="199.5" width="375" height="59"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="59" id="RGO-vr-kIc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeV-C6-GM2">
+                    <rect key="frame" x="0.0" y="0.5" width="375" height="59"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="59" id="JxB-VZ-CbY"/>
+                    </constraints>
+                </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yq8-nC-dfM">
-                    <rect key="frame" x="0.0" y="217" width="375" height="450"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <rect key="frame" x="0.0" y="261" width="375" height="406"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="ro2-vL-ZYf"/>
                         <outlet property="delegate" destination="-1" id="XcI-OU-FlY"/>
                     </connections>
                 </tableView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember the signs of a stroke:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VH2-aV-F0f">
-                    <rect key="frame" x="16" y="20" width="229.5" height="20.5"/>
+                    <rect key="frame" x="16" y="18" width="283.5" height="24"/>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWC-YL-w04">
+                    <rect key="frame" x="16" y="139" width="343" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="beF-TY-WAU"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ema-U7-fjY">
-                    <rect key="frame" x="16" y="48" width="343" height="47"/>
+                    <rect key="frame" x="16" y="82" width="343" height="47"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="47" id="zUT-Uf-ag6"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topics:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRL-pe-Udp">
-                    <rect key="frame" x="16" y="176" width="50" height="21"/>
-                    <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWC-YL-w04">
-                    <rect key="frame" x="16" y="125" width="15" height="21"/>
-                    <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="17"/>
+                    <rect key="frame" x="16" y="217" width="62" height="24"/>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="oWC-YL-w04" secondAttribute="trailing" constant="16" id="4Df-e8-9pX"/>
+                <constraint firstAttribute="trailing" secondItem="rQM-Ce-amr" secondAttribute="trailing" id="6H5-EN-288"/>
                 <constraint firstItem="yq8-nC-dfM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6ZP-GX-42h"/>
-                <constraint firstItem="lRL-pe-Udp" firstAttribute="top" secondItem="oWC-YL-w04" secondAttribute="bottom" constant="30" id="6zq-e8-4Cd"/>
+                <constraint firstItem="lRL-pe-Udp" firstAttribute="top" secondItem="oWC-YL-w04" secondAttribute="bottom" constant="28" id="6zq-e8-4Cd"/>
                 <constraint firstItem="oWC-YL-w04" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="7Uy-uQ-FF5"/>
                 <constraint firstAttribute="bottom" secondItem="yq8-nC-dfM" secondAttribute="bottom" id="Cfr-gy-DA3"/>
+                <constraint firstAttribute="trailing" secondItem="aeV-C6-GM2" secondAttribute="trailing" id="IPH-0d-USX"/>
                 <constraint firstItem="VH2-aV-F0f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="IXz-vF-CQf"/>
                 <constraint firstAttribute="trailing" secondItem="yq8-nC-dfM" secondAttribute="trailing" id="Jb9-ad-hPe"/>
-                <constraint firstItem="VH2-aV-F0f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Yll-29-Uv4"/>
+                <constraint firstItem="rQM-Ce-amr" firstAttribute="centerY" secondItem="lRL-pe-Udp" secondAttribute="centerY" id="OGb-S4-DN7"/>
+                <constraint firstItem="rQM-Ce-amr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qgz-1R-CEy"/>
+                <constraint firstItem="VH2-aV-F0f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="18" id="Yll-29-Uv4"/>
                 <constraint firstItem="yq8-nC-dfM" firstAttribute="top" secondItem="lRL-pe-Udp" secondAttribute="bottom" constant="20" id="bMu-4Y-MLf"/>
-                <constraint firstItem="ema-U7-fjY" firstAttribute="top" secondItem="VH2-aV-F0f" secondAttribute="bottom" constant="7.5" id="fe7-KK-v6B"/>
+                <constraint firstItem="aeV-C6-GM2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f7n-6c-91k"/>
+                <constraint firstItem="ema-U7-fjY" firstAttribute="top" secondItem="VH2-aV-F0f" secondAttribute="bottom" constant="40" id="fe7-KK-v6B"/>
                 <constraint firstAttribute="trailing" secondItem="ema-U7-fjY" secondAttribute="trailing" constant="16" id="koG-7T-yGx"/>
-                <constraint firstItem="oWC-YL-w04" firstAttribute="top" secondItem="ema-U7-fjY" secondAttribute="bottom" constant="30" id="r8Q-wM-Qqb"/>
+                <constraint firstItem="oWC-YL-w04" firstAttribute="top" secondItem="ema-U7-fjY" secondAttribute="bottom" constant="10" id="r8Q-wM-Qqb"/>
+                <constraint firstItem="aeV-C6-GM2" firstAttribute="centerY" secondItem="VH2-aV-F0f" secondAttribute="centerY" id="rkP-2t-eUD"/>
                 <constraint firstItem="ema-U7-fjY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="tEi-R2-cYb"/>
                 <constraint firstItem="lRL-pe-Udp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="tQB-dU-9B3"/>
             </constraints>
