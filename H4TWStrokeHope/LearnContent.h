@@ -9,9 +9,16 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#define CONTENT_TYPE_FAQ @"FAQ"
 #define CONTENT_TYPE_BLOOD_PRESSURE @"Blood Pressure"
-#define CONTENT_TYPE_BLOOD_SUGAR @"Blood Sugar"
 #define CONTENT_TYPE_HEART_RATE @"Heart Rate"
+#define CONTENT_TYPE_BLOOD_SUGAR @"Blood Sugar"
+#define CONTENT_TYPE_DIET @"Diet"
+#define CONTENT_TYPE_BLADDER_BOWEL @"Bladder/Bowel"
+#define CONTENT_TYPE_EXERCISES @"Exercises"
+#define CONTENT_TYPE_SHOWER_BATH @"Shower/Bath"
+#define CONTENT_TYPE_HOME_MOD @"Home Modification"
+
 
 /* Content dictionary  keys & values */
 #define TEXT_TYPE_KEY @"TextType" // key

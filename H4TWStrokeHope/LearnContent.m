@@ -27,6 +27,10 @@
     return self; 
 }
 
+- (void)setUpFAQ {
+    
+}
+
 - (void)setUpBloodPressure {
     self.contentTitle = CONTENT_TYPE_BLOOD_PRESSURE;
     self.contentBGColor = HFTW_RED;
@@ -110,6 +114,26 @@
     [whatToDoStr addAttribute:NSFontAttributeName value:PARAGRAPH_FONT_BOLD range:whatToDoBoldRangeOne];
     [whatToDoStr addAttribute:NSFontAttributeName value:PARAGRAPH_FONT_BOLD range:whatToDoBoldRangeTwo];
     [self.content addObject:[self paragraphWithText:whatToDoStr]];
+}
+
+- (void)setUpDiet {
+    
+}
+
+- (void)setUpBladderBowel {
+    
+}
+
+- (void)setUpExercises {
+    
+}
+
+- (void)setUpShowerBath {
+    
+}
+
+- (void)setUpHomeMod {
+    
 }
 
 /* Dictionaries that represent a chunk of text

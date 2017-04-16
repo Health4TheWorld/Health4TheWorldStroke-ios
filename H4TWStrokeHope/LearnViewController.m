@@ -13,10 +13,15 @@
 #import "LearnContent.h"
 #import "LearnContentTypeTableViewCell.h"
 
+#define SPACE_BETWEEN_BEFAST_BUTTONS 10
+
 @interface LearnViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property NSArray *learnCategories;
+@property (strong, nonatomic) IBOutlet UIView *befastContainer;
 @property NSIndexPath *selectedIndexPath;
+@property NSMutableArray *befastButtons;
+@property (strong, nonatomic) IBOutlet UILabel *befastExplanationLabel;
 @end
 
 @implementation LearnViewController
@@ -25,6 +30,7 @@
     [super viewDidLoad];
     self.title = @"LEARN";
     self.learnCategories = @[CONTENT_TYPE_BLOOD_PRESSURE, CONTENT_TYPE_BLOOD_SUGAR, CONTENT_TYPE_HEART_RATE];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     /* Gets rid of extra blank cells */
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -37,6 +43,8 @@
     backBtn.frame = CGRectMake(0, 0, 15, 25);
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     self.navigationItem.leftBarButtonItem = backButton;
+    
+    [self setUpBeFastButtons];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -48,6 +56,82 @@
     
     if (self.selectedIndexPath) {
         [self.tableView deselectRowAtIndexPath:self.selectedIndexPath animated:YES];
+    }
+}
+
+- (void)setUpBeFastButtons {
+    if (!self.befastButtons) {
+        self.befastButtons = [[NSMutableArray alloc] init];
+        CGFloat buttonWidth = (self.befastContainer.frame.size.width - (5 * SPACE_BETWEEN_BEFAST_BUTTONS)) / 6;
+        CGFloat startingX = 0;
+        for (int i=0; i < 6; i++) {
+            UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(startingX, 0, buttonWidth, buttonWidth)];
+            button.titleLabel.font = [UIFont fontWithName:@"Lato-bold" size:18.0];
+            button.clipsToBounds = YES;
+            button.layer.cornerRadius = buttonWidth/2.0f;
+            button.layer.borderColor = HFTW_RED.CGColor;
+            button.layer.borderWidth =1.0;
+            button.tag = i;
+            
+            if (i==0) {
+                [button setBackgroundColor:HFTW_RED];
+                [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            } else {
+                [button setBackgroundColor:[UIColor whiteColor]];
+                [button setTitleColor:HFTW_RED forState:UIControlStateNormal];
+            }
+            
+            /* Text */
+            if (i==0) {
+                [button setTitle:@"B" forState:UIControlStateNormal];
+            } else if (i==1) {
+                [button setTitle:@"E" forState:UIControlStateNormal];
+            } else if (i==2) {
+                [button setTitle:@"F" forState:UIControlStateNormal];
+            } else if (i==3) {
+                [button setTitle:@"A" forState:UIControlStateNormal];
+            } else if (i==4) {
+                [button setTitle:@"S" forState:UIControlStateNormal];
+            } else if (i==5) {
+                [button setTitle:@"T" forState:UIControlStateNormal];
+            }
+            
+            [button addTarget:self action:@selector(selectedBefastButton:) forControlEvents:UIControlEventTouchUpInside];
+            
+            [self.befastContainer addSubview:button];
+            startingX += (buttonWidth + SPACE_BETWEEN_BEFAST_BUTTONS);
+            [self.befastButtons addObject:button];
+        }
+    }
+}
+
+/* Change button appearances and befast explanation. */
+- (void)selectedBefastButton:(id)sender {
+    UIButton *button = (UIButton *)sender;
+    long selectedIndex = button.tag;
+    
+    for (int i=0; i < 6; i++) {
+        UIButton *button = [self.befastButtons objectAtIndex:i];
+        if (i==selectedIndex) {
+            [button setBackgroundColor:HFTW_RED];
+            [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        } else {
+            [button setBackgroundColor:[UIColor whiteColor]];
+            [button setTitleColor:HFTW_RED forState:UIControlStateNormal];
+        }
+    }
+    if (selectedIndex == 0) {
+        self.befastExplanationLabel.text = @"B:";
+    } else if (selectedIndex == 1) {
+        self.befastExplanationLabel.text = @"E:";
+    } else if (selectedIndex == 2) {
+        self.befastExplanationLabel.text = @"F:";
+    } else if (selectedIndex == 3) {
+        self.befastExplanationLabel.text = @"A:";
+    } else if (selectedIndex == 4) {
+        self.befastExplanationLabel.text = @"S:";
+    } else if (selectedIndex == 5) {
+        self.befastExplanationLabel.text = @"T:";
     }
 }
 
