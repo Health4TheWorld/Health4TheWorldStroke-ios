@@ -47,7 +47,6 @@
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     self.navigationItem.leftBarButtonItem = backButton;
     
-    [self setUpBeFastButtons];
     [self setUpColors];
 }
 
@@ -67,6 +66,10 @@
     if (self.selectedIndexPath) {
         [self.tableView deselectRowAtIndexPath:self.selectedIndexPath animated:YES];
     }
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [self setUpBeFastButtons];
 }
 
 - (void)setUpBeFastButtons {

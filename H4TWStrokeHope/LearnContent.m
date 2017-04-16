@@ -22,13 +22,29 @@
             [self setUpBloodSugar];
         } else if ([title isEqualToString:CONTENT_TYPE_HEART_RATE]) {
             [self setUpHeartRate];
-        }
+        } else if ([title isEqualToString:CONTENT_TYPE_FAQ]) {
+            [self setUpFAQ];
+        } else if ([title isEqualToString:CONTENT_TYPE_EXERCISES]) {
+            [self setUpExercises];
+        } else if ([title isEqualToString:CONTENT_TYPE_HOME_MOD]) {
+            [self setUpHomeMod];
+        } else if ([title isEqualToString:CONTENT_TYPE_SHOWER_BATH]) {
+            [self setUpShowerBath];
+        } else if ([title isEqualToString:CONTENT_TYPE_BLADDER_BOWEL]) {
+            [self setUpBladderBowel];
+        } else if ([title isEqualToString:CONTENT_TYPE_DIET]) {
+            [self setUpDiet];
+        } 
     }
     return self; 
 }
 
 - (void)setUpFAQ {
-    
+    self.contentTitle = CONTENT_TYPE_FAQ;
+    self.contentBGColor = HFTW_RED;
+    self.textColor = HFTW_RED;
+    self.backButtonImageStr = RED_BACK_BUTTON;
+    self.content = [[NSMutableArray alloc] init];
 }
 
 - (void)setUpBloodPressure {
@@ -117,23 +133,43 @@
 }
 
 - (void)setUpDiet {
-    
+    self.contentTitle = CONTENT_TYPE_DIET;
+    self.contentBGColor = HFTW_RED;
+    self.textColor = HFTW_RED;
+    self.backButtonImageStr = RED_BACK_BUTTON;
+    self.content = [[NSMutableArray alloc] init];
 }
 
 - (void)setUpBladderBowel {
-    
+    self.contentTitle = CONTENT_TYPE_BLADDER_BOWEL;
+    self.contentBGColor = HFTW_RED;
+    self.textColor = HFTW_RED;
+    self.backButtonImageStr = RED_BACK_BUTTON;
+    self.content = [[NSMutableArray alloc] init];
 }
 
 - (void)setUpExercises {
-    
+    self.contentTitle = CONTENT_TYPE_EXERCISES;
+    self.contentBGColor = HFTW_RED;
+    self.textColor = HFTW_RED;
+    self.backButtonImageStr = RED_BACK_BUTTON;
+    self.content = [[NSMutableArray alloc] init];
 }
 
 - (void)setUpShowerBath {
-    
+    self.contentTitle = CONTENT_TYPE_SHOWER_BATH;
+    self.contentBGColor = HFTW_RED;
+    self.textColor = HFTW_RED;
+    self.backButtonImageStr = RED_BACK_BUTTON;
+    self.content = [[NSMutableArray alloc] init];
 }
 
 - (void)setUpHomeMod {
-    
+    self.contentTitle = CONTENT_TYPE_HOME_MOD;
+    self.contentBGColor = HFTW_RED;
+    self.textColor = HFTW_RED;
+    self.backButtonImageStr = RED_BACK_BUTTON;
+    self.content = [[NSMutableArray alloc] init];
 }
 
 /* Dictionaries that represent a chunk of text

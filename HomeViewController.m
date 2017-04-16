@@ -35,7 +35,9 @@
     self.navigationItem.leftBarButtonItem = backButton;
     
     self.title = @"HOME";
-    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
     [self setUpView];
 }
 
