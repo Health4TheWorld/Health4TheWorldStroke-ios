@@ -13,6 +13,15 @@
 #define CONTENT_TYPE_BLOOD_SUGAR @"Blood Sugar"
 #define CONTENT_TYPE_HEART_RATE @"Heart Rate"
 
+/* Content dictionary  keys & values */
+#define TEXT_TYPE_KEY @"TextType" // key
+#define TEXT_TYPE_HEADER @"Header" // value
+#define TEXT_TYPE_PARAGRAPH @"Paragraph" // value
+#define TEXT_TYPE_BULLETS @"BulletPoints" // value
+
+#define TEXT_KEY @"Text"
+
+
 /*
  * LearnContent Data Model
  * ------------------------
@@ -24,7 +33,8 @@
 @interface LearnContent : NSObject
 @property NSString *contentTitle;
 @property UIColor *contentBGColor;
-@property NSDictionary *content; /* Headers mapped to array of paragraphs */
+@property UIColor *textColor;
+@property NSMutableArray *content; /* Array of dictionaries in the "problem" section */
 @property NSArray *images;
 @property NSString *backButtonImageStr; /* Name of image for back button */
 

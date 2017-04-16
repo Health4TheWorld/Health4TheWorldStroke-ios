@@ -56,14 +56,16 @@
     [self.navigationController pushViewController:dest animated:YES];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)bloodSugarPressed:(id)sender {
+    LearnContentViewController *dest = [[LearnContentViewController alloc] init];
+    dest.content = [[LearnContent alloc] initWithContentTitle:CONTENT_TYPE_BLOOD_SUGAR];
+    [self.navigationController pushViewController:dest animated:YES];
 }
-*/
+
+- (IBAction)heartRatPressed:(id)sender {
+    LearnContentViewController *dest = [[LearnContentViewController alloc] init];
+    dest.content = [[LearnContent alloc] initWithContentTitle:CONTENT_TYPE_HEART_RATE];
+    [self.navigationController pushViewController:dest animated:YES];
+}
 
 @end

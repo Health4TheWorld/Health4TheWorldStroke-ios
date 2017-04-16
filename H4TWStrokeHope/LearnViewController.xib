@@ -26,11 +26,29 @@
                         <action selector="bloodPressurePressed:" destination="-1" eventType="touchUpInside" id="oPy-gi-I5N"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrL-A7-7Kq">
+                    <rect key="frame" x="32" y="105" width="82" height="30"/>
+                    <state key="normal" title="Blood sugar"/>
+                    <connections>
+                        <action selector="bloodSugarPressed:" destination="-1" eventType="touchUpInside" id="uaK-oz-Luw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BX7-JQ-xaE">
+                    <rect key="frame" x="38" y="143" width="70" height="30"/>
+                    <state key="normal" title="Heart rate"/>
+                    <connections>
+                        <action selector="heartRatPressed:" destination="-1" eventType="touchUpInside" id="c4T-e2-orS"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="BX7-JQ-xaE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="38" id="04O-yA-rUp"/>
                 <constraint firstItem="Hz6-9r-A3h" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="67" id="Bqy-1M-GKZ"/>
+                <constraint firstItem="nrL-A7-7Kq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="105" id="FNn-H7-zbL"/>
+                <constraint firstItem="BX7-JQ-xaE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="143" id="Wfg-x9-ovb"/>
                 <constraint firstItem="Hz6-9r-A3h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="ZK3-kG-e4D"/>
+                <constraint firstItem="nrL-A7-7Kq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="rkK-0u-gqd"/>
             </constraints>
         </view>
     </objects>

@@ -17,4 +17,5 @@
  NSInteger numberOfLines = ceilf(descriptionHeight / unitHeight);
  */
 + (CGFloat)heightOfString:(NSString *)string containedToWidth:(CGFloat)width withFont:(UIFont *)font;
++ (CGFloat)heightOfAttributedString:(NSAttributedString *)attrStr containedToWidth:(CGFloat)width withFont:(UIFont *)font;
 @end

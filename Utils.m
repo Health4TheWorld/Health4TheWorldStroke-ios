@@ -17,4 +17,11 @@
     return r.size.height;
 }
 
++ (CGFloat)heightOfAttributedString:(NSAttributedString *)attrStr containedToWidth:(CGFloat)width withFont:(UIFont *)font {
+    NSStringDrawingContext *context = [[NSStringDrawingContext alloc] init];
+    CGSize labelSize = (CGSize){width, FLT_MAX};
+    CGRect r = [attrStr boundingRectWithSize:labelSize options:NSStringDrawingUsesLineFragmentOrigin context:context];
+    return r.size.height;
+}
+
 @end
