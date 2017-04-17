@@ -42,9 +42,10 @@
 #define STRONG_ARM_ICON @"StrongArmIcon"
 #define STRETCHING_ICON @"StretchingIcon"
 #define FUNCTIONAL_MOBILITY_ICON @"FunctionalMobilityIcon"
-#define MIND_ICON @"MindIcon";
+#define MIND_ICON @"MindIcon"
 #define STRONG_LEG_ICON @"StrongLegIcon"
 #define BALANCE_ICON @"BalanceIcon"
+#define LEGS_1A_TOE @"Legs1AToe"
 
 /* STRINGS */
 #define ABOUT_US_SECTION_TITLE @"About Us"

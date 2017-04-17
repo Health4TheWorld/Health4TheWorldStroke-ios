@@ -42,22 +42,25 @@
 
 - (void)setUpView {
     static int SPACE_BETWEEN_CELLS = 10;
-    float cellWidth = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
-    float cellHeight = cellWidth;
+    float cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
+    float cellHeight = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS/2);
     
     float startingY = SPACE_BETWEEN_CELLS;
     
-    HomeButton *u8Button = [[HomeButton alloc] initWithText:@"U8" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [u8Button addImageBottomRight:[UIImage imageNamed:HELP_ME_SPEAK_ICON]];
+    HomeButton *u8Button = [[HomeButton alloc] initWithText:@"1A Toe" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    [u8Button addImageFullSize:[UIImage imageNamed:LEGS_1A_TOE]];
     [u8Button addTarget:self action:@selector(u8Pressed) forControlEvents:UIControlEventTouchUpInside];
     
-    HomeButton *s1Button = [[HomeButton alloc] initWithText:@"S1" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
+    startingY += cellHeight;
+    startingY += SPACE_BETWEEN_CELLS;
+    
+    HomeButton *s1Button = [[HomeButton alloc] initWithText:@"S1" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [s1Button addImageRightCenter:[UIImage imageNamed:EXERCISE_ICON]];
     [s1Button addTarget:self action:@selector(s1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
-    startingY += cellWidth;
+    startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
-    cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
+    //cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
     
     HomeButton *s2Button = [[HomeButton alloc] initWithText:@"S2" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [s2Button addImageBottomRight:[UIImage imageNamed:LEARN_ICON]];
