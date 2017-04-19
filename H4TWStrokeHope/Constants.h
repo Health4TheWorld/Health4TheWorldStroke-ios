@@ -21,6 +21,7 @@
 /* IMAGES */
 #define WHITE_BACK_BUTTON @"WhiteBackArrow"
 #define RED_BACK_BUTTON @"RedBackArrow"
+#define BLUE_BACK_BUTTON @"BlueBackArrow"
 #define EXERCISE_ICON @"ExerciseIcon"
 #define LEARN_ICON @"LearnIcon"
 #define REMINDERS_ICON @"RemindersIcon"
@@ -38,6 +39,14 @@
 #define FOOD_ICON @"FoodIcon"
 #define NOT_GIVING_UP_ICON @"NotGivingUpIcon"
 #define PAIN_ICON @"PainIcon"
+#define SHOWER_ICON @"ShowerIcon"
+#define HEART_RATE_ICON @"HeartRateIcon"
+#define BLOOD_PRESSURE_ICON @"BloodPressureIcon"
+#define WHITE_HEART_RATE_ICON @"WhiteHeartRateIcon"
+#define DIET_ICON @"DietIcon"
+#define TOILET_ICON @"ToiletIcon"
+#define HOUSE_ICON @"HouseIcon"
+#define BLOOD_SUGAR_ICON @"BloodSugarIcon"
 // Premnath 
 #define STRONG_ARM_ICON @"StrongArmIcon"
 #define STRETCHING_ICON @"StretchingIcon"
@@ -85,12 +94,65 @@
 #define BLOOD_SUGAR_WHAT_TO_DO_FIRST_BOLD_PART @"below 6%"
 #define BLOOD_SUGAR_WHAT_TO_DO_SECOND_BOLD_PART @"below 7%"
 
+/* LEARN - FAQ */
+#define FAQ_QUESTION_ONE @"What is stroke?"
+#define FAQ_ANSWER_ONE @"In stroke, the blood supply to a particular part of the brain is blocked or a blood vessel that supplies a part of the brain bursts. This results in cell death in the affected part of the brain. This may result in temporary or permanent loss of function in one or more part(s) of the body."
+#define FAQ_QUESTION_TWO @"What should you do if you think someone is having a stroke?"
+#define FAQ_ANSWER_TWO @"Call for professional medical help (doctor or nurse) immediately."
+#define FAQ_QUESTION_THREE @"Why do you need to act quickly?"
+#define FAQ_ANSWER_THREE @"Getting fast medical treatment lowers the risk of disability or even death."
+
 /* LEARN – HEART RATE */
 #define HEART_RATE_PROBLEM @"Atrial Fibrillation, or irregular heart rate, is a risk factor for stroke."
 #define HEART_RATE_PROBLEM_BOLD_PART @"Atrial Fibrillation"
 #define HEART_RATE_WHAT_TO_DO @"If you have suspicion of an irregular heart rate, contact your doctor immediately for testing, which might include electrocardiogram (ECG/EKG). Based on your past medical history and your risk for having a future stroke, there are several options for medications, like anticoagulants, that will help manage AFib."
 #define HEART_RATE_WHAT_TO_DO_FIRST_BOLD_PART @"electrocardiogram"
 #define HEART_RATE_WHAT_TO_DO_SECOND_BOLD_PART @"anticoagulants"
+
+/* LEARN - DIET */
+#define DIET_PROBLEM @"It’s important for stroke patients to maintain a healthy lifestyle. Stroke patients residing in long-term care facilities are at risk for calcium and vitamin D deficiencies."
+#define DIET_WHAT_TO_DO @"It’s best to eat an overall healthy diet with a variety of fruits and vegetables, whole grains, low-fat dairy products, skinless meat and fish, and nuts and legumes. Cut back on saturated fat, trans fat, sodium, red meat, sweets and sugar-sweetened beverages."
+
+/* LEARN - BLADDER/BOWEL */
+#define BLADDER_BOWEL_PROBLEM @"Some patients will experience urinary incontinence or retention."
+#define BLADDER_BOWEL_WHAT_TO_DO_BULLET_ONE @"Assess urinary retention through bladder scanning or intermittent catheterizations after voiding, and record volumes."
+#define BLADDER_BOWEL_WHAT_TO_DO_BULLET_TWO @"Go to the bathroom at regular times to help train your bladder. Urinating every 2-3 hours can help prevent accidents."
+#define BLADDER_BOWEL_WHAT_TO_DO_BULLET_THREE @"Drink plenty of fluids during the day to stay hydrated to help you avoid constipation."
+
+/* LEARN - EXERCISES */
+#define EXERCISES_PROBLEM @"Stroke patients often have difficulties regaining physical strength and capabilities."
+#define EXERCISES_PARAGRAPH_ONE @"Stroke survivors should receive rehabilitation at an intensity that matches with anticipated benefit and tolerance."
+#define EXERCISES_BULLET_ONE @"To help with gait limitations: Patients should do intensive, repetitive, mobility-task training under supervision of a health care professional."
+#define EXERCISES_BULLET_ONE_BOLD_PART @"gait limitations"
+#define EXERCISES_BULLET_TWO @"To help with falling: Patients should do balance training."
+#define EXERCISES_BULLET_TWO_BOLD_PART @"falling:"
+#define EXERCISES_BULLET_THREE @"To help during hospitalization and early recovery: AHA/ASA recommends low-level walking, self care activities, intermittent sitting or standing, seated activities, or range of motion activities. These activities should be performed as tolerated with a guideline of achieving 10 to 20 beats per minute increases in heart rate, depending on what your physician recommends."
+#define EXERCISES_BULLET_THREE_BOLD_PART @"hospitalization and early recovery"
+#define EXERCISES_BULLET_FOUR @"To help during inpatient and outpatient exercise therapy or rehabilitation: The AHA/ASA recommends activities such as walking 3-5 days per week for 20-60 min/session (or multiple 10-min sessions); stretching 2-3 days per week for 10-30 seconds; Tai chi, yoga, and recreational activities as a complement to walking or stretching."
+#define EXERCISES_BULLET_FOUR_BOLD_PART @"inpatient and outpatient exercise therapy or rehabilitation"
+#define EXERCISES_BULLET_FIVE @"To remain safe during physical exercise: Use assistive devices for walking and exercise carefully, only under supervision. "
+#define EXERCISES_BULLET_FIVE_BOLD_PART @"safe during physical exercise"
+#define EXERCISES_BULLET_SIX @"To maintain physical health: Check with your doctor for customized physical activity preference, specific activity limitations, and exercise participation restrictions."
+#define EXERCISES_BULLET_SIX_BOLD_PART @"physical health:"
+
+/* LEARN - SHOWER/BATH */
+#define SHOWER_BATH_PROBLEM @"Getting in and out of bathtubs/showers can be dangerous, and patients are at risk of falling."
+#define SHOWER_BATH_BULLET_ONE @"Showers > tubs: showers are safer than tubs generally."
+#define SHOWER_BATH_BULLET_ONE_BOLD_PART @"Showers > tubs:"
+#define SHOWER_BATH_BULLET_TWO @"Grab bars might help make movement easier."
+#define SHOWER_BATH_BULLET_TWO_BOLD_PART @"Grab bars"
+#define SHOWER_BATH_BULLET_THREE @"Bath mats with suction cups will help you avoid slipping."
+#define SHOWER_BATH_BULLET_THREE_BOLD_PART @"Bath mats"
+#define SHOWER_BATH_PARAGRAPH @"Make sure someone is nearby to help you if needed. Keep a bell handy or have another way to call for help. Balance training can help individuals with balance problems."
+
+/* LEARN - HOME MOD */
+#define HOME_MOD_PROBLEM @"Because patients might experience limited mobility, it’s important to modify your home so that it is safe and accessible."
+#define HOME_MOD_SUBHEADER_ONE @"Bedroom:"
+#define HOME_MOD_CONTENT_ONE @"Bedroom accessibility can be improved by moving items so that the door opens fully; widen doorways; reverse hinges so that door opens outwards instead of inwards. If a bed needs to be up against a wall, it should be oriented such that the patient’s affected side (weak side) is closer to the wall, so the strong side can assist the patient getting out of bed."
+#define HOME_MOD_SUBHEADER_TWO @"General:"
+#define HOME_MOD_CONTENT_TWO @"Eliminate rugs that can easily move to avoid trips and falls."
+#define HOME_MOD_SUBHEADER_THREE @"Bath:"
+#define HOME_MOD_CONTENT_THREE @"Bathrooms can be made more accessible to wheelchairs by widening the doorway. Toilet seats can be raised to make it less challenging in getting to and from the toilet: a toilet elevator that mounts between the floor and toilet; a seat elevator that attaches to the bowl and raises the seat; installing toilet rails/grab bars to improve support for mobility."
 
 /* ABOUT US SECTION */
 #define ABOUT_US_PARAGRAPH_ONE @"The HEALTH4THEWORLD STROKE HOPE APP is a free of cost educational tool to spread knowledge about stroke risk factors, secondary prevention, post stroke mobility & exercise education and speech strategies.  It has been created by Health4TheWorld which is a non profit organization inspired by the unmet medical needs worldwide. The mission of the organization is solving health inequities through innovation & technology and bringing smiles around the world. Please learn more about us at health4theworld.org."

@@ -76,12 +76,29 @@
             NSString *textType = [text objectForKey:TEXT_TYPE_KEY];
             if ([textType isEqualToString:TEXT_TYPE_HEADER]) {
                 [self addHeaderWithText:[text objectForKey:TEXT_KEY]];
+            } else if ([textType isEqualToString:TEXT_TYPE_ATTRIBUTED_PARAGRAPH]) {
+                [self addAttributedParagraphWithText:[text objectForKey:TEXT_KEY]];
             } else if ([textType isEqualToString:TEXT_TYPE_PARAGRAPH]) {
                 [self addParagraphWithText:[text objectForKey:TEXT_KEY]];
+            } else if ([textType isEqualToString:TEXT_TYPE_BULLETS]) {
+                [self addBullets:[text objectForKey:TEXT_KEY]];
+            } else if ([textType isEqualToString:TEXT_TYPE_ATTRIBUTED_BULLETS]) {
+                [self addAttributedBullets:[text objectForKey:TEXT_KEY]];
             }
         }
         
+        NSArray *imgs = self.content.images;
+        for (UIImageView *imgView in imgs) {
+            imgView.center = self.view.center;
+            CGRect imgViewFrame = imgView.frame;
+            imgViewFrame.origin.y = self.currentY;
+            imgView.frame = imgViewFrame;
+            [self.contentView addSubview:imgView];
+            self.currentY += imgViewFrame.size.height;
+        }
+        
         self.alreadyAddedText = YES;
+        self.currentY += 200;
         self.scrollView.contentSize = CGSizeMake(self.contentView.frame.size.width, self.currentY);
         [self.view addSubview:self.scrollView];
     }
@@ -110,7 +127,7 @@
     [self addSeparator];
 }
 
-- (void)addParagraphWithText:(NSAttributedString *)text {
+- (void)addAttributedParagraphWithText:(NSAttributedString *)text {
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     UILabel *mainText = [[UILabel alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, 0, 0)];
     mainText.textAlignment = NSTextAlignmentLeft;
@@ -121,6 +138,25 @@
     CGRect mainTextFrame = mainText.frame;
     mainTextFrame.size.width = screenWidth - (2 * PAGE_MARGIN);
     mainTextFrame.size.height = [Utils heightOfAttributedString:text containedToWidth:mainTextFrame.size.width withFont:mainText.font];
+    mainText.frame = mainTextFrame;
+    [self.contentView addSubview:mainText];
+    self.currentY += mainText.frame.size.height;
+    self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
+    self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
+}
+
+- (void)addParagraphWithText:(NSString *)text {
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    UILabel *mainText = [[UILabel alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, 0, 0)];
+    mainText.textAlignment = NSTextAlignmentLeft;
+    mainText.textColor = self.content.textColor;
+    mainText.numberOfLines = 0;
+    mainText.text = text;
+    mainText.font = LEARN_PARAGRAPH_FONT;
+    [mainText sizeToFit];
+    CGRect mainTextFrame = mainText.frame;
+    mainTextFrame.size.width = screenWidth - (2 * PAGE_MARGIN);
+    mainTextFrame.size.height = [Utils heightOfString:text containedToWidth:mainTextFrame.size.width withFont:mainText.font];
     mainText.frame = mainTextFrame;
     
     [self.contentView addSubview:mainText];
@@ -136,6 +172,67 @@
     [self.contentView addSubview:separator];
     self.currentY += 1;
     self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
+}
+
+- (void)addBullets:(NSArray *)bullets {
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    for (NSString *bulletPoint in bullets) {
+        UILabel *bullet = [[UILabel alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, 0, 0)];
+        bullet.font = LEARN_PARAGRAPH_FONT;
+        bullet.textAlignment = NSTextAlignmentLeft;
+        bullet.text = @"•";
+        bullet.textColor = self.content.textColor;
+        [bullet sizeToFit];
+        [self.contentView addSubview:bullet];
+        
+        float textStartingX = bullet.frame.origin.x + bullet.frame.size.width + 10;
+        UILabel *bulletLabel = [[UILabel alloc] initWithFrame:CGRectMake(textStartingX, self.currentY, 0, 0)];
+        bulletLabel.font = LEARN_PARAGRAPH_FONT;
+        bulletLabel.textAlignment = NSTextAlignmentLeft;
+        bulletLabel.textColor = self.content.textColor;
+        bulletLabel.numberOfLines = 0;
+        bulletLabel.text = bulletPoint;
+        [bulletLabel sizeToFit];
+        CGRect bulletFrame = bulletLabel.frame;
+        bulletFrame.size.width = screenWidth - (2 * textStartingX);
+        bulletFrame.size.height = [Utils heightOfString:bulletPoint containedToWidth:bulletFrame.size.width withFont:bulletLabel.font];
+        bulletLabel.frame = bulletFrame;
+        [self.contentView addSubview:bulletLabel];
+        self.currentY += bulletLabel.frame.size.height;
+        self.currentY += 5;
+    }
+    self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
+}
+
+- (void)addAttributedBullets:(NSArray *)bullets {
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    for (NSMutableAttributedString *bulletPoint in bullets) {
+        UILabel *bullet = [[UILabel alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, 0, 0)];
+        bullet.font = LEARN_PARAGRAPH_FONT;
+        bullet.textAlignment = NSTextAlignmentLeft;
+        bullet.text = @"•";
+        bullet.textColor = self.content.textColor;
+        [bullet sizeToFit];
+        [self.contentView addSubview:bullet];
+        
+        float textStartingX = bullet.frame.origin.x + bullet.frame.size.width + 10;
+        UILabel *bulletLabel = [[UILabel alloc] initWithFrame:CGRectMake(textStartingX, self.currentY, 0, 0)];
+        bulletLabel.font = LEARN_PARAGRAPH_FONT;
+        bulletLabel.textAlignment = NSTextAlignmentLeft;
+        bulletLabel.textColor = self.content.textColor;
+        bulletLabel.numberOfLines = 0;
+        bulletLabel.attributedText = bulletPoint;
+        [bulletLabel sizeToFit];
+        CGRect bulletFrame = bulletLabel.frame;
+        bulletFrame.size.width = screenWidth - (2 * textStartingX);
+        bulletFrame.size.height = [Utils heightOfAttributedString:bulletPoint containedToWidth:bulletFrame.size.width withFont:bulletLabel.font];
+        bulletLabel.frame = bulletFrame;
+        [self.contentView addSubview:bulletLabel];
+        self.currentY += bulletLabel.frame.size.height;
+        self.currentY += 5;
+    }
+    self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
+
 }
 
 @end

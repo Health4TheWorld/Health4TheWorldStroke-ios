@@ -26,6 +26,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *befastExplanationLabel;
 @end
 
+#define LEARN_CONTENT_CELL_HEIGHT 75
+
 @implementation LearnViewController
 
 - (void)viewDidLoad {
@@ -179,8 +181,13 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"LearnContentTypeTableViewCell" owner:self options:nil];
         cell = (LearnContentTypeTableViewCell *)[nib objectAtIndex:0];
     }
-    cell.textLabel.text = [self.learnCategories objectAtIndex:indexPath.row];
+    NSString *category = [self.learnCategories objectAtIndex:indexPath.row];
+    cell.textLabel.text = category;
     cell.textLabel.font = [UIFont fontWithName:@"Lato-light" size:20.0];
+    NSString *imageName = [LearnContent getImageNameForType:category];
+    if (imageName.length > 0) {
+        [cell.rightImageView setImage:[UIImage imageNamed:imageName]];
+    }
     return cell;
 }
 
@@ -193,7 +200,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-    return 75;
+    return LEARN_CONTENT_CELL_HEIGHT;
 }
 
 @end
