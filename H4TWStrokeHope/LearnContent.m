@@ -39,21 +39,21 @@
 + (NSString *)getImageNameForType:(NSString *)type {
     NSString *imageName = @"";
     if ([type isEqualToString:CONTENT_TYPE_BLOOD_PRESSURE]) {
-
+        return BLOOD_PRESSURE_ICON;
     } else if ([type isEqualToString:CONTENT_TYPE_BLOOD_SUGAR]) {
-
+        return BLOOD_SUGAR_ICON;
     } else if ([type isEqualToString:CONTENT_TYPE_HEART_RATE]) {
         imageName = HEART_RATE_ICON;
     } else if ([type isEqualToString:CONTENT_TYPE_FAQ]) {
-
+        return GENERAL_INFO_ICON;
     } else if ([type isEqualToString:CONTENT_TYPE_EXERCISES]) {
         imageName = STRONG_ARM_ICON;
     } else if ([type isEqualToString:CONTENT_TYPE_HOME_MOD]) {
-
+        return HOUSE_ICON;
     } else if ([type isEqualToString:CONTENT_TYPE_SHOWER_BATH]) {
         imageName = SHOWER_ICON;
     } else if ([type isEqualToString:CONTENT_TYPE_BLADDER_BOWEL]) {
-
+        imageName = TOILET_ICON;
     } else if ([type isEqualToString:CONTENT_TYPE_DIET]) {
         imageName = DIET_ICON;
     }
@@ -138,6 +138,10 @@
     self.backButtonImageStr = RED_BACK_BUTTON;
     self.content = [[NSMutableArray alloc] init];
     
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    [imgView setImage:[UIImage imageNamed:WHITE_HEART_RATE_ICON]];
+    self.images = @[imgView];
+    
     /* Problem header */
     [self.content addObject:[self headerWithTitle:@"PROBLEM"]];
     /* Problem text */
@@ -181,7 +185,7 @@
     self.content = [[NSMutableArray alloc] init];
     
     [self.content addObject:[self headerWithTitle:@"PROBLEM"]];
-    [self.content addObject:[self paragraphWithText:DIET_PROBLEM]];
+    [self.content addObject:[self paragraphWithText:BLADDER_BOWEL_PROBLEM]];
     [self.content addObject:[self headerWithTitle:@"WHAT TO DO"]];
 
     NSArray *bullets = @[BLADDER_BOWEL_WHAT_TO_DO_BULLET_ONE, BLADDER_BOWEL_WHAT_TO_DO_BULLET_TWO, BLADDER_BOWEL_WHAT_TO_DO_BULLET_THREE];

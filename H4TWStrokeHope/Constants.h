@@ -41,7 +41,12 @@
 #define PAIN_ICON @"PainIcon"
 #define SHOWER_ICON @"ShowerIcon"
 #define HEART_RATE_ICON @"HeartRateIcon"
+#define BLOOD_PRESSURE_ICON @"BloodPressureIcon"
+#define WHITE_HEART_RATE_ICON @"WhiteHeartRateIcon"
 #define DIET_ICON @"DietIcon"
+#define TOILET_ICON @"ToiletIcon"
+#define HOUSE_ICON @"HouseIcon"
+#define BLOOD_SUGAR_ICON @"BloodSugarIcon"
 // Premnath 
 #define STRONG_ARM_ICON @"StrongArmIcon"
 #define STRETCHING_ICON @"StretchingIcon"

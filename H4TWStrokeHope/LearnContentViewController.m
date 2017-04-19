@@ -86,6 +86,17 @@
                 [self addAttributedBullets:[text objectForKey:TEXT_KEY]];
             }
         }
+        
+        NSArray *imgs = self.content.images;
+        for (UIImageView *imgView in imgs) {
+            imgView.center = self.view.center;
+            CGRect imgViewFrame = imgView.frame;
+            imgViewFrame.origin.y = self.currentY;
+            imgView.frame = imgViewFrame;
+            [self.contentView addSubview:imgView];
+            self.currentY += imgViewFrame.size.height;
+        }
+        
         self.alreadyAddedText = YES;
         self.currentY += 200;
         self.scrollView.contentSize = CGSizeMake(self.contentView.frame.size.width, self.currentY);
