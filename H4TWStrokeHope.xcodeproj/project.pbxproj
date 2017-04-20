@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1737A1991EA8976F00C6D71E /* 1BKneeFlexion.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E781EA83B0300F37C74 /* 1BKneeFlexion.m4v */; };
+		1737A19A1EA8977300C6D71E /* 1CHipFlexion.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E771EA83B0300F37C74 /* 1CHipFlexion.m4v */; };
+		1737A19B1EA897C900C6D71E /* 2AElbowFlexion.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E761EA83B0300F37C74 /* 2AElbowFlexion.m4v */; };
+		1737A19C1EA897CF00C6D71E /* 2BShoulderFlexion.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E751EA83B0300F37C74 /* 2BShoulderFlexion.m4v */; };
+		1737A19D1EA897D300C6D71E /* 3ALegControl1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E741EA83B0300F37C74 /* 3ALegControl1.m4v */; };
+		1737A19E1EA897D700C6D71E /* 3BLegControl2.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E731EA83B0300F37C74 /* 3BLegControl2.m4v */; };
+		1737A19F1EA897DB00C6D71E /* 4ABridgeHipLift.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E721EA83B0300F37C74 /* 4ABridgeHipLift.m4v */; };
+		1737A1A01EA897E100C6D71E /* 4BArmAndTrunkStrengthening.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E711EA83B0300F37C74 /* 4BArmAndTrunkStrengthening.m4v */; };
+		1737A1A11EA897E400C6D71E /* 4CSitToStand.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E701EA83B0300F37C74 /* 4CSitToStand.m4v */; };
+		1737A1A21EA897E800C6D71E /* 5AFemaleDocWaving.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E6F1EA83B0300F37C74 /* 5AFemaleDocWaving.m4v */; };
+		1788309C1EA8985200690787 /* 5BMaleDocWaving.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E6E1EA83B0300F37C74 /* 5BMaleDocWaving.m4v */; };
 		17E0BB1B1EA40F5A001FC7F3 /* LegsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E0BB191EA40F5A001FC7F3 /* LegsViewController.m */; };
 		17E0BB1C1EA40F5A001FC7F3 /* LegsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB1A1EA40F5A001FC7F3 /* LegsViewController.xib */; };
 		17E0BB201EA40F70001FC7F3 /* ArmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E0BB1E1EA40F70001FC7F3 /* ArmsViewController.m */; };
 		17E0BB211EA40F70001FC7F3 /* ArmsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB1F1EA40F70001FC7F3 /* ArmsViewController.xib */; };
 		17E0BB251EA40F9A001FC7F3 /* MindExercisesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E0BB231EA40F9A001FC7F3 /* MindExercisesViewController.m */; };
 		17E0BB261EA40F9A001FC7F3 /* MindExercisesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB241EA40F9A001FC7F3 /* MindExercisesViewController.xib */; };
-		17E0BB291EA41043001FC7F3 /* u8.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB281EA41043001FC7F3 /* u8.m4v */; };
+		17E0BB291EA41043001FC7F3 /* 1AToeFlexion.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB281EA41043001FC7F3 /* 1AToeFlexion.m4v */; };
 		17E0BB2D1EA41069001FC7F3 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E0BB2B1EA41069001FC7F3 /* VideoViewController.m */; };
 		17E0BB2E1EA41069001FC7F3 /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB2C1EA41069001FC7F3 /* VideoViewController.xib */; };
 		17E0BB321EA41129001FC7F3 /* StrengtheningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E0BB301EA41129001FC7F3 /* StrengtheningViewController.m */; };
@@ -92,6 +103,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17593E6E1EA83B0300F37C74 /* 5BMaleDocWaving.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5BMaleDocWaving.m4v; sourceTree = "<group>"; };
+		17593E6F1EA83B0300F37C74 /* 5AFemaleDocWaving.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5AFemaleDocWaving.m4v; sourceTree = "<group>"; };
+		17593E701EA83B0300F37C74 /* 4CSitToStand.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4CSitToStand.m4v; sourceTree = "<group>"; };
+		17593E711EA83B0300F37C74 /* 4BArmAndTrunkStrengthening.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4BArmAndTrunkStrengthening.m4v; sourceTree = "<group>"; };
+		17593E721EA83B0300F37C74 /* 4ABridgeHipLift.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4ABridgeHipLift.m4v; sourceTree = "<group>"; };
+		17593E731EA83B0300F37C74 /* 3BLegControl2.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3BLegControl2.m4v; sourceTree = "<group>"; };
+		17593E741EA83B0300F37C74 /* 3ALegControl1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3ALegControl1.m4v; sourceTree = "<group>"; };
+		17593E751EA83B0300F37C74 /* 2BShoulderFlexion.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2BShoulderFlexion.m4v; sourceTree = "<group>"; };
+		17593E761EA83B0300F37C74 /* 2AElbowFlexion.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2AElbowFlexion.m4v; sourceTree = "<group>"; };
+		17593E771EA83B0300F37C74 /* 1CHipFlexion.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1CHipFlexion.m4v; sourceTree = "<group>"; };
+		17593E781EA83B0300F37C74 /* 1BKneeFlexion.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1BKneeFlexion.m4v; sourceTree = "<group>"; };
 		17E0BB181EA40F5A001FC7F3 /* LegsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LegsViewController.h; sourceTree = "<group>"; };
 		17E0BB191EA40F5A001FC7F3 /* LegsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LegsViewController.m; sourceTree = "<group>"; };
 		17E0BB1A1EA40F5A001FC7F3 /* LegsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LegsViewController.xib; sourceTree = "<group>"; };
@@ -101,7 +123,7 @@
 		17E0BB221EA40F9A001FC7F3 /* MindExercisesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MindExercisesViewController.h; sourceTree = "<group>"; };
 		17E0BB231EA40F9A001FC7F3 /* MindExercisesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MindExercisesViewController.m; sourceTree = "<group>"; };
 		17E0BB241EA40F9A001FC7F3 /* MindExercisesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MindExercisesViewController.xib; sourceTree = "<group>"; };
-		17E0BB281EA41043001FC7F3 /* u8.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = u8.m4v; sourceTree = "<group>"; };
+		17E0BB281EA41043001FC7F3 /* 1AToeFlexion.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1AToeFlexion.m4v; sourceTree = "<group>"; };
 		17E0BB2A1EA41069001FC7F3 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		17E0BB2B1EA41069001FC7F3 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		17E0BB2C1EA41069001FC7F3 /* VideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
@@ -219,7 +241,18 @@
 		17E0BB271EA41032001FC7F3 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
-				17E0BB281EA41043001FC7F3 /* u8.m4v */,
+				17593E6E1EA83B0300F37C74 /* 5BMaleDocWaving.m4v */,
+				17593E6F1EA83B0300F37C74 /* 5AFemaleDocWaving.m4v */,
+				17593E701EA83B0300F37C74 /* 4CSitToStand.m4v */,
+				17593E711EA83B0300F37C74 /* 4BArmAndTrunkStrengthening.m4v */,
+				17593E721EA83B0300F37C74 /* 4ABridgeHipLift.m4v */,
+				17593E731EA83B0300F37C74 /* 3BLegControl2.m4v */,
+				17593E741EA83B0300F37C74 /* 3ALegControl1.m4v */,
+				17593E751EA83B0300F37C74 /* 2BShoulderFlexion.m4v */,
+				17593E761EA83B0300F37C74 /* 2AElbowFlexion.m4v */,
+				17593E771EA83B0300F37C74 /* 1CHipFlexion.m4v */,
+				17593E781EA83B0300F37C74 /* 1BKneeFlexion.m4v */,
+				17E0BB281EA41043001FC7F3 /* 1AToeFlexion.m4v */,
 			);
 			name = Videos;
 			sourceTree = "<group>";
@@ -606,31 +639,42 @@
 				CC73E4401E842370001131AF /* Lato-Bold.ttf in Resources */,
 				CC73E42B1E841CAC001131AF /* Patagonia.jpg in Resources */,
 				CC73E4431E842370001131AF /* Lato-HairlineItalic.ttf in Resources */,
+				1737A19D1EA897D300C6D71E /* 3ALegControl1.m4v in Resources */,
 				CC4C10C21E7A26DE00515CDC /* LaunchScreen.storyboard in Resources */,
 				CC73E4441E842370001131AF /* Lato-Italic.ttf in Resources */,
 				CC73E4411E842370001131AF /* Lato-BoldItalic.ttf in Resources */,
 				CC3CB6491EA11EC800CA9429 /* LearnContentViewController.xib in Resources */,
 				CCEF72EC1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib in Resources */,
-				17E0BB291EA41043001FC7F3 /* u8.m4v in Resources */,
+				17E0BB291EA41043001FC7F3 /* 1AToeFlexion.m4v in Resources */,
 				CCB7B4101E94136C0058C32E /* RemindersViewController.xib in Resources */,
 				17E0BB461EA4139E001FC7F3 /* ExercisesViewController.xib in Resources */,
 				CC73E43F1E842370001131AF /* Lato-BlackItalic.ttf in Resources */,
+				1737A1A01EA897E100C6D71E /* 4BArmAndTrunkStrengthening.m4v in Resources */,
 				CC9604941EA3DE110030D2C7 /* LearnContentTypeTableViewCell.xib in Resources */,
 				17E0BB441EA41370001FC7F3 /* FunctionalMobilityViewController.xib in Resources */,
 				CC73E4421E842370001131AF /* Lato-Hairline.ttf in Resources */,
 				17E0BB351EA41201001FC7F3 /* StrengtheningViewController.xib in Resources */,
+				1737A1991EA8976F00C6D71E /* 1BKneeFlexion.m4v in Resources */,
 				17E0BB1C1EA40F5A001FC7F3 /* LegsViewController.xib in Resources */,
 				CC4C10BF1E7A26DE00515CDC /* Assets.xcassets in Resources */,
 				CC73E43E1E842370001131AF /* Lato-Black.ttf in Resources */,
 				CCB7B3FE1E9412510058C32E /* HelpMeSpeakViewController.xib in Resources */,
+				1737A19B1EA897C900C6D71E /* 2AElbowFlexion.m4v in Resources */,
+				1737A1A11EA897E400C6D71E /* 4CSitToStand.m4v in Resources */,
 				CCB7B3F11E8FF7ED0058C32E /* Lato-Regular.ttf in Resources */,
 				17E0BB3F1EA4127D001FC7F3 /* StretchingViewController.xib in Resources */,
 				CCB7B40A1E9413590058C32E /* LearnViewController.xib in Resources */,
 				CCB7B4161E9413820058C32E /* GeneralInfoViewController.xib in Resources */,
+				1737A19E1EA897D700C6D71E /* 3BLegControl2.m4v in Resources */,
 				17E0BB211EA40F70001FC7F3 /* ArmsViewController.xib in Resources */,
+				1737A19C1EA897CF00C6D71E /* 2BShoulderFlexion.m4v in Resources */,
+				1737A19A1EA8977300C6D71E /* 1CHipFlexion.m4v in Resources */,
+				1737A19F1EA897DB00C6D71E /* 4ABridgeHipLift.m4v in Resources */,
 				17E0BB3A1EA4125E001FC7F3 /* CoordinationViewController.xib in Resources */,
 				CC4C10BA1E7A26DE00515CDC /* Main.storyboard in Resources */,
 				CCB7B41C1E94139A0058C32E /* SurveysViewController.xib in Resources */,
+				1788309C1EA8985200690787 /* 5BMaleDocWaving.m4v in Resources */,
+				1737A1A21EA897E800C6D71E /* 5AFemaleDocWaving.m4v in Resources */,
 				CC73E4461E842370001131AF /* Lato-LightItalic.ttf in Resources */,
 				CC73E4521E86AB1C001131AF /* HomeViewController.xib in Resources */,
 				17E0BB261EA40F9A001FC7F3 /* MindExercisesViewController.xib in Resources */,

@@ -46,6 +46,31 @@
 #define STRONG_LEG_ICON @"StrongLegIcon"
 #define BALANCE_ICON @"BalanceIcon"
 #define LEGS_1A_TOE @"Legs1AToe"
+#define LEGS_1B_KNEE @"Legs1bKnee"
+#define LEGS_1C_HIP @"Legs1cHip"
+#define ARMS_2A_ELBOW @"Arms2aElbow"
+#define ARMS_2B_SHOULDER @"Arms2bShoulder"
+#define COORDINATION_3A @"Coordination3a"
+#define COORDINATION_3B @"Coordination3b"
+#define FUNCTIONALMOBILITY_4A @"FunctionalMobility4a"
+#define FUNCTIONALMOBILITY_4B @"FunctionalMobility4b"
+#define FEMALE_DOC_5A @"FemaleDoc5a"
+#define MALE_DOC_5B @"MaleDoc5b"
+
+/* VIDEOS */
+#define VIDEO_1A_TOE_FLEXION @"1AToeFlexion.m4v"
+#define VIDEO_1B_KNEE_FLEXION @"1BKneeFlexion.m4v"
+#define VIDEO_1C_HIP_FLEXION @"1CHipFlexion.m4v"
+#define VIDEO_2A_ELBOW_FLEXION @"2AElbowFlexion.m4v"
+#define VIDEO_2B_SHOULDER_FLEXION @"2BShoulderFlexion.m4v"
+#define VIDEO_3A_LEG_CONTROL_1 @"3ALegControl1.m4v"
+#define VIDEO_3B_LEG_CONTROL_2 @"3BLegControl2.m4v"
+#define VIDEO_4A_BRIDGE_HIP_LIFT @"4ABridgeHipLift.m4v"
+#define VIDEO_4B_ARM_AND_STRENGTHENING @"4BArmAndTrunkStrengthening.m4v"
+#define VIDEO_4C_SIT_TO_STAND @"4CSitToStand.m4v"
+#define VIDEO_5A_FEMALE_DOC @"5AFemaleDocWaving.m4v"		
+#define VIDEO_5B_MALE_DOC @"5BMaleDocWaving.m4v"
+
 
 /* STRINGS */
 #define ABOUT_US_SECTION_TITLE @"About Us"

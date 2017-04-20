@@ -47,29 +47,29 @@
     
     float startingY = SPACE_BETWEEN_CELLS;
     
-    HomeButton *u8Button = [[HomeButton alloc] initWithText:@"1A Toe" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [u8Button addImageFullSize:[UIImage imageNamed:LEGS_1A_TOE]];
-    [u8Button addTarget:self action:@selector(u8Pressed) forControlEvents:UIControlEventTouchUpInside];
+    HomeButton *a1Button = [[HomeButton alloc] initWithText:@"1A Toe Flexion" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    [a1Button addImageFullSize:[UIImage imageNamed:LEGS_1A_TOE]];
+    [a1Button addTarget:self action:@selector(a1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *s1Button = [[HomeButton alloc] initWithText:@"S1" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [s1Button addImageRightCenter:[UIImage imageNamed:EXERCISE_ICON]];
-    [s1Button addTarget:self action:@selector(s1Pressed) forControlEvents:UIControlEventTouchUpInside];
+    HomeButton *b1Button = [[HomeButton alloc] initWithText:@"1B Knee Flexion" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    [b1Button addImageFullSize:[UIImage imageNamed:LEGS_1B_KNEE]];
+    [b1Button addTarget:self action:@selector(b1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     //cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
     
-    HomeButton *s2Button = [[HomeButton alloc] initWithText:@"S2" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [s2Button addImageBottomRight:[UIImage imageNamed:LEARN_ICON]];
-    [s2Button addTarget:self action:@selector(s2Pressed) forControlEvents:UIControlEventTouchUpInside];
+    HomeButton *c1Button = [[HomeButton alloc] initWithText:@"1C Hip Flexion" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    [c1Button addImageFullSize:[UIImage imageNamed:LEGS_1C_HIP]];
+    [c1Button addTarget:self action:@selector(c1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     
-    [self.contentView addSubview: u8Button];
-    [self.contentView addSubview: s1Button];
-    [self.contentView addSubview: s2Button];
+    [self.contentView addSubview: a1Button];
+    [self.contentView addSubview: b1Button];
+    [self.contentView addSubview: c1Button];
     
     
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
@@ -80,18 +80,22 @@
 }
 
 
-- (void)u8Pressed {
+- (void)a1Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
-    [videoVC setUpVideo:@"u8.m4v"];
+    [videoVC setUpVideo: VIDEO_1A_TOE_FLEXION];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
-- (void)s1Pressed {
-    
+- (void)b1Pressed {
+    VideoViewController *videoVC = [[VideoViewController alloc] init];
+    [videoVC setUpVideo: VIDEO_1B_KNEE_FLEXION];
+    [self.navigationController pushViewController:videoVC animated:YES];
 }
 
-- (void)s2Pressed {
-    
+- (void)c1Pressed {
+    VideoViewController *videoVC = [[VideoViewController alloc] init];
+    [videoVC setUpVideo: VIDEO_1C_HIP_FLEXION];
+    [self.navigationController pushViewController:videoVC animated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

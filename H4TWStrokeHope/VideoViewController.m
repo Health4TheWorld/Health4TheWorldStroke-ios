@@ -61,6 +61,7 @@
     [self.player removeObserver:self forKeyPath:@"rate"];
 }
 
+
 -(void) viewWillDisappear:(BOOL)animated{
     [self.player pause];
     self.player = nil;
