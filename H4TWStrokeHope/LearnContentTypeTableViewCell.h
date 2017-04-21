@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface LearnContentTypeTableViewCell : UITableViewCell
-
+@property (strong, nonatomic) IBOutlet UIImageView *rightImageView;
 @end
