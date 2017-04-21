@@ -16,11 +16,12 @@
 @implementation VideoViewController
 @synthesize player;
 @synthesize controller;
+AVQueuePlayer *queue;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-
+   
 }
 
 - (void)setUpVideo: (NSString *) videoName{
@@ -34,7 +35,6 @@
     // create a player view controller
     self.controller = [[AVPlayerViewController alloc] init];
     
-    //self.view.frame = CGRectMake(10,150,360,180);
     self.controller.player = self.player;
     self.controller.showsPlaybackControls = YES;
     self.player.closedCaptionDisplayEnabled = NO;
@@ -49,6 +49,41 @@
 
 }
 
+- (AVPlayerViewController *)setUpCustomVideo: (NSString *) videoName withFrame: (CGRect *) frame{
+    
+    // Set URL to the video
+    NSURL *url = [[NSBundle mainBundle] URLForResource:videoName withExtension:nil];
+    
+    // Create an AVPlayer Item
+    AVPlayerItem *video = [[AVPlayerItem alloc] initWithURL:url];
+    
+    //Create a AVplayer Queue
+    queue = [[AVQueuePlayer alloc] init];
+    [queue insertItem:video afterItem:nil];
+    
+    self.player = queue;
+    
+    // create a player view controller
+    self.controller = [[AVPlayerViewController alloc] init];
+    
+    //self.view.frame = CGRectMake(10,150,360,180);
+    self.controller.player = self.player;
+    self.controller.showsPlaybackControls = YES;
+    self.player.closedCaptionDisplayEnabled = NO;
+    [self.player play];
+    
+    // PLay video on a loop
+    //self.player.actionAtItemEnd =  AVPlayerActionAtItemEndNone;
+    [[NSNotificationCenter defaultCenter] addObserverForName:AVPlayerItemDidPlayToEndTimeNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
+        AVPlayerItem *video = [[AVPlayerItem alloc] initWithURL:url];
+        [queue insertItem:video afterItem:nil];
+        [self.player play];
+    }];
+     
+    return controller;
+    
+}
+
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     if (context == 0) {
         if(player.rate==0.0) //stopped
@@ -56,6 +91,7 @@
     }
 
 }
+
 
 -(void)stopped {
     [self.player removeObserver:self forKeyPath:@"rate"];

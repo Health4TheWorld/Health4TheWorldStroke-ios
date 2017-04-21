@@ -1,12 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StretchingViewController">
             <connections>
+                <outlet property="contentView" destination="Ura-4j-Ril" id="kLL-YU-3Gm"/>
+                <outlet property="scrollView" destination="m8s-OG-ipb" id="bAf-eS-Dg8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +20,33 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m8s-OG-ipb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ura-4j-Ril" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Ura-4j-Ril" firstAttribute="top" secondItem="m8s-OG-ipb" secondAttribute="top" id="Ag5-2I-7SF"/>
+                        <constraint firstAttribute="bottom" secondItem="Ura-4j-Ril" secondAttribute="bottom" id="G4y-aB-9bq"/>
+                        <constraint firstItem="Ura-4j-Ril" firstAttribute="leading" secondItem="m8s-OG-ipb" secondAttribute="leading" id="SKg-8i-zxz"/>
+                        <constraint firstAttribute="trailing" secondItem="Ura-4j-Ril" secondAttribute="trailing" id="kT5-da-Zze"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="m8s-OG-ipb" secondAttribute="trailing" id="0WN-0p-8VU"/>
+                <constraint firstAttribute="bottom" secondItem="m8s-OG-ipb" secondAttribute="bottom" id="1gQ-U2-EWJ"/>
+                <constraint firstItem="m8s-OG-ipb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7dr-Lf-EtA"/>
+                <constraint firstItem="m8s-OG-ipb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="guQ-Mo-bK0"/>
+                <constraint firstItem="Ura-4j-Ril" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="lzS-IH-agm"/>
+                <constraint firstItem="Ura-4j-Ril" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="x5v-8d-z8W"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
         </view>
     </objects>
 </document>

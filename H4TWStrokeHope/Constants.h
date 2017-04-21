@@ -54,10 +54,11 @@
 #define COORDINATION_3B @"Coordination3b"
 #define FUNCTIONALMOBILITY_4A @"FunctionalMobility4a"
 #define FUNCTIONALMOBILITY_4B @"FunctionalMobility4b"
+#define FUNCTIONALMOBILITY_4C @"FunctionalMobility4c"
 #define FEMALE_DOC_5A @"FemaleDoc5a"
 #define MALE_DOC_5B @"MaleDoc5b"
 
-/* VIDEOS */
+/* EXERCISE VIDEOS */
 #define VIDEO_1A_TOE_FLEXION @"1AToeFlexion.m4v"
 #define VIDEO_1B_KNEE_FLEXION @"1BKneeFlexion.m4v"
 #define VIDEO_1C_HIP_FLEXION @"1CHipFlexion.m4v"
@@ -71,6 +72,8 @@
 #define VIDEO_5A_FEMALE_DOC @"5AFemaleDocWaving.m4v"		
 #define VIDEO_5B_MALE_DOC @"5BMaleDocWaving.m4v"
 
+/* EXERCISE CONTENT */
+#define EXERCISE_PARAGRAPH_ONE @"Please repeat the exercises 10 times, once everyday with assistance from family caregiver if needed. Consult your medical provider before starting the exercise program"
 
 /* STRINGS */
 #define ABOUT_US_SECTION_TITLE @"About Us"

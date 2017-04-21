@@ -18,6 +18,12 @@
 		1737A1A11EA897E400C6D71E /* 4CSitToStand.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E701EA83B0300F37C74 /* 4CSitToStand.m4v */; };
 		1737A1A21EA897E800C6D71E /* 5AFemaleDocWaving.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E6F1EA83B0300F37C74 /* 5AFemaleDocWaving.m4v */; };
 		1788309C1EA8985200690787 /* 5BMaleDocWaving.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E6E1EA83B0300F37C74 /* 5BMaleDocWaving.m4v */; };
+		17BCB8331EA982830023C880 /* ExercisesHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BCB8311EA982830023C880 /* ExercisesHomeViewController.m */; };
+		17BCB8341EA982830023C880 /* ExercisesHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17BCB8321EA982830023C880 /* ExercisesHomeViewController.xib */; };
+		17DE3D4A1EA95F2300D350A1 /* LegAndFeetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DE3D481EA95F2300D350A1 /* LegAndFeetViewController.m */; };
+		17DE3D4B1EA95F2300D350A1 /* LegAndFeetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DE3D491EA95F2300D350A1 /* LegAndFeetViewController.xib */; };
+		17DE3D4F1EA9604900D350A1 /* ArmsAndHandsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DE3D4D1EA9604900D350A1 /* ArmsAndHandsViewController.m */; };
+		17DE3D501EA9604900D350A1 /* ArmsAndHandsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DE3D4E1EA9604900D350A1 /* ArmsAndHandsViewController.xib */; };
 		17E0BB1B1EA40F5A001FC7F3 /* LegsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E0BB191EA40F5A001FC7F3 /* LegsViewController.m */; };
 		17E0BB1C1EA40F5A001FC7F3 /* LegsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB1A1EA40F5A001FC7F3 /* LegsViewController.xib */; };
 		17E0BB201EA40F70001FC7F3 /* ArmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E0BB1E1EA40F70001FC7F3 /* ArmsViewController.m */; };
@@ -114,6 +120,15 @@
 		17593E761EA83B0300F37C74 /* 2AElbowFlexion.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2AElbowFlexion.m4v; sourceTree = "<group>"; };
 		17593E771EA83B0300F37C74 /* 1CHipFlexion.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1CHipFlexion.m4v; sourceTree = "<group>"; };
 		17593E781EA83B0300F37C74 /* 1BKneeFlexion.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1BKneeFlexion.m4v; sourceTree = "<group>"; };
+		17BCB8301EA982830023C880 /* ExercisesHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExercisesHomeViewController.h; sourceTree = "<group>"; };
+		17BCB8311EA982830023C880 /* ExercisesHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExercisesHomeViewController.m; sourceTree = "<group>"; };
+		17BCB8321EA982830023C880 /* ExercisesHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExercisesHomeViewController.xib; sourceTree = "<group>"; };
+		17DE3D471EA95F2300D350A1 /* LegAndFeetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LegAndFeetViewController.h; sourceTree = "<group>"; };
+		17DE3D481EA95F2300D350A1 /* LegAndFeetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LegAndFeetViewController.m; sourceTree = "<group>"; };
+		17DE3D491EA95F2300D350A1 /* LegAndFeetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LegAndFeetViewController.xib; sourceTree = "<group>"; };
+		17DE3D4C1EA9604900D350A1 /* ArmsAndHandsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArmsAndHandsViewController.h; sourceTree = "<group>"; };
+		17DE3D4D1EA9604900D350A1 /* ArmsAndHandsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArmsAndHandsViewController.m; sourceTree = "<group>"; };
+		17DE3D4E1EA9604900D350A1 /* ArmsAndHandsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArmsAndHandsViewController.xib; sourceTree = "<group>"; };
 		17E0BB181EA40F5A001FC7F3 /* LegsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LegsViewController.h; sourceTree = "<group>"; };
 		17E0BB191EA40F5A001FC7F3 /* LegsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LegsViewController.m; sourceTree = "<group>"; };
 		17E0BB1A1EA40F5A001FC7F3 /* LegsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LegsViewController.xib; sourceTree = "<group>"; };
@@ -276,6 +291,12 @@
 		17E0BB481EA415BD001FC7F3 /* Stretching */ = {
 			isa = PBXGroup;
 			children = (
+				17DE3D471EA95F2300D350A1 /* LegAndFeetViewController.h */,
+				17DE3D481EA95F2300D350A1 /* LegAndFeetViewController.m */,
+				17DE3D491EA95F2300D350A1 /* LegAndFeetViewController.xib */,
+				17DE3D4C1EA9604900D350A1 /* ArmsAndHandsViewController.h */,
+				17DE3D4D1EA9604900D350A1 /* ArmsAndHandsViewController.m */,
+				17DE3D4E1EA9604900D350A1 /* ArmsAndHandsViewController.xib */,
 			);
 			name = Stretching;
 			sourceTree = "<group>";
@@ -475,6 +496,9 @@
 				17E0BB411EA41370001FC7F3 /* FunctionalMobilityViewController.m */,
 				17E0BB421EA41370001FC7F3 /* FunctionalMobilityViewController.xib */,
 				17E0BB4A1EA41611001FC7F3 /* Functional Mobility */,
+				17BCB8301EA982830023C880 /* ExercisesHomeViewController.h */,
+				17BCB8311EA982830023C880 /* ExercisesHomeViewController.m */,
+				17BCB8321EA982830023C880 /* ExercisesHomeViewController.xib */,
 			);
 			name = Exercises;
 			sourceTree = "<group>";
@@ -653,11 +677,14 @@
 				CC9604941EA3DE110030D2C7 /* LearnContentTypeTableViewCell.xib in Resources */,
 				17E0BB441EA41370001FC7F3 /* FunctionalMobilityViewController.xib in Resources */,
 				CC73E4421E842370001131AF /* Lato-Hairline.ttf in Resources */,
+				17DE3D501EA9604900D350A1 /* ArmsAndHandsViewController.xib in Resources */,
+				17DE3D4B1EA95F2300D350A1 /* LegAndFeetViewController.xib in Resources */,
 				17E0BB351EA41201001FC7F3 /* StrengtheningViewController.xib in Resources */,
 				1737A1991EA8976F00C6D71E /* 1BKneeFlexion.m4v in Resources */,
 				17E0BB1C1EA40F5A001FC7F3 /* LegsViewController.xib in Resources */,
 				CC4C10BF1E7A26DE00515CDC /* Assets.xcassets in Resources */,
 				CC73E43E1E842370001131AF /* Lato-Black.ttf in Resources */,
+				17BCB8341EA982830023C880 /* ExercisesHomeViewController.xib in Resources */,
 				CCB7B3FE1E9412510058C32E /* HelpMeSpeakViewController.xib in Resources */,
 				1737A19B1EA897C900C6D71E /* 2AElbowFlexion.m4v in Resources */,
 				1737A1A11EA897E400C6D71E /* 4CSitToStand.m4v in Resources */,
@@ -715,8 +742,10 @@
 				CC3CB64D1EA11F9E00CA9429 /* LearnContent.m in Sources */,
 				17E0BB201EA40F70001FC7F3 /* ArmsViewController.m in Sources */,
 				17E0BB321EA41129001FC7F3 /* StrengtheningViewController.m in Sources */,
+				17BCB8331EA982830023C880 /* ExercisesHomeViewController.m in Sources */,
 				CCB7B40F1E94136C0058C32E /* RemindersViewController.m in Sources */,
 				CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */,
+				17DE3D4F1EA9604900D350A1 /* ArmsAndHandsViewController.m in Sources */,
 				CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */,
 				CC3CB6481EA11EC800CA9429 /* LearnContentViewController.m in Sources */,
 				17E0BB3E1EA4127D001FC7F3 /* StretchingViewController.m in Sources */,
@@ -732,6 +761,7 @@
 				CC4C10B11E7A26DE00515CDC /* main.m in Sources */,
 				17E0BB391EA4125E001FC7F3 /* CoordinationViewController.m in Sources */,
 				CC73E4271E841875001131AF /* EnterViewController.m in Sources */,
+				17DE3D4A1EA95F2300D350A1 /* LegAndFeetViewController.m in Sources */,
 				CC73E4511E86AB1C001131AF /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

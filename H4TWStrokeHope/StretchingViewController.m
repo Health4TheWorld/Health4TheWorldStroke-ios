@@ -9,8 +9,13 @@
 #import "StretchingViewController.h"
 #import "Constants.h"
 #import "Utils.h"
+#import "HomeButton.h"
+#import "ArmsAndHandsViewController.h"
+#import "LegAndFeetViewController.h"
 
 @interface StretchingViewController ()
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIView *contentView;
 
 @end
 
@@ -28,11 +33,52 @@
     backBtn.frame = CGRectMake(0, 0, 15, 25);
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     self.navigationItem.leftBarButtonItem = backButton;
+    
+    [self setUpView];
+}
+
+- (void)setUpView {
+    static int SPACE_BETWEEN_CELLS = 10;
+    float cellWidth = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
+    
+    float startingY = SPACE_BETWEEN_CELLS;
+    
+    HomeButton *legAndFeetButton = [[HomeButton alloc] initWithText:@"Leg & Feet" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
+    [legAndFeetButton addImageBottomRight:[UIImage imageNamed: STRONG_LEG_ICON]];
+    [legAndFeetButton addTarget:self action:@selector(legAndFeetPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    HomeButton *armsAndHandsButton = [[HomeButton alloc] initWithText:@"Arms & Hands" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
+    [armsAndHandsButton addImageRightCenter:[UIImage imageNamed:STRONG_ARM_ICON]];
+    [armsAndHandsButton addTarget:self action:@selector(armsAndHandsPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    [self.contentView addSubview: legAndFeetButton];
+    [self.contentView addSubview: armsAndHandsButton];
+
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
+    
 }
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+/* Action listeners for buttons */
+
+- (void)legAndFeetPressed {
+    LegAndFeetViewController *vc = [[LegAndFeetViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)armsAndHandsPressed {
+    ArmsAndHandsViewController *vc = [[ArmsAndHandsViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
 /*
 #pragma mark - Navigation
 
