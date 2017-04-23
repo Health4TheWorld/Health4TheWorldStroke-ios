@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1720A05E1EA9E78D009C2B87 /* AdductorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1720A05C1EA9E78D009C2B87 /* AdductorsViewController.m */; };
+		1720A05F1EA9E78D009C2B87 /* AdductorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1720A05D1EA9E78D009C2B87 /* AdductorsViewController.xib */; };
+		1720A0631EA9E7A3009C2B87 /* HamstringsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1720A0611EA9E7A3009C2B87 /* HamstringsViewController.m */; };
+		1720A0641EA9E7A3009C2B87 /* HamstringsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1720A0621EA9E7A3009C2B87 /* HamstringsViewController.xib */; };
+		1720A0681EA9E7DC009C2B87 /* DorsiflexorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1720A0661EA9E7DC009C2B87 /* DorsiflexorsViewController.m */; };
+		1720A0691EA9E7DC009C2B87 /* DorsiflexorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1720A0671EA9E7DC009C2B87 /* DorsiflexorsViewController.xib */; };
+		1720A06E1EA9E82C009C2B87 /* HandStretchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1720A06C1EA9E82C009C2B87 /* HandStretchViewController.m */; };
+		1720A06F1EA9E82C009C2B87 /* HandStretchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1720A06D1EA9E82C009C2B87 /* HandStretchViewController.xib */; };
+		1720A0731EA9E841009C2B87 /* ShoulderStretchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1720A0711EA9E841009C2B87 /* ShoulderStretchViewController.m */; };
+		1720A0741EA9E841009C2B87 /* ShoulderStretchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1720A0721EA9E841009C2B87 /* ShoulderStretchViewController.xib */; };
+		1720A0781EA9E85D009C2B87 /* ArmStretchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1720A0761EA9E85D009C2B87 /* ArmStretchViewController.m */; };
+		1720A0791EA9E85D009C2B87 /* ArmStretchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1720A0771EA9E85D009C2B87 /* ArmStretchViewController.xib */; };
 		1737A1991EA8976F00C6D71E /* 1BKneeFlexion.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E781EA83B0300F37C74 /* 1BKneeFlexion.m4v */; };
 		1737A19A1EA8977300C6D71E /* 1CHipFlexion.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E771EA83B0300F37C74 /* 1CHipFlexion.m4v */; };
 		1737A19B1EA897C900C6D71E /* 2AElbowFlexion.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E761EA83B0300F37C74 /* 2AElbowFlexion.m4v */; };
@@ -109,6 +121,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1720A05B1EA9E78D009C2B87 /* AdductorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdductorsViewController.h; sourceTree = "<group>"; };
+		1720A05C1EA9E78D009C2B87 /* AdductorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdductorsViewController.m; sourceTree = "<group>"; };
+		1720A05D1EA9E78D009C2B87 /* AdductorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdductorsViewController.xib; sourceTree = "<group>"; };
+		1720A0601EA9E7A3009C2B87 /* HamstringsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HamstringsViewController.h; path = ../HamstringsViewController.h; sourceTree = "<group>"; };
+		1720A0611EA9E7A3009C2B87 /* HamstringsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HamstringsViewController.m; path = ../HamstringsViewController.m; sourceTree = "<group>"; };
+		1720A0621EA9E7A3009C2B87 /* HamstringsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HamstringsViewController.xib; path = ../HamstringsViewController.xib; sourceTree = "<group>"; };
+		1720A0651EA9E7DC009C2B87 /* DorsiflexorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DorsiflexorsViewController.h; sourceTree = "<group>"; };
+		1720A0661EA9E7DC009C2B87 /* DorsiflexorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DorsiflexorsViewController.m; sourceTree = "<group>"; };
+		1720A0671EA9E7DC009C2B87 /* DorsiflexorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DorsiflexorsViewController.xib; sourceTree = "<group>"; };
+		1720A06B1EA9E82C009C2B87 /* HandStretchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandStretchViewController.h; sourceTree = "<group>"; };
+		1720A06C1EA9E82C009C2B87 /* HandStretchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandStretchViewController.m; sourceTree = "<group>"; };
+		1720A06D1EA9E82C009C2B87 /* HandStretchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HandStretchViewController.xib; sourceTree = "<group>"; };
+		1720A0701EA9E841009C2B87 /* ShoulderStretchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoulderStretchViewController.h; sourceTree = "<group>"; };
+		1720A0711EA9E841009C2B87 /* ShoulderStretchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoulderStretchViewController.m; sourceTree = "<group>"; };
+		1720A0721EA9E841009C2B87 /* ShoulderStretchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoulderStretchViewController.xib; sourceTree = "<group>"; };
+		1720A0751EA9E85D009C2B87 /* ArmStretchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArmStretchViewController.h; sourceTree = "<group>"; };
+		1720A0761EA9E85D009C2B87 /* ArmStretchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArmStretchViewController.m; sourceTree = "<group>"; };
+		1720A0771EA9E85D009C2B87 /* ArmStretchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArmStretchViewController.xib; sourceTree = "<group>"; };
 		17593E6E1EA83B0300F37C74 /* 5BMaleDocWaving.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5BMaleDocWaving.m4v; sourceTree = "<group>"; };
 		17593E6F1EA83B0300F37C74 /* 5AFemaleDocWaving.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5AFemaleDocWaving.m4v; sourceTree = "<group>"; };
 		17593E701EA83B0300F37C74 /* 4CSitToStand.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4CSitToStand.m4v; sourceTree = "<group>"; };
@@ -253,6 +283,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1720A06A1EA9E7EF009C2B87 /* LegAndFeet */ = {
+			isa = PBXGroup;
+			children = (
+				1720A05B1EA9E78D009C2B87 /* AdductorsViewController.h */,
+				1720A05C1EA9E78D009C2B87 /* AdductorsViewController.m */,
+				1720A05D1EA9E78D009C2B87 /* AdductorsViewController.xib */,
+				1720A0601EA9E7A3009C2B87 /* HamstringsViewController.h */,
+				1720A0611EA9E7A3009C2B87 /* HamstringsViewController.m */,
+				1720A0621EA9E7A3009C2B87 /* HamstringsViewController.xib */,
+				1720A0651EA9E7DC009C2B87 /* DorsiflexorsViewController.h */,
+				1720A0661EA9E7DC009C2B87 /* DorsiflexorsViewController.m */,
+				1720A0671EA9E7DC009C2B87 /* DorsiflexorsViewController.xib */,
+			);
+			name = LegAndFeet;
+			sourceTree = "<group>";
+		};
+		1720A07A1EA9E867009C2B87 /* ArmsAndHands */ = {
+			isa = PBXGroup;
+			children = (
+				1720A06B1EA9E82C009C2B87 /* HandStretchViewController.h */,
+				1720A06C1EA9E82C009C2B87 /* HandStretchViewController.m */,
+				1720A06D1EA9E82C009C2B87 /* HandStretchViewController.xib */,
+				1720A0701EA9E841009C2B87 /* ShoulderStretchViewController.h */,
+				1720A0711EA9E841009C2B87 /* ShoulderStretchViewController.m */,
+				1720A0721EA9E841009C2B87 /* ShoulderStretchViewController.xib */,
+				1720A0751EA9E85D009C2B87 /* ArmStretchViewController.h */,
+				1720A0761EA9E85D009C2B87 /* ArmStretchViewController.m */,
+				1720A0771EA9E85D009C2B87 /* ArmStretchViewController.xib */,
+			);
+			name = ArmsAndHands;
+			sourceTree = "<group>";
+		};
 		17E0BB271EA41032001FC7F3 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,9 +356,11 @@
 				17DE3D471EA95F2300D350A1 /* LegAndFeetViewController.h */,
 				17DE3D481EA95F2300D350A1 /* LegAndFeetViewController.m */,
 				17DE3D491EA95F2300D350A1 /* LegAndFeetViewController.xib */,
+				1720A06A1EA9E7EF009C2B87 /* LegAndFeet */,
 				17DE3D4C1EA9604900D350A1 /* ArmsAndHandsViewController.h */,
 				17DE3D4D1EA9604900D350A1 /* ArmsAndHandsViewController.m */,
 				17DE3D4E1EA9604900D350A1 /* ArmsAndHandsViewController.xib */,
+				1720A07A1EA9E867009C2B87 /* ArmsAndHands */,
 			);
 			name = Stretching;
 			sourceTree = "<group>";
@@ -675,6 +739,7 @@
 				CC73E43F1E842370001131AF /* Lato-BlackItalic.ttf in Resources */,
 				1737A1A01EA897E100C6D71E /* 4BArmAndTrunkStrengthening.m4v in Resources */,
 				CC9604941EA3DE110030D2C7 /* LearnContentTypeTableViewCell.xib in Resources */,
+				1720A06F1EA9E82C009C2B87 /* HandStretchViewController.xib in Resources */,
 				17E0BB441EA41370001FC7F3 /* FunctionalMobilityViewController.xib in Resources */,
 				CC73E4421E842370001131AF /* Lato-Hairline.ttf in Resources */,
 				17DE3D501EA9604900D350A1 /* ArmsAndHandsViewController.xib in Resources */,
@@ -687,12 +752,16 @@
 				17BCB8341EA982830023C880 /* ExercisesHomeViewController.xib in Resources */,
 				CCB7B3FE1E9412510058C32E /* HelpMeSpeakViewController.xib in Resources */,
 				1737A19B1EA897C900C6D71E /* 2AElbowFlexion.m4v in Resources */,
+				1720A05F1EA9E78D009C2B87 /* AdductorsViewController.xib in Resources */,
 				1737A1A11EA897E400C6D71E /* 4CSitToStand.m4v in Resources */,
 				CCB7B3F11E8FF7ED0058C32E /* Lato-Regular.ttf in Resources */,
 				17E0BB3F1EA4127D001FC7F3 /* StretchingViewController.xib in Resources */,
 				CCB7B40A1E9413590058C32E /* LearnViewController.xib in Resources */,
+				1720A0741EA9E841009C2B87 /* ShoulderStretchViewController.xib in Resources */,
 				CCB7B4161E9413820058C32E /* GeneralInfoViewController.xib in Resources */,
 				1737A19E1EA897D700C6D71E /* 3BLegControl2.m4v in Resources */,
+				1720A0791EA9E85D009C2B87 /* ArmStretchViewController.xib in Resources */,
+				1720A0641EA9E7A3009C2B87 /* HamstringsViewController.xib in Resources */,
 				17E0BB211EA40F70001FC7F3 /* ArmsViewController.xib in Resources */,
 				1737A19C1EA897CF00C6D71E /* 2BShoulderFlexion.m4v in Resources */,
 				1737A19A1EA8977300C6D71E /* 1CHipFlexion.m4v in Resources */,
@@ -707,6 +776,7 @@
 				17E0BB261EA40F9A001FC7F3 /* MindExercisesViewController.xib in Resources */,
 				CCB7B3F01E8FF7E90058C32E /* Lato-Light.ttf in Resources */,
 				17E0BB2E1EA41069001FC7F3 /* VideoViewController.xib in Resources */,
+				1720A0691EA9E7DC009C2B87 /* DorsiflexorsViewController.xib in Resources */,
 				CC38386F1E95FCF400001213 /* InformationalViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -741,6 +811,7 @@
 				CC4C10E71E7A272C00515CDC /* Constants.m in Sources */,
 				CC3CB64D1EA11F9E00CA9429 /* LearnContent.m in Sources */,
 				17E0BB201EA40F70001FC7F3 /* ArmsViewController.m in Sources */,
+				1720A06E1EA9E82C009C2B87 /* HandStretchViewController.m in Sources */,
 				17E0BB321EA41129001FC7F3 /* StrengtheningViewController.m in Sources */,
 				17BCB8331EA982830023C880 /* ExercisesHomeViewController.m in Sources */,
 				CCB7B40F1E94136C0058C32E /* RemindersViewController.m in Sources */,
@@ -749,7 +820,10 @@
 				CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */,
 				CC3CB6481EA11EC800CA9429 /* LearnContentViewController.m in Sources */,
 				17E0BB3E1EA4127D001FC7F3 /* StretchingViewController.m in Sources */,
+				1720A0781EA9E85D009C2B87 /* ArmStretchViewController.m in Sources */,
 				CCB7B3FD1E9412510058C32E /* HelpMeSpeakViewController.m in Sources */,
+				1720A0631EA9E7A3009C2B87 /* HamstringsViewController.m in Sources */,
+				1720A0731EA9E841009C2B87 /* ShoulderStretchViewController.m in Sources */,
 				17E0BB431EA41370001FC7F3 /* FunctionalMobilityViewController.m in Sources */,
 				17E0BB2D1EA41069001FC7F3 /* VideoViewController.m in Sources */,
 				CC9604931EA3DE110030D2C7 /* LearnContentTypeTableViewCell.m in Sources */,
@@ -760,6 +834,8 @@
 				17E0BB1B1EA40F5A001FC7F3 /* LegsViewController.m in Sources */,
 				CC4C10B11E7A26DE00515CDC /* main.m in Sources */,
 				17E0BB391EA4125E001FC7F3 /* CoordinationViewController.m in Sources */,
+				1720A05E1EA9E78D009C2B87 /* AdductorsViewController.m in Sources */,
+				1720A0681EA9E7DC009C2B87 /* DorsiflexorsViewController.m in Sources */,
 				CC73E4271E841875001131AF /* EnterViewController.m in Sources */,
 				17DE3D4A1EA95F2300D350A1 /* LegAndFeetViewController.m in Sources */,
 				CC73E4511E86AB1C001131AF /* HomeViewController.m in Sources */,
