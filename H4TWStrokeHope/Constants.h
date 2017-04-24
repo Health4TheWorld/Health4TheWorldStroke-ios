@@ -48,7 +48,7 @@
 #define TOILET_ICON @"ToiletIcon"
 #define HOUSE_ICON @"HouseIcon"
 #define BLOOD_SUGAR_ICON @"BloodSugarIcon"
-#define GRAB_BARS_ILLUSTRATION @"GrabBars.jpg"
+#define GRAB_BARS_ILLUSTRATION @"GrabBars"
 #define WEAK_SIDE_BED @"WeakSideBed"
 #define SLIPPERY_CARPET @"SlipperyCarpetIcon"
 #define BLUE_WATER_ICON @"BlueWater"
