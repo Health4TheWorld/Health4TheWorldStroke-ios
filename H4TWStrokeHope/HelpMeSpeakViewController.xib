@@ -52,6 +52,7 @@
                 </collectionView>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="I'm hungry" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cci-ns-ccH">
                     <rect key="frame" x="16" y="90" width="292" height="29"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
                     <textInputTraits key="textInputTraits"/>
@@ -86,9 +87,9 @@
                 <constraint firstItem="XTe-o9-gI1" firstAttribute="centerY" secondItem="cci-ns-ccH" secondAttribute="centerY" id="6ab-3y-VJA"/>
                 <constraint firstAttribute="trailing" secondItem="vJS-Z3-Z8S" secondAttribute="trailing" constant="20" id="89i-cH-cSY"/>
                 <constraint firstAttribute="trailing" secondItem="cci-ns-ccH" secondAttribute="trailing" constant="67" id="BRW-yG-Uwp"/>
+                <constraint firstItem="cci-ns-ccH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="BZO-88-2cL"/>
                 <constraint firstAttribute="trailing" secondItem="VI5-kp-GI3" secondAttribute="trailing" id="Fn1-fU-hbe"/>
                 <constraint firstItem="0bI-Du-h6x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="26" id="M5h-kg-Wgb"/>
-                <constraint firstItem="cci-ns-ccH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="MdC-ZK-hMG"/>
                 <constraint firstAttribute="bottom" secondItem="vJS-Z3-Z8S" secondAttribute="bottom" id="TbU-y5-cFX"/>
                 <constraint firstItem="vJS-Z3-Z8S" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="YT1-yt-pAb"/>
                 <constraint firstAttribute="trailing" secondItem="0bI-Du-h6x" secondAttribute="trailing" id="c8y-oY-CQS"/>
@@ -96,8 +97,9 @@
                 <constraint firstItem="0bI-Du-h6x" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="135" id="hh3-m7-zrp"/>
                 <constraint firstItem="cci-ns-ccH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="kB0-nV-hDo"/>
                 <constraint firstAttribute="trailing" secondItem="XTe-o9-gI1" secondAttribute="trailing" constant="16" id="kxo-M6-qBu"/>
-                <constraint firstItem="VI5-kp-GI3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qKN-Ev-2Kq"/>
+                <constraint firstItem="VI5-kp-GI3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="x8U-df-ScR"/>
             </constraints>
+            <nil key="simulatedTopBarMetrics"/>
             <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>
     </objects>

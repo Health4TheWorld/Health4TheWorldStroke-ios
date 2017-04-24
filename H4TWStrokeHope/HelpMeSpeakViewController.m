@@ -62,6 +62,11 @@
     [self setUpColors];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.view layoutIfNeeded];
+}
+
 - (void)setUpColors {
     [self.view setBackgroundColor:HFTW_LIGHTEST_GRAY];
     [self.searchButton setTintColor:HFTW_LIGHT_GRAY];
