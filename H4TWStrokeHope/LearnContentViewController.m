@@ -28,7 +28,7 @@
     self.currentY = 0;
     self.alreadyAddedText = NO;
     
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.automaticallyAdjustsScrollViewInsets = YES;
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -54,7 +54,6 @@
     self.title = [self.content.contentTitle uppercaseString];
     [self.navigationController.navigationBar
      setTitleTextAttributes:@{NSForegroundColorAttributeName : self.content.contentBGColor}];
-    self.navigationController.navigationBar.translucent = NO;
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
 }
 

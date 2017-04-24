@@ -62,9 +62,8 @@
     /* Set up nav bar color */
     [self.navigationController.navigationBar
      setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
-    self.navigationController.navigationBar.translucent = NO;
     self.navigationController.navigationBar.barTintColor = HFTW_DARK;
-    
+
     if (self.selectedIndexPath) {
         [self.tableView deselectRowAtIndexPath:self.selectedIndexPath animated:YES];
     }
