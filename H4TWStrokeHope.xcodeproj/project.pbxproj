@@ -99,6 +99,7 @@
 		CCB7B4161E9413820058C32E /* GeneralInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB7B4141E9413820058C32E /* GeneralInfoViewController.xib */; };
 		CCB7B41B1E94139A0058C32E /* SurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB7B4191E94139A0058C32E /* SurveysViewController.m */; };
 		CCB7B41C1E94139A0058C32E /* SurveysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB7B41A1E94139A0058C32E /* SurveysViewController.xib */; };
+		CCCB29E11EAD832D0021959B /* GrabBars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCCB29E01EAD832D0021959B /* GrabBars.jpg */; };
 		CCEF72EB1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEF72E91E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m */; };
 		CCEF72EC1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCEF72EA1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -253,6 +254,7 @@
 		CCB7B4181E94139A0058C32E /* SurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveysViewController.h; sourceTree = "<group>"; };
 		CCB7B4191E94139A0058C32E /* SurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveysViewController.m; sourceTree = "<group>"; };
 		CCB7B41A1E94139A0058C32E /* SurveysViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveysViewController.xib; sourceTree = "<group>"; };
+		CCCB29E01EAD832D0021959B /* GrabBars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GrabBars.jpg; sourceTree = "<group>"; };
 		CCEF72E81E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpMeSpeakCollectionViewCell.h; sourceTree = "<group>"; };
 		CCEF72E91E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpMeSpeakCollectionViewCell.m; sourceTree = "<group>"; };
 		CCEF72EA1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpMeSpeakCollectionViewCell.xib; sourceTree = "<group>"; };

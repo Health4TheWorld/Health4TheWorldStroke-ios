@@ -42,11 +42,13 @@
 #define SHOWER_ICON @"ShowerIcon"
 #define HEART_RATE_ICON @"HeartRateIcon"
 #define BLOOD_PRESSURE_ICON @"BloodPressureIcon"
+#define BLOOD_PRESSURE_ICON_WHITE @"BloodPressureWhiteIcon"
 #define WHITE_HEART_RATE_ICON @"WhiteHeartRateIcon"
 #define DIET_ICON @"DietIcon"
 #define TOILET_ICON @"ToiletIcon"
 #define HOUSE_ICON @"HouseIcon"
 #define BLOOD_SUGAR_ICON @"BloodSugarIcon"
+#define GRAB_BARS_ILLUSTRATION @"GrabBars.jpg"
 // Premnath 
 #define STRONG_ARM_ICON @"StrongArmIcon"
 #define STRETCHING_ICON @"StretchingIcon"
