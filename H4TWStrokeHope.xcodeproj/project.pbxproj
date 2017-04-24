@@ -478,6 +478,7 @@
 		CC73E4311E842354001131AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CCCB29E01EAD832D0021959B /* GrabBars.jpg */,
 				17E0BB271EA41032001FC7F3 /* Videos */,
 				CC73E4321E842369001131AF /* Fonts */,
 				CC73E42A1E841CAC001131AF /* Patagonia.jpg */,
@@ -760,6 +761,7 @@
 				17E0BB3F1EA4127D001FC7F3 /* StretchingViewController.xib in Resources */,
 				CCB7B40A1E9413590058C32E /* LearnViewController.xib in Resources */,
 				1720A0741EA9E841009C2B87 /* ShoulderStretchViewController.xib in Resources */,
+				CCCB29E11EAD832D0021959B /* GrabBars.jpg in Resources */,
 				CCB7B4161E9413820058C32E /* GeneralInfoViewController.xib in Resources */,
 				1737A19E1EA897D700C6D71E /* 3BLegControl2.m4v in Resources */,
 				1720A0791EA9E85D009C2B87 /* ArmStretchViewController.xib in Resources */,
