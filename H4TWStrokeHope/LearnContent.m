@@ -192,6 +192,10 @@
     self.backButtonImageStr = BLUE_BACK_BUTTON;
     self.content = [[NSMutableArray alloc] init];
     
+    UIImageView *water = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 170)];
+    [water setImage:[UIImage imageNamed:BLUE_WATER_ICON]];
+    self.images = @[water];
+    
     [self.content addObject:[self headerWithTitle:@"PROBLEM"]];
     [self.content addObject:[self paragraphWithText:BLADDER_BOWEL_PROBLEM]];
     [self.content addObject:[self headerWithTitle:@"WHAT TO DO"]];
@@ -297,6 +301,12 @@
     self.textColor = [UIColor whiteColor];
     self.backButtonImageStr = BLUE_BACK_BUTTON;
     self.content = [[NSMutableArray alloc] init];
+    
+    UIImageView *weakSideBed = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 300, 200)];
+    [weakSideBed setImage:[UIImage imageNamed:WEAK_SIDE_BED]];
+    UIImageView *slipperyCarpet = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 250, 200)];
+    [slipperyCarpet setImage:[UIImage imageNamed:SLIPPERY_CARPET]];
+    self.images = @[weakSideBed, slipperyCarpet];
     
     [self.content addObject:[self headerWithTitle:@"PROBLEM"]];
     [self.content addObject:[self paragraphWithText:HOME_MOD_PROBLEM]];

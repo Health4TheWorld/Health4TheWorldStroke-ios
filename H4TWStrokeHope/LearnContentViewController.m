@@ -27,6 +27,9 @@
     [super viewDidLoad];
     self.currentY = 0;
     self.alreadyAddedText = NO;
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     UIImage *backBtnImage = [UIImage imageNamed:self.content.backButtonImageStr];
@@ -95,10 +98,11 @@
             imgView.frame = imgViewFrame;
             [self.contentView addSubview:imgView];
             self.currentY += imgViewFrame.size.height;
+            self.currentY += 60;
         }
         
         self.alreadyAddedText = YES;
-        self.currentY += 200;
+        self.currentY += 140;
         self.scrollView.contentSize = CGSizeMake(self.contentView.frame.size.width, self.currentY);
         [self.view addSubview:self.scrollView];
     }
