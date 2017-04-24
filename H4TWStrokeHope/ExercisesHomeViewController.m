@@ -49,6 +49,7 @@
     
     // Set Exercise text
     self.TextArea.text = EXERCISE_PARAGRAPH_ONE;
+    self.TextArea.textColor = HFTW_TEXT_GRAY;
     
     //Set video container and play video on a loop
     VideoViewController *vc = [[VideoViewController alloc] init];
