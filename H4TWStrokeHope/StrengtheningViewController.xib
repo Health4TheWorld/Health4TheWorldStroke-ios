@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StrengtheningViewController">
+            <connections>
+                <outlet property="contentView" destination="sHT-jV-mmz" id="Qd0-wj-Hit"/>
+                <outlet property="scrollView" destination="zLc-I8-Wpb" id="DKZ-ah-6U8"/>
+                <outlet property="view" destination="iN0-l3-epB" id="LtF-NB-1J2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLc-I8-Wpb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHT-jV-mmz" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="sHT-jV-mmz" secondAttribute="trailing" id="3kC-Yp-FPU"/>
+                        <constraint firstItem="sHT-jV-mmz" firstAttribute="top" secondItem="zLc-I8-Wpb" secondAttribute="top" id="A3u-jz-oFc"/>
+                        <constraint firstItem="sHT-jV-mmz" firstAttribute="leading" secondItem="zLc-I8-Wpb" secondAttribute="leading" id="Zqh-hY-iZm"/>
+                        <constraint firstAttribute="bottom" secondItem="sHT-jV-mmz" secondAttribute="bottom" id="bbL-VA-ZvE"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zLc-I8-Wpb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9jd-Vx-KaA"/>
+                <constraint firstItem="sHT-jV-mmz" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="9wB-g0-B4T"/>
+                <constraint firstItem="sHT-jV-mmz" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="TYz-Ra-aoh"/>
+                <constraint firstAttribute="bottom" secondItem="zLc-I8-Wpb" secondAttribute="bottom" id="UK3-vS-8V1"/>
+                <constraint firstAttribute="trailing" secondItem="zLc-I8-Wpb" secondAttribute="trailing" id="h8s-cj-adM"/>
+                <constraint firstItem="zLc-I8-Wpb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lKU-Q8-KJN"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

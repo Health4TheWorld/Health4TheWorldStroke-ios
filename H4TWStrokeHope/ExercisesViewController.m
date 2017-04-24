@@ -6,11 +6,20 @@
 //  Copyright © 2017 Rachel. All rights reserved.
 //
 
+
 #import "ExercisesViewController.h"
 #import "Constants.h"
 #import "Utils.h"
+#import "HomeButton.h"
+
+#import "StrengtheningViewController.h"
+#import "StretchingViewController.h"
+#import "FunctionalMobilityViewController.h"
+#import "MindExercisesViewController.h"
 
 @interface ExercisesViewController ()
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIView *contentView;
 
 @end
 
@@ -28,26 +37,87 @@
     backBtn.frame = CGRectMake(0, 0, 15, 25);
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     self.navigationItem.leftBarButtonItem = backButton;
+    
+    /* Setup the view */
+    [self setUpView];
+}
+
+- (void)setUpView {
+    static int SPACE_BETWEEN_CELLS = 10;
+    float cellWidth = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
+    
+    float startingY = SPACE_BETWEEN_CELLS;
+    
+    HomeButton *strengtheningButton = [[HomeButton alloc] initWithText:@"Strengthening" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
+    [strengtheningButton addImageBottomRight:[UIImage imageNamed:HELP_ME_SPEAK_ICON]];
+    [strengtheningButton addTarget:self action:@selector(strengtheningPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    HomeButton *stretchingButton = [[HomeButton alloc] initWithText:@"Stretching" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
+    [stretchingButton addImageRightCenter:[UIImage imageNamed:EXERCISE_ICON]];
+    [stretchingButton addTarget:self action:@selector(stretchingPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    startingY += cellWidth;
+    startingY += SPACE_BETWEEN_CELLS;
+    
+    HomeButton *functionalMobilityButton = [[HomeButton alloc] initWithText:@"Functional Mobility" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
+    [functionalMobilityButton addImageBottomRight:[UIImage imageNamed:LEARN_ICON]];
+    [functionalMobilityButton addTarget:self action:@selector(functionalMobilityPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    HomeButton *mindExercisesButton = [[HomeButton alloc] initWithText:@"Mind Exercises" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
+    [mindExercisesButton addImageBottomRight:[UIImage imageNamed:REMINDERS_ICON]];
+    [mindExercisesButton addTarget:self action:@selector(mindExercisesPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.contentView addSubview: strengtheningButton];
+    [self.contentView addSubview: stretchingButton];
+    [self.contentView addSubview: functionalMobilityButton];
+    [self.contentView addSubview: mindExercisesButton];
+    
+    
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
+    
 }
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+/* Action listeners for buttons */
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)strengtheningPressed {
+    StrengtheningViewController *vc = [[StrengtheningViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
-*/
+
+- (void)stretchingPressed {
+    StretchingViewController *vc = [[StretchingViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)functionalMobilityPressed {
+    FunctionalMobilityViewController *vc = [[FunctionalMobilityViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)mindExercisesPressed {
+    MindExercisesViewController *vc = [[MindExercisesViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

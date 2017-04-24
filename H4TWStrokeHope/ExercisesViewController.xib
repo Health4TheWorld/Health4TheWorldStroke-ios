@@ -1,12 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExercisesViewController">
             <connections>
+                <outlet property="contentView" destination="jc3-Ve-eZV" id="Pia-Xc-Qrh"/>
+                <outlet property="scrollView" destination="N2b-qo-031" id="qi8-0B-m1q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +20,33 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2b-qo-031">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jc3-Ve-eZV" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="jc3-Ve-eZV" secondAttribute="trailing" id="1CJ-Wu-RCO"/>
+                        <constraint firstItem="jc3-Ve-eZV" firstAttribute="top" secondItem="N2b-qo-031" secondAttribute="top" id="4Xu-5f-Ogp"/>
+                        <constraint firstAttribute="bottom" secondItem="jc3-Ve-eZV" secondAttribute="bottom" id="Cyi-4n-R2I"/>
+                        <constraint firstItem="jc3-Ve-eZV" firstAttribute="leading" secondItem="N2b-qo-031" secondAttribute="leading" id="wJl-W9-E89"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="N2b-qo-031" secondAttribute="trailing" id="Ih8-gA-aRQ"/>
+                <constraint firstItem="N2b-qo-031" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Uto-j7-1ea"/>
+                <constraint firstItem="jc3-Ve-eZV" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="Wva-kH-kyb"/>
+                <constraint firstItem="jc3-Ve-eZV" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="c5T-1T-Mn2"/>
+                <constraint firstItem="N2b-qo-031" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gFX-Gd-Kyw"/>
+                <constraint firstAttribute="bottom" secondItem="N2b-qo-031" secondAttribute="bottom" id="qU0-nO-XXN"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
         </view>
     </objects>
 </document>
