@@ -25,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = self.pageTitle;
+    self.title = [self.pageTitle uppercaseString];
     self.alreadyCreatedView = NO;
     
     /* Back button */

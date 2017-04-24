@@ -62,9 +62,9 @@
 
 - (void)setUpFAQ {
     self.contentTitle = CONTENT_TYPE_FAQ;
-    self.contentBGColor = HFTW_RED;
+    self.contentBGColor = HFTW_DARK;
     self.textColor = [UIColor whiteColor];
-    self.backButtonImageStr = RED_BACK_BUTTON;
+    self.backButtonImageStr = BLUE_BACK_BUTTON;
     self.content = [[NSMutableArray alloc] init];
     
     [self.content addObject:[self headerWithTitle:FAQ_QUESTION_ONE]];
@@ -81,6 +81,10 @@
     self.textColor = [UIColor whiteColor];
     self.backButtonImageStr = RED_BACK_BUTTON;
     self.content = [[NSMutableArray alloc] init];
+    
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    [imgView setImage:[UIImage imageNamed:BLOOD_PRESSURE_ICON_WHITE]];
+    self.images = @[imgView];
     
     /* Problem header */
     [self.content addObject:[self headerWithTitle:@"PROBLEM"]];
@@ -108,6 +112,10 @@
     self.textColor = [UIColor whiteColor];
     self.backButtonImageStr = RED_BACK_BUTTON;
     self.content = [[NSMutableArray alloc] init];
+    
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    [imgView setImage:[UIImage imageNamed:BLOOD_SUGAR_ICON]];
+    self.images = @[imgView];
     
     /* Problem header */
     [self.content addObject:[self headerWithTitle:@"PROBLEM"]];
@@ -178,7 +186,7 @@
 }
 
 - (void)setUpBladderBowel {
-    self.contentTitle = CONTENT_TYPE_EXERCISES;
+    self.contentTitle = CONTENT_TYPE_BLADDER_BOWEL;
     self.contentBGColor = HFTW_DARK;
     self.textColor = [UIColor whiteColor];
     self.backButtonImageStr = BLUE_BACK_BUTTON;
@@ -245,11 +253,15 @@
 }
 
 - (void)setUpShowerBath {
-    self.contentTitle = CONTENT_TYPE_EXERCISES;
+    self.contentTitle = CONTENT_TYPE_SHOWER_BATH;
     self.contentBGColor = HFTW_DARK;
     self.textColor = [UIColor whiteColor];
     self.backButtonImageStr = BLUE_BACK_BUTTON;
     self.content = [[NSMutableArray alloc] init];
+    
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 300, 400)];
+    [imgView setImage:[UIImage imageNamed:GRAB_BARS_ILLUSTRATION]];
+    self.images = @[imgView];
     
     [self.content addObject:[self headerWithTitle:@"PROBLEM"]];
     [self.content addObject:[self paragraphWithText:SHOWER_BATH_PROBLEM]];
@@ -280,7 +292,7 @@
 }
 
 - (void)setUpHomeMod {
-    self.contentTitle = CONTENT_TYPE_EXERCISES;
+    self.contentTitle = CONTENT_TYPE_HOME_MOD;
     self.contentBGColor = HFTW_DARK;
     self.textColor = [UIColor whiteColor];
     self.backButtonImageStr = BLUE_BACK_BUTTON;
