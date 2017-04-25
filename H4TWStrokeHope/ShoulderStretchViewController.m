@@ -36,7 +36,13 @@
 }
 
 - (void)setUpView {
-    self.currentY = 20;
+    self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+    [self.scrollView setBackgroundColor:[UIColor clearColor]];
+    self.scrollView.bounces = NO;
+    self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 20000)];
+    [self.contentView setBackgroundColor:[UIColor clearColor]];
+    [self.scrollView addSubview:self.contentView];
+    self.currentY = 35;
     /* Text view for Instructions */
     [self addMainText: STRETCHING_SHOULDER_INSTRUCTIONS];
     self.currentY += self.height;
@@ -51,6 +57,9 @@
     /* Second image view for Stretching images */
     UIImage *image2 = [UIImage imageNamed: STRETCHING_SHOULDER_STRETCH_2];
     [self addImageView:image2];
+    
+    self.scrollView.contentSize = CGSizeMake(self.contentView.frame.size.width, self.currentY);
+    [self.view addSubview:self.scrollView];
 }
 
 - (void)addMainText:(NSString *)text {

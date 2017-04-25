@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArmStretchViewController">
             <connections>
-                <outlet property="contentView" destination="tO9-1P-LEi" id="lhO-qF-MTn"/>
-                <outlet property="scrollView" destination="JrA-4b-LCp" id="ApL-3o-wtE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,32 +18,7 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JrA-4b-LCp">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tO9-1P-LEi">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </view>
-                    </subviews>
-                    <constraints>
-                        <constraint firstItem="tO9-1P-LEi" firstAttribute="leading" secondItem="JrA-4b-LCp" secondAttribute="leading" id="7wK-fV-iCq"/>
-                        <constraint firstItem="tO9-1P-LEi" firstAttribute="top" secondItem="JrA-4b-LCp" secondAttribute="top" id="PjM-sU-9l9"/>
-                        <constraint firstAttribute="trailing" secondItem="tO9-1P-LEi" secondAttribute="trailing" id="Upn-Ct-SGa"/>
-                        <constraint firstAttribute="bottom" secondItem="tO9-1P-LEi" secondAttribute="bottom" id="k10-I7-wjf"/>
-                    </constraints>
-                </scrollView>
-            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="JrA-4b-LCp" secondAttribute="trailing" id="0FX-hv-hPM"/>
-                <constraint firstItem="tO9-1P-LEi" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="3av-4p-iXA"/>
-                <constraint firstItem="JrA-4b-LCp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JCk-mf-T8n"/>
-                <constraint firstItem="JrA-4b-LCp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Rmf-eN-rDy"/>
-                <constraint firstAttribute="bottom" secondItem="JrA-4b-LCp" secondAttribute="bottom" id="TmA-Cy-8SJ"/>
-                <constraint firstItem="tO9-1P-LEi" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="qbR-vW-xcd"/>
-            </constraints>
         </view>
     </objects>
 </document>
