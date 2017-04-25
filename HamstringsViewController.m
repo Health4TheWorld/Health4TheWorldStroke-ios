@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Knee Stretch";
+    self.title = @"KNEE STRETCH";
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];

@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"Legs";
+    self.title = @"LEGS";
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -47,14 +47,14 @@
     
     float startingY = SPACE_BETWEEN_CELLS;
     
-    HomeButton *a1Button = [[HomeButton alloc] initWithText:@"1A Toe Flexion" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *a1Button = [[HomeButton alloc] initWithText:@"Toe Flexion" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [a1Button addImageFullSize:[UIImage imageNamed:LEGS_1A_TOE]];
     [a1Button addTarget:self action:@selector(a1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *b1Button = [[HomeButton alloc] initWithText:@"1B Knee Flexion" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *b1Button = [[HomeButton alloc] initWithText:@"Knee Flexion" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [b1Button addImageFullSize:[UIImage imageNamed:LEGS_1B_KNEE]];
     [b1Button addTarget:self action:@selector(b1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
@@ -62,7 +62,7 @@
     startingY += SPACE_BETWEEN_CELLS;
     //cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
     
-    HomeButton *c1Button = [[HomeButton alloc] initWithText:@"1C Hip Flexion" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *c1Button = [[HomeButton alloc] initWithText:@"Hip Flexion" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [c1Button addImageFullSize:[UIImage imageNamed:LEGS_1C_HIP]];
     [c1Button addTarget:self action:@selector(c1Pressed) forControlEvents:UIControlEventTouchUpInside];
     

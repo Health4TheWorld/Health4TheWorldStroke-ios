@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"Coordination";
+    self.title = @"COORDINATION";
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -44,14 +44,14 @@
     
     float startingY = SPACE_BETWEEN_CELLS;
     
-    HomeButton *a3Button = [[HomeButton alloc] initWithText:@"3A Coordination" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *a3Button = [[HomeButton alloc] initWithText:@"Coordination" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [a3Button addImageFullSize:[UIImage imageNamed:COORDINATION_3A]];
     [a3Button addTarget:self action:@selector(a3Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *b3Button = [[HomeButton alloc] initWithText:@"3B Coordination" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *b3Button = [[HomeButton alloc] initWithText:@"Coordination" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [b3Button addImageFullSize:[UIImage imageNamed:COORDINATION_3B]];
     [b3Button addTarget:self action:@selector(b3Pressed) forControlEvents:UIControlEventTouchUpInside];
     

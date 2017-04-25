@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"Arms";
+    self.title = @"ARMS";
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -43,14 +43,14 @@
     
     float startingY = SPACE_BETWEEN_CELLS;
     
-    HomeButton *a2Button = [[HomeButton alloc] initWithText:@"2A Arms Elbow" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *a2Button = [[HomeButton alloc] initWithText:@"Arms Elbow" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [a2Button addImageFullSize:[UIImage imageNamed:ARMS_2A_ELBOW]];
     [a2Button addTarget:self action:@selector(a2Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *b2Button = [[HomeButton alloc] initWithText:@"2B Arms Shoulder" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *b2Button = [[HomeButton alloc] initWithText:@"Arms Shoulder" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [b2Button addImageFullSize:[UIImage imageNamed:ARMS_2B_SHOULDER]];
     [b2Button addTarget:self action:@selector(b2Pressed) forControlEvents:UIControlEventTouchUpInside];
     
