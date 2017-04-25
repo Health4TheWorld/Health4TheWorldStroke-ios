@@ -10,8 +10,11 @@
 #import "Constants.h"
 #import "Utils.h"
 #import "HomeButton.h"
+#import "VideoViewController.h"
 
 @interface CoordinationViewController ()
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIView *contentView;
 
 @end
 
@@ -30,11 +33,51 @@
     backBtn.frame = CGRectMake(0, 0, 15, 25);
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     self.navigationItem.leftBarButtonItem = backButton;
+    
+    [self setUpView];
 }
+
+- (void)setUpView {
+    static int SPACE_BETWEEN_CELLS = 10;
+    float cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
+    float cellHeight = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS/2);
+    
+    float startingY = SPACE_BETWEEN_CELLS;
+    
+    HomeButton *a3Button = [[HomeButton alloc] initWithText:@"3A Coordination" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    [a3Button addImageFullSize:[UIImage imageNamed:COORDINATION_3A]];
+    [a3Button addTarget:self action:@selector(a3Pressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    startingY += cellHeight;
+    startingY += SPACE_BETWEEN_CELLS;
+    
+    HomeButton *b3Button = [[HomeButton alloc] initWithText:@"3B Coordination" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    [b3Button addImageFullSize:[UIImage imageNamed:COORDINATION_3B]];
+    [b3Button addTarget:self action:@selector(b3Pressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.contentView addSubview: a3Button];
+    [self.contentView addSubview: b3Button];
+    
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
+}
+
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+- (void)a3Pressed {
+    VideoViewController *videoVC = [[VideoViewController alloc] init];
+    [videoVC setUpVideo: VIDEO_3A_LEG_CONTROL_1];
+    [self.navigationController pushViewController:videoVC animated:YES];
+}
+
+- (void)b3Pressed {
+    VideoViewController *videoVC = [[VideoViewController alloc] init];
+    [videoVC setUpVideo: VIDEO_3B_LEG_CONTROL_2];
+    [self.navigationController pushViewController:videoVC animated:YES];
+}
+
 
 - (void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:NO animated:YES];

@@ -49,22 +49,22 @@
     float startingY = SPACE_BETWEEN_CELLS;
     
     HomeButton *strengtheningButton = [[HomeButton alloc] initWithText:@"Strengthening" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
-    [strengtheningButton addImageBottomRight:[UIImage imageNamed:HELP_ME_SPEAK_ICON]];
+    [strengtheningButton addImageBottomRight:[UIImage imageNamed: STRONG_ARM_ICON]];
     [strengtheningButton addTarget:self action:@selector(strengtheningPressed) forControlEvents:UIControlEventTouchUpInside];
     
     HomeButton *stretchingButton = [[HomeButton alloc] initWithText:@"Stretching" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
-    [stretchingButton addImageRightCenter:[UIImage imageNamed:EXERCISE_ICON]];
+    [stretchingButton addImageRightCenter:[UIImage imageNamed:STRETCHING_ICON]];
     [stretchingButton addTarget:self action:@selector(stretchingPressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellWidth;
     startingY += SPACE_BETWEEN_CELLS;
     
     HomeButton *functionalMobilityButton = [[HomeButton alloc] initWithText:@"Functional Mobility" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
-    [functionalMobilityButton addImageBottomRight:[UIImage imageNamed:LEARN_ICON]];
+    [functionalMobilityButton addImageBottomRight:[UIImage imageNamed:FUNCTIONAL_MOBILITY_ICON]];
     [functionalMobilityButton addTarget:self action:@selector(functionalMobilityPressed) forControlEvents:UIControlEventTouchUpInside];
     
     HomeButton *mindExercisesButton = [[HomeButton alloc] initWithText:@"Mind Exercises" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
-    [mindExercisesButton addImageBottomRight:[UIImage imageNamed:REMINDERS_ICON]];
+    [mindExercisesButton addImageBottomRight:[UIImage imageNamed:MIND_ICON]];
     [mindExercisesButton addTarget:self action:@selector(mindExercisesPressed) forControlEvents:UIControlEventTouchUpInside];
     
     [self.contentView addSubview: strengtheningButton];

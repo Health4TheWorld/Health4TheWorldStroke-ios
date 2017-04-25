@@ -86,4 +86,12 @@
     [self addSubview:imgView];
 }
 
+- (void)addImageFullSize:(UIImage *)image {
+    
+    [self setBackgroundImage:image forState:UIControlStateNormal];
+    self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentFill;
+    self.contentVerticalAlignment = UIControlContentVerticalAlignmentFill;
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+}
+
 @end

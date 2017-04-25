@@ -15,4 +15,6 @@
 
 - (void)setUpVideo: (NSString *) videoName;
 
+- (AVPlayerViewController *)setUpCustomVideo: (NSString *) videoName withFrame: (CGRect *) frame;
+
 @end

@@ -17,4 +17,6 @@
 - (void)addImageRightCenter:(UIImage *)image;
 /* Scales image and adds it to the center of the button. */
 - (void)addImageCentered:(UIImage *)image;
+/* Scales image and adds it to the size of the button. */
+- (void)addImageFullSize:(UIImage *)image;
 @end

@@ -1,0 +1,105 @@
+//
+//  LegAndFeetViewController.m
+//  H4TWStrokeHope
+//
+//  Created by Premnath Ramanathan on 4/20/17.
+//  Copyright © 2017 Rachel. All rights reserved.
+//
+
+#import "LegAndFeetViewController.h"
+#import "Constants.h"
+#import "Utils.h"
+#import "HomeButton.h"
+#import "AdductorsViewController.h"
+#import "HamstringsViewController.h"
+#import "DorsiflexorsViewController.h"
+
+@interface LegAndFeetViewController ()
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIView *contentView;
+
+@end
+
+@implementation LegAndFeetViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = @"Leg & Feet";
+    
+    /* Back button */
+    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
+    [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
+    [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
+    backBtn.frame = CGRectMake(0, 0, 15, 25);
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+    self.navigationItem.leftBarButtonItem = backButton;
+    
+    [self setUpView];
+}
+
+
+- (void)setUpView {
+    static int SPACE_BETWEEN_CELLS = 10;
+    float cellWidth = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
+    float cellHeight = cellWidth;
+    
+    float startingY = SPACE_BETWEEN_CELLS;
+    
+    HomeButton *adductorsButton = [[HomeButton alloc] initWithText:@"Adductors" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    [adductorsButton addImageCentered:[UIImage imageNamed:STRETCHING_LEG_STRETCH_1]];
+    [adductorsButton addTarget:self action:@selector(adductorsPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    HomeButton *hamstringsButton = [[HomeButton alloc] initWithText:@"Hamstrings" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
+    [hamstringsButton addImageCentered:[UIImage imageNamed:STRETCHING_KNEE_STRETCH_1]];
+    [hamstringsButton addTarget:self action:@selector(hamstringsPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    startingY += cellWidth;
+    startingY += SPACE_BETWEEN_CELLS;
+    cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
+    
+    HomeButton *dorsiflexorsButton = [[HomeButton alloc] initWithText:@"Dorsiflexors" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    [dorsiflexorsButton addImageCentered:[UIImage imageNamed:STRETCHING_ANKLE_STRETCH_1]];
+    [dorsiflexorsButton addTarget:self action:@selector(dorsiflexorsPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    [self.contentView addSubview: adductorsButton];
+    [self.contentView addSubview: hamstringsButton];
+    [self.contentView addSubview: dorsiflexorsButton];
+    
+    
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
+}
+
+/* Action listeners for buttons */
+
+- (void)adductorsPressed {
+    AdductorsViewController *vc = [[AdductorsViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)hamstringsPressed {
+    HamstringsViewController *vc = [[HamstringsViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)dorsiflexorsPressed {
+    DorsiflexorsViewController *vc = [[DorsiflexorsViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
+- (void)backPressed {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end
