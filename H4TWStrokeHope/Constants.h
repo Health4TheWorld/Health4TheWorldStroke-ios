@@ -101,7 +101,7 @@
 #define VIDEO_5B_MALE_DOC @"5BMaleDocWaving.m4v"
 
 /* EXERCISE CONTENT */
-#define EXERCISE_PARAGRAPH_ONE @"Please repeat the exercises 10 times, once everyday with assistance from family caregiver if needed. Consult your medical provider before starting the exercise program"
+#define EXERCISE_PARAGRAPH_ONE @"Please repeat the exercises 10 times a day with assistance from family caregiver if needed. Consult your medical provider before starting the exercise program."
 #define STRETCHING_INSTRUCTIONS @"Do the stretches 3 times and hold for 30 seconds.Stretch to a point of slight discomfort and hold. Reduce stretch if painful.Stop if it causes pain.If you are a patient, do these under supervision of a trained health professional first time to get right training for you and your family member and to prevent injuries."
 #define STRETCHING_ADDUCTORS_INSTRUCTIONS @"You can do this exercise lying down or sitting in a stable chair. Lying on your back, slide the affected leg out to the side for 30 seconds and back in. Repeat 3 times"
 #define STRETCHING_HAMSTRINGS_INSTRUCTIONS @"You can do this exercise lying down or sitting in a stable chair. Lie down on your back with your knees bent and straighten the knee upwards towards the sky for 30 seconds."

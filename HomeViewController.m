@@ -11,7 +11,7 @@
 #import "HomeButton.h"
 
 #import "HelpMeSpeakViewController.h"
-#import "ExercisesHomeViewController.h"
+#import "ExercisesViewController.h"
 #import "LearnViewController.h"
 #import "RemindersViewController.h"
 #import "GeneralInfoViewController.h"
@@ -106,7 +106,7 @@
 }
 
 - (void)exercisePressed {
-    ExercisesHomeViewController *vc = [[ExercisesHomeViewController alloc] init];
+    ExercisesViewController *vc = [[ExercisesViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
