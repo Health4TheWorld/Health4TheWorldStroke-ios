@@ -37,7 +37,13 @@
 }
 
 - (void)setUpView {
-    
+    self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+    [self.scrollView setBackgroundColor:[UIColor clearColor]];
+    self.scrollView.bounces = NO;
+    self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 20000)];
+    [self.contentView setBackgroundColor:[UIColor clearColor]];
+    [self.scrollView addSubview:self.contentView];
+    self.currentY = 35;
     /* Text view for Instructions */
     [self addMainText: STRETCHING_DORSIFLEXORS_INSTRUCTIONS];
     self.currentY += self.height;
@@ -52,21 +58,23 @@
     /* Second image view for Stretching images */
     UIImage *image2 = [UIImage imageNamed: STRETCHING_ANKLE_STRETCH_2];
     [self addImageView:image2];
+    
+    self.scrollView.contentSize = CGSizeMake(self.contentView.frame.size.width, self.currentY);
+    [self.view addSubview:self.scrollView];
 }
 
 - (void)addMainText:(NSString *)text {
-    
+    static int MARGIN = 16;
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     self.height = (screenWidth / 3);
-    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0, self.currentY, screenWidth, self.height)];
+    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(MARGIN, self.currentY, screenWidth - (2 * MARGIN), self.height)];
     textView.font = [UIFont fontWithName:@"Lato-regular" size:16.0];
     textView.textAlignment = NSTextAlignmentLeft;
     textView.textColor = HFTW_TEXT_GRAY;
     textView.text = text;
     [textView intrinsicContentSize];
-    
+    self.currentY += textView.frame.size.height;
     [self.contentView addSubview:textView];
-    
 }
 
 - (void)addImageView:(UIImage *)image {

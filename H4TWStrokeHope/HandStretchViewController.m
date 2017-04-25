@@ -37,7 +37,7 @@
 }
 
 - (void)setUpView {
-    
+    self.currentY = 20;
     /* Text view for Instructions */
     [self addMainText: STRETCHING_HAND_INSTRUCTIONS];
     self.currentY += self.height;
@@ -55,18 +55,17 @@
 }
 
 - (void)addMainText:(NSString *)text {
-    
+    static int MARGIN = 16;
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
-    self.height = (screenWidth / 2);
-    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0, self.currentY, screenWidth, self.height)];
+    self.height = (screenWidth / 3);
+    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(MARGIN, self.currentY, screenWidth - (2 * MARGIN), self.height)];
     textView.font = [UIFont fontWithName:@"Lato-regular" size:16.0];
     textView.textAlignment = NSTextAlignmentLeft;
     textView.textColor = HFTW_TEXT_GRAY;
     textView.text = text;
     [textView intrinsicContentSize];
-    
+    self.currentY += textView.frame.size.height;
     [self.contentView addSubview:textView];
-    
 }
 
 - (void)addImageView:(UIImage *)image {

@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HamstringsViewController">
             <connections>
-                <outlet property="contentView" destination="tKv-8b-j5f" id="bCI-5U-Ji8"/>
-                <outlet property="scrollView" destination="Ccg-Dm-mMs" id="YrY-v7-xaS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,32 +18,7 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ccg-Dm-mMs">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKv-8b-j5f">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </view>
-                    </subviews>
-                    <constraints>
-                        <constraint firstAttribute="bottom" secondItem="tKv-8b-j5f" secondAttribute="bottom" id="O1t-j5-6k1"/>
-                        <constraint firstItem="tKv-8b-j5f" firstAttribute="leading" secondItem="Ccg-Dm-mMs" secondAttribute="leading" id="R6L-Ml-bPg"/>
-                        <constraint firstItem="tKv-8b-j5f" firstAttribute="top" secondItem="Ccg-Dm-mMs" secondAttribute="top" id="WHZ-y9-QlD"/>
-                        <constraint firstAttribute="trailing" secondItem="tKv-8b-j5f" secondAttribute="trailing" id="yQR-qd-Acc"/>
-                    </constraints>
-                </scrollView>
-            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="tKv-8b-j5f" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="9OR-Lc-zPr"/>
-                <constraint firstItem="tKv-8b-j5f" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="b8f-C3-3TR"/>
-                <constraint firstItem="Ccg-Dm-mMs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bR6-JD-sc9"/>
-                <constraint firstItem="Ccg-Dm-mMs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hO3-xM-W6E"/>
-                <constraint firstAttribute="trailing" secondItem="Ccg-Dm-mMs" secondAttribute="trailing" id="lnt-HC-vuF"/>
-                <constraint firstAttribute="bottom" secondItem="Ccg-Dm-mMs" secondAttribute="bottom" id="xp3-1h-DHy"/>
-            </constraints>
         </view>
     </objects>
 </document>
