@@ -44,7 +44,7 @@
     float startingY = SPACE_BETWEEN_CELLS;
     
     HomeButton *legAndFeetButton = [[HomeButton alloc] initWithText:@"Leg & Feet" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
-    [legAndFeetButton addImageBottomRight:[UIImage imageNamed: STRONG_LEG_ICON]];
+    [legAndFeetButton addImageTopRight:[UIImage imageNamed: STRONG_LEG_ICON]];
     [legAndFeetButton addTarget:self action:@selector(legAndFeetPressed) forControlEvents:UIControlEventTouchUpInside];
     
     HomeButton *armsAndHandsButton = [[HomeButton alloc] initWithText:@"Arms & Hands" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];

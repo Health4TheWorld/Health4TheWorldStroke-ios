@@ -87,7 +87,7 @@
         [strengtheningButton addTarget:self action:@selector(strengtheningPressed) forControlEvents:UIControlEventTouchUpInside];
         
         HomeButton *stretchingButton = [[HomeButton alloc] initWithText:@"Stretching" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), self.currentY, cellWidth, cellWidth)];
-        [stretchingButton addImageRightCenter:[UIImage imageNamed:STRETCHING_ICON]];
+        [stretchingButton addImageCentered:[UIImage imageNamed:STRETCHING_ICON]];
         [stretchingButton addTarget:self action:@selector(stretchingPressed) forControlEvents:UIControlEventTouchUpInside];
         
         self.currentY += cellWidth;

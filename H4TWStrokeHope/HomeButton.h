@@ -19,4 +19,9 @@
 - (void)addImageCentered:(UIImage *)image;
 /* Scales image and adds it to the size of the button. */
 - (void)addImageFullSize:(UIImage *)image;
+/* Scales image and adds it to the top right of the button */
+- (void)addImageTopRight:(UIImage *)image;
+
+/* Temp */
+- (void)addCoordinationImage:(UIImage *)image;
 @end
