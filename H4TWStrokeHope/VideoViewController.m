@@ -11,12 +11,13 @@
 @interface VideoViewController ()
 @property (nonatomic,retain) AVPlayer *player;
 @property (nonatomic,retain) AVPlayerViewController *controller;
+@property (nonatomic,retain) AVQueuePlayer *queue;
 @end
 
 @implementation VideoViewController
 @synthesize player;
 @synthesize controller;
-AVQueuePlayer *queue;
+@synthesize queue;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,9 +29,15 @@ AVQueuePlayer *queue;
     
     // Set URL to the video
     NSURL *url = [[NSBundle mainBundle] URLForResource:videoName withExtension:nil];
-
-    // Create an AVPlayer
-    self.player = [AVPlayer playerWithURL:url];
+    
+    // Create an AVPlayer Item
+    AVPlayerItem *video = [[AVPlayerItem alloc] initWithURL:url];
+    
+    //Create a AVplayer Queue
+    self.queue = [[AVQueuePlayer alloc] init];
+    [self.queue insertItem:video afterItem:nil];
+    
+    self.player = self.queue;
     
     // create a player view controller
     self.controller = [[AVPlayerViewController alloc] init];
@@ -38,15 +45,18 @@ AVQueuePlayer *queue;
     self.controller.player = self.player;
     self.controller.showsPlaybackControls = YES;
     self.player.closedCaptionDisplayEnabled = NO;
-    [self.player pause];
     [self.player play];
     
     [self addChildViewController:self.controller];
     [self.view addSubview:self.controller.view];
     self.controller.view.frame = self.view.frame;
-    self.player.actionAtItemEnd = AVPlayerActionAtItemEndPause;
-    [self.player addObserver:self forKeyPath:@"rate" options:0 context:0];
-
+    
+    // PLay video on a loop
+    [[NSNotificationCenter defaultCenter] addObserverForName:AVPlayerItemDidPlayToEndTimeNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
+        AVPlayerItem *video = [[AVPlayerItem alloc] initWithURL:url];
+        [self.queue insertItem:video afterItem:nil];
+        [self.player play];
+    }];
 }
 
 - (AVPlayerViewController *)setUpCustomVideo: (NSString *) videoName withFrame: (CGRect *) frame{
@@ -58,25 +68,23 @@ AVQueuePlayer *queue;
     AVPlayerItem *video = [[AVPlayerItem alloc] initWithURL:url];
     
     //Create a AVplayer Queue
-    queue = [[AVQueuePlayer alloc] init];
-    [queue insertItem:video afterItem:nil];
+    self.queue = [[AVQueuePlayer alloc] init];
+    [self.queue insertItem:video afterItem:nil];
     
-    self.player = queue;
+    self.player = self.queue;
     
     // create a player view controller
     self.controller = [[AVPlayerViewController alloc] init];
     
-    //self.view.frame = CGRectMake(10,150,360,180);
     self.controller.player = self.player;
-    self.controller.showsPlaybackControls = YES;
+    self.controller.showsPlaybackControls = NO;
     self.player.closedCaptionDisplayEnabled = NO;
     [self.player play];
     
     // PLay video on a loop
-    //self.player.actionAtItemEnd =  AVPlayerActionAtItemEndNone;
     [[NSNotificationCenter defaultCenter] addObserverForName:AVPlayerItemDidPlayToEndTimeNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
         AVPlayerItem *video = [[AVPlayerItem alloc] initWithURL:url];
-        [queue insertItem:video afterItem:nil];
+        [self.queue insertItem:video afterItem:nil];
         [self.player play];
     }];
      
@@ -84,22 +92,10 @@ AVQueuePlayer *queue;
     
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    if (context == 0) {
-        if(player.rate==0.0) //stopped
-            [self stopped];
-    }
-
-}
-
-
--(void)stopped {
-    [self.player removeObserver:self forKeyPath:@"rate"];
-}
-
 
 -(void) viewWillDisappear:(BOOL)animated{
     [self.player pause];
+    [self.queue removeAllItems];
     self.player = nil;
 }
 

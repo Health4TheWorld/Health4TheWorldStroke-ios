@@ -19,7 +19,7 @@
 @interface StrengtheningViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIView *contentView;
-
+@property (strong, nonatomic) UILabel *welcomeMessage;
 @end
 
 @implementation StrengtheningViewController
@@ -65,11 +65,28 @@
     [coordinationButton addCoordinationImage:[UIImage imageNamed:BALANCE_ICON]];
     [coordinationButton addTarget:self action:@selector(coordinationPressed) forControlEvents:UIControlEventTouchUpInside];
     
+    startingY += cellHeight;
+    startingY += SPACE_BETWEEN_CELLS;
+    
+    /* Text view */
+    
+    self.welcomeMessage = [[UILabel alloc] initWithFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, 0)];
+    self.welcomeMessage.text = EXERCISE_PARAGRAPH_ONE;
+    self.welcomeMessage.font = [UIFont fontWithName:@"Lato-regular" size:16.0];
+    self.welcomeMessage.textColor = HFTW_TEXT_GRAY;
+    self.welcomeMessage.numberOfLines = 0;
+    self.welcomeMessage.textAlignment = NSTextAlignmentLeft;
+    [self.welcomeMessage sizeToFit];
+    CGRect welcomeMessageFrame = self.welcomeMessage.frame;
+    welcomeMessageFrame.size.height = [Utils heightOfString:self.welcomeMessage.text containedToWidth:welcomeMessageFrame.size.width withFont:self.welcomeMessage.font];
+    self.welcomeMessage.frame = welcomeMessageFrame;
+    startingY += (welcomeMessageFrame.size.height + 20);
+    
     
     [self.contentView addSubview: legsButton];
     [self.contentView addSubview: armsButton];
     [self.contentView addSubview: coordinationButton];
-    
+    [self.contentView addSubview:self.welcomeMessage];
     
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
     
