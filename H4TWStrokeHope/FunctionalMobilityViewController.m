@@ -45,14 +45,14 @@
     float startingY = SPACE_BETWEEN_CELLS;
     
     HomeButton *a4Button = [[HomeButton alloc] initWithText:@"Bridge Hip Lift" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [a4Button addImageFullSize:[UIImage imageNamed:FUNCTIONALMOBILITY_4A]];
+    [a4Button addRoundImageCentered:[UIImage imageNamed:FUNCTIONALMOBILITY_4A]];
     [a4Button addTarget:self action:@selector(a4Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     
     HomeButton *b4Button = [[HomeButton alloc] initWithText:@"Arm Trunk Strengthening" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [b4Button addImageFullSize:[UIImage imageNamed:FUNCTIONALMOBILITY_4B]];
+    [b4Button addRoundImageCentered:[UIImage imageNamed:FUNCTIONALMOBILITY_4B]];
     [b4Button addTarget:self action:@selector(b4Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
@@ -60,7 +60,7 @@
     //cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
     
     HomeButton *c4Button = [[HomeButton alloc] initWithText:@"Sit To Stand" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [c4Button addImageFullSize:[UIImage imageNamed:FUNCTIONALMOBILITY_4C]];
+    [c4Button addRoundImageCentered:[UIImage imageNamed:FUNCTIONALMOBILITY_4C]];
     [c4Button addTarget:self action:@selector(c4Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
