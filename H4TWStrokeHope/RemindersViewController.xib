@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RemindersViewController">
             <connections>
+                <outlet property="addReminderButton" destination="A3X-mC-VAp" id="jvT-jk-hnm"/>
+                <outlet property="tableView" destination="3t9-vC-6Kc" id="v1N-2q-Bry"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +25,40 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3t9-vC-6Kc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="580"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="CMd-eQ-gHr"/>
+                        <outlet property="delegate" destination="-1" id="1rp-Dw-K12"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3X-mC-VAp">
+                    <rect key="frame" x="16" y="596" width="343" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="5CC-bX-J3G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="24"/>
+                    <state key="normal" title="ADD REMINDER">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addReminderPressed:" destination="-1" eventType="touchUpInside" id="Fmj-et-fX1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.90970492362976074" green="0.90986090898513794" blue="0.9096950888633728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="A3X-mC-VAp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="0Dw-Ig-tPf"/>
+                <constraint firstItem="3t9-vC-6Kc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Kyz-NW-aQs"/>
+                <constraint firstItem="3t9-vC-6Kc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NvO-Fh-TGC"/>
+                <constraint firstAttribute="trailing" secondItem="A3X-mC-VAp" secondAttribute="trailing" constant="16" id="P8e-XD-eD1"/>
+                <constraint firstAttribute="trailing" secondItem="3t9-vC-6Kc" secondAttribute="trailing" id="WhA-2k-7uf"/>
+                <constraint firstItem="A3X-mC-VAp" firstAttribute="top" secondItem="3t9-vC-6Kc" secondAttribute="bottom" constant="16" id="uTX-se-enR"/>
+                <constraint firstAttribute="bottom" secondItem="A3X-mC-VAp" secondAttribute="bottom" constant="16" id="w93-il-i4a"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
 </document>

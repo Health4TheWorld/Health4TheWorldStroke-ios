@@ -14,9 +14,10 @@
 #define HFTW_PRIMARY [UIColor colorWithRed:0.40 green:0.80 blue:0.83 alpha:1.0] //#66CCD3, lighter turquoise
 #define HFTW_DARK [UIColor colorWithRed:0.24 green:0.65 blue:0.68 alpha:1.0] //#3CA7AE, darker turquoise
 #define HFTW_RED [UIColor colorWithRed:0.91 green:0.20 blue:0.29 alpha:1.0] //#E8324A red
-#define HFTW_TEXT_GRAY [UIColor colorWithRed:0.29 green:0.29 blue:0.29 alpha:1.0] // 4A4A4A
-#define HFTW_LIGHT_GRAY [UIColor colorWithRed:0.78 green:0.78 blue:0.78 alpha:1.0] // C6C6C6
-#define HFTW_LIGHTEST_GRAY [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1.0] // F1F1F1
+#define HFTW_TEXT_GRAY [UIColor colorWithRed:0.29 green:0.29 blue:0.29 alpha:1.0] // #4A4A4A
+#define HFTW_LIGHT_GRAY [UIColor colorWithRed:0.78 green:0.78 blue:0.78 alpha:1.0] // #C6C6C6
+#define HFTW_LIGHTEST_GRAY [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1.0] // #F1F1F1
+#define HFTW_MAGENTA [UIColor colorWithRed:0.85 green:0.18 blue:0.31 alpha:1.0] // #D82F50
 
 /* IMAGES */
 #define WHITE_BACK_BUTTON @"WhiteBackArrow"
@@ -52,6 +53,9 @@
 #define WEAK_SIDE_BED @"WeakSideBed"
 #define SLIPPERY_CARPET @"SlipperyCarpetIcon"
 #define BLUE_WATER_ICON @"BlueWater"
+#define INFO_BUTTON @"RedInfoButton"
+#define REMINDER_CHECK_SELECTED @"ReminderCheckSelected"
+#define REMINDER_CHECK_UNSELECTED @"ReminderCheckUnselected"
 // Premnath 
 #define STRONG_ARM_ICON @"StrongArmIcon"
 #define STRETCHING_ICON @"StretchingIcon"

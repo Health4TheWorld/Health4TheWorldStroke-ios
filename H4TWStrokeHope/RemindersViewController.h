@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RemindersViewController : UIViewController
+@interface RemindersViewController : UIViewController <UIPopoverPresentationControllerDelegate>
 
 @end

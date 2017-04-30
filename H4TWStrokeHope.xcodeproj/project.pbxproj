@@ -52,6 +52,15 @@
 		17E0BB431EA41370001FC7F3 /* FunctionalMobilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E0BB411EA41370001FC7F3 /* FunctionalMobilityViewController.m */; };
 		17E0BB441EA41370001FC7F3 /* FunctionalMobilityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB421EA41370001FC7F3 /* FunctionalMobilityViewController.xib */; };
 		17E0BB461EA4139E001FC7F3 /* ExercisesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB451EA4139E001FC7F3 /* ExercisesViewController.xib */; };
+		CC11D11B1EB3B8DE0063E72A /* ReminderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1191EB3B8DE0063E72A /* ReminderTableViewCell.m */; };
+		CC11D11C1EB3B8DE0063E72A /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D11A1EB3B8DE0063E72A /* ReminderTableViewCell.xib */; };
+		CC11D11F1EB51AB40063E72A /* Reminder.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D11E1EB51AB40063E72A /* Reminder.m */; };
+		CC11D1291EB650150063E72A /* AddReminderTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1271EB650150063E72A /* AddReminderTitleViewController.m */; };
+		CC11D12A1EB650150063E72A /* AddReminderTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D1281EB650150063E72A /* AddReminderTitleViewController.xib */; };
+		CC11D12E1EB650320063E72A /* AddReminderFrequencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D12C1EB650320063E72A /* AddReminderFrequencyViewController.m */; };
+		CC11D12F1EB650320063E72A /* AddReminderFrequencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D12D1EB650320063E72A /* AddReminderFrequencyViewController.xib */; };
+		CC11D1331EB6504E0063E72A /* AddReminderTimesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1311EB6504E0063E72A /* AddReminderTimesViewController.m */; };
+		CC11D1341EB6504E0063E72A /* AddReminderTimesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D1321EB6504E0063E72A /* AddReminderTimesViewController.xib */; };
 		CC38386E1E95FCF400001213 /* InformationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC38386C1E95FCF400001213 /* InformationalViewController.m */; };
 		CC38386F1E95FCF400001213 /* InformationalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC38386D1E95FCF400001213 /* InformationalViewController.xib */; };
 		CC3CB6481EA11EC800CA9429 /* LearnContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3CB6461EA11EC800CA9429 /* LearnContentViewController.m */; };
@@ -180,6 +189,20 @@
 		17E0BB411EA41370001FC7F3 /* FunctionalMobilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionalMobilityViewController.m; sourceTree = "<group>"; };
 		17E0BB421EA41370001FC7F3 /* FunctionalMobilityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunctionalMobilityViewController.xib; sourceTree = "<group>"; };
 		17E0BB451EA4139E001FC7F3 /* ExercisesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExercisesViewController.xib; sourceTree = "<group>"; };
+		CC11D1181EB3B8DE0063E72A /* ReminderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderTableViewCell.h; sourceTree = "<group>"; };
+		CC11D1191EB3B8DE0063E72A /* ReminderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderTableViewCell.m; sourceTree = "<group>"; };
+		CC11D11A1EB3B8DE0063E72A /* ReminderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderTableViewCell.xib; sourceTree = "<group>"; };
+		CC11D11D1EB51AB40063E72A /* Reminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reminder.h; sourceTree = "<group>"; };
+		CC11D11E1EB51AB40063E72A /* Reminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reminder.m; sourceTree = "<group>"; };
+		CC11D1261EB650150063E72A /* AddReminderTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddReminderTitleViewController.h; sourceTree = "<group>"; };
+		CC11D1271EB650150063E72A /* AddReminderTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReminderTitleViewController.m; sourceTree = "<group>"; };
+		CC11D1281EB650150063E72A /* AddReminderTitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddReminderTitleViewController.xib; sourceTree = "<group>"; };
+		CC11D12B1EB650320063E72A /* AddReminderFrequencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddReminderFrequencyViewController.h; sourceTree = "<group>"; };
+		CC11D12C1EB650320063E72A /* AddReminderFrequencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReminderFrequencyViewController.m; sourceTree = "<group>"; };
+		CC11D12D1EB650320063E72A /* AddReminderFrequencyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddReminderFrequencyViewController.xib; sourceTree = "<group>"; };
+		CC11D1301EB6504E0063E72A /* AddReminderTimesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddReminderTimesViewController.h; sourceTree = "<group>"; };
+		CC11D1311EB6504E0063E72A /* AddReminderTimesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReminderTimesViewController.m; sourceTree = "<group>"; };
+		CC11D1321EB6504E0063E72A /* AddReminderTimesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddReminderTimesViewController.xib; sourceTree = "<group>"; };
 		CC38386B1E95FCF400001213 /* InformationalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationalViewController.h; sourceTree = "<group>"; };
 		CC38386C1E95FCF400001213 /* InformationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationalViewController.m; sourceTree = "<group>"; };
 		CC38386D1E95FCF400001213 /* InformationalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationalViewController.xib; sourceTree = "<group>"; };
@@ -374,11 +397,29 @@
 			name = "Functional Mobility";
 			sourceTree = "<group>";
 		};
+		CC11D1251EB64FD00063E72A /* Add Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				CC11D1261EB650150063E72A /* AddReminderTitleViewController.h */,
+				CC11D1271EB650150063E72A /* AddReminderTitleViewController.m */,
+				CC11D1281EB650150063E72A /* AddReminderTitleViewController.xib */,
+				CC11D12B1EB650320063E72A /* AddReminderFrequencyViewController.h */,
+				CC11D12C1EB650320063E72A /* AddReminderFrequencyViewController.m */,
+				CC11D12D1EB650320063E72A /* AddReminderFrequencyViewController.xib */,
+				CC11D1301EB6504E0063E72A /* AddReminderTimesViewController.h */,
+				CC11D1311EB6504E0063E72A /* AddReminderTimesViewController.m */,
+				CC11D1321EB6504E0063E72A /* AddReminderTimesViewController.xib */,
+			);
+			name = "Add Reminder";
+			sourceTree = "<group>";
+		};
 		CC3CB64A1EA11F8A00CA9429 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
 				CC3CB64B1EA11F9E00CA9429 /* LearnContent.h */,
 				CC3CB64C1EA11F9E00CA9429 /* LearnContent.m */,
+				CC11D11D1EB51AB40063E72A /* Reminder.h */,
+				CC11D11E1EB51AB40063E72A /* Reminder.m */,
 			);
 			name = "Data Models";
 			sourceTree = "<group>";
@@ -578,9 +619,13 @@
 		CCB7B40B1E94135F0058C32E /* Reminders */ = {
 			isa = PBXGroup;
 			children = (
+				CC11D1251EB64FD00063E72A /* Add Reminder */,
 				CCB7B40C1E94136C0058C32E /* RemindersViewController.h */,
 				CCB7B40D1E94136C0058C32E /* RemindersViewController.m */,
 				CCB7B40E1E94136C0058C32E /* RemindersViewController.xib */,
+				CC11D1181EB3B8DE0063E72A /* ReminderTableViewCell.h */,
+				CC11D1191EB3B8DE0063E72A /* ReminderTableViewCell.m */,
+				CC11D11A1EB3B8DE0063E72A /* ReminderTableViewCell.xib */,
 			);
 			name = Reminders;
 			sourceTree = "<group>";
@@ -716,6 +761,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC73E4481E842370001131AF /* OFL.txt in Resources */,
+				CC11D12F1EB650320063E72A /* AddReminderFrequencyViewController.xib in Resources */,
 				CC73E4401E842370001131AF /* Lato-Bold.ttf in Resources */,
 				CC73E42B1E841CAC001131AF /* Patagonia.jpg in Resources */,
 				CC73E4431E842370001131AF /* Lato-HairlineItalic.ttf in Resources */,
@@ -744,6 +790,7 @@
 				CCB7B3FE1E9412510058C32E /* HelpMeSpeakViewController.xib in Resources */,
 				1737A19B1EA897C900C6D71E /* 2AElbowFlexion.m4v in Resources */,
 				1720A05F1EA9E78D009C2B87 /* AdductorsViewController.xib in Resources */,
+				CC11D11C1EB3B8DE0063E72A /* ReminderTableViewCell.xib in Resources */,
 				1737A1A11EA897E400C6D71E /* 4CSitToStand.m4v in Resources */,
 				CCB7B3F11E8FF7ED0058C32E /* Lato-Regular.ttf in Resources */,
 				17E0BB3F1EA4127D001FC7F3 /* StretchingViewController.xib in Resources */,
@@ -755,6 +802,7 @@
 				1720A0641EA9E7A3009C2B87 /* HamstringsViewController.xib in Resources */,
 				17E0BB211EA40F70001FC7F3 /* ArmsViewController.xib in Resources */,
 				1737A19C1EA897CF00C6D71E /* 2BShoulderFlexion.m4v in Resources */,
+				CC11D12A1EB650150063E72A /* AddReminderTitleViewController.xib in Resources */,
 				1737A19A1EA8977300C6D71E /* 1CHipFlexion.m4v in Resources */,
 				1737A19F1EA897DB00C6D71E /* 4ABridgeHipLift.m4v in Resources */,
 				17E0BB3A1EA4125E001FC7F3 /* CoordinationViewController.xib in Resources */,
@@ -762,6 +810,7 @@
 				CCB7B41C1E94139A0058C32E /* SurveysViewController.xib in Resources */,
 				1788309C1EA8985200690787 /* 5BMaleDocWaving.m4v in Resources */,
 				1737A1A21EA897E800C6D71E /* 5AFemaleDocWaving.m4v in Resources */,
+				CC11D1341EB6504E0063E72A /* AddReminderTimesViewController.xib in Resources */,
 				CC73E4461E842370001131AF /* Lato-LightItalic.ttf in Resources */,
 				CC73E4521E86AB1C001131AF /* HomeViewController.xib in Resources */,
 				17E0BB261EA40F9A001FC7F3 /* MindExercisesViewController.xib in Resources */,
@@ -818,17 +867,22 @@
 				17E0BB2D1EA41069001FC7F3 /* VideoViewController.m in Sources */,
 				CC9604931EA3DE110030D2C7 /* LearnContentTypeTableViewCell.m in Sources */,
 				CC4C10BD1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld in Sources */,
+				CC11D11F1EB51AB40063E72A /* Reminder.m in Sources */,
 				CC38386E1E95FCF400001213 /* InformationalViewController.m in Sources */,
 				CCB7B41B1E94139A0058C32E /* SurveysViewController.m in Sources */,
 				CCAE42A81E7C2F33006F490E /* Utils.m in Sources */,
+				CC11D1291EB650150063E72A /* AddReminderTitleViewController.m in Sources */,
 				17E0BB1B1EA40F5A001FC7F3 /* LegsViewController.m in Sources */,
+				CC11D1331EB6504E0063E72A /* AddReminderTimesViewController.m in Sources */,
 				CC4C10B11E7A26DE00515CDC /* main.m in Sources */,
 				17E0BB391EA4125E001FC7F3 /* CoordinationViewController.m in Sources */,
 				1720A05E1EA9E78D009C2B87 /* AdductorsViewController.m in Sources */,
+				CC11D12E1EB650320063E72A /* AddReminderFrequencyViewController.m in Sources */,
 				1720A0681EA9E7DC009C2B87 /* DorsiflexorsViewController.m in Sources */,
 				CC73E4271E841875001131AF /* EnterViewController.m in Sources */,
 				17DE3D4A1EA95F2300D350A1 /* LegAndFeetViewController.m in Sources */,
 				CC73E4511E86AB1C001131AF /* HomeViewController.m in Sources */,
+				CC11D11B1EB3B8DE0063E72A /* ReminderTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="KGk-i7-Jjw" customClass="ReminderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leQ-Ml-pHa">
+                        <rect key="frame" x="18" y="15" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="bib-hs-Jnd"/>
+                            <constraint firstAttribute="width" constant="40" id="kN4-IT-jL6"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="Reminder_check_unselected"/>
+                        <connections>
+                            <action selector="clickedCheck:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1xj-Aw-0fm"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYI-bz-eiL">
+                        <rect key="frame" x="74" y="15" width="229" height="42"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIy-6S-DOj">
+                                <rect key="frame" x="0.0" y="0.0" width="229" height="22"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                                <color key="textColor" red="0.396078431372549" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndL-Pi-g0M">
+                                <rect key="frame" x="0.0" y="25" width="229" height="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <color key="textColor" red="0.84705882352941175" green="0.18431372549019609" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SIy-6S-DOj" secondAttribute="trailing" id="9BX-5D-dYP"/>
+                            <constraint firstAttribute="height" constant="42" id="LBJ-t3-Lj5"/>
+                            <constraint firstAttribute="bottom" secondItem="ndL-Pi-g0M" secondAttribute="bottom" id="SgU-mI-3Rf"/>
+                            <constraint firstItem="SIy-6S-DOj" firstAttribute="leading" secondItem="UYI-bz-eiL" secondAttribute="leading" id="Yo7-EB-d3v"/>
+                            <constraint firstItem="ndL-Pi-g0M" firstAttribute="leading" secondItem="UYI-bz-eiL" secondAttribute="leading" id="dbz-qj-RqW"/>
+                            <constraint firstAttribute="trailing" secondItem="ndL-Pi-g0M" secondAttribute="trailing" id="lkJ-ft-bhl"/>
+                            <constraint firstItem="SIy-6S-DOj" firstAttribute="top" secondItem="UYI-bz-eiL" secondAttribute="top" id="zz9-vQ-XDJ"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zZ-mn-bsr">
+                        <rect key="frame" x="300" y="24" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="lWN-1t-obN"/>
+                            <constraint firstAttribute="height" constant="22" id="oxY-dV-6ay"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="RedInfoButton"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="leQ-Ml-pHa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KfR-qg-xue"/>
+                    <constraint firstItem="UYI-bz-eiL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="66" id="MDo-QE-Ki8"/>
+                    <constraint firstItem="UYI-bz-eiL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Qt6-is-Cqd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="UYI-bz-eiL" secondAttribute="trailing" constant="25" id="VE4-Zn-pra"/>
+                    <constraint firstItem="8zZ-mn-bsr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZUV-td-eUi"/>
+                    <constraint firstItem="leQ-Ml-pHa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="nkb-mt-b1f"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="8zZ-mn-bsr" secondAttribute="trailing" constant="6" id="qfe-ch-LrJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkButton" destination="leQ-Ml-pHa" id="cyc-9y-GVe"/>
+                <outlet property="reminderNameLabel" destination="SIy-6S-DOj" id="Yvj-V2-sEw"/>
+                <outlet property="reminderTimeLabel" destination="ndL-Pi-g0M" id="dUb-cq-jkI"/>
+            </connections>
+            <point key="canvasLocation" x="78" y="68"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="RedInfoButton" width="22" height="22"/>
+        <image name="Reminder_check_unselected" width="42" height="42"/>
+    </resources>
+</document>
