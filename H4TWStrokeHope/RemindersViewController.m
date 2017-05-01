@@ -46,9 +46,58 @@
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
     [self setUpColors];
-
+    
     self.todayReminders = [[NSMutableArray alloc] init];
     self.allReminders = [[NSMutableArray alloc] init];
+
+    [self loadReminders];
+}
+
+/* Load all reminders, and then figure out which ones are today. */
+- (void)loadReminders {
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *comps = [gregorian components:NSCalendarUnitWeekday fromDate:[NSDate date]];
+    long weekday = [comps weekday];
+    [self.todayReminders removeAllObjects];
+    for (Reminder *reminder in self.allReminders) {
+        NSArray *reminderDays = reminder.reminderDays;
+        if (weekday == 1) {
+            /* Sunday */
+            if ([reminderDays containsObject:SUNDAY]) {
+                [self.todayReminders addObject:reminder];
+            }
+        } else if (weekday == 2) {
+            /* Monday */
+            if ([reminderDays containsObject:MONDAY]) {
+                [self.todayReminders addObject:reminder];
+            }
+        } else if (weekday == 3) {
+            /* Tuesday */
+            if ([reminderDays containsObject:TUESDAY]) {
+                [self.todayReminders addObject:reminder];
+            }
+        } else if (weekday == 4) {
+            /* Wednesday */
+            if ([reminderDays containsObject:WEDNESDAY]) {
+                [self.todayReminders addObject:reminder];
+            }
+        } else if (weekday == 5) {
+            /* Thursday */
+            if ([reminderDays containsObject:THURSDAY]) {
+                [self.todayReminders addObject:reminder];
+            }
+        } else if (weekday == 6) {
+            /* Friday */
+            if ([reminderDays containsObject:FRIDAY]) {
+                [self.todayReminders addObject:reminder];
+            }
+        } else if (weekday == 7) {
+            /* Saturday */
+            if ([reminderDays containsObject:SATURDAY]) {
+                [self.todayReminders addObject:reminder];
+            }
+        }
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -70,6 +119,7 @@
     UINavigationController *nav = [[UINavigationController alloc] init];
     AddReminderTitleViewController *vc = [[AddReminderTitleViewController alloc] init];
     vc.remindersVC = self;
+    vc.isEditing = NO;
     [nav pushViewController:vc animated:YES];
     
     nav.modalPresentationStyle = UIModalPresentationPopover;
@@ -161,15 +211,28 @@
     return cell;
 }
 
+
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     self.selectedIndexPath = indexPath;
     Reminder *selectedReminder;
     if (indexPath.section == 0) {
-        selectedReminder = [self.todayReminders objectAtIndex:indexPath.row];
+        if (self.todayReminders.count == 0) {
+            [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+            return;
+        } else {
+            selectedReminder = [self.todayReminders objectAtIndex:indexPath.row];
+        }
     } else if (indexPath.section == 1) {
-        selectedReminder = [self.allReminders objectAtIndex:indexPath.row];
+        if (self.allReminders.count == 0) {
+            [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+            return;
+        } else {
+            selectedReminder = [self.allReminders objectAtIndex:indexPath.row];
+        }
     }
     EditReminderViewController *editVC = [[EditReminderViewController alloc] init];
+    editVC.delegate = self;
     editVC.reminder = selectedReminder;
     [self.navigationController pushViewController:editVC animated:YES];
 }
@@ -249,8 +312,25 @@
 
 #pragma mark - CreateReminderProtocol 
 - (void)createdReminder:(Reminder *)reminder {
-    [self.todayReminders addObject:reminder];
     [self.allReminders addObject:reminder];
+    [self loadReminders];
+    [self.tableView reloadData];
+}
+
+#pragma mark - EditReminderProtocol 
+- (void)savedEditChanges:(Reminder *)reminder {
+    if (self.selectedIndexPath.section == 0) {
+        Reminder *oldReminder = [self.todayReminders objectAtIndex:self.selectedIndexPath.row];
+        for (int i=0; i < self.allReminders.count; i++) {
+            Reminder *reminder = [self.allReminders objectAtIndex:i];
+            if ([reminder isEqual:oldReminder]) {
+                [self.allReminders replaceObjectAtIndex:i withObject:reminder];
+            }
+        }
+    } else if (self.selectedIndexPath.section == 1) {
+        [self.allReminders replaceObjectAtIndex:self.selectedIndexPath.row withObject:reminder];
+    }
+    [self loadReminders];
     [self.tableView reloadData];
 }
 

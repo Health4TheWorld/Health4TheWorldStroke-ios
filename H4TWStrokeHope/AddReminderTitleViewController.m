@@ -25,13 +25,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpColors];
-    self.reminder = [[Reminder alloc] init];
+    
+    if (!self.editing) {
+        self.reminder = [[Reminder alloc] init];
+    }
     
     /* Create tap view so that we can hide keyboard when they tap outside textfield */
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     tap.delegate = self;
     [tap setCancelsTouchesInView:NO];
     [self.view addGestureRecognizer:tap];
+    
+    if (self.isEditing) {
+        [self.nextButton setTitle:@"SAVE" forState:UIControlStateNormal];
+        self.reminderTextField.text = self.reminder.reminderName;
+    } else {
+        [self.nextButton setTitle:@"NEXT" forState:UIControlStateNormal];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -55,15 +65,27 @@
 }
 
 - (IBAction)nextPressed:(id)sender {
-    self.reminder.reminderName = self.reminderTextField.text;
-    AddReminderFrequencyViewController *next = [[AddReminderFrequencyViewController alloc] init];
-    next.reminder = self.reminder;
-    next.remindersVC = self.remindersVC;
-    [self.navigationController pushViewController:next animated:YES];
+    if (self.isEditing) {
+        self.reminder.reminderName = self.reminderTextField.text;
+        if (self.delegate && ([self.delegate respondsToSelector:@selector(editedReminderTitle:)])) {
+            [self.delegate editedReminderTitle:self.reminderTextField.text];
+        }
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        self.reminder.reminderName = self.reminderTextField.text;
+        AddReminderFrequencyViewController *next = [[AddReminderFrequencyViewController alloc] init];
+        next.reminder = self.reminder;
+        next.remindersVC = self.remindersVC;
+        [self.navigationController pushViewController:next animated:YES];
+    }
 }
 
 - (IBAction)closePressed:(id)sender {
-            [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    if (self.isEditing) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 - (IBAction)backPressed:(id)sender {

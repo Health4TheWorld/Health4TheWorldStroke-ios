@@ -31,14 +31,13 @@
     [super viewDidLoad];
     [self setUpColors];
     
-    self.addTimeButton.hidden = YES;
+    self.addTimeButton.hidden = NO;
     
     self.tableView.bounces = NO;
     self.tableView.alwaysBounceVertical = NO;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     self.tableView.allowsMultipleSelectionDuringEditing = NO;
     
-    self.times = [[NSMutableArray alloc] init];
     [self setUpPicker];
     
     /* Create tap view so that we can hide keyboard when they tap outside textfield */
@@ -46,6 +45,16 @@
     tap.delegate = self;
     [tap setCancelsTouchesInView:NO];
     [self.view addGestureRecognizer:tap];
+    
+    if (self.isEditing) {
+        self.times = self.reminder.times;
+        self.backButton.hidden = YES;
+        [self.saveButton setTitle:@"SAVE" forState:UIControlStateNormal];
+    } else {
+        self.times = [[NSMutableArray alloc] init];
+        self.backButton.hidden = NO;
+        [self.saveButton setTitle:@"ADD REMINDER" forState:UIControlStateNormal];
+    }
 }
 
 - (void)setUpPicker {
@@ -55,7 +64,7 @@
     
     UIToolbar *toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
     [toolBar setTintColor:[UIColor grayColor]];
-    UIBarButtonItem *doneBtn=[[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleBordered target:self action:@selector(doneSelecting)];
+    UIBarButtonItem *doneBtn=[[UIBarButtonItem alloc]initWithTitle:@"Add Time" style:UIBarButtonItemStyleBordered target:self action:@selector(doneSelecting)];
     UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     [toolBar setItems:[NSArray arrayWithObjects:space,doneBtn, nil]];
     
@@ -73,7 +82,12 @@
     self.timeTextField.text = dateString;
     self.timeTextField.font = [UIFont fontWithName:@"Avenir Book" size:60.0];
     [self.timeTextField resignFirstResponder];
-    self.addTimeButton.hidden = NO;
+
+    /* Add the time */
+    Time *time = [[Time alloc] initWithString:self.timeTextField.text];
+    [self.times addObject:time];
+    [self.tableView reloadData];
+    self.timeTextField.text = @"";
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -96,7 +110,11 @@
 }
 
 - (IBAction)closePressed:(id)sender {
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    if (self.isEditing) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 - (IBAction)backPressed:(id)sender {
@@ -104,9 +122,17 @@
 }
 
 - (IBAction)saveButtonPressed:(id)sender {
-    self.reminder.times = self.times;
-    [self.delegate createdReminder:self.reminder];
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    if (self.isEditing) {
+        self.reminder.times = self.times;
+        if (self.delegate && ([self.delegate respondsToSelector:@selector(editedReminderTimes:)])) {
+            [self.delegate editedReminderTimes:self.times];
+        }
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        self.reminder.times = self.times;
+        [self.delegate createdReminder:self.reminder];
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 #pragma mark - TableView Delegate
@@ -142,11 +168,7 @@
 }
 
 - (IBAction)addTimeButtonPressed:(id)sender {
-    Time *time = [[Time alloc] initWithString:self.timeTextField.text];
-    [self.times addObject:time];
-    [self.tableView reloadData];
-    self.timeTextField.text = @"";
-    self.addTimeButton.hidden = YES;
+    [self.timeTextField becomeFirstResponder];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {

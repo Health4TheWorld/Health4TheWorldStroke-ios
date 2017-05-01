@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "Reminder.h"
 
-@interface EditReminderViewController : UIViewController
+@protocol EditReminderProtocol
+- (void)savedEditChanges:(Reminder *)reminder;
+@end
+
+@interface EditReminderViewController : UIViewController <UIPopoverPresentationControllerDelegate>
 @property Reminder *reminder;
+@property (weak, nonatomic) id delegate;
 @end

@@ -44,7 +44,54 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpColors];
-    [self dailyTabPressed:nil];
+    
+    if (self.isEditing) {
+        [self.nextButton setTitle:@"SAVE" forState:UIControlStateNormal];
+        self.backButton.hidden = YES;
+        [self loadEdits];
+    } else {
+        [self.nextButton setTitle:@"NEXT" forState:UIControlStateNormal];
+        self.backButton.hidden = NO;
+        [self dailyTabPressed:nil];
+    }
+}
+
+/* Sets up the view to display whatever frequency the user had previously saved. */
+- (void)loadEdits {
+    if (self.reminder.reminderDays.count == 7) {
+        /* First check if it's daily. */
+        [self dailyTabPressed:nil];
+    } else {
+        if (self.reminder.reminderDays.count == 1) {
+            /* First check if it's weekly. */
+            [self weeklyTabPressed:nil];
+        } else {
+            [self customTabPressed:nil];
+        }
+        for (NSString *day in self.reminder.reminderDays) {
+            if ([day isEqualToString:SUNDAY]) {
+                [self sundayPressed:nil];
+            }
+            if ([day isEqualToString:MONDAY]) {
+                [self mondayPressed:nil];
+            }
+            if ([day isEqualToString:TUESDAY]) {
+                [self tuesdayPressed:nil];
+            }
+            if ([day isEqualToString:WEDNESDAY]) {
+                [self wednesdayPressed:nil];
+            }
+            if ([day isEqualToString:THURSDAY]) {
+                [self thursdayPressed:nil];
+            }
+            if ([day isEqualToString:FRIDAY]) {
+                [self fridayPressed:nil];
+            }
+            if ([day isEqualToString:SATURDAY]) {
+                [self saturdayPressed:nil];
+            }
+        }
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -96,15 +143,28 @@
     if (self.saturdayButton.tag == BUTTON_IS_SELECTED) {
         [reminderDays addObject:SATURDAY];
     }
-    self.reminder.reminderDays = reminderDays;
-    AddReminderTimesViewController *next = [[AddReminderTimesViewController alloc] init];
-    next.reminder = self.reminder;
-    next.delegate = self.remindersVC;
-    [self.navigationController pushViewController:next animated:YES];
+    
+    if (self.isEditing) {
+        self.reminder.reminderDays = reminderDays;
+        if (self.delegate && ([self.delegate respondsToSelector:@selector(editedReminderFrequency:)])) {
+            [self.delegate editedReminderFrequency:reminderDays];
+        }
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        self.reminder.reminderDays = reminderDays;
+        AddReminderTimesViewController *next = [[AddReminderTimesViewController alloc] init];
+        next.reminder = self.reminder;
+        next.delegate = self.remindersVC;
+        [self.navigationController pushViewController:next animated:YES];
+    }
 }
 
 - (IBAction)closePressed:(id)sender {
+    if (self.isEditing) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
         [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 - (IBAction)backPressed:(id)sender {

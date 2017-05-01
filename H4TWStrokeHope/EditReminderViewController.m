@@ -11,9 +11,14 @@
 #import "NoResultsTableViewCell.h"
 #import "Utils.h"
 #import "Time.h"
+#import "AddReminderTitleViewController.h"
+#import "AddReminderFrequencyViewController.h"
+#import "AddReminderTimesViewController.h"
 
 @interface EditReminderViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property NSIndexPath *selectedIndexPath;
+@property (strong, nonatomic) IBOutlet UIButton *saveButton;
 @end
 
 #define SECTION_HEADER_HEIGHT 40
@@ -43,6 +48,21 @@
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 
     self.tableView.backgroundColor = [UIColor clearColor];
+    
+    [self setUpColors];
+}
+
+- (void)setUpColors {
+    self.saveButton.backgroundColor = HFTW_MAGENTA;
+    self.saveButton.clipsToBounds = YES;
+    self.saveButton.layer.cornerRadius = 10;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    if (self.selectedIndexPath) {
+        [self.tableView deselectRowAtIndexPath:self.selectedIndexPath animated:YES];
+    }
 }
 
 - (void)backPressed {
@@ -125,6 +145,53 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.selectedIndexPath = indexPath;
+    if (indexPath.section == EDIT_REMINDER_TITLE_SECTION) {
+        AddReminderTitleViewController *vc = [[AddReminderTitleViewController alloc] init];
+        vc.delegate = self;
+        vc.isEditing = YES;
+        vc.reminder = self.reminder;
+        vc.modalPresentationStyle = UIModalPresentationPopover;
+        vc.preferredContentSize = CGSizeMake(150, 300);
+        // configure popover style & delegate
+        UIPopoverPresentationController *popover =  vc.popoverPresentationController;
+        popover.delegate = self;
+        popover.sourceView = self.view;
+        popover.sourceRect = self.view.frame;
+        popover.permittedArrowDirections = UIPopoverArrowDirectionAny;
+        // display the controller in the usual way
+        [self presentViewController:vc animated:YES completion:nil];
+    } else if (indexPath.section == EDIT_REMINDER_FREQUENCY_SECTION) {
+        AddReminderFrequencyViewController *vc = [[AddReminderFrequencyViewController alloc] init];
+        vc.delegate = self;
+        vc.isEditing = YES;
+        vc.reminder = self.reminder;
+        vc.modalPresentationStyle = UIModalPresentationPopover;
+        vc.preferredContentSize = CGSizeMake(150, 300);
+        // configure popover style & delegate
+        UIPopoverPresentationController *popover =  vc.popoverPresentationController;
+        popover.delegate = self;
+        popover.sourceView = self.view;
+        popover.sourceRect = self.view.frame;
+        popover.permittedArrowDirections = UIPopoverArrowDirectionAny;
+        // display the controller in the usual way
+        [self presentViewController:vc animated:YES completion:nil];
+    } else if (indexPath.section == EDIT_REMINDER_TIME_SECTION) {
+        AddReminderTimesViewController *vc = [[AddReminderTimesViewController alloc] init];
+        vc.delegate = self;
+        vc.isEditing = YES;
+        vc.reminder = self.reminder;
+        vc.modalPresentationStyle = UIModalPresentationPopover;
+        vc.preferredContentSize = CGSizeMake(150, 300);
+        // configure popover style & delegate
+        UIPopoverPresentationController *popover =  vc.popoverPresentationController;
+        popover.delegate = self;
+        popover.sourceView = self.view;
+        popover.sourceRect = self.view.frame;
+        popover.permittedArrowDirections = UIPopoverArrowDirectionAny;
+        // display the controller in the usual way
+        [self presentViewController:vc animated:YES completion:nil];
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
@@ -132,7 +199,6 @@
     if (indexPath.section == EDIT_REMINDER_FREQUENCY_SECTION) {
         /* Check if label is long */
         float width = self.tableView.frame.size.width - (16 * 2);
-        NSLog(@"Width: %f", width);
         NSInteger numLinesNeeded = [Utils numberOfLinesForString:[self getReminderFrequencyDescription] constrainedToWidth:width withFont:[UIFont fontWithName:@"Avenir Book" size:17.0]];
         if (numLinesNeeded > 1) {
             return (CELL_HEIGHT * 2);
@@ -201,6 +267,26 @@
     return SECTION_HEADER_HEIGHT;
 }
 
+#pragma mark - delegates
 
+- (void)editedReminderTitle:(NSString *)newTitle {
+    self.reminder.reminderName = newTitle;
+    [self.tableView reloadData];
+}
+
+- (void)editedReminderFrequency:(NSMutableArray *)days {
+    self.reminder.reminderDays = days;
+    [self.tableView reloadData];
+}
+
+- (void)editedReminderTimes:(NSMutableArray *)times {
+    self.reminder.times = times;
+    [self.tableView reloadData];
+}
+
+- (IBAction)saveChangesPressed:(id)sender {
+    [self.delegate savedEditChanges:self.reminder];
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end
