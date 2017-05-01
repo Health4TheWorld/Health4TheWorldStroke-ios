@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Time : NSObject
-
+@property NSString *timeStr;
+- (id)initWithString:(NSString *)timeStr;
 @end

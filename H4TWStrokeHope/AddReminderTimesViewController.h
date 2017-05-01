@@ -13,7 +13,7 @@
 - (void)createdReminder:(Reminder *)reminder;
 @end
 
-@interface AddReminderTimesViewController : UIViewController
+@interface AddReminderTimesViewController : UIViewController <UITextFieldDelegate, UIGestureRecognizerDelegate>
 @property Reminder *reminder;
 @property (weak, nonatomic) id delegate;
 @end

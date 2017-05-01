@@ -8,6 +8,7 @@
 
 #import "Constants.h"
 #import "ReminderTableViewCell.h"
+#import "Time.h"
 
 @implementation ReminderTableViewCell
 
@@ -34,11 +35,11 @@
     self.reminderNameLabel.text = reminder.reminderName;
 
     /* Reminder frequency */
-    NSString *timeStr = @"";
+    NSString *daysStr = @"";
     if (reminder.reminderDays.count == 7) {
-        timeStr = @"Daily || ";
+        daysStr = @"Daily || ";
     } else if (reminder.reminderDays.count == 1) {
-        timeStr = @"Weekly || ";
+        daysStr = @"Weekly || ";
     }
     NSString *days = @"";
     for (int i=0; i < reminder.reminderDays.count; i++) {
@@ -51,11 +52,21 @@
         days = [days stringByAppendingString:day];
     }
     if (reminder.reminderDays.count != 7) {
-        timeStr = [timeStr stringByAppendingString:days];
+        daysStr = [daysStr stringByAppendingString:days];
     }
-    self.reminderTimeLabel.text = timeStr;
     
     /* Reminder time */
+    NSString *timeStr = @"";
+    for (int i=0; i < reminder.times.count; i++) {
+        Time *currTime = (Time *)[reminder.times objectAtIndex:i];
+        if (i == (reminder.times.count - 1)) {
+            timeStr = [timeStr stringByAppendingString:[NSString stringWithFormat:@"%@", currTime.timeStr]];
+        } else {
+            timeStr = [timeStr stringByAppendingString:[NSString stringWithFormat:@"%@, ", currTime.timeStr]];
+        }
+    }
+    
+    self.reminderTimeLabel.text = [NSString stringWithFormat:@"%@ %@", daysStr, timeStr];
     
     /* Check mark */
     if (self.reminder.isCompleted) {

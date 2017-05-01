@@ -53,6 +53,13 @@
                                 <color key="textColor" red="0.84705882352941175" green="0.18431372549019609" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedInfoButton" translatesAutoresizingMaskIntoConstraints="NO" id="dnR-QC-Tct">
+                                <rect key="frame" x="226" y="10" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="S1x-mu-BUc"/>
+                                    <constraint firstAttribute="width" constant="22" id="XHX-s4-Vr5"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -65,23 +72,15 @@
                             <constraint firstItem="SIy-6S-DOj" firstAttribute="top" secondItem="UYI-bz-eiL" secondAttribute="top" id="zz9-vQ-XDJ"/>
                         </constraints>
                     </view>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zZ-mn-bsr">
-                        <rect key="frame" x="300" y="24" width="22" height="22"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="22" id="lWN-1t-obN"/>
-                            <constraint firstAttribute="height" constant="22" id="oxY-dV-6ay"/>
-                        </constraints>
-                        <state key="normal" title="Button" image="RedInfoButton"/>
-                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="leQ-Ml-pHa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KfR-qg-xue"/>
                     <constraint firstItem="UYI-bz-eiL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="66" id="MDo-QE-Ki8"/>
                     <constraint firstItem="UYI-bz-eiL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Qt6-is-Cqd"/>
                     <constraint firstAttribute="trailingMargin" secondItem="UYI-bz-eiL" secondAttribute="trailing" constant="25" id="VE4-Zn-pra"/>
-                    <constraint firstItem="8zZ-mn-bsr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZUV-td-eUi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="dnR-QC-Tct" secondAttribute="trailing" constant="6" id="l6V-Si-LCf"/>
                     <constraint firstItem="leQ-Ml-pHa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="nkb-mt-b1f"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="8zZ-mn-bsr" secondAttribute="trailing" constant="6" id="qfe-ch-LrJ"/>
+                    <constraint firstItem="dnR-QC-Tct" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wqa-HS-eNX"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

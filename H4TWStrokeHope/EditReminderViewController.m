@@ -10,6 +10,7 @@
 #import "Constants.h" 
 #import "NoResultsTableViewCell.h"
 #import "Utils.h"
+#import "Time.h"
 
 @interface EditReminderViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -108,7 +109,16 @@
         cell.mainLabel.text = timeStr;
     } else if (indexPath.section == EDIT_REMINDER_TIME_SECTION) {
         /* Reminder time */
-        cell.mainLabel.text = self.reminder.reminderTime;
+        NSString *timeStr = @"";
+        for (int i=0; i < self.reminder.times.count; i++) {
+            Time *currTime = (Time *)[self.reminder.times objectAtIndex:i];
+            if (i == (self.reminder.times.count - 1)) {
+                timeStr = [timeStr stringByAppendingString:[NSString stringWithFormat:@"%@", currTime.timeStr]];
+            } else {
+                timeStr = [timeStr stringByAppendingString:[NSString stringWithFormat:@"%@, ", currTime.timeStr]];
+            }
+        }
+        cell.mainLabel.text = timeStr;
     }
     
     return cell;
@@ -142,7 +152,7 @@
             sectionName = @"How often?";
             break;
         case EDIT_REMINDER_TIME_SECTION:
-            sectionName = @"What time?";
+            sectionName = @"What time(s)?";
             break;
         default:
             sectionName = @"";
@@ -169,7 +179,7 @@
             sectionName = @"How often?";
             break;
         case 2:
-            sectionName = @"What time?";
+            sectionName = @"What time(s)?";
             break;
         default:
             sectionName = @"";

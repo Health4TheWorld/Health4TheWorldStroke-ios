@@ -20,4 +20,9 @@
     [super setSelected:selected animated:animated];
 }
 
+- (void)layoutWithTime:(Time *)time {
+    self.addButton.hidden = YES;
+    [self.timeButton setTitle:time.timeStr forState:UIControlStateNormal];
+}
+
 @end

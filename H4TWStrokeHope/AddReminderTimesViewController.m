@@ -8,6 +8,7 @@
 
 #import "AddReminderTimesViewController.h"
 #import "Constants.h"
+#import "Time.h"
 #import "TimeTableViewCell.h"
 
 @interface AddReminderTimesViewController ()
@@ -16,12 +17,13 @@
 @property (strong, nonatomic) IBOutlet UIButton *backButton;
 @property NSMutableArray *times;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) IBOutlet UIButton *timeButton;
+@property (strong, nonatomic) IBOutlet UITextField *timeTextField;
 @property (strong, nonatomic) IBOutlet UIButton *addTimeButton;
 @property UIDatePicker *timePicker;
 @end
 
 #define CELL_HEIGHT 100
+#define SECTION_HEADER_HEIGHT 40
 
 @implementation AddReminderTimesViewController
 
@@ -29,28 +31,49 @@
     [super viewDidLoad];
     [self setUpColors];
     
+    self.addTimeButton.hidden = YES;
+    
     self.tableView.bounces = NO;
     self.tableView.alwaysBounceVertical = NO;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    self.tableView.allowsMultipleSelectionDuringEditing = NO;
     
     self.times = [[NSMutableArray alloc] init];
     [self setUpPicker];
+    
+    /* Create tap view so that we can hide keyboard when they tap outside textfield */
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    tap.delegate = self;
+    [tap setCancelsTouchesInView:NO];
+    [self.view addGestureRecognizer:tap];
 }
 
 - (void)setUpPicker {
-    self.timePicker = [[UIDatePicker alloc] init];
-    CGRect bounds = [self.view bounds];
-    int datePickerHeight = self.timePicker.frame.size.height;
-    self.timePicker.frame = CGRectMake(0, bounds.size.height - (datePickerHeight), self.timePicker.frame.size.width, self.timePicker.frame.size.height);
-    self.timePicker.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
-    self.timePicker.datePickerMode = UIDatePickerModeTime;
-    self.timePicker.hidden = YES;
-    [self.view addSubview:self.timePicker];
-    [self.timePicker addTarget:self action:@selector(datePickerChanged:) forControlEvents:UIControlEventValueChanged];
+    self.timePicker = [[UIDatePicker alloc]init];
+    self.timePicker.datePickerMode=UIDatePickerModeTime;
+    [self.timeTextField setInputView:self.timePicker];
+    
+    UIToolbar *toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
+    [toolBar setTintColor:[UIColor grayColor]];
+    UIBarButtonItem *doneBtn=[[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleBordered target:self action:@selector(doneSelecting)];
+    UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    [toolBar setItems:[NSArray arrayWithObjects:space,doneBtn, nil]];
+    
+    [self.timeTextField setInputAccessoryView:toolBar];
 }
 
-- (void)datePickerChanged:(int)change {
-    
+- (void)dismissKeyboard {
+    [self.timeTextField resignFirstResponder];
+}
+
+- (void)doneSelecting {
+    NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
+    [outputFormatter setDateFormat:@"h:mm a"]; //24hr time format
+    NSString *dateString = [outputFormatter stringFromDate:self.timePicker.date];
+    self.timeTextField.text = dateString;
+    self.timeTextField.font = [UIFont fontWithName:@"Avenir Book" size:60.0];
+    [self.timeTextField resignFirstResponder];
+    self.addTimeButton.hidden = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -64,7 +87,7 @@
     self.saveButton.layer.cornerRadius = 10;
     [self.backButton setTitleColor:HFTW_MAGENTA forState:UIControlStateNormal];
     self.titleLabel.textColor = HFTW_TEXT_GRAY;
-    [self.timeButton setTitleColor:HFTW_TEXT_GRAY forState:UIControlStateNormal];
+    self.timeTextField.textColor = HFTW_TEXT_GRAY;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -81,6 +104,7 @@
 }
 
 - (IBAction)saveButtonPressed:(id)sender {
+    self.reminder.times = self.times;
     [self.delegate createdReminder:self.reminder];
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
@@ -117,12 +141,72 @@
     return CELL_HEIGHT;
 }
 
-- (IBAction)timeButtonPressed:(id)sender {
-    self.timePicker.backgroundColor = [UIColor whiteColor];
-    self.timePicker.hidden = NO;
+- (IBAction)addTimeButtonPressed:(id)sender {
+    Time *time = [[Time alloc] initWithString:self.timeTextField.text];
+    [self.times addObject:time];
+    [self.tableView reloadData];
+    self.timeTextField.text = @"";
+    self.addTimeButton.hidden = YES;
 }
 
-- (IBAction)addTimeButtonPressed:(id)sender {
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    NSString *sectionName;
+    switch (section)
+    {
+        case 0:
+            sectionName = @"Remind me at:";
+            break;
+        default:
+            sectionName = @"";
+            break;
+    }
+    return sectionName;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, SECTION_HEADER_HEIGHT)];
+    [view setBackgroundColor:[UIColor colorWithRed:0.91 green:0.91 blue:0.91 alpha:1.0]];
+    /* Create custom view to display section header... */
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(18, 0, tableView.frame.size.width, SECTION_HEADER_HEIGHT)];
+    [label setFont:[UIFont fontWithName:@"Avenir-Bold" size:14]];
+    [label setTextColor:HFTW_TEXT_GRAY];
+    NSString *sectionName;
+    switch (section)
+    {
+        case 0:
+            sectionName = @"Remind me at:";
+            break;
+        default:
+            sectionName = @"";
+            break;
+    }
+    [label setText:sectionName];
+    [label sizeToFit];
+    
+    CGPoint center = label.center;
+    center.y = view.center.y;
+    label.center = center;
+    
+    [view addSubview:label];
+    return view;
+}
+
+/* We only have section headers in the ACCEPTED section. */
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return SECTION_HEADER_HEIGHT;
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+/* Delete a time */
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [self.times removeObjectAtIndex:indexPath.row];
+        [self.tableView reloadData];
+    }
 }
 
 @end
