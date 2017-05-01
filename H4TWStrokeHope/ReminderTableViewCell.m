@@ -29,8 +29,35 @@
 
 - (void)layoutCellWithReminder:(Reminder *)reminder {
     self.reminder = reminder;
+    
+    /* Reminder title */
     self.reminderNameLabel.text = reminder.reminderName;
-    self.reminderTimeLabel.text = reminder.reminderTime;
+
+    /* Reminder frequency */
+    NSString *timeStr = @"";
+    if (reminder.reminderDays.count == 7) {
+        timeStr = @"Daily || ";
+    } else if (reminder.reminderDays.count == 1) {
+        timeStr = @"Weekly || ";
+    }
+    NSString *days = @"";
+    for (int i=0; i < reminder.reminderDays.count; i++) {
+        NSString *day = @"";
+        if (i == (reminder.reminderDays.count - 1)) {
+            day = [NSString stringWithFormat:@"%@s", [[reminder.reminderDays objectAtIndex:i] capitalizedString]];
+        } else {
+            day = [NSString stringWithFormat:@"%@s, ", [[reminder.reminderDays objectAtIndex:i] capitalizedString]];
+        }
+        days = [days stringByAppendingString:day];
+    }
+    if (reminder.reminderDays.count != 7) {
+        timeStr = [timeStr stringByAppendingString:days];
+    }
+    self.reminderTimeLabel.text = timeStr;
+    
+    /* Reminder time */
+    
+    /* Check mark */
     if (self.reminder.isCompleted) {
         [self.checkButton setImage:[UIImage imageNamed:REMINDER_CHECK_SELECTED] forState:UIControlStateNormal];
     } else {

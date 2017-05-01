@@ -104,6 +104,16 @@
 #define VIDEO_5A_FEMALE_DOC @"5AFemaleDocWaving.m4v"		
 #define VIDEO_5B_MALE_DOC @"5BMaleDocWaving.m4v"
 
+/* WEEKDAYS */
+#define EVERYDAY @"Everyday."
+#define SUNDAY @"Sunday"
+#define MONDAY @"Monday"
+#define TUESDAY @"Tuesday"
+#define WEDNESDAY @"Wednesday"
+#define THURSDAY @"Thursday"
+#define FRIDAY @"Friday"
+#define SATURDAY @"Saturday"
+
 /* EXERCISE CONTENT */
 #define EXERCISE_PARAGRAPH_ONE @"Please repeat the exercises 10 times a day with assistance from family caregiver if needed. Consult your medical provider before starting the exercise program."
 #define STRETCHING_INSTRUCTIONS @"Do the stretches 3 times and hold for 30 seconds.Stretch to a point of slight discomfort and hold. Reduce stretch if painful.Stop if it causes pain.If you are a patient, do these under supervision of a trained health professional first time to get right training for you and your family member and to prevent injuries."

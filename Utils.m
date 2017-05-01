@@ -24,4 +24,19 @@
     return r.size.height;
 }
 
++ (CGFloat)heightOfString:(NSString *)string forWidth:(CGFloat)width usingFont:(UIFont *)font
+{
+    NSStringDrawingContext *context = [[NSStringDrawingContext alloc] init];
+    CGSize labelSize = (CGSize){width, FLT_MAX};
+    CGRect r = [string boundingRectWithSize:labelSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: font} context:context];
+    return r.size.height;
+}
+
++ (NSInteger)numberOfLinesForString:(NSString *)str constrainedToWidth:(float)width withFont:(UIFont *)font {
+    CGFloat unitHeight = [Utils heightOfString:@"A" forWidth:width usingFont:font];
+    CGFloat blockHeight = [Utils heightOfString:str forWidth:width usingFont:font];
+    NSInteger numberOfLines = ceilf(blockHeight / unitHeight);
+    return numberOfLines;
+}
+
 @end

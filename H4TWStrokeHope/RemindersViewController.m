@@ -8,18 +8,22 @@
 
 #import "RemindersViewController.h"
 #import "ReminderTableViewCell.h"
+#import "EditReminderViewController.h"
 #import "AddReminderTitleViewController.h"
+#import "NoResultsTableViewCell.h"
 #import "Constants.h"
 #import "Utils.h"
 
 #define SECTION_HEADER_HEIGHT 40
 #define CELL_HEIGHT 75
+#define NO_RESULTS_CELL_HEIGHT 50
 
 @interface RemindersViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-@property NSArray *todayReminders;
-@property NSArray *allReminders;
+@property NSMutableArray *todayReminders;
+@property NSMutableArray *allReminders;
 @property (strong, nonatomic) IBOutlet UIButton *addReminderButton;
+@property NSIndexPath *selectedIndexPath;
 @end
 
 @implementation RemindersViewController
@@ -42,13 +46,14 @@
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
     [self setUpColors];
-    
-    Reminder *one = [[Reminder alloc] initWithName:@"Take med X" withTime:@"9:00AM"];
-    Reminder *two = [[Reminder alloc] initWithName:@"Take med Y" withTime:@"9:00AM"];
-    Reminder *three = [[Reminder alloc] initWithName:@"Take med Z" withTime:@"9:00AM"];
-    
-    self.todayReminders = @[one];
-    self.allReminders = @[one, two, three];
+
+    self.todayReminders = [[NSMutableArray alloc] init];
+    self.allReminders = [[NSMutableArray alloc] init];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView deselectRowAtIndexPath:self.selectedIndexPath animated:YES];
 }
 
 - (void)setUpColors {
@@ -93,16 +98,52 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
-        return self.todayReminders.count;
+        if (self.todayReminders.count == 0) {
+            /* "No results" cell */
+            return 1;
+        } else {
+            return self.todayReminders.count;
+        }
     } else {
-        return self.allReminders.count;
+        if (self.allReminders.count == 0) {
+            /* "No results" cell */
+            return 1;
+        } else {
+            return self.allReminders.count;
+        }
     }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *identifier = @"ReminderTableViewCell";
+    static NSString *identifier = @"ReminderCellIdentifier";
+    static NSString *noResultsIdentifier = @"NoResultsCellIdentifier";
+    
+    /* First check if we should put no results cell */
+    BOOL noResults = NO;
+    if (indexPath.section == 0) {
+        if (self.todayReminders.count == 0) {
+            noResults = YES;
+        }
+    } else if (indexPath.section == 1) {
+        if (self.allReminders.count == 0) {
+            noResults = YES;
+        }
+    }
+    
+    /* No results cell */
+    if (noResults) {
+        NoResultsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:noResultsIdentifier];
+        if (cell == nil) {
+            NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"NoResultsTableViewCell" owner:self options:nil];
+            cell = (NoResultsTableViewCell *)[nib objectAtIndex:0];
+            cell.mainLabel.text = @"None.";
+            return cell;
+        }
+    }
+    
+    /* Normal cell */
     ReminderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil)
     {
@@ -121,11 +162,29 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    self.selectedIndexPath = indexPath;
+    Reminder *selectedReminder;
+    if (indexPath.section == 0) {
+        selectedReminder = [self.todayReminders objectAtIndex:indexPath.row];
+    } else if (indexPath.section == 1) {
+        selectedReminder = [self.allReminders objectAtIndex:indexPath.row];
+    }
+    EditReminderViewController *editVC = [[EditReminderViewController alloc] init];
+    editVC.reminder = selectedReminder;
+    [self.navigationController pushViewController:editVC animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
+    if (indexPath.section == 0) {
+        if (self.todayReminders.count == 0) {
+            return NO_RESULTS_CELL_HEIGHT;
+        }
+    } else if (indexPath.section == 1) {
+        if (self.allReminders.count == 0) {
+            return NO_RESULTS_CELL_HEIGHT;
+        }
+    }
     return CELL_HEIGHT;
 }
 
@@ -190,7 +249,9 @@
 
 #pragma mark - CreateReminderProtocol 
 - (void)createdReminder:(Reminder *)reminder {
-    NSLog(@"Created reminder: %@", reminder);
+    [self.todayReminders addObject:reminder];
+    [self.allReminders addObject:reminder];
+    [self.tableView reloadData];
 }
 
 @end

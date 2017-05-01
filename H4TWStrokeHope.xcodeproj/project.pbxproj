@@ -61,6 +61,13 @@
 		CC11D12F1EB650320063E72A /* AddReminderFrequencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D12D1EB650320063E72A /* AddReminderFrequencyViewController.xib */; };
 		CC11D1331EB6504E0063E72A /* AddReminderTimesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1311EB6504E0063E72A /* AddReminderTimesViewController.m */; };
 		CC11D1341EB6504E0063E72A /* AddReminderTimesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D1321EB6504E0063E72A /* AddReminderTimesViewController.xib */; };
+		CC11D1381EB6B7BC0063E72A /* NoResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1361EB6B7BC0063E72A /* NoResultsTableViewCell.m */; };
+		CC11D1391EB6B7BC0063E72A /* NoResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D1371EB6B7BC0063E72A /* NoResultsTableViewCell.xib */; };
+		CC11D13D1EB6B99E0063E72A /* EditReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D13B1EB6B99E0063E72A /* EditReminderViewController.m */; };
+		CC11D13E1EB6B99E0063E72A /* EditReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D13C1EB6B99E0063E72A /* EditReminderViewController.xib */; };
+		CC11D1411EB6D9FA0063E72A /* Time.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1401EB6D9FA0063E72A /* Time.m */; };
+		CC11D1451EB6E7D00063E72A /* TimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1431EB6E7D00063E72A /* TimeTableViewCell.m */; };
+		CC11D1461EB6E7D00063E72A /* TimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D1441EB6E7D00063E72A /* TimeTableViewCell.xib */; };
 		CC38386E1E95FCF400001213 /* InformationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC38386C1E95FCF400001213 /* InformationalViewController.m */; };
 		CC38386F1E95FCF400001213 /* InformationalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC38386D1E95FCF400001213 /* InformationalViewController.xib */; };
 		CC3CB6481EA11EC800CA9429 /* LearnContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3CB6461EA11EC800CA9429 /* LearnContentViewController.m */; };
@@ -203,6 +210,17 @@
 		CC11D1301EB6504E0063E72A /* AddReminderTimesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddReminderTimesViewController.h; sourceTree = "<group>"; };
 		CC11D1311EB6504E0063E72A /* AddReminderTimesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReminderTimesViewController.m; sourceTree = "<group>"; };
 		CC11D1321EB6504E0063E72A /* AddReminderTimesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddReminderTimesViewController.xib; sourceTree = "<group>"; };
+		CC11D1351EB6B7BC0063E72A /* NoResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoResultsTableViewCell.h; sourceTree = "<group>"; };
+		CC11D1361EB6B7BC0063E72A /* NoResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoResultsTableViewCell.m; sourceTree = "<group>"; };
+		CC11D1371EB6B7BC0063E72A /* NoResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoResultsTableViewCell.xib; sourceTree = "<group>"; };
+		CC11D13A1EB6B99E0063E72A /* EditReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditReminderViewController.h; sourceTree = "<group>"; };
+		CC11D13B1EB6B99E0063E72A /* EditReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditReminderViewController.m; sourceTree = "<group>"; };
+		CC11D13C1EB6B99E0063E72A /* EditReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditReminderViewController.xib; sourceTree = "<group>"; };
+		CC11D13F1EB6D9FA0063E72A /* Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Time.h; sourceTree = "<group>"; };
+		CC11D1401EB6D9FA0063E72A /* Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Time.m; sourceTree = "<group>"; };
+		CC11D1421EB6E7D00063E72A /* TimeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableViewCell.h; sourceTree = "<group>"; };
+		CC11D1431EB6E7D00063E72A /* TimeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewCell.m; sourceTree = "<group>"; };
+		CC11D1441EB6E7D00063E72A /* TimeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeTableViewCell.xib; sourceTree = "<group>"; };
 		CC38386B1E95FCF400001213 /* InformationalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationalViewController.h; sourceTree = "<group>"; };
 		CC38386C1E95FCF400001213 /* InformationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationalViewController.m; sourceTree = "<group>"; };
 		CC38386D1E95FCF400001213 /* InformationalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationalViewController.xib; sourceTree = "<group>"; };
@@ -409,6 +427,9 @@
 				CC11D1301EB6504E0063E72A /* AddReminderTimesViewController.h */,
 				CC11D1311EB6504E0063E72A /* AddReminderTimesViewController.m */,
 				CC11D1321EB6504E0063E72A /* AddReminderTimesViewController.xib */,
+				CC11D1421EB6E7D00063E72A /* TimeTableViewCell.h */,
+				CC11D1431EB6E7D00063E72A /* TimeTableViewCell.m */,
+				CC11D1441EB6E7D00063E72A /* TimeTableViewCell.xib */,
 			);
 			name = "Add Reminder";
 			sourceTree = "<group>";
@@ -420,6 +441,8 @@
 				CC3CB64C1EA11F9E00CA9429 /* LearnContent.m */,
 				CC11D11D1EB51AB40063E72A /* Reminder.h */,
 				CC11D11E1EB51AB40063E72A /* Reminder.m */,
+				CC11D13F1EB6D9FA0063E72A /* Time.h */,
+				CC11D1401EB6D9FA0063E72A /* Time.m */,
 			);
 			name = "Data Models";
 			sourceTree = "<group>";
@@ -626,6 +649,12 @@
 				CC11D1181EB3B8DE0063E72A /* ReminderTableViewCell.h */,
 				CC11D1191EB3B8DE0063E72A /* ReminderTableViewCell.m */,
 				CC11D11A1EB3B8DE0063E72A /* ReminderTableViewCell.xib */,
+				CC11D1351EB6B7BC0063E72A /* NoResultsTableViewCell.h */,
+				CC11D1361EB6B7BC0063E72A /* NoResultsTableViewCell.m */,
+				CC11D1371EB6B7BC0063E72A /* NoResultsTableViewCell.xib */,
+				CC11D13A1EB6B99E0063E72A /* EditReminderViewController.h */,
+				CC11D13B1EB6B99E0063E72A /* EditReminderViewController.m */,
+				CC11D13C1EB6B99E0063E72A /* EditReminderViewController.xib */,
 			);
 			name = Reminders;
 			sourceTree = "<group>";
@@ -767,6 +796,7 @@
 				CC73E4431E842370001131AF /* Lato-HairlineItalic.ttf in Resources */,
 				1737A19D1EA897D300C6D71E /* 3ALegControl1.m4v in Resources */,
 				CC4C10C21E7A26DE00515CDC /* LaunchScreen.storyboard in Resources */,
+				CC11D1461EB6E7D00063E72A /* TimeTableViewCell.xib in Resources */,
 				CC73E4441E842370001131AF /* Lato-Italic.ttf in Resources */,
 				CC73E4411E842370001131AF /* Lato-BoldItalic.ttf in Resources */,
 				CC3CB6491EA11EC800CA9429 /* LearnContentViewController.xib in Resources */,
@@ -777,6 +807,8 @@
 				CC73E43F1E842370001131AF /* Lato-BlackItalic.ttf in Resources */,
 				1737A1A01EA897E100C6D71E /* 4BArmAndTrunkStrengthening.m4v in Resources */,
 				CC9604941EA3DE110030D2C7 /* LearnContentTypeTableViewCell.xib in Resources */,
+				CC11D1391EB6B7BC0063E72A /* NoResultsTableViewCell.xib in Resources */,
+				CC11D13E1EB6B99E0063E72A /* EditReminderViewController.xib in Resources */,
 				1720A06F1EA9E82C009C2B87 /* HandStretchViewController.xib in Resources */,
 				17E0BB441EA41370001FC7F3 /* FunctionalMobilityViewController.xib in Resources */,
 				CC73E4421E842370001131AF /* Lato-Hairline.ttf in Resources */,
@@ -849,6 +881,8 @@
 				CC73E42F1E841EF4001131AF /* GraphicUtils.m in Sources */,
 				CCB7B4031E9413260058C32E /* ExercisesViewController.m in Sources */,
 				CC4C10E71E7A272C00515CDC /* Constants.m in Sources */,
+				CC11D13D1EB6B99E0063E72A /* EditReminderViewController.m in Sources */,
+				CC11D1411EB6D9FA0063E72A /* Time.m in Sources */,
 				CC3CB64D1EA11F9E00CA9429 /* LearnContent.m in Sources */,
 				17E0BB201EA40F70001FC7F3 /* ArmsViewController.m in Sources */,
 				1720A06E1EA9E82C009C2B87 /* HandStretchViewController.m in Sources */,
@@ -857,8 +891,10 @@
 				CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */,
 				17DE3D4F1EA9604900D350A1 /* ArmsAndHandsViewController.m in Sources */,
 				CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */,
+				CC11D1381EB6B7BC0063E72A /* NoResultsTableViewCell.m in Sources */,
 				CC3CB6481EA11EC800CA9429 /* LearnContentViewController.m in Sources */,
 				17E0BB3E1EA4127D001FC7F3 /* StretchingViewController.m in Sources */,
+				CC11D1451EB6E7D00063E72A /* TimeTableViewCell.m in Sources */,
 				1720A0781EA9E85D009C2B87 /* ArmStretchViewController.m in Sources */,
 				CCB7B3FD1E9412510058C32E /* HelpMeSpeakViewController.m in Sources */,
 				1720A0631EA9E7A3009C2B87 /* HamstringsViewController.m in Sources */,

@@ -10,8 +10,10 @@
 
 @interface Reminder : NSObject
 @property NSString *reminderName;
+@property NSArray *reminderDays; /* Days of the week to be reminded */
 @property NSString *reminderTime;
 @property BOOL isCompleted;
+@property NSMutableArray *times;
 
 - (id)initWithName:(NSString *)name withTime:(NSString *)time;
 @end
