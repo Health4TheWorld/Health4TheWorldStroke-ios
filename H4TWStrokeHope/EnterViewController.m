@@ -131,7 +131,7 @@
     
     /* Fourth quote */
     UILabel *fourthQuote = [EnterViewController getQuoteLabelWithText:@"\"Only I can change my life. No one can do it for me.\"" offscreen:YES];
-    UILabel *fourthAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Carol Burnett" forQuoteLabel:thirdQuote offScreen:YES];
+    UILabel *fourthAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Carol Burnett" forQuoteLabel:fourthQuote offScreen:YES];
     
     [self.view addSubview:fourthQuote];
     [self.view addSubview:fourthAuthorLabel];
@@ -141,7 +141,7 @@
     
     /* Fifth quote */
     UILabel *fifthQuote = [EnterViewController getQuoteLabelWithText:@"\"Always do your best. What you plant now will harvest later.\"" offscreen:YES];
-    UILabel *fifthAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Og Mandino" forQuoteLabel:thirdQuote offScreen:YES];
+    UILabel *fifthAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Og Mandino" forQuoteLabel:fifthQuote offScreen:YES];
     
     [self.view addSubview:fifthQuote];
     [self.view addSubview:fifthAuthorLabel];
@@ -151,7 +151,7 @@
     
     /* Sixth quote */
     UILabel *sixthQuote = [EnterViewController getQuoteLabelWithText:@"\"Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.\"" offscreen:YES];
-    UILabel *sixthAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Helen Keller" forQuoteLabel:thirdQuote offScreen:YES];
+    UILabel *sixthAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Helen Keller" forQuoteLabel:sixthQuote offScreen:YES];
     
     [self.view addSubview:sixthQuote];
     [self.view addSubview:sixthAuthorLabel];
@@ -161,7 +161,7 @@
     
     /* Seventh quote */
     UILabel *seventhQuote = [EnterViewController getQuoteLabelWithText:@"\"Setting goals is the first step in turning the invisible into the visible.\"" offscreen:YES];
-    UILabel *seventhAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Tony Robbins" forQuoteLabel:thirdQuote offScreen:YES];
+    UILabel *seventhAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Tony Robbins" forQuoteLabel:seventhQuote offScreen:YES];
     
     [self.view addSubview:seventhQuote];
     [self.view addSubview:seventhAuthorLabel];
