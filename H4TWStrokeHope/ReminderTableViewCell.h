@@ -14,10 +14,13 @@
 @end
 
 @interface ReminderTableViewCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *labelsLeadingConstraint;
 @property Reminder *reminder;
 @property (weak, nonatomic) id delegate;
 @property (strong, nonatomic) IBOutlet UILabel *reminderNameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *reminderTimeLabel;
 @property (strong, nonatomic) IBOutlet UIButton *checkButton;
-- (void)layoutCellWithReminder:(Reminder *)reminder;
+
+/* If reminder is today, show check mark! Otherwise hide it */
+- (void)layoutCellWithReminder:(Reminder *)reminder isToday:(BOOL)isToday;
 @end

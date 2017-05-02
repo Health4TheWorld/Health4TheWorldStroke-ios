@@ -39,4 +39,13 @@
     return numberOfLines;
 }
 
++ (BOOL)day:(NSDate *)dayOne isSameDayAs:(NSDate *)dayTwo {
+    NSDateComponents *dayOneComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitEra | NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:dayOne];
+    NSDateComponents *dayTwoComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitEra | NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:dayTwo];
+    return ([dayOneComponents day] == [dayTwoComponents day] &&
+            [dayOneComponents month] == [dayTwoComponents month] &&
+            [dayOneComponents year] == [dayTwoComponents year] &&
+            [dayOneComponents era] == [dayTwoComponents era]);
+}
+
 @end

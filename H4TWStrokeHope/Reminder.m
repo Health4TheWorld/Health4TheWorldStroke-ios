@@ -14,6 +14,16 @@
 #define REMINDER_DAYS_KEY @"reminderDays"
 #define REMINDER_TIMES_KEY @"reminderTimes"
 #define REMINDER_IS_COMPLETE_KEY @"reminderIsCompleted"
+#define REMINDER_LAST_DAY_SEEN @"lastDaySeen"
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        self.lastDaySeen = [NSDate date];
+        self.isCompleted = NO;
+    }
+    return self;
+}
 
 - (id)initWithCoder:(NSCoder *)decoder {
     self = [super init];
@@ -25,6 +35,7 @@
     self.reminderDays = [decoder decodeObjectForKey:REMINDER_DAYS_KEY];
     self.isCompleted = [decoder decodeBoolForKey:REMINDER_IS_COMPLETE_KEY];
     self.times = [decoder decodeObjectForKey:REMINDER_TIMES_KEY];
+    self.lastDaySeen = [decoder decodeObjectForKey:REMINDER_LAST_DAY_SEEN];
     
     return self;
 }
@@ -34,6 +45,7 @@
     [encoder encodeObject:self.reminderDays forKey:REMINDER_DAYS_KEY];
     [encoder encodeBool:self.isCompleted forKey:REMINDER_IS_COMPLETE_KEY];
     [encoder encodeObject:self.times forKey:REMINDER_TIMES_KEY];
+    [encoder encodeObject:self.lastDaySeen forKey:REMINDER_LAST_DAY_SEEN];
 }
 
 - (NSString *)description {

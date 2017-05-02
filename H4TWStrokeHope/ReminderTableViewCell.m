@@ -9,6 +9,9 @@
 #import "Constants.h"
 #import "ReminderTableViewCell.h"
 
+#define LABELS_LEADING_CONSTRAINT_WITH_CHECK_MARK 66
+#define LABELS_LEADING_CONSTRAINT_WITHOUT_CHECK_MARK 10
+
 @implementation ReminderTableViewCell
 
 - (void)awakeFromNib {
@@ -27,7 +30,7 @@
     // Configure the view for the selected state
 }
 
-- (void)layoutCellWithReminder:(Reminder *)reminder {
+- (void)layoutCellWithReminder:(Reminder *)reminder isToday:(BOOL)isToday; {
     self.reminder = reminder;
     
     /* Reminder title */
@@ -68,11 +71,20 @@
     self.reminderTimeLabel.text = [NSString stringWithFormat:@"%@ %@", daysStr, timeStr];
     
     /* Check mark */
-    if (self.reminder.isCompleted) {
-        [self.checkButton setImage:[UIImage imageNamed:REMINDER_CHECK_SELECTED] forState:UIControlStateNormal];
+    if (isToday) {
+        self.labelsLeadingConstraint.constant = LABELS_LEADING_CONSTRAINT_WITH_CHECK_MARK;
+        self.checkButton.hidden = NO;
+        if (self.reminder.isCompleted) {
+            [self.checkButton setImage:[UIImage imageNamed:REMINDER_CHECK_SELECTED] forState:UIControlStateNormal];
+        } else {
+            [self.checkButton setImage:[UIImage imageNamed:REMINDER_CHECK_UNSELECTED] forState:UIControlStateNormal];
+        }
     } else {
-        [self.checkButton setImage:[UIImage imageNamed:REMINDER_CHECK_UNSELECTED] forState:UIControlStateNormal];
+        self.labelsLeadingConstraint.constant = LABELS_LEADING_CONSTRAINT_WITHOUT_CHECK_MARK;
+        self.checkButton.hidden = YES;
     }
+    
+    [self layoutIfNeeded];
 }
 
 - (IBAction)clickedCheck:(id)sender {

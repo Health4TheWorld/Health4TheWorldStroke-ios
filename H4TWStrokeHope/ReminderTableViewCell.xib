@@ -85,6 +85,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="checkButton" destination="leQ-Ml-pHa" id="cyc-9y-GVe"/>
+                <outlet property="labelsLeadingConstraint" destination="MDo-QE-Ki8" id="cUH-a7-Df5"/>
                 <outlet property="reminderNameLabel" destination="SIy-6S-DOj" id="Yvj-V2-sEw"/>
                 <outlet property="reminderTimeLabel" destination="ndL-Pi-g0M" id="dUb-cq-jkI"/>
             </connections>

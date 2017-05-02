@@ -59,11 +59,9 @@
 - (void)loadAllReminders {
     NSData *remindersData = [[NSUserDefaults standardUserDefaults] objectForKey:USER_DEFAULTS_REMINDERS_KEY];
     if (remindersData != nil) {
-        NSLog(@"Loading existing reminders array.");
         NSArray *savedArray = [NSKeyedUnarchiver unarchiveObjectWithData:remindersData];
         self.allReminders = [savedArray mutableCopy];
     } else {
-        NSLog(@"No reminders array.");
         self.allReminders = [[NSMutableArray alloc] init];
     }
 }
@@ -80,7 +78,15 @@
     NSDateComponents *comps = [gregorian components:NSCalendarUnitWeekday fromDate:[NSDate date]];
     long weekday = [comps weekday];
     [self.todayReminders removeAllObjects];
-    for (Reminder *reminder in self.allReminders) {
+    NSDate *today = [NSDate date];
+    for (int i=0; i < self.allReminders.count; i++) {
+        Reminder *reminder = [self.allReminders objectAtIndex:i];
+        BOOL wasSeenToday = [Utils day:today isSameDayAs:reminder.lastDaySeen];
+        if (!wasSeenToday) {
+            reminder.isCompleted = NO;
+            reminder.lastDaySeen = today;
+            [self.allReminders replaceObjectAtIndex:i withObject:reminder];
+        }
         NSArray *reminderDays = reminder.reminderDays;
         if (weekday == 1) {
             /* Sunday */
@@ -119,6 +125,7 @@
             }
         }
     }
+    [self saveReminders];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -225,14 +232,14 @@
     Reminder *reminder;
     if (indexPath.section == 0) {
         reminder = [self.todayReminders objectAtIndex:indexPath.row];
+        [cell layoutCellWithReminder:reminder isToday:YES];
     } else {
         reminder = [self.allReminders objectAtIndex:indexPath.row];
+        [cell layoutCellWithReminder:reminder isToday:NO];
     }
-    [cell layoutCellWithReminder:reminder];
+    
     return cell;
 }
-
-
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     self.selectedIndexPath = indexPath;
@@ -367,6 +374,8 @@
 
 #pragma mark - CreateReminderProtocol 
 - (void)createdReminder:(Reminder *)reminder {
+    reminder.lastDaySeen = [NSDate date];
+    reminder.isCompleted = NO;
     [self.allReminders addObject:reminder];
     [self saveReminders];
     [self setUpTodayReminders];
@@ -375,6 +384,9 @@
 
 #pragma mark - EditReminderProtocol 
 - (void)savedEditChanges:(Reminder *)reminder {
+    /* Any edits they made marks the reminder as now not completed for the day */
+    reminder.lastDaySeen = [NSDate date];
+    reminder.isCompleted = NO;
     if (self.selectedIndexPath.section == 0) {
         Reminder *oldReminder = [self.todayReminders objectAtIndex:self.selectedIndexPath.row];
         for (int i=0; i < self.allReminders.count; i++) {
