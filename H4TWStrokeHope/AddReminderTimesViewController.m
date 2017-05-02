@@ -121,16 +121,26 @@
 }
 
 - (IBAction)saveButtonPressed:(id)sender {
-    if (self.isEditing) {
-        self.reminder.times = self.times;
-        if (self.delegate && ([self.delegate respondsToSelector:@selector(editedReminderTimes:)])) {
-            [self.delegate editedReminderTimes:self.times];
-        }
-        [self dismissViewControllerAnimated:YES completion:nil];
+    if (self.times.count == 0) {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Missing times" message:@"Please add at least one time for your reminder." preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction* ok = [UIAlertAction actionWithTitle:@"Got it!" style:UIAlertActionStyleDefault handler:nil];
+        [alertController addAction:ok];
+        alertController.view.tintColor = HFTW_MAGENTA;
+        [self presentViewController:alertController animated:YES completion:^{
+            alertController.view.tintColor = HFTW_MAGENTA;
+        }];
     } else {
-        self.reminder.times = self.times;
-        [self.delegate createdReminder:self.reminder];
-        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+        if (self.isEditing) {
+            self.reminder.times = self.times;
+            if (self.delegate && ([self.delegate respondsToSelector:@selector(editedReminderTimes:)])) {
+                [self.delegate editedReminderTimes:self.times];
+            }
+            [self dismissViewControllerAnimated:YES completion:nil];
+        } else {
+            self.reminder.times = self.times;
+            [self.delegate createdReminder:self.reminder];
+            [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+        }
     }
 }
 

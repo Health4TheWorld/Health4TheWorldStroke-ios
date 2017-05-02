@@ -65,19 +65,30 @@
 }
 
 - (IBAction)nextPressed:(id)sender {
-    if (self.isEditing) {
-        self.reminder.reminderName = self.reminderTextField.text;
-        if (self.delegate && ([self.delegate respondsToSelector:@selector(editedReminderTitle:)])) {
-            [self.delegate editedReminderTitle:self.reminderTextField.text];
-        }
-        [self dismissViewControllerAnimated:YES completion:nil];
+    /* Check that there's text */
+    if (self.reminderTextField.text.length == 0) {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Missing name" message:@"Please give your reminder a name." preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction* ok = [UIAlertAction actionWithTitle:@"Got it!" style:UIAlertActionStyleDefault handler:nil];
+        alertController.view.tintColor = HFTW_MAGENTA;
+        [alertController addAction:ok];
+        [self presentViewController:alertController animated:YES completion:^{
+            alertController.view.tintColor = HFTW_MAGENTA;
+        }];
     } else {
-        self.reminder.reminderName = self.reminderTextField.text;
-        AddReminderFrequencyViewController *next = [[AddReminderFrequencyViewController alloc] init];
-        next.reminder = self.reminder;
-        next.isEditing = NO;
-        next.remindersVC = self.remindersVC;
-        [self.navigationController pushViewController:next animated:YES];
+        if (self.isEditing) {
+            self.reminder.reminderName = self.reminderTextField.text;
+            if (self.delegate && ([self.delegate respondsToSelector:@selector(editedReminderTitle:)])) {
+                [self.delegate editedReminderTitle:self.reminderTextField.text];
+            }
+            [self dismissViewControllerAnimated:YES completion:nil];
+        } else {
+            self.reminder.reminderName = self.reminderTextField.text;
+            AddReminderFrequencyViewController *next = [[AddReminderFrequencyViewController alloc] init];
+            next.reminder = self.reminder;
+            next.isEditing = NO;
+            next.remindersVC = self.remindersVC;
+            [self.navigationController pushViewController:next animated:YES];
+        }
     }
 }
 
@@ -134,6 +145,11 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     [self goIntoSearchMode];
+}
+
+-(void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [textField resignFirstResponder];
 }
 
 /*
