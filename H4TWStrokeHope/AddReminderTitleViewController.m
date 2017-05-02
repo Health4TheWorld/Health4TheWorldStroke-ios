@@ -16,6 +16,10 @@
 @property (strong, nonatomic) IBOutlet UIView *searchUnderBar;
 @property (strong, nonatomic) IBOutlet UITextField *reminderTextField;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *searchUnderBarLeadingConstraint;
+@property (strong, nonatomic) IBOutlet UIButton *doctorsVisitButton;
+@property (strong, nonatomic) IBOutlet UIButton *bloodTestButton;
+@property (strong, nonatomic) IBOutlet UIButton *exerciseButton;
+@property (strong, nonatomic) IBOutlet UIButton *medicationButton;
 @end
 
 #define REMINDER_UNDERBAR_LEADING_CONSTRAINT 50
@@ -57,6 +61,15 @@
     self.searchUnderBar.backgroundColor = HFTW_LIGHT_GRAY;
     self.reminderTextField.textColor
     = HFTW_MAGENTA;
+    
+    [self.doctorsVisitButton setTitle:DOCTORS_VISIT_REMINDER forState:UIControlStateNormal];
+    [self.doctorsVisitButton setTitleColor:HFTW_MAGENTA forState:UIControlStateNormal];
+    [self.bloodTestButton setTitle:BLOOD_TEST_REMINDER forState:UIControlStateNormal];
+    [self.bloodTestButton setTitleColor:HFTW_MAGENTA forState:UIControlStateNormal];
+    [self.exerciseButton setTitle:EXERCISE_REMINDER forState:UIControlStateNormal];
+    [self.exerciseButton setTitleColor:HFTW_MAGENTA forState:UIControlStateNormal];
+    [self.medicationButton setTitle:MEDICATION_REMINDER forState:UIControlStateNormal];
+    [self.medicationButton setTitleColor:HFTW_MAGENTA forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -141,6 +154,21 @@
      ];
 }
 
+- (IBAction)doctorsVisitButtonPressed:(id)sender {
+    self.reminderTextField.text = DOCTORS_VISIT_REMINDER;
+}
+
+- (IBAction)bloodTestButtonPressed:(id)sender {
+    self.reminderTextField.text = BLOOD_TEST_REMINDER;
+}
+
+- (IBAction)exerciseButtonPressed:(id)sender {
+    self.reminderTextField.text = EXERCISE_REMINDER;
+}
+
+- (IBAction)medicationButtonPressed:(id)sender {
+    self.reminderTextField.text = MEDICATION_REMINDER;
+}
 #pragma mark – TextField delegate
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {

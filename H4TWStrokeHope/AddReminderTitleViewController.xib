@@ -16,6 +16,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddReminderTitleViewController">
             <connections>
+                <outlet property="bloodTestButton" destination="YQ1-Av-vML" id="uEm-Th-kZd"/>
+                <outlet property="doctorsVisitButton" destination="S8t-cR-8XS" id="RLt-CQ-VSf"/>
+                <outlet property="exerciseButton" destination="FLa-D9-Zt5" id="riS-Od-NE5"/>
+                <outlet property="medicationButton" destination="f9t-zN-jci" id="ezU-Mg-CPI"/>
                 <outlet property="nextButton" destination="Llr-1z-0PZ" id="8ma-ra-jZX"/>
                 <outlet property="reminderTextField" destination="faz-rX-NmU" id="84n-rq-JZV"/>
                 <outlet property="searchUnderBar" destination="jxC-DS-Xne" id="cQn-cq-IOm"/>
@@ -54,20 +58,20 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me to..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVm-IG-FN4">
-                    <rect key="frame" x="35" y="116" width="254" height="49.5"/>
+                    <rect key="frame" x="35" y="116" width="254" height="50"/>
                     <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="36"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxC-DS-Xne">
-                    <rect key="frame" x="50" y="228.5" width="325" height="4"/>
+                    <rect key="frame" x="50" y="229" width="325" height="4"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="4" id="X09-aG-TV9"/>
                     </constraints>
                 </view>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Take my medicine" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="faz-rX-NmU">
-                    <rect key="frame" x="50" y="180.5" width="309" height="47"/>
+                    <rect key="frame" x="50" y="181" width="309" height="47"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="47" id="r2v-l3-57H"/>
                     </constraints>
@@ -78,6 +82,38 @@
                         <outlet property="delegate" destination="-1" id="Ae6-wN-qzP"/>
                     </connections>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8t-cR-8XS">
+                    <rect key="frame" x="129.5" y="285" width="116" height="40"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                    <state key="normal" title="Doctor's visit"/>
+                    <connections>
+                        <action selector="doctorsVisitButtonPressed:" destination="-1" eventType="touchUpInside" id="m95-n5-Fvk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQ1-Av-vML">
+                    <rect key="frame" x="141.5" y="323" width="92" height="40"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                    <state key="normal" title="Blood test"/>
+                    <connections>
+                        <action selector="bloodTestButtonPressed:" destination="-1" eventType="touchUpInside" id="ubh-sG-nho"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLa-D9-Zt5">
+                    <rect key="frame" x="150.5" y="361" width="73" height="40"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                    <state key="normal" title="Exercise"/>
+                    <connections>
+                        <action selector="exerciseButtonPressed:" destination="-1" eventType="touchUpInside" id="KTJ-zm-VBz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9t-zN-jci">
+                    <rect key="frame" x="136.5" y="399" width="101" height="40"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                    <state key="normal" title="Medication"/>
+                    <connections>
+                        <action selector="medicationButtonPressed:" destination="-1" eventType="touchUpInside" id="2Zh-0C-Vjy"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -85,10 +121,18 @@
                 <constraint firstAttribute="trailing" secondItem="ggE-cp-mys" secondAttribute="trailing" constant="26" id="43Y-Dw-U2r"/>
                 <constraint firstItem="Llr-1z-0PZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="6le-jX-62i"/>
                 <constraint firstItem="ggE-cp-mys" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="AQ6-M0-jPz"/>
+                <constraint firstItem="f9t-zN-jci" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HVs-xK-28a"/>
                 <constraint firstAttribute="trailing" secondItem="Llr-1z-0PZ" secondAttribute="trailing" constant="16" id="Kai-kt-t3K"/>
+                <constraint firstItem="YQ1-Av-vML" firstAttribute="top" secondItem="S8t-cR-8XS" secondAttribute="bottom" constant="-2" id="PSC-5o-FyD"/>
                 <constraint firstItem="jxC-DS-Xne" firstAttribute="top" secondItem="faz-rX-NmU" secondAttribute="bottom" constant="1" id="URO-bs-kSK"/>
+                <constraint firstItem="S8t-cR-8XS" firstAttribute="top" secondItem="jxC-DS-Xne" secondAttribute="bottom" constant="52" id="WGu-va-jGU"/>
                 <constraint firstAttribute="trailing" secondItem="jxC-DS-Xne" secondAttribute="trailing" id="Wlt-j2-0vQ"/>
+                <constraint firstItem="S8t-cR-8XS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZWf-Md-pCR"/>
+                <constraint firstItem="f9t-zN-jci" firstAttribute="top" secondItem="FLa-D9-Zt5" secondAttribute="bottom" constant="-2" id="c7Y-Cd-IBO"/>
+                <constraint firstItem="YQ1-Av-vML" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hjN-kj-KCf"/>
                 <constraint firstAttribute="bottom" secondItem="Llr-1z-0PZ" secondAttribute="bottom" constant="16" id="kCx-JL-mdM"/>
+                <constraint firstItem="FLa-D9-Zt5" firstAttribute="top" secondItem="YQ1-Av-vML" secondAttribute="bottom" constant="-2" id="lUh-sM-2eI"/>
+                <constraint firstItem="FLa-D9-Zt5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="p1W-Th-luG"/>
                 <constraint firstItem="faz-rX-NmU" firstAttribute="top" secondItem="gVm-IG-FN4" secondAttribute="bottom" constant="15" id="qBN-Q7-nLF"/>
                 <constraint firstItem="jxC-DS-Xne" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="sQ9-GR-f9D"/>
                 <constraint firstItem="gVm-IG-FN4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="uGd-RJ-IjK"/>
