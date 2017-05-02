@@ -177,7 +177,7 @@
     static int circleWidth = 10;
     float totalWidth = (self.quotes.count * circleWidth) + ((self.quotes.count - 1) * spaceBetweenCircles);
     float startingX = self.view.center.x - (totalWidth/2);
-    float startingY = firstAuthorLabel.frame.origin.y + firstAuthorLabel.frame.size.height + 100;
+    float startingY = firstAuthorLabel.frame.origin.y + firstAuthorLabel.frame.size.height + 70;
     for (int i=0; i < self.quotes.count; i++) {
         UIButton *circle = [[UIButton alloc] initWithFrame:CGRectMake(startingX, startingY, circleWidth, circleWidth)];
         if (i > 0) {
