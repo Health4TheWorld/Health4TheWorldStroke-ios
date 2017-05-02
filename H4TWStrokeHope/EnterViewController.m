@@ -100,8 +100,8 @@
     self.authors = [[NSMutableArray alloc] init];
 
     /* First quote */
-    UILabel *firstQuote = [EnterViewController getQuoteLabelWithText:@"\"Sometimes the bad things that happen in our lives put us directly on the path to the best things that will ever happen to us.\"" offscreen:NO];
-    UILabel *firstAuthorLabel = [EnterViewController getAuthorLabelWithText:@" – Nicole Reed" forQuoteLabel:firstQuote offScreen:NO];
+    UILabel *firstQuote = [EnterViewController getQuoteLabelWithText:@"\"The best preparation for tomorrow is doing your best today.\"" offscreen:NO];
+    UILabel *firstAuthorLabel = [EnterViewController getAuthorLabelWithText:@" – H. Jackson Brown, Jr" forQuoteLabel:firstQuote offScreen:NO];
     
     [self.view addSubview:firstQuote];
     [self.view addSubview:firstAuthorLabel];
@@ -110,8 +110,8 @@
     [self.authors addObject:firstAuthorLabel];
     
     /* Second quote */
-    UILabel *secondQuote = [EnterViewController getQuoteLabelWithText:@"\"We must let go of the life we have planned, so as to accept the one that is waiting for us.\"" offscreen:YES];
-    UILabel *secondAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Joseph Campbell" forQuoteLabel:secondQuote offScreen:YES];
+    UILabel *secondQuote = [EnterViewController getQuoteLabelWithText:@"\"Believe you can and you're halfway there.\"" offscreen:YES];
+    UILabel *secondAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Theodore Roosevelt" forQuoteLabel:secondQuote offScreen:YES];
     
     [self.view addSubview:secondQuote];
     [self.view addSubview:secondAuthorLabel];
@@ -120,8 +120,8 @@
     [self.authors addObject:secondAuthorLabel];
     
     /* Third quote */
-    UILabel *thirdQuote = [EnterViewController getQuoteLabelWithText:@"\"The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.\"" offscreen:YES];
-    UILabel *thirdAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Helen Keller" forQuoteLabel:thirdQuote offScreen:YES];
+    UILabel *thirdQuote = [EnterViewController getQuoteLabelWithText:@"\"Nothing is impossible, the word itself says 'I'm possible'!\"" offscreen:YES];
+    UILabel *thirdAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Audrey Hepburn" forQuoteLabel:thirdQuote offScreen:YES];
     
     [self.view addSubview:thirdQuote];
     [self.view addSubview:thirdAuthorLabel];
@@ -129,6 +129,45 @@
     [self.quotes addObject:thirdQuote];
     [self.authors addObject:thirdAuthorLabel];
     
+    /* Fourth quote */
+    UILabel *fourthQuote = [EnterViewController getQuoteLabelWithText:@"\"Only I can change my life. No one can do it for me.\"" offscreen:YES];
+    UILabel *fourthAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Carol Burnett" forQuoteLabel:thirdQuote offScreen:YES];
+    
+    [self.view addSubview:fourthQuote];
+    [self.view addSubview:fourthAuthorLabel];
+    
+    [self.quotes addObject:fourthQuote];
+    [self.authors addObject:fourthAuthorLabel];
+    
+    /* Fifth quote */
+    UILabel *fifthQuote = [EnterViewController getQuoteLabelWithText:@"\"Always do your best. What you plant now will harvest later.\"" offscreen:YES];
+    UILabel *fifthAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Og Mandino" forQuoteLabel:thirdQuote offScreen:YES];
+    
+    [self.view addSubview:fifthQuote];
+    [self.view addSubview:fifthAuthorLabel];
+    
+    [self.quotes addObject:fifthQuote];
+    [self.authors addObject:fifthAuthorLabel];
+    
+    /* Sixth quote */
+    UILabel *sixthQuote = [EnterViewController getQuoteLabelWithText:@"\"Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.\"" offscreen:YES];
+    UILabel *sixthAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Helen Keller" forQuoteLabel:thirdQuote offScreen:YES];
+    
+    [self.view addSubview:sixthQuote];
+    [self.view addSubview:sixthAuthorLabel];
+    
+    [self.quotes addObject:sixthQuote];
+    [self.authors addObject:sixthAuthorLabel];
+    
+    /* Seventh quote */
+    UILabel *seventhQuote = [EnterViewController getQuoteLabelWithText:@"\"Setting goals is the first step in turning the invisible into the visible.\"" offscreen:YES];
+    UILabel *seventhAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Tony Robbins" forQuoteLabel:thirdQuote offScreen:YES];
+    
+    [self.view addSubview:seventhQuote];
+    [self.view addSubview:seventhAuthorLabel];
+    
+    [self.quotes addObject:seventhQuote];
+    [self.authors addObject:seventhAuthorLabel];
 
     self.currentQuoteIndex = 0;
     
@@ -138,7 +177,7 @@
     static int circleWidth = 10;
     float totalWidth = (self.quotes.count * circleWidth) + ((self.quotes.count - 1) * spaceBetweenCircles);
     float startingX = self.view.center.x - (totalWidth/2);
-    float startingY = firstAuthorLabel.frame.origin.y + firstAuthorLabel.frame.size.height + 40;
+    float startingY = firstAuthorLabel.frame.origin.y + firstAuthorLabel.frame.size.height + 100;
     for (int i=0; i < self.quotes.count; i++) {
         UIButton *circle = [[UIButton alloc] initWithFrame:CGRectMake(startingX, startingY, circleWidth, circleWidth)];
         if (i > 0) {
