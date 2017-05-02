@@ -154,6 +154,7 @@
         self.reminder.reminderDays = reminderDays;
         AddReminderTimesViewController *next = [[AddReminderTimesViewController alloc] init];
         next.reminder = self.reminder;
+        next.isEditing = NO;
         next.delegate = self.remindersVC;
         [self.navigationController pushViewController:next animated:YES];
     }

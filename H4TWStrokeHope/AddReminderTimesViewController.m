@@ -8,7 +8,6 @@
 
 #import "AddReminderTimesViewController.h"
 #import "Constants.h"
-#import "Time.h"
 #import "TimeTableViewCell.h"
 
 @interface AddReminderTimesViewController ()
@@ -84,7 +83,7 @@
     [self.timeTextField resignFirstResponder];
 
     /* Add the time */
-    Time *time = [[Time alloc] initWithString:self.timeTextField.text];
+    NSString *time = self.timeTextField.text;
     [self.times addObject:time];
     [self.tableView reloadData];
     self.timeTextField.text = @"";
@@ -157,7 +156,7 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"TimeTableViewCell" owner:self options:nil];
         cell = (TimeTableViewCell *)[nib objectAtIndex:0];
     }
-    Time *time = [self.times objectAtIndex:indexPath.row];
+    NSString *time = [self.times objectAtIndex:indexPath.row];
     [cell layoutWithTime:time];
     return cell;
 }

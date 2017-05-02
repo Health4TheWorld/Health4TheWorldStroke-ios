@@ -8,7 +8,6 @@
 
 #import "Constants.h"
 #import "ReminderTableViewCell.h"
-#import "Time.h"
 
 @implementation ReminderTableViewCell
 
@@ -58,11 +57,11 @@
     /* Reminder time */
     NSString *timeStr = @"";
     for (int i=0; i < reminder.times.count; i++) {
-        Time *currTime = (Time *)[reminder.times objectAtIndex:i];
+        NSString *currTime = [reminder.times objectAtIndex:i];
         if (i == (reminder.times.count - 1)) {
-            timeStr = [timeStr stringByAppendingString:[NSString stringWithFormat:@"%@", currTime.timeStr]];
+            timeStr = [timeStr stringByAppendingString:[NSString stringWithFormat:@"%@", currTime]];
         } else {
-            timeStr = [timeStr stringByAppendingString:[NSString stringWithFormat:@"%@, ", currTime.timeStr]];
+            timeStr = [timeStr stringByAppendingString:[NSString stringWithFormat:@"%@, ", currTime]];
         }
     }
     

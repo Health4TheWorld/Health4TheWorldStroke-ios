@@ -18,6 +18,8 @@
 #define CELL_HEIGHT 75
 #define NO_RESULTS_CELL_HEIGHT 50
 
+#define USER_DEFAULTS_REMINDERS_KEY @"reminders"
+
 @interface RemindersViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property NSMutableArray *todayReminders;
@@ -50,11 +52,30 @@
     self.todayReminders = [[NSMutableArray alloc] init];
     self.allReminders = [[NSMutableArray alloc] init];
 
-    [self loadReminders];
+    [self loadAllReminders];
+    [self setUpTodayReminders];
+}
+
+- (void)loadAllReminders {
+    NSData *remindersData = [[NSUserDefaults standardUserDefaults] objectForKey:USER_DEFAULTS_REMINDERS_KEY];
+    if (remindersData != nil) {
+        NSLog(@"Loading existing reminders array.");
+        NSArray *savedArray = [NSKeyedUnarchiver unarchiveObjectWithData:remindersData];
+        self.allReminders = [savedArray mutableCopy];
+    } else {
+        NSLog(@"No reminders array.");
+        self.allReminders = [[NSMutableArray alloc] init];
+    }
+}
+
+- (void)saveReminders {
+    NSData *dataSave = [NSKeyedArchiver archivedDataWithRootObject:self.allReminders];
+    [[NSUserDefaults standardUserDefaults] setObject:dataSave forKey:USER_DEFAULTS_REMINDERS_KEY];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 /* Load all reminders, and then figure out which ones are today. */
-- (void)loadReminders {
+- (void)setUpTodayReminders {
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDateComponents *comps = [gregorian components:NSCalendarUnitWeekday fromDate:[NSDate date]];
     long weekday = [comps weekday];
@@ -188,9 +209,9 @@
         if (cell == nil) {
             NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"NoResultsTableViewCell" owner:self options:nil];
             cell = (NoResultsTableViewCell *)[nib objectAtIndex:0];
-            cell.mainLabel.text = @"None.";
-            return cell;
         }
+        cell.mainLabel.text = @"None.";
+        return cell;
     }
     
     /* Normal cell */
@@ -300,6 +321,40 @@
     return view;
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        if (self.todayReminders.count == 0) {
+            return NO;
+        }
+    } else if (indexPath.section == 1) {
+        if (self.allReminders.count == 0) {
+            return NO;
+        }
+    }
+    return YES;
+}
+
+/* Delete a reminder */
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        if (indexPath.section == 0) {
+            Reminder *reminderToDelete = [self.todayReminders objectAtIndex:self.selectedIndexPath.row];
+            for (int i=0; i < self.allReminders.count; i++) {
+                Reminder *reminder = [self.allReminders objectAtIndex:i];
+                if ([reminder isEqual:reminderToDelete]) {
+                    [self.allReminders removeObjectAtIndex:i];
+                }
+            }
+        } else if (indexPath.section == 1) {
+            [self.allReminders removeObjectAtIndex:indexPath.row];
+        }
+        [self saveReminders];
+        [self setUpTodayReminders];
+        [self.tableView reloadData];
+    }
+}
+
+
 /* We only have section headers in the ACCEPTED section. */
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return SECTION_HEADER_HEIGHT;
@@ -307,13 +362,14 @@
 
 - (void)clickedCheckOnReminder:(Reminder *)reminder {
     reminder.isCompleted = !reminder.isCompleted;
-    NSLog(@"Clicked check!");
+    [self saveReminders];
 }
 
 #pragma mark - CreateReminderProtocol 
 - (void)createdReminder:(Reminder *)reminder {
     [self.allReminders addObject:reminder];
-    [self loadReminders];
+    [self saveReminders];
+    [self setUpTodayReminders];
     [self.tableView reloadData];
 }
 
@@ -330,7 +386,8 @@
     } else if (self.selectedIndexPath.section == 1) {
         [self.allReminders replaceObjectAtIndex:self.selectedIndexPath.row withObject:reminder];
     }
-    [self loadReminders];
+    [self saveReminders];
+    [self setUpTodayReminders];
     [self.tableView reloadData];
 }
 

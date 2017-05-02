@@ -65,7 +65,6 @@
 		CC11D1391EB6B7BC0063E72A /* NoResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D1371EB6B7BC0063E72A /* NoResultsTableViewCell.xib */; };
 		CC11D13D1EB6B99E0063E72A /* EditReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D13B1EB6B99E0063E72A /* EditReminderViewController.m */; };
 		CC11D13E1EB6B99E0063E72A /* EditReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D13C1EB6B99E0063E72A /* EditReminderViewController.xib */; };
-		CC11D1411EB6D9FA0063E72A /* Time.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1401EB6D9FA0063E72A /* Time.m */; };
 		CC11D1451EB6E7D00063E72A /* TimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1431EB6E7D00063E72A /* TimeTableViewCell.m */; };
 		CC11D1461EB6E7D00063E72A /* TimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D1441EB6E7D00063E72A /* TimeTableViewCell.xib */; };
 		CC38386E1E95FCF400001213 /* InformationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC38386C1E95FCF400001213 /* InformationalViewController.m */; };
@@ -216,8 +215,6 @@
 		CC11D13A1EB6B99E0063E72A /* EditReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditReminderViewController.h; sourceTree = "<group>"; };
 		CC11D13B1EB6B99E0063E72A /* EditReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditReminderViewController.m; sourceTree = "<group>"; };
 		CC11D13C1EB6B99E0063E72A /* EditReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditReminderViewController.xib; sourceTree = "<group>"; };
-		CC11D13F1EB6D9FA0063E72A /* Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Time.h; sourceTree = "<group>"; };
-		CC11D1401EB6D9FA0063E72A /* Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Time.m; sourceTree = "<group>"; };
 		CC11D1421EB6E7D00063E72A /* TimeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableViewCell.h; sourceTree = "<group>"; };
 		CC11D1431EB6E7D00063E72A /* TimeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewCell.m; sourceTree = "<group>"; };
 		CC11D1441EB6E7D00063E72A /* TimeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeTableViewCell.xib; sourceTree = "<group>"; };
@@ -441,8 +438,6 @@
 				CC3CB64C1EA11F9E00CA9429 /* LearnContent.m */,
 				CC11D11D1EB51AB40063E72A /* Reminder.h */,
 				CC11D11E1EB51AB40063E72A /* Reminder.m */,
-				CC11D13F1EB6D9FA0063E72A /* Time.h */,
-				CC11D1401EB6D9FA0063E72A /* Time.m */,
 			);
 			name = "Data Models";
 			sourceTree = "<group>";
@@ -882,7 +877,6 @@
 				CCB7B4031E9413260058C32E /* ExercisesViewController.m in Sources */,
 				CC4C10E71E7A272C00515CDC /* Constants.m in Sources */,
 				CC11D13D1EB6B99E0063E72A /* EditReminderViewController.m in Sources */,
-				CC11D1411EB6D9FA0063E72A /* Time.m in Sources */,
 				CC3CB64D1EA11F9E00CA9429 /* LearnContent.m in Sources */,
 				17E0BB201EA40F70001FC7F3 /* ArmsViewController.m in Sources */,
 				1720A06E1EA9E82C009C2B87 /* HandStretchViewController.m in Sources */,

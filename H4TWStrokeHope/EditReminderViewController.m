@@ -10,7 +10,6 @@
 #import "Constants.h" 
 #import "NoResultsTableViewCell.h"
 #import "Utils.h"
-#import "Time.h"
 #import "AddReminderTitleViewController.h"
 #import "AddReminderFrequencyViewController.h"
 #import "AddReminderTimesViewController.h"
@@ -131,11 +130,11 @@
         /* Reminder time */
         NSString *timeStr = @"";
         for (int i=0; i < self.reminder.times.count; i++) {
-            Time *currTime = (Time *)[self.reminder.times objectAtIndex:i];
+            NSString *currTime = [self.reminder.times objectAtIndex:i];
             if (i == (self.reminder.times.count - 1)) {
-                timeStr = [timeStr stringByAppendingString:[NSString stringWithFormat:@"%@", currTime.timeStr]];
+                timeStr = [timeStr stringByAppendingString:[NSString stringWithFormat:@"%@", currTime]];
             } else {
-                timeStr = [timeStr stringByAppendingString:[NSString stringWithFormat:@"%@, ", currTime.timeStr]];
+                timeStr = [timeStr stringByAppendingString:[NSString stringWithFormat:@"%@, ", currTime]];
             }
         }
         cell.mainLabel.text = timeStr;

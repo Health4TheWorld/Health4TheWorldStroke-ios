@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Time.h"
 
 @interface TimeTableViewCell : UITableViewCell
-@property Time *time;
+@property NSString *time;
 @property (strong, nonatomic) IBOutlet UIButton *timeButton;
 @property (strong, nonatomic) IBOutlet UIButton *addButton;
-- (void)layoutWithTime:(Time *)time;
+- (void)layoutWithTime:(NSString *)time;
 @end

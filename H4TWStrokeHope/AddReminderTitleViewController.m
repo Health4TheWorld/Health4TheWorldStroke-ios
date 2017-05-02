@@ -75,6 +75,7 @@
         self.reminder.reminderName = self.reminderTextField.text;
         AddReminderFrequencyViewController *next = [[AddReminderFrequencyViewController alloc] init];
         next.reminder = self.reminder;
+        next.isEditing = NO;
         next.remindersVC = self.remindersVC;
         [self.navigationController pushViewController:next animated:YES];
     }
