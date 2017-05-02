@@ -30,6 +30,8 @@
 		1737A1A11EA897E400C6D71E /* 4CSitToStand.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E701EA83B0300F37C74 /* 4CSitToStand.m4v */; };
 		1737A1A21EA897E800C6D71E /* 5AFemaleDocWaving.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E6F1EA83B0300F37C74 /* 5AFemaleDocWaving.m4v */; };
 		1788309C1EA8985200690787 /* 5BMaleDocWaving.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17593E6E1EA83B0300F37C74 /* 5BMaleDocWaving.m4v */; };
+		179726B51EB3109B0053378E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179726B31EB3109B0053378E /* WebViewController.m */; };
+		179726B61EB3109B0053378E /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 179726B41EB3109B0053378E /* WebViewController.xib */; };
 		17DE3D4A1EA95F2300D350A1 /* LegAndFeetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DE3D481EA95F2300D350A1 /* LegAndFeetViewController.m */; };
 		17DE3D4B1EA95F2300D350A1 /* LegAndFeetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DE3D491EA95F2300D350A1 /* LegAndFeetViewController.xib */; };
 		17DE3D4F1EA9604900D350A1 /* ArmsAndHandsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DE3D4D1EA9604900D350A1 /* ArmsAndHandsViewController.m */; };
@@ -163,6 +165,9 @@
 		17593E761EA83B0300F37C74 /* 2AElbowFlexion.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2AElbowFlexion.m4v; sourceTree = "<group>"; };
 		17593E771EA83B0300F37C74 /* 1CHipFlexion.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1CHipFlexion.m4v; sourceTree = "<group>"; };
 		17593E781EA83B0300F37C74 /* 1BKneeFlexion.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1BKneeFlexion.m4v; sourceTree = "<group>"; };
+		179726B21EB3109A0053378E /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		179726B31EB3109B0053378E /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		179726B41EB3109B0053378E /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		17DE3D471EA95F2300D350A1 /* LegAndFeetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LegAndFeetViewController.h; sourceTree = "<group>"; };
 		17DE3D481EA95F2300D350A1 /* LegAndFeetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LegAndFeetViewController.m; sourceTree = "<group>"; };
 		17DE3D491EA95F2300D350A1 /* LegAndFeetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LegAndFeetViewController.xib; sourceTree = "<group>"; };
@@ -673,6 +678,9 @@
 				CCB7B4181E94139A0058C32E /* SurveysViewController.h */,
 				CCB7B4191E94139A0058C32E /* SurveysViewController.m */,
 				CCB7B41A1E94139A0058C32E /* SurveysViewController.xib */,
+				179726B21EB3109A0053378E /* WebViewController.h */,
+				179726B31EB3109B0053378E /* WebViewController.m */,
+				179726B41EB3109B0053378E /* WebViewController.xib */,
 			);
 			name = Surveys;
 			sourceTree = "<group>";
@@ -794,6 +802,7 @@
 				CC11D1461EB6E7D00063E72A /* TimeTableViewCell.xib in Resources */,
 				CC73E4441E842370001131AF /* Lato-Italic.ttf in Resources */,
 				CC73E4411E842370001131AF /* Lato-BoldItalic.ttf in Resources */,
+				179726B61EB3109B0053378E /* WebViewController.xib in Resources */,
 				CC3CB6491EA11EC800CA9429 /* LearnContentViewController.xib in Resources */,
 				CCEF72EC1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib in Resources */,
 				17E0BB291EA41043001FC7F3 /* 1AToeFlexion.m4v in Resources */,
@@ -870,6 +879,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E0BB251EA40F9A001FC7F3 /* MindExercisesViewController.m in Sources */,
+				179726B51EB3109B0053378E /* WebViewController.m in Sources */,
 				CC73E4591E86BD65001131AF /* HomeButton.m in Sources */,
 				CCEF72EB1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m in Sources */,
 				CCB7B4091E9413590058C32E /* LearnViewController.m in Sources */,

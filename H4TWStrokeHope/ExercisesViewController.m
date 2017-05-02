@@ -21,7 +21,6 @@
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 @property (strong, nonatomic) IBOutlet UIView *videoView;
-@property (strong, nonatomic) IBOutlet UILabel *welcomeMessage;
 @property BOOL alreadySetUpView;
 @property float currentY;
 @end
@@ -67,19 +66,7 @@
         [self.contentView addSubview:self.videoView];
         self.currentY += self.videoView.frame.size.height + 20;
         
-        /* Text view */
-        self.welcomeMessage = [[UILabel alloc] initWithFrame:CGRectMake(MARGIN, self.currentY, screenWidth - (2 * MARGIN), 0)];
-        self.welcomeMessage.text = EXERCISE_PARAGRAPH_ONE;
-        self.welcomeMessage.font = [UIFont fontWithName:@"Lato-regular" size:16.0];
-        self.welcomeMessage.textColor = HFTW_TEXT_GRAY;
-        self.welcomeMessage.numberOfLines = 0;
-        self.welcomeMessage.textAlignment = NSTextAlignmentLeft;
-        [self.welcomeMessage sizeToFit];
-        CGRect welcomeMessageFrame = self.welcomeMessage.frame;
-        welcomeMessageFrame.size.height = [Utils heightOfString:self.welcomeMessage.text containedToWidth:welcomeMessageFrame.size.width withFont:self.welcomeMessage.font];
-        self.welcomeMessage.frame = welcomeMessageFrame;
-        self.currentY += (welcomeMessageFrame.size.height + 20);
-        [self.contentView addSubview:self.welcomeMessage];
+       
         
         /* Buttons for different types of exercises  */
         HomeButton *strengtheningButton = [[HomeButton alloc] initWithText:@"Strengthening" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, self.currentY, cellWidth, cellWidth)];

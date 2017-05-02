@@ -15,6 +15,7 @@
 @interface FunctionalMobilityViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIView *contentView;
+@property (strong, nonatomic) UILabel *welcomeMessage;
 
 @end
 
@@ -44,14 +45,14 @@
     float startingY = SPACE_BETWEEN_CELLS;
     
     HomeButton *a4Button = [[HomeButton alloc] initWithText:@"Bridge Hip Lift" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [a4Button addImageFullSize:[UIImage imageNamed:FUNCTIONALMOBILITY_4A]];
+    [a4Button addRoundImageCentered:[UIImage imageNamed:FUNCTIONALMOBILITY_4A]];
     [a4Button addTarget:self action:@selector(a4Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     
     HomeButton *b4Button = [[HomeButton alloc] initWithText:@"Arm Trunk Strengthening" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [b4Button addImageFullSize:[UIImage imageNamed:FUNCTIONALMOBILITY_4B]];
+    [b4Button addRoundImageCentered:[UIImage imageNamed:FUNCTIONALMOBILITY_4B]];
     [b4Button addTarget:self action:@selector(b4Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
@@ -59,12 +60,30 @@
     //cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
     
     HomeButton *c4Button = [[HomeButton alloc] initWithText:@"Sit To Stand" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [c4Button addImageFullSize:[UIImage imageNamed:FUNCTIONALMOBILITY_4C]];
+    [c4Button addRoundImageCentered:[UIImage imageNamed:FUNCTIONALMOBILITY_4C]];
     [c4Button addTarget:self action:@selector(c4Pressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    startingY += cellHeight;
+    startingY += SPACE_BETWEEN_CELLS;
+    
+    /* Text view */
+    
+    self.welcomeMessage = [[UILabel alloc] initWithFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, 0)];
+    self.welcomeMessage.text = EXERCISE_PARAGRAPH_ONE;
+    self.welcomeMessage.font = [UIFont fontWithName:@"Lato-regular" size:16.0];
+    self.welcomeMessage.textColor = HFTW_TEXT_GRAY;
+    self.welcomeMessage.numberOfLines = 0;
+    self.welcomeMessage.textAlignment = NSTextAlignmentLeft;
+    [self.welcomeMessage sizeToFit];
+    CGRect welcomeMessageFrame = self.welcomeMessage.frame;
+    welcomeMessageFrame.size.height = [Utils heightOfString:self.welcomeMessage.text containedToWidth:welcomeMessageFrame.size.width withFont:self.welcomeMessage.font];
+    self.welcomeMessage.frame = welcomeMessageFrame;
+    startingY += (welcomeMessageFrame.size.height + 20);
     
     [self.contentView addSubview: a4Button];
     [self.contentView addSubview: b4Button];
     [self.contentView addSubview: c4Button];
+    [self.contentView addSubview:self.welcomeMessage];
     
     
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
