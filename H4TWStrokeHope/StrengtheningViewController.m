@@ -44,29 +44,8 @@
 
 - (void)setUpView {
     static int SPACE_BETWEEN_CELLS = 10;
-    float cellWidth = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
-    float cellHeight = cellWidth;
-    
+    float cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
     float startingY = SPACE_BETWEEN_CELLS;
-    
-    HomeButton *legsButton = [[HomeButton alloc] initWithText:@"Legs" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [legsButton addImageTopRight:[UIImage imageNamed:STRONG_LEG_ICON]];
-    [legsButton addTarget:self action:@selector(legsPressed) forControlEvents:UIControlEventTouchUpInside];
-    
-    HomeButton *armsButton = [[HomeButton alloc] initWithText:@"Arms" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
-    [armsButton addImageRightCenter:[UIImage imageNamed:STRONG_ARM_ICON]];
-    [armsButton addTarget:self action:@selector(armsPressed) forControlEvents:UIControlEventTouchUpInside];
-    
-    startingY += cellWidth;
-    startingY += SPACE_BETWEEN_CELLS;
-    cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
-    
-    HomeButton *coordinationButton = [[HomeButton alloc] initWithText:@"Coordination" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [coordinationButton addCoordinationImage:[UIImage imageNamed:BALANCE_ICON]];
-    [coordinationButton addTarget:self action:@selector(coordinationPressed) forControlEvents:UIControlEventTouchUpInside];
-    
-    startingY += cellHeight;
-    startingY += SPACE_BETWEEN_CELLS;
     
     /* Text view */
     
@@ -81,6 +60,29 @@
     welcomeMessageFrame.size.height = [Utils heightOfString:self.welcomeMessage.text containedToWidth:welcomeMessageFrame.size.width withFont:self.welcomeMessage.font];
     self.welcomeMessage.frame = welcomeMessageFrame;
     startingY += (welcomeMessageFrame.size.height + 20);
+    
+    /* Strengthening buttons */
+    cellWidth = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
+    float cellHeight = cellWidth;
+    
+    HomeButton *legsButton = [[HomeButton alloc] initWithText:@"Legs" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    [legsButton addImageTopRight:[UIImage imageNamed:STRONG_LEG_ICON]];
+    [legsButton addTarget:self action:@selector(legsPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    HomeButton *armsButton = [[HomeButton alloc] initWithText:@"Arms" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
+    [armsButton addImageTopRight:[UIImage imageNamed:STRONG_ARM_ICON]];
+    [armsButton addTarget:self action:@selector(armsPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    startingY += cellWidth;
+    startingY += SPACE_BETWEEN_CELLS;
+    cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
+    
+    HomeButton *coordinationButton = [[HomeButton alloc] initWithText:@"Coordination" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    [coordinationButton addCoordinationImage:[UIImage imageNamed:BALANCE_ICON]];
+    [coordinationButton addTarget:self action:@selector(coordinationPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    startingY += cellHeight;
+    startingY += SPACE_BETWEEN_CELLS;
     
     
     [self.contentView addSubview: legsButton];
