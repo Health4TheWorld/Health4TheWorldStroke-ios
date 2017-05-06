@@ -91,7 +91,7 @@
     } else if (self.reminder.reminderDays.count == 1) {
         return [NSString stringWithFormat:@"%@; %@%@.", NSLocalizedString(@"Reminders.weekly", nil), NSLocalizedString(@"Reminders.every", nil), [self.reminder.reminderDays objectAtIndex:0]];
     }
-    NSString *timeStr = [NSString stringWithFormat:@"%@; %@ ", NSLocalizedString(@"Reminders.custom", nil), NSLocalizedString(@"Reminders.every", nil)];
+    NSString *timeStr = [NSString stringWithFormat:@"%@; %@", NSLocalizedString(@"Reminders.custom", nil), NSLocalizedString(@"Reminders.every", nil)];
     for (int i=0; i < self.reminder.reminderDays.count; i++) {
         NSString *day = [self.reminder.reminderDays objectAtIndex:i];
         

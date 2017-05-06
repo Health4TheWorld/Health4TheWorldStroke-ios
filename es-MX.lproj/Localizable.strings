@@ -220,3 +220,6 @@
 "Reminders.addTime" = "Agregar";
 "Reminders.editTitle" = "Editar";
 "Reminders.saveChanges" = "Guardar";
+
+/* SURVEYS */
+"Surveys.password" = "Contraseña";
