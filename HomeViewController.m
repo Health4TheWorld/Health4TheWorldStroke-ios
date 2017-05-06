@@ -26,6 +26,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *language = [[NSLocale preferredLanguages] objectAtIndex:0];
+    NSLog(@"Language: %@", language);
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
     [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
