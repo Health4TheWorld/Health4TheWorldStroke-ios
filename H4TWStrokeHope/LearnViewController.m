@@ -32,7 +32,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"LEARN";
+    self.title = [NSLocalizedString(@"Learn.title", nil) uppercaseString];
     self.befastExplanationLabel.text = BEFAST_B;
     self.learnCategories = @[CONTENT_TYPE_FAQ, CONTENT_TYPE_BLOOD_PRESSURE, CONTENT_TYPE_HEART_RATE, CONTENT_TYPE_BLOOD_SUGAR, CONTENT_TYPE_DIET, CONTENT_TYPE_BLADDER_BOWEL, CONTENT_TYPE_EXERCISES, CONTENT_TYPE_SHOWER_BATH, CONTENT_TYPE_HOME_MOD];
     self.automaticallyAdjustsScrollViewInsets = NO;

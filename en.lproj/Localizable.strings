@@ -84,3 +84,97 @@
 "FunctionalMobility.bridgeHipLift" = "Bridge Hip Lift";
 "FunctionalMobility.armTrunkStrengthening" = "Arm Trunk Strengthening";
 "FunctionalMobility.sitToStand" = "Sit To Stand";
+
+/* LEARN VIEW CONTROLLER */
+"Learn.title" = "Learn";
+"Learn.befastB" = "Balance: Sudden loss of balance.";
+"Learn.befastE" = "Eye: Sudden loss of vision in one or both eyes.";
+"Learn.befastF" = "Face drooping on one side when asked to smile.";
+"Learn.befastA" = "Arm weakness; can't raise arms and keep them there.";
+"Learn.befastS" = "Speech difficulty.";
+"Learn.befastT" = "Time to call an ambulance.";
+"Learn.faq" = "FAQ";
+"Learn.bloodPressure" = "Blood Pressure";
+"Learn.heartRate" = "Heart Rate";
+"Learn.bloodSugar" = "Blood Sugar";
+"Learn.diet" = "Diet";
+"Learn.bladderBowel" = "Bladder/Bowel";
+"Learn.exercises" = "Exercises";
+"Learn.showerBath" = "Shower/Bath";
+"Learn.homeMod" = "Home Modification";
+"Learn.problem" = "PROBLEM";
+"Learn.whatToDo" = "WHAT TO DO";
+
+/* FAQ */
+"Faq.questionOne" = "What is stroke?";
+"Faq.answerOne" = "In stroke, the blood supply to a particular part of the brain is blocked or a blood vessel that supplies a part of the brain bursts. This results in cell death in the affected part of the brain. This may result in temporary or permanent loss of function in one or more part(s) of the body.";
+"Faq.questionTwo" = "What should you do if you think someone is having a stroke?";
+"Faq.answerTwo" = "Call for professional medical help (doctor or nurse) immediately.";
+"Faq.questionThree" = "Why do you need to act quickly?";
+"Faq.answerThree" = "Getting fast medical treatment lowers the risk of disability or even death.";
+
+/* BLOOD PRESSURE */
+"BloodPressure.problem" = "High blood pressure can cause strokes by damaging arteries throughout the body, causing them to burst or clog more easily.";
+"BloodPressure.problemBoldPart" = "High blood pressure";
+"BloodPressure.problemNonBoldPart" = " can cause strokes by damaging arteries throughout the body, causing them to burst or clog more easily.";
+"BloodPressure.whatToDo" = "In the general population aged 60 years or older, treating high BP to a goal of lower than 150/90 mm Hg reduces stroke.";
+"BloodPressure.whatToDoBoldPart" = "lower than 150/90 mm Hg";
+
+/* HEART RATE */
+"HeartRate.problem" = "Atrial Fibrillation, or irregular heart rate, is a risk factor for stroke.";
+"HeartRate.problemBoldPart" = "Atrial Fibrillation";
+"HeartRate.whatToDo" = "If you have suspicion of an irregular heart rate, contact your doctor immediately for testing, which might include electrocardiogram (ECG/EKG). Based on your past medical history and your risk for having a future stroke, there are several options for medications, like anticoagulants, that will help manage AFib.";
+"HeartRate.whatToDoFirstBoldPart" = "electrocardiogram";
+"HeartRate.whatToDoSecondBoldPart" = "anticoagulants";
+
+/* BLOOD SUGAR */
+"BloodSugar.problem" = "High blood sugar can increase the risk of developing strokes and heart disease. A blood test called HbA1c gives a picture of your average blood sugar control for the past 2 to 3 months.";
+"BloodSugar.problemBoldPart" = "High blood sugar";
+"BloodSugar.whatToDo" = "The American Heart Association recommends keeping blood sugar levels (Hgb1A1c) below 6% for patients with pre diabetes and below 7% for diabetic patients.";
+"BloodSugar.whatToDoFirstBoldPart" = "below 6%";
+"BloodSugar.whatToDoSecondBoldPart" = "below 7%";
+
+/* DIET */
+"Diet.problem" = "It’s important for stroke patients to maintain a healthy lifestyle. Stroke patients residing in long-term care facilities are at risk for calcium and vitamin D deficiencies.";
+"Diet.whatToDo" = "It’s best to eat an overall healthy diet with a variety of fruits and vegetables, whole grains, low-fat dairy products, skinless meat and fish, and nuts and legumes. Cut back on saturated fat, trans fat, sodium, red meat, sweets and sugar-sweetened beverages.";
+
+/* BLADDER/BOWEL */
+"BladderBowel.problem" = "Some patients will experience urinary incontinence or retention.";
+"BladderBowel.whatToDoBulletOne" = "Assess urinary retention through bladder scanning or intermittent catheterizations after voiding, and record volumes.";
+"BladderBowel.whatToDoBulletTwo" = "Go to the bathroom at regular times to help train your bladder. Urinating every 2-3 hours can help prevent accidents.";
+"BladderBowel.whatToDoBulletThree" = "Drink plenty of fluids during the day to stay hydrated to help you avoid constipation.";
+
+/* EXERCISES */
+"Exercises.problem" = "Stroke patients often have difficulties regaining physical strength and capabilities.";
+"Exercises.parOne" = "Stroke survivors should receive rehabilitation at an intensity that matches with anticipated benefit and tolerance.";
+"Exercises.bulletOne" = "To help with gait limitations: Patients should do intensive, repetitive, mobility-task training under supervision of a health care professional.";
+"Exercises.bulletOneBoldPart" = "gait limitations";
+"Exercises.bulletTwo" = "To help with falling: Patients should do balance training.";
+"Exercises.bulletTwoBoldPart" = "falling:";
+"Exercises.bulletThree" = "To help during hospitalization and early recovery: AHA/ASA recommends low-level walking, self care activities, intermittent sitting or standing, seated activities, or range of motion activities. These activities should be performed as tolerated with a guideline of achieving 10 to 20 beats per minute increases in heart rate, depending on what your physician recommends.";
+"Exercises.bulletThreeBoldPart" = "hospitalization and early recovery";
+"Exercises.bulletFour" = "To help during inpatient and outpatient exercise therapy or rehabilitation: The AHA/ASA recommends activities such as walking 3-5 days per week for 20-60 min/session (or multiple 10-min sessions); stretching 2-3 days per week for 10-30 seconds; Tai chi, yoga, and recreational activities as a complement to walking or stretching.";
+"Exercises.bulletFourBoldPart" = "inpatient and outpatient exercise therapy or rehabilitation";
+"Exercises.bulletFive" = "To remain safe during physical exercise: Use assistive devices for walking and exercise carefully, only under supervision.";
+"Exercises.bulletFiveBoldPart" = "safe during physical exercise";
+"Exercises.bulletSix" = "To maintain physical health: Check with your doctor for customized physical activity preference, specific activity limitations, and exercise participation restrictions.";
+"Exercises.bulletSixBoldPart" = "physical health:";
+
+/* SHOWER/BATH */
+"ShowerBath.problem" = "Getting in and out of bathtubs/showers can be dangerous, and patients are at risk of falling.";
+"ShowerBath.bulletOne" = "Showers > tubs: showers are safer than tubs generally.";
+"ShowerBath.bulletOneBoldPart" = "Showers > tubs:";
+"ShowerBath.bulletTwo" = "Grab bars might help make movement easier.";
+"ShowerBath.bulletTwoBoldPart" = "Grab bars";
+"ShowerBath.bulletThree" = "Bath mats with suction cups will help you avoid slipping.";
+"ShowerBath.bulletThreeBoldPart" = "Bath mats";
+"ShowerBath.paragraph" = "Make sure someone is nearby to help you if needed. Keep a bell handy or have another way to call for help. Balance training can help individuals with balance problems.";
+
+/* HOME MOD */
+"HomeMod.problem" = "Because patients might experience limited mobility, it’s important to modify your home so that it is safe and accessible.";
+"HomeMod.subHeaderOne" = "Bedroom:";
+"HomeMod.contentOne" = "Bedroom accessibility can be improved by moving items so that the door opens fully; widen doorways; reverse hinges so that door opens outwards instead of inwards. If a bed needs to be up against a wall, it should be oriented such that the patient’s affected side (weak side) is closer to the wall, so the strong side can assist the patient getting out of bed.";
+"HomeMod.subHeaderTwo" = "General:";
+"HomeMod.contentTwo" = "Eliminate rugs that can easily move to avoid trips and falls.";
+"HomeMod.subHeaderThree" = "Bath:";
+"HomeMod.contentThree" = "Bathrooms can be made more accessible to wheelchairs by widening the doorway. Toilet seats can be raised to make it less challenging in getting to and from the toilet: a toilet elevator that mounts between the floor and toilet; a seat elevator that attaches to the bowl and raises the seat; installing toilet rails/grab bars to improve support for mobility.";

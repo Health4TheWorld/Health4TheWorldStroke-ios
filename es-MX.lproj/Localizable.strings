@@ -83,3 +83,97 @@
 "FunctionalMobility.bridgeHipLift" = "Puente de la cadera";
 "FunctionalMobility.armTrunkStrengthening" = "Brazo y tronco";
 "FunctionalMobility.sitToStand" = "Sentarse a pararse";
+
+/* LEARN VIEW CONTROLLER */
+"Learn.title" = "Aprenda";
+"Learn.befastB" = "Balance: Sudden loss of balance.";
+"Learn.befastE" = "Eye: Sudden loss of vision in one or both eyes.";
+"Learn.befastF" = "Face drooping on one side when asked to smile.";
+"Learn.befastA" = "Arm weakness; can't raise arms and keep them there.";
+"Learn.befastS" = "Speech difficulty.";
+"Learn.befastT" = "Time to call an ambulance.";
+"Learn.faq" = "Preguntas frequentes";
+"Learn.bloodPressure" = "Presión sanguinea";
+"Learn.heartRate" = "Ritmo cardiaco";
+"Learn.bloodSugar" = "Nivel de azucar en la sangre";
+"Learn.diet" = "Dieta";
+"Learn.bladderBowel" = "Vejiga e intestinos";
+"Learn.exercises" = "Ejercicios";
+"Learn.showerBath" = "Ducha y baño";
+"Learn.homeMod" = "Modificación del hogar";
+"Learn.problem" = "PROBLEMA";
+"Learn.whatToDo" = "QUÉ HACER";
+
+/* FAQ */
+"Faq.questionOne" = "Qué es un  derrame or ataque cerebral (clinicamente conocido como un accidente cerebrovascular)?";
+"Faq.answerOne" = "En un accidente cerebrovascular el flujo de sangre hacia el cerebro se altera, resultando en la muerte de la parte afectada porque deja de recibir el oxígeno y los nutrientes que necesita para funcionar.  El accidente occure cuando un coágulo bloquea u obstruye un vaso sanguíneo en el cerebro o hay ruptura y sangrado de un vaso sanguíneo en el cerebro. Como resultado, puede haber pérdida temporal o permanente de la función corporal que es controlada por esa parte del cerebro.";
+"Faq.questionTwo" = "¿Qué debe hacer si piensa que alguien está teniendo un derrame cerebral?";
+"Faq.answerTwo" = "Llame inmediatamente a un profesional de la salud (médico o enfermero/a).";
+"Faq.questionThree" = "¿Por qué necesita actuar rápidamente?";
+"Faq.answerThree" = "Obtener tratamiento médico rápido reduce el riesgo de discapacidad o incluso la muerte.";
+
+/* BLOOD PRESSURE */
+"BloodPressure.problem" = "La presión arterial alta puede causar derrames pues daña las arterias en el cuerpo causando que se rompan u obstruyan más fácilmente.";
+"BloodPressure.problemBoldPart" = "La presión arterial alta";
+"BloodPressure.problemNonBoldPart" = " puede causar derrames pues daña las arterias en el cuerpo causando que se rompan u obstruyan más fácilmente.";
+"BloodPressure.whatToDo" = "En la población general de 60 años o más, el tratamiento de la presión alta con una meta de una presión menor de 150/90 mmHg reduce el riesgo de accidente cerebrovascular.";
+"BloodPressure.whatToDoBoldPart" = "menor de 150/90 mmHg";
+
+/* HEART RATE */
+"HeartRate.problem" = "La fibrilación auricular, o ritmo cardíaco irregular, es un factor de riesgo para el accidente cerebrovascular.";
+"HeartRate.problemBoldPart" = "La fibrilación auricular";
+"HeartRate.whatToDo" = "Si sospecha que pueda padecer de ritmo cardíaco irregular, comuníquese con su médico inmediatamente para realizar pruebas, que pueden incluir un electrocardiograma (ECG / EKG). Basado en su historial médico y su riesgo de un futuro accidente cerebrovascular, hay varias opciones de medicamentos, como los anticoagulantes, que pueden ayudar a controlar la fibrilación auricular.";
+"HeartRate.whatToDoFirstBoldPart" = "electrocardiograma";
+"HeartRate.whatToDoSecondBoldPart" = "anticoagulantes";
+
+/* BLOOD SUGAR */
+"BloodSugar.problem" = "Problema: Un nivel alto de azúcar en la sangre puede aumentar el riesgo de desarrollar derrames cerebrales y enfermedades del corazón. Un análisis de sangre llamado HbA1c nos deja saber el control promedio de azúcar en la sangre durante un los últimos 2 a 3 meses.";
+"BloodSugar.problemBoldPart" = "Un nivel alto de azúcar";
+"BloodSugar.whatToDo" = "Qué hacer: La Asociación Americana del Corazón recomienda mantener los niveles de azúcar en la sangre (HbA1c) por debajo del 6% para los pacientes con prediabetes y por debajo del 7% para los pacientes con diabetes.";
+"BloodSugar.whatToDoFirstBoldPart" = "debajo del 6";
+"BloodSugar.whatToDoSecondBoldPart" = "debajo del 7%";
+
+/* DIET */
+"Diet.problem" = "Es importante que los pacientes con historial de derrame cerebral mantengan un estilo de vida saludable. Los pacientes que residen en centros de cuidados a largo plazo corren el riesgo de presentar deficiencias de calcio y vitamina D.";
+"Diet.whatToDo" = "Qué hacer: Lo ideal es comer una dieta balanceada y saludable con variedad de frutas y verduras, granos enteros, productos lácteos bajos en grasa, carne y pescado sin piel,  nueces y legumbres. Reduzca la grasa saturada, la grasa trans, el sodio, la carne roja, los dulces y las bebidas azucaradas.";
+
+/* BLADDER/BOWEL */
+"BladderBowel.problem" = "Algunos pacientes experimentarán incontinencia urinaria o retención.";
+"BladderBowel.whatToDoBulletOne" = "Evalúe la retención urinaria mediante el escaneo de la vejiga o cateterizaciones intermitentes y registre los volúmenes después de orinar.";
+"BladderBowel.whatToDoBulletTwo" = "Vaya al baño en horarios regulares para ayudar a entrenar su vejiga. Urinating every 2-3 hours can help prevent accidents.";
+"BladderBowel.whatToDoBulletThree" = "Beba muchos líquidos durante el día para mantenerse hidratado y para  evitar el estreñimiento.";
+
+/* EXERCISES */
+"Exercises.problem" = "Los pacientes de accidente cerebrovascular a menudo tienen dificultades para recuperar la fuerza y capacidad física.";
+"Exercises.parOne" = "Los sobrevivientes de accidente cerebrovasculares deben recibir rehabilitación a una intensidad que coincida con el beneficio previsto y que el/la paciente pueda tolerar.";
+"Exercises.bulletOne" = "Para ayudar con las limitaciones al caminar: Los pacientes deben realizar una terapia intensiva y recurrente que incluya tareas de movilidad bajo la supervisión de un profesional de la salud.";
+"Exercises.bulletOneBoldPart" = "las limitaciones al caminar";
+"Exercises.bulletTwo" = "Para ayudar con caídas: Los pacientes deben realizar entrenamientos relacionados al balance.";
+"Exercises.bulletTwoBoldPart" = "caídas:";
+"Exercises.bulletThree" = "Para ayudar durante la hospitalización y la recuperación temprana: AHA / ASA recomienda caminatas fáciles de bajo impacto, actividades de autocuidado, estar sentado o de pie intermitentemente, actividades sentadas o actividades de alcance de movimiento. Estas actividades se deben realizar según lo tolerado con el objectivo de lograr un aumento de 10 a 20 latidos del corazón por minuto, dependiendo de lo que su médico recomiende.";
+"Exercises.bulletThreeBoldPart" = "la hospitalización y la recuperación temprana:";
+"Exercises.bulletFour" = "Para ayudar durante la terapia o rehabilitación de pacientes hospitalizados y ambulatorios: La AHA / ASA recomienda actividades tales como caminar 3-5 días a la semana durante 20-60 minutos por sesión (o varias sesiones de 10 minutos); estirar 2-3 días por semana durante 10-30 segundos; Tai chi, yoga y actividades recreativas como complemento para caminar o estirarse.";
+"Exercises.bulletFourBoldPart" = "la terapia o rehabilitación de pacientes hospitalizados y ambulatorios:";
+"Exercises.bulletFive" = "Para permanecer seguro al ejercitarse: Use dispositivos de ayuda para caminar y hacer ejercicio con cuidado, sólo bajo supervisión.";
+"Exercises.bulletFiveBoldPart" = "permanecer seguro al ejercitarse";
+"Exercises.bulletSix" = "Para mantener la salud física: Consulte con su médico la preferencia de actividad física para usted, las limitaciones de actividad específicas a usted y si existe alguna restricción en cuanto a su participación en ejercicio.";
+"Exercises.bulletSixBoldPart" = "la salud física:";
+
+/* SHOWER/BATH */
+"ShowerBath.problem" = "Entrar y salir de las bañeras / duchas puede ser peligroso y los pacientes corren el riesgo de caerse.";
+"ShowerBath.bulletOne" = "Duchas> bañeras: En general, las duchas son más seguras que las bañeras.";
+"ShowerBath.bulletOneBoldPart" = "Duchas> bañeras";
+"ShowerBath.bulletTwo" = "Las barras de agarre pueden ayudar a facilitar el movimiento.";
+"ShowerBath.bulletTwoBoldPart" = "barras de agarre";
+"ShowerBath.bulletThree" = "Alfombrillas de baño con ventosas de succión ayudan a evitar el deslizamiento de la alfombra.";
+"ShowerBath.bulletThreeBoldPart" = "Alfombrillas de baño";
+"ShowerBath.paragraph" = "Asegúrese de que alguien esté cerca para ayudarle de ser necesario. Mantenga una campana a mano o tenga otra manera de pedir ayuda.";
+
+/* HOME MOD */
+"HomeMod.problem" = "Debido a que los pacientes pueden experimentar una movilidad limitada, es importante modificar el  hogar para que sea seguro y accesible.";
+"HomeMod.subHeaderOne" = "Cuarto:";
+"HomeMod.contentOne" = "La accesibilidad del dormitorio se puede mejorar moviendo los artículos de modo que la puerta se abra completamente; ampliar las puertas; invertir las bisagras para que la puerta se abra hacia fuera en lugar de hacia adentro. Si una cama necesita estar contra una pared, debe orientarse de tal manera que el lado afectado del paciente (el lado débil) esté más cerca de la pared para que el lado fuerte le pueda ayudar a levantarse de la cama. ";
+"HomeMod.subHeaderTwo" = "En general:";
+"HomeMod.contentTwo" = "Elimine las alfombras que se puedan mover fácilmente para prevenir caídas.";
+"HomeMod.subHeaderThree" = "El baño:";
+"HomeMod.contentThree" = "Los baños se pueden modificar para que sena accessibles a sillas de rueda ampliando la puerta. Los asientos de los inodoros se pueden alzaar para que sea más fácil sentarse y pararse del inodoro con un levantador de inodoro que se pone entre el inodoro y el piso, un levantador de asiento de inodoro que alza la silla o instalando barras de agarre para soporte.";

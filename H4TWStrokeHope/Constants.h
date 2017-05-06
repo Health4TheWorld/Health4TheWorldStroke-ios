@@ -150,86 +150,86 @@
 #define HELP_ME_SPEAK_CANT_SPEAK NSLocalizedString(@"HelpMeSpeak.cantSpeak", nil)
 
 /* BEFAST */
-#define BEFAST_B @"Balance: Sudden loss of balance."
-#define BEFAST_E @"Eye: Sudden loss of vision in one or both eyes."
-#define BEFAST_F @"Face drooping on one side when asked to smile."
-#define BEFAST_A @"Arm weakness; can't raise arms and keep them there."
-#define BEFAST_S @"Speech difficulty."
-#define BEFAST_T @"Time to call an ambulance."
+#define BEFAST_B NSLocalizedString(@"Learn.befastB", nil)
+#define BEFAST_E NSLocalizedString(@"Learn.befastE", nil)
+#define BEFAST_F NSLocalizedString(@"Learn.befastF", nil)
+#define BEFAST_A NSLocalizedString(@"Learn.befastA", nil)
+#define BEFAST_S NSLocalizedString(@"Learn.befastS", nil)
+#define BEFAST_T NSLocalizedString(@"Learn.befastT", nil)
 
 /* LEARN - BLOOD PRESSURE */
-#define BLOOD_PRESSURE_PROBLEM @"High blood pressure can cause strokes by damaging arteries throughout the body, causing them to burst or clog more easily."
-#define BLOOD_PRESSURE_PROBLEM_BOLD_PART @"High blood pressure"
-#define BLOOD_PRESSURE_PROBLEM_NONBOLD_PART @" can cause strokes by damaging arteries throughout the body, causing them to burst or clog more easily."
-#define BLOOD_PRESSURE_WHAT_TO_DO @"In the general population aged 60 years or older, treating high BP to a goal of lower than 150/90 mm Hg reduces stroke."
-#define BLOOD_PRESSURE_WHAT_TO_DO_BOLD_PART @"lower than 150/90 mm Hg"
+#define BLOOD_PRESSURE_PROBLEM NSLocalizedString(@"BloodPressure.problem", nil)
+#define BLOOD_PRESSURE_PROBLEM_BOLD_PART NSLocalizedString(@"BloodPressure.problemBoldPart", nil)
+#define BLOOD_PRESSURE_PROBLEM_NONBOLD_PART NSLocalizedString(@"BloodPressure.problemNonBoldPart", nil)
+#define BLOOD_PRESSURE_WHAT_TO_DO NSLocalizedString(@"BloodPressure.whatToDo", nil)
+#define BLOOD_PRESSURE_WHAT_TO_DO_BOLD_PART NSLocalizedString(@"BloodPressure.whatToDoBoldPart", nil)
 
 /* LEARN – BLOOD SUGAR */
-#define BLOOD_SUGAR_PROBLEM @"High blood sugar can increase the risk of developing strokes and heart disease. A blood test called HbA1c gives a picture of your average blood sugar control for the past 2 to 3 months."
-#define BLOOD_SUGAR_PROBLEM_BOLD_PART @"High blood sugar"
-#define BLOOD_SUGAR_WHAT_TO_DO @"The American Heart Association recommends keeping blood sugar levels (Hgb1A1c) below 6% for patients with pre diabetes and below 7% for diabetic patients."
-#define BLOOD_SUGAR_WHAT_TO_DO_FIRST_BOLD_PART @"below 6%"
-#define BLOOD_SUGAR_WHAT_TO_DO_SECOND_BOLD_PART @"below 7%"
+#define BLOOD_SUGAR_PROBLEM NSLocalizedString(@"BloodSugar.problem", nil)
+#define BLOOD_SUGAR_PROBLEM_BOLD_PART NSLocalizedString(@"BloodSugar.problemBoldPart", nil)
+#define BLOOD_SUGAR_WHAT_TO_DO NSLocalizedString(@"BloodSugar.whatToDo", nil)
+#define BLOOD_SUGAR_WHAT_TO_DO_FIRST_BOLD_PART NSLocalizedString(@"BloodSugar.whatToDoFirstBoldPart", nil)
+#define BLOOD_SUGAR_WHAT_TO_DO_SECOND_BOLD_PART NSLocalizedString(@"BloodSugar.whatToDoSecondBoldPart", nil)
 
 /* LEARN - FAQ */
-#define FAQ_QUESTION_ONE @"What is stroke?"
-#define FAQ_ANSWER_ONE @"In stroke, the blood supply to a particular part of the brain is blocked or a blood vessel that supplies a part of the brain bursts. This results in cell death in the affected part of the brain. This may result in temporary or permanent loss of function in one or more part(s) of the body."
-#define FAQ_QUESTION_TWO @"What should you do if you think someone is having a stroke?"
-#define FAQ_ANSWER_TWO @"Call for professional medical help (doctor or nurse) immediately."
-#define FAQ_QUESTION_THREE @"Why do you need to act quickly?"
-#define FAQ_ANSWER_THREE @"Getting fast medical treatment lowers the risk of disability or even death."
+#define FAQ_QUESTION_ONE NSLocalizedString(@"Faq.questionOne", nil)
+#define FAQ_ANSWER_ONE NSLocalizedString(@"Faq.answerOne", nil)
+#define FAQ_QUESTION_TWO NSLocalizedString(@"Faq.questionTwo", nil)
+#define FAQ_ANSWER_TWO NSLocalizedString(@"Faq.answerTwo", nil)
+#define FAQ_QUESTION_THREE NSLocalizedString(@"Faq.questionThree", nil)
+#define FAQ_ANSWER_THREE NSLocalizedString(@"Faq.answerThree", nil)
 
 /* LEARN – HEART RATE */
-#define HEART_RATE_PROBLEM @"Atrial Fibrillation, or irregular heart rate, is a risk factor for stroke."
-#define HEART_RATE_PROBLEM_BOLD_PART @"Atrial Fibrillation"
-#define HEART_RATE_WHAT_TO_DO @"If you have suspicion of an irregular heart rate, contact your doctor immediately for testing, which might include electrocardiogram (ECG/EKG). Based on your past medical history and your risk for having a future stroke, there are several options for medications, like anticoagulants, that will help manage AFib."
-#define HEART_RATE_WHAT_TO_DO_FIRST_BOLD_PART @"electrocardiogram"
-#define HEART_RATE_WHAT_TO_DO_SECOND_BOLD_PART @"anticoagulants"
+#define HEART_RATE_PROBLEM NSLocalizedString(@"HeartRate.problem", nil)
+#define HEART_RATE_PROBLEM_BOLD_PART NSLocalizedString(@"HeartRate.problemBoldPart", nil)
+#define HEART_RATE_WHAT_TO_DO NSLocalizedString(@"HeartRate.whatToDo", nil)
+#define HEART_RATE_WHAT_TO_DO_FIRST_BOLD_PART NSLocalizedString(@"HeartRate.whatToDoFirstBoldPart", nil)
+#define HEART_RATE_WHAT_TO_DO_SECOND_BOLD_PART NSLocalizedString(@"HeartRate.whatToDoSecondBoldPart", nil)
 
 /* LEARN - DIET */
-#define DIET_PROBLEM @"It’s important for stroke patients to maintain a healthy lifestyle. Stroke patients residing in long-term care facilities are at risk for calcium and vitamin D deficiencies."
-#define DIET_WHAT_TO_DO @"It’s best to eat an overall healthy diet with a variety of fruits and vegetables, whole grains, low-fat dairy products, skinless meat and fish, and nuts and legumes. Cut back on saturated fat, trans fat, sodium, red meat, sweets and sugar-sweetened beverages."
+#define DIET_PROBLEM NSLocalizedString(@"Diet.problem", nil)
+#define DIET_WHAT_TO_DO NSLocalizedString(@"Diet.whatToDo", nil)
 
 /* LEARN - BLADDER/BOWEL */
-#define BLADDER_BOWEL_PROBLEM @"Some patients will experience urinary incontinence or retention."
-#define BLADDER_BOWEL_WHAT_TO_DO_BULLET_ONE @"Assess urinary retention through bladder scanning or intermittent catheterizations after voiding, and record volumes."
-#define BLADDER_BOWEL_WHAT_TO_DO_BULLET_TWO @"Go to the bathroom at regular times to help train your bladder. Urinating every 2-3 hours can help prevent accidents."
-#define BLADDER_BOWEL_WHAT_TO_DO_BULLET_THREE @"Drink plenty of fluids during the day to stay hydrated to help you avoid constipation."
+#define BLADDER_BOWEL_PROBLEM DIET_WHAT_TO_DO (NSLocalizedString(@"BladderBowel.problem", nil))
+#define BLADDER_BOWEL_WHAT_TO_DO_BULLET_ONE DIET_WHAT_TO_DO (NSLocalizedString(@"BladderBowel.whatToDoBulletOne", nil))
+#define BLADDER_BOWEL_WHAT_TO_DO_BULLET_TWO DIET_WHAT_TO_DO (NSLocalizedString(@"BladderBowel.whatToDoBulletTwo", nil))
+#define BLADDER_BOWEL_WHAT_TO_DO_BULLET_THREE DIET_WHAT_TO_DO (NSLocalizedString(@"BladderBowel.whatToDoBulletThree", nil))
 
 /* LEARN - EXERCISES */
-#define EXERCISES_PROBLEM @"Stroke patients often have difficulties regaining physical strength and capabilities."
-#define EXERCISES_PARAGRAPH_ONE @"Stroke survivors should receive rehabilitation at an intensity that matches with anticipated benefit and tolerance."
-#define EXERCISES_BULLET_ONE @"To help with gait limitations: Patients should do intensive, repetitive, mobility-task training under supervision of a health care professional."
-#define EXERCISES_BULLET_ONE_BOLD_PART @"gait limitations"
-#define EXERCISES_BULLET_TWO @"To help with falling: Patients should do balance training."
-#define EXERCISES_BULLET_TWO_BOLD_PART @"falling:"
-#define EXERCISES_BULLET_THREE @"To help during hospitalization and early recovery: AHA/ASA recommends low-level walking, self care activities, intermittent sitting or standing, seated activities, or range of motion activities. These activities should be performed as tolerated with a guideline of achieving 10 to 20 beats per minute increases in heart rate, depending on what your physician recommends."
-#define EXERCISES_BULLET_THREE_BOLD_PART @"hospitalization and early recovery"
-#define EXERCISES_BULLET_FOUR @"To help during inpatient and outpatient exercise therapy or rehabilitation: The AHA/ASA recommends activities such as walking 3-5 days per week for 20-60 min/session (or multiple 10-min sessions); stretching 2-3 days per week for 10-30 seconds; Tai chi, yoga, and recreational activities as a complement to walking or stretching."
-#define EXERCISES_BULLET_FOUR_BOLD_PART @"inpatient and outpatient exercise therapy or rehabilitation"
-#define EXERCISES_BULLET_FIVE @"To remain safe during physical exercise: Use assistive devices for walking and exercise carefully, only under supervision. "
-#define EXERCISES_BULLET_FIVE_BOLD_PART @"safe during physical exercise"
-#define EXERCISES_BULLET_SIX @"To maintain physical health: Check with your doctor for customized physical activity preference, specific activity limitations, and exercise participation restrictions."
-#define EXERCISES_BULLET_SIX_BOLD_PART @"physical health:"
+#define EXERCISES_PROBLEM NSLocalizedString(@"Exercises.problem", nil)
+#define EXERCISES_PARAGRAPH_ONE NSLocalizedString(@"Exercises.parOne", nil)
+#define EXERCISES_BULLET_ONE NSLocalizedString(@"Exercises.bulletOne", nil)
+#define EXERCISES_BULLET_ONE_BOLD_PART NSLocalizedString(@"Exercises.bulletOneBoldPart", nil)
+#define EXERCISES_BULLET_TWO NSLocalizedString(@"Exercises.bulletTwo", nil)
+#define EXERCISES_BULLET_TWO_BOLD_PART NSLocalizedString(@"Exercises.bulletTwoBoldPart", nil)
+#define EXERCISES_BULLET_THREE NSLocalizedString(@"Exercises.bulletThree", nil)
+#define EXERCISES_BULLET_THREE_BOLD_PART NSLocalizedString(@"Exercises.bulletThreeBoldPart", nil)
+#define EXERCISES_BULLET_FOUR NSLocalizedString(@"Exercises.bulletFour", nil)
+#define EXERCISES_BULLET_FOUR_BOLD_PART NSLocalizedString(@"Exercises.bulletFourBoldPart", nil)
+#define EXERCISES_BULLET_FIVE NSLocalizedString(@"Exercises.bulletFive", nil)
+#define EXERCISES_BULLET_FIVE_BOLD_PART NSLocalizedString(@"Exercises.bulletFiveBoldPart", nil)
+#define EXERCISES_BULLET_SIX NSLocalizedString(@"Exercises.bulletSix", nil)
+#define EXERCISES_BULLET_SIX_BOLD_PART NSLocalizedString(@"Exercises.bulletSixBoldPart", nil)
 
 /* LEARN - SHOWER/BATH */
-#define SHOWER_BATH_PROBLEM @"Getting in and out of bathtubs/showers can be dangerous, and patients are at risk of falling."
-#define SHOWER_BATH_BULLET_ONE @"Showers > tubs: showers are safer than tubs generally."
-#define SHOWER_BATH_BULLET_ONE_BOLD_PART @"Showers > tubs:"
-#define SHOWER_BATH_BULLET_TWO @"Grab bars might help make movement easier."
-#define SHOWER_BATH_BULLET_TWO_BOLD_PART @"Grab bars"
-#define SHOWER_BATH_BULLET_THREE @"Bath mats with suction cups will help you avoid slipping."
-#define SHOWER_BATH_BULLET_THREE_BOLD_PART @"Bath mats"
-#define SHOWER_BATH_PARAGRAPH @"Make sure someone is nearby to help you if needed. Keep a bell handy or have another way to call for help. Balance training can help individuals with balance problems."
+#define SHOWER_BATH_PROBLEM NSLocalizedString(@"ShowerBath.problem", nil)
+#define SHOWER_BATH_BULLET_ONE NSLocalizedString(@"ShowerBath.bulletOne", nil)
+#define SHOWER_BATH_BULLET_ONE_BOLD_PART NSLocalizedString(@"ShowerBath.bulletOneBoldPart", nil)
+#define SHOWER_BATH_BULLET_TWO NSLocalizedString(@"ShowerBath.bulletTwo", nil)
+#define SHOWER_BATH_BULLET_TWO_BOLD_PART NSLocalizedString(@"ShowerBath.bulletTwoBoldPart", nil)
+#define SHOWER_BATH_BULLET_THREE NSLocalizedString(@"ShowerBath.bulletThree", nil)
+#define SHOWER_BATH_BULLET_THREE_BOLD_PART NSLocalizedString(@"ShowerBath.bulletThreeBoldPart", nil)
+#define SHOWER_BATH_PARAGRAPH NSLocalizedString(@"ShowerBath.paragraph", nil)
 
 /* LEARN - HOME MOD */
-#define HOME_MOD_PROBLEM @"Because patients might experience limited mobility, it’s important to modify your home so that it is safe and accessible."
-#define HOME_MOD_SUBHEADER_ONE @"Bedroom:"
-#define HOME_MOD_CONTENT_ONE @"Bedroom accessibility can be improved by moving items so that the door opens fully; widen doorways; reverse hinges so that door opens outwards instead of inwards. If a bed needs to be up against a wall, it should be oriented such that the patient’s affected side (weak side) is closer to the wall, so the strong side can assist the patient getting out of bed."
-#define HOME_MOD_SUBHEADER_TWO @"General:"
-#define HOME_MOD_CONTENT_TWO @"Eliminate rugs that can easily move to avoid trips and falls."
-#define HOME_MOD_SUBHEADER_THREE @"Bath:"
-#define HOME_MOD_CONTENT_THREE @"Bathrooms can be made more accessible to wheelchairs by widening the doorway. Toilet seats can be raised to make it less challenging in getting to and from the toilet: a toilet elevator that mounts between the floor and toilet; a seat elevator that attaches to the bowl and raises the seat; installing toilet rails/grab bars to improve support for mobility."
+#define HOME_MOD_PROBLEM NSLocalizedString(@"HomeMod.problem", nil)
+#define HOME_MOD_SUBHEADER_ONE NSLocalizedString(@"HomeMod.subHeaderOne", nil)
+#define HOME_MOD_CONTENT_ONE NSLocalizedString(@"HomeMod.contentOne", nil)
+#define HOME_MOD_SUBHEADER_TWO NSLocalizedString(@"HomeMod.subHeaderTwo", nil)
+#define HOME_MOD_CONTENT_TWO NSLocalizedString(@"HomeMod.contentTwo", nil)
+#define HOME_MOD_SUBHEADER_THREE NSLocalizedString(@"HomeMod.subHeaderThree", nil)
+#define HOME_MOD_CONTENT_THREE NSLocalizedString(@"HomeMod.contentThree", nil)
 
 /* ABOUT US SECTION */
 #define ABOUT_US_PARAGRAPH_ONE @"The HEALTH4THEWORLD STROKE HOPE APP is a free of cost educational tool to spread knowledge about stroke risk factors, secondary prevention, post stroke mobility & exercise education and speech strategies.  It has been created by Health4TheWorld which is a non profit organization inspired by the unmet medical needs worldwide. The mission of the organization is solving health inequities through innovation & technology and bringing smiles around the world. Please learn more about us at health4theworld.org."

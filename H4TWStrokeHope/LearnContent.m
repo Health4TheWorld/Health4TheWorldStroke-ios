@@ -87,7 +87,7 @@
     self.images = @[imgView];
     
     /* Problem header */
-    [self.content addObject:[self headerWithTitle:@"PROBLEM"]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.problem", nil)]];
     /* Problem text */
     NSRange nonBoldRange = [BLOOD_PRESSURE_PROBLEM rangeOfString:BLOOD_PRESSURE_PROBLEM_NONBOLD_PART];
     NSRange boldRange = [BLOOD_PRESSURE_PROBLEM rangeOfString:BLOOD_PRESSURE_PROBLEM_BOLD_PART];
@@ -97,7 +97,7 @@
     [self.content addObject:[self attributedParagraphWithText:attributedStr]];
     
     /* What to do header */
-    [self.content addObject:[self headerWithTitle:@"WHAT TO DO"]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.whatToDo", nil)]];
     /* What to do text */
     NSRange whatToDoBoldRange = [BLOOD_PRESSURE_WHAT_TO_DO rangeOfString:BLOOD_PRESSURE_WHAT_TO_DO_BOLD_PART];
     NSMutableAttributedString *whatToDoStr = [[NSMutableAttributedString alloc] initWithString:BLOOD_PRESSURE_WHAT_TO_DO];
@@ -118,7 +118,7 @@
     self.images = @[imgView];
     
     /* Problem header */
-    [self.content addObject:[self headerWithTitle:@"PROBLEM"]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.problem", nil)]];
     /* Problem text */
     NSRange nonBoldRange = [BLOOD_SUGAR_PROBLEM rangeOfString:BLOOD_SUGAR_PROBLEM];
     NSRange boldRange = [BLOOD_SUGAR_PROBLEM rangeOfString:BLOOD_SUGAR_PROBLEM_BOLD_PART];
@@ -128,7 +128,7 @@
     [self.content addObject:[self attributedParagraphWithText:attributedStr]];
     
     /* What to do header */
-    [self.content addObject:[self headerWithTitle:@"WHAT TO DO"]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.whatToDo", nil)]];
     /* What to do text */
     NSRange whatToDoBoldRangeOne = [BLOOD_SUGAR_WHAT_TO_DO rangeOfString:BLOOD_SUGAR_WHAT_TO_DO_FIRST_BOLD_PART];
     NSRange whatToDoBoldRangeTwo = [BLOOD_SUGAR_WHAT_TO_DO rangeOfString:BLOOD_SUGAR_WHAT_TO_DO_SECOND_BOLD_PART];
@@ -151,7 +151,7 @@
     self.images = @[imgView];
     
     /* Problem header */
-    [self.content addObject:[self headerWithTitle:@"PROBLEM"]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.problem", nil)]];
     /* Problem text */
     NSRange nonBoldRange = [HEART_RATE_PROBLEM rangeOfString:HEART_RATE_PROBLEM];
     NSRange boldRange = [HEART_RATE_PROBLEM rangeOfString:HEART_RATE_PROBLEM_BOLD_PART];
@@ -161,7 +161,7 @@
     [self.content addObject:[self attributedParagraphWithText:attributedStr]];
     
     /* What to do header */
-    [self.content addObject:[self headerWithTitle:@"WHAT TO DO"]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.whatToDo", nil)]];
     /* What to do text */
     NSRange whatToDoBoldRangeOne = [HEART_RATE_WHAT_TO_DO rangeOfString:HEART_RATE_WHAT_TO_DO_FIRST_BOLD_PART];
      NSRange whatToDoBoldRangeTwo = [HEART_RATE_WHAT_TO_DO rangeOfString:HEART_RATE_WHAT_TO_DO_SECOND_BOLD_PART];
@@ -179,9 +179,9 @@
     self.backButtonImageStr = RED_BACK_BUTTON;
     self.content = [[NSMutableArray alloc] init];
     
-    [self.content addObject:[self headerWithTitle:@"PROBLEM"]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.problem", nil)]];
     [self.content addObject:[self paragraphWithText:DIET_PROBLEM]];
-    [self.content addObject:[self headerWithTitle:@"WHAT TO DO"]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.whatToDo", nil)]];
     [self.content addObject:[self paragraphWithText:DIET_WHAT_TO_DO]];
 }
 
@@ -196,11 +196,11 @@
     [water setImage:[UIImage imageNamed:BLUE_WATER_ICON]];
     self.images = @[water];
     
-    [self.content addObject:[self headerWithTitle:@"PROBLEM"]];
-    [self.content addObject:[self paragraphWithText:BLADDER_BOWEL_PROBLEM]];
-    [self.content addObject:[self headerWithTitle:@"WHAT TO DO"]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.problem", nil)]];
+    [self.content addObject:[self paragraphWithText:(NSLocalizedString(@"BladderBowel.problem", nil))]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.whatToDo", nil)]];
 
-    NSArray *bullets = @[BLADDER_BOWEL_WHAT_TO_DO_BULLET_ONE, BLADDER_BOWEL_WHAT_TO_DO_BULLET_TWO, BLADDER_BOWEL_WHAT_TO_DO_BULLET_THREE];
+    NSArray *bullets = @[(NSLocalizedString(@"BladderBowel.whatToDoBulletOne", nil)), (NSLocalizedString(@"BladderBowel.whatToDoBulletTwo", nil)), (NSLocalizedString(@"BladderBowel.whatToDoBulletThree", nil))];
     [self.content addObject:[self bulletsWithText:bullets]];
 }
 
@@ -211,9 +211,9 @@
     self.backButtonImageStr = BLUE_BACK_BUTTON;
     self.content = [[NSMutableArray alloc] init];
     
-    [self.content addObject:[self headerWithTitle:@"PROBLEM"]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.problem", nil)]];
     [self.content addObject:[self paragraphWithText:EXERCISES_PROBLEM]];
-    [self.content addObject:[self headerWithTitle:@"WHAT TO DO"]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.whatToDo", nil)]];
     [self.content addObject:[self paragraphWithText:EXERCISES_PARAGRAPH_ONE]];
     
     /* First bullet */
@@ -267,9 +267,9 @@
     [imgView setImage:[UIImage imageNamed:GRAB_BARS_ILLUSTRATION]];
     self.images = @[imgView];
     
-    [self.content addObject:[self headerWithTitle:@"PROBLEM"]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.problem", nil)]];
     [self.content addObject:[self paragraphWithText:SHOWER_BATH_PROBLEM]];
-    [self.content addObject:[self headerWithTitle:@"WHAT TO DO"]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.whatToDo", nil)]];
     
     /* First bullet */
     NSRange bulletOneBoldRange = [SHOWER_BATH_BULLET_ONE rangeOfString:SHOWER_BATH_BULLET_ONE_BOLD_PART];
@@ -308,9 +308,9 @@
     [slipperyCarpet setImage:[UIImage imageNamed:SLIPPERY_CARPET]];
     self.images = @[weakSideBed, slipperyCarpet];
     
-    [self.content addObject:[self headerWithTitle:@"PROBLEM"]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.problem", nil)]];
     [self.content addObject:[self paragraphWithText:HOME_MOD_PROBLEM]];
-    [self.content addObject:[self headerWithTitle:@"WHAT TO DO"]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.whatToDo", nil)]];
     /* BEDROOM */
     NSMutableAttributedString *subheaderOne = [[NSMutableAttributedString alloc] initWithString:HOME_MOD_SUBHEADER_ONE];
     [subheaderOne addAttribute:NSFontAttributeName value:LEARN_PARAGRAPH_FONT_BOLD range:[HOME_MOD_SUBHEADER_ONE rangeOfString:HOME_MOD_SUBHEADER_ONE]];
