@@ -87,6 +87,12 @@
 
 /* LEARN VIEW CONTROLLER */
 "Learn.title" = "Learn";
+"Learn.b" = "B";
+"Learn.e" = "E";
+"Learn.f" = "F";
+"Learn.a" = "A";
+"Learn.s" = "S";
+"Learn.t" = "T";
 "Learn.befastB" = "Balance: Sudden loss of balance.";
 "Learn.befastE" = "Eye: Sudden loss of vision in one or both eyes.";
 "Learn.befastF" = "Face drooping on one side when asked to smile.";
@@ -261,7 +267,6 @@
 "AboutUs.ericaPitsch" = "Dr. Erica A Pitsch, PT, MPT, DPT, NCS: Health Science Assistant Clinical Professor, UCSF. Dr. Pitsch specializes in neurologic physical therapy and uses several treatment strategies and approaches, all focused on promoting optimal challenge, function, and recovery in persons with neurologic illness";
 "AboutUs.lorenWard" = "Loren Ward, PT, DPT is licensed Physical Therapist who began her career in Physical Therapy in 2007, while earning her Doctorate at MGH Institute of Health Professions in Massachusetts. She did internships at Rehabilitation of Chicago, Spaulding Rehabilitation and National Rehabilitation Hospital and now works at Stanford Veteran’s Affairs System. Loren is an advocate of functional independence and strives to help her patients reach their own level of independence regardless of their limitations.";
 "AboutUs.roseHamm" = "Rose Hamm, PT, DPT, CWS, FACCWS: Rose received a BS in Physical Therapy from the University of North Carolina, Chapel Hill, and an MS and post-graduate DPT from the University of Southern California.  She is currently Adjunct Assistant Professor of Clinical Physical Therapy at the University of Southern California and practices at Keck Hospital at USC.";
-
 
 
 

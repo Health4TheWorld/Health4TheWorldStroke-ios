@@ -86,6 +86,12 @@
 
 /* LEARN VIEW CONTROLLER */
 "Learn.title" = "Aprenda";
+"Learn.b" = "B";
+"Learn.e" = "E";
+"Learn.f" = "F";
+"Learn.a" = "A";
+"Learn.s" = "S";
+"Learn.t" = "T";
 "Learn.befastB" = "Balance: Sudden loss of balance.";
 "Learn.befastE" = "Eye: Sudden loss of vision in one or both eyes.";
 "Learn.befastF" = "Face drooping on one side when asked to smile.";

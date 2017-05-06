@@ -97,17 +97,17 @@
             
             /* Text */
             if (i==0) {
-                [button setTitle:@"B" forState:UIControlStateNormal];
+                [button setTitle:NSLocalizedString(@"Learn.b", nil) forState:UIControlStateNormal];
             } else if (i==1) {
-                [button setTitle:@"E" forState:UIControlStateNormal];
+                [button setTitle:NSLocalizedString(@"Learn.e", nil) forState:UIControlStateNormal];
             } else if (i==2) {
-                [button setTitle:@"F" forState:UIControlStateNormal];
+                [button setTitle:NSLocalizedString(@"Learn.f", nil) forState:UIControlStateNormal];
             } else if (i==3) {
-                [button setTitle:@"A" forState:UIControlStateNormal];
+                [button setTitle:NSLocalizedString(@"Learn.a", nil) forState:UIControlStateNormal];
             } else if (i==4) {
-                [button setTitle:@"S" forState:UIControlStateNormal];
+                [button setTitle:NSLocalizedString(@"Learn.s", nil) forState:UIControlStateNormal];
             } else if (i==5) {
-                [button setTitle:@"T" forState:UIControlStateNormal];
+                [button setTitle:NSLocalizedString(@"Learn.t", nil) forState:UIControlStateNormal];
             }
             
             [button addTarget:self action:@selector(selectedBefastButton:) forControlEvents:UIControlEventTouchUpInside];
