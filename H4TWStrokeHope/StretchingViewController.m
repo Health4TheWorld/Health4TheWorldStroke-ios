@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"STRETCHING";
+    self.title = [NSLocalizedString(@"Stretching.title", nil) uppercaseString];
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -43,11 +43,11 @@
     
     float startingY = SPACE_BETWEEN_CELLS;
     
-    HomeButton *legAndFeetButton = [[HomeButton alloc] initWithText:@"Leg & Feet" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
+    HomeButton *legAndFeetButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Stretching.legsAndFeet", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
     [legAndFeetButton addImageTopRight:[UIImage imageNamed: STRONG_LEG_ICON]];
     [legAndFeetButton addTarget:self action:@selector(legAndFeetPressed) forControlEvents:UIControlEventTouchUpInside];
     
-    HomeButton *armsAndHandsButton = [[HomeButton alloc] initWithText:@"Arms & Hands" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
+    HomeButton *armsAndHandsButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Stretching.armsAndHands", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
     [armsAndHandsButton addImageRightCenter:[UIImage imageNamed:STRONG_ARM_ICON]];
     [armsAndHandsButton addTarget:self action:@selector(armsAndHandsPressed) forControlEvents:UIControlEventTouchUpInside];
     

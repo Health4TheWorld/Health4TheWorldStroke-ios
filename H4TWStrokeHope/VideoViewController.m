@@ -7,6 +7,7 @@
 //
 
 #import "VideoViewController.h"
+#import "Constants.h"
 
 @interface VideoViewController ()
 @property (nonatomic,retain) AVPlayer *player;
@@ -21,8 +22,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-   
+    
+    /* Back button */
+    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
+    [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
+    [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
+    backBtn.frame = CGRectMake(0, 0, 15, 25);
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+    self.navigationItem.leftBarButtonItem = backButton;
+}
+
+- (void)backPressed {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)setUpVideo: (NSString *) videoName{

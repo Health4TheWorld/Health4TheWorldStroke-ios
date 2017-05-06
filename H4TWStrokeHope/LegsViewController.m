@@ -21,12 +21,10 @@
 
 @implementation LegsViewController
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"LEGS";
+    self.title = [NSLocalizedString(@"Strengthening.legs", nil) uppercaseString];
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];

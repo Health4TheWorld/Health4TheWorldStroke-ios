@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"LEG STRETCH";
+    self.title = [NSLocalizedString(@"Stretching.legStretch", nil) uppercaseString];
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];

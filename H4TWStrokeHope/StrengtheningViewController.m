@@ -26,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"STRENGTHENING";
+    self.title = [NSLocalizedString(@"Strengthening.title", nil) uppercaseString];
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -65,11 +65,11 @@
     cellWidth = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
     float cellHeight = cellWidth;
     
-    HomeButton *legsButton = [[HomeButton alloc] initWithText:@"Legs" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *legsButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Strenghtening.legs", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [legsButton addImageTopRight:[UIImage imageNamed:STRONG_LEG_ICON]];
     [legsButton addTarget:self action:@selector(legsPressed) forControlEvents:UIControlEventTouchUpInside];
     
-    HomeButton *armsButton = [[HomeButton alloc] initWithText:@"Arms" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
+    HomeButton *armsButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Strengthening.arms", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
     [armsButton addImageTopRight:[UIImage imageNamed:STRONG_ARM_ICON]];
     [armsButton addTarget:self action:@selector(armsPressed) forControlEvents:UIControlEventTouchUpInside];
     
@@ -77,7 +77,7 @@
     startingY += SPACE_BETWEEN_CELLS;
     cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
     
-    HomeButton *coordinationButton = [[HomeButton alloc] initWithText:@"Coordination" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *coordinationButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Strengthening.coordination", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [coordinationButton addCoordinationImage:[UIImage imageNamed:BALANCE_ICON]];
     [coordinationButton addTarget:self action:@selector(coordinationPressed) forControlEvents:UIControlEventTouchUpInside];
     

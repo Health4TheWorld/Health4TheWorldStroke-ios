@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"ARMS & HANDS";
+    self.title = [NSLocalizedString(@"Stretching.armsAndHands", nil) uppercaseString];
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -46,11 +46,11 @@
     
     float startingY = SPACE_BETWEEN_CELLS;
     
-    HomeButton *handStretchButton = [[HomeButton alloc] initWithText:@"Hand Stretch" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *handStretchButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Stretching.handStretch", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [handStretchButton addImageCentered:[UIImage imageNamed:STRETCHING_HAND_STRETCH_1]];
     [handStretchButton addTarget:self action:@selector(handStretchPressed) forControlEvents:UIControlEventTouchUpInside];
     
-    HomeButton *shoulderStretchButton = [[HomeButton alloc] initWithText:@"Shoulder Stretch" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
+    HomeButton *shoulderStretchButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Stretching.shoulderStretch", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
     [shoulderStretchButton addImageCentered:[UIImage imageNamed:STRETCHING_SHOULDER_STRETCH_1]];
     [shoulderStretchButton addTarget:self action:@selector(shoulderStretchPressed) forControlEvents:UIControlEventTouchUpInside];
     
@@ -58,7 +58,7 @@
     startingY += SPACE_BETWEEN_CELLS;
     cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
     
-    HomeButton *armStretchButton = [[HomeButton alloc] initWithText:@"Arm Stretch" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *armStretchButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Stretching.armStretch", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [armStretchButton addImageCentered:[UIImage imageNamed:STRETCHING_ARM_STRETCH_1]];
     [armStretchButton addTarget:self action:@selector(armStretchPressed) forControlEvents:UIControlEventTouchUpInside];
     

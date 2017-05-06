@@ -122,14 +122,14 @@
 #define EXERCISE_REMINDER @"Exercise"
 
 /* EXERCISE CONTENT */
-#define EXERCISE_PARAGRAPH_ONE @"Please repeat the exercises 10 times a day with assistance from family caregiver if needed. Consult your medical provider before starting the exercise program."
+#define EXERCISE_PARAGRAPH_ONE NSLocalizedString(@"Exercises.instructions", nil)
 #define STRETCHING_INSTRUCTIONS @"Do the stretches 3 times and hold for 30 seconds.Stretch to a point of slight discomfort and hold. Reduce stretch if painful.Stop if it causes pain.If you are a patient, do these under supervision of a trained health professional first time to get right training for you and your family member and to prevent injuries."
-#define STRETCHING_ADDUCTORS_INSTRUCTIONS @"You can do this exercise lying down or sitting in a stable chair. Lying on your back, slide the affected leg out to the side for 30 seconds and back in. Repeat 3 times"
-#define STRETCHING_HAMSTRINGS_INSTRUCTIONS @"You can do this exercise lying down or sitting in a stable chair. Lie down on your back with your knees bent and straighten the knee upwards towards the sky for 30 seconds."
-#define STRETCHING_DORSIFLEXORS_INSTRUCTIONS @"You can do this exercise lying down or sitting in a stable chair. Push the foot upwards towards torso and hold for 30 sec. Repeat 3 times."
-#define STRETCHING_HAND_INSTRUCTIONS @"Side lying with the involved side up and arm resting on the hip. Support the elbow on the hip but use your other hand to move the wrist up and away from the stomach. Bring the wrist back to its resting position Support the wrist with one hand  and try to open the fingers with the other hand. Progress to trying to open the hand when the wrist is moved up and away from the stomach. Hold the stretch for 30 seconds. Repeat 3 times."
-#define STRETCHING_SHOULDER_INSTRUCTIONS @"With the side lying with involved arm resting on hip. Bring shoulder up towards the ear and then gently back and down."
-#define STRETCHING_ARM_INSTRUCTIONS @"Side lying with the involved side up and arm resting on the hip. Gently bring the lower arm towards the leg.Hold for 30 seconds. Repeat 3 times. Make sure that  you hold the shoulder and stop it from moving forward."
+#define STRETCHING_ADDUCTORS_INSTRUCTIONS NSLocalizedString(@"Stretching.adductorsInstructions", nil)
+#define STRETCHING_HAMSTRINGS_INSTRUCTIONS NSLocalizedString(@"Stretching.hamstringsInstructions", nil)
+#define STRETCHING_DORSIFLEXORS_INSTRUCTIONS NSLocalizedString(@"Stretching.dorsiflexorsInstructions", nil)
+#define STRETCHING_HAND_INSTRUCTIONS NSLocalizedString(@"Stretching.handStretchInstructions", nil)
+#define STRETCHING_SHOULDER_INSTRUCTIONS NSLocalizedString(@"Stretching.shoulderStretchInstructions", nil)
+#define STRETCHING_ARM_INSTRUCTIONS NSLocalizedString(@"Stretching.armStretchInstructions", nil)
 #define STRETCHING_END @"WOW, YOU ARE GREAT!! YOU DID IT !"
 
 /* STRINGS */

@@ -29,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"EXERCISES";
+    self.title = [NSLocalizedString(@"Exercises.title", nil) uppercaseString];
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -69,22 +69,22 @@
        
         
         /* Buttons for different types of exercises  */
-        HomeButton *strengtheningButton = [[HomeButton alloc] initWithText:@"Strengthening" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, self.currentY, cellWidth, cellWidth)];
+        HomeButton *strengtheningButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.strengthening", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, self.currentY, cellWidth, cellWidth)];
         [strengtheningButton addImageBottomRight:[UIImage imageNamed: STRONG_ARM_ICON]];
         [strengtheningButton addTarget:self action:@selector(strengtheningPressed) forControlEvents:UIControlEventTouchUpInside];
         
-        HomeButton *stretchingButton = [[HomeButton alloc] initWithText:@"Stretching" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), self.currentY, cellWidth, cellWidth)];
+        HomeButton *stretchingButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.stretching", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), self.currentY, cellWidth, cellWidth)];
         [stretchingButton addImageCentered:[UIImage imageNamed:STRETCHING_ICON]];
         [stretchingButton addTarget:self action:@selector(stretchingPressed) forControlEvents:UIControlEventTouchUpInside];
         
         self.currentY += cellWidth;
         self.currentY += SPACE_BETWEEN_CELLS;
         
-        HomeButton *functionalMobilityButton = [[HomeButton alloc] initWithText:@"Functional Mobility" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, self.currentY, cellWidth, cellWidth)];
+        HomeButton *functionalMobilityButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.functionalMobility", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, self.currentY, cellWidth, cellWidth)];
         [functionalMobilityButton addImageBottomRight:[UIImage imageNamed:FUNCTIONAL_MOBILITY_ICON]];
         [functionalMobilityButton addTarget:self action:@selector(functionalMobilityPressed) forControlEvents:UIControlEventTouchUpInside];
         
-        HomeButton *mindExercisesButton = [[HomeButton alloc] initWithText:@"Mind Exercises" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), self.currentY, cellWidth, cellWidth)];
+        HomeButton *mindExercisesButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.mindExercises", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), self.currentY, cellWidth, cellWidth)];
         [mindExercisesButton addImageBottomRight:[UIImage imageNamed:MIND_ICON]];
         [mindExercisesButton addTarget:self action:@selector(mindExercisesPressed) forControlEvents:UIControlEventTouchUpInside];
         

@@ -43,3 +43,43 @@
 "HelpMeSpeak.notGivingUp" = "No me doy por vencido";
 "HelpMeSpeak.pain" = "Tengo dolor";
 "HelpMeSpeak.cantSpeak" = "Lo siento, no puedo hablar";
+
+/* EXERCISES VIEW CONTROLLER */
+"Exercises.title" = "Ejercicios";
+"Exercises.strengthening" = "Fortalecimiento";
+"Exercises.stretching" = "Estiramiento ";
+"Exercises.functionalMobility" = "Movilidad funcional";
+"Exercises.mindExercises" = "Ejercicios de la mente";
+"Exercises.instructions" = "Por favor, repita 10 veces, una vez al día con la ayuda de un cuidador o familiar si es necesario. Consulte a su médico antes de iniciar el programa de ejercicios.";
+
+/* STRENGTHENING VIEW CONTROLLER */
+"Strengthening.title" = "Fortalecimiento";
+"Strenghtening.legs" = "Piernas";
+"Strengthening.arms" = "Brazos";
+"Strengthening.coordination" = "Coordinación";
+
+/* STRETCHING VIEW CONTROLLER */
+"Stretching.title" = "Fortalecimiento";
+"Stretching.armsAndHands" = "Brazos y manos";
+"Stretching.legsAndFeet" = "Piernas y pies";
+"Stretching.handStretch" = "Estiramiento de mano";
+"Stretching.shoulderStretch" = "Estiramientos de hombro";
+"Stretching.armStretch" = "Estiramientos del brazo";
+"Stretching.adductors" = "Adductores";
+"Stretching.hamstrings" = "Hamstrings";
+"Stretching.dorsiflexors" = "Dorsiflexores";
+"Stretching.legStretch" = "Estiramiento de pierna";
+"Stretching.kneeStretch" = "Estiramiento de rodilla";
+"Stretching.ankleStretch" = "Estiramiento de tobillo";
+"Stretching.handStretch" = "Estiramiento de mano";
+"Stretching.adductorsInstructions" = "Usted puede hacer este ejercicio acostado o sentado en una silla estable.  Acostado de espaldas, deslice la pierna afectada hacia el lado durante 30 segundos y devuélvala. Repita 3 veces.";
+"Stretching.hamstringsInstructions" = "Usted puede hacer este ejercicio acostado o sentado en una silla estable. Acuéstese sobre su espalda con las rodillas dobladas y estire la rodilla hacia arriba hacia el cielo durante 30 segundos. Repita 3 veces.";
+"Stretching.dorsiflexorsInstructions" = "Usted puede hacer este ejercicio acostado o sentado en una silla estable. Empuje el pie hacia arriba hacia el torso y manténgalo presionado durante 30 seg. Repita 3 veces.";
+"Stretching.handStretchInstructions" = "Acuéstese con el lado involucrado hacia arriba y el brazo descansando sobre la cadera. Apoye el codo en la cadera pero use la otra mano para mover la muñeca hacia arriba y lejos del estómago. Lleve la muñeca a su posición de reposo. Apoye la muñeca con una mano e intente abrir los dedos con la otra mano. Trate de abrir la mano cuando mueva la muñeca hacia arriba y lejos del estómago. Mantenga el estiramiento durante 30 segundos. Repita 3 veces.";
+"Stretching.shoulderStretchInstructions" = "Acuéstese de lado con el brazo involucrado apoyado en la cadera. Lleve el hombro hacia el oído y luego suavemente hacia abajo.";
+"Stretching.armStretchInstructions" = "Acuéstese de lado con el lado involucrado hacia arriba y el brazo descansando sobre la cadera. Suavemente lleve el brazo inferior hacia la pierna. Mantenga durante 30 segundos. Repita 3 veces. Asegúrese de que sostiene el hombro y evite que se mueva hacia adelante.";
+
+/* FUNCTIONAL MOBILITY VIEW CONTROLLER */
+"FunctionalMobility.bridgeHipLift" = "Puente de la cadera";
+"FunctionalMobility.armTrunkStrengthening" = "Brazo y tronco";
+"FunctionalMobility.sitToStand" = "Sentarse a pararse";

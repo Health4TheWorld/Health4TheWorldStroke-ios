@@ -8,6 +8,7 @@
 
 #import "HomeButton.h"
 #import "Constants.h"
+#import "Utils.h"
 
 @implementation HomeButton
 
@@ -18,12 +19,21 @@
         self.clipsToBounds = YES;
         [self setBackgroundColor:HFTW_PRIMARY];
         UIFont *labelFont = [UIFont fontWithName:@"Lato-regular" size:18.0];
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(12, 10, 0, 0)];
-        label.font = labelFont;
-        label.textColor = [UIColor whiteColor];
-        label.text = text;
-        [label sizeToFit];
-        [self addSubview:label];
+        self.myTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(12, 10, 0, 0)];
+        self.myTitleLabel.font = labelFont;
+        self.myTitleLabel.textColor = [UIColor whiteColor];
+        self.myTitleLabel.text = text;
+        self.myTitleLabel.numberOfLines = 0;
+        self.myTitleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        [self.myTitleLabel sizeToFit];
+        
+        CGFloat heightForLabel = [Utils heightOfString:text containedToWidth:(self.frame.size.width  - 24) withFont:self.myTitleLabel.font];
+        CGRect myTitleFrame = self.myTitleLabel.frame;
+        myTitleFrame.size.width = self.frame.size.width  - 24;
+        myTitleFrame.size.height = heightForLabel;
+        self.myTitleLabel.frame = myTitleFrame;
+        
+        [self addSubview:self.myTitleLabel];
     }
     return self;
 }
@@ -42,6 +52,7 @@
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(self.frame.size.width - imgWidth, self.frame.size.height - imgHeight, imgWidth, imgHeight)];
     [imgView setImage:image];
     [self addSubview:imgView];
+    [self bringSubviewToFront:self.myTitleLabel];
 }
 
 - (void)addImageTopRight:(UIImage *)image {
@@ -58,6 +69,7 @@
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(self.frame.size.width - imgWidth, 0, imgWidth, imgHeight)];
     [imgView setImage:image];
     [self addSubview:imgView];
+    [self bringSubviewToFront:self.myTitleLabel];
 }
 
 - (void)addImageRightCenter:(UIImage *)image {
@@ -80,6 +92,7 @@
     imgViewFrame.origin.x = self.frame.size.width - imgWidth;
     imgView.frame = imgViewFrame;
     [self addSubview:imgView];
+    [self bringSubviewToFront:self.myTitleLabel];
 }
 
 - (void)addImageCentered:(UIImage *)image {
@@ -100,6 +113,7 @@
     frame.origin.y = (self.frame.size.height / 2.0) - (imgView.frame.size.height / 2.0) + 15;
     imgView.frame = frame;
     [self addSubview:imgView];
+    [self bringSubviewToFront:self.myTitleLabel];
 }
 
 - (void)addRoundImageCentered:(UIImage *)image {
@@ -124,6 +138,7 @@
     imgView.layer.borderWidth = 3.0f;
     imgView.layer.borderColor = [UIColor whiteColor].CGColor;
     [self addSubview:imgView];
+    [self bringSubviewToFront:self.myTitleLabel];
 }
 
 
@@ -149,6 +164,7 @@
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(self.frame.size.width - imgWidth - 20, self.frame.size.height - imgHeight, imgWidth, imgHeight)];
     [imgView setImage:image];
     [self addSubview:imgView];
+    [self bringSubviewToFront:self.myTitleLabel];
 }
 
 @end

@@ -44,3 +44,43 @@
 "HelpMeSpeak.notGivingUp" = "I'm not giving up";
 "HelpMeSpeak.pain" = "I am in pain";
 "HelpMeSpeak.cantSpeak" = "Sorry, I can't speak";
+
+/* EXERCISES VIEW CONTROLLER */
+"Exercises.title" = "Exercises";
+"Exercises.strengthening" = "Strengthening";
+"Exercises.stretching" = "Stretching";
+"Exercises.functionalMobility" = "Functional Mobility";
+"Exercises.mindExercises" = "Mind Exercises";
+"Exercises.instructions" = "Please repeat the exercises 10 times a day with assistance from family caregiver if needed. Consult your medical provider before starting the exercise program.";
+
+/* STRENGTHENING VIEW CONTROLLER */
+"Strengthening.title" = "Strengthening";
+"Strenghtening.legs" = "Legs";
+"Strengthening.arms" = "Arms";
+"Strengthening.coordination" = "Coordination";
+
+/* STRETCHING VIEW CONTROLLER */
+"Stretching.title" = "Stretching";
+"Stretching.armsAndHands" = "Arms & Hands";
+"Stretching.legsAndFeet" = "Legs & Feet";
+"Stretching.handStretch" = "Hand Stretch";
+"Stretching.shoulderStretch" = "Shoulder Stretch";
+"Stretching.armStretch" = "Arm Stretch";
+"Stretching.adductors" = "Adductors";
+"Stretching.hamstrings" = "Hamstrings";
+"Stretching.dorsiflexors" = "Dorsiflexors";
+"Stretching.legStretch" = "Leg Stretch";
+"Stretching.kneeStretch" = "Knee Stretch";
+"Stretching.ankleStretch" = "Ankle Stretch";
+"Stretching.handStretch" = "Hand Stretch";
+"Stretching.adductorsInstructions" = "You can do this exercise lying down or sitting in a stable chair. Lying on your back, slide the affected leg out to the side for 30 seconds and back in. Repeat 3 times";
+"Stretching.hamstringsInstructions" = "You can do this exercise lying down or sitting in a stable chair. Lie down on your back with your knees bent and straighten the knee upwards towards the sky for 30 seconds.";
+"Stretching.dorsiflexorsInstructions" = "You can do this exercise lying down or sitting in a stable chair. Push the foot upwards towards torso and hold for 30 sec. Repeat 3 times.";
+"Stretching.handStretchInstructions" = "Side lying with the involved side up and arm resting on the hip. Support the elbow on the hip but use your other hand to move the wrist up and away from the stomach. Bring the wrist back to its resting position Support the wrist with one hand  and try to open the fingers with the other hand. Progress to trying to open the hand when the wrist is moved up and away from the stomach. Hold the stretch for 30 seconds. Repeat 3 times.";
+"Stretching.shoulderStretchInstructions" = "With the side lying with involved arm resting on hip. Bring shoulder up towards the ear and then gently back and down.";
+"Stretching.armStretchInstructions" = "Side lying with the involved side up and arm resting on the hip. Gently bring the lower arm towards the leg.Hold for 30 seconds. Repeat 3 times. Make sure that  you hold the shoulder and stop it from moving forward.";
+
+/* FUNCTIONAL MOBILITY VIEW CONTROLLER */
+"FunctionalMobility.bridgeHipLift" = "Bridge Hip Lift";
+"FunctionalMobility.armTrunkStrengthening" = "Arm Trunk Strengthening";
+"FunctionalMobility.sitToStand" = "Sit To Stand";

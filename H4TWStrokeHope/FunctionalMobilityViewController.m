@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"FUNCTIONAL MOBILITY";
+    self.title = [NSLocalizedString(@"Exercises.functionalMobility", nil) uppercaseString];
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -60,21 +60,21 @@
     
     /* Functional Mobility buttons*/
     
-    HomeButton *a4Button = [[HomeButton alloc] initWithText:@"Bridge Hip Lift" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *a4Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"FunctionalMobility.bridgeHipLift", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [a4Button addRoundImageCentered:[UIImage imageNamed:FUNCTIONALMOBILITY_4A]];
     [a4Button addTarget:self action:@selector(a4Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *b4Button = [[HomeButton alloc] initWithText:@"Arm Trunk Strengthening" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *b4Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"FunctionalMobility.armTrunkStrengthening", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [b4Button addRoundImageCentered:[UIImage imageNamed:FUNCTIONALMOBILITY_4B]];
     [b4Button addTarget:self action:@selector(b4Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *c4Button = [[HomeButton alloc] initWithText:@"Sit To Stand" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *c4Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"FunctionalMobility.sitToStand", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [c4Button addRoundImageCentered:[UIImage imageNamed:FUNCTIONALMOBILITY_4C]];
     [c4Button addTarget:self action:@selector(c4Pressed) forControlEvents:UIControlEventTouchUpInside];
     

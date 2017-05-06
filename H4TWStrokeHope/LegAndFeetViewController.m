@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"LEGS & FEET";
+    self.title = [NSLocalizedString(@"Stretching.legsAndFeet", nil) uppercaseString];
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -46,11 +46,11 @@
     
     float startingY = SPACE_BETWEEN_CELLS;
     
-    HomeButton *adductorsButton = [[HomeButton alloc] initWithText:@"Adductors" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *adductorsButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Stretching.adductors", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [adductorsButton addImageCentered:[UIImage imageNamed:STRETCHING_LEG_STRETCH_1]];
     [adductorsButton addTarget:self action:@selector(adductorsPressed) forControlEvents:UIControlEventTouchUpInside];
     
-    HomeButton *hamstringsButton = [[HomeButton alloc] initWithText:@"Hamstrings" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
+    HomeButton *hamstringsButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Stretching.hamstrings", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
     [hamstringsButton addImageCentered:[UIImage imageNamed:STRETCHING_KNEE_STRETCH_1]];
     [hamstringsButton addTarget:self action:@selector(hamstringsPressed) forControlEvents:UIControlEventTouchUpInside];
     
@@ -58,7 +58,7 @@
     startingY += SPACE_BETWEEN_CELLS;
     cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
     
-    HomeButton *dorsiflexorsButton = [[HomeButton alloc] initWithText:@"Dorsiflexors" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *dorsiflexorsButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Stretching.dorsiflexors", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [dorsiflexorsButton addImageCentered:[UIImage imageNamed:STRETCHING_ANKLE_STRETCH_1]];
     [dorsiflexorsButton addTarget:self action:@selector(dorsiflexorsPressed) forControlEvents:UIControlEventTouchUpInside];
     
