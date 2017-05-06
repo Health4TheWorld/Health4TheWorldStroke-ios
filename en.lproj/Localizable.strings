@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  H4TWStrokeHope
+
+  Created by Rachel on 5/6/17.
+  Copyright © 2017 Rachel. All rights reserved.
+*/
+
+
+/* ENTER VIEW CONTROLLER */
+"Enter.firstQuote" = "\"The best preparation for tomorrow is doing your best today.\"";
+"Enter.firstAuthor" = " – H. Jackson Brown, Jr";
+"Enter.secondQuote" = "\"Believe you can and you're halfway there.\"";
+"Enter.secondAuthor" = "– Theodore Roosevelt";
+"Enter.thirdQuote" = "\"Nothing is impossible, the word itself says 'I'm possible'!\"";
+"Enter.thirdAuthor" = "– Audrey Hepburn";
+"Enter.fourthQuote" = "\"Only I can change my life. No one can do it for me.\"";
+"Enter.fourthAuthor" = "– Carol Burnett";
+"Enter.fifthQuote" = "\"Always do your best. What you plant now will harvest later.\"";
+"Enter.fifthAuthor" = "– Og Mandino";
+"Enter.sixthQuote" = "\"Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.\"";
+"Enter.sixthAuthor" = "– Helen Keller";
+"Enter.seventhQuote" = "\"Setting goals is the first step in turning the invisible into the visible.\"";
+"Enter.seventhAuthor" = "– Tony Robbins";
+"Enter.enterButton" = "Enter";
+
+/* HOME VIEW CONTROLLER */
+"Home.title" = "Home";
+"Home.helpMeSpeak" = "Help Me Speak";
+"Home.exercises" = "Exercises";
+"Home.learn" = "Learn";
+"Home.reminders" = "Reminders";
+"Home.generalInfo" = "General Info";
+"Home.surveys" = "Surveys";
+
+/* HELP ME SPEAK VIEW CONTROLLER */
+"HelpMeSpeak.title" = "Help Me Speak";
+"HelpMeSpeak.yes" = "Yes";
+"HelpMeSpeak.no" = "No";
+"HelpMeSpeak.thankYou" = "Thank you";
+"HelpMeSpeak.bathroom" = "I need a bathroom";
+"HelpMeSpeak.water" = "I need water";
+"HelpMeSpeak.hungry" = "I'm hungry";
+"HelpMeSpeak.notGivingUp" = "I'm not giving up";
+"HelpMeSpeak.pain" = "I am in pain";
+"HelpMeSpeak.cantSpeak" = "Sorry, I can't speak";

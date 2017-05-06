@@ -69,6 +69,7 @@
 		CC11D13E1EB6B99E0063E72A /* EditReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D13C1EB6B99E0063E72A /* EditReminderViewController.xib */; };
 		CC11D1451EB6E7D00063E72A /* TimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1431EB6E7D00063E72A /* TimeTableViewCell.m */; };
 		CC11D1461EB6E7D00063E72A /* TimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D1441EB6E7D00063E72A /* TimeTableViewCell.xib */; };
+		CC29233A1EBE2ACE00DF1742 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC29233C1EBE2ACE00DF1742 /* Localizable.strings */; };
 		CC38386E1E95FCF400001213 /* InformationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC38386C1E95FCF400001213 /* InformationalViewController.m */; };
 		CC38386F1E95FCF400001213 /* InformationalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC38386D1E95FCF400001213 /* InformationalViewController.xib */; };
 		CC3CB6481EA11EC800CA9429 /* LearnContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3CB6461EA11EC800CA9429 /* LearnContentViewController.m */; };
@@ -223,6 +224,10 @@
 		CC11D1421EB6E7D00063E72A /* TimeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableViewCell.h; sourceTree = "<group>"; };
 		CC11D1431EB6E7D00063E72A /* TimeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewCell.m; sourceTree = "<group>"; };
 		CC11D1441EB6E7D00063E72A /* TimeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeTableViewCell.xib; sourceTree = "<group>"; };
+		CC2923381EBE2A9A00DF1742 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
+		CC2923391EBE2A9A00DF1742 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		CC29233B1EBE2ACE00DF1742 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CC29233D1EBE2B0B00DF1742 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CC38386B1E95FCF400001213 /* InformationalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationalViewController.h; sourceTree = "<group>"; };
 		CC38386C1E95FCF400001213 /* InformationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationalViewController.m; sourceTree = "<group>"; };
 		CC38386D1E95FCF400001213 /* InformationalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationalViewController.xib; sourceTree = "<group>"; };
@@ -450,6 +455,7 @@
 		CC4C10A31E7A26DE00515CDC = {
 			isa = PBXGroup;
 			children = (
+				CC29233C1EBE2ACE00DF1742 /* Localizable.strings */,
 				CC4C10AE1E7A26DE00515CDC /* H4TWStrokeHope */,
 				CC4C10CB1E7A26DE00515CDC /* H4TWStrokeHopeTests */,
 				CC4C10D61E7A26DE00515CDC /* H4TWStrokeHopeUITests */,
@@ -823,6 +829,7 @@
 				17E0BB1C1EA40F5A001FC7F3 /* LegsViewController.xib in Resources */,
 				CC4C10BF1E7A26DE00515CDC /* Assets.xcassets in Resources */,
 				CC73E43E1E842370001131AF /* Lato-Black.ttf in Resources */,
+				CC29233A1EBE2ACE00DF1742 /* Localizable.strings in Resources */,
 				CCB7B3FE1E9412510058C32E /* HelpMeSpeakViewController.xib in Resources */,
 				1737A19B1EA897C900C6D71E /* 2AElbowFlexion.m4v in Resources */,
 				1720A05F1EA9E78D009C2B87 /* AdductorsViewController.xib in Resources */,
@@ -958,10 +965,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CC29233C1EBE2ACE00DF1742 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC29233B1EBE2ACE00DF1742 /* es-MX */,
+				CC29233D1EBE2B0B00DF1742 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		CC4C10B81E7A26DE00515CDC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CC4C10B91E7A26DE00515CDC /* Base */,
+				CC2923381EBE2A9A00DF1742 /* es-MX */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -970,6 +987,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CC4C10C11E7A26DE00515CDC /* Base */,
+				CC2923391EBE2A9A00DF1742 /* es-MX */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -981,6 +999,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1028,6 +1047,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

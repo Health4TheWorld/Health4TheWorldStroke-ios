@@ -29,6 +29,7 @@
     [super viewDidLoad];
     [self addBackgroundImage];
     [GraphicUtils styleButton:self.enterButton];
+    [self.enterButton setTitle:NSLocalizedString(@"Enter.enterButton", nil) forState:UIControlStateNormal];
     [self setUpQuote];
     
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedLeft:)];
@@ -100,8 +101,8 @@
     self.authors = [[NSMutableArray alloc] init];
 
     /* First quote */
-    UILabel *firstQuote = [EnterViewController getQuoteLabelWithText:@"\"The best preparation for tomorrow is doing your best today.\"" offscreen:NO];
-    UILabel *firstAuthorLabel = [EnterViewController getAuthorLabelWithText:@" – H. Jackson Brown, Jr" forQuoteLabel:firstQuote offScreen:NO];
+    UILabel *firstQuote = [EnterViewController getQuoteLabelWithText:NSLocalizedString(@"Enter.firstQuote", nil) offscreen:NO];
+    UILabel *firstAuthorLabel = [EnterViewController getAuthorLabelWithText:NSLocalizedString(@"Enter.firstAuthor", nil) forQuoteLabel:firstQuote offScreen:NO];
     
     [self.view addSubview:firstQuote];
     [self.view addSubview:firstAuthorLabel];
@@ -110,8 +111,8 @@
     [self.authors addObject:firstAuthorLabel];
     
     /* Second quote */
-    UILabel *secondQuote = [EnterViewController getQuoteLabelWithText:@"\"Believe you can and you're halfway there.\"" offscreen:YES];
-    UILabel *secondAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Theodore Roosevelt" forQuoteLabel:secondQuote offScreen:YES];
+    UILabel *secondQuote = [EnterViewController getQuoteLabelWithText:NSLocalizedString(@"Enter.secondQuote", nil) offscreen:YES];
+    UILabel *secondAuthorLabel = [EnterViewController getAuthorLabelWithText:NSLocalizedString(@"Enter.secondAuthor", nil) forQuoteLabel:secondQuote offScreen:YES];
     
     [self.view addSubview:secondQuote];
     [self.view addSubview:secondAuthorLabel];
@@ -120,8 +121,8 @@
     [self.authors addObject:secondAuthorLabel];
     
     /* Third quote */
-    UILabel *thirdQuote = [EnterViewController getQuoteLabelWithText:@"\"Nothing is impossible, the word itself says 'I'm possible'!\"" offscreen:YES];
-    UILabel *thirdAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Audrey Hepburn" forQuoteLabel:thirdQuote offScreen:YES];
+    UILabel *thirdQuote = [EnterViewController getQuoteLabelWithText:NSLocalizedString(@"Enter.thirdQuote", nil) offscreen:YES];
+    UILabel *thirdAuthorLabel = [EnterViewController getAuthorLabelWithText:NSLocalizedString(@"Enter.thirdAuthor", nil) forQuoteLabel:thirdQuote offScreen:YES];
     
     [self.view addSubview:thirdQuote];
     [self.view addSubview:thirdAuthorLabel];
@@ -130,8 +131,8 @@
     [self.authors addObject:thirdAuthorLabel];
     
     /* Fourth quote */
-    UILabel *fourthQuote = [EnterViewController getQuoteLabelWithText:@"\"Only I can change my life. No one can do it for me.\"" offscreen:YES];
-    UILabel *fourthAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Carol Burnett" forQuoteLabel:fourthQuote offScreen:YES];
+    UILabel *fourthQuote = [EnterViewController getQuoteLabelWithText:NSLocalizedString(@"Enter.fourthQuote", nil) offscreen:YES];
+    UILabel *fourthAuthorLabel = [EnterViewController getAuthorLabelWithText:NSLocalizedString(@"Enter.fourthAuthor", nil) forQuoteLabel:fourthQuote offScreen:YES];
     
     [self.view addSubview:fourthQuote];
     [self.view addSubview:fourthAuthorLabel];
@@ -140,8 +141,8 @@
     [self.authors addObject:fourthAuthorLabel];
     
     /* Fifth quote */
-    UILabel *fifthQuote = [EnterViewController getQuoteLabelWithText:@"\"Always do your best. What you plant now will harvest later.\"" offscreen:YES];
-    UILabel *fifthAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Og Mandino" forQuoteLabel:fifthQuote offScreen:YES];
+    UILabel *fifthQuote = [EnterViewController getQuoteLabelWithText:NSLocalizedString(@"Enter.fifthQuote", nil) offscreen:YES];
+    UILabel *fifthAuthorLabel = [EnterViewController getAuthorLabelWithText:NSLocalizedString(@"Enter.fifthAuthor", nil) forQuoteLabel:fifthQuote offScreen:YES];
     
     [self.view addSubview:fifthQuote];
     [self.view addSubview:fifthAuthorLabel];
@@ -150,8 +151,8 @@
     [self.authors addObject:fifthAuthorLabel];
     
     /* Sixth quote */
-    UILabel *sixthQuote = [EnterViewController getQuoteLabelWithText:@"\"Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.\"" offscreen:YES];
-    UILabel *sixthAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Helen Keller" forQuoteLabel:sixthQuote offScreen:YES];
+    UILabel *sixthQuote = [EnterViewController getQuoteLabelWithText:NSLocalizedString(@"Enter.sixthQuote", nil) offscreen:YES];
+    UILabel *sixthAuthorLabel = [EnterViewController getAuthorLabelWithText:NSLocalizedString(@"Enter.sixthAuthor", nil) forQuoteLabel:sixthQuote offScreen:YES];
     
     [self.view addSubview:sixthQuote];
     [self.view addSubview:sixthAuthorLabel];
@@ -160,8 +161,8 @@
     [self.authors addObject:sixthAuthorLabel];
     
     /* Seventh quote */
-    UILabel *seventhQuote = [EnterViewController getQuoteLabelWithText:@"\"Setting goals is the first step in turning the invisible into the visible.\"" offscreen:YES];
-    UILabel *seventhAuthorLabel = [EnterViewController getAuthorLabelWithText:@"– Tony Robbins" forQuoteLabel:seventhQuote offScreen:YES];
+    UILabel *seventhQuote = [EnterViewController getQuoteLabelWithText:NSLocalizedString(@"Enter.seventhQuote", nil) offscreen:YES];
+    UILabel *seventhAuthorLabel = [EnterViewController getAuthorLabelWithText:NSLocalizedString(@"Enter.seventhAuthor", nil) forQuoteLabel:seventhQuote offScreen:YES];
     
     [self.view addSubview:seventhQuote];
     [self.view addSubview:seventhAuthorLabel];

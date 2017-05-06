@@ -36,7 +36,7 @@
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     self.navigationItem.leftBarButtonItem = backButton;
     
-    self.title = @"HOME";
+    self.title = [NSLocalizedString(@"Home.title", nil) uppercaseString];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -49,33 +49,33 @@
     
     float startingY = SPACE_BETWEEN_CELLS;
     
-    HomeButton *helpMeSpeakButton = [[HomeButton alloc] initWithText:@"Help Me Speak" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
+    HomeButton *helpMeSpeakButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.helpMeSpeak", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
     [helpMeSpeakButton addImageBottomRight:[UIImage imageNamed:HELP_ME_SPEAK_ICON]];
     [helpMeSpeakButton addTarget:self action:@selector(helpMeSpeakPressed) forControlEvents:UIControlEventTouchUpInside];
     
-    HomeButton *exercisesButton = [[HomeButton alloc] initWithText:@"Exercises" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
+    HomeButton *exercisesButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.exercises", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
     [exercisesButton addImageRightCenter:[UIImage imageNamed:EXERCISE_ICON]];
     [exercisesButton addTarget:self action:@selector(exercisePressed) forControlEvents:UIControlEventTouchUpInside];
 
     startingY += cellWidth;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *learnButton = [[HomeButton alloc] initWithText:@"Learn" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
+    HomeButton *learnButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.learn", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
     [learnButton addImageBottomRight:[UIImage imageNamed:LEARN_ICON]];
     [learnButton addTarget:self action:@selector(learnPressed) forControlEvents:UIControlEventTouchUpInside];
     
-    HomeButton *remindersButton = [[HomeButton alloc] initWithText:@"Reminders" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
+    HomeButton *remindersButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.reminders", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
     [remindersButton addImageBottomRight:[UIImage imageNamed:REMINDERS_ICON]];
     [remindersButton addTarget:self action:@selector(remindersPressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellWidth;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *generalInfoButton = [[HomeButton alloc] initWithText:@"General Info" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
+    HomeButton *generalInfoButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.generalInfo", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
     [generalInfoButton addImageCentered:[UIImage imageNamed:GENERAL_INFO_ICON]];
     [generalInfoButton addTarget:self action:@selector(generalInfoPressed) forControlEvents:UIControlEventTouchUpInside];
     
-    HomeButton *surveysButton = [[HomeButton alloc] initWithText:@"Surveys" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
+    HomeButton *surveysButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.surveys", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
     [surveysButton addImageBottomRight:[UIImage imageNamed:SURVEYS_ICON]];
     [surveysButton addTarget:self action:@selector(surveysPressed) forControlEvents:UIControlEventTouchUpInside];
 

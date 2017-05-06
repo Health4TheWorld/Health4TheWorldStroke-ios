@@ -139,15 +139,15 @@
 #define COPYRIGHT_SECTION_TITLE @"Copyright"
 
 /* HELP ME SPEAK WORDS */
-#define HELP_ME_SPEAK_YES @"Yes"
-#define HELP_ME_SPEAK_NO @"No"
-#define HELP_ME_SPEAK_THANK_YOU @"Thank you"
-#define HELP_ME_SPEAK_BATHROOM @"I need a bathroom"
-#define HELP_ME_SPEAK_WATER @"I need water"
-#define HELP_ME_SPEAK_FOOD @"I'm hungry"
-#define HELP_ME_SPEAK_NOT_GIVING_UP @"I'm not giving up"
-#define HELP_ME_SPEAK_PAIN @"I am in pain"
-#define HELP_ME_SPEAK_CANT_SPEAK @"Sorry, I can't speak"
+#define HELP_ME_SPEAK_YES NSLocalizedString(@"HelpMeSpeak.yes", nil)
+#define HELP_ME_SPEAK_NO NSLocalizedString(@"HelpMeSpeak.no", nil)
+#define HELP_ME_SPEAK_THANK_YOU NSLocalizedString(@"HelpMeSpeak.thankYou", nil)
+#define HELP_ME_SPEAK_BATHROOM NSLocalizedString(@"HelpMeSpeak.bathroom", nil)
+#define HELP_ME_SPEAK_WATER NSLocalizedString(@"HelpMeSpeak.water", nil)
+#define HELP_ME_SPEAK_FOOD NSLocalizedString(@"HelpMeSpeak.hungry", nil)
+#define HELP_ME_SPEAK_NOT_GIVING_UP NSLocalizedString(@"HelpMeSpeak.notGivingUp", nil)
+#define HELP_ME_SPEAK_PAIN NSLocalizedString(@"HelpMeSpeak.pain", nil)
+#define HELP_ME_SPEAK_CANT_SPEAK NSLocalizedString(@"HelpMeSpeak.cantSpeak", nil)
 
 /* BEFAST */
 #define BEFAST_B @"Balance: Sudden loss of balance."

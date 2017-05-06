@@ -34,8 +34,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"HELP ME SPEAK";
-    
+    self.title = [NSLocalizedString(@"HelpMeSpeak.title", nil) uppercaseString];
+    self.searchTextField.placeholder = HELP_ME_SPEAK_FOOD;
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
