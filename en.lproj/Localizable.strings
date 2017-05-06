@@ -216,6 +216,13 @@
 "Reminders.thursdays" = "Thursdays";
 "Reminders.fridays" = "Fridays";
 "Reminders.saturdays" = "Saturdays";
+"Reminders.sundayAbbrev" = "S";
+"Reminders.mondayAbbrev" = "M";
+"Reminders.tuesdayAbbrev" = "T";
+"Reminders.wednesdayAbbrev" = "W";
+"Reminders.thursdayAbbrev" = "T";
+"Reminders.fridayAbbrev" = "F";
+"Reminders.saturdayAbbrev" = "S";
 "Reminders.atWhatTime" = "What time(s)?";
 "Reminders.remindMeAt" = "Remind me at:";
 "Reminders.addTime" = "Add Time";
@@ -224,3 +231,40 @@
 
 /* SURVEYS */
 "Surveys.password" = "Password";
+
+/* GENERAL INFO */
+"GeneralInfo.aboutUs" = "About Us";
+"GeneralInfo.termsOfUse" = "Terms of Use";
+"GeneralInfo.privacyPolicy" = "Privacy Policy";
+"GeneralInfo.copyright" = "Copyright";
+
+/* ABOUT US */
+"AboutUs.aboutTheApp" = "About the app";
+"AboutUs.paragraphOne" = "The HEALTH4THEWORLD STROKE HOPE APP is a free of cost educational tool to spread knowledge about stroke risk factors, secondary prevention, post stroke mobility & exercise education and speech strategies.  It has been created by Health4TheWorld which is a non profit organization inspired by the unmet medical needs worldwide. The mission of the organization is solving health inequities through innovation & technology and bringing smiles around the world. Please learn more about us at health4theworld.org.";
+"AboutUs.paragraphTwo" = "With an estimated incidence of 16.9 million and a prevalence of 33 million according to the World Health Organization, stroke is a dominant diseased entity in the category of cardiovascular diseases, and is a leading cause of serious long-term disability. The global burden of stroke falls disproportionately on low and middle-income countries, prompting us to improve global health educational outreach. We hope that this stroke educational app will be helpful.";
+"AboutUs.paragraphThree" = "The app has several features that we hope you will find useful!";
+"AboutUs.featureOne" = "Stroke Educational Content – Information on causes and risk factors of stroke with guidelines from the American Stroke Association, American Heart Association, evidence based articles and other healthcare sources. It is good to remember that these are general educational tips and not recommendations for clinical care. Both the patient and trained health professionals should sit together to work on a personalized prevention regimen for stroke.";
+"AboutUs.featureTwo" = "Video Animation and Exercise Tips for Stroke Recovery –Education for exercise and rehabilitation after stroke has been summarized by Physical Medicine and Rehabilitation experts from Stanford, University of California, San Francisco and University of Southern California. The exercises here are general and are intended to serve as educational guide not as medical advice.  These should be done with an occupational therapist and/or physical therapist, which can help with the correct technique and designing a regimen that will benefit a stroke patient best. A caregiver should always be present to help. These are divided into strengthening, stretching and functional mobility. Please advise your patients about the correct technique, frequency and regimen of these exercises.";
+"AboutUs.featureThree" = "Reminders for Medications and Appointments: Medication and Appointment compliance is a major issue and this tool is hopefully helpful!  Please set reminders for your patients if possible.";
+"AboutUs.featureFour" = "Speech Strategies After Stroke: The press button voice output can help with very basic communication. The aim is to translate these to different languages so health professions and patients in remote parts of the world who lack health access can benefit from these.";
+"AboutUs.team" = "Team";
+"AboutUs.teamIntro" = "This application wouldn’t have been possible without work of a dream team!";
+"AboutUs.founders" = "Founders";
+"AboutUs.developers" = "Developers";
+"AboutUs.animations" = "Animations";
+"AboutUs.illustrations" = "Illustrations";
+"AboutUs.contentEditing" = "Content editing";
+"AboutUs.movies" = "Movies";
+"AboutUs.advisoryBoard" = "Medical Advisory Board for the App";
+"AboutUs.marcFisher" = "Dr. Marc Fisher:  Dr Fisher currently serves as editor-in-chief of Stroke and Senior Physician on the Stroke Service at BIDMC, Harvard Medical School. He is well renowned and has published extensively over 260 peer-reviewed articles and has edited or co-edited 13 books.";
+"AboutUs.jeffreyTeraoke" = "Dr. Jeffrey Teraoke: Dr. Teraoke is Chief, PM &R at Palo Alto VA Medical Center. He is the program director of PM&R Residency Program and Director, Polytrauma, VA Palo Alto Health System";
+"AboutUs.ericaPitsch" = "Dr. Erica A Pitsch, PT, MPT, DPT, NCS: Health Science Assistant Clinical Professor, UCSF. Dr. Pitsch specializes in neurologic physical therapy and uses several treatment strategies and approaches, all focused on promoting optimal challenge, function, and recovery in persons with neurologic illness";
+"AboutUs.lorenWard" = "Loren Ward, PT, DPT is licensed Physical Therapist who began her career in Physical Therapy in 2007, while earning her Doctorate at MGH Institute of Health Professions in Massachusetts. She did internships at Rehabilitation of Chicago, Spaulding Rehabilitation and National Rehabilitation Hospital and now works at Stanford Veteran’s Affairs System. Loren is an advocate of functional independence and strives to help her patients reach their own level of independence regardless of their limitations.";
+"AboutUs.roseHamm" = "Rose Hamm, PT, DPT, CWS, FACCWS: Rose received a BS in Physical Therapy from the University of North Carolina, Chapel Hill, and an MS and post-graduate DPT from the University of Southern California.  She is currently Adjunct Assistant Professor of Clinical Physical Therapy at the University of Southern California and practices at Keck Hospital at USC.";
+
+
+
+
+
+
+

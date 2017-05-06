@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"GENERAL INFO";
+    self.title = [NSLocalizedString(@"Home.generalInfo", nil) uppercaseString];
     self.generalInfoCategories = @[ABOUT_US_SECTION_TITLE, TERMS_SECTION_TITLE, PRIVACY_POLICY_SECTION_TITLE];
     
     /* Gets rid of extra blank cells */

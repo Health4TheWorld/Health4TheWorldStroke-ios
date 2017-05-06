@@ -44,7 +44,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpColors];
-    
+    [self setButtonText];
     if (self.isEditing) {
         [self.nextButton setTitle:[NSLocalizedString(@"Reminders.save", nil) uppercaseString] forState:UIControlStateNormal];
         self.backButton.hidden = YES;
@@ -60,6 +60,16 @@
     [self.weeklyTab setTitle:NSLocalizedString(@"Reminders.weekly", nil) forState:UIControlStateNormal];
     [self.customTab setTitle:NSLocalizedString(@"Reminders.custom", nil) forState:UIControlStateNormal];
     [self.backButton setTitle:NSLocalizedString(@"Reminders.back", nil) forState:UIControlStateNormal];
+}
+
+- (void)setButtonText {
+    [self.sundayButton setTitle:NSLocalizedString(@"Reminders.sundayAbbrev", nil) forState:UIControlStateNormal];
+    [self.mondayButton setTitle:NSLocalizedString(@"Reminders.mondayAbbrev", nil) forState:UIControlStateNormal];
+    [self.tuesdayButton setTitle:NSLocalizedString(@"Reminders.tuesdayAbbrev", nil) forState:UIControlStateNormal];
+    [self.wednesdayButton setTitle:NSLocalizedString(@"Reminders.wednesdayAbbrev", nil) forState:UIControlStateNormal];
+    [self.thursdayButton setTitle:NSLocalizedString(@"Reminders.thursdayAbbrev", nil) forState:UIControlStateNormal];
+    [self.fridayButton setTitle:NSLocalizedString(@"Reminders.fridayAbbrev", nil) forState:UIControlStateNormal];
+    [self.saturdayButton setTitle:NSLocalizedString(@"Reminders.saturdayAbbrev", nil) forState:UIControlStateNormal];
 }
 
 /* Sets up the view to display whatever frequency the user had previously saved. */

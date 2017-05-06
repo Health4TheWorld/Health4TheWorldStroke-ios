@@ -215,6 +215,13 @@
 "Reminders.thursdays" = "el jueves";
 "Reminders.fridays" = "el viernes";
 "Reminders.saturdays" = "el sábado";
+"Reminders.sundayAbbrev" = "D";
+"Reminders.mondayAbbrev" = "L";
+"Reminders.tuesdayAbbrev" = "M";
+"Reminders.wednesdayAbbrev" = "M";
+"Reminders.thursdayAbbrev" = "J";
+"Reminders.fridayAbbrev" = "V";
+"Reminders.saturdayAbbrev" = "S";
 "Reminders.atWhatTime" = "¿A que hora?";
 "Reminders.remindMeAt" = "Recuérdame a las:";
 "Reminders.addTime" = "Agregar";
@@ -223,3 +230,33 @@
 
 /* SURVEYS */
 "Surveys.password" = "Contraseña";
+
+/* GENERAL INFO */
+"GeneralInfo.aboutUs" = "Sobre nosotros";
+"GeneralInfo.termsOfUse" = "Términos de uso";
+"GeneralInfo.privacyPolicy" = "Política de privacidad";
+"GeneralInfo.copyright" = "Copyright";
+
+/* ABOUT US */
+"AboutUs.aboutTheApp" = "About the app";
+"AboutUs.paragraphOne" = "La APLICACIÓN HEALTH4THWORD STROKE HOPE es una herramienta educativa gratuita con el propósito difundir conocimiento sobre los factores de riesgo de los accidentes/ataques cerebrovasculares, la prevención secundaria, la movilidad post-accidente, ejercicios y estrategias de habla. La aplicación fue creada por Health4TheWorld, una organización sin fines de lucro inspirada en las necesidades médicas no satisfechas en el mundo. La misión de la organización es solucionar las desigualdades de la salud a través de inovación y tecnología y traer sonrisas alrededor del mundo. La misión de la organización es solucionar las desigualdades de la salud a través de inovación y tecnología y traer sonrisas alrededor del mundo. ";
+"AboutUs.paragraphTwo" = "Con una incidencia estimada de 16.9 millones y una prevalencia de 33 millones según la Organización Mundial de la Salud, el ataque cerebral es una entidad dominante en la categoría de enfermedades cardiovasculares y una de las principales causas de discapacidad grave a largo plazo. La carga mundial de accidentes cerebrovasculares recae desproporcionadamente en los países de ingresos bajos y medianos, lo que nos inspira a mejorar el alcance de educación a nivel mundial. Esperamos que esta aplicación educativa sea útil.";
+"AboutUs.paragraphThree" = "La aplicación tiene varias herramientas que esperamos le resulten útiles!";
+"AboutUs.featureOne" = "Contenido educacional – Información sobre causas y factores de riesgo del ataque cerebral con guías de la Asociación Americana del Corazón, Asociación Americana de Accidente Cerebrovascular, artículos basados en evidencia y otras fuentes de información médica. Por favor recuerde que estos son consejos educativos generales y no recomendaciones de manejo clínico. Tanto el paciente como los profesionales de la salud deben sentarse juntos para trabajar en un régimen de prevención personalizado para cada paciente.";
+"AboutUs.featureTwo" = "Animación en video y ejercicios para la recuperación del accidente cerebrovascular - Educación sobre ejercicio y la rehabilitación después del ataque cerebral ha sido resumida por expertos en medicina física y rehabilitación de Stanford, la Universidad de California, San Francisco y la Universidad del Sur de California. Los ejercicios son generales y están destinados a servir como guía educativa y no como consejo médico. Estos deben hacerse con un terapista ocupacional y / o fisioterapista, que pueda ayudar con la técnica correcta y a diseñar un régimen que beneficie mejor al paciente. Alguien debe siempre estar presente para ayudar. Los ejercicios se dividen en fortalecimiento, estiramiento y movilidad funcional. Por favor aconseje a sus pacientes sobre la técnica correcta, la frecuencia necesaria y el régimen de estos ejercicios.";
+"AboutUs.featureThree" = "Recordatorios de Medicamentos y Citas - ¡El cumplimiento con medicamentos y citas médicas es importante y esperamos que esta herramienta le sea útil! Por favor ponga recordatorios en la aplicación para sus pacientes si es posible.";
+"AboutUs.featureFour" = "Estrategias de voz después del accidente cerebrovascular - El botón de producción de voz puede ayudar con la comunicación básica. Nuestra meta es traducir estos a diferentes idiomas para que las profesiones de la salud y los pacientes en partes remotas del mundo que carecen de acceso a la salud puedan beneficiarse de ellos.";
+"AboutUs.team" = "Equipo";
+"AboutUs.teamIntro" = "Esta aplicación no habría sido posible sin el trabajo de un equipo de ensueño!";
+"AboutUs.founders" = "Fundadores";
+"AboutUs.developers" = "Desarrolladores de la aplicación";
+"AboutUs.animations" = "Animaciones";
+"AboutUs.illustrations" = "Ilustraciones";
+"AboutUs.contentEditing" = "Editor de contenido";
+"AboutUs.movies" = "Videos";
+"AboutUs.advisoryBoard" = " Junta de Asesoría Médica para la aplicación";
+"AboutUs.marcFisher" = "Dr. Marc Fisher:  Actualmente el Dr. Fisher es el director de redacción de “Stroke and Senior Physician” en el servicio de accidente cerebrovascular de BIDMC, Harvard Medical School. Es reconocido mundialmente y ha publicado extensamente con más de 260 artículos de revision paritaria y ha editado o coeditado 13 libros.";
+"AboutUs.jeffreyTeraoke" = "Dr. Jeffrey Teraoke: El Dr. Teraoke es el jefe de medicina y rehabilitacón del Palo Alto VA Medical Center. Además es el director de la residencia de medicina física y rehabilitación y el director de politrauma en el VA Palo Alto Health System.";
+"AboutUs.ericaPitsch" = "Dr. Erica A Pitsch, PT, MPT, DPT, NCS: La Dra. Pitsch se especializa en terapia física neurológica y utiliza varias estrategias de tratamiento enfocadas en promover el reto óptimo, la función y la recuperación en personas con enfermedades neurológicas.";
+"AboutUs.lorenWard" = "Loren Ward, PT, DPT  es una fisioterapista licenciada que comenzó su carrera en Fisioterapia en 2007, mientras obtenía su doctorado en el Instituto de Profesiones de Salud del MGH en Massachusetts. Realizó prácticas en Rehabilitation of Chicago, Spaulding Rehabilitation y National Rehabilitation Hospital y ahora trabaja en el Sistema de Asuntos de Veteranos de Stanford. Loren es una defensora de la independencia funcional y se esfuerza en ayudar a sus pacientes a alcanzar su propio nivel de independencia, independientemente de sus limitaciones.";
+"AboutUs.roseHamm" = "Rose Hamm, PT, DPT, CWS, FACCWS: Rose recibió una licenciatura en Fisioterapia de la Universidad de Carolina del Norte, Chapel Hill, y una maestría y post-grado de DPT de la Universidad del Sur de California. Actualmente es Profesora Asistente Adjunta de Terapia Física Clínica en la Universidad del Sur de California y practica en el Hospital Keck de USC.";

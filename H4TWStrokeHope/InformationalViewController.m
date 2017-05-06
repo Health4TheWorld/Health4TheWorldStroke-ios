@@ -68,30 +68,30 @@
 
 /* Lays out all the text (programatically) for the "About Us" section. */
 - (void)layoutAboutUs {
-    [self addHeaderWithText:@"ABOUT THE APP"];
+    [self addHeaderWithText:[NSLocalizedString(@"AboutUs.aboutTheApp", nil) uppercaseString]];
     [self addMainText:ABOUT_US_PARAGRAPH_ONE];
     [self addMainText:ABOUT_US_PARAGRAPH_TWO];
     [self addMainText:ABOUT_US_PARAGRAPH_THREE];
     NSArray *features = @[APP_FEATURE_ONE, APP_FEATURE_TWO, APP_FEATURE_THREE, APP_FEATURE_FOUR];
     [self addBulletsPointWithText:features];
     self.currentY += 15;
-    [self addHeaderWithText:@"TEAM"];
-    [self addMainText:@"This application wouldn’t have been possible without work of a dream team!"];
-    [self addSubheaderWithText:@"Founders"];
+    [self addHeaderWithText:[NSLocalizedString(@"AboutUs.team", nil) uppercaseString]];
+    [self addMainText:NSLocalizedString(@"AboutUs.teamIntro", nil)];
+    [self addSubheaderWithText:NSLocalizedString(@"AboutUs.founders", nil)];
     [self addMainText:@"Dr. Bhavya Rehani, Dr. Bill Dillon & Dr. Ankur Bharija"];
-    [self addSubheaderWithText:@"Developer"];
-    [self addMainText:@"Rachel Grau"];
-    [self addSubheaderWithText:@"Animations"];
+    [self addSubheaderWithText:NSLocalizedString(@"AboutUs.developers", nil)];
+    [self addMainText:@"Rachel Grau & Premnath Ramanathan"];
+    [self addSubheaderWithText:NSLocalizedString(@"AboutUs.animations", nil)];
     [self addMainText:@"Ernesto Aguilar"];
-    [self addSubheaderWithText:@"Illustrations"];
+    [self addSubheaderWithText:NSLocalizedString(@"AboutUs.illustrations", nil)];
     [self addMainText:@"Julie Kim, Bhavya Rehani, Ankur Bharija"];
-    [self addSubheaderWithText:@"Content editing"];
+    [self addSubheaderWithText:NSLocalizedString(@"AboutUs.contentEditing", nil)];
     [self addMainText:@"Dr. Lilly Zhang, Isaiah Brown and Dr Bhavya Rehani"];
-    [self addSubheaderWithText:@"Movies"];
+    [self addSubheaderWithText:NSLocalizedString(@"AboutUs.movies", nil)];
     [self addMainText:@"Jack McGill"];
-    [self addSubheaderWithText:@"Medical Advisory Board for the App"];
+    [self addSubheaderWithText:NSLocalizedString(@"AboutUs.advisoryBoard", nil)];
     
-    NSArray *medicalAdvisoryBoard = @[@"Dr. Marc Fisher:  Dr Fisher currently serves as editor-in-chief of Stroke and Senior Physician on the Stroke Service at BIDMC, Harvard Medical School. He is well renowned and has published extensively over 260 peer-reviewed articles and has edited or co-edited 13 books.", @"Dr. Jeffrey Teraoke: Dr. Teraoke is Chief, PM &R at Palo Alto VA Medical Center. He is the program director of PM&R Residency Program and Director, Polytrauma, VA Palo Alto Health System", @"Dr. Erica A Pitsch, PT, MPT, DPT, NCS: Health Science Assistant Clinical Professor, UCSF. Dr. Pitsch specializes in neurologic physical therapy and uses several treatment strategies and approaches, all focused on promoting optimal challenge, function, and recovery in persons with neurologic illness", @"Loren Ward, PT, DPT is licensed Physical Therapist who began her career in Physical Therapy in 2007, while earning her Doctorate at MGH Institute of Health Professions in Massachusetts. She did internships at Rehabilitation of Chicago, Spaulding Rehabilitation and National Rehabilitation Hospital and now works at Stanford Veteran’s Affairs System. Loren is an advocate of functional independence and strives to help her patients reach their own level of independence regardless of their limitations.", @"Rose Hamm, PT, DPT, CWS, FACCWS: Rose received a BS in Physical Therapy from the University of North Carolina, Chapel Hill, and an MS and post-graduate DPT from the University of Southern California.  She is currently Adjunct Assistant Professor of Clinical Physical Therapy at the University of Southern California and practices at Keck Hospital at USC."];
+    NSArray *medicalAdvisoryBoard = @[NSLocalizedString(@"AboutUs.marcFisher", nil), NSLocalizedString(@"AboutUs.jeffreyTeraoke", nil), NSLocalizedString(@"AboutUs.ericaPitsch", nil), NSLocalizedString(@"AboutUs.lorenWard", nil), NSLocalizedString(@"AboutUs.roseHamm", nil)];
     [self addBulletsPointWithText:medicalAdvisoryBoard];
 }
 
