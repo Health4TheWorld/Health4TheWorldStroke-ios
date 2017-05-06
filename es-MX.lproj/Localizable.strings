@@ -177,3 +177,46 @@
 "HomeMod.contentTwo" = "Elimine las alfombras que se puedan mover fácilmente para prevenir caídas.";
 "HomeMod.subHeaderThree" = "El baño:";
 "HomeMod.contentThree" = "Los baños se pueden modificar para que sena accessibles a sillas de rueda ampliando la puerta. Los asientos de los inodoros se pueden alzaar para que sea más fácil sentarse y pararse del inodoro con un levantador de inodoro que se pone entre el inodoro y el piso, un levantador de asiento de inodoro que alza la silla o instalando barras de agarre para soporte.";
+
+/* REMINDERS VIEW CONTROLLER */
+"Reminders.title" = "Recordatorios";
+"Reminders.todaysReminders" = "Recordatorios de hoy";
+"Reminders.allReminders" = "Todos los recordatorios";
+"Reminders.addReminderButton" = "Agregar";
+
+/* ADDING REMINDERS */
+"Reminders.remindMeTo" = "Recuérdame...";
+"Reminders.takeMedicine" = "Tomar medicamento";
+"Reminders.doctorsVisit" = "Visita al doctor";
+"Reminders.bloodTest" = "Prueba de sangre";
+"Reminders.exercise" = "Ejercicio";
+"Reminders.medication" = "Medicamento";
+"Reminders.howOften" = "¿Con qué frecuencia?";
+"Reminders.daily" = "Diariamente";
+"Reminders.weekly" = "Semanal";
+"Reminders.custom" = "Personalizado";
+"Reminders.everyday" = "Todos los dias.";
+"Reminders.every" = "";
+"Reminders.and" = "y";
+"Reminders.next" = "seguir";
+"Reminders.save" = "guardar";
+"Reminders.back" = "atrás";
+"Reminders.sunday" = "el domingo";
+"Reminders.monday" = "el lunes";
+"Reminders.tuesday" = "el martes";
+"Reminders.wednesday" = "el miércoles";
+"Reminders.thursday" = "el jueves";
+"Reminders.friday" = "el viernes";
+"Reminders.saturday" = "el sábado";
+"Reminders.sundays" = "el domingo";
+"Reminders.mondays" = "el lunes";
+"Reminders.tuesdays" = "el martes";
+"Reminders.wednesdays" = "el miércoles";
+"Reminders.thursdays" = "el jueves";
+"Reminders.fridays" = "el viernes";
+"Reminders.saturdays" = "el sábado";
+"Reminders.atWhatTime" = "¿A que hora?";
+"Reminders.remindMeAt" = "Recuérdame a las:";
+"Reminders.addTime" = "Agregar";
+"Reminders.editTitle" = "Editar";
+"Reminders.saveChanges" = "Guardar";

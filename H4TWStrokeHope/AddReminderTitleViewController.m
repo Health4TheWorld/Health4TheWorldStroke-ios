@@ -46,6 +46,9 @@
     } else {
         [self.nextButton setTitle:@"NEXT" forState:UIControlStateNormal];
     }
+
+    self.titleLabel.text = NSLocalizedString(@"Reminders.remindMeTo", nil);
+    self.reminderTextField.placeholder = NSLocalizedString(@"Reminders.takeMedicine", nil);
 }
 
 - (void)viewWillAppear:(BOOL)animated {

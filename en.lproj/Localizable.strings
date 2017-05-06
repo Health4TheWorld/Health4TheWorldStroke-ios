@@ -178,3 +178,46 @@
 "HomeMod.contentTwo" = "Eliminate rugs that can easily move to avoid trips and falls.";
 "HomeMod.subHeaderThree" = "Bath:";
 "HomeMod.contentThree" = "Bathrooms can be made more accessible to wheelchairs by widening the doorway. Toilet seats can be raised to make it less challenging in getting to and from the toilet: a toilet elevator that mounts between the floor and toilet; a seat elevator that attaches to the bowl and raises the seat; installing toilet rails/grab bars to improve support for mobility.";
+
+/* REMINDERS VIEW CONTROLLER */
+"Reminders.title" = "Reminders";
+"Reminders.todaysReminders" = "Today's reminders";
+"Reminders.allReminders" = "All reminders";
+"Reminders.addReminderButton" = "Add Reminder";
+
+/* ADDING REMINDERS */
+"Reminders.remindMeTo" = "Remind me to...";
+"Reminders.takeMedicine" = "Take my medicine";
+"Reminders.doctorsVisit" = "Doctor's visit";
+"Reminders.bloodTest" = "Blood test";
+"Reminders.exercise" = "Exercise";
+"Reminders.medication" = "Medication";
+"Reminders.howOften" = "How often?";
+"Reminders.daily" = "Daily";
+"Reminders.weekly" = "Weekly";
+"Reminders.custom" = "Custom";
+"Reminders.everyday" = "Everyday.";
+"Reminders.every" = "Every ";
+"Reminders.and" = "and";
+"Reminders.next" = "next";
+"Reminders.save" = "save";
+"Reminders.back" = "back";
+"Reminders.sunday" = "Sunday";
+"Reminders.monday" = "Monday";
+"Reminders.tuesday" = "Tuesday";
+"Reminders.wednesday" = "Wednesday";
+"Reminders.thursday" = "Thursday";
+"Reminders.friday" = "Friday";
+"Reminders.saturday" = "Saturday";
+"Reminders.sundays" = "Sundays";
+"Reminders.mondays" = "Mondays";
+"Reminders.tuesdays" = "Tuesdays";
+"Reminders.wednesdays" = "Wednesdays";
+"Reminders.thursdays" = "Thursdays";
+"Reminders.fridays" = "Fridays";
+"Reminders.saturdays" = "Saturdays";
+"Reminders.atWhatTime" = "What time(s)?";
+"Reminders.remindMeAt" = "Remind me at:";
+"Reminders.addTime" = "Add Time";
+"Reminders.editTitle" = "Edit Reminder";
+"Reminders.saveChanges" = "Save changes";

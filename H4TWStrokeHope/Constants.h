@@ -106,20 +106,20 @@
 #define VIDEO_5B_MALE_DOC @"5BMaleDocWaving.m4v"
 
 /* WEEKDAYS */
-#define EVERYDAY @"Everyday."
-#define SUNDAY @"Sunday"
-#define MONDAY @"Monday"
-#define TUESDAY @"Tuesday"
-#define WEDNESDAY @"Wednesday"
-#define THURSDAY @"Thursday"
-#define FRIDAY @"Friday"
-#define SATURDAY @"Saturday"
+#define EVERYDAY NSLocalizedString(@"Reminders.everyday", nil)
+#define SUNDAY NSLocalizedString(@"Reminders.sunday", nil)
+#define MONDAY NSLocalizedString(@"Reminders.monday", nil)
+#define TUESDAY NSLocalizedString(@"Reminders.tuesday", nil)
+#define WEDNESDAY NSLocalizedString(@"Reminders.wednesday", nil)
+#define THURSDAY NSLocalizedString(@"Reminders.thursday", nil)
+#define FRIDAY NSLocalizedString(@"Reminders.friday", nil)
+#define SATURDAY NSLocalizedString(@"Reminders.saturday", nil)
 
 /* REMINDER SUGGESTIONS */
-#define DOCTORS_VISIT_REMINDER @"Doctor's Visit"
-#define BLOOD_TEST_REMINDER @"Blood test"
-#define MEDICATION_REMINDER @"Medication"
-#define EXERCISE_REMINDER @"Exercise"
+#define DOCTORS_VISIT_REMINDER NSLocalizedString(@"Reminders.doctorsVisit", nil)
+#define BLOOD_TEST_REMINDER NSLocalizedString(@"Reminders.bloodTest", nil)
+#define MEDICATION_REMINDER NSLocalizedString(@"Reminders.medication", nil)
+#define EXERCISE_REMINDER NSLocalizedString(@"Reminders.exercise", nil)
 
 /* EXERCISE CONTENT */
 #define EXERCISE_PARAGRAPH_ONE NSLocalizedString(@"Exercises.instructions", nil)

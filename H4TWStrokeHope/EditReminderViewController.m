@@ -31,7 +31,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"EDIT REMINDER";
+    self.title = [NSLocalizedString(@"Reminders.editTitle", nil) uppercaseString];
+    [self.saveButton setTitle:[NSLocalizedString(@"Reminders.saveChanges", nil) uppercaseString] forState:UIControlStateNormal];
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -86,16 +87,16 @@
 
 - (NSString *)getReminderFrequencyDescription {
     if (self.reminder.reminderDays.count == 7) {
-        return @"Daily.";
+        return NSLocalizedString(@"Reminders.daily", nil);
     } else if (self.reminder.reminderDays.count == 1) {
-        return [NSString stringWithFormat:@"Weekly; every %@.", [self.reminder.reminderDays objectAtIndex:0]];
+        return [NSString stringWithFormat:@"%@; %@%@.", NSLocalizedString(@"Reminders.weekly", nil), NSLocalizedString(@"Reminders.every", nil), [self.reminder.reminderDays objectAtIndex:0]];
     }
-    NSString *timeStr = @"Custom; every ";
+    NSString *timeStr = [NSString stringWithFormat:@"%@; %@ ", NSLocalizedString(@"Reminders.custom", nil), NSLocalizedString(@"Reminders.every", nil)];
     for (int i=0; i < self.reminder.reminderDays.count; i++) {
-        NSString *day = [[self.reminder.reminderDays objectAtIndex:i] capitalizedString];
+        NSString *day = [self.reminder.reminderDays objectAtIndex:i];
         
         if (i == (self.reminder.reminderDays.count - 1)) {
-            timeStr = [timeStr stringByAppendingString:[NSString stringWithFormat:@"and %@.", day]];
+            timeStr = [timeStr stringByAppendingString:[NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.and", nil), day]];
         } else {
             /* If it's the second to last day and only two days, don't include comma */
             if ((i == (self.reminder.reminderDays.count - 2))&&(self.reminder.reminderDays.count == 2)) {
@@ -211,13 +212,13 @@
     switch (section)
     {
         case EDIT_REMINDER_TITLE_SECTION:
-            sectionName = @"Remind me to...";
+            sectionName = NSLocalizedString(@"Reminders.remindMeTo", nil);
             break;
         case EDIT_REMINDER_FREQUENCY_SECTION:
-            sectionName = @"How often?";
+            sectionName = NSLocalizedString(@"Reminders.howOften", nil);
             break;
         case EDIT_REMINDER_TIME_SECTION:
-            sectionName = @"What time(s)?";
+            sectionName = NSLocalizedString(@"Reminders.atWhatTime", nil);
             break;
         default:
             sectionName = @"";
@@ -238,13 +239,13 @@
     switch (section)
     {
         case EDIT_REMINDER_TITLE_SECTION:
-            sectionName = @"Remind me to...";
+            sectionName = NSLocalizedString(@"Reminders.remindMeTo", nil);
             break;
         case 1:
-            sectionName = @"How often?";
+            sectionName = NSLocalizedString(@"Reminders.howOften", nil);
             break;
         case 2:
-            sectionName = @"What time(s)?";
+            sectionName = NSLocalizedString(@"Reminders.atWhatTime", nil);
             break;
         default:
             sectionName = @"";

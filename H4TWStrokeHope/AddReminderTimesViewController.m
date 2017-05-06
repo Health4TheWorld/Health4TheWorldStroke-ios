@@ -30,6 +30,8 @@
     [super viewDidLoad];
     [self setUpColors];
     
+    self.titleLabel.text = NSLocalizedString(@"Reminders.atWhatTime", nil);
+    
     self.addTimeButton.hidden = NO;
     
     self.tableView.bounces = NO;
@@ -48,12 +50,14 @@
     if (self.isEditing) {
         self.times = self.reminder.times;
         self.backButton.hidden = YES;
-        [self.saveButton setTitle:@"SAVE" forState:UIControlStateNormal];
+        [self.saveButton setTitle:[NSLocalizedString(@"Reminders.save", nil) uppercaseString] forState:UIControlStateNormal];
     } else {
         self.times = [[NSMutableArray alloc] init];
         self.backButton.hidden = NO;
-        [self.saveButton setTitle:@"ADD REMINDER" forState:UIControlStateNormal];
+        [self.saveButton setTitle:[NSLocalizedString(@"Reminders.addReminderButton", nil) uppercaseString] forState:UIControlStateNormal];
     }
+    
+    [self.backButton setTitle:NSLocalizedString(@"Reminders.back", nil) forState:UIControlStateNormal];
 }
 
 - (void)setUpPicker {
@@ -63,7 +67,7 @@
     
     UIToolbar *toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
     [toolBar setTintColor:[UIColor grayColor]];
-    UIBarButtonItem *doneBtn=[[UIBarButtonItem alloc]initWithTitle:@"Add Time" style:UIBarButtonItemStyleBordered target:self action:@selector(doneSelecting)];
+    UIBarButtonItem *doneBtn=[[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"Reminders.addTime", nil) style:UIBarButtonItemStyleBordered target:self action:@selector(doneSelecting)];
     UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     [toolBar setItems:[NSArray arrayWithObjects:space,doneBtn, nil]];
     
@@ -185,7 +189,7 @@
     switch (section)
     {
         case 0:
-            sectionName = @"Remind me at:";
+            sectionName = NSLocalizedString(@"Reminders.remindMeAt", nil);
             break;
         default:
             sectionName = @"";
@@ -206,7 +210,7 @@
     switch (section)
     {
         case 0:
-            sectionName = @"Remind me at:";
+            sectionName = NSLocalizedString(@"Reminders.remindMeAt", nil);
             break;
         default:
             sectionName = @"";

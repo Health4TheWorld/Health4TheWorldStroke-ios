@@ -32,7 +32,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"REMINDERS";
+    self.title = [NSLocalizedString(@"Reminders.title", nil) uppercaseString];
+    
+    [self.addReminderButton setTitle:[NSLocalizedString(@"Reminders.addReminderButton", nil) uppercaseString] forState:UIControlStateNormal];
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -284,10 +286,10 @@
     switch (section)
     {
         case 0:
-            sectionName = @"Today's reminders";
+            sectionName = NSLocalizedString(@"Reminders.todaysReminders", nil);
             break;
         case 1:
-            sectionName = @"All reminders";
+            sectionName = NSLocalizedString(@"Reminders.allReminders", nil);
             break;
         default:
             sectionName = @"";
@@ -308,10 +310,10 @@
     switch (section)
     {
         case 0:
-            sectionName = @"Today's reminders";
+            sectionName = NSLocalizedString(@"Reminders.todaysReminders", nil);
             break;
         case 1:
-            sectionName = @"All reminders";
+            sectionName = NSLocalizedString(@"Reminders.allReminders", nil);
             break;
         default:
             sectionName = @"";

@@ -46,14 +46,20 @@
     [self setUpColors];
     
     if (self.isEditing) {
-        [self.nextButton setTitle:@"SAVE" forState:UIControlStateNormal];
+        [self.nextButton setTitle:[NSLocalizedString(@"Reminders.save", nil) uppercaseString] forState:UIControlStateNormal];
         self.backButton.hidden = YES;
         [self loadEdits];
     } else {
-        [self.nextButton setTitle:@"NEXT" forState:UIControlStateNormal];
+        [self.nextButton setTitle:[NSLocalizedString(@"Reminders.next", nil) uppercaseString] forState:UIControlStateNormal];
         self.backButton.hidden = NO;
         [self dailyTabPressed:nil];
     }
+    
+    self.titleLabel.text = NSLocalizedString(@"Reminders.howOften", nil);
+    [self.dailyTab setTitle:NSLocalizedString(@"Reminders.daily", nil) forState:UIControlStateNormal];
+    [self.weeklyTab setTitle:NSLocalizedString(@"Reminders.weekly", nil) forState:UIControlStateNormal];
+    [self.customTab setTitle:NSLocalizedString(@"Reminders.custom", nil) forState:UIControlStateNormal];
+    [self.backButton setTitle:NSLocalizedString(@"Reminders.back", nil) forState:UIControlStateNormal];
 }
 
 /* Sets up the view to display whatever frequency the user had previously saved. */
@@ -196,15 +202,25 @@
         [selectedDays addObject:SATURDAY];
     }
     
-    NSString *frequencyStr = @"Every ";
+    NSString *frequencyStr = NSLocalizedString(@"Reminders.every", nil);
     if (selectedDays.count == 7) {
         frequencyStr = EVERYDAY;
     } else {
         for (int i=0; i < selectedDays.count; i++) {
             NSString *selectedDay = [selectedDays objectAtIndex:i];
+            if (i==0) {
+                selectedDay = [selectedDay capitalizedString];
+                NSString *firstLetter = [selectedDay substringToIndex:1];
+                NSString *restOfString = [selectedDay substringFromIndex:1];
+                selectedDay = [NSString stringWithFormat:@"%@%@", [firstLetter capitalizedString], [restOfString lowercaseString]];
+            }
             if (i == (selectedDays.count-1)) {
                 /* Last object */
-                frequencyStr = [frequencyStr stringByAppendingString:[NSString stringWithFormat:@"and %@.", selectedDay]];
+                if (selectedDays.count > 1) {
+                    frequencyStr = [frequencyStr stringByAppendingString:[NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.and", nil), selectedDay]];
+                } else {
+                    frequencyStr = [NSString stringWithFormat:@"%@.", selectedDay];
+                }
             }
             else {
                 if ((i == (selectedDays.count-2))&&(selectedDays.count == 2)) {
@@ -242,7 +258,13 @@
 
 - (IBAction)weeklyTabPressed:(id)sender {
     self.weekContainer.backgroundColor = HFTW_MAGENTA;
-    self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"Every %@.", SUNDAY];
+    
+    NSString *theDay = [SUNDAY capitalizedString];
+    NSString *firstLetter = [theDay substringToIndex:1];
+    NSString *restOfString = [theDay substringFromIndex:1];
+    theDay = [NSString stringWithFormat:@"%@%@", [firstLetter capitalizedString], [restOfString lowercaseString]];
+    self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.every", nil), theDay];
+    
     self.tabSelected = WEEKLY_TAB;
     [self.dailyTab setTitleColor:HFTW_TEXT_GRAY forState:UIControlStateNormal];
     [self.weeklyTab setTitleColor:HFTW_MAGENTA forState:UIControlStateNormal];
@@ -298,7 +320,11 @@
         }
         [self generateFrequencyStringForCustomDates];
     } else if ([self.tabSelected isEqualToString:WEEKLY_TAB]) {
-        self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"Every %@.", SUNDAY];
+        NSString *theDay = [SUNDAY capitalizedString];
+        NSString *firstLetter = [theDay substringToIndex:1];
+        NSString *restOfString = [theDay substringFromIndex:1];
+        theDay = [NSString stringWithFormat:@"%@%@", [firstLetter capitalizedString], [restOfString lowercaseString]];
+        self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.every", nil), theDay];
         /* Deselect all buttons that aren't Sunday and select Sunday. */
         [self markWeekButtonSelected:self.sundayButton];
         [self markWeekButtonUnselected:self.mondayButton];
@@ -320,7 +346,11 @@
         }
         [self generateFrequencyStringForCustomDates];
     } else if ([self.tabSelected isEqualToString:WEEKLY_TAB]) {
-        self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"Every %@.", MONDAY];
+        NSString *theDay = [MONDAY capitalizedString];
+        NSString *firstLetter = [theDay substringToIndex:1];
+        NSString *restOfString = [theDay substringFromIndex:1];
+        theDay = [NSString stringWithFormat:@"%@%@", [firstLetter capitalizedString], [restOfString lowercaseString]];
+        self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.every", nil), theDay];
         /* Deselect all buttons that aren't Monday and select Monday. */
         [self markWeekButtonSelected:self.mondayButton];
         [self markWeekButtonUnselected:self.sundayButton];
@@ -342,7 +372,11 @@
         }
         [self generateFrequencyStringForCustomDates];
     } else if ([self.tabSelected isEqualToString:WEEKLY_TAB]) {
-        self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"Every %@.", TUESDAY];
+        NSString *theDay = [TUESDAY capitalizedString];
+        NSString *firstLetter = [theDay substringToIndex:1];
+        NSString *restOfString = [theDay substringFromIndex:1];
+        theDay = [NSString stringWithFormat:@"%@%@", [firstLetter capitalizedString], [restOfString lowercaseString]];
+        self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.every", nil), theDay];
         /* Deselect all buttons that aren't Tuesday and select Tuesday. */
         [self markWeekButtonSelected:self.tuesdayButton];
         [self markWeekButtonUnselected:self.sundayButton];
@@ -364,7 +398,11 @@
         }
         [self generateFrequencyStringForCustomDates];
     } else if ([self.tabSelected isEqualToString:WEEKLY_TAB]) {
-        self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"Every %@.", WEDNESDAY];
+        NSString *theDay = [WEDNESDAY capitalizedString];
+        NSString *firstLetter = [theDay substringToIndex:1];
+        NSString *restOfString = [theDay substringFromIndex:1];
+        theDay = [NSString stringWithFormat:@"%@%@", [firstLetter capitalizedString], [restOfString lowercaseString]];
+        self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.every", nil), theDay];
         /* Deselect all buttons that aren't Wednesday and select Wednesday. */
         [self markWeekButtonSelected:self.wednesdayButton];
         [self markWeekButtonUnselected:self.sundayButton];
@@ -386,7 +424,11 @@
         }
         [self generateFrequencyStringForCustomDates];
     } else if ([self.tabSelected isEqualToString:WEEKLY_TAB]) {
-        self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"Every %@.", THURSDAY];
+        NSString *theDay = [THURSDAY capitalizedString];
+        NSString *firstLetter = [theDay substringToIndex:1];
+        NSString *restOfString = [theDay substringFromIndex:1];
+        theDay = [NSString stringWithFormat:@"%@%@", [firstLetter capitalizedString], [restOfString lowercaseString]];
+        self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.every", nil), theDay];
         /* Deselect all buttons that aren't Thursday and select Thursday. */
         [self markWeekButtonSelected:self.thursdayButton];
         [self markWeekButtonUnselected:self.sundayButton];
@@ -408,7 +450,11 @@
         }
         [self generateFrequencyStringForCustomDates];
     } else if ([self.tabSelected isEqualToString:WEEKLY_TAB]) {
-        self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"Every %@.", FRIDAY];
+        NSString *theDay = [FRIDAY capitalizedString];
+        NSString *firstLetter = [theDay substringToIndex:1];
+        NSString *restOfString = [theDay substringFromIndex:1];
+        theDay = [NSString stringWithFormat:@"%@%@", [firstLetter capitalizedString], [restOfString lowercaseString]];
+        self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.every", nil), theDay];
         /* Deselect all buttons that aren't Friday and select Friday. */
         [self markWeekButtonSelected:self.fridayButton];
         [self markWeekButtonUnselected:self.sundayButton];
@@ -430,7 +476,11 @@
         }
         [self generateFrequencyStringForCustomDates];
     }  else if ([self.tabSelected isEqualToString:WEEKLY_TAB]) {
-        self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"Every %@.", SATURDAY];
+        NSString *theDay = [SATURDAY capitalizedString];
+        NSString *firstLetter = [theDay substringToIndex:1];
+        NSString *restOfString = [theDay substringFromIndex:1];
+        theDay = [NSString stringWithFormat:@"%@%@", [firstLetter capitalizedString], [restOfString lowercaseString]];
+        self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.every", nil), theDay];
         /* Deselect all buttons that aren't Saturday and select Saturday. */
         [self markWeekButtonSelected:self.saturdayButton];
         [self markWeekButtonUnselected:self.sundayButton];

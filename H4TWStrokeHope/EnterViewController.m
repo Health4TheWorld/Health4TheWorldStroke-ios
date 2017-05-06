@@ -28,8 +28,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self addBackgroundImage];
+    
     [GraphicUtils styleButton:self.enterButton];
-    [self.enterButton setTitle:NSLocalizedString(@"Enter.enterButton", nil) forState:UIControlStateNormal];
+    [self.enterButton setTitle:[NSLocalizedString(@"Enter.enterButton", nil) uppercaseString] forState:UIControlStateNormal];
     [self setUpQuote];
     
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedLeft:)];

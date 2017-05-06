@@ -39,17 +39,38 @@
     /* Reminder frequency */
     NSString *daysStr = @"";
     if (reminder.reminderDays.count == 7) {
-        daysStr = @"Daily || ";
+        daysStr = [NSString stringWithFormat:@"%@ ||", NSLocalizedString(@"Reminders.daily", nil)];
     } else if (reminder.reminderDays.count == 1) {
-        daysStr = @"Weekly || ";
+        daysStr = [NSString stringWithFormat:@"%@ ||", NSLocalizedString(@"Reminders.weekly", nil)];
     }
     NSString *days = @"";
     for (int i=0; i < reminder.reminderDays.count; i++) {
+        NSString *dayStr = [reminder.reminderDays objectAtIndex:i];
+        if (dayStr == NSLocalizedString(@"Reminders.sunday", nil)) {
+            dayStr = NSLocalizedString(@"Reminders.sundays", nil);
+        } else if (dayStr == NSLocalizedString(@"Reminders.monday", nil)) {
+            dayStr = NSLocalizedString(@"Reminders.mondays", nil);
+        } else if (dayStr == NSLocalizedString(@"Reminders.tuesday", nil)) {
+            dayStr = NSLocalizedString(@"Reminders.tuesdays", nil);
+        } else if (dayStr == NSLocalizedString(@"Reminders.wednesday", nil)) {
+            dayStr = NSLocalizedString(@"Reminders.wednesdays", nil);
+        } else if (dayStr == NSLocalizedString(@"Reminders.thursday", nil)) {
+            dayStr = NSLocalizedString(@"Reminders.thursdays", nil);
+        } else if (dayStr == NSLocalizedString(@"Reminders.friday", nil)) {
+            dayStr = NSLocalizedString(@"Reminders.fridays", nil);
+        } else if (dayStr == NSLocalizedString(@"Reminders.saturday", nil)) {
+            dayStr = NSLocalizedString(@"Reminders.saturdays", nil);
+        }
+        if (i==0) {
+            NSString *firstLetter = [dayStr substringToIndex:1];
+            NSString *rest = [dayStr substringFromIndex:1];
+            dayStr = [NSString stringWithFormat:@"%@%@", [firstLetter uppercaseString], [rest lowercaseString]];
+        }
         NSString *day = @"";
         if (i == (reminder.reminderDays.count - 1)) {
-            day = [NSString stringWithFormat:@"%@s", [[reminder.reminderDays objectAtIndex:i] capitalizedString]];
+            day = [NSString stringWithFormat:@"%@", [dayStr capitalizedString]];
         } else {
-            day = [NSString stringWithFormat:@"%@s, ", [[reminder.reminderDays objectAtIndex:i] capitalizedString]];
+            day = [NSString stringWithFormat:@"%@, ", [dayStr capitalizedString]];
         }
         days = [days stringByAppendingString:day];
     }
