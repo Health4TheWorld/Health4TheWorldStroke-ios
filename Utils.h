@@ -20,4 +20,5 @@
 + (CGFloat)heightOfAttributedString:(NSAttributedString *)attrStr containedToWidth:(CGFloat)width withFont:(UIFont *)font;
 + (NSInteger)numberOfLinesForString:(NSString *)str constrainedToWidth:(float)width withFont:(UIFont *)font;
 + (BOOL)day:(NSDate *)dayOne isSameDayAs:(NSDate *)dayTwo;
++ (NSDate *)getDateFromTime:(NSString *)time weekday:(NSString *)weekday;
 @end

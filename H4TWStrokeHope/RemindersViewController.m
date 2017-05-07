@@ -13,6 +13,7 @@
 #import "NoResultsTableViewCell.h"
 #import "Constants.h"
 #import "Utils.h"
+#import <UserNotifications/UserNotifications.h>
 
 #define SECTION_HEADER_HEIGHT 40
 #define CELL_HEIGHT 75
@@ -346,8 +347,9 @@
 /* Delete a reminder */
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        Reminder *reminderToDelete;
         if (indexPath.section == 0) {
-            Reminder *reminderToDelete = [self.todayReminders objectAtIndex:self.selectedIndexPath.row];
+            reminderToDelete = [self.todayReminders objectAtIndex:self.selectedIndexPath.row];
             for (int i=0; i < self.allReminders.count; i++) {
                 Reminder *reminder = [self.allReminders objectAtIndex:i];
                 if ([reminder isEqual:reminderToDelete]) {
@@ -355,8 +357,10 @@
                 }
             }
         } else if (indexPath.section == 1) {
+            reminderToDelete = [self.allReminders objectAtIndex:indexPath.row];
             [self.allReminders removeObjectAtIndex:indexPath.row];
         }
+        [self removeNotificationWithReminder:reminderToDelete];
         [self saveReminders];
         [self setUpTodayReminders];
         [self.tableView reloadData];
@@ -374,11 +378,55 @@
     [self saveReminders];
 }
 
+- (void)addNotificationForReminder:(Reminder *)reminder {
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    /* Add a separate notification for each day of the week that the user needs to be reminded on. */
+    for (int i=0; i < reminder.reminderDays.count; i++) {
+        for (int j=0; j < reminder.times.count; j++) {
+            int index = j + (i * reminder.times.count);
+            NSString *notificationID = [NSString stringWithFormat:@"%@%d", reminder.reminderName, index];
+            NSString *weekday = [reminder.reminderDays objectAtIndex:i];
+            NSString *timeString = [reminder.times objectAtIndex:j];
+            NSDate *date = [Utils getDateFromTime:timeString weekday:weekday];
+            NSDateComponents *triggerWeekly = [[NSCalendar currentCalendar]
+                                               components:NSCalendarUnitWeekday +
+                                               NSCalendarUnitHour + NSCalendarUnitMinute +
+                                               NSCalendarUnitSecond fromDate:date];
+            UNCalendarNotificationTrigger *trigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:triggerWeekly
+                                                                                                              repeats:YES];
+            UNMutableNotificationContent *content = [UNMutableNotificationContent new];
+            content.title = @"Reminder:";
+            content.body = reminder.reminderName;
+            content.categoryIdentifier = @"UYLReminderCategory";
+            content.sound = [UNNotificationSound defaultSound];
+            UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:notificationID
+                                                                                  content:content trigger:trigger];
+            [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+                if (error != nil) {
+                    NSLog(@"Something went wrong: %@",error);
+                }
+            }];
+        }
+    }
+}
+
+- (void)removeNotificationWithReminder:(Reminder *)reminder {
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    for (int i=0; i < reminder.reminderDays.count; i++) {
+        for (int j=0; j < reminder.times.count; j++) {
+            int index = j + (i * reminder.times.count);
+            NSString *notificationID = [NSString stringWithFormat:@"%@%d", reminder.reminderName, index];
+            [center removePendingNotificationRequestsWithIdentifiers:@[notificationID]];
+        }
+    }
+}
+
 #pragma mark - CreateReminderProtocol 
 - (void)createdReminder:(Reminder *)reminder {
     reminder.lastDaySeen = [NSDate date];
     reminder.isCompleted = NO;
     [self.allReminders addObject:reminder];
+    [self addNotificationForReminder:reminder];
     [self saveReminders];
     [self setUpTodayReminders];
     [self.tableView reloadData];
@@ -400,6 +448,8 @@
     } else if (self.selectedIndexPath.section == 1) {
         [self.allReminders replaceObjectAtIndex:self.selectedIndexPath.row withObject:reminder];
     }
+    [self removeNotificationWithReminder:reminder];
+    [self addNotificationForReminder:reminder];
     [self saveReminders];
     [self setUpTodayReminders];
     [self.tableView reloadData];

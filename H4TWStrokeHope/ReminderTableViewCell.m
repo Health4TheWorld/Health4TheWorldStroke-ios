@@ -39,9 +39,9 @@
     /* Reminder frequency */
     NSString *daysStr = @"";
     if (reminder.reminderDays.count == 7) {
-        daysStr = [NSString stringWithFormat:@"%@ ||", NSLocalizedString(@"Reminders.daily", nil)];
+        daysStr = [NSString stringWithFormat:@"%@ || ", NSLocalizedString(@"Reminders.daily", nil)];
     } else if (reminder.reminderDays.count == 1) {
-        daysStr = [NSString stringWithFormat:@"%@ ||", NSLocalizedString(@"Reminders.weekly", nil)];
+        daysStr = [NSString stringWithFormat:@"%@ || ", NSLocalizedString(@"Reminders.weekly", nil)];
     }
     NSString *days = @"";
     for (int i=0; i < reminder.reminderDays.count; i++) {
