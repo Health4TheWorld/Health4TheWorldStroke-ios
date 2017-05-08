@@ -44,14 +44,14 @@
     
     float startingY = SPACE_BETWEEN_CELLS;
     
-    HomeButton *a3Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"Strengthening.coordination", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *a3Button = [[HomeButton alloc] initWithText: @"Leg Control 1" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [a3Button addRoundImageCentered:[UIImage imageNamed:COORDINATION_3A]];
     [a3Button addTarget:self action:@selector(a3Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *b3Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"Strengthening.coordination", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *b3Button = [[HomeButton alloc] initWithText: @"Leg Control 2" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [b3Button addRoundImageCentered:[UIImage imageNamed:COORDINATION_3B]];
     [b3Button addTarget:self action:@selector(b3Pressed) forControlEvents:UIControlEventTouchUpInside];
     

@@ -123,7 +123,8 @@
 
 /* EXERCISE CONTENT */
 #define EXERCISE_PARAGRAPH_ONE NSLocalizedString(@"Exercises.instructions", nil)
-#define STRETCHING_INSTRUCTIONS @"Do the stretches 3 times and hold for 30 seconds.Stretch to a point of slight discomfort and hold. Reduce stretch if painful.Stop if it causes pain.If you are a patient, do these under supervision of a trained health professional first time to get right training for you and your family member and to prevent injuries."
+#define STRETCHING_INTRUCTIONS_TITLE @"Stretching Instructions"
+#define STRETCHING_INSTRUCTIONS_BULLETS @[@"Do the stretches 3 times and hold for 30 seconds", @"Stretch to a point of slight discomfort and hold. Reduce stretch if painful", @"Stop if it causes pain" @"If you are a patient, do these under supervision of a trained health professional first time to get right training for you and your family member and to prevent injuries."]
 #define STRETCHING_ADDUCTORS_INSTRUCTIONS NSLocalizedString(@"Stretching.adductorsInstructions", nil)
 #define STRETCHING_HAMSTRINGS_INSTRUCTIONS NSLocalizedString(@"Stretching.hamstringsInstructions", nil)
 #define STRETCHING_DORSIFLEXORS_INSTRUCTIONS NSLocalizedString(@"Stretching.dorsiflexorsInstructions", nil)
@@ -131,6 +132,8 @@
 #define STRETCHING_SHOULDER_INSTRUCTIONS NSLocalizedString(@"Stretching.shoulderStretchInstructions", nil)
 #define STRETCHING_ARM_INSTRUCTIONS NSLocalizedString(@"Stretching.armStretchInstructions", nil)
 #define STRETCHING_END @"WOW, YOU ARE GREAT!! YOU DID IT !"
+#define EXERCISES_GENERAL_INSTRUCTIONS_TITLE @"Here are some general instructions"
+#define EXERCISES_GENERAL_INSTRUCTIONS_BULLETS @[@"\"Stop if it causes pain\". Do these exercises gently. ", @"The body and brain like symmetry so whatever you do to the \"good side\" do exactly the same to the involved side.", @"If you are a patient, do these under supervision of a trained health professional first time to get right training for you  and your family member and to prevent injuries. We don't want you to be injured so be careful!.", @"Ask your health professionals which of these would work best for you and if any modifications are needed.", @"Each given exercise requires an individual judgement and approach, and this application is intended only for educational  purposes, and is not intended to be, and should not be interpreted as, medical advice. Nothing contained in any part of this application, creates or has created or is intended to create, implicitly or explicitly, any manner of patient-physician relationship. We hope you find this educational content helpful to learn how to improve mobility after  a life changing event like stroke."]
 
 /* STRINGS */
 #define ABOUT_US_SECTION_TITLE NSLocalizedString(@"GeneralInfo.aboutUs", nil)
