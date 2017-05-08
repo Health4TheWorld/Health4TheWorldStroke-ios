@@ -21,10 +21,14 @@
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 @property (strong, nonatomic) IBOutlet UIView *videoView;
+@property (strong, nonatomic) UILabel *generalInstructions;
 @property BOOL alreadySetUpView;
 @property float currentY;
 @end
 
+
+#define PAGE_MARGIN 20
+#define VERTICAL_SPACE_BETWEEN_LABELS 10
 @implementation ExercisesViewController
 
 - (void)viewDidLoad {
@@ -92,15 +96,84 @@
         self.currentY += SPACE_BETWEEN_CELLS;
         self.currentY += 20;
         
+        cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
+        
         [self.contentView addSubview: strengtheningButton];
         [self.contentView addSubview: stretchingButton];
         [self.contentView addSubview: functionalMobilityButton];
         [self.contentView addSubview: mindExercisesButton];
         
+        /* Text view */
+        [self addHeaderWithText:EXERCISES_GENERAL_INSTRUCTIONS_TITLE];
+        [self addSeparator];
+        [self addBulletsPointWithText:EXERCISES_GENERAL_INSTRUCTIONS_BULLETS];
+        
         self.alreadySetUpView = YES;
         self.scrollView.contentSize = CGSizeMake(self.contentView.frame.size.width, self.currentY);
         [self.view addSubview:self.scrollView];
     }
+}
+
+/* Adds header with a separator below. */
+- (void)addHeaderWithText:(NSString *)text {
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    UILabel *header = [[UILabel alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, 0, 0)];
+    header.font = [UIFont fontWithName:@"Lato-bold" size:18.0];
+    header.font = [UIFont boldSystemFontOfSize:18.0];
+    header.textAlignment = NSTextAlignmentLeft;
+    header.textColor = HFTW_TEXT_GRAY;
+    header.numberOfLines = 0;
+    header.text = text;
+    [header sizeToFit];
+    CGRect headerFrame = header.frame;
+    headerFrame.size.width = screenWidth - (2 * PAGE_MARGIN);
+    headerFrame.size.height = [Utils heightOfString:text containedToWidth:headerFrame.size.width withFont:header.font];
+    header.frame = headerFrame;
+    
+    [self.contentView addSubview:header];
+    self.currentY += header.frame.size.height;
+    self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
+    [self addSeparator];
+}
+
+- (void)addSeparator {
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    UIView *separator = [[UIView alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, screenWidth - (2 * PAGE_MARGIN), 1)];
+    separator.backgroundColor = HFTW_LIGHT_GRAY;
+    [self.contentView addSubview:separator];
+    self.currentY += 1;
+    self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
+}
+
+/* Adds  bullet points (e.g. • bullet one • bullet two) */
+- (void)addBulletsPointWithText:(NSArray *)bulletPoints {
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    for (NSString *bulletPoint in bulletPoints) {
+        UILabel *bullet = [[UILabel alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, 0, 0)];
+        bullet.font = [UIFont fontWithName:@"Lato-regular" size:16.0];
+        bullet.textAlignment = NSTextAlignmentLeft;
+        bullet.text = @"•";
+        bullet.textColor = HFTW_TEXT_GRAY;
+        [bullet sizeToFit];
+        [self.contentView addSubview:bullet];
+        
+        float textStartingX = bullet.frame.origin.x + bullet.frame.size.width + 10;
+        UILabel *bulletLabel = [[UILabel alloc] initWithFrame:CGRectMake(textStartingX, self.currentY, 0, 0)];
+        bulletLabel.font = [UIFont fontWithName:@"Lato-regular" size:16.0];
+        bulletLabel.textAlignment = NSTextAlignmentLeft;
+        bulletLabel.textColor = HFTW_TEXT_GRAY;
+        bulletLabel.numberOfLines = 0;
+        bulletLabel.text = bulletPoint;
+        [bulletLabel sizeToFit];
+        CGRect bulletFrame = bulletLabel.frame;
+        bulletFrame.size.width = screenWidth - (2 * textStartingX);
+        bulletFrame.size.height = [Utils heightOfString:bulletPoint containedToWidth:bulletFrame.size.width withFont:bulletLabel.font];
+        bulletLabel.frame = bulletFrame;
+        [self.contentView addSubview:bulletLabel];
+        self.currentY += bulletLabel.frame.size.height;
+        self.currentY += 5;
+    }
+    self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
 }
 
 - (void)backPressed {
