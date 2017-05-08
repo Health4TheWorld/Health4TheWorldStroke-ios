@@ -57,6 +57,12 @@
 #define INFO_BUTTON @"RedInfoButton"
 #define REMINDER_CHECK_SELECTED @"ReminderCheckSelected"
 #define REMINDER_CHECK_UNSELECTED @"ReminderCheckUnselected"
+#define YOGA_IMAGE @"YogaImage"
+#define CANE_WALKER @"CaneWalker"
+#define GOOD_FOOD @"GoodFood"
+#define BAD_FOOD @"BadFood"
+#define SMOKING_ICON @"SmokingIcon"
+#define SLEEP_ICON @"SleepIcon"
 // Premnath 
 #define STRONG_ARM_ICON @"StrongArmIcon"
 #define STRETCHING_ICON @"StretchingIcon"

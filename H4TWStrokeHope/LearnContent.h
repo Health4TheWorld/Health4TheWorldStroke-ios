@@ -18,6 +18,8 @@
 #define CONTENT_TYPE_EXERCISES NSLocalizedString(@"Learn.exercises", nil)
 #define CONTENT_TYPE_SHOWER_BATH NSLocalizedString(@"Learn.showerBath", nil)
 #define CONTENT_TYPE_HOME_MOD NSLocalizedString(@"Learn.homeMod", nil)
+#define CONTENT_TYPE_SMOKING NSLocalizedString(@"Learn.smoking", nil)
+#define CONTENT_TYPE_SLEEP NSLocalizedString(@"Learn.sleep", nil)
 
 /* Content dictionary  keys & values */
 #define TEXT_TYPE_KEY @"TextType" // key
