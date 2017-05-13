@@ -7,19 +7,19 @@
 */
 
 /* ENTER VIEW CONTROLLER */
-"Enter.firstQuote" = "\"The best preparation for tomorrow is doing your best today.\"";
+"Enter.firstQuote" = "\"La mejor preparación para mañana es hacer lo mejor que puedas hoy.\"";
 "Enter.firstAuthor" = " – H. Jackson Brown, Jr";
-"Enter.secondQuote" = "\"Believe you can and you're halfway there.\"";
+"Enter.secondQuote" = "\"Cree en que puedes y estarás a mitad de camino.\"";
 "Enter.secondAuthor" = "– Theodore Roosevelt";
 "Enter.thirdQuote" = "\"Nothing is impossible, the word itself says 'I'm possible'!\"";
 "Enter.thirdAuthor" = "– Audrey Hepburn";
-"Enter.fourthQuote" = "\"Only I can change my life. No one can do it for me.\"";
+"Enter.fourthQuote" = "\"Sólo yo puedo cambiar mi vida, nadie puede hacerlo por mí.\"";
 "Enter.fourthAuthor" = "– Carol Burnett";
-"Enter.fifthQuote" = "\"Always do your best. What you plant now will harvest later.\"";
+"Enter.fifthQuote" = "\"Siempre haz lo mejor que puedas. Lo que siembres hoy lo cosecharás luego.\"";
 "Enter.fifthAuthor" = "– Og Mandino";
-"Enter.sixthQuote" = "\"Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.\"";
+"Enter.sixthQuote" = "\"El optimismo es la fé que dirige al éxito. No se puede lograr nada sin esperanza o confianza.\"";
 "Enter.sixthAuthor" = "– Helen Keller";
-"Enter.seventhQuote" = "\"Setting goals is the first step in turning the invisible into the visible.\"";
+"Enter.seventhQuote" = "\"Establecer objetivos es el primer paso para convertir lo invisible en visible.\"";
 "Enter.seventhAuthor" = "– Tony Robbins";
 "Enter.enterButton" = "Entrar";
 

@@ -1,0 +1,276 @@
+/*
+ Localizable.strings
+ H4TWStrokeHope
+ 
+ Created by Rachel on 5/6/17.
+ Copyright © 2017 Rachel. All rights reserved.
+ */
+
+
+/* ENTER VIEW CONTROLLER */
+"Enter.firstQuote" = "\"The best preparation for tomorrow is doing your best today.\"";
+"Enter.firstAuthor" = " – H. Jackson Brown, Jr";
+"Enter.secondQuote" = "\"Believe you can and you're halfway there.\"";
+"Enter.secondAuthor" = "– Theodore Roosevelt";
+"Enter.thirdQuote" = "\"Nothing is impossible, the word itself says 'I'm possible'!\"";
+"Enter.thirdAuthor" = "– Audrey Hepburn";
+"Enter.fourthQuote" = "\"Only I can change my life. No one can do it for me.\"";
+"Enter.fourthAuthor" = "– Carol Burnett";
+"Enter.fifthQuote" = "\"Always do your best. What you plant now will harvest later.\"";
+"Enter.fifthAuthor" = "– Og Mandino";
+"Enter.sixthQuote" = "\"Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.\"";
+"Enter.sixthAuthor" = "– Helen Keller";
+"Enter.seventhQuote" = "\"Setting goals is the first step in turning the invisible into the visible.\"";
+"Enter.seventhAuthor" = "– Tony Robbins";
+"Enter.enterButton" = "Enter";
+
+/* HOME VIEW CONTROLLER */
+"Home.title" = "Home";
+"Home.helpMeSpeak" = "Aidez-moi parler";
+"Home.exercises" = "Exercices";
+"Home.learn" = "A apprendre";
+"Home.reminders" = "Reminders";
+"Home.generalInfo" = "General Info";
+"Home.surveys" = "Surveys";
+
+/* HELP ME SPEAK VIEW CONTROLLER */
+"HelpMeSpeak.title" = "Aidez-moi parler";
+"HelpMeSpeak.yes" = "Oui";
+"HelpMeSpeak.no" = "Non";
+"HelpMeSpeak.thankYou" = "Merci";
+"HelpMeSpeak.bathroom" = "Je dois aller aux toilettes";
+"HelpMeSpeak.water" = "J’ai soif";
+"HelpMeSpeak.hungry" = "J’ai faim";
+"HelpMeSpeak.notGivingUp" = "Je ne renonce pas";
+"HelpMeSpeak.pain" = "J’ai mal";
+"HelpMeSpeak.cantSpeak" = "Désolé, je ne peux pas parler";
+
+/* EXERCISES VIEW CONTROLLER */
+"Exercises.title" = "Exercises";
+"Exercises.strengthening" = "Renforcement";
+"Exercises.stretching" = "Stretching";
+"Exercises.functionalMobility" = "Mobilité Fonctionnelle";
+"Exercises.mindExercises" = "Exercices de l’Esprit";
+"Exercises.instructions" = "Please repeat the exercises 10 times a day with assistance from family caregiver if needed. Consult your medical provider before starting the exercise program.";
+
+/* STRENGTHENING VIEW CONTROLLER */
+"Strengthening.title" = "Renforcement";
+"Strenghtening.legs" = "Jambes";
+"Strengthening.arms" = "Bras";
+"Strengthening.coordination" = "Coordination";
+
+/* STRETCHING VIEW CONTROLLER */
+"Stretching.title" = "Stretching";
+"Stretching.armsAndHands" = "Bras et mains";
+"Stretching.legsAndFeet" = "Jambes et pieds";
+"Stretching.handStretch" = "Mains";
+"Stretching.shoulderStretch" = "Epaule";
+"Stretching.armStretch" = "Bras";
+"Stretching.adductors" = "(Adducteurs) Cuisse";
+"Stretching.hamstrings" = "Ischio-jambiers";
+"Stretching.dorsiflexors" = "(Dorsiflexors) Chevilles";
+"Stretching.legStretch" = "Jambes";
+"Stretching.kneeStretch" = "Genou";
+"Stretching.ankleStretch" = "Ankle Stretch";
+"Stretching.adductorsInstructions" = "Vous pouvez faire cet exercice dans une position allongée ou assis sur une chaise stable. Couché sur le dos, faites glisser la jambe atteinte vers le côté extérieur pour environ 30 secondes et puis retournez en position initiale. Répétez 3 fois.";
+"Stretching.hamstringsInstructions" = "Vous pouvez faire cet exercice dans une position allongée ou assis sur une chaise stable. Couché sur le dos les genoux pliés redressez votre genou vers le haut pour 30 secondes.";
+"Stretching.dorsiflexorsInstructions" = "Vous pouvez faire cet exercice dans une position allongée ou assis sur une chaise stable. Poussez votre pied vers le haut en direction de torse et tenez 30 secondes. Répétez 3 fois.";
+"Stretching.handStretchInstructions" = "Allongé sur le côté avec la partie atteinte tournée vers le haut et votre bras posé sur la hanche. Appuyez le coude sur la hanche en utilisant l’autre main pour bougez votre poignet vers le haut et loin du ventre. Retournez le poignet dans la position initiale sur la hanche. Appuyez le poignet d’une main et essayez d’ouvrir les doigts avec l’autre main. Avancez et essayez d’ouvrir votre main quand le poignet est dans la haute position loin de ventre. Tenez cette position de stretch pour 30 secondes. Répétez 3 fois.";
+"Stretching.shoulderStretchInstructions" = "Allongé sur le côté avec la main atteinte sur la hanche. Amenez l’épaule vers l’oreille et puis retournez-le doucement dans la position initiale.";
+"Stretching.armStretchInstructions" = "Allongé sur le côté avec la partie atteinte tournée vers le haut et votre bras posé sur la hanche. Amenez doucement votre bras inférieur vers la jambe. Tenez 30 secondes. Répétez 3 fois. Assurez que vous teniez l’épaule et qu’on empêche de glisser en avant.";
+
+/* FUNCTIONAL MOBILITY VIEW CONTROLLER */
+"FunctionalMobility.bridgeHipLift" = "Rapprocher la hanche";
+"FunctionalMobility.armTrunkStrengthening" = "Bras + tronc";
+"FunctionalMobility.sitToStand" = "Position assise à position débout";
+
+/* LEARN VIEW CONTROLLER */
+"Learn.title" = "Learn";
+"Learn.b" = "B";
+"Learn.e" = "E";
+"Learn.f" = "F";
+"Learn.a" = "A";
+"Learn.s" = "S";
+"Learn.t" = "T";
+"Learn.befastB" = "Equilibre[Eq]:-Perte d’équilibre soudaine.";
+"Learn.befastE" = "YEUX[Y]:-Perte de vue soudaine, soit dans un ou dans les deux yeux.";
+"Learn.befastF" = "VISAGE[V]:-Visage pendant d’un côté quand on demande le patient de sourire.";
+"Learn.befastA" = "FAIBLESSE DES BRAS[B]:-L’incapacité de lever le bras et de le tenir dans cette position.";
+"Learn.befastS" = "ELOCUTION[E]:-Difficultés d’élocution.";
+"Learn.befastT" = "TEMPS[T]:-Le temps juste à appeler l’ambulance.";
+"Learn.faq" = "FAQ";
+"Learn.bloodPressure" = "Tension artérielle";
+"Learn.heartRate" = "Rythme cardiaque";
+"Learn.bloodSugar" = "Glucose";
+"Learn.diet" = "Régime alimentaire";
+"Learn.bladderBowel" = "Vessie Intestin";
+"Learn.exercises" = "Exercises";
+"Learn.showerBath" = "Douche Bain";
+"Learn.homeMod" = "Modification de la maison";
+"Learn.smoking" = "Smoking";
+"Learn.sleep" = "Sleep";
+"Learn.problem" = "PROBLEME";
+"Learn.whatToDo" = "QUOI FAIRE";
+
+/* FAQ */
+"Faq.questionOne" = "Qu’est-ce que c’est l’avc?";
+"Faq.answerOne" = "Un accident cérébrovasculaire se produit soit à cause du blocage de l’approvisionnement en sang d’une partie de cerveau particulière, soit à cause de la rupture d’un vaisseau sanguin alimentant le cerveau. Cela résulte en mort de cellules de la partie de cerveau atteinte par l’accident et, par conséquent, le patient subi une perte temporaire ou permanente des fonctions dans une ou plusieurs parties du corps.";
+"Faq.questionTwo" = "Qu’est-ce que vous devez faire si vous pensez qu’une personne ait l’avc?";
+"Faq.answerTwo" = "Immédiatement cherchez de l’aide professionnelle (docteur ou infirmière).";
+"Faq.questionThree" = "Pourquoi reagir si vite?";
+"Faq.answerThree" = "Le traitement médical rapide diminue le risque de l’invalidité ou de la mort.";
+
+/* BLOOD PRESSURE */
+"BloodPressure.problem" = "Hypertension artérielle peut provoquer l’AVC en détruisant les artères de notre organisme et provoquant plus facilement leurs ruptures et blocages.";
+"BloodPressure.problemBoldPart" = "Hypertension artérielle";
+"BloodPressure.problemNonBoldPart" = " peut provoquer l’AVC en détruisant les artères de notre organisme et provoquant plus facilement leurs ruptures et blocages.";
+"BloodPressure.whatToDo" = "Dans l’ensemble de la population âgée de 60 ans et plus, le traitement de HA pour atteindre la tension moins de 150/90 mm Hg réduit l’apparition de l’AVC.";
+"BloodPressure.whatToDoBoldPart" = "moins de 150/90 mm Hg";
+
+/* HEART RATE */
+"HeartRate.problem" = "Fibrillation Auriculaire, ou le rythme cardiaque irrégulier, représente un facteur de risque de l’AVC.";
+"HeartRate.problemBoldPart" = "Fibrillation Auriculaire";
+"HeartRate.whatToDo" = "Si vous soupçonnez d’avoir le rythme cardiaque irrégulier, contactez immédiatement votre médecin pour faire des analyses, y inclut probablement l’électrocardiogramme (ECG/EKG). Selon vos antécédents médicaux et votre risque d’avoir l’AVC en future, il est possible de choisir quelques médicaments, par ex. anticoagulants, qui puissent aider à contrôler la Fibrillation Auriculaire.";
+"HeartRate.whatToDoFirstBoldPart" = "l’électrocardiogramme (ECG/EKG)";
+"HeartRate.whatToDoSecondBoldPart" = "anticoagulants";
+
+/* BLOOD SUGAR */
+"BloodSugar.problem" = "Hyperglycémie peut augmenter le risque de l’AVC et des maladies cardiaques. Une analyse sanguine HbA1c vous démontre le taux moyen de glucose dans votre sang au cours des derniers 2 to 3 mois.";
+"BloodSugar.problemBoldPart" = "Hyperglycémie ";
+"BloodSugar.whatToDo" = "L’American Heart Association recommande de maintenir le taux de glucose (Hgb1A1c)au-dessous de 6% pour les patients en état de prédiabète, et au-dessous de 7% pour les patients avec diabète.";
+"BloodSugar.whatToDoFirstBoldPart" = "au-dessous de 6%";
+"BloodSugar.whatToDoSecondBoldPart" = "au-dessous de 7%";
+
+/* DIET */
+"Diet.problem" = "Il est très important que les personnes atteintes de l’AVC adoptent un mode de vie sain. Les patients avec AVC résidant dans des établissements de soins de longue durée risquent la carence en vitamine D et calcium.";
+"Diet.whatToDo" = "Le mieux est de suivre un régime alimentaire favorisant les fruits et légumes divers, des grains entiers, produits laitiers en faible teneur en gras, la viande et les poissons sans peau, noix et légumes. Réduisez le gras saturé, gras trans, sodium, viande rouge, sucreries et les boissons sucrés.";
+
+/* BLADDER/BOWEL */
+"BladderBowel.problem" = "Certains patients peuvent avoir des problèmes avec l’incontinence urinaire ou la rétention.";
+"BladderBowel.whatToDoBulletOne" = "Evaluer la rétention urinaire par un scannage de vessie ou cathétérisme intermittent après le vidange, et registrer les volumes.";
+"BladderBowel.whatToDoBulletTwo" = "Allez aux toilettes régulièrement pour entraîner la vessie un peu. Si on urine toutes les deux ou trois heures on peut éviter des accidents.";
+"BladderBowel.whatToDoBulletThree" = "De même, on doit prendre assez d’eau toute la journée pour rester hydraté et éviter la constipation.";
+
+/* EXERCISES */
+"Exercises.problem" = "Souvent, les patients atteints par AVC ont des difficultés de récupérer leur force physique et leurs aptitudes.";
+"Exercises.parOne" = "";
+"Exercises.bulletOne" = "Aider dans limitations de démarche: Les patients doivent exécuter des tâches de mobilité intensives et répétitives sous le contrôle d’un professionnel de la santé. ";
+"Exercises.bulletOneBoldPart" = "limitations de démarche";
+"Exercises.bulletTwo" = "Aider dans chutes éventuelles: Les patients doivent faire des exercices de l’équilibre.";
+"Exercises.bulletTwoBoldPart" = "chutes éventuelles:";
+"Exercises.bulletThree" = "Aider lors de l’hospitalisation et rétablissement rapide: AHA/ASA recommande la marche de faible intensité, activités de soin personnel, occasionnelle position assise ou debout, activités en position assise, exercices d’amplitude articulaire. Ces exercices doivent être exécutés selon la tolérance du patient en suivant l’instruction d’atteindre l’augmentation de 10 à 20 battements du cœur par minute, suivant aussi les recommandations de votre médecin.";
+"Exercises.bulletThreeBoldPart" = "l’hospitalisation et rétablissement rapide";
+"Exercises.bulletFour" = "Aider lors de la thérapie d’exercice hospitalière ou ambulatoire ou réadaptation: L’AHA/ASA recommande les activités suivantes : la marche 3-5 jours par semaine pendant 20-60 min/session (ou multiples sessions de 10-min); stretching 2-3 jours par semaine pendant 10-30 seconds; Tai chi, yoga, et d’autres activités récréatives pour compléter la marche et le stretching.";
+"Exercises.bulletFourBoldPart" = "thérapie d’exercice hospitalière ou ambulatoire ou réadaptation";
+"Exercises.bulletFive" = "Rester en sécurité en exerçant: Utilisez des aides à la marche et exercez attentivement, uniquement sous supervision.";
+"Exercises.bulletFiveBoldPart" = "en sécurité en exerçant";
+"Exercises.bulletSix" = "Maintenir la santé physique: Vérifiez auprès de votre médecin le choix des activités physiques personnalisées, des limitations d’une activité particulière, et les restrictions des certains exercices.";
+"Exercises.bulletSixBoldPart" = "la santé physique:";
+
+/* SHOWER/BATH */
+"ShowerBath.problem" = "Les patients atteints par AVC ont souvent des difficultés de récupérer leur force physique et leurs aptitudes.";
+"ShowerBath.bulletOne" = "Douches > baignoires: les douches sont généralement plus sûrs que les baignoires. Les barres d’appui peuvent faciliter le déplacement.";
+"ShowerBath.bulletOneBoldPart" = "Douches > baignoires:";
+"ShowerBath.bulletTwo" = "Tapis de bain de douches sont généralement plus sûrs que les baignoires. Les barres d’appui peuvent faciliter le déplacement.";
+"ShowerBath.bulletTwoBoldPart" = "Tapis de bain";
+"ShowerBath.bulletThree" = "Toujours assurez qu’une personne soit à proximité pour vous aider. Gardez la sonnette ou un autre outil à la portée de la main, pour appeler au secours.";
+"ShowerBath.bulletThreeBoldPart" = "Bath mats";
+"ShowerBath.paragraph" = "L’entraînement de l’équilibre peut aider les personnes ayant les problèmes d’équilibre.";
+
+/* HOME MOD */
+"HomeMod.problem" = "Vue que les patients puissent avoir la mobilité limitée, il est très important de faire certaines modifications dans la maison pour la rendre sure et accessible.";
+"HomeMod.subHeaderOne" = "Chambre à coucher:";
+"HomeMod.contentOne" = "L’accès à la chambre à coucher peut être mieux en déplaçant l’immeuble qui empêche la porte d’ouvrir complètement; portes élargies; des charniers au verso pour que la porte s’ouvre vers l’extérieur et pas vers l’intérieur. Si le lit doit être à côté du mur on le doit orienter de manière que le patient peut s’en lever facilement, utilisant le côté du son corps qui n’est pas atteint par le AVC.";
+"HomeMod.subHeaderTwo" = "General:";
+"HomeMod.contentTwo" = "Enlevez des tapis instables pour éviter les trébuchements et les chutes.";
+"HomeMod.subHeaderThree" = "Salle de bain:";
+"HomeMod.contentThree" = "Avec une porte élargie, la salle de bain devient plus accessible au fauteuil roulant. En élevant la siège de toilette on rend son usage plus accessible et plus facile: élévateur de toilette qui élève le patient du sol jusqu’à la siège; élévateur de siège attaché qui élève le siège de toilette; installation des barres d’appui/rampes de toilette améliore le support de mobilité.";
+
+/* REMINDERS VIEW CONTROLLER */
+"Reminders.title" = "Reminders";
+"Reminders.todaysReminders" = "Today's reminders";
+"Reminders.allReminders" = "All reminders";
+"Reminders.addReminderButton" = "Add Reminder";
+
+/* ADDING REMINDERS */
+"Reminders.remindMeTo" = "Remind me to...";
+"Reminders.takeMedicine" = "Take my medicine";
+"Reminders.doctorsVisit" = "Doctor's visit";
+"Reminders.bloodTest" = "Blood test";
+"Reminders.exercise" = "Exercise";
+"Reminders.medication" = "Medication";
+"Reminders.howOften" = "How often?";
+"Reminders.daily" = "Daily";
+"Reminders.weekly" = "Weekly";
+"Reminders.custom" = "Custom";
+"Reminders.everyday" = "Everyday.";
+"Reminders.every" = "Every ";
+"Reminders.and" = "and";
+"Reminders.next" = "next";
+"Reminders.save" = "save";
+"Reminders.back" = "back";
+"Reminders.sunday" = "Sunday";
+"Reminders.monday" = "Monday";
+"Reminders.tuesday" = "Tuesday";
+"Reminders.wednesday" = "Wednesday";
+"Reminders.thursday" = "Thursday";
+"Reminders.friday" = "Friday";
+"Reminders.saturday" = "Saturday";
+"Reminders.sundays" = "Sundays";
+"Reminders.mondays" = "Mondays";
+"Reminders.tuesdays" = "Tuesdays";
+"Reminders.wednesdays" = "Wednesdays";
+"Reminders.thursdays" = "Thursdays";
+"Reminders.fridays" = "Fridays";
+"Reminders.saturdays" = "Saturdays";
+"Reminders.sundayAbbrev" = "S";
+"Reminders.mondayAbbrev" = "M";
+"Reminders.tuesdayAbbrev" = "T";
+"Reminders.wednesdayAbbrev" = "W";
+"Reminders.thursdayAbbrev" = "T";
+"Reminders.fridayAbbrev" = "F";
+"Reminders.saturdayAbbrev" = "S";
+"Reminders.atWhatTime" = "What time(s)?";
+"Reminders.remindMeAt" = "Remind me at:";
+"Reminders.addTime" = "Add Time";
+"Reminders.editTitle" = "Edit Reminder";
+"Reminders.saveChanges" = "Save changes";
+
+/* SURVEYS */
+"Surveys.password" = "Password";
+
+/* GENERAL INFO */
+"GeneralInfo.aboutUs" = "Qui sommes-nous";
+"GeneralInfo.termsOfUse" = "Terms of Use";
+"GeneralInfo.privacyPolicy" = "Privacy Policy";
+"GeneralInfo.copyright" = "Copyright";
+
+/* ABOUT US */
+"AboutUs.aboutTheApp" = "Introduction à l’application mobile";
+"AboutUs.paragraphOne" = "HEALTH4THEWORLD STROKE HOPE APP est un outil éducatif et gratuit dont le but est de diffuser la connaissance sur les facteurs de risque d’accident vasculaire cérébral (AVC), sa prévention secondaire, éducation sur la récupération de la mobilité et les exercices qui suivent l’accident, de même que les stratégies pour le renforcement de l’élocution. Cette application a été créée par Health4TheWorld, un organisme sans le but lucratif, inspiré par les besoins non satisfaits dans le monde entier. En utilisant l’innovation et la technologie contemporaine, cet organisme veut atteindre son objectif - la lutte contre les inégalités en matière de santé, pour redonner le sourire perdu aux personnes du monde entier. Pour plus d’informations nous vous prions de consulter notre site health4theworld.org.";
+"AboutUs.paragraphTwo" = "";
+"AboutUs.paragraphThree" = "Cette application possède plusieurs fonctions, et nous espérons qu’elles vous seront utiles!";
+"AboutUs.featureOne" = "Contenu Educatif sur l’AVC – offre les informations sur les causes et les facteurs de risque de l’AVC avec les recommandations de l’Association Américaine de l’AVC, American Heart Association (AHA), les articles basés sur la recherche scientifique et d’autres sources du secteur médical. Il est bon de se rappeler que ces conseils sont du caractère général et qu’on ne les doit considérer comme recommandations pour un traitement clinique. Le patient et les professionnels de santé formés doivent en discuter ensemble pour créer une prévention individuelle et personnalisée contre l’AVC.";
+"AboutUs.featureTwo" = "Animation Vidéo et Conseils sur Exercices pour rétablissement après un accident vasculaire – Les instructions pour exercices et rétablissement après un ACV ont été conçues par les experts en Médicine Physique et Rétablissement à Stanford, de l’Université de Californie, San Francisco et de l’Université de Californie du Sud. Les exercices présentés sont de la nature générale et leur but est de servir comme un guide éducatif et pas comme un conseil médical. Ces exercices doivent être faits avec un ergothérapeute et/ou un physiothérapeute professionnel, qui puissent aider et donner les directions à suivre concernant une technique juste et qui puissent concevoir un régime duquel un patient avec AVC peut tirer le maximum. Un soignant doit être toujours disponible à offrir une aide. Les exercices se répartissent en trois classes: renforcement, stretching et mobilité fonctionnelle. Veuillez aviser vos patients de toute technique correcte, du rythme et du régime de ces exercices.";
+"AboutUs.featureThree" = "Rappels pour les Médicaments et les Rendez-vous: Le respect du plan des Médicaments et des Rendez-vous est un problème majeur, et cet outil puisse vous aider!  Veuillez définir des rappels pour vos patients, si possible.";
+"AboutUs.featureFour" = "Stratégies de l’Elocution après AVC: la communication de base peut être plus facile avec une touche de la production de voix. Le but de cette fonction est de traduire ces phrases en langues différentes de sorte que les professionnels de santé et les patients dans les parties éloignées du monde et privés d’accès aux soins, puissent en profiter.";
+"AboutUs.team" = "Équipe ";
+"AboutUs.teamIntro" = "La création de cette application n’aurait pas été possible sans le travail et l’engagement de notre équipe de rêve!";
+"AboutUs.founders" = "Fondeurs";
+"AboutUs.developers" = "Ingénieurs logiciels et développeurs de l’application";
+"AboutUs.animations" = "Animations";
+"AboutUs.illustrations" = "Illustrations";
+"AboutUs.contentEditing" = "Révision du Contenu";
+"AboutUs.movies" = "Vidéos";
+"AboutUs.advisoryBoard" = "Comité médical consultatif pour l’Application";
+"AboutUs.marcFisher" = "Dr. Marc Fisher: Dr Fisher est actuellement rédacteur en chef de Médecin en chef d’Attaque cérébral dans le Département de l’AVC à BIDMC, Harvard Medical School. Il est un médecin de réputation dont les œuvres publiés comptent plus de 260 articles évalués et 13 livres (seul ou en collaboration avec d’autres auteurs).";
+"AboutUs.jeffreyTeraoke" = "Dr. Jeffrey Teraoke: Dr. Teraoke est le chef, de PM&R (Médecin Physique et Rétablissement) au Centre Médical Palo Alto VA. Il est le directeur de PM&R Programme de Résidence et le Directeur du Polytraumatisme à VA Palo Alto Système de Santé.";
+"AboutUs.ericaPitsch" = "Dr. Erica A Pitsch, PT, MPT, DPT, NCS: Professeure Clinique adjointe de Sciences de Santé, UCSF. Dr. Pitsch est spécialisée en physiothérapie neurologique. Elle utilise des différents stratégies et approches, concentrés sur la promotion des défis, fonctions, et rétablissement, qui soient optimaux pour les personnes atteintes d’une maladie neurologique.";
+"AboutUs.lorenWard" = "Loren Ward, PT, DPT est une physiothérapeute agréée qui a commencé sa carrière professionnelle en 2007, quand elle a obtenu un Doctorat à MGH Institute of Health Professions (Institut des Professions de santé) à Massachusetts. Elle a fait ses stages à Rehabilitation of Chicago, Spaulding Rehabilitation et National Rehabilitation Hospital et à présent elle travaille au Stanford Veteran’s Affairs System (Système des Affaires des anciens combattants). Loren favorise l’indépendance fonctionnelle et elle s’efforce d’aider ses patients à atteindre leur propre niveau de l’indépendance sans égard à leurs limitations.";
+"AboutUs.roseHamm" = "Rose Hamm, PT, DPT, CWS, FACCWS: Rose a reçu BSc en Thérapie Physique à l’Université de Caroline du Nord Chapel Hill, et MSc et le doctorat en Thérapie Physique à l’Université de Californie du Sud. Elle est actuellement Professeure Agréée Adjointe de la Physiothérapie Clinique à l’Université de Californie du Sud et elle fait sa pratique à l’Hôpital Keck à USC.";
+
+
+
+
+
+
