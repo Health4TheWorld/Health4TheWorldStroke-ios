@@ -91,6 +91,15 @@
 #define STRETCHING_ARM_STRETCH_1 @"ArmStretch1"
 #define STRETCHING_ARM_STRETCH_2 @"ArmStretch2"
 
+/* VR CLIPS */
+#define VR_CLIP_BELLS @"bells"
+#define VR_CLIP_BUDDHA @"Buddha"
+#define VR_CLIP_FLAGS @"Flags"
+#define VR_CLIP_MARKET_PLACE_1 @"MarketPlace1"
+#define VR_CLIP_MARKET_PLACE_2 @"MarketPlace2"
+#define VR_CLIP_ROCKY_BEACH @"RockyBeach"
+#define VR_CLIP_SANDY_BEACH @"SandyBeach"
+
 /* EXERCISE VIDEOS */
 #define VIDEO_1A_TOE_FLEXION @"1AToeFlexion.m4v"
 #define VIDEO_1B_KNEE_FLEXION @"1BKneeFlexion.m4v"

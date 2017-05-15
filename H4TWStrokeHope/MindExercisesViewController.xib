@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Lato-Regular.ttf">
-            <string>Lato-Regular</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MindExercisesViewController">
             <connections>
+                <outlet property="contentView" destination="JQX-xA-gqr" id="ieP-Am-WR3"/>
+                <outlet property="scrollView" destination="JNv-wP-bke" id="aNZ-PB-hUD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,20 +21,30 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming soon! :)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXp-P5-EKW">
-                    <rect key="frame" x="86" y="231" width="203.5" height="34"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNv-wP-bke">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQX-xA-gqr">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="34" id="Mte-9A-UIs"/>
+                        <constraint firstItem="JQX-xA-gqr" firstAttribute="top" secondItem="JNv-wP-bke" secondAttribute="top" id="2LJ-Iv-Ykl"/>
+                        <constraint firstAttribute="trailing" secondItem="JQX-xA-gqr" secondAttribute="trailing" id="5I1-vD-670"/>
+                        <constraint firstItem="JQX-xA-gqr" firstAttribute="leading" secondItem="JNv-wP-bke" secondAttribute="leading" id="XSK-DK-Ggd"/>
+                        <constraint firstAttribute="bottom" secondItem="JQX-xA-gqr" secondAttribute="bottom" id="dpp-K3-ROv"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
-                    <color key="textColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="cXp-P5-EKW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="231" id="OUc-S3-RV2"/>
-                <constraint firstItem="cXp-P5-EKW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Qn3-UX-08U"/>
+                <constraint firstItem="JNv-wP-bke" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="A0A-Cn-ueT"/>
+                <constraint firstItem="JNv-wP-bke" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ByB-Sm-fbs"/>
+                <constraint firstItem="JQX-xA-gqr" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="C4H-hy-pmc"/>
+                <constraint firstAttribute="trailing" secondItem="JNv-wP-bke" secondAttribute="trailing" id="QRR-K7-IGY"/>
+                <constraint firstItem="JQX-xA-gqr" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="WNi-0s-9F4"/>
+                <constraint firstAttribute="bottom" secondItem="JNv-wP-bke" secondAttribute="bottom" id="byt-np-Wbj"/>
             </constraints>
         </view>
     </objects>

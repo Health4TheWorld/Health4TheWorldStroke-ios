@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		168389811EC66D8F007D15C6 /* VRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683897F1EC66D8F007D15C6 /* VRViewController.m */; };
+		168389821EC66D8F007D15C6 /* VRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 168389801EC66D8F007D15C6 /* VRViewController.xib */; };
+		16DFC0C41EC7F2D3007322BF /* Bells.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 16DFC0C31EC7F2D3007322BF /* Bells.mp4 */; };
 		1720A05E1EA9E78D009C2B87 /* AdductorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1720A05C1EA9E78D009C2B87 /* AdductorsViewController.m */; };
 		1720A05F1EA9E78D009C2B87 /* AdductorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1720A05D1EA9E78D009C2B87 /* AdductorsViewController.xib */; };
 		1720A0631EA9E7A3009C2B87 /* HamstringsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1720A0611EA9E7A3009C2B87 /* HamstringsViewController.m */; };
@@ -54,6 +57,7 @@
 		17E0BB431EA41370001FC7F3 /* FunctionalMobilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E0BB411EA41370001FC7F3 /* FunctionalMobilityViewController.m */; };
 		17E0BB441EA41370001FC7F3 /* FunctionalMobilityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB421EA41370001FC7F3 /* FunctionalMobilityViewController.xib */; };
 		17E0BB461EA4139E001FC7F3 /* ExercisesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB451EA4139E001FC7F3 /* ExercisesViewController.xib */; };
+		9D97478370E7B7322756F1D2 /* libPods-H4TWStrokeHope.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 680C4F0184FB59272CA0743A /* libPods-H4TWStrokeHope.a */; };
 		CC11D11B1EB3B8DE0063E72A /* ReminderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1191EB3B8DE0063E72A /* ReminderTableViewCell.m */; };
 		CC11D11C1EB3B8DE0063E72A /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D11A1EB3B8DE0063E72A /* ReminderTableViewCell.xib */; };
 		CC11D11F1EB51AB40063E72A /* Reminder.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D11E1EB51AB40063E72A /* Reminder.m */; };
@@ -137,6 +141,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1683897E1EC66D8F007D15C6 /* VRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRViewController.h; sourceTree = "<group>"; };
+		1683897F1EC66D8F007D15C6 /* VRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRViewController.m; sourceTree = "<group>"; };
+		168389801EC66D8F007D15C6 /* VRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRViewController.xib; sourceTree = "<group>"; };
+		16DFC0C31EC7F2D3007322BF /* Bells.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bells.mp4; sourceTree = "<group>"; };
 		1720A05B1EA9E78D009C2B87 /* AdductorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdductorsViewController.h; sourceTree = "<group>"; };
 		1720A05C1EA9E78D009C2B87 /* AdductorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdductorsViewController.m; sourceTree = "<group>"; };
 		1720A05D1EA9E78D009C2B87 /* AdductorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdductorsViewController.xib; sourceTree = "<group>"; };
@@ -201,6 +209,9 @@
 		17E0BB411EA41370001FC7F3 /* FunctionalMobilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionalMobilityViewController.m; sourceTree = "<group>"; };
 		17E0BB421EA41370001FC7F3 /* FunctionalMobilityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunctionalMobilityViewController.xib; sourceTree = "<group>"; };
 		17E0BB451EA4139E001FC7F3 /* ExercisesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExercisesViewController.xib; sourceTree = "<group>"; };
+		680C4F0184FB59272CA0743A /* libPods-H4TWStrokeHope.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-H4TWStrokeHope.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1D5BC6AFF988A11E4C970D /* Pods-H4TWStrokeHope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H4TWStrokeHope.release.xcconfig"; path = "Pods/Target Support Files/Pods-H4TWStrokeHope/Pods-H4TWStrokeHope.release.xcconfig"; sourceTree = "<group>"; };
+		CAB005F6C1031EB530EC7DE2 /* Pods-H4TWStrokeHope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H4TWStrokeHope.debug.xcconfig"; path = "Pods/Target Support Files/Pods-H4TWStrokeHope/Pods-H4TWStrokeHope.debug.xcconfig"; sourceTree = "<group>"; };
 		CC11D1181EB3B8DE0063E72A /* ReminderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderTableViewCell.h; sourceTree = "<group>"; };
 		CC11D1191EB3B8DE0063E72A /* ReminderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderTableViewCell.m; sourceTree = "<group>"; };
 		CC11D11A1EB3B8DE0063E72A /* ReminderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderTableViewCell.xib; sourceTree = "<group>"; };
@@ -306,6 +317,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D97478370E7B7322756F1D2 /* libPods-H4TWStrokeHope.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +373,7 @@
 		17E0BB271EA41032001FC7F3 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				16DFC0C31EC7F2D3007322BF /* Bells.mp4 */,
 				17593E6E1EA83B0300F37C74 /* 5BMaleDocWaving.m4v */,
 				17593E6F1EA83B0300F37C74 /* 5AFemaleDocWaving.m4v */,
 				17593E701EA83B0300F37C74 /* 4CSitToStand.m4v */,
@@ -411,6 +424,9 @@
 		17E0BB491EA415F9001FC7F3 /* Mind Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				1683897E1EC66D8F007D15C6 /* VRViewController.h */,
+				1683897F1EC66D8F007D15C6 /* VRViewController.m */,
+				168389801EC66D8F007D15C6 /* VRViewController.xib */,
 			);
 			name = "Mind Exercises";
 			sourceTree = "<group>";
@@ -420,6 +436,23 @@
 			children = (
 			);
 			name = "Functional Mobility";
+			sourceTree = "<group>";
+		};
+		32C77B21DCB4EBC6D5D3F8F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				680C4F0184FB59272CA0743A /* libPods-H4TWStrokeHope.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E3FE5A4D2E88F85F8656B5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAB005F6C1031EB530EC7DE2 /* Pods-H4TWStrokeHope.debug.xcconfig */,
+				6E1D5BC6AFF988A11E4C970D /* Pods-H4TWStrokeHope.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CC11D1251EB64FD00063E72A /* Add Reminder */ = {
@@ -460,6 +493,8 @@
 				CC4C10CB1E7A26DE00515CDC /* H4TWStrokeHopeTests */,
 				CC4C10D61E7A26DE00515CDC /* H4TWStrokeHopeUITests */,
 				CC4C10AD1E7A26DE00515CDC /* Products */,
+				4E3FE5A4D2E88F85F8656B5F /* Pods */,
+				32C77B21DCB4EBC6D5D3F8F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -698,9 +733,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC4C10DC1E7A26DE00515CDC /* Build configuration list for PBXNativeTarget "H4TWStrokeHope" */;
 			buildPhases = (
+				0B3C854B9195EF7B481BA20B /* [CP] Check Pods Manifest.lock */,
 				CC4C10A81E7A26DE00515CDC /* Sources */,
 				CC4C10A91E7A26DE00515CDC /* Frameworks */,
 				CC4C10AA1E7A26DE00515CDC /* Resources */,
+				EF031F2A3979FECE1E54314C /* [CP] Embed Pods Frameworks */,
+				F0B2145EFD164C463192621B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -812,6 +850,7 @@
 				CC3CB6491EA11EC800CA9429 /* LearnContentViewController.xib in Resources */,
 				CCEF72EC1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib in Resources */,
 				17E0BB291EA41043001FC7F3 /* 1AToeFlexion.m4v in Resources */,
+				16DFC0C41EC7F2D3007322BF /* Bells.mp4 in Resources */,
 				CCB7B4101E94136C0058C32E /* RemindersViewController.xib in Resources */,
 				17E0BB461EA4139E001FC7F3 /* ExercisesViewController.xib in Resources */,
 				CC73E43F1E842370001131AF /* Lato-BlackItalic.ttf in Resources */,
@@ -842,6 +881,7 @@
 				CCB7B4161E9413820058C32E /* GeneralInfoViewController.xib in Resources */,
 				1737A19E1EA897D700C6D71E /* 3BLegControl2.m4v in Resources */,
 				1720A0791EA9E85D009C2B87 /* ArmStretchViewController.xib in Resources */,
+				168389821EC66D8F007D15C6 /* VRViewController.xib in Resources */,
 				1720A0641EA9E7A3009C2B87 /* HamstringsViewController.xib in Resources */,
 				17E0BB211EA40F70001FC7F3 /* ArmsViewController.xib in Resources */,
 				1737A19C1EA897CF00C6D71E /* 2BShoulderFlexion.m4v in Resources */,
@@ -879,6 +919,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B3C854B9195EF7B481BA20B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF031F2A3979FECE1E54314C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-H4TWStrokeHope/Pods-H4TWStrokeHope-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B2145EFD164C463192621B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-H4TWStrokeHope/Pods-H4TWStrokeHope-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC4C10A81E7A26DE00515CDC /* Sources */ = {
@@ -925,6 +1013,7 @@
 				17E0BB391EA4125E001FC7F3 /* CoordinationViewController.m in Sources */,
 				1720A05E1EA9E78D009C2B87 /* AdductorsViewController.m in Sources */,
 				CC11D12E1EB650320063E72A /* AddReminderFrequencyViewController.m in Sources */,
+				168389811EC66D8F007D15C6 /* VRViewController.m in Sources */,
 				1720A0681EA9E7DC009C2B87 /* DorsiflexorsViewController.m in Sources */,
 				CC73E4271E841875001131AF /* EnterViewController.m in Sources */,
 				17DE3D4A1EA95F2300D350A1 /* LegAndFeetViewController.m in Sources */,
@@ -1087,6 +1176,7 @@
 		};
 		CC4C10DD1E7A26DE00515CDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAB005F6C1031EB530EC7DE2 /* Pods-H4TWStrokeHope.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X7FF3N72Z3;
@@ -1099,6 +1189,7 @@
 		};
 		CC4C10DE1E7A26DE00515CDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E1D5BC6AFF988A11E4C970D /* Pods-H4TWStrokeHope.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X7FF3N72Z3;
