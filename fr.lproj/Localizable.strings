@@ -6,6 +6,13 @@
  Copyright © 2017 Rachel. All rights reserved.
  */
 
+/* DISCLAIMER */
+"Disclaimer.paragraphOne" = "Bien que cette application soit utilisée comme outil éducatif pour les patients atteints d'un accident vasculaire cérébral, rien contenu dans toute partie de cette application, ne crée, n'a créé ou est destiné à créer, de manière implicite ou explicite, toute forme de relation patient-médecin.";
+"Disclaimer.paragraphTwo" = "Les instructions ci-après sont basées sur des lignes directrices générales et bien acceptées et des avis d'experts pour les soins post-AVC et l'autogestion. Bien que des efforts raisonnables aient été faits pour s'assurer que l'information contenue dans ces conférences était actuelle et précise au moment de publication, ni Health4TheWorld, ni aucune personne qui a fourni du contenu ou n'a participé à la présentation de ce matériel, oralement ou par écrit, peut garantir que toutes les informations sont exactes et valides.";
+"Disclaimer.paragraphThree" = "Chaque situation donnée nécessite un jugement et une approche individuel, et cette demande est destinée uniquement à des fins éducatives et n'est pas destinée à être, et ne devrait pas être, interprétée comme un conseil médical.";
+"Disclaimer.paragraphFour" = "L'utilisation de cette application et son contenu sont à vos risques et périls, et Health4TheWorld, ni toute personne qui a fourni du contenu ou impliqué dans la conception ou le développement de l'application et son contenu décline expressément toute responsabilité pour toute blessure et/ou dommage aux personnes et/ou aux biens découlant de l'utilisation de cette application.";
+"Disclaimer.paragraphFive" = "Toute utilisation de cette application peut être suivie pour nous permettre de surveiller les modèles d'utilisation et les progrès.";
+"Disclaimer.paragraphSix" = "En cliquant sur Accepter, vous acceptez nos Conditions d'utilisation et notre Politique de confidentialité.";
 
 /* ENTER VIEW CONTROLLER */
 "Enter.firstQuote" = "\"The best preparation for tomorrow is doing your best today.\"";

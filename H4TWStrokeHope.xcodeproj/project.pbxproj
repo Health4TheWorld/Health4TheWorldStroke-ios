@@ -115,6 +115,8 @@
 		CCB7B4161E9413820058C32E /* GeneralInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB7B4141E9413820058C32E /* GeneralInfoViewController.xib */; };
 		CCB7B41B1E94139A0058C32E /* SurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB7B4191E94139A0058C32E /* SurveysViewController.m */; };
 		CCB7B41C1E94139A0058C32E /* SurveysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB7B41A1E94139A0058C32E /* SurveysViewController.xib */; };
+		CCDFBECE1ECDE5E700C09CC8 /* TermsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDFBECC1ECDE5E700C09CC8 /* TermsViewController.m */; };
+		CCDFBECF1ECDE5E700C09CC8 /* TermsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCDFBECD1ECDE5E700C09CC8 /* TermsViewController.xib */; };
 		CCEF72EB1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEF72E91E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m */; };
 		CCEF72EC1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCEF72EA1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -299,6 +301,9 @@
 		CCB7B4181E94139A0058C32E /* SurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveysViewController.h; sourceTree = "<group>"; };
 		CCB7B4191E94139A0058C32E /* SurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveysViewController.m; sourceTree = "<group>"; };
 		CCB7B41A1E94139A0058C32E /* SurveysViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveysViewController.xib; sourceTree = "<group>"; };
+		CCDFBECB1ECDE5E700C09CC8 /* TermsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TermsViewController.h; path = ../TermsViewController.h; sourceTree = "<group>"; };
+		CCDFBECC1ECDE5E700C09CC8 /* TermsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TermsViewController.m; path = ../TermsViewController.m; sourceTree = "<group>"; };
+		CCDFBECD1ECDE5E700C09CC8 /* TermsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TermsViewController.xib; path = ../TermsViewController.xib; sourceTree = "<group>"; };
 		CCEF72E81E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpMeSpeakCollectionViewCell.h; sourceTree = "<group>"; };
 		CCEF72E91E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpMeSpeakCollectionViewCell.m; sourceTree = "<group>"; };
 		CCEF72EA1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpMeSpeakCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -589,6 +594,9 @@
 				CC73E44E1E86AB1C001131AF /* HomeViewController.h */,
 				CC73E44F1E86AB1C001131AF /* HomeViewController.m */,
 				CC73E4501E86AB1C001131AF /* HomeViewController.xib */,
+				CCDFBECB1ECDE5E700C09CC8 /* TermsViewController.h */,
+				CCDFBECC1ECDE5E700C09CC8 /* TermsViewController.m */,
+				CCDFBECD1ECDE5E700C09CC8 /* TermsViewController.xib */,
 			);
 			name = "Home/Enter Screen";
 			sourceTree = "<group>";
@@ -820,6 +828,7 @@
 				17E0BB461EA4139E001FC7F3 /* ExercisesViewController.xib in Resources */,
 				CC73E43F1E842370001131AF /* Lato-BlackItalic.ttf in Resources */,
 				1737A1A01EA897E100C6D71E /* 4BArmAndTrunkStrengthening.m4v in Resources */,
+				CCDFBECF1ECDE5E700C09CC8 /* TermsViewController.xib in Resources */,
 				CC9604941EA3DE110030D2C7 /* LearnContentTypeTableViewCell.xib in Resources */,
 				CC11D1391EB6B7BC0063E72A /* NoResultsTableViewCell.xib in Resources */,
 				CC11D13E1EB6B99E0063E72A /* EditReminderViewController.xib in Resources */,
@@ -931,6 +940,7 @@
 				CC11D12E1EB650320063E72A /* AddReminderFrequencyViewController.m in Sources */,
 				1720A0681EA9E7DC009C2B87 /* DorsiflexorsViewController.m in Sources */,
 				CC73E4271E841875001131AF /* EnterViewController.m in Sources */,
+				CCDFBECE1ECDE5E700C09CC8 /* TermsViewController.m in Sources */,
 				17DE3D4A1EA95F2300D350A1 /* LegAndFeetViewController.m in Sources */,
 				CC73E4511E86AB1C001131AF /* HomeViewController.m in Sources */,
 				CC11D11B1EB3B8DE0063E72A /* ReminderTableViewCell.m in Sources */,

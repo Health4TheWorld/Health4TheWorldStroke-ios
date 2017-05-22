@@ -6,6 +6,14 @@
   Copyright © 2017 Rachel. All rights reserved.
 */
 
+/* DISCLAIMER */
+"Disclaimer.paragraphOne" = "Aunque esta aplicación es de utilizarse como una herramienta educativa para los pacientes de accidente cerebrovascular, nada contenido en ninguna parte de esta aplicación, crea, ha creado o tiene intención de crear, implícita o explícitamente, cualquier tipo de relación paciente-médico.";
+"Disclaimer.paragraphTwo" = "Las instrucciones en este documento se basan en directrices generales y bien aceptadas y opiniones de expertos para el cuidado y la autogestión después de un accidente cerebrovascular. Aunque se han realizado esfuerzos razonables para asegurar que la información contenida en estas conferencias sea actual y precisa al momento de la publicación, ni Health4TheWorld, ni ninguna persona que haya proporcionado contenido o haya participado en la presentación de este material, ya sea oralmente o por escrito, garantiza que toda la información es precisa y válida.";
+"Disclaimer.paragraphThree" = "Cada situación es única y requiere criterio y enfoque individual, y esta aplicación fue creada para fines educativos y no pretende ser y no debe interpretarse como consejo médico.";
+"Disclaimer.paragraphFour" = "El uso de esta aplicación y su contenido es bajo su propio riesgo, y Health4TheWorld, o cualquier persona que ha proporcionado contenido o ha estado involucrada en el diseño o desarrollo de la aplicación y su contenido expresamente renuncia a cualquier responsabilidad por cualquier lesión y / o daño a personas y / o bienes derivados del uso de la misma.";
+"Disclaimer.paragraphFive" = "Cualquier uso de esta aplicación puede ser rastreado para permitirnos monitorear los patrones de uso y el progreso.";
+"Disclaimer.paragraphSix" = "Al hacer clic en aceptar, acepta nuestras condiciones de uso y política de privacidad.";
+
 /* ENTER VIEW CONTROLLER */
 "Enter.firstQuote" = "\"La mejor preparación para mañana es hacer lo mejor que puedas hoy.\"";
 "Enter.firstAuthor" = " – H. Jackson Brown, Jr";
