@@ -89,6 +89,7 @@
 }
 
 - (void) widgetViewDidTap:(GVRWidgetView *)widgetView {
+    // Action for when the GVR View is tapped
     if (self.isPaused) {
         [self.videoVRView play];
     } else {
