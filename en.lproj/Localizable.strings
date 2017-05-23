@@ -6,6 +6,13 @@
   Copyright © 2017 Rachel. All rights reserved.
 */
 
+/* DISCLAIMER */
+"Disclaimer.paragraphOne" = "Although this application is to be used as an educational tool for stroke patients, nothing contained in any part of this application, creates, has created, or is intended to create, implicitly or explicitly, any manner of patient-physician relationship.";
+"Disclaimer.paragraphTwo" = "The instructions herein are based on general and well-accepted guidelines and expert opinions for post-stroke care and self-management. Although reasonable efforts have been made to ensure the information contained in these lectures was current and accurate at the time of publication, neither Health4TheWorld, nor any individual who has furnished content or been involved in the presentation of this material, either orally or in writing can guarantee that all information is accurate and valid.";
+"Disclaimer.paragraphThree" = "Each given situation requires an individual judgment and approach, and this application is intended only for educational purposes, and is not intended to be, and should not be interpreted as, medical advice.";
+"Disclaimer.paragraphFour" = "The use of this application and its content is at your own risk, and Health4TheWorld, or any individual who has furnished content or been involved in the design or development of the application and its content expressly disclaims any liability for any injury and/or damage to persons and/or property arising from the use of this application.";
+"Disclaimer.paragraphFive" = "Any usage of this application may be tracked to enable us to monitor usage patterns and progress.";
+"Disclaimer.paragraphSix" = "By clicking Accept, you agree with our Terms of Use and Privacy Policy.";
 
 /* ENTER VIEW CONTROLLER */
 "Enter.firstQuote" = "\"The best preparation for tomorrow is doing your best today.\"";
@@ -108,6 +115,8 @@
 "Learn.exercises" = "Exercises";
 "Learn.showerBath" = "Shower/Bath";
 "Learn.homeMod" = "Home Modification";
+"Learn.smoking" = "Smoking";
+"Learn.sleep" = "Sleep";
 "Learn.problem" = "PROBLEM";
 "Learn.whatToDo" = "WHAT TO DO";
 

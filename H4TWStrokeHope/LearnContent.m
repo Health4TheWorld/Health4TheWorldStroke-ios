@@ -56,6 +56,10 @@
         imageName = TOILET_ICON;
     } else if ([type isEqualToString:CONTENT_TYPE_DIET]) {
         imageName = DIET_ICON;
+    } else if ([type isEqualToString:CONTENT_TYPE_SMOKING]) {
+        imageName = SMOKING_ICON;
+    } else if ([type isEqualToString:CONTENT_TYPE_SLEEP]) {
+        imageName = SLEEP_ICON;
     }
     return imageName;
 }
@@ -178,6 +182,11 @@
     self.textColor = [UIColor whiteColor];
     self.backButtonImageStr = RED_BACK_BUTTON;
     self.content = [[NSMutableArray alloc] init];
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 250)];
+    [imgView setImage:[UIImage imageNamed:GOOD_FOOD]];
+    UIImageView *imgViewTwo = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 250)];
+    [imgViewTwo setImage:[UIImage imageNamed:BAD_FOOD]];
+    self.images = @[imgView, imgViewTwo];
     
     [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.problem", nil)]];
     [self.content addObject:[self paragraphWithText:DIET_PROBLEM]];
@@ -210,6 +219,11 @@
     self.textColor = [UIColor whiteColor];
     self.backButtonImageStr = BLUE_BACK_BUTTON;
     self.content = [[NSMutableArray alloc] init];
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 350)];
+    [imgView setImage:[UIImage imageNamed:YOGA_IMAGE]];
+    UIImageView *imgViewTwo = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    [imgViewTwo setImage:[UIImage imageNamed:CANE_WALKER]];
+    self.images = @[imgView, imgViewTwo];
     
     [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.problem", nil)]];
     [self.content addObject:[self paragraphWithText:EXERCISES_PROBLEM]];

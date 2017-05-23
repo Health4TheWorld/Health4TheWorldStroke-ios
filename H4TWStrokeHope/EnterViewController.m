@@ -9,6 +9,7 @@
 #import "EnterViewController.h"
 #import "GraphicUtils.h"
 #import "HomeViewController.h"
+#import "TermsViewController.h"
 
 @interface EnterViewController ()
 @property (strong, nonatomic) IBOutlet UIButton *enterButton;
@@ -27,6 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self addBackgroundImage];
     
     [GraphicUtils styleButton:self.enterButton];
@@ -45,6 +47,25 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
+    /* If first launch, then show disclaimer popup */
+    if (![@"1" isEqualToString:[[NSUserDefaults standardUserDefaults]
+                                objectForKey:@"aValue"]]) {
+        [[NSUserDefaults standardUserDefaults] setValue:@"1" forKey:@"aValue"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        /* Show disclaimer */
+        TermsViewController *controller = [[TermsViewController alloc] initWithNibName:@"TermsViewController" bundle:nil];
+        controller.modalPresentationStyle = UIModalPresentationPopover;
+        controller.preferredContentSize = CGSizeMake(150, 300);
+        UIPopoverPresentationController *popover =  controller.popoverPresentationController;
+        popover.sourceView = self.view;
+        popover.sourceRect = self.view.frame;
+        popover.permittedArrowDirections = UIPopoverArrowDirectionAny;
+        // display the controller in the usual way
+        [self presentViewController:controller animated:YES completion:nil];
+        
+    }
 }
 
 /* Creates a quote label with the given text in Lato-light 22.0, 120 pixels from the top of the screen, centered horizontally, with 20 pixel borders on left and right. */
