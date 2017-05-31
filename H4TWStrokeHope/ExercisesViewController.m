@@ -105,7 +105,6 @@
         
         /* Text view */
         [self addHeaderWithText:EXERCISES_GENERAL_INSTRUCTIONS_TITLE];
-        [self addSeparator];
         [self addBulletsPointWithText:EXERCISES_GENERAL_INSTRUCTIONS_BULLETS];
         
         self.alreadySetUpView = YES;
