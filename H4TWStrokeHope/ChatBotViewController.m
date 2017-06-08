@@ -70,6 +70,9 @@
     self.textField.placeholder = @"Enter message...";
     self.textField.translatesAutoresizingMaskIntoConstraints = false;
     
+    self.textField.inputView = [UIView alloc];
+    [self.textField setDelegate:self];
+    
     [containerView addSubview: self.textField];
     
     //Add constraints - x,y,w,h
@@ -98,6 +101,12 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+// Send message when user presses return key
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self sendButtonPressed];
+    return YES;
 }
 
 //Action listeners
