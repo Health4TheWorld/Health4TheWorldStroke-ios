@@ -32,6 +32,7 @@
 "Home.reminders" = "Reminders";
 "Home.generalInfo" = "General Info";
 "Home.surveys" = "Surveys";
+"Home.chatBot" = "ChatBot";
 
 /* HELP ME SPEAK VIEW CONTROLLER */
 "HelpMeSpeak.title" = "Help Me Speak";
@@ -79,6 +80,15 @@
 "Stretching.handStretchInstructions" = "Side lying with the involved side up and arm resting on the hip. Support the elbow on the hip but use your other hand to move the wrist up and away from the stomach. Bring the wrist back to its resting position Support the wrist with one hand  and try to open the fingers with the other hand. Progress to trying to open the hand when the wrist is moved up and away from the stomach. Hold the stretch for 30 seconds. Repeat 3 times.";
 "Stretching.shoulderStretchInstructions" = "With the side lying with involved arm resting on hip. Bring shoulder up towards the ear and then gently back and down.";
 "Stretching.armStretchInstructions" = "Side lying with the involved side up and arm resting on the hip. Gently bring the lower arm towards the leg.Hold for 30 seconds. Repeat 3 times. Make sure that  you hold the shoulder and stop it from moving forward.";
+
+/* MIND EXERCISES VIEW CONTROLLER */
+"MindExercises.bellsInstructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on the peaceful surroundings and the sounds.\n* Imagine walking in this surrounding.\n* Move the phone side ways to enjoy the view.\n* Close your eyes now and take another deep breath.\n* Focus back in to your room.";
+"MindExercises.buddhaInstructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on the peaceful scene and the natural sounds.\n* Imagine walking towards the Buddha Statue.\n* Move the phone up to see the sky and side ways to enjoy the view.\n* Close your eyes now and take another deep breath.\n* Focus back in to your room.";
+"MindExercises.flagsInstructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on this beach and the sound of the waves.\n* Imagine the feeling of sand on your feet.\n* Imagine walking on the beach and creating your own foot prints in sand.\n* Move the phone side ways to enjoy the beach.\n* Close your eyes now and take another deep breath.\nFocus back in to your room.";
+"MindExercises.marketplace1Instructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on the market scene and the natural sounds.\n* Imagine reaching out and picking up the fruit.\n* Move the phone side ways to enjoy the view.\n* Close your eyes now and take another deep breath.\n* Focus back in to your room.";
+"MindExercises.marketplace2Instructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on the market scene and the natural sounds.\n* Imagine walking in the market place.\n* Move the phone side ways to enjoy the view.\n* Close your eyes now and take another deep breath.\n* Focus back in to your room.";
+"MindExercises.rockybeachInstructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on this beach and the sound of the waves. \n* Notice the beautiful rocks.\n* Imagine reaching for and picking one rock.\n* Imagine making a tower of rocks.\n* Move the phone up to see the beautiful sky.\n* Close your eyes now and take another deep breath.\n* Focus back in to your room.";
+"MindExercises.sandybeachInstructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on this beach and the sound of the waves.\n* Imagine the feeling of sand on your feet.\n* Imagine walking on the beach and creating your own foot prints in sand.\n* Move the phone side ways to enjoy the beach.\n* Close your eyes now and take another deep breath.\n* Focus back in to your room.";
 
 /* FUNCTIONAL MOBILITY VIEW CONTROLLER */
 "FunctionalMobility.bridgeHipLift" = "Bridge Hip Lift";

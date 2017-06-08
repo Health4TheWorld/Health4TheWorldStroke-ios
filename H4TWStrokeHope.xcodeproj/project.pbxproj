@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		167883A91EE1029900B106AD /* ChatBotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883A71EE1029900B106AD /* ChatBotViewController.m */; };
+		167883AA1EE1029900B106AD /* ChatBotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167883A81EE1029900B106AD /* ChatBotViewController.xib */; };
+		167883AF1EE25EED00B106AD /* GVRVideoViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883AE1EE25EED00B106AD /* GVRVideoViewManager.m */; };
 		168389811EC66D8F007D15C6 /* VRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683897F1EC66D8F007D15C6 /* VRViewController.m */; };
 		168389821EC66D8F007D15C6 /* VRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 168389801EC66D8F007D15C6 /* VRViewController.xib */; };
 		16DFC0C41EC7F2D3007322BF /* Bells.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 16DFC0C31EC7F2D3007322BF /* Bells.mp4 */; };
@@ -141,6 +144,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		167883A61EE1029900B106AD /* ChatBotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotViewController.h; sourceTree = "<group>"; };
+		167883A71EE1029900B106AD /* ChatBotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBotViewController.m; sourceTree = "<group>"; };
+		167883A81EE1029900B106AD /* ChatBotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatBotViewController.xib; sourceTree = "<group>"; };
+		167883AD1EE25EED00B106AD /* GVRVideoViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVRVideoViewManager.h; sourceTree = "<group>"; };
+		167883AE1EE25EED00B106AD /* GVRVideoViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVRVideoViewManager.m; sourceTree = "<group>"; };
 		1683897E1EC66D8F007D15C6 /* VRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRViewController.h; sourceTree = "<group>"; };
 		1683897F1EC66D8F007D15C6 /* VRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRViewController.m; sourceTree = "<group>"; };
 		168389801EC66D8F007D15C6 /* VRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRViewController.xib; sourceTree = "<group>"; };
@@ -338,6 +346,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		167883A51EE1025300B106AD /* ChatBot */ = {
+			isa = PBXGroup;
+			children = (
+				167883A61EE1029900B106AD /* ChatBotViewController.h */,
+				167883A71EE1029900B106AD /* ChatBotViewController.m */,
+				167883A81EE1029900B106AD /* ChatBotViewController.xib */,
+			);
+			name = ChatBot;
+			sourceTree = "<group>";
+		};
 		1720A06A1EA9E7EF009C2B87 /* LegAndFeet */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +445,8 @@
 				1683897E1EC66D8F007D15C6 /* VRViewController.h */,
 				1683897F1EC66D8F007D15C6 /* VRViewController.m */,
 				168389801EC66D8F007D15C6 /* VRViewController.xib */,
+				167883AD1EE25EED00B106AD /* GVRVideoViewManager.h */,
+				167883AE1EE25EED00B106AD /* GVRVideoViewManager.m */,
 			);
 			name = "Mind Exercises";
 			sourceTree = "<group>";
@@ -522,6 +542,7 @@
 				CCB7B40B1E94135F0058C32E /* Reminders */,
 				CCB7B4111E9413720058C32E /* General Info */,
 				CCB7B4171E9413870058C32E /* Surveys */,
+				167883A51EE1025300B106AD /* ChatBot */,
 				CC3CB64A1EA11F8A00CA9429 /* Data Models */,
 				CC4C10C31E7A26DE00515CDC /* Info.plist */,
 				CC4C10BB1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld */,
@@ -850,6 +871,7 @@
 				CC3CB6491EA11EC800CA9429 /* LearnContentViewController.xib in Resources */,
 				CCEF72EC1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib in Resources */,
 				17E0BB291EA41043001FC7F3 /* 1AToeFlexion.m4v in Resources */,
+				167883AA1EE1029900B106AD /* ChatBotViewController.xib in Resources */,
 				16DFC0C41EC7F2D3007322BF /* Bells.mp4 in Resources */,
 				CCB7B4101E94136C0058C32E /* RemindersViewController.xib in Resources */,
 				17E0BB461EA4139E001FC7F3 /* ExercisesViewController.xib in Resources */,
@@ -1001,7 +1023,9 @@
 				17E0BB431EA41370001FC7F3 /* FunctionalMobilityViewController.m in Sources */,
 				17E0BB2D1EA41069001FC7F3 /* VideoViewController.m in Sources */,
 				CC9604931EA3DE110030D2C7 /* LearnContentTypeTableViewCell.m in Sources */,
+				167883AF1EE25EED00B106AD /* GVRVideoViewManager.m in Sources */,
 				CC4C10BD1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld in Sources */,
+				167883A91EE1029900B106AD /* ChatBotViewController.m in Sources */,
 				CC11D11F1EB51AB40063E72A /* Reminder.m in Sources */,
 				CC38386E1E95FCF400001213 /* InformationalViewController.m in Sources */,
 				CCB7B41B1E94139A0058C32E /* SurveysViewController.m in Sources */,

@@ -10,7 +10,6 @@
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-
 @interface VideoViewController : UIViewController
 
 - (void)setUpVideo: (NSString *) videoName;

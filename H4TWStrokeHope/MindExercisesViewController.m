@@ -123,45 +123,96 @@
     
     VRViewController *vc = [[VRViewController alloc] init];
     // Local video
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Bells" withExtension: @"mp4"];
+    //NSURL *url = [[NSBundle mainBundle] URLForResource:@"Bells" withExtension: @"mp4"];
     
     //video on server location
-    //NSString *path = @"https://s3.amazonaws.com/ray.wenderlich/elephant_safari.mp4";
-    //NSURL *url = [[NSURL alloc] initWithString: path];
-    
+    NSString *path = @"https://player.vimeo.com/external/220082127.hd.mp4?s=609a47c79fc41735c5e10c735bc171b3ff02a7a9&profile_id=119";
+    NSURL *url = [[NSURL alloc] initWithString: path];
     vc.videoURL = url;
+    //Video Title
     vc.title = VR_TITLE_BELLS;
-    //vc.addMainText: VR_BELLS_INSTRUCTIONS;
+    //Video Instructions
+    vc.instructions = VR_BELLS_INSTRUCTIONS;
+    
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)buddhaPressed {
     VRViewController *vc = [[VRViewController alloc] init];
+    //video on server location
+    NSString *path = @"https://player.vimeo.com/external/220082376.hd.mp4?s=7ff60014fc882dd6f0f732f4aaa46c172c9dcb37&profile_id=119";
+    NSURL *url = [[NSURL alloc] initWithString: path];
+    vc.videoURL = url;
+    //Video Title
+    vc.title = VR_TITLE_BUDDHA;
+    //Video Instructions
+    vc.instructions = VR_BUDDHA_INSTRUCTIONS;
+    
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)flagsPressed {
     VRViewController *vc = [[VRViewController alloc] init];
+    //video on server location
+    NSString *path = @"https://player.vimeo.com/external/220082275.hd.mp4?s=0d555e0984b540a45c80d02a07ea68c62c34ac39&profile_id=119";
+    NSURL *url = [[NSURL alloc] initWithString: path];
+    vc.videoURL = url;
+    //Video Title
+    vc.title = VR_TITLE_FLAGS;
+    //Video Instructions
+    vc.instructions = VR_FLAGS_INSTRUCTIONS;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)marketPlace1Pressed {
     VRViewController *vc = [[VRViewController alloc] init];
+    //video on server location
+    NSString *path = @"https://player.vimeo.com/external/220082608.hd.mp4?s=88b7c3083855d20ee414ebeb6e36a7562fda631d&profile_id=119";
+    NSURL *url = [[NSURL alloc] initWithString: path];
+    vc.videoURL = url;
+    //Video Title
+    vc.title = VR_TITLE_MARKET_PLACE_1;
+    //Video Instructions
+    vc.instructions = VR_MARKET_PLACE_1_INSTRUCTIONS;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)marketPlace2Pressed {
     VRViewController *vc = [[VRViewController alloc] init];
+    //video on server location
+    NSString *path = @"https://player.vimeo.com/external/220082795.hd.mp4?s=adb6102bc008cd95c8d20df8ad4d475d8dd06e53&profile_id=119";
+    NSURL *url = [[NSURL alloc] initWithString: path];
+    vc.videoURL = url;
+    //Video Title
+    vc.title = VR_TITLE_MARKET_PLACE_2;
+    //Video Instructions
+    vc.instructions = VR_MARKET_PLACE_2_INSTRUCTIONS;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)rockyPressed {
     VRViewController *vc = [[VRViewController alloc] init];
+    //video on server location
+    NSString *path = @"https://player.vimeo.com/external/220082847.hd.mp4?s=39da6e3c156c0f9a5a38fa5e0bd39faddac19aab&profile_id=119";
+    NSURL *url = [[NSURL alloc] initWithString: path];
+    vc.videoURL = url;
+    //Video Title
+    vc.title = VR_TITLE_ROCKY_BEACH;
+    //Video Instructions
+    vc.instructions = VR_ROCKY_BEACH_INSTRUCTIONS;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)sandyPressed {
     VRViewController *vc = [[VRViewController alloc] init];
+    //video on server location
+    NSString *path = @"https://player.vimeo.com/external/220083158.hd.mp4?s=179b1c6c548acfca54381abc1b16a6797293c015&profile_id=119";
+    NSURL *url = [[NSURL alloc] initWithString: path];
+    vc.videoURL = url;
+    //Video Title
+    vc.title = VR_TITLE_SANDY_BEACH;
+    //Video Instructions
+    vc.instructions = VR_SANDY_BEACH_INSTRUCTIONS;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
