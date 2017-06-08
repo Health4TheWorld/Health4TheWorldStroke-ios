@@ -8,12 +8,18 @@
 
 #import "VRViewController.h"
 #import "Constants.h"
+#import "Utils.h"
 
 @interface VRViewController ()
-@property (strong, nonatomic) IBOutlet GVRVideoView *videoVRView;
+//@property (strong, nonatomic) IBOutlet GVRVideoView *videoVRView;
 @property BOOL isPaused;
+@property CGFloat currentY;
+
 @end
 
+#define PAGE_MARGIN 20
+#define VERTICAL_SPACE_BETWEEN_LABELS 10
+#define VERTICAL_SPACE_BETWEEN_CELLS 10
 @implementation VRViewController
 
 - (void)viewDidLoad {
@@ -34,23 +40,57 @@
 - (void) setUpView {
     
    // self.videoVRView = [[GVRVideoView alloc] init];
+    GVRVideoViewManager.sharedInstance.frame = CGRectMake(0, 94, 375, 210);
     
     // Set VR view delegate to self
-    self.videoVRView.delegate = self;
+    //self.videoVRView.delegate = self;
+    GVRVideoViewManager.sharedInstance.delegate = self;
     
     // Enable both cardboard button and fullscreen mode button
-    self.videoVRView.enableCardboardButton = true;
-    self.videoVRView.enableFullscreenButton = true;
-    self.videoVRView.enableTouchTracking = true;
+    //self.videoVRView.enableCardboardButton = true;
+    //self.videoVRView.enableFullscreenButton = true;
+    //self.videoVRView.enableTouchTracking = true;
+    
+    GVRVideoViewManager.sharedInstance.enableCardboardButton = true;
+    GVRVideoViewManager.sharedInstance.enableFullscreenButton = true;
+    GVRVideoViewManager.sharedInstance.enableTouchTracking = true;
     
     // Hide the contents until the view loads fully
     //self.videoVRView.hidden = true;
     
     self.isPaused = YES;
     
-    [self.videoVRView loadFromUrl: self.videoURL];
+    //[self.videoVRView loadFromUrl: self.videoURL];
+    [GVRVideoViewManager.sharedInstance loadFromUrl: self.videoURL];
+    
+    [self.view addSubview: GVRVideoViewManager.sharedInstance];
     
     self.currentDisplayMode = kGVRWidgetDisplayModeEmbedded;
+    
+    // Set Up VR Video instructions
+    self.currentY = 375;
+    /* Text view for Instructions */
+    [self addMainText: self.instructions];
+    self.currentY += VERTICAL_SPACE_BETWEEN_CELLS;
+}
+
+- (void)addMainText:(NSString *)text {
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    UILabel *mainText = [[UILabel alloc] initWithFrame:CGRectMake(PAGE_MARGIN, self.currentY, 0, 0)];
+    mainText.font = [UIFont fontWithName:@"Lato-regular" size:16.0];
+    mainText.textAlignment = NSTextAlignmentLeft;
+    mainText.textColor = HFTW_TEXT_GRAY;
+    mainText.numberOfLines = 0;
+    mainText.text = text;
+    [mainText sizeToFit];
+    CGRect mainTextFrame = mainText.frame;
+    mainTextFrame.size.width = screenWidth - (2 * PAGE_MARGIN);
+    mainTextFrame.size.height = [Utils heightOfString:text containedToWidth:mainTextFrame.size.width withFont:mainText.font];
+    mainText.frame = mainTextFrame;
+    
+    [self.view addSubview:mainText];
+    self.currentY += mainText.frame.size.height;
+    self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
 }
 
 - (void)backPressed {
@@ -75,7 +115,8 @@
       //  self.videoVRView.hidden = false;
     //}
     
-    [self.videoVRView play];
+    //[self.videoVRView play];
+    [GVRVideoViewManager.sharedInstance play];
     self.isPaused = NO;
 }
 
@@ -91,18 +132,23 @@
 - (void) widgetViewDidTap:(GVRWidgetView *)widgetView {
     // Action for when the GVR View is tapped
     if (self.isPaused) {
-        [self.videoVRView play];
+        //[self.videoVRView play];
+        [GVRVideoViewManager.sharedInstance play];
     } else {
-        [self.videoVRView pause];
+        //[self.videoVRView pause];
+        [GVRVideoViewManager.sharedInstance pause];
     }
     self.isPaused = !self.isPaused;
 }
 
 - (void)videoView:(GVRVideoView*)videoView didUpdatePosition:(NSTimeInterval)position {
     // Loop the video when it reaches the end.
-    if (position == self.videoVRView.duration) {
-        [self.videoVRView seekTo:0];
-        [self.videoVRView play];
+    //if (position == self.videoVRView.duration) {
+        //[self.videoVRView seekTo:0];
+        //[self.videoVRView play];
+    if (position == GVRVideoViewManager.sharedInstance.duration){
+        [GVRVideoViewManager.sharedInstance seekTo: 0];
+        [GVRVideoViewManager.sharedInstance play];
     }
 }
 

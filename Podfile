@@ -3,5 +3,6 @@
 
 target 'H4TWStrokeHope' do
 	pod ‘GVRSDK’
+	pod ‘ApiAI’
 
 end

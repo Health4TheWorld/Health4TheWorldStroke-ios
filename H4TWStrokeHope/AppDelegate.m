@@ -8,12 +8,16 @@
 
 #import "AppDelegate.h"
 #import "Constants.h"
+#import <ApiAI/ApiAI.h>
+#import <ApiAI/AIConfiguration.h>
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+
+#define APIAI_CLIENT_ACCESS_TOKEN @"15d1973433dd45df966ef1b4fc750daf"
 
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 #define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
@@ -39,6 +43,14 @@
                                   NSLog(@"Something went wrong");
                               }
                           }];
+    
+    // API.AI configuration for Chat Bot
+    
+    ApiAI *apiai = [ApiAI sharedApiAI];
+    id <AIConfiguration> configuration = [[AIDefaultConfiguration alloc] init];
+    configuration.clientAccessToken = APIAI_CLIENT_ACCESS_TOKEN;
+    apiai.configuration = configuration;
+    
     return YES;
 }
 

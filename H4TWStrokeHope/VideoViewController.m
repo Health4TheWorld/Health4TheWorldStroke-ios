@@ -41,12 +41,12 @@
     
     // Set URL to the video
     NSURL *url = [[NSBundle mainBundle] URLForResource:videoName withExtension:nil];
-    
+
     // Create an AVPlayer Item
     AVPlayerItem *video = [[AVPlayerItem alloc] initWithURL:url];
     
     //Create a AVplayer Queue
-    self.queue = [[AVQueuePlayer alloc] init];
+      self.queue = [[AVQueuePlayer alloc] init];
     [self.queue insertItem:video afterItem:nil];
     
     self.player = self.queue;
@@ -54,10 +54,12 @@
     // create a player view controller
     self.controller = [[AVPlayerViewController alloc] init];
     
+    
     self.controller.player = self.player;
     self.controller.showsPlaybackControls = YES;
     self.player.closedCaptionDisplayEnabled = NO;
     [self.player play];
+    
     
     [self addChildViewController:self.controller];
     [self.view addSubview:self.controller.view];
@@ -101,7 +103,6 @@
     }];
      
     return controller;
-    
 }
 
 

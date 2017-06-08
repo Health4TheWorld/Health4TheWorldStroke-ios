@@ -16,6 +16,7 @@
 #import "RemindersViewController.h"
 #import "GeneralInfoViewController.h"
 #import "SurveysViewController.h"
+#import "ChatBotViewController.h"
 
 @interface HomeViewController ()
 @property (strong, nonatomic) IBOutlet UIView *contentView;
@@ -78,6 +79,16 @@
     HomeButton *surveysButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.surveys", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
     [surveysButton addImageBottomRight:[UIImage imageNamed:SURVEYS_ICON]];
     [surveysButton addTarget:self action:@selector(surveysPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    startingY += cellWidth;
+    startingY += SPACE_BETWEEN_CELLS;
+    
+    HomeButton *chatBotButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.chatBot", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2), cellWidth)];
+    [chatBotButton addImageCentered:[UIImage imageNamed:CHATBOT_ICON]];
+    [chatBotButton addTarget:self action:@selector(chatBotPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    startingY += cellWidth;
+    startingY += SPACE_BETWEEN_CELLS;
 
     [self.contentView addSubview:helpMeSpeakButton];
     [self.contentView addSubview:exercisesButton];
@@ -85,6 +96,7 @@
     [self.contentView addSubview:remindersButton];
     [self.contentView addSubview:generalInfoButton];
     [self.contentView addSubview:surveysButton];
+    [self.contentView addSubview:chatBotButton];
 
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
 }
@@ -129,6 +141,12 @@
 
 - (void)surveysPressed {
     SurveysViewController *vc = [[SurveysViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)chatBotPressed {
+    UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout alloc];
+    ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

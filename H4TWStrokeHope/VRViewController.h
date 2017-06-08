@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <GVRWidgetView.h>
-#import <GVRVideoView.h>
+#import "GVRVideoViewManager.h"
+//#import <GVRVideoView.h>
 
 @interface VRViewController : UIViewController<GVRWidgetViewDelegate>
 @property (nonatomic) NSURL *videoURL;
 //current view and display modes
 @property UIView *currentView;
 @property NSInteger currentDisplayMode;
+// add instructions
+@property NSString *instructions;
 @end

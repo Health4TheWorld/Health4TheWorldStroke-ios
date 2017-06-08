@@ -63,6 +63,7 @@
 #define BAD_FOOD @"BadFood"
 #define SMOKING_ICON @"SmokingIcon"
 #define SLEEP_ICON @"SleepIcon"
+#define CHATBOT_ICON @"ChatBotIcon"
 // Premnath 
 #define STRONG_ARM_ICON @"StrongArmIcon"
 #define STRETCHING_ICON @"StretchingIcon"
@@ -149,6 +150,15 @@
 #define STRETCHING_END @"WOW, YOU ARE GREAT!! YOU DID IT !"
 #define EXERCISES_GENERAL_INSTRUCTIONS_TITLE @"Here are some general instructions"
 #define EXERCISES_GENERAL_INSTRUCTIONS_BULLETS @[@"\"Stop if it causes pain\". Do these exercises gently. ", @"The body and brain like symmetry so whatever you do to the \"good side\" do exactly the same to the involved side.", @"If you are a patient, do these under supervision of a trained health professional first time to get right training for you  and your family member and to prevent injuries. We don't want you to be injured so be careful!.", @"Ask your health professionals which of these would work best for you and if any modifications are needed.", @"Each given exercise requires an individual judgement and approach, and this application is intended only for educational  purposes, and is not intended to be, and should not be interpreted as, medical advice. Nothing contained in any part of this application, creates or has created or is intended to create, implicitly or explicitly, any manner of patient-physician relationship. We hope you find this educational content helpful to learn how to improve mobility after  a life changing event like stroke."]
+
+/* VR VIDEOS INSTRUCTIONS */
+#define VR_BELLS_INSTRUCTIONS NSLocalizedString(@"MindExercises.bellsInstructions", nil)
+#define VR_BUDDHA_INSTRUCTIONS NSLocalizedString(@"MindExercises.buddhaInstructions", nil)
+#define VR_FLAGS_INSTRUCTIONS NSLocalizedString(@"MindExercises.flagsInstructions", nil)
+#define VR_MARKET_PLACE_1_INSTRUCTIONS NSLocalizedString(@"MindExercises.marketplace1Instructions", nil)
+#define VR_MARKET_PLACE_2_INSTRUCTIONS NSLocalizedString(@"MindExercises.marketplace2Instructions", nil)
+#define VR_ROCKY_BEACH_INSTRUCTIONS NSLocalizedString(@"MindExercises.rockybeachInstructions", nil)
+#define VR_SANDY_BEACH_INSTRUCTIONS NSLocalizedString(@"MindExercises.sandybeachInstructions", nil)
 
 /* STRINGS */
 #define ABOUT_US_SECTION_TITLE NSLocalizedString(@"GeneralInfo.aboutUs", nil)
