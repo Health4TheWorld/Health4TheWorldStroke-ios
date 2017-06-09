@@ -59,6 +59,20 @@
 "Strenghtening.legs" = "Legs";
 "Strengthening.arms" = "Arms";
 "Strengthening.coordination" = "Coordination";
+/* LEGS VIEW CONTROLLER */
+"Legs.toe" = "Toe Flexion";
+"Legs.knee" = "Knee Flexion";
+"Legs.hip" = "Hip Flexion";
+
+/* ARMS VIEW CONTROLLER */
+"Arms.elbow" = "Elbow Flexion";
+"Arms.shoulder" = "Shoulder Flexion";
+
+/* COORDINATION VIEW CONTROLLER */
+"Coordination.legControl1" = "Leg Control 1";
+"Coordination.legControl2" = "Leg Control 2";
+
+
 
 /* STRETCHING VIEW CONTROLLER */
 "Stretching.title" = "Stretching";

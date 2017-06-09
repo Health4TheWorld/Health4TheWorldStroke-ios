@@ -68,12 +68,14 @@
 
 - (void)a3Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
+    videoVC.title =  COORDINATION_TITLE_3A_LEG_CONTROL_1;
     [videoVC setUpVideo: VIDEO_3A_LEG_CONTROL_1];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
 - (void)b3Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
+    videoVC.title = COORDINATION_TITLE_3B_LEG_CONTROL_2;
     [videoVC setUpVideo: VIDEO_3B_LEG_CONTROL_2];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
