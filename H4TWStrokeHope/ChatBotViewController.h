@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChatBotViewController : UICollectionViewController <UITextViewDelegate>
+@interface ChatBotViewController : UICollectionViewController <UITextFieldDelegate , UICollectionViewDelegateFlowLayout>
 
 @end
