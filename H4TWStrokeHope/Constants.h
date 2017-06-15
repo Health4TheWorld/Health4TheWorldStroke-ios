@@ -34,10 +34,19 @@
 #define SEARCH_ICON @"SearchIcon"
 #define YES_ICON @"YesIcon"
 #define NO_ICON @"NoIcon"
+#define QUESTION_ICON @"QuestionMarkIcon"
 #define THANK_YOU_ICON @"ThankYouIcon"
+#define IM_COLD_ICON @"ColdIcon"
+#define IM_HOT_ICON @"HotIcon"
 #define WATER_ICON @"WaterIcon"
+#define LIGHTS_ON_ICON @"LightsOnIcon"
+#define LIGHTS_OFF_ICON @"LightsOffIcon"
+#define AMBULANCE_ICON @"AmbulanceIcon"
 #define BATHROOM_ICON @"BathroomIcon"
 #define CANT_SPEAK_ICON @"CantSpeakIcon"
+#define BED_ICON @"BedIcon"
+#define DIZZY_ICON @"DizzyIcon"
+#define IN_A_LITTLE_ICON @"InALittleIcon"
 #define FOOD_ICON @"FoodIcon"
 #define NOT_GIVING_UP_ICON @"NotGivingUpIcon"
 #define PAIN_ICON @"PainIcon"
@@ -176,6 +185,17 @@
 #define HELP_ME_SPEAK_NOT_GIVING_UP NSLocalizedString(@"HelpMeSpeak.notGivingUp", nil)
 #define HELP_ME_SPEAK_PAIN NSLocalizedString(@"HelpMeSpeak.pain", nil)
 #define HELP_ME_SPEAK_CANT_SPEAK NSLocalizedString(@"HelpMeSpeak.cantSpeak", nil)
+#define HELP_ME_SPEAK_I_LOVE_YOU NSLocalizedString(@"HelpMeSpeak.iLoveYou", nil)
+#define HELP_ME_SPEAK_IM_COLD NSLocalizedString(@"HelpMeSpeak.imCold", nil)
+#define HELP_ME_SPEAK_IM_HOT NSLocalizedString(@"HelpMeSpeak.imHot", nil)
+#define HELP_ME_SPEAK_DIZZY NSLocalizedString(@"HelpMeSpeak.dizzy", nil)
+#define HELP_ME_SPEAK_LIGHTS_ON NSLocalizedString(@"HelpMeSpeak.lightsOn", nil)
+#define HELP_ME_SPEAK_LIGHTS_OFF NSLocalizedString(@"HelpMeSpeak.lightsOff", nil)
+#define HELP_ME_SPEAK_GET_IN_BED NSLocalizedString(@"HelpMeSpeak.getInBed", nil)
+#define HELP_ME_SPEAK_GET_OUT_OF_BED NSLocalizedString(@"HelpMeSpeak.getOutOfBed", nil)
+#define HELP_ME_SPEAK_HOW_ARE_YOU NSLocalizedString(@"HelpMeSpeak.howAreYou", nil)
+#define HELP_ME_SPEAK_AMBULANCE NSLocalizedString(@"HelpMeSpeak.ambulance", nil)
+#define HELP_ME_SPEAK_IN_A_LITTLE NSLocalizedString(@"HelpMeSpeak.inALittle", nil)
 
 /* BEFAST */
 #define BEFAST_B NSLocalizedString(@"Learn.befastB", nil)

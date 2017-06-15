@@ -52,6 +52,17 @@
 "HelpMeSpeak.notGivingUp" = "I'm not giving up";
 "HelpMeSpeak.pain" = "I am in pain";
 "HelpMeSpeak.cantSpeak" = "Sorry, I can't speak";
+"HelpMeSpeak.iLoveYou" = "I love you";
+"HelpMeSpeak.imCold" = "I'm cold";
+"HelpMeSpeak.imHot" = "I'm hot";
+"HelpMeSpeak.dizzy" = "I'm dizzy";
+"HelpMeSpeak.lightsOn" = "Turn on the lights";
+"HelpMeSpeak.lightsOff" = "Turn off the lights";
+"HelpMeSpeak.getInBed" = "I want to get in bed";
+"HelpMeSpeak.getOutOfBed" = "I want to get out of bed";
+"HelpMeSpeak.howAreYou" = "How are you?";
+"HelpMeSpeak.ambulance" = "I need an ambulance";
+"HelpMeSpeak.inALittle" = "In a little";
 
 /* EXERCISES VIEW CONTROLLER */
 "Exercises.title" = "Exercises";
