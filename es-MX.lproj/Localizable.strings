@@ -62,6 +62,9 @@
 "HelpMeSpeak.howAreYou" = "¿Como estás?";
 "HelpMeSpeak.ambulance" = "I need an ambulance";
 "HelpMeSpeak.inALittle" = "En un rato";
+"HelpMeSpeak.now" = "Ahora";
+"HelpMeSpeak.goOutside" = "I want to go outside";
+"HelpMeSpeak.sayHi" = "Hola!";
 
 /* EXERCISES VIEW CONTROLLER */
 "Exercises.title" = "Ejercicios";
