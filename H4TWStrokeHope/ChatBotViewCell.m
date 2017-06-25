@@ -24,6 +24,7 @@
     self.messageView.backgroundColor = [UIColor clearColor];
     self.messageView.font = [UIFont systemFontOfSize:14];
     self.messageView.textColor = [UIColor blackColor];
+    self.messageView.editable = false;
     
     // Set up bubble View
     self.bubbleView = [[UIView alloc] init];
@@ -42,6 +43,7 @@
     self.chatBubbleView = [[UIImageView alloc] init];
     self.chatBubbleView.image = self.leftChatBubble;
     self.chatBubbleView.tintColor = [UIColor colorWithWhite:0.90 alpha:1];
+    self.chatBubbleView.layer.masksToBounds = true;
 
     
     //Set up profile image view
