@@ -13,6 +13,7 @@
 #import "ChatBotViewCell.h"
 #import "ChatMessages.h"
 #import "MindExercisesViewController.h"
+#import "QuotesViewController.h"
 
 @interface ChatBotViewController ()
 @property (nonatomic,retain) UIButton *sendButton;
@@ -497,6 +498,9 @@ NSMutableArray *messages;
     [self customAlertMessageWithTitle:@"Music" withMessage:@"Music section Coming soon!"];
 }
 - (void) lonely3ButtonPressed {
+    QuotesViewController *vc = [[QuotesViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
     // Inspiring Quotes
     NSString *text = @"Quotes";
     [self storeRequest: text];
