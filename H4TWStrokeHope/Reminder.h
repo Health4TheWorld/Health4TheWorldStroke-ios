@@ -14,4 +14,5 @@
 @property BOOL isCompleted;
 @property NSMutableArray *times;
 @property NSDate *lastDaySeen; /* Used so that we know if we should set isCompleted to NO for the day */
+@property BOOL isOneTimeReminder;
 @end

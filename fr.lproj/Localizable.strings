@@ -243,6 +243,7 @@
 "Reminders.addTime" = "Ajouter un temps";
 "Reminders.editTitle" = "Modifier rappe";
 "Reminders.saveChanges" = "Enregistrer les modifications";
+"Reminders.oneTimeReminder" = "Make this a one time reminder";
 
 /* SURVEYS */
 "Surveys.password" = "Mot de passe";

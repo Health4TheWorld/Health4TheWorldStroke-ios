@@ -267,6 +267,7 @@
 "Reminders.addTime" = "Add Time";
 "Reminders.editTitle" = "Edit Reminder";
 "Reminders.saveChanges" = "Save changes";
+"Reminders.oneTimeReminder" = "Make this a one time reminder";
 
 /* SURVEYS */
 "Surveys.password" = "Password";

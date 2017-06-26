@@ -255,6 +255,7 @@
 "Reminders.addTime" = "Agregar";
 "Reminders.editTitle" = "Editar";
 "Reminders.saveChanges" = "Guardar";
+"Reminders.oneTimeReminder" = "Make this a one time reminder";
 
 /* SURVEYS */
 "Surveys.password" = "Contraseña";

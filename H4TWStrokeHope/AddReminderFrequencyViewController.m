@@ -30,6 +30,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *fridayButton;
 @property (strong, nonatomic) IBOutlet UIButton *saturdayButton;
 @property (strong, nonatomic) IBOutlet UIView *weekContainer;
+@property (strong, nonatomic) IBOutlet UISwitch *oneTimeReminderSwitch;
+@property (strong, nonatomic) IBOutlet UILabel *oneTimeReminderLabel;
 @end
 
 #define DAILY_TAB @"Daily"
@@ -60,6 +62,7 @@
     [self.weeklyTab setTitle:NSLocalizedString(@"Reminders.weekly", nil) forState:UIControlStateNormal];
     [self.customTab setTitle:NSLocalizedString(@"Reminders.custom", nil) forState:UIControlStateNormal];
     [self.backButton setTitle:NSLocalizedString(@"Reminders.back", nil) forState:UIControlStateNormal];
+    self.oneTimeReminderLabel.text = NSLocalizedString(@"Reminders.oneTimeReminder", nil);
 }
 
 - (void)setButtonText {
@@ -78,11 +81,16 @@
         /* First check if it's daily. */
         [self dailyTabPressed:nil];
     } else {
-        if (self.reminder.reminderDays.count == 1) {
+        if (self.reminder.isOneTimeReminder) {
+            [self customTabPressed:nil];
+            [self.oneTimeReminderSwitch setOn:YES];
+        } else if (self.reminder.reminderDays.count == 1) {
             /* First check if it's weekly. */
             [self weeklyTabPressed:nil];
+            [self.oneTimeReminderSwitch setOn:NO];
         } else {
             [self customTabPressed:nil];
+            [self.oneTimeReminderSwitch setOn:NO];
         }
         for (NSString *day in self.reminder.reminderDays) {
             if ([day isEqualToString:SUNDAY]) {
@@ -122,6 +130,8 @@
     self.nextButton.clipsToBounds = YES;
     self.nextButton.layer.cornerRadius = 10;
     [self.backButton setTitleColor:HFTW_MAGENTA forState:UIControlStateNormal];
+    self.oneTimeReminderLabel.textColor = HFTW_TEXT_GRAY;
+    [self.oneTimeReminderSwitch setOnTintColor:HFTW_RED];
     
     [self.dailyTab setTitleColor:HFTW_MAGENTA forState:UIControlStateNormal];
     [self.weeklyTab setTitleColor:HFTW_TEXT_GRAY forState:UIControlStateNormal];
@@ -158,6 +168,10 @@
     }
     if (self.saturdayButton.tag == BUTTON_IS_SELECTED) {
         [reminderDays addObject:SATURDAY];
+    }
+    
+    if ((!self.oneTimeReminderSwitch.hidden) && (self.oneTimeReminderSwitch.isOn)) {
+        self.reminder.isOneTimeReminder = YES;
     }
     
     if (self.isEditing) {
@@ -256,6 +270,8 @@
     self.dailyTabBar.hidden = NO;
     self.weeklyTabBar.hidden = YES;
     self.customTabBar.hidden = YES;
+    self.oneTimeReminderSwitch.hidden = YES;
+    self.oneTimeReminderLabel.hidden = YES;
     
     [self markWeekButtonSelected:self.sundayButton];
     [self markWeekButtonSelected:self.mondayButton];
@@ -282,6 +298,8 @@
     self.dailyTabBar.hidden = YES;
     self.weeklyTabBar.hidden = NO;
     self.customTabBar.hidden = YES;
+    self.oneTimeReminderSwitch.hidden = YES;
+    self.oneTimeReminderLabel.hidden = YES;
     
     /* Select sunday as default. */
     [self sundayPressed:nil];
@@ -296,6 +314,8 @@
     self.dailyTabBar.hidden = YES;
     self.weeklyTabBar.hidden = YES;
     self.customTabBar.hidden = NO;
+    self.oneTimeReminderSwitch.hidden = NO;
+    self.oneTimeReminderLabel.hidden = NO;
     
     [self markWeekButtonUnselected:self.sundayButton];
     [self markWeekButtonUnselected:self.mondayButton];
@@ -322,11 +342,28 @@
 #pragma mark - Week Buttons
 - (IBAction)sundayPressed:(id)sender {
     if ([self.tabSelected isEqualToString:CUSTOM_TAB]) {
-        /* Select Sunday if it's not selected, deselect if it is. */
-        if (self.sundayButton.tag == BUTTON_IS_SELECTED) {
-            [self markWeekButtonUnselected:self.sundayButton];
-        } else {
+        /* If it's a one time reminder, only allow them to select one day. */
+        if (self.oneTimeReminderSwitch.isOn) {
+            NSString *theDay = [SUNDAY capitalizedString];
+            NSString *firstLetter = [theDay substringToIndex:1];
+            NSString *restOfString = [theDay substringFromIndex:1];
+            theDay = [NSString stringWithFormat:@"%@%@", [firstLetter capitalizedString], [restOfString lowercaseString]];
+            self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.every", nil), theDay];
+            /* Deselect all buttons that aren't Monday and select Monday. */
+            [self markWeekButtonUnselected:self.mondayButton];
             [self markWeekButtonSelected:self.sundayButton];
+            [self markWeekButtonUnselected:self.tuesdayButton];
+            [self markWeekButtonUnselected:self.wednesdayButton];
+            [self markWeekButtonUnselected:self.thursdayButton];
+            [self markWeekButtonUnselected:self.fridayButton];
+            [self markWeekButtonUnselected:self.saturdayButton];
+        } else {
+            /* Select Sunday if it's not selected, deselect if it is. */
+            if (self.sundayButton.tag == BUTTON_IS_SELECTED) {
+                [self markWeekButtonUnselected:self.sundayButton];
+            } else {
+                [self markWeekButtonSelected:self.sundayButton];
+            }
         }
         [self generateFrequencyStringForCustomDates];
     } else if ([self.tabSelected isEqualToString:WEEKLY_TAB]) {
@@ -348,11 +385,28 @@
 
 - (IBAction)mondayPressed:(id)sender {
     if ([self.tabSelected isEqualToString:CUSTOM_TAB]) {
-        /* Select Monday if it's not selected, deselect if it is. */
-        if (self.mondayButton.tag == BUTTON_IS_SELECTED) {
-            [self markWeekButtonUnselected:self.mondayButton];
-        } else {
+        /* If it's a one time reminder, only allow them to select one day. */
+        if (self.oneTimeReminderSwitch.isOn) {
+            NSString *theDay = [MONDAY capitalizedString];
+            NSString *firstLetter = [theDay substringToIndex:1];
+            NSString *restOfString = [theDay substringFromIndex:1];
+            theDay = [NSString stringWithFormat:@"%@%@", [firstLetter capitalizedString], [restOfString lowercaseString]];
+            self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.every", nil), theDay];
+            /* Deselect all buttons that aren't Monday and select Monday. */
             [self markWeekButtonSelected:self.mondayButton];
+            [self markWeekButtonUnselected:self.sundayButton];
+            [self markWeekButtonUnselected:self.tuesdayButton];
+            [self markWeekButtonUnselected:self.wednesdayButton];
+            [self markWeekButtonUnselected:self.thursdayButton];
+            [self markWeekButtonUnselected:self.fridayButton];
+            [self markWeekButtonUnselected:self.saturdayButton];
+        } else {
+            /* Select Monday if it's not selected, deselect if it is. */
+            if (self.mondayButton.tag == BUTTON_IS_SELECTED) {
+                [self markWeekButtonUnselected:self.mondayButton];
+            } else {
+                [self markWeekButtonSelected:self.mondayButton];
+            }
         }
         [self generateFrequencyStringForCustomDates];
     } else if ([self.tabSelected isEqualToString:WEEKLY_TAB]) {
@@ -374,11 +428,28 @@
 
 - (IBAction)tuesdayPressed:(id)sender {
     if ([self.tabSelected isEqualToString:CUSTOM_TAB]) {
-        /* Select Tuesday if it's not selected, deselect if it is. */
-        if (self.tuesdayButton.tag == BUTTON_IS_SELECTED) {
-            [self markWeekButtonUnselected:self.tuesdayButton];
-        } else {
+        /* If it's a one time reminder, only allow them to select one day. */
+        if (self.oneTimeReminderSwitch.isOn) {
+            NSString *theDay = [TUESDAY capitalizedString];
+            NSString *firstLetter = [theDay substringToIndex:1];
+            NSString *restOfString = [theDay substringFromIndex:1];
+            theDay = [NSString stringWithFormat:@"%@%@", [firstLetter capitalizedString], [restOfString lowercaseString]];
+            self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.every", nil), theDay];
+            /* Deselect all buttons that aren't Monday and select Monday. */
+            [self markWeekButtonUnselected:self.mondayButton];
+            [self markWeekButtonUnselected:self.sundayButton];
             [self markWeekButtonSelected:self.tuesdayButton];
+            [self markWeekButtonUnselected:self.wednesdayButton];
+            [self markWeekButtonUnselected:self.thursdayButton];
+            [self markWeekButtonUnselected:self.fridayButton];
+            [self markWeekButtonUnselected:self.saturdayButton];
+        } else {
+            /* Select Tuesday if it's not selected, deselect if it is. */
+            if (self.tuesdayButton.tag == BUTTON_IS_SELECTED) {
+                [self markWeekButtonUnselected:self.tuesdayButton];
+            } else {
+                [self markWeekButtonSelected:self.tuesdayButton];
+            }
         }
         [self generateFrequencyStringForCustomDates];
     } else if ([self.tabSelected isEqualToString:WEEKLY_TAB]) {
@@ -400,11 +471,28 @@
 
 - (IBAction)wednesdayPressed:(id)sender {
     if ([self.tabSelected isEqualToString:CUSTOM_TAB]) {
-        /* Select Wednesday if it's not selected, deselect if it is. */
-        if (self.wednesdayButton.tag == BUTTON_IS_SELECTED) {
-            [self markWeekButtonUnselected:self.wednesdayButton];
-        } else {
+        /* If it's a one time reminder, only allow them to select one day. */
+        if (self.oneTimeReminderSwitch.isOn) {
+            NSString *theDay = [WEDNESDAY capitalizedString];
+            NSString *firstLetter = [theDay substringToIndex:1];
+            NSString *restOfString = [theDay substringFromIndex:1];
+            theDay = [NSString stringWithFormat:@"%@%@", [firstLetter capitalizedString], [restOfString lowercaseString]];
+            self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.every", nil), theDay];
+            /* Deselect all buttons that aren't Monday and select Monday. */
+            [self markWeekButtonUnselected:self.mondayButton];
+            [self markWeekButtonUnselected:self.sundayButton];
+            [self markWeekButtonUnselected:self.tuesdayButton];
             [self markWeekButtonSelected:self.wednesdayButton];
+            [self markWeekButtonUnselected:self.thursdayButton];
+            [self markWeekButtonUnselected:self.fridayButton];
+            [self markWeekButtonUnselected:self.saturdayButton];
+        } else {
+            /* Select Wednesday if it's not selected, deselect if it is. */
+            if (self.wednesdayButton.tag == BUTTON_IS_SELECTED) {
+                [self markWeekButtonUnselected:self.wednesdayButton];
+            } else {
+                [self markWeekButtonSelected:self.wednesdayButton];
+            }
         }
         [self generateFrequencyStringForCustomDates];
     } else if ([self.tabSelected isEqualToString:WEEKLY_TAB]) {
@@ -426,11 +514,28 @@
 
 - (IBAction)thursdayPressed:(id)sender {
     if ([self.tabSelected isEqualToString:CUSTOM_TAB]) {
-        /* Select Thursday if it's not selected, deselect if it is. */
-        if (self.thursdayButton.tag == BUTTON_IS_SELECTED) {
-            [self markWeekButtonUnselected:self.thursdayButton];
-        } else {
+        /* If it's a one time reminder, only allow them to select one day. */
+        if (self.oneTimeReminderSwitch.isOn) {
+            NSString *theDay = [THURSDAY capitalizedString];
+            NSString *firstLetter = [theDay substringToIndex:1];
+            NSString *restOfString = [theDay substringFromIndex:1];
+            theDay = [NSString stringWithFormat:@"%@%@", [firstLetter capitalizedString], [restOfString lowercaseString]];
+            self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.every", nil), theDay];
+            /* Deselect all buttons that aren't Monday and select Monday. */
+            [self markWeekButtonUnselected:self.mondayButton];
+            [self markWeekButtonUnselected:self.sundayButton];
+            [self markWeekButtonUnselected:self.tuesdayButton];
+            [self markWeekButtonUnselected:self.wednesdayButton];
             [self markWeekButtonSelected:self.thursdayButton];
+            [self markWeekButtonUnselected:self.fridayButton];
+            [self markWeekButtonUnselected:self.saturdayButton];
+        } else {
+            /* Select Thursday if it's not selected, deselect if it is. */
+            if (self.thursdayButton.tag == BUTTON_IS_SELECTED) {
+                [self markWeekButtonUnselected:self.thursdayButton];
+            } else {
+                [self markWeekButtonSelected:self.thursdayButton];
+            }
         }
         [self generateFrequencyStringForCustomDates];
     } else if ([self.tabSelected isEqualToString:WEEKLY_TAB]) {
@@ -452,11 +557,28 @@
 
 - (IBAction)fridayPressed:(id)sender {
     if ([self.tabSelected isEqualToString:CUSTOM_TAB]) {
-        /* Select Friday if it's not selected, deselect if it is. */
-        if (self.fridayButton.tag == BUTTON_IS_SELECTED) {
-            [self markWeekButtonUnselected:self.fridayButton];
-        } else {
+        /* If it's a one time reminder, only allow them to select one day. */
+        if (self.oneTimeReminderSwitch.isOn) {
+            NSString *theDay = [FRIDAY capitalizedString];
+            NSString *firstLetter = [theDay substringToIndex:1];
+            NSString *restOfString = [theDay substringFromIndex:1];
+            theDay = [NSString stringWithFormat:@"%@%@", [firstLetter capitalizedString], [restOfString lowercaseString]];
+            self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.every", nil), theDay];
+            /* Deselect all buttons that aren't Monday and select Monday. */
+            [self markWeekButtonUnselected:self.mondayButton];
+            [self markWeekButtonUnselected:self.sundayButton];
+            [self markWeekButtonUnselected:self.tuesdayButton];
+            [self markWeekButtonUnselected:self.wednesdayButton];
+            [self markWeekButtonUnselected:self.thursdayButton];
             [self markWeekButtonSelected:self.fridayButton];
+            [self markWeekButtonUnselected:self.saturdayButton];
+        } else {
+            /* Select Friday if it's not selected, deselect if it is. */
+            if (self.fridayButton.tag == BUTTON_IS_SELECTED) {
+                [self markWeekButtonUnselected:self.fridayButton];
+            } else {
+                [self markWeekButtonSelected:self.fridayButton];
+            }
         }
         [self generateFrequencyStringForCustomDates];
     } else if ([self.tabSelected isEqualToString:WEEKLY_TAB]) {
@@ -478,11 +600,28 @@
 
 - (IBAction)saturdayPressed:(id)sender {
     if ([self.tabSelected isEqualToString:CUSTOM_TAB]) {
-        /* Deselect all buttons that aren't Saturday and select Saturday. */
-        if (self.saturdayButton.tag == BUTTON_IS_SELECTED) {
-            [self markWeekButtonUnselected:self.saturdayButton];
-        } else {
+        /* If it's a one time reminder, only allow them to select one day. */
+        if (self.oneTimeReminderSwitch.isOn) {
+            NSString *theDay = [SATURDAY capitalizedString];
+            NSString *firstLetter = [theDay substringToIndex:1];
+            NSString *restOfString = [theDay substringFromIndex:1];
+            theDay = [NSString stringWithFormat:@"%@%@", [firstLetter capitalizedString], [restOfString lowercaseString]];
+            self.frequencyDescriptionLabel.text = [NSString stringWithFormat:@"%@ %@.", NSLocalizedString(@"Reminders.every", nil), theDay];
+            /* Deselect all buttons that aren't Monday and select Monday. */
+            [self markWeekButtonUnselected:self.mondayButton];
+            [self markWeekButtonUnselected:self.sundayButton];
+            [self markWeekButtonUnselected:self.tuesdayButton];
+            [self markWeekButtonUnselected:self.wednesdayButton];
+            [self markWeekButtonUnselected:self.thursdayButton];
+            [self markWeekButtonUnselected:self.fridayButton];
             [self markWeekButtonSelected:self.saturdayButton];
+        } else {
+            /* Deselect all buttons that aren't Saturday and select Saturday. */
+            if (self.saturdayButton.tag == BUTTON_IS_SELECTED) {
+                [self markWeekButtonUnselected:self.saturdayButton];
+            } else {
+                [self markWeekButtonSelected:self.saturdayButton];
+            }
         }
         [self generateFrequencyStringForCustomDates];
     }  else if ([self.tabSelected isEqualToString:WEEKLY_TAB]) {
@@ -499,6 +638,21 @@
         [self markWeekButtonUnselected:self.wednesdayButton];
         [self markWeekButtonUnselected:self.thursdayButton];
         [self markWeekButtonUnselected:self.fridayButton];
+    }
+}
+
+- (IBAction)oneTimeReminderSwitched:(id)sender {
+    if ([self.tabSelected isEqualToString:CUSTOM_TAB]) {
+        if (self.oneTimeReminderSwitch.isOn) {
+            /* If they turn on the switch saying they want this to be a custom reminder, than deselect all the days (they can now only select one day). */
+            [self markWeekButtonUnselected:self.mondayButton];
+            [self markWeekButtonUnselected:self.sundayButton];
+            [self markWeekButtonUnselected:self.tuesdayButton];
+            [self markWeekButtonUnselected:self.wednesdayButton];
+            [self markWeekButtonUnselected:self.thursdayButton];
+            [self markWeekButtonUnselected:self.fridayButton];
+            [self markWeekButtonUnselected:self.saturdayButton];
+        }
     }
 }
 

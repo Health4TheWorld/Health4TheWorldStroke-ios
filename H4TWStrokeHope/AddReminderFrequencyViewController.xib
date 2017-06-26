@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,6 +26,8 @@
                 <outlet property="fridayButton" destination="3Vr-rF-yIy" id="WhN-4e-dad"/>
                 <outlet property="mondayButton" destination="fik-yX-17m" id="mft-Mx-Oy6"/>
                 <outlet property="nextButton" destination="12l-6B-ld8" id="pVW-fA-veq"/>
+                <outlet property="oneTimeReminderLabel" destination="aXe-tv-q8Q" id="y5C-ME-cEe"/>
+                <outlet property="oneTimeReminderSwitch" destination="0xt-Yx-Nix" id="jKY-vD-1Df"/>
                 <outlet property="saturdayButton" destination="3fO-sI-38c" id="qzq-55-8i4"/>
                 <outlet property="sundayButton" destination="qbJ-VG-egx" id="KjT-Rn-eWM"/>
                 <outlet property="thursdayButton" destination="wEP-uf-Tlw" id="3YQ-go-X0C"/>
@@ -228,6 +230,18 @@
                         <action selector="nextPressed:" destination="-1" eventType="touchUpInside" id="QRu-rj-nz5"/>
                     </connections>
                 </button>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0xt-Yx-Nix">
+                    <rect key="frame" x="35" y="400" width="51" height="31"/>
+                    <connections>
+                        <action selector="oneTimeReminderSwitched:" destination="-1" eventType="valueChanged" id="bkO-JW-fD5"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make this a one time reminder." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXe-tv-q8Q">
+                    <rect key="frame" x="98" y="403.5" width="235" height="24"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -244,14 +258,18 @@
                 <constraint firstItem="1DG-Jk-m5B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ICy-Kh-IhS"/>
                 <constraint firstItem="QSU-EE-O4p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="26" id="LwG-qD-LfN"/>
                 <constraint firstAttribute="trailing" secondItem="qUP-l5-vt6" secondAttribute="trailing" id="MX7-D3-DNi"/>
+                <constraint firstItem="0xt-Yx-Nix" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="OtT-JV-Kb3"/>
                 <constraint firstItem="wTp-pk-ebZ" firstAttribute="centerX" secondItem="qUP-l5-vt6" secondAttribute="centerX" id="QWn-U3-aK4"/>
                 <constraint firstItem="wTp-pk-ebZ" firstAttribute="top" secondItem="qUP-l5-vt6" secondAttribute="bottom" id="QXA-Bj-PZd"/>
                 <constraint firstAttribute="trailing" secondItem="l4L-rE-RGu" secondAttribute="trailing" constant="26" id="Shf-AK-fLJ"/>
                 <constraint firstItem="cRD-fN-Hkk" firstAttribute="width" secondItem="IME-tg-NAP" secondAttribute="width" id="U4q-Tq-5su"/>
                 <constraint firstItem="5Dr-6Y-0eD" firstAttribute="top" secondItem="cRD-fN-Hkk" secondAttribute="bottom" id="VE1-lr-TUI"/>
+                <constraint firstItem="0xt-Yx-Nix" firstAttribute="top" secondItem="xLK-f3-ZyL" secondAttribute="bottom" constant="23.5" id="ZIc-jy-2SZ"/>
                 <constraint firstItem="1DG-Jk-m5B" firstAttribute="top" secondItem="IME-tg-NAP" secondAttribute="bottom" id="cjR-hB-2cg"/>
                 <constraint firstAttribute="trailing" secondItem="12l-6B-ld8" secondAttribute="trailing" constant="16" id="dCD-qo-y2r"/>
                 <constraint firstItem="IME-tg-NAP" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1:3" id="ddv-mc-LPb"/>
+                <constraint firstItem="aXe-tv-q8Q" firstAttribute="centerY" secondItem="0xt-Yx-Nix" secondAttribute="centerY" id="fJe-bB-TXo"/>
+                <constraint firstItem="aXe-tv-q8Q" firstAttribute="leading" secondItem="0xt-Yx-Nix" secondAttribute="trailing" constant="14" id="gag-GH-db3"/>
                 <constraint firstItem="wTp-pk-ebZ" firstAttribute="width" secondItem="qUP-l5-vt6" secondAttribute="width" id="hEP-E6-j1H"/>
                 <constraint firstItem="qUP-l5-vt6" firstAttribute="centerY" secondItem="IME-tg-NAP" secondAttribute="centerY" id="izX-Gg-a6W"/>
                 <constraint firstItem="cRD-fN-Hkk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lPw-6V-bZK"/>
