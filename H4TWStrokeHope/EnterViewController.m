@@ -8,6 +8,7 @@
 
 #import "EnterViewController.h"
 #import "GraphicUtils.h"
+#import "Utils.h"
 #import "HomeViewController.h"
 #import "TermsViewController.h"
 
@@ -84,6 +85,7 @@
     if (isOffscreen) {
         quoteFrame.origin.x = screenWidth + 20;
     }
+    quoteFrame.size.height = [Utils heightOfString:quoteText containedToWidth:quoteFrame.size.width withFont:quoteFont];
     quote.frame = quoteFrame;
     return quote;
 }
@@ -141,16 +143,6 @@
     
     [self.quotes addObject:secondQuote];
     [self.authors addObject:secondAuthorLabel];
-    
-    /* Third quote */
-    UILabel *thirdQuote = [EnterViewController getQuoteLabelWithText:NSLocalizedString(@"Enter.thirdQuote", nil) offscreen:YES];
-    UILabel *thirdAuthorLabel = [EnterViewController getAuthorLabelWithText:NSLocalizedString(@"Enter.thirdAuthor", nil) forQuoteLabel:thirdQuote offScreen:YES];
-    
-    [self.view addSubview:thirdQuote];
-    [self.view addSubview:thirdAuthorLabel];
-    
-    [self.quotes addObject:thirdQuote];
-    [self.authors addObject:thirdAuthorLabel];
     
     /* Fourth quote */
     UILabel *fourthQuote = [EnterViewController getQuoteLabelWithText:NSLocalizedString(@"Enter.fourthQuote", nil) offscreen:YES];
