@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic,strong) NSArray *quotesArray;
 @property (strong, nonatomic) IBOutlet UIImageView *bgImage;
+@property (strong, nonatomic) IBOutlet UILabel *quoteLabel;
 
 @end
 
@@ -34,6 +35,9 @@ static NSString * const reuseIdentifier = @"QuotesCell";
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     self.navigationItem.leftBarButtonItem = backButton;
     
+    // QUote Label
+    self.quoteLabel.text = QUOTE_LABEL;
+    
     [self setupView];
 }
 -(void) setupView{
@@ -42,7 +46,16 @@ static NSString * const reuseIdentifier = @"QuotesCell";
     [self.collectionView registerNib:[UINib nibWithNibName:@"QuotesCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
     self.view.backgroundColor = [UIColor whiteColor];
     self.collectionView.backgroundColor = [UIColor whiteColor];
-    self.quotesArray = @[@"quote1",@"quote2"];
+    
+    
+    // Randomly pick an URL.
+    NSString *quoteToDisplay = @"%22An+unexaminced+life%22.png";
+    NSString *urlForQuotesArray = [NSString stringWithFormat:@"https://s3-us-west-1.amazonaws.com/h4twappquotes/%@", quoteToDisplay];
+    
+    NSLog(@"url String : %@", urlForQuotesArray);
+    
+    // Set the resulting URL
+    self.quotesArray = @[urlForQuotesArray];
     
 //    self.bgImage.image = [UIImage imageNamed: BG_IMAGE_NAME];
     
@@ -58,18 +71,17 @@ static NSString * const reuseIdentifier = @"QuotesCell";
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     QuotesCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier: reuseIdentifier forIndexPath:indexPath];
-    cell.imageView.image = [UIImage imageNamed: [self.quotesArray objectAtIndex:indexPath.item]];
-//    NSURL *imageURL = [NSURL URLWithString:@"https://drive.google.com/file/d/1rM92ybvHENh0gECEDIiHzlRwnEnmpgKQGg/view?usp=sharing"];
-//    
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-//        NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-//        
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            // Update the UI
-//        cell.imageView.image = [UIImage imageWithData:imageData];
-//            //            cell.quoteImageView.image = [UIImage imageNamed: @"quote1"] ;
-//        });
-//    });
+    //cell.imageView.image = [UIImage imageNamed: [self.quotesArray objectAtIndex:indexPath.item]];
+    NSURL *imageURL = [NSURL URLWithString:[self.quotesArray objectAtIndex:indexPath.item]];
+
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // Update the UI
+        cell.imageView.image = [UIImage imageWithData:imageData];
+        });
+    });
     
     return cell;
 }

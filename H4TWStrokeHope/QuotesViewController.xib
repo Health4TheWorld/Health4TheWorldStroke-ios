@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="bgImage" destination="6Ia-El-ClX" id="TB4-WJ-7cx"/>
                 <outlet property="collectionView" destination="Mqz-eZ-dsj" id="HMT-uR-Ov8"/>
+                <outlet property="quoteLabel" destination="WLw-lI-TDi" id="xzg-m3-Hdb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,7 +26,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Mqz-eZ-dsj">
-                    <rect key="frame" x="0.0" y="200" width="375" height="335"/>
+                    <rect key="frame" x="0.0" y="190.5" width="375" height="344.5"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="k2r-Tj-WiF">
                         <size key="itemSize" width="355" height="300"/>
@@ -34,15 +35,24 @@
                         <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="20"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLw-lI-TDi">
+                    <rect key="frame" x="71" y="98" width="233" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="6Ia-El-ClX" secondAttribute="bottom" id="1Eo-TZ-ECQ"/>
+                <constraint firstItem="WLw-lI-TDi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="71" id="4Yb-Gv-OXs"/>
                 <constraint firstAttribute="trailing" secondItem="6Ia-El-ClX" secondAttribute="trailing" id="7Bx-dD-8k5"/>
+                <constraint firstItem="Mqz-eZ-dsj" firstAttribute="top" secondItem="WLw-lI-TDi" secondAttribute="bottom" constant="72" id="81v-VA-Tm9"/>
                 <constraint firstItem="6Ia-El-ClX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HKU-R1-VU2"/>
                 <constraint firstItem="Mqz-eZ-dsj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VCl-BM-BDs"/>
                 <constraint firstAttribute="bottom" secondItem="Mqz-eZ-dsj" secondAttribute="bottom" constant="132" id="Y04-bZ-8V3"/>
-                <constraint firstItem="Mqz-eZ-dsj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="cUy-tp-1Z3"/>
+                <constraint firstItem="WLw-lI-TDi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="98" id="b3W-ZI-vSj"/>
+                <constraint firstAttribute="trailing" secondItem="WLw-lI-TDi" secondAttribute="trailing" constant="71" id="fUB-Wq-7ED"/>
                 <constraint firstAttribute="trailing" secondItem="Mqz-eZ-dsj" secondAttribute="trailing" id="gX7-VK-yCr"/>
                 <constraint firstItem="6Ia-El-ClX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yfG-zC-QnN"/>
             </constraints>

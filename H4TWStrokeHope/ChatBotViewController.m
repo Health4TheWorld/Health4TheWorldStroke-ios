@@ -9,33 +9,14 @@
 #import "ChatBotViewController.h"
 #import "Utils.h"
 #import "Constants.h"
-#import <ApiAI/ApiAI.h>
 #import "ChatBotViewCell.h"
-#import "ChatMessages.h"
 #import "MindExercisesViewController.h"
 #import "QuotesViewController.h"
+#import "ExercisesViewController.h"
 
 @interface ChatBotViewController ()
-@property (nonatomic,retain) UIButton *sendButton;
-@property (nonatomic, retain) UITextField *textField;
-@property (nonatomic, retain) UIView *containerView;
-@property ChatMessages *message;
-@property (nonatomic, retain) NSLayoutConstraint *bottomConstraint;
-@property (nonatomic, retain) NSLayoutConstraint *heightConstraint;
-@property ApiAI *apiai;
-// Temporary buttons
-//Yes or NO
-@property (nonnull,retain) UIButton *yesButton;
-@property (nonnull,retain) UIButton *noButton;
-// Lonely Options
-@property (nonnull, retain) UIButton *lonelyOption1;
-@property (nonnull, retain) UIButton *lonelyOption2;
-@property (nonnull, retain) UIButton *lonelyOption3;
-@property (nonnull, retain) UIButton *lonelyOption4;
-@property (nonnull, retain) UIButton *lonelyOption5;
-@property (nonatomic, retain) UIButton *exitButton;
-@end
 
+@end
 
 #define PROFILE_IMAGE @"ChatBotProfile"
 #define NO_BUTTON @"NO"
@@ -43,12 +24,27 @@
 #define LONELY_BUTTON1 @"Watch 360 videos"
 #define LONELY_BUTTON2 @"Listen to music"
 #define LONELY_BUTTON3 @"Today's Inspiring quotes"
-#define LONELY_BUTTON4 @"Stroke survivor video"
+#define LONELY_BUTTON4 @"Stroke exercise video"
 #define LONELY_BUTTON5 @"Get tips to tackle this"
 #define TIPS_INTENT_TEXT @"know more"
 #define FALLBACK_NO_INTENT @"FALLBACK-NO"
 #define LONELY_OPTIONS_TEXT @"What do you want to do"
+#define FEELING_INTENT @"How are you feeling"
 #define EXIT_BUTTON @"EXIT"
+#define ICON1_MESSAGE @"good"
+#define FEELING_BUTTON1 @"Lonely?"
+#define FEELING_BUTTON2 @"Not Recovering soon?"
+#define FEELING_BUTTON3 @"Anxious?"
+#define FEELING_BUTTON4 @"Depressed?"
+#define FEELING_BUTTON5 @"Can't Sleep?"
+#define FEELING_BUTTON6 @"Feeling Fatigue or tired?"
+#define FEELING_MESSAGE1 @"Lonely"
+#define FEELING_MESSAGE2 @"recovery"
+#define FEELING_MESSAGE3 @"anxious"
+#define FEELING_MESSAGE4 @"Depressed"
+#define FEELING_MESSAGE5 @"sleepy"
+#define FEELING_MESSAGE6 @"fatigue"
+
 #define HEIGHT_CONSTRAINT_DEFAULT 48
 
 @implementation ChatBotViewController
@@ -171,8 +167,16 @@ NSMutableArray *messages;
 
 - (void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-    //self.heightConstraint.constant = 48;
+    //Initiate welcome message
+    [self initiateWelcomeMessage];
     [self.collectionView reloadData];
+}
+
+/* Initial Welcome message */
+-(void) initiateWelcomeMessage {
+    NSString *text = @"Hi";
+    AITextRequest *request = [self createAndFetchRequest:text];
+    [self retrieveAPIResponseWithRequest:request withSharedInstance: self.apiai];
 }
 
 /* UITextField Delegates */
@@ -186,6 +190,12 @@ NSMutableArray *messages;
 
 // process response text to simulate the views
 - (void) processResponse: (NSString*) text withIntent: (NSString*) intent{
+    
+    // Welcome Intent
+    if([text localizedCaseInsensitiveContainsString: FEELING_INTENT]){
+        NSLog(@" Display Welcome Icons");
+        [self displayWelcomeIcons];
+    }
     
     //Tips Intent
     if([text localizedCaseInsensitiveContainsString: TIPS_INTENT_TEXT]){
@@ -206,6 +216,71 @@ NSMutableArray *messages;
     }
     
 }
+// Display Welcome Icons
+- (void) displayWelcomeIcons{
+    [self hideFeelingButtons];
+    [self hideLonelyButtons];
+    [self.textField setHidden:true];
+    [self.sendButton setHidden: true];
+    if(self.icon1 == NULL){
+    
+    // Setup welcome Icons
+    self.icon1 = [self createButton:self.icon1 withImage:QUOTES_IMAGE1];
+    self.icon1.translatesAutoresizingMaskIntoConstraints = false;
+    [self.icon1 addTarget:self action:@selector(icon1ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [self.containerView addSubview: self.icon1];
+    
+    // Adding icon2 button to container view
+    
+    self.icon2 = [self createButton:self.icon2 withImage:QUOTES_IMAGE2];
+    self.icon2.translatesAutoresizingMaskIntoConstraints = false;
+    [self.icon2 addTarget:self action:@selector(icon2ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [self.containerView addSubview:self.icon2];
+    
+    // Adding icon3 button to container view
+    
+    self.icon3 = [self createButton:self.icon3 withImage:QUOTES_IMAGE3];
+    self.icon3.translatesAutoresizingMaskIntoConstraints = false;
+    [self.icon3 addTarget:self action:@selector(icon3ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [self.containerView addSubview:self.icon3];
+    
+    // Adding icon4 button to container view
+    
+    self.icon4 = [self createButton:self.icon4 withImage:QUOTES_IMAGE4];
+    self.icon4.translatesAutoresizingMaskIntoConstraints = false;
+    [self.icon4 addTarget:self action:@selector(icon4ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [self.containerView addSubview:self.icon4];
+    
+    // Adding icon5 button to container view
+    
+    self.icon5 = [self createButton:self.icon5 withImage:QUOTES_IMAGE5];
+    self.icon5.translatesAutoresizingMaskIntoConstraints = false;
+    [self.icon5 addTarget:self action:@selector(icon5ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [self.containerView addSubview:self.icon5];
+    
+    //Horizontal Constraints
+    
+    NSDictionary *viewsIconsButton = @{ @"icon1" : self.icon1, @"icon2" : self.icon2 ,@"icon3" : self.icon3, @"icon4" : self.icon4, @"icon5" : self.icon5};
+    [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-72-[icon1(30)]-20-[icon2(30)]-20-[icon3(30)]-20-[icon4(30)]-20-[icon5(30)]-73-|" options:0 metrics:nil views: viewsIconsButton]];
+    
+    //Vertical Constraints
+      [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon1(30)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
+     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon2(30)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
+     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon3(30)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
+     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon4(30)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
+     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon5(30)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
+    }
+    else{
+        [self.icon1 setHidden:false];
+        [self.icon2 setHidden:false];
+        [self.icon3 setHidden:false];
+        [self.icon4 setHidden:false];
+        [self.icon5 setHidden:false];
+    }
+    
+     self.heightConstraint.constant = 50;
+        
+}
 
 //FallBack Intent - Fallback to Default View
 - (void) defaultView {
@@ -217,74 +292,79 @@ NSMutableArray *messages;
 
 }
 
+//Setup Feeling View - 6 different choices
+-(void) setUpFeelingView  {
+    if(self.feelingOption1 == NULL){
+        self.feelingOption1 = [self createButton:self.feelingOption1 withTitle:FEELING_BUTTON1];
+        [self.feelingOption1 addTarget:self action:@selector(feeling1ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+        self.feelingOption2 = [self createButton:self.feelingOption2 withTitle:FEELING_BUTTON2];
+        [self.feelingOption2 addTarget:self action:@selector(feeling2ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+        self.feelingOption3 = [self createButton:self.feelingOption3 withTitle:FEELING_BUTTON3];
+        [self.feelingOption3 addTarget:self action:@selector(feeling3ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+        self.feelingOption4 = [self createButton:self.feelingOption4 withTitle:FEELING_BUTTON4];
+        [self.feelingOption4 addTarget:self action:@selector(feeling4ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+        self.feelingOption5 = [self createButton:self.feelingOption5 withTitle:FEELING_BUTTON5];
+        [self.feelingOption5 addTarget:self action:@selector(feeling5ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+        self.feelingOption6 = [self createButton:self.feelingOption6 withTitle:FEELING_BUTTON6];
+        [self.feelingOption6 addTarget:self action:@selector(feeling6ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+        
+        // Constraints
+        NSDictionary *viewsfeelingButtons = @{ @"feelingOption1" : self.feelingOption1, @"feelingOption2" : self.feelingOption2 ,@"feelingOption3" : self.feelingOption3, @"feelingOption4" : self.feelingOption4, @"feelingOption5" : self.feelingOption5, @"feelingOption6" : self.feelingOption6 };
+        
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[feelingOption2]-10-[feelingOption4]-10-[feelingOption6]-10-|" options:0 metrics:nil views: viewsfeelingButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[feelingOption1]-10-[feelingOption3]-10-[feelingOption5]-10-|" options:0 metrics:nil views: viewsfeelingButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[feelingOption1(170)]-20-[feelingOption2]-10-|" options:0 metrics:nil views: viewsfeelingButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[feelingOption3(170)]-20-[feelingOption4]-10-|" options:0 metrics:nil views: viewsfeelingButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[feelingOption5(170)]-20-[feelingOption6]-10-|" options:0 metrics:nil views: viewsfeelingButtons]];
+        
+    }else{
+        [self.feelingOption1 setHidden:false];
+        [self.feelingOption2 setHidden:false];
+        [self.feelingOption3 setHidden:false];
+        [self.feelingOption4 setHidden:false];
+        [self.feelingOption5 setHidden:false];
+        [self.feelingOption6 setHidden:false];
+    }
+    
+    self.heightConstraint.constant = 130;
+    
+    [self.yesButton setHidden:true];
+    [self.noButton setHidden:true];
+    [self.textField setHidden:true];
+    [self.sendButton setHidden:true];
+}
+
 //Lonely Options View - 5 different choices
 - (void) lonelyOptionsView {
     if(self.lonelyOption1 == NULL){
         // Setup buttons for lonely options 1 through 5
         self.lonelyOption1 = [self createButton:self.lonelyOption1 withTitle:LONELY_BUTTON1];
-        self.lonelyOption1.translatesAutoresizingMaskIntoConstraints = false;
         [self.lonelyOption1 addTarget:self action:@selector(lonely1ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-        [self.containerView addSubview: self.lonelyOption1];
 
-        
         // Adding lonely2 button to container view
-        
         self.lonelyOption2 = [self createButton:self.lonelyOption2 withTitle:LONELY_BUTTON2];
-        self.lonelyOption2.translatesAutoresizingMaskIntoConstraints = false;
         [self.lonelyOption2 addTarget:self action:@selector(lonely2ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-        [self.containerView addSubview:self.lonelyOption2];
-        
-        
-        //Add constraints - x,y,w,h
-        
-        NSDictionary *viewsLonely12Buttons = @{ @"lonely1" : self.lonelyOption1, @"lonely2" : self.lonelyOption2 };
-        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[lonely1(170)]-20-[lonely2]-10-|" options:0 metrics:nil views: viewsLonely12Buttons]];
-        
         // Add Lonely Option 3 button
         self.lonelyOption3 = [self createButton:self.lonelyOption3 withTitle:LONELY_BUTTON3];
-        self.lonelyOption3.translatesAutoresizingMaskIntoConstraints = false;
         [self.lonelyOption3 addTarget:self action:@selector(lonely3ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-        [self.containerView addSubview: self.lonelyOption3];
-        
         // Adding lonely4 button to container view
-        
         self.lonelyOption4 = [self createButton:self.lonelyOption4 withTitle:LONELY_BUTTON4];
-        self.lonelyOption4.translatesAutoresizingMaskIntoConstraints = false;
         [self.lonelyOption4 addTarget:self action:@selector(lonely4ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-        [self.containerView addSubview:self.lonelyOption4];
-        
-        
-        //Add constraints - x,y,w,h
-        
-        NSDictionary *viewsLonely34Buttons = @{ @"lonely2" : self.lonelyOption2, @"lonely3" : self.lonelyOption3, @"lonely4" : self.lonelyOption4 };
-        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[lonely3(170)]-20-[lonely4]-10-|" options:0 metrics:nil views: viewsLonely34Buttons]];
-        
         // Add Lonely Option 5 button
         self.lonelyOption5 = [self createButton:self.lonelyOption5 withTitle:LONELY_BUTTON5];
-        self.lonelyOption5.translatesAutoresizingMaskIntoConstraints = false;
         [self.lonelyOption5 addTarget:self action:@selector(lonely5ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-        [self.containerView addSubview: self.lonelyOption5];
-        
         // Adding exit button to container view
-        
         self.exitButton = [self createButton:self.exitButton withTitle:EXIT_BUTTON];
-        self.exitButton.translatesAutoresizingMaskIntoConstraints = false;
         [self.exitButton addTarget:self action:@selector(exitButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-        [self.containerView addSubview:self.exitButton];
+        // Constraints
         
+        NSDictionary *viewsLonelyButtons = @{ @"lonely1" : self.lonelyOption1, @"lonely3" : self.lonelyOption3 ,@"lonely5" : self.lonelyOption5, @"lonely2" : self.lonelyOption2, @"lonely4" : self.lonelyOption4 ,@"exit" : self.exitButton};
         
-        //Add constraints - x,y,w,h
-        
-        NSDictionary *viewsLonely56Buttons = @{ @"lonely5" : self.lonelyOption5, @"exit" : self.exitButton, @"lonely4" : self.lonelyOption4 };
-        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[lonely5(170)]-20-[exit]-10-|" options:0 metrics:nil views: viewsLonely56Buttons]];
-        
-        //Vertical Constraints
-        
-        NSDictionary *viewsLonely246Button = @{ @"lonely2" : self.lonelyOption2, @"lonely4" : self.lonelyOption4 ,@"exit" : self.exitButton};
-        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[lonely2]-10-[lonely4]-10-[exit]-10-|" options:0 metrics:nil views: viewsLonely246Button]];
-        
-        NSDictionary *viewsLonely135Button = @{ @"lonely1" : self.lonelyOption1, @"lonely3" : self.lonelyOption3 ,@"lonely5" : self.lonelyOption5};
-        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[lonely1]-10-[lonely3]-10-[lonely5]-10-|" options:0 metrics:nil views: viewsLonely135Button]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[lonely2]-10-[lonely4]-10-[exit]-10-|" options:0 metrics:nil views: viewsLonelyButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[lonely1]-10-[lonely3]-10-[lonely5]-10-|" options:0 metrics:nil views: viewsLonelyButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[lonely1(170)]-20-[lonely2]-10-|" options:0 metrics:nil views: viewsLonelyButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[lonely3(170)]-20-[lonely4]-10-|" options:0 metrics:nil views: viewsLonelyButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[lonely5(170)]-20-[exit]-10-|" options:0 metrics:nil views: viewsLonelyButtons]];
         
     }else{
         [self.lonelyOption1 setHidden:false];
@@ -311,28 +391,18 @@ NSMutableArray *messages;
     
     if(self.yesButton == NULL || self.noButton==NULL){
     // Adding Yes button to container view
-    
     self.yesButton = [self createButton:self.yesButton withTitle:YES_BUTTON];
-    self.yesButton.translatesAutoresizingMaskIntoConstraints = false;
     [self.yesButton addTarget:self action:@selector(YesButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-    [self.containerView addSubview: self.yesButton];
     
-    //Add constraints - x,y,w,h
-    
-    NSDictionary *viewsYesButton = @{ @"yesButton" : self.yesButton };
-    [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[yesButton]-10-|" options:0 metrics:nil views: viewsYesButton]];
     
     // Adding Yes button to container view
-    
     self.noButton = [self createButton:self.noButton withTitle:NO_BUTTON];
-    self.noButton.translatesAutoresizingMaskIntoConstraints = false;
     [self.noButton addTarget:self action:@selector(noButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-    [self.containerView addSubview:self.noButton];
-    
     
     //Add constraints - x,y,w,h
-    
     NSDictionary *viewsButtons = @{ @"noButton" : self.noButton, @"yesButton" : self.yesButton };
+        
+    [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[yesButton]-10-|" options:0 metrics:nil views: viewsButtons]];
     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-50-[yesButton(100)][noButton(100)]-50-|" options:0 metrics:nil views: viewsButtons]];
     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[noButton]-10-|" options:0 metrics:nil views: viewsButtons]];
     
@@ -462,13 +532,24 @@ NSMutableArray *messages;
     
 }
 // Custom Button creator for Container View
-- (UIButton*) createButton: (UIButton*) button withTitle: (NSString*) title{
+- (UIButton*) createButton: (UIButton*) button withTitle: (NSString*) title {
     button = [UIButton buttonWithType: UIButtonTypeSystem];
     [button setTitle: title forState:UIControlStateNormal];
     button.layer.cornerRadius = 6;
     button.clipsToBounds = YES;
+    button.translatesAutoresizingMaskIntoConstraints = false;
     [button setBackgroundColor:HFTW_PRIMARY];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.containerView addSubview: button];
+    return button;
+}
+// Custom icon creator for Container View
+- (UIButton*) createButton: (UIButton*) button withImage: (NSString*) imageName{
+    button = [UIButton buttonWithType: UIButtonTypeCustom];
+    UIImage *image = [UIImage imageNamed:imageName];
+    [button setImage:image forState:UIControlStateNormal];
+    button.layer.cornerRadius = 15;
+    button.clipsToBounds = YES;
     return button;
 }
 
@@ -500,28 +581,12 @@ NSMutableArray *messages;
 - (void) lonely3ButtonPressed {
     QuotesViewController *vc = [[QuotesViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
-    
-    // Inspiring Quotes
-    NSString *text = @"Quotes";
-    [self storeRequest: text];
-    AITextRequest *request = [self createAndFetchRequest:text];
-    [self retrieveAPIResponseWithRequest:request withSharedInstance: self.apiai];
-    
-    //                NSURL *imageURL = [NSURL URLWithString:@"https://www.dropbox.com/s/me38dats39m92sw/80%25%20of%20success%22.png?dl=0"];
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        //                    NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            // Update the UI
-            //                        cell.quoteImageView.image = [UIImage imageWithData:imageData];
-//            cell.quoteImageView.image = [UIImage imageNamed: @"quote1"] ;
-        });
-    });
+
 }
 - (void) lonely4ButtonPressed {
-    [self customAlertMessageWithTitle:@"Stroke Survivor Video" withMessage:@"Stroke Survivor video Coming soon!"];
-
+    //[self customAlertMessageWithTitle:@"Stroke Survivor Video" withMessage:@"Stroke Survivor video Coming soon!"];
+    ExercisesViewController *vc = [[ExercisesViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:true];
 }
 - (void) lonely5ButtonPressed {
     // Get Tips from API.AI
@@ -533,12 +598,107 @@ NSMutableArray *messages;
     [self hideLonelyButtons];
     self.heightConstraint.constant = HEIGHT_CONSTRAINT_DEFAULT;
 }
+
+// Feeling options Clicked
+- (void) feeling1ButtonPressed{
+    // Send request to API.AI
+    NSString *text = FEELING_MESSAGE1;
+    AITextRequest *request = [self createAndFetchRequest:text];
+    [self retrieveAPIResponseWithRequest:request withSharedInstance: self.apiai];
+    //hide all other buttons
+    [self exitButtonPressed];
+}
+- (void) feeling2ButtonPressed{
+    NSString *text = FEELING_MESSAGE2;
+    AITextRequest *request = [self createAndFetchRequest:text];
+    [self retrieveAPIResponseWithRequest:request withSharedInstance: self.apiai];
+    [self exitButtonPressed];
+}
+- (void) feeling3ButtonPressed{
+    NSString *text = FEELING_MESSAGE3;
+    AITextRequest *request = [self createAndFetchRequest:text];
+    [self retrieveAPIResponseWithRequest:request withSharedInstance: self.apiai];
+    [self exitButtonPressed];
+}
+- (void) feeling4ButtonPressed{
+    NSString *text = FEELING_MESSAGE4;
+    AITextRequest *request = [self createAndFetchRequest:text];
+    [self retrieveAPIResponseWithRequest:request withSharedInstance: self.apiai];
+    [self exitButtonPressed];
+}
+- (void) feeling5ButtonPressed{
+    NSString *text = FEELING_MESSAGE5;
+    AITextRequest *request = [self createAndFetchRequest:text];
+    [self retrieveAPIResponseWithRequest:request withSharedInstance: self.apiai];
+    [self exitButtonPressed];
+}
+- (void) feeling6ButtonPressed{
+    NSString *text = FEELING_MESSAGE6;
+    AITextRequest *request = [self createAndFetchRequest:text];
+    [self retrieveAPIResponseWithRequest:request withSharedInstance: self.apiai];
+    [self exitButtonPressed];
+}
+
+
+// Icon Button pressed
+- (void) icon1ButtonPressed {
+    // Send request to API.AI
+    NSString *text = ICON1_MESSAGE;
+    AITextRequest *request = [self createAndFetchRequest:text];
+    [self retrieveAPIResponseWithRequest:request withSharedInstance: self.apiai];
+
+    [self exitButtonPressed];
+}
+
+- (void) icon2ButtonPressed {
+    // Same as icon1
+    [self icon1ButtonPressed];
+}
+
+- (void) icon3ButtonPressed {
+    [self hideWelcomeIcons];
+    [self setUpFeelingView];
+}
+
+- (void) icon4ButtonPressed {
+    // Same as icon3
+    [self icon3ButtonPressed];
+}
+
+- (void) icon5ButtonPressed {
+    // Same as icon4
+    [self icon3ButtonPressed];
+}
+
+
+
 //Exit Button clicked
 - (void) exitButtonPressed {
     [self.textField setHidden:false];
     [self.sendButton setHidden:false];
 //hide all other buttons
     [self hideLonelyButtons];
+    [self hideWelcomeIcons];
+    [self hideFeelingButtons];
+    self.heightConstraint.constant = HEIGHT_CONSTRAINT_DEFAULT;
+}
+
+- (void) hideWelcomeIcons {
+    [self.icon1 setHidden:true];
+    [self.icon2 setHidden:true];
+    [self.icon3 setHidden:true];
+    [self.icon4 setHidden:true];
+    [self.icon5 setHidden:true];
+    self.heightConstraint.constant = HEIGHT_CONSTRAINT_DEFAULT;
+}
+
+- (void) hideFeelingButtons {
+    [self.feelingOption1 setHidden:true];
+    [self.feelingOption2 setHidden:true];
+    [self.feelingOption3 setHidden:true];
+    [self.feelingOption4 setHidden:true];
+    [self.feelingOption5 setHidden:true];
+    [self.feelingOption6 setHidden:true];
     self.heightConstraint.constant = HEIGHT_CONSTRAINT_DEFAULT;
 }
 

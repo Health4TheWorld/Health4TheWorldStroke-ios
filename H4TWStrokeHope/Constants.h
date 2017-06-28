@@ -166,6 +166,17 @@
 #define VR_ROCKY_BEACH_INSTRUCTIONS NSLocalizedString(@"MindExercises.rockybeachInstructions", nil)
 #define VR_SANDY_BEACH_INSTRUCTIONS NSLocalizedString(@"MindExercises.sandybeachInstructions", nil)
 
+
+/* QUOTES SECTION */
+#define QUOTE_LABEL NSLocalizedString(@"Quotes.title", nil)
+#define QUOTES_AWS_URLS @[@"hi"]
+#define QUOTES_IMAGE1 @"assembly1"
+#define QUOTES_IMAGE2 @"assembly2"
+#define QUOTES_IMAGE3 @"assembly3"
+#define QUOTES_IMAGE4 @"assembly4"
+#define QUOTES_IMAGE5 @"assembly5"
+
+
 /* STRINGS */
 #define ABOUT_US_SECTION_TITLE NSLocalizedString(@"GeneralInfo.aboutUs", nil)
 #define TERMS_SECTION_TITLE NSLocalizedString(@"GeneralInfo.termsOfUse", nil)
