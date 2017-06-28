@@ -69,11 +69,13 @@
 
 - (void)a2Pressed{
     VideoViewController *videoVC = [[VideoViewController alloc] init];
+    videoVC.title = ARMS_TITLE_2A_ELBOW;
     [videoVC setUpVideo: VIDEO_2A_ELBOW_FLEXION];
     [self.navigationController pushViewController:videoVC animated:YES];}
 
 - (void)b2Pressed{
     VideoViewController *videoVC = [[VideoViewController alloc] init];
+    videoVC.title = ARMS_TITLE_2B_SHOULDER;
     [videoVC setUpVideo: VIDEO_2B_SHOULDER_FLEXION];
     [self.navigationController pushViewController:videoVC animated:YES];
 }

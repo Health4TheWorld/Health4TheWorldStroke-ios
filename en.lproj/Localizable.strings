@@ -66,6 +66,20 @@
 "Strenghtening.legs" = "Legs";
 "Strengthening.arms" = "Arms";
 "Strengthening.coordination" = "Coordination";
+/* LEGS VIEW CONTROLLER */
+"Legs.toe" = "Toe Flexion";
+"Legs.knee" = "Knee Flexion";
+"Legs.hip" = "Hip Flexion";
+
+/* ARMS VIEW CONTROLLER */
+"Arms.elbow" = "Elbow Flexion";
+"Arms.shoulder" = "Shoulder Flexion";
+
+/* COORDINATION VIEW CONTROLLER */
+"Coordination.legControl1" = "Leg Control 1";
+"Coordination.legControl2" = "Leg Control 2";
+
+
 
 /* STRETCHING VIEW CONTROLLER */
 "Stretching.title" = "Stretching";
@@ -287,7 +301,8 @@
 "AboutUs.lorenWard" = "Loren Ward, PT, DPT is licensed Physical Therapist who began her career in Physical Therapy in 2007, while earning her Doctorate at MGH Institute of Health Professions in Massachusetts. She did internships at Rehabilitation of Chicago, Spaulding Rehabilitation and National Rehabilitation Hospital and now works at Stanford Veteran’s Affairs System. Loren is an advocate of functional independence and strives to help her patients reach their own level of independence regardless of their limitations.";
 "AboutUs.roseHamm" = "Rose Hamm, PT, DPT, CWS, FACCWS: Rose received a BS in Physical Therapy from the University of North Carolina, Chapel Hill, and an MS and post-graduate DPT from the University of Southern California.  She is currently Adjunct Assistant Professor of Clinical Physical Therapy at the University of Southern California and practices at Keck Hospital at USC.";
 
-
+/* Quotes Section */
+"Quotes.title" = "Today's Inspirational Quote";
 
 
 

@@ -121,6 +121,18 @@
 #define VIDEO_5A_FEMALE_DOC @"5AFemaleDocWaving.m4v"		
 #define VIDEO_5B_MALE_DOC @"5BMaleDocWaving.m4v"
 
+/* EXERCISE TITLE */
+#define LEGS_TITLE_1A_TOE NSLocalizedString(@"Legs.toe", nil)
+#define LEGS_TITLE_1B_KNEE NSLocalizedString(@"Legs.knee", nil)
+#define LEGS_TITLE_1C_HIP NSLocalizedString(@"Legs.hip", nil)
+#define ARMS_TITLE_2A_ELBOW NSLocalizedString(@"Arms.elbow", nil)
+#define ARMS_TITLE_2B_SHOULDER NSLocalizedString(@"Arms.shoulder", nil)
+#define COORDINATION_TITLE_3A_LEG_CONTROL_1 NSLocalizedString(@"Coordination.legControl1", nil)
+#define COORDINATION_TITLE_3B_LEG_CONTROL_2 NSLocalizedString(@"Coordination.legControl2", nil)
+#define FUNCTIONALMOBILITY_4A_BRIDGE_HIP_LIFT NSLocalizedString(@"FunctionalMobility.bridgeHipLift", nil)
+#define FUNCTIONALMOBILITY_4B_ARM_AND_TRUNK_STRENGTHENING NSLocalizedString(@"FunctionalMobility.armTrunkStrengthening", nil)
+#define FUNCTIONALMOBILITY_4C_SIT_TO_STAND NSLocalizedString(@"FunctionalMobility.sitToStand", nil)
+
 /* WEEKDAYS */
 #define EVERYDAY NSLocalizedString(@"Reminders.everyday", nil)
 #define SUNDAY NSLocalizedString(@"Reminders.sunday", nil)
@@ -159,6 +171,17 @@
 #define VR_MARKET_PLACE_2_INSTRUCTIONS NSLocalizedString(@"MindExercises.marketplace2Instructions", nil)
 #define VR_ROCKY_BEACH_INSTRUCTIONS NSLocalizedString(@"MindExercises.rockybeachInstructions", nil)
 #define VR_SANDY_BEACH_INSTRUCTIONS NSLocalizedString(@"MindExercises.sandybeachInstructions", nil)
+
+
+/* QUOTES SECTION */
+#define QUOTE_LABEL NSLocalizedString(@"Quotes.title", nil)
+#define QUOTES_AWS_URLS @[@"hi"]
+#define QUOTES_IMAGE1 @"assembly1"
+#define QUOTES_IMAGE2 @"assembly2"
+#define QUOTES_IMAGE3 @"assembly3"
+#define QUOTES_IMAGE4 @"assembly4"
+#define QUOTES_IMAGE5 @"assembly5"
+
 
 /* STRINGS */
 #define ABOUT_US_SECTION_TITLE NSLocalizedString(@"GeneralInfo.aboutUs", nil)

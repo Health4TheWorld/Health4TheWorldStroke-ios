@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		163CE0A31EEE4290001C43F3 /* ChatMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 163CE0A21EEE4290001C43F3 /* ChatMessages.m */; };
 		167883A91EE1029900B106AD /* ChatBotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883A71EE1029900B106AD /* ChatBotViewController.m */; };
 		167883AA1EE1029900B106AD /* ChatBotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167883A81EE1029900B106AD /* ChatBotViewController.xib */; };
 		167883AF1EE25EED00B106AD /* GVRVideoViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883AE1EE25EED00B106AD /* GVRVideoViewManager.m */; };
 		168389811EC66D8F007D15C6 /* VRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683897F1EC66D8F007D15C6 /* VRViewController.m */; };
 		168389821EC66D8F007D15C6 /* VRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 168389801EC66D8F007D15C6 /* VRViewController.xib */; };
+		16C3C37C1EEA37EF005991D5 /* ChatBotViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C3C37A1EEA37EF005991D5 /* ChatBotViewCell.m */; };
+		16C3C37D1EEA37EF005991D5 /* ChatBotViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C3C37B1EEA37EF005991D5 /* ChatBotViewCell.xib */; };
 		16DFC0C41EC7F2D3007322BF /* Bells.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 16DFC0C31EC7F2D3007322BF /* Bells.mp4 */; };
+		16EDA5641F00934100906891 /* QuotesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EDA5621F00934100906891 /* QuotesCollectionViewCell.m */; };
+		16EDA5651F00934100906891 /* QuotesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16EDA5631F00934100906891 /* QuotesCollectionViewCell.xib */; };
+		16EDA5691F009BD600906891 /* QuotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EDA5671F009BD600906891 /* QuotesViewController.m */; };
+		16EDA56A1F009BD600906891 /* QuotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16EDA5681F009BD600906891 /* QuotesViewController.xib */; };
 		1720A05E1EA9E78D009C2B87 /* AdductorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1720A05C1EA9E78D009C2B87 /* AdductorsViewController.m */; };
 		1720A05F1EA9E78D009C2B87 /* AdductorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1720A05D1EA9E78D009C2B87 /* AdductorsViewController.xib */; };
 		1720A0631EA9E7A3009C2B87 /* HamstringsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1720A0611EA9E7A3009C2B87 /* HamstringsViewController.m */; };
@@ -146,6 +153,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		163CE0A11EEE4290001C43F3 /* ChatMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatMessages.h; sourceTree = "<group>"; };
+		163CE0A21EEE4290001C43F3 /* ChatMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatMessages.m; sourceTree = "<group>"; };
 		167883A61EE1029900B106AD /* ChatBotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotViewController.h; sourceTree = "<group>"; };
 		167883A71EE1029900B106AD /* ChatBotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBotViewController.m; sourceTree = "<group>"; };
 		167883A81EE1029900B106AD /* ChatBotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatBotViewController.xib; sourceTree = "<group>"; };
@@ -154,7 +163,16 @@
 		1683897E1EC66D8F007D15C6 /* VRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRViewController.h; sourceTree = "<group>"; };
 		1683897F1EC66D8F007D15C6 /* VRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRViewController.m; sourceTree = "<group>"; };
 		168389801EC66D8F007D15C6 /* VRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRViewController.xib; sourceTree = "<group>"; };
+		16C3C3791EEA37EF005991D5 /* ChatBotViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotViewCell.h; sourceTree = "<group>"; };
+		16C3C37A1EEA37EF005991D5 /* ChatBotViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBotViewCell.m; sourceTree = "<group>"; };
+		16C3C37B1EEA37EF005991D5 /* ChatBotViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatBotViewCell.xib; sourceTree = "<group>"; };
 		16DFC0C31EC7F2D3007322BF /* Bells.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bells.mp4; sourceTree = "<group>"; };
+		16EDA5611F00934100906891 /* QuotesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuotesCollectionViewCell.h; sourceTree = "<group>"; };
+		16EDA5621F00934100906891 /* QuotesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuotesCollectionViewCell.m; sourceTree = "<group>"; };
+		16EDA5631F00934100906891 /* QuotesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuotesCollectionViewCell.xib; sourceTree = "<group>"; };
+		16EDA5661F009BD600906891 /* QuotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuotesViewController.h; sourceTree = "<group>"; };
+		16EDA5671F009BD600906891 /* QuotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuotesViewController.m; sourceTree = "<group>"; };
+		16EDA5681F009BD600906891 /* QuotesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuotesViewController.xib; sourceTree = "<group>"; };
 		1720A05B1EA9E78D009C2B87 /* AdductorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdductorsViewController.h; sourceTree = "<group>"; };
 		1720A05C1EA9E78D009C2B87 /* AdductorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdductorsViewController.m; sourceTree = "<group>"; };
 		1720A05D1EA9E78D009C2B87 /* AdductorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdductorsViewController.xib; sourceTree = "<group>"; };
@@ -357,11 +375,28 @@
 		167883A51EE1025300B106AD /* ChatBot */ = {
 			isa = PBXGroup;
 			children = (
+				16EDA54E1F0074C500906891 /* Inspirational Quotes */,
 				167883A61EE1029900B106AD /* ChatBotViewController.h */,
 				167883A71EE1029900B106AD /* ChatBotViewController.m */,
 				167883A81EE1029900B106AD /* ChatBotViewController.xib */,
+				16C3C3791EEA37EF005991D5 /* ChatBotViewCell.h */,
+				16C3C37A1EEA37EF005991D5 /* ChatBotViewCell.m */,
+				16C3C37B1EEA37EF005991D5 /* ChatBotViewCell.xib */,
 			);
 			name = ChatBot;
+			sourceTree = "<group>";
+		};
+		16EDA54E1F0074C500906891 /* Inspirational Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				16EDA5661F009BD600906891 /* QuotesViewController.h */,
+				16EDA5671F009BD600906891 /* QuotesViewController.m */,
+				16EDA5681F009BD600906891 /* QuotesViewController.xib */,
+				16EDA5611F00934100906891 /* QuotesCollectionViewCell.h */,
+				16EDA5621F00934100906891 /* QuotesCollectionViewCell.m */,
+				16EDA5631F00934100906891 /* QuotesCollectionViewCell.xib */,
+			);
+			name = "Inspirational Quotes";
 			sourceTree = "<group>";
 		};
 		1720A06A1EA9E7EF009C2B87 /* LegAndFeet */ = {
@@ -509,6 +544,8 @@
 				CC3CB64C1EA11F9E00CA9429 /* LearnContent.m */,
 				CC11D11D1EB51AB40063E72A /* Reminder.h */,
 				CC11D11E1EB51AB40063E72A /* Reminder.m */,
+				163CE0A11EEE4290001C43F3 /* ChatMessages.h */,
+				163CE0A21EEE4290001C43F3 /* ChatMessages.m */,
 			);
 			name = "Data Models";
 			sourceTree = "<group>";
@@ -900,11 +937,13 @@
 				17DE3D4B1EA95F2300D350A1 /* LegAndFeetViewController.xib in Resources */,
 				17E0BB351EA41201001FC7F3 /* StrengtheningViewController.xib in Resources */,
 				1737A1991EA8976F00C6D71E /* 1BKneeFlexion.m4v in Resources */,
+				16C3C37D1EEA37EF005991D5 /* ChatBotViewCell.xib in Resources */,
 				17E0BB1C1EA40F5A001FC7F3 /* LegsViewController.xib in Resources */,
 				CC4C10BF1E7A26DE00515CDC /* Assets.xcassets in Resources */,
 				CC73E43E1E842370001131AF /* Lato-Black.ttf in Resources */,
 				CC29233A1EBE2ACE00DF1742 /* Localizable.strings in Resources */,
 				CCB7B3FE1E9412510058C32E /* HelpMeSpeakViewController.xib in Resources */,
+				16EDA56A1F009BD600906891 /* QuotesViewController.xib in Resources */,
 				1737A19B1EA897C900C6D71E /* 2AElbowFlexion.m4v in Resources */,
 				1720A05F1EA9E78D009C2B87 /* AdductorsViewController.xib in Resources */,
 				CC11D11C1EB3B8DE0063E72A /* ReminderTableViewCell.xib in Resources */,
@@ -922,6 +961,7 @@
 				1737A19C1EA897CF00C6D71E /* 2BShoulderFlexion.m4v in Resources */,
 				CC11D12A1EB650150063E72A /* AddReminderTitleViewController.xib in Resources */,
 				1737A19A1EA8977300C6D71E /* 1CHipFlexion.m4v in Resources */,
+				16EDA5651F00934100906891 /* QuotesCollectionViewCell.xib in Resources */,
 				1737A19F1EA897DB00C6D71E /* 4ABridgeHipLift.m4v in Resources */,
 				17E0BB3A1EA4125E001FC7F3 /* CoordinationViewController.xib in Resources */,
 				CC4C10BA1E7A26DE00515CDC /* Main.storyboard in Resources */,
@@ -1021,12 +1061,14 @@
 				17E0BB201EA40F70001FC7F3 /* ArmsViewController.m in Sources */,
 				1720A06E1EA9E82C009C2B87 /* HandStretchViewController.m in Sources */,
 				17E0BB321EA41129001FC7F3 /* StrengtheningViewController.m in Sources */,
+				163CE0A31EEE4290001C43F3 /* ChatMessages.m in Sources */,
 				CCB7B40F1E94136C0058C32E /* RemindersViewController.m in Sources */,
 				CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */,
 				17DE3D4F1EA9604900D350A1 /* ArmsAndHandsViewController.m in Sources */,
 				CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */,
 				CC11D1381EB6B7BC0063E72A /* NoResultsTableViewCell.m in Sources */,
 				CC3CB6481EA11EC800CA9429 /* LearnContentViewController.m in Sources */,
+				16EDA5641F00934100906891 /* QuotesCollectionViewCell.m in Sources */,
 				17E0BB3E1EA4127D001FC7F3 /* StretchingViewController.m in Sources */,
 				CC11D1451EB6E7D00063E72A /* TimeTableViewCell.m in Sources */,
 				1720A0781EA9E85D009C2B87 /* ArmStretchViewController.m in Sources */,
@@ -1047,6 +1089,7 @@
 				17E0BB1B1EA40F5A001FC7F3 /* LegsViewController.m in Sources */,
 				CC11D1331EB6504E0063E72A /* AddReminderTimesViewController.m in Sources */,
 				CC4C10B11E7A26DE00515CDC /* main.m in Sources */,
+				16C3C37C1EEA37EF005991D5 /* ChatBotViewCell.m in Sources */,
 				17E0BB391EA4125E001FC7F3 /* CoordinationViewController.m in Sources */,
 				1720A05E1EA9E78D009C2B87 /* AdductorsViewController.m in Sources */,
 				CC11D12E1EB650320063E72A /* AddReminderFrequencyViewController.m in Sources */,
@@ -1055,6 +1098,7 @@
 				CC73E4271E841875001131AF /* EnterViewController.m in Sources */,
 				CCDFBECE1ECDE5E700C09CC8 /* TermsViewController.m in Sources */,
 				17DE3D4A1EA95F2300D350A1 /* LegAndFeetViewController.m in Sources */,
+				16EDA5691F009BD600906891 /* QuotesViewController.m in Sources */,
 				CC73E4511E86AB1C001131AF /* HomeViewController.m in Sources */,
 				CC11D11B1EB3B8DE0063E72A /* ReminderTableViewCell.m in Sources */,
 			);

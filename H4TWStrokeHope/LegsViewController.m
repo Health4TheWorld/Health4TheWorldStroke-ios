@@ -79,18 +79,21 @@
 
 - (void)a1Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
+    videoVC.title = LEGS_TITLE_1A_TOE;
     [videoVC setUpVideo: VIDEO_1A_TOE_FLEXION];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
 - (void)b1Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
+    videoVC.title = LEGS_TITLE_1B_KNEE;
     [videoVC setUpVideo: VIDEO_1B_KNEE_FLEXION];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
 - (void)c1Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
+    videoVC.title = LEGS_TITLE_1C_HIP;
     [videoVC setUpVideo: VIDEO_1C_HIP_FLEXION];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
