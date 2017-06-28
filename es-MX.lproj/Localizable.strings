@@ -51,6 +51,20 @@
 "HelpMeSpeak.notGivingUp" = "No me doy por vencido";
 "HelpMeSpeak.pain" = "Tengo dolor";
 "HelpMeSpeak.cantSpeak" = "Lo siento, no puedo hablar";
+"HelpMeSpeak.iLoveYou" = "Te quiero";
+"HelpMeSpeak.imCold" = "Hace frío";
+"HelpMeSpeak.imHot" = "Hace calor";
+"HelpMeSpeak.dizzy" = "I'm dizzy";
+"HelpMeSpeak.lightsOn" = "Turn on the lights";
+"HelpMeSpeak.lightsOff" = "Turn off the lights";
+"HelpMeSpeak.getInBed" = "I want to get in bed";
+"HelpMeSpeak.getOutOfBed" = "I want to get out of bed";
+"HelpMeSpeak.howAreYou" = "¿Como estás?";
+"HelpMeSpeak.ambulance" = "I need an ambulance";
+"HelpMeSpeak.inALittle" = "En un rato";
+"HelpMeSpeak.now" = "Ahora";
+"HelpMeSpeak.goOutside" = "I want to go outside";
+"HelpMeSpeak.sayHi" = "Hola!";
 
 /* EXERCISES VIEW CONTROLLER */
 "Exercises.title" = "Ejercicios";
@@ -241,6 +255,7 @@
 "Reminders.addTime" = "Agregar";
 "Reminders.editTitle" = "Editar";
 "Reminders.saveChanges" = "Guardar";
+"Reminders.oneTimeReminder" = "Make this a one time reminder";
 
 /* SURVEYS */
 "Surveys.password" = "Contraseña";

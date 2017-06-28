@@ -51,7 +51,7 @@
                      forControlEvents:UIControlEventEditingChanged];
     
     /* Set up speak objects */
-    self.allSpeakObjects = @[HELP_ME_SPEAK_YES, HELP_ME_SPEAK_NO, HELP_ME_SPEAK_THANK_YOU, HELP_ME_SPEAK_BATHROOM, HELP_ME_SPEAK_WATER, HELP_ME_SPEAK_FOOD, HELP_ME_SPEAK_NOT_GIVING_UP, HELP_ME_SPEAK_PAIN, HELP_ME_SPEAK_CANT_SPEAK];
+    self.allSpeakObjects = @[HELP_ME_SPEAK_YES, HELP_ME_SPEAK_NO, HELP_ME_SPEAK_THANK_YOU, HELP_ME_SPEAK_BATHROOM, HELP_ME_SPEAK_WATER, HELP_ME_SPEAK_FOOD, HELP_ME_SPEAK_NOT_GIVING_UP, HELP_ME_SPEAK_PAIN, HELP_ME_SPEAK_CANT_SPEAK, HELP_ME_SPEAK_I_LOVE_YOU, HELP_ME_SPEAK_IM_COLD, HELP_ME_SPEAK_IM_HOT, HELP_ME_SPEAK_DIZZY, HELP_ME_SPEAK_LIGHTS_ON, HELP_ME_SPEAK_LIGHTS_OFF, HELP_ME_SPEAK_GET_IN_BED, HELP_ME_SPEAK_GET_OUT_OF_BED, HELP_ME_SPEAK_HOW_ARE_YOU, HELP_ME_SPEAK_AMBULANCE, HELP_ME_SPEAK_IN_A_LITTLE, HELP_ME_SPEAK_NOW, HELP_ME_SPEAK_GO_OUTSIDE, HELP_ME_SPEAK_SAY_HI];
     self.speakObjectsToDisplay = [self.allSpeakObjects mutableCopy];
     
     /* Collection view set up */
@@ -208,6 +208,34 @@
         image = [UIImage imageNamed:PAIN_ICON];
     } else if ([labelText isEqualToString:HELP_ME_SPEAK_CANT_SPEAK]) {
         image = [UIImage imageNamed:CANT_SPEAK_ICON];
+    } else if ([labelText isEqualToString:HELP_ME_SPEAK_I_LOVE_YOU]) {
+        image = [UIImage imageNamed:THANK_YOU_ICON];
+    } else if ([labelText isEqualToString:HELP_ME_SPEAK_IM_COLD]) {
+        image = [UIImage imageNamed:IM_COLD_ICON];
+    } else if ([labelText isEqualToString:HELP_ME_SPEAK_IM_HOT]) {
+        image = [UIImage imageNamed:IM_HOT_ICON];
+    } else if ([labelText isEqualToString:HELP_ME_SPEAK_DIZZY]) {
+        image = [UIImage imageNamed:DIZZY_ICON];
+    } else if ([labelText isEqualToString:HELP_ME_SPEAK_LIGHTS_ON]) {
+        image = [UIImage imageNamed:LIGHTS_ON_ICON];
+    } else if ([labelText isEqualToString:HELP_ME_SPEAK_LIGHTS_OFF]) {
+        image = [UIImage imageNamed:LIGHTS_OFF_ICON];
+    } else if ([labelText isEqualToString:HELP_ME_SPEAK_GET_IN_BED]) {
+        image = [UIImage imageNamed:BED_ICON];
+    } else if ([labelText isEqualToString:HELP_ME_SPEAK_GET_OUT_OF_BED]) {
+        image = [UIImage imageNamed:BED_ICON];
+    } else if ([labelText isEqualToString:HELP_ME_SPEAK_HOW_ARE_YOU]) {
+        image = [UIImage imageNamed:QUESTION_ICON];
+    } else if ([labelText isEqualToString:HELP_ME_SPEAK_AMBULANCE]) {
+        image = [UIImage imageNamed:AMBULANCE_ICON];
+    } else if ([labelText isEqualToString:HELP_ME_SPEAK_IN_A_LITTLE]) {
+        image = [UIImage imageNamed:IN_A_LITTLE_ICON];
+    } else if ([labelText isEqualToString:HELP_ME_SPEAK_NOW]) {
+        image = [UIImage imageNamed:NOW_ICON];
+    } else if ([labelText isEqualToString:HELP_ME_SPEAK_GO_OUTSIDE]) {
+        image = [UIImage imageNamed:TREE_ICON];
+    } else if ([labelText isEqualToString:HELP_ME_SPEAK_SAY_HI]) {
+        image = [UIImage imageNamed:HI_ICON];
     }
     
     [cell layoutCellWithWord:labelText withImage:image];
