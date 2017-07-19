@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		162856CB1F1F08F200CE1327 /* RelaxingMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 162856C91F1F08F200CE1327 /* RelaxingMusicViewController.m */; };
+		162856CC1F1F08F200CE1327 /* RelaxingMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 162856CA1F1F08F200CE1327 /* RelaxingMusicViewController.xib */; };
 		163CE0A31EEE4290001C43F3 /* ChatMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 163CE0A21EEE4290001C43F3 /* ChatMessages.m */; };
 		167883A91EE1029900B106AD /* ChatBotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883A71EE1029900B106AD /* ChatBotViewController.m */; };
 		167883AA1EE1029900B106AD /* ChatBotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167883A81EE1029900B106AD /* ChatBotViewController.xib */; };
@@ -153,6 +155,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		162856C81F1F08F200CE1327 /* RelaxingMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelaxingMusicViewController.h; sourceTree = "<group>"; };
+		162856C91F1F08F200CE1327 /* RelaxingMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelaxingMusicViewController.m; sourceTree = "<group>"; };
+		162856CA1F1F08F200CE1327 /* RelaxingMusicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RelaxingMusicViewController.xib; sourceTree = "<group>"; };
 		163CE0A11EEE4290001C43F3 /* ChatMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatMessages.h; sourceTree = "<group>"; };
 		163CE0A21EEE4290001C43F3 /* ChatMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatMessages.m; sourceTree = "<group>"; };
 		167883A61EE1029900B106AD /* ChatBotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotViewController.h; sourceTree = "<group>"; };
@@ -395,6 +400,9 @@
 				16EDA5611F00934100906891 /* QuotesCollectionViewCell.h */,
 				16EDA5621F00934100906891 /* QuotesCollectionViewCell.m */,
 				16EDA5631F00934100906891 /* QuotesCollectionViewCell.xib */,
+				162856C81F1F08F200CE1327 /* RelaxingMusicViewController.h */,
+				162856C91F1F08F200CE1327 /* RelaxingMusicViewController.m */,
+				162856CA1F1F08F200CE1327 /* RelaxingMusicViewController.xib */,
 			);
 			name = "Inspirational Quotes";
 			sourceTree = "<group>";
@@ -933,6 +941,7 @@
 				1720A06F1EA9E82C009C2B87 /* HandStretchViewController.xib in Resources */,
 				17E0BB441EA41370001FC7F3 /* FunctionalMobilityViewController.xib in Resources */,
 				CC73E4421E842370001131AF /* Lato-Hairline.ttf in Resources */,
+				162856CC1F1F08F200CE1327 /* RelaxingMusicViewController.xib in Resources */,
 				17DE3D501EA9604900D350A1 /* ArmsAndHandsViewController.xib in Resources */,
 				17DE3D4B1EA95F2300D350A1 /* LegAndFeetViewController.xib in Resources */,
 				17E0BB351EA41201001FC7F3 /* StrengtheningViewController.xib in Resources */,
@@ -1064,6 +1073,7 @@
 				163CE0A31EEE4290001C43F3 /* ChatMessages.m in Sources */,
 				CCB7B40F1E94136C0058C32E /* RemindersViewController.m in Sources */,
 				CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */,
+				162856CB1F1F08F200CE1327 /* RelaxingMusicViewController.m in Sources */,
 				17DE3D4F1EA9604900D350A1 /* ArmsAndHandsViewController.m in Sources */,
 				CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */,
 				CC11D1381EB6B7BC0063E72A /* NoResultsTableViewCell.m in Sources */,
