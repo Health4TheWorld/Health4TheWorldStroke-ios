@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <GVRWidgetView.h>
 #import "GVRVideoViewManager.h"
-//#import <GVRVideoView.h>
 
 @interface VRViewController : UIViewController<GVRWidgetViewDelegate>
 @property (nonatomic) NSURL *videoURL;

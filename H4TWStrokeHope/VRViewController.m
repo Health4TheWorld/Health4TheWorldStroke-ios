@@ -11,7 +11,6 @@
 #import "Utils.h"
 
 @interface VRViewController ()
-//@property (strong, nonatomic) IBOutlet GVRVideoView *videoVRView;
 @property BOOL isPaused;
 @property CGFloat currentY;
 
@@ -39,28 +38,21 @@
 
 - (void) setUpView {
     
-   // self.videoVRView = [[GVRVideoView alloc] init];
     GVRVideoViewManager.sharedInstance.frame = CGRectMake(0, 94, 375, 210);
     
     // Set VR view delegate to self
-    //self.videoVRView.delegate = self;
     GVRVideoViewManager.sharedInstance.delegate = self;
     
     // Enable both cardboard button and fullscreen mode button
-    //self.videoVRView.enableCardboardButton = true;
-    //self.videoVRView.enableFullscreenButton = true;
-    //self.videoVRView.enableTouchTracking = true;
     
     GVRVideoViewManager.sharedInstance.enableCardboardButton = true;
     GVRVideoViewManager.sharedInstance.enableFullscreenButton = true;
     GVRVideoViewManager.sharedInstance.enableTouchTracking = true;
     
     // Hide the contents until the view loads fully
-    //self.videoVRView.hidden = true;
     
     self.isPaused = YES;
-    
-    //[self.videoVRView loadFromUrl: self.videoURL];
+
     [GVRVideoViewManager.sharedInstance loadFromUrl: self.videoURL];
     
     [self.view addSubview: GVRVideoViewManager.sharedInstance];
@@ -111,11 +103,7 @@
 
 -(void) widgetView:(GVRWidgetView *)widgetView didLoadContent:(id)content{
     NSLog(@"Finished loading video");
-    //if(content == self.videoURL){
-      //  self.videoVRView.hidden = false;
-    //}
-    
-    //[self.videoVRView play];
+
     [GVRVideoViewManager.sharedInstance play];
     self.isPaused = NO;
 }
@@ -132,20 +120,14 @@
 - (void) widgetViewDidTap:(GVRWidgetView *)widgetView {
     // Action for when the GVR View is tapped
     if (self.isPaused) {
-        //[self.videoVRView play];
         [GVRVideoViewManager.sharedInstance play];
     } else {
-        //[self.videoVRView pause];
         [GVRVideoViewManager.sharedInstance pause];
     }
     self.isPaused = !self.isPaused;
 }
 
 - (void)videoView:(GVRVideoView*)videoView didUpdatePosition:(NSTimeInterval)position {
-    // Loop the video when it reaches the end.
-    //if (position == self.videoVRView.duration) {
-        //[self.videoVRView seekTo:0];
-        //[self.videoVRView play];
     if (position == GVRVideoViewManager.sharedInstance.duration){
         [GVRVideoViewManager.sharedInstance seekTo: 0];
         [GVRVideoViewManager.sharedInstance play];

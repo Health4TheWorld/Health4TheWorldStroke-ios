@@ -60,21 +60,21 @@
     
     /* Functional Mobility buttons*/
     
-    HomeButton *a4Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"FunctionalMobility.bridgeHipLift", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *a4Button = [[HomeButton alloc] initWithText: FUNCTIONALMOBILITY_4A_BRIDGE_HIP_LIFT withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [a4Button addRoundImageCentered:[UIImage imageNamed:FUNCTIONALMOBILITY_4A]];
     [a4Button addTarget:self action:@selector(a4Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *b4Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"FunctionalMobility.armTrunkStrengthening", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *b4Button = [[HomeButton alloc] initWithText: FUNCTIONALMOBILITY_4B_ARM_AND_TRUNK_STRENGTHENING withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [b4Button addRoundImageCentered:[UIImage imageNamed:FUNCTIONALMOBILITY_4B]];
     [b4Button addTarget:self action:@selector(b4Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *c4Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"FunctionalMobility.sitToStand", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *c4Button = [[HomeButton alloc] initWithText: FUNCTIONALMOBILITY_4C_SIT_TO_STAND withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [c4Button addRoundImageCentered:[UIImage imageNamed:FUNCTIONALMOBILITY_4C]];
     [c4Button addTarget:self action:@selector(c4Pressed) forControlEvents:UIControlEventTouchUpInside];
     
@@ -102,18 +102,21 @@
 
 - (void)a4Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
+    videoVC.title = FUNCTIONALMOBILITY_4A_BRIDGE_HIP_LIFT;
     [videoVC setUpVideo: VIDEO_4A_BRIDGE_HIP_LIFT];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
 - (void)b4Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
+    videoVC.title = FUNCTIONALMOBILITY_4B_ARM_AND_TRUNK_STRENGTHENING;
     [videoVC setUpVideo: VIDEO_4B_ARM_AND_STRENGTHENING];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
 - (void)c4Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
+    videoVC.title = FUNCTIONALMOBILITY_4C_SIT_TO_STAND;
     [videoVC setUpVideo: VIDEO_4C_SIT_TO_STAND];
     [self.navigationController pushViewController:videoVC animated:YES];
 }

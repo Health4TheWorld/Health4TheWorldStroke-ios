@@ -80,6 +80,20 @@
 "Strenghtening.legs" = "Legs";
 "Strengthening.arms" = "Arms";
 "Strengthening.coordination" = "Coordination";
+/* LEGS VIEW CONTROLLER */
+"Legs.toe" = "Toe Flexion";
+"Legs.knee" = "Knee Flexion";
+"Legs.hip" = "Hip Flexion";
+
+/* ARMS VIEW CONTROLLER */
+"Arms.elbow" = "Elbow Flexion";
+"Arms.shoulder" = "Shoulder Flexion";
+
+/* COORDINATION VIEW CONTROLLER */
+"Coordination.legControl1" = "Leg Control 1";
+"Coordination.legControl2" = "Leg Control 2";
+
+
 
 /* STRETCHING VIEW CONTROLLER */
 "Stretching.title" = "Stretching";
@@ -302,6 +316,9 @@
 "AboutUs.lorenWard" = "Loren Ward, PT, DPT is licensed Physical Therapist who began her career in Physical Therapy in 2007, while earning her Doctorate at MGH Institute of Health Professions in Massachusetts. She did internships at Rehabilitation of Chicago, Spaulding Rehabilitation and National Rehabilitation Hospital and now works at Stanford Veteran’s Affairs System. Loren is an advocate of functional independence and strives to help her patients reach their own level of independence regardless of their limitations.";
 "AboutUs.roseHamm" = "Rose Hamm, PT, DPT, CWS, FACCWS: Rose received a BS in Physical Therapy from the University of North Carolina, Chapel Hill, and an MS and post-graduate DPT from the University of Southern California.  She is currently Adjunct Assistant Professor of Clinical Physical Therapy at the University of Southern California and practices at Keck Hospital at USC.";
 
+
+/* Quotes Section */
+"Quotes.title" = "Today's Inspirational Quote";
 /* TERMS OF USE */
 "Terms.thankYouParOne" = "These terms and conditions of use (\"Terms\") are an agreement between Health4TheWorld (the “Health4TheWorld,” “we,” “us,” or “our”) and you (either you as an individual or the entity or organization on whose behalf you are entering into these terms and conditions) for access to and use of this website, which includes, media, documentation, pictures and other content, (collectively, the \"Website\"), as well as for access to and use of any products, services, and downloadable applications provided by Health4TheWorld (the “Services”). Please read these Terms carefully, and contact us at contact@health4theworld.org for any questions. Our Services also include downloadable applications, cloud-based applications, mobile and desktop applications, and applications in which our content is distributed via third-party sites.";
 "Terms.thankYouParTwo" = "BY COPYING, DOWNLOADING OR OTHERWISE ACCESSING OR USING THE WEBSITE, APP OR SERVICES, YOU AGREE TO BE BOUND BY THESE TERMS, INCLUDING THE WARRANTY DISCLAIMERS AND LIMITATION OF LIABILITY PROVISIONS BELOW. IF YOU DO NOT UNDERSTAND OR AGREE TO THESE TERMS, DO NOT ACCESS OR USE THE WEBSITE OR SERVICES AND PLEASE EXIT THE WEBSITE NOW.";
@@ -418,4 +435,5 @@
 "Terms.honorCodeBulletTwo" = "My answers to quizzes, exams, projects, and other assignments will be my own work (except for assignments that explicitly permit collaboration).";
 "Terms.honorCodeBulletThree" = "I will not make solutions to quizzes, exams, projects, and other assignments available to anyone else (except to the extent an assignment explicitly permits sharing solutions). This includes both solutions written by me, as well as any solutions provided by the course staff or others.";
 "Terms.honorCodeBulletFour" = "I will not engage in any other activities that will dishonestly improve my results or dishonestly improve or hurt the results of others.";
+>>>>>>> master
 
