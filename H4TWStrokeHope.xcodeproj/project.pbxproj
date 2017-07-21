@@ -15,6 +15,8 @@
 		167883AF1EE25EED00B106AD /* GVRVideoViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883AE1EE25EED00B106AD /* GVRVideoViewManager.m */; };
 		168389811EC66D8F007D15C6 /* VRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683897F1EC66D8F007D15C6 /* VRViewController.m */; };
 		168389821EC66D8F007D15C6 /* VRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 168389801EC66D8F007D15C6 /* VRViewController.xib */; };
+		16AADA781F219CBD00D8A8EB /* RelaxingMusicViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AADA761F219CBD00D8A8EB /* RelaxingMusicViewCell.m */; };
+		16AADA791F219CBD00D8A8EB /* RelaxingMusicViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16AADA771F219CBD00D8A8EB /* RelaxingMusicViewCell.xib */; };
 		16C3C37C1EEA37EF005991D5 /* ChatBotViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C3C37A1EEA37EF005991D5 /* ChatBotViewCell.m */; };
 		16C3C37D1EEA37EF005991D5 /* ChatBotViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C3C37B1EEA37EF005991D5 /* ChatBotViewCell.xib */; };
 		16DFC0C41EC7F2D3007322BF /* Bells.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 16DFC0C31EC7F2D3007322BF /* Bells.mp4 */; };
@@ -168,6 +170,9 @@
 		1683897E1EC66D8F007D15C6 /* VRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRViewController.h; sourceTree = "<group>"; };
 		1683897F1EC66D8F007D15C6 /* VRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRViewController.m; sourceTree = "<group>"; };
 		168389801EC66D8F007D15C6 /* VRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRViewController.xib; sourceTree = "<group>"; };
+		16AADA751F219CBD00D8A8EB /* RelaxingMusicViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelaxingMusicViewCell.h; sourceTree = "<group>"; };
+		16AADA761F219CBD00D8A8EB /* RelaxingMusicViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelaxingMusicViewCell.m; sourceTree = "<group>"; };
+		16AADA771F219CBD00D8A8EB /* RelaxingMusicViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RelaxingMusicViewCell.xib; sourceTree = "<group>"; };
 		16C3C3791EEA37EF005991D5 /* ChatBotViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotViewCell.h; sourceTree = "<group>"; };
 		16C3C37A1EEA37EF005991D5 /* ChatBotViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBotViewCell.m; sourceTree = "<group>"; };
 		16C3C37B1EEA37EF005991D5 /* ChatBotViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatBotViewCell.xib; sourceTree = "<group>"; };
@@ -403,6 +408,9 @@
 				162856C81F1F08F200CE1327 /* RelaxingMusicViewController.h */,
 				162856C91F1F08F200CE1327 /* RelaxingMusicViewController.m */,
 				162856CA1F1F08F200CE1327 /* RelaxingMusicViewController.xib */,
+				16AADA751F219CBD00D8A8EB /* RelaxingMusicViewCell.h */,
+				16AADA761F219CBD00D8A8EB /* RelaxingMusicViewCell.m */,
+				16AADA771F219CBD00D8A8EB /* RelaxingMusicViewCell.xib */,
 			);
 			name = "Inspirational Quotes";
 			sourceTree = "<group>";
@@ -970,6 +978,7 @@
 				1737A19C1EA897CF00C6D71E /* 2BShoulderFlexion.m4v in Resources */,
 				CC11D12A1EB650150063E72A /* AddReminderTitleViewController.xib in Resources */,
 				1737A19A1EA8977300C6D71E /* 1CHipFlexion.m4v in Resources */,
+				16AADA791F219CBD00D8A8EB /* RelaxingMusicViewCell.xib in Resources */,
 				16EDA5651F00934100906891 /* QuotesCollectionViewCell.xib in Resources */,
 				1737A19F1EA897DB00C6D71E /* 4ABridgeHipLift.m4v in Resources */,
 				17E0BB3A1EA4125E001FC7F3 /* CoordinationViewController.xib in Resources */,
@@ -1080,6 +1089,7 @@
 				CC3CB6481EA11EC800CA9429 /* LearnContentViewController.m in Sources */,
 				16EDA5641F00934100906891 /* QuotesCollectionViewCell.m in Sources */,
 				17E0BB3E1EA4127D001FC7F3 /* StretchingViewController.m in Sources */,
+				16AADA781F219CBD00D8A8EB /* RelaxingMusicViewCell.m in Sources */,
 				CC11D1451EB6E7D00063E72A /* TimeTableViewCell.m in Sources */,
 				1720A0781EA9E85D009C2B87 /* ArmStretchViewController.m in Sources */,
 				CCB7B3FD1E9412510058C32E /* HelpMeSpeakViewController.m in Sources */,

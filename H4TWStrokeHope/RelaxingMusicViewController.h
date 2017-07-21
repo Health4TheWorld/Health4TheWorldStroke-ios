@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RelaxingMusicViewController : UIViewController
+
+@interface RelaxingMusicViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @end

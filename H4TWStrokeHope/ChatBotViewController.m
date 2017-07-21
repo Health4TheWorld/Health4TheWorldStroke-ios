@@ -13,6 +13,7 @@
 #import "MindExercisesViewController.h"
 #import "QuotesViewController.h"
 #import "ExercisesViewController.h"
+#import "RelaxingMusicViewController.h"
 
 @interface ChatBotViewController ()
 
@@ -576,7 +577,9 @@ NSMutableArray *messages;
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (void) lonely2ButtonPressed {
-    [self customAlertMessageWithTitle:@"Music" withMessage:@"Music section Coming soon!"];
+    //[self customAlertMessageWithTitle:@"Music" withMessage:@"Music section Coming soon!"];
+    RelaxingMusicViewController *vc = [[RelaxingMusicViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (void) lonely3ButtonPressed {
     QuotesViewController *vc = [[QuotesViewController alloc] init];
