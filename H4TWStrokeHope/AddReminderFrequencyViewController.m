@@ -314,8 +314,12 @@
     self.dailyTabBar.hidden = YES;
     self.weeklyTabBar.hidden = YES;
     self.customTabBar.hidden = NO;
-    self.oneTimeReminderSwitch.hidden = NO;
-    self.oneTimeReminderLabel.hidden = NO;
+    /* TO DO: uncomment out two lines below to show switch */
+//    self.oneTimeReminderSwitch.hidden = NO;
+//    self.oneTimeReminderLabel.hidden = NO;
+    /* TO DO: delete two lines below to show switch */
+    self.oneTimeReminderSwitch.hidden = YES;
+    self.oneTimeReminderLabel.hidden = YES;
     
     [self markWeekButtonUnselected:self.sundayButton];
     [self markWeekButtonUnselected:self.mondayButton];
