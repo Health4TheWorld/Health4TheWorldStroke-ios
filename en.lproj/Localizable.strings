@@ -319,6 +319,10 @@
 
 /* Quotes Section */
 "Quotes.title" = "Today's Inspirational Quote";
+
+/* Relaxing Music Section */
+"Music.title" = "Relaxing Music";
+
 /* TERMS OF USE */
 "Terms.thankYouParOne" = "These terms and conditions of use (\"Terms\") are an agreement between Health4TheWorld (the “Health4TheWorld,” “we,” “us,” or “our”) and you (either you as an individual or the entity or organization on whose behalf you are entering into these terms and conditions) for access to and use of this website, which includes, media, documentation, pictures and other content, (collectively, the \"Website\"), as well as for access to and use of any products, services, and downloadable applications provided by Health4TheWorld (the “Services”). Please read these Terms carefully, and contact us at contact@health4theworld.org for any questions. Our Services also include downloadable applications, cloud-based applications, mobile and desktop applications, and applications in which our content is distributed via third-party sites.";
 "Terms.thankYouParTwo" = "BY COPYING, DOWNLOADING OR OTHERWISE ACCESSING OR USING THE WEBSITE, APP OR SERVICES, YOU AGREE TO BE BOUND BY THESE TERMS, INCLUDING THE WARRANTY DISCLAIMERS AND LIMITATION OF LIABILITY PROVISIONS BELOW. IF YOU DO NOT UNDERSTAND OR AGREE TO THESE TERMS, DO NOT ACCESS OR USE THE WEBSITE OR SERVICES AND PLEASE EXIT THE WEBSITE NOW.";

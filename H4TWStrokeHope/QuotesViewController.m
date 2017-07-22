@@ -15,6 +15,7 @@
 @property (nonatomic,strong) NSArray *quotesArray;
 @property (strong, nonatomic) IBOutlet UIImageView *bgImage;
 @property (strong, nonatomic) IBOutlet UILabel *quoteLabel;
+@property (nonatomic, retain) NSString *currentDate;
 
 @end
 
@@ -49,6 +50,8 @@ static NSString * const reuseIdentifier = @"QuotesCell";
     
     
     // Randomly pick an URL.
+    [self randomizer];
+    
     NSString *quoteToDisplay = @"%22An+unexaminced+life%22.png";
     NSString *urlForQuotesArray = [NSString stringWithFormat:@"https://s3-us-west-1.amazonaws.com/h4twappquotes/%@", quoteToDisplay];
     
@@ -56,9 +59,15 @@ static NSString * const reuseIdentifier = @"QuotesCell";
     
     // Set the resulting URL
     self.quotesArray = @[urlForQuotesArray];
+
     
-//    self.bgImage.image = [UIImage imageNamed: BG_IMAGE_NAME];
-    
+}
+// method to randomize quote based on current date
+-(void) randomizer{
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"dd-MM-yyyy"];
+    self.currentDate = [df stringFromDate:[NSDate date]];
+    NSLog(@"%@", self.currentDate);
 }
 
 - (void)backPressed {

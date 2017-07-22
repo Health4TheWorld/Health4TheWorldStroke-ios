@@ -13,6 +13,7 @@
 @interface VideoViewController : UIViewController
 
 - (void)setUpVideo: (NSString *) videoName;
+- (void) videoPlayerSetup: (NSURL *) url;
 
 - (AVPlayerViewController *)setUpCustomVideo: (NSString *) videoName withFrame: (CGRect *) frame;
 

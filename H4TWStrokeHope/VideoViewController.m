@@ -42,11 +42,15 @@
     // Set URL to the video
     NSURL *url = [[NSBundle mainBundle] URLForResource:videoName withExtension:nil];
 
+    [self videoPlayerSetup:url];
+}
+
+-(void) videoPlayerSetup: (NSURL *) url{
     // Create an AVPlayer Item
     AVPlayerItem *video = [[AVPlayerItem alloc] initWithURL:url];
     
     //Create a AVplayer Queue
-      self.queue = [[AVQueuePlayer alloc] init];
+    self.queue = [[AVQueuePlayer alloc] init];
     [self.queue insertItem:video afterItem:nil];
     
     self.player = self.queue;

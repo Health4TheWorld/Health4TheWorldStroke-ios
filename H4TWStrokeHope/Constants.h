@@ -194,6 +194,9 @@
 #define QUOTES_IMAGE4 @"assembly4"
 #define QUOTES_IMAGE5 @"assembly5"
 
+/* Relaxing Music Section*/
+#define MUSIC_LABEL NSLocalizedString(@"Music.title", nil)
+
 
 /* STRINGS */
 #define ABOUT_US_SECTION_TITLE NSLocalizedString(@"GeneralInfo.aboutUs", nil)
