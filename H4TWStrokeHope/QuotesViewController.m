@@ -68,7 +68,6 @@ static NSString * const reuseIdentifier = @"QuotesCell";
     
     // Set the resulting URL
     self.quotesArray = @[urlForQuotesArray];
-
     
 }
 // method to randomize quote based on current date

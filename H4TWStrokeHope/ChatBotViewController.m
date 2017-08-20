@@ -160,6 +160,9 @@ NSMutableArray *messages;
     [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(handleKeyboardNotification:) name: UIKeyboardWillHideNotification object:nil];
     
     [self.collectionView setContentInset: UIEdgeInsetsMake(0, 0, 100, 0)];
+    
+    //Initiate welcome message
+    [self initiateWelcomeMessage];
 }
 
 - (void)backPressed {
@@ -169,7 +172,7 @@ NSMutableArray *messages;
 - (void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     //Initiate welcome message
-    [self initiateWelcomeMessage];
+    //[self initiateWelcomeMessage];
     [self.collectionView reloadData];
 }
 
