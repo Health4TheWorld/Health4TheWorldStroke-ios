@@ -22,7 +22,7 @@
     // Set up message view
     self.messageView = [[UITextView alloc] init];
     self.messageView.backgroundColor = [UIColor clearColor];
-    self.messageView.font = [UIFont systemFontOfSize:14];
+    self.messageView.font = [UIFont systemFontOfSize:15];
     self.messageView.textColor = [UIColor blackColor];
     self.messageView.editable = false;
     

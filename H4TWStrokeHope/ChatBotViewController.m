@@ -38,7 +38,7 @@
 #define FEELING_BUTTON3 @"Anxious?"
 #define FEELING_BUTTON4 @"Depressed?"
 #define FEELING_BUTTON5 @"Can't Sleep?"
-#define FEELING_BUTTON6 @"Feeling Fatigue or tired?"
+#define FEELING_BUTTON6 @"Feeling tired?"
 #define FEELING_MESSAGE1 @"Lonely"
 #define FEELING_MESSAGE2 @"recovery"
 #define FEELING_MESSAGE3 @"anxious"
@@ -265,14 +265,14 @@ NSMutableArray *messages;
     //Horizontal Constraints
     
     NSDictionary *viewsIconsButton = @{ @"icon1" : self.icon1, @"icon2" : self.icon2 ,@"icon3" : self.icon3, @"icon4" : self.icon4, @"icon5" : self.icon5};
-    [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-72-[icon1(30)]-20-[icon2(30)]-20-[icon3(30)]-20-[icon4(30)]-20-[icon5(30)]-73-|" options:0 metrics:nil views: viewsIconsButton]];
+    [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-1-[icon1(60)]-20-[icon2(60)]-20-[icon3(60)]-20-[icon4(60)]-20-[icon5(60)]-1-|" options:0 metrics:nil views: viewsIconsButton]];
     
     //Vertical Constraints
-      [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon1(30)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
-     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon2(30)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
-     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon3(30)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
-     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon4(30)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
-     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon5(30)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
+      [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon1(60)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
+     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon2(60)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
+     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon3(60)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
+     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon4(60)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
+     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon5(60)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
     }
     else{
         [self.icon1 setHidden:false];
@@ -282,7 +282,7 @@ NSMutableArray *messages;
         [self.icon5 setHidden:false];
     }
     
-     self.heightConstraint.constant = 50;
+     self.heightConstraint.constant = 80;
         
 }
 
@@ -539,6 +539,7 @@ NSMutableArray *messages;
 - (UIButton*) createButton: (UIButton*) button withTitle: (NSString*) title {
     button = [UIButton buttonWithType: UIButtonTypeSystem];
     [button setTitle: title forState:UIControlStateNormal];
+    [button.titleLabel setFont:[UIFont systemFontOfSize:16]];
     button.layer.cornerRadius = 6;
     button.clipsToBounds = YES;
     button.translatesAutoresizingMaskIntoConstraints = false;
@@ -754,7 +755,7 @@ UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
         
         CGSize size = CGSizeMake(250, 1000);
         NSStringDrawingOptions options = NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin;
-        NSDictionary *attributes = @{ NSFontAttributeName : [UIFont systemFontOfSize:14] };
+        NSDictionary *attributes = @{ NSFontAttributeName : [UIFont systemFontOfSize:16] };
         CGSize estimatedFrame = [message.text boundingRectWithSize:size options: options attributes:attributes context: nil].size;
         int padding = 20;
         int profileImageSpace = 45;
@@ -801,7 +802,7 @@ UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
     if(message){
         CGSize size = CGSizeMake(250, 1000);
        NSStringDrawingOptions options = NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin;
-        NSDictionary *attributes = @{ NSFontAttributeName : [UIFont systemFontOfSize:14] };
+        NSDictionary *attributes = @{ NSFontAttributeName : [UIFont systemFontOfSize:16] };
         CGSize estimatedFrame  = [message.text boundingRectWithSize:size options: options attributes:attributes context: nil].size;
         int padding = 20;
         
