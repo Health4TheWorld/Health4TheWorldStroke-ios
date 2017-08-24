@@ -13,7 +13,7 @@
 
 @interface RelaxingMusicViewController ()
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (strong, nonatomic) IBOutlet UILabel *musicLabel;
+//@property (strong, nonatomic) IBOutlet UILabel *musicLabel;
 @property NSArray *musicURLArray;
 @property NSArray *musicLabelArray;
 
@@ -38,7 +38,7 @@ static NSString * const reuseIdentifier = @"RelaxingMusicCell";
     self.navigationItem.leftBarButtonItem = backButton;
     
     // QUote Label
-    self.musicLabel.text = MUSIC_LABEL;
+    //self.musicLabel.text = MUSIC_LABEL;
     
     [self setupView];
 }
@@ -47,8 +47,8 @@ static NSString * const reuseIdentifier = @"RelaxingMusicCell";
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     [self.collectionView registerNib:[UINib nibWithNibName:@"RelaxingMusicViewCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
-    self.view.backgroundColor = [UIColor whiteColor];
-   // self.collectionView.backgroundColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    self.collectionView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed: @"Patagonia.jpg"]];
     
     
     //setup array values by looping through all the values in the URl array
