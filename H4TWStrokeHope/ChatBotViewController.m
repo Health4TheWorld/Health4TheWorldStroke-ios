@@ -24,7 +24,7 @@
 #define YES_BUTTON @"YES"
 #define LONELY_BUTTON1 @"Watch 360 videos"
 #define LONELY_BUTTON2 @"Listen to music"
-#define LONELY_BUTTON3 @"Today's Inspiring quotes"
+#define LONELY_BUTTON3 @"Inspiring quotes"
 #define LONELY_BUTTON4 @"Stroke exercise video"
 #define LONELY_BUTTON5 @"Get tips to tackle this"
 #define TIPS_INTENT_TEXT @"know more"
@@ -38,7 +38,7 @@
 #define FEELING_BUTTON3 @"Anxious?"
 #define FEELING_BUTTON4 @"Depressed?"
 #define FEELING_BUTTON5 @"Can't Sleep?"
-#define FEELING_BUTTON6 @"Feeling Fatigue or tired?"
+#define FEELING_BUTTON6 @"Feeling tired?"
 #define FEELING_MESSAGE1 @"Lonely"
 #define FEELING_MESSAGE2 @"recovery"
 #define FEELING_MESSAGE3 @"anxious"
@@ -160,6 +160,9 @@ NSMutableArray *messages;
     [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(handleKeyboardNotification:) name: UIKeyboardWillHideNotification object:nil];
     
     [self.collectionView setContentInset: UIEdgeInsetsMake(0, 0, 100, 0)];
+    
+    //Initiate welcome message
+    [self initiateWelcomeMessage];
 }
 
 - (void)backPressed {
@@ -169,7 +172,7 @@ NSMutableArray *messages;
 - (void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     //Initiate welcome message
-    [self initiateWelcomeMessage];
+    //[self initiateWelcomeMessage];
     [self.collectionView reloadData];
 }
 
@@ -262,14 +265,14 @@ NSMutableArray *messages;
     //Horizontal Constraints
     
     NSDictionary *viewsIconsButton = @{ @"icon1" : self.icon1, @"icon2" : self.icon2 ,@"icon3" : self.icon3, @"icon4" : self.icon4, @"icon5" : self.icon5};
-    [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-72-[icon1(30)]-20-[icon2(30)]-20-[icon3(30)]-20-[icon4(30)]-20-[icon5(30)]-73-|" options:0 metrics:nil views: viewsIconsButton]];
+    [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-1-[icon1(60)]-20-[icon2(60)]-20-[icon3(60)]-20-[icon4(60)]-20-[icon5(60)]-1-|" options:0 metrics:nil views: viewsIconsButton]];
     
     //Vertical Constraints
-      [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon1(30)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
-     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon2(30)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
-     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon3(30)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
-     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon4(30)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
-     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon5(30)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
+      [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon1(60)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
+     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon2(60)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
+     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon3(60)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
+     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon4(60)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
+     [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon5(60)]-10-|" options:0 metrics:nil views: viewsIconsButton]];
     }
     else{
         [self.icon1 setHidden:false];
@@ -279,7 +282,7 @@ NSMutableArray *messages;
         [self.icon5 setHidden:false];
     }
     
-     self.heightConstraint.constant = 50;
+     self.heightConstraint.constant = 80;
         
 }
 
@@ -312,11 +315,11 @@ NSMutableArray *messages;
         // Constraints
         NSDictionary *viewsfeelingButtons = @{ @"feelingOption1" : self.feelingOption1, @"feelingOption2" : self.feelingOption2 ,@"feelingOption3" : self.feelingOption3, @"feelingOption4" : self.feelingOption4, @"feelingOption5" : self.feelingOption5, @"feelingOption6" : self.feelingOption6 };
         
-        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[feelingOption2]-10-[feelingOption4]-10-[feelingOption6]-10-|" options:0 metrics:nil views: viewsfeelingButtons]];
-        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[feelingOption1]-10-[feelingOption3]-10-[feelingOption5]-10-|" options:0 metrics:nil views: viewsfeelingButtons]];
-        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[feelingOption1(170)]-20-[feelingOption2]-10-|" options:0 metrics:nil views: viewsfeelingButtons]];
-        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[feelingOption3(170)]-20-[feelingOption4]-10-|" options:0 metrics:nil views: viewsfeelingButtons]];
-        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[feelingOption5(170)]-20-[feelingOption6]-10-|" options:0 metrics:nil views: viewsfeelingButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[feelingOption2(40)]-10-[feelingOption4(40)]-10-[feelingOption6(40)]-10-|" options:0 metrics:nil views: viewsfeelingButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[feelingOption1(40)]-10-[feelingOption3(40)]-10-[feelingOption5(40)]-10-|" options:0 metrics:nil views: viewsfeelingButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[feelingOption1(170)]-10-[feelingOption2]-10-|" options:0 metrics:nil views: viewsfeelingButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[feelingOption3(170)]-10-[feelingOption4]-10-|" options:0 metrics:nil views: viewsfeelingButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[feelingOption5(170)]-10-[feelingOption6]-10-|" options:0 metrics:nil views: viewsfeelingButtons]];
         
     }else{
         [self.feelingOption1 setHidden:false];
@@ -327,7 +330,7 @@ NSMutableArray *messages;
         [self.feelingOption6 setHidden:false];
     }
     
-    self.heightConstraint.constant = 130;
+    self.heightConstraint.constant = 160;
     
     [self.yesButton setHidden:true];
     [self.noButton setHidden:true];
@@ -361,11 +364,11 @@ NSMutableArray *messages;
         
         NSDictionary *viewsLonelyButtons = @{ @"lonely1" : self.lonelyOption1, @"lonely3" : self.lonelyOption3 ,@"lonely5" : self.lonelyOption5, @"lonely2" : self.lonelyOption2, @"lonely4" : self.lonelyOption4 ,@"exit" : self.exitButton};
         
-        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[lonely2]-10-[lonely4]-10-[exit]-10-|" options:0 metrics:nil views: viewsLonelyButtons]];
-        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[lonely1]-10-[lonely3]-10-[lonely5]-10-|" options:0 metrics:nil views: viewsLonelyButtons]];
-        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[lonely1(170)]-20-[lonely2]-10-|" options:0 metrics:nil views: viewsLonelyButtons]];
-        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[lonely3(170)]-20-[lonely4]-10-|" options:0 metrics:nil views: viewsLonelyButtons]];
-        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[lonely5(170)]-20-[exit]-10-|" options:0 metrics:nil views: viewsLonelyButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[lonely2(40)]-10-[lonely4(40)]-10-[exit(40)]-10-|" options:0 metrics:nil views: viewsLonelyButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[lonely1(40)]-10-[lonely3(40)]-10-[lonely5(40)]-10-|" options:0 metrics:nil views: viewsLonelyButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[lonely1(170)]-10-[lonely2]-10-|" options:0 metrics:nil views: viewsLonelyButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[lonely3(170)]-10-[lonely4]-10-|" options:0 metrics:nil views: viewsLonelyButtons]];
+        [self.containerView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-10-[lonely5(170)]-10-[exit]-10-|" options:0 metrics:nil views: viewsLonelyButtons]];
         
     }else{
         [self.lonelyOption1 setHidden:false];
@@ -376,7 +379,7 @@ NSMutableArray *messages;
         [self.exitButton setHidden:false];
     }
     
-    self.heightConstraint.constant = 130;
+    self.heightConstraint.constant = 160;
     
     
     [self.yesButton setHidden:true];
@@ -536,6 +539,7 @@ NSMutableArray *messages;
 - (UIButton*) createButton: (UIButton*) button withTitle: (NSString*) title {
     button = [UIButton buttonWithType: UIButtonTypeSystem];
     [button setTitle: title forState:UIControlStateNormal];
+    [button.titleLabel setFont:[UIFont systemFontOfSize:17]];
     button.layer.cornerRadius = 6;
     button.clipsToBounds = YES;
     button.translatesAutoresizingMaskIntoConstraints = false;
@@ -751,7 +755,7 @@ UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
         
         CGSize size = CGSizeMake(250, 1000);
         NSStringDrawingOptions options = NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin;
-        NSDictionary *attributes = @{ NSFontAttributeName : [UIFont systemFontOfSize:14] };
+        NSDictionary *attributes = @{ NSFontAttributeName : [UIFont systemFontOfSize:16] };
         CGSize estimatedFrame = [message.text boundingRectWithSize:size options: options attributes:attributes context: nil].size;
         int padding = 20;
         int profileImageSpace = 45;
@@ -798,7 +802,7 @@ UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
     if(message){
         CGSize size = CGSizeMake(250, 1000);
        NSStringDrawingOptions options = NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin;
-        NSDictionary *attributes = @{ NSFontAttributeName : [UIFont systemFontOfSize:14] };
+        NSDictionary *attributes = @{ NSFontAttributeName : [UIFont systemFontOfSize:16] };
         CGSize estimatedFrame  = [message.text boundingRectWithSize:size options: options attributes:attributes context: nil].size;
         int padding = 20;
         

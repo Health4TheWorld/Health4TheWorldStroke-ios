@@ -18,7 +18,7 @@
 
 -(void) setupView{
     self.imageView = [[UIImageView alloc] init];
-    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    self.imageView.contentMode = UIViewContentModeScaleAspectFill;
     self.imageView.layer.masksToBounds =true;
     [self addSubview:self.imageView];
     
