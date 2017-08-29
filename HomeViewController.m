@@ -96,7 +96,7 @@
     [self.contentView addSubview:remindersButton];
     [self.contentView addSubview:generalInfoButton];
     [self.contentView addSubview:surveysButton];
-    [self.contentView addSubview:chatBotButton];
+    //[self.contentView addSubview:chatBotButton];   remove temporarily
 
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
 }
