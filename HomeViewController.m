@@ -72,9 +72,9 @@
     startingY += cellWidth;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *generalInfoButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.generalInfo", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
-    [generalInfoButton addImageCentered:[UIImage imageNamed:GENERAL_INFO_ICON]];
-    [generalInfoButton addTarget:self action:@selector(generalInfoPressed) forControlEvents:UIControlEventTouchUpInside];
+    HomeButton *chatBotButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.chatBot", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
+    [chatBotButton addImageCentered:[UIImage imageNamed:CHATBOT_ICON]];
+    [chatBotButton addTarget:self action:@selector(chatBotPressed) forControlEvents:UIControlEventTouchUpInside];
     
     HomeButton *surveysButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.surveys", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
     [surveysButton addImageBottomRight:[UIImage imageNamed:SURVEYS_ICON]];
@@ -83,10 +83,10 @@
     startingY += cellWidth;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *chatBotButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.chatBot", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2), cellWidth)];
-    [chatBotButton addImageCentered:[UIImage imageNamed:CHATBOT_ICON]];
-    [chatBotButton addTarget:self action:@selector(chatBotPressed) forControlEvents:UIControlEventTouchUpInside];
-    
+    HomeButton *generalInfoButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.generalInfo", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2), cellWidth)];
+    [generalInfoButton addImageCentered:[UIImage imageNamed:GENERAL_INFO_ICON]];
+    [generalInfoButton addTarget:self action:@selector(generalInfoPressed) forControlEvents:UIControlEventTouchUpInside];
+
     startingY += cellWidth;
     startingY += SPACE_BETWEEN_CELLS;
 
@@ -96,7 +96,7 @@
     [self.contentView addSubview:remindersButton];
     [self.contentView addSubview:generalInfoButton];
     [self.contentView addSubview:surveysButton];
-    //[self.contentView addSubview:chatBotButton];   remove temporarily
+    [self.contentView addSubview:chatBotButton];   
 
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
 }

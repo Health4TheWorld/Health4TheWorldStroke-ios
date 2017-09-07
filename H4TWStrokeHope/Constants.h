@@ -75,7 +75,7 @@
 #define BAD_FOOD @"BadFood"
 #define SMOKING_ICON @"SmokingIcon"
 #define SLEEP_ICON @"SleepIcon"
-#define CHATBOT_ICON @"ChatBotIcon"
+#define CHATBOT_ICON @"TalktoMeMale"
 // Premnath 
 #define STRONG_ARM_ICON @"StrongArmIcon"
 #define STRETCHING_ICON @"StretchingIcon"

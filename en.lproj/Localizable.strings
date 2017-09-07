@@ -39,7 +39,7 @@
 "Home.reminders" = "Reminders";
 "Home.generalInfo" = "General Info";
 "Home.surveys" = "Surveys";
-"Home.chatBot" = "ChatBot";
+"Home.chatBot" = "Talk to me!";
 
 /* HELP ME SPEAK VIEW CONTROLLER */
 "HelpMeSpeak.title" = "Help Me Speak";

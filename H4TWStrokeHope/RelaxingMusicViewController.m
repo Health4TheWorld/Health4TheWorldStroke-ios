@@ -75,7 +75,10 @@ static NSString * const reuseIdentifier = @"RelaxingMusicCell";
     RelaxingMusicViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier: reuseIdentifier forIndexPath:indexPath];
     //cell.backgroundColor = [UIColor redColor];
     
-   cell.imageView.image = [UIImage imageNamed:@"musicWAVImage"];
+    //NSURL *imageURL = [NSURL URLWithString:@"https://s3-us-west-1.amazonaws.com/h4twappquotes/%22The+best+preparation%22.png"];
+    //NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+    //cell.imageView.image = [UIImage imageWithData: imageData];
+    cell.imageView.image = [UIImage imageNamed:@"Playlist"];
    cell.label.text = [self.musicLabelArray objectAtIndex:indexPath.item];
     
     return cell;

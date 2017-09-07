@@ -22,7 +22,7 @@
     self.layer.cornerRadius = 15;
     
     self.imageView = [[UIImageView alloc] init];
-    self.imageView.contentMode = UIViewContentModeScaleAspectFill;
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     self.imageView.layer.masksToBounds =true;
     [self addSubview:self.imageView];
     
