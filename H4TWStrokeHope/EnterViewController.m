@@ -29,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     [self addBackgroundImage];
     
     [GraphicUtils styleButton:self.enterButton];

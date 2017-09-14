@@ -1,0 +1,434 @@
+/* 
+  Localizable.strings
+  H4TWStrokeHope
+
+  Created by Maitri on 5/6/17.
+  Copyright © 2017 Maitri. All rights reserved.
+*/
+
+
+/* DISCLAIMER */
+"Disclaimer.paragraphOne" = "這個軟件是為中風病人設計的教學工具，不旨在幫助建立任何病人與醫生之間的私人關系。";
+"Disclaimer.paragraphTwo" = "軟件內的指導方針均來自於專家建議，用於指導中風病人康復階段的自我管理和康復訓練。雖然我們講座內容均來自於最前沿的醫學論文，但是，無論是health4theworld，還是任何口頭或者書面參與材料編寫的個人，都不對內容的準確性和有效性負責。";
+"Disclaimer.paragraphThree" = "每個特定的情況都需要根據個人做判斷，這個軟件主要用於教學目的，並不是醫療指導。";
+"Disclaimer.paragraphFour" = "使用這款軟件的任何風險均由使用者個人承擔，Health4theworld和其他任何參與內容制定的個人均不為应用軟件使用過程中造成的人和物品的損傷和損失承擔任何責任。";
+"Disclaimer.paragraphFive" = "為了了解用戶的使用習慣和進度，軟件的使用記錄可能會被追蹤。";
+"Disclaimer.paragraphSix" = "點擊接受，表示您同意以上使用條款和保密協議。";
+//
+///* ENTER VIEW CONTROLLER */
+//"Enter.firstQuote" = "\"The best preparation for tomorrow is doing your best today.\"";
+//"Enter.secondQuote" = "\"Believe you can and you're halfway there.\"";
+//"Enter.thirdQuote" = "\"Nothing is impossible, the word itself says 'I'm possible'!\"";
+//"Enter.fourthQuote" = "\"Only I can change my life. No one can do it for me.\"";
+//"Enter.fifthQuote" = "\"Always do your best. What you plant now will harvest later.\"";
+//"Enter.sixthQuote" = "\"Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.\"";
+//"Enter.seventhQuote" = "\"Setting goals is the first step in turning the invisible into the visible.\"";
+
+"Enter.firstQuote" = "\"做好今天的自己是為明天的到來所做的最好的準備。\"";
+"Enter.firstAuthor" = " – H. Jackson Brown, Jr";
+"Enter.secondQuote" = "\"相信自己可以是成功的一半。\"";
+"Enter.secondAuthor" = "– Theodore Roosevelt";
+"Enter.thirdQuote" = "\"沒有什麽事情是不可能的，這個世界到處都是可能性!\"";
+"Enter.thirdAuthor" = "– Audrey Hepburn";
+"Enter.fourthQuote" = "\"只有我自己可以掌控自己的命運。Only I can change my life. No one can do it for me.\"";
+"Enter.fourthAuthor" = "– Carol Burnett";
+"Enter.fifthQuote" = "\" 做最好的自己，現在的耕耘會帶來今後的收獲。\"";
+"Enter.fifthAuthor" = "– Og Mandino";
+"Enter.sixthQuote" = "\"樂觀的態度會帶給你成功，沒有對未來的希望和信心，你將做不成任何事情。\"";
+"Enter.sixthAuthor" = "– Helen Keller";
+"Enter.seventhQuote" = "\"制定目標是願望成真的第一步。\"";
+"Enter.seventhAuthor" = "– Tony Robbins";
+"Enter.enterButton" = "進入";
+//
+///* HOME VIEW CONTROLLER */
+"Home.title" = "主界面";
+"Home.helpMeSpeak" = "我要說話";
+"Home.exercises" = "鍛煉";
+"Home.learn" = "學習";
+"Home.reminders" = "提醒";
+"Home.generalInfo" = "概況介紹";
+"Home.surveys" = "問卷";
+"Home.chatBot" = "聊天機器人";
+//
+///* HELP ME SPEAK VIEW CONTROLLER */
+"HelpMeSpeak.title" = "我要說話";
+"HelpMeSpeak.yes" = "是的";
+"HelpMeSpeak.no" = "不是";
+"HelpMeSpeak.thankYou" = "謝謝";
+"HelpMeSpeak.bathroom" = "我想上廁所";
+"HelpMeSpeak.water" = "我想喝水";
+"HelpMeSpeak.hungry" = "我餓了";
+"HelpMeSpeak.notGivingUp" = "我不想放棄";
+"HelpMeSpeak.pain" = "我感到疼痛";
+"HelpMeSpeak.cantSpeak" = "對不起，我沒辦法說話";
+"HelpMeSpeak.iLoveYou" = "我愛你";
+"HelpMeSpeak.imCold" = "我感到很冷";
+"HelpMeSpeak.imHot" = "我感到很熱";
+"HelpMeSpeak.dizzy" = "我有点暈眩";
+"HelpMeSpeak.lightsOn" = "開燈";
+"HelpMeSpeak.lightsOff" = "關燈";
+"HelpMeSpeak.getInBed" = "我想上床睡覺";
+"HelpMeSpeak.getOutOfBed" = "我想起床";
+"HelpMeSpeak.howAreYou" = "你好嗎";
+"HelpMeSpeak.ambulance" = "我需要叫救護車";
+"HelpMeSpeak.inALittle" = "In a little";
+"HelpMeSpeak.now" = "現在";
+"HelpMeSpeak.goOutside" = "我想出門";
+"HelpMeSpeak.sayHi" = "你好";
+//
+///* EXERCISES VIEW CONTROLLER */
+"Exercises.title" = "鍛煉";
+"Exercises.strengthening" = "強化";
+"Exercises.stretching" = "拉伸";
+"Exercises.functionalMobility" = "功能性移動";
+"Exercises.mindExercises" = "冥想練習";
+"Exercises.instructions" = "請每日重復做這些練習10次，如果有需要 ，可以在家人或者護理人的幫助下練習。在開始這項訓練之前，請咨詢你的醫生。";
+//
+///* STRENGTHENING VIEW CONTROLLER */
+"Strengthening.title" = "強化";
+"Strenghtening.legs" = "腿";
+"Strengthening.arms" = "手臂";
+"Strengthening.coordination" = "協調性";
+//
+///* STRETCHING VIEW CONTROLLER */
+"Stretching.title" = "拉伸";
+"Stretching.armsAndHands" = "手臂和手掌";
+"Stretching.legsAndFeet" = "腿和腳";
+"Stretching.handStretch" = "手掌拉伸";
+"Stretching.shoulderStretch" = "肩膀拉伸";
+"Stretching.armStretch" = "手臂拉伸";
+"Stretching.adductors" = "內轉肌肉練習";
+"Stretching.hamstrings" = "腿后腱練習";
+"Stretching.dorsiflexors" = "踝關節內翻練習";
+"Stretching.legStretch" = "腿部拉伸";
+"Stretching.kneeStretch" = "膝蓋拉伸";
+"Stretching.ankleStretch" = "腳踝拉伸";
+"Stretching.handStretch" = "手掌拉伸";
+"Stretching.adductorsInstructions" = "做这个练习的时候，你可以躺下，或者坐在一把平稳的椅子上。背靠在平面上，重复3次。";
+"Stretching.hamstringsInstructions" = "做這個練習的時候，你可以躺下或者坐在一把平穩的椅子上。躺下，先彎曲你的膝蓋，然後向上方伸直你的膝蓋保持30秒。";
+"Stretching.dorsiflexorsInstructions" = " 做這個練習的時候，你可以躺下或者坐在一把平穩的椅子上。向上抬起你的腿，使你的腿盡量靠近身體，停留30秒。重复三次。";
+"Stretching.handStretchInstructions" = "病人侧躺，不方便的那一侧面向上，手臂放在臀部上。手肘托住病人臀部，用你的另一只手扳动病人手腕，使手腕向后远离腹部。再把手腕放回原处。一只手托住手腕，另一只手打开病人的手指。当手腕抬起远离腹部的同时，打开病人手指。这个拉伸时间停留30秒，重複三次";
+"Stretching.shoulderStretchInstructions" = "病人側躺，把受影響的手臂放在臀部上。將病人肩膀抬起，使之靠近耳朵方向舉起，然後再輕輕的慢慢的放回起始點。";
+"Stretching.armStretchInstructions" = "病人側躺，把受影響的手臂放在臀部上。輕輕的把病人下手臂向腿部方向移動，停留30秒，重複三次。確保你穩住了病人肩膀，使之不會前傾。";
+//
+///* MIND EXERCISES VIEW CONTROLLER */
+"MindExercises.bellsInstructions" = "* 找一個舒適的姿勢坐好，微笑，深呼吸。\n* 注意力集中在宁静的环境和声音中。\n* 想象自己在這裡散步。\n* 拿起手機，享受眼前景色。Move the phone side ways to enjoy the view.\n*闭上眼睛，再次深呼吸。 \n*注意力回到你的房间。";
+"MindExercises.buddhaInstructions" = "*找一個舒適的姿勢坐好，微笑，深呼吸。\n* 集中注意力在周圍寧靜的環境和自然的聲音中.\n* 想象你正慢慢走向一座佛像。\n* 舉起手機到你的上方，欣賞上空和兩邊 ，享受眼前的景色。\n*閉上你的眼睛，再次深呼吸。\n* 注意力回到你的房間。";
+"MindExercises.flagsInstructions" = "*找一个舒适的姿势坐好，微笑，深呼吸。\n*集中注意力聽海灘和海浪的聲音。\n* 想象你在海灘邊散步，在沙灘上畫下一個個腳印。\n* 把手機兩側移動，享受沙灘風光。Move the phone side ways to enjoy the beach.\n* 閉上你的眼睛，再次深呼吸。\n* 注意力回到你的房間。";
+"MindExercises.marketplace1Instructions" = "*找一个舒适的姿势坐好，微笑，深呼吸。 \n* 集中注意力看菜市場的場景和嘈雜的聲音。\n* 想象自己正撿起一個水果仔細看。\n*把手機兩邊移動，享受這個景象。\n* 閉上你的眼睛，再次深呼吸。\n* 注意力回到你的房間。";
+"MindExercises.marketplace2Instructions" = "* 找一个舒适的姿势坐好，微笑，深呼吸。\n* 集中注意力看菜市場的場景和嘈雜的聲音。\n* 想象自己正在菜市場中漫步。.\n* 把手機兩邊移動，享受這個景象。\n* 閉上你的眼睛，再次深呼吸。\n* 注意力回到你的房間。";
+"MindExercises.rockybeachInstructions" = "* 找一个舒适的姿势坐好，微笑，深呼吸。\n*集中注意力聽海灘和海浪的聲音，請注意到海邊美麗的岩石。\n*想象自己撿起了其中一塊漂亮的石頭 。\n*想象你用石頭搭建了一個石頭塔。\n* 把手機向上方移動，享受美麗的天空。\n* 閉上你的眼睛，再次深呼吸。\n* 注意力回到你的房間。";
+"MindExercises.sandybeachInstructions" = "* 一个舒适的姿势坐好，微笑，深呼吸。\n*集中注意力聽海灘和海浪的聲音。\n* 想象你的雙腳碰觸沙灘的感覺。\n*想象在沙灘散步，留下一個個腳印。\n* 把手機兩邊移動，享受這個景象。\n* 閉上你的眼睛，再次深呼吸。\n* 注意力回到你的房間。";
+//
+///* FUNCTIONAL MOBILITY VIEW CONTROLLER */
+"FunctionalMobility.bridgeHipLift" = "臀橋練習";
+"FunctionalMobility.armTrunkStrengthening" = "手臂拉伸";
+"FunctionalMobility.sitToStand" = "Sit To Stand坐立訓練";
+//
+///* LEARN VIEW CONTROLLER */
+"Learn.title" = "学习";
+"Learn.b" = "B";
+"Learn.e" = "E";
+"Learn.f" = "F";
+"Learn.a" = "A";
+"Learn.s" = "S";
+"Learn.t" = "T";
+"Learn.befastB" = "平衡：突然失去平衡.";
+"Learn.befastE" = "眼睛：一隻眼睛或者雙眼忽然失明。";
+"Learn.befastF" = "当被要求微笑的时候，半边脸僵硬.";
+"Learn.befastA" = "手臂无力；不能举起手臂或者保持手臂平举状态。";
+"Learn.befastS" = "說話困難。";
+"Learn.befastT" = "我现在需要救护车。";
+"Learn.faq" = "常見問題";
+"Learn.bloodPressure" = "血壓";
+"Learn.heartRate" = "心跳";
+"Learn.bloodSugar" = "血糖";
+"Learn.diet" = "飲食Diet";
+"Learn.bladderBowel" = "膀胱/腸道";
+"Learn.exercises" = "鍛煉";
+"Learn.showerBath" = "洗澡";
+"Learn.homeMod" = "Home Modification";
+"Learn.smoking" = "吸煙";
+"Learn.sleep" = "睡覺";
+"Learn.problem" = "問題";
+"Learn.whatToDo" = "做什麼";
+//
+///* FAQ */
+"Faq.questionOne" = "什麼是中風?";
+"Faq.answerOne" = "中風發生的時候，運輸血液到大腦特定部分的運輸管道被堵塞，或者負責大腦供血的血管破裂。這會造成那部分大腦中的細胞死亡，並且導致身體某部位或者多個部位的暫時性甚至永久性的功能喪失。";
+"Faq.questionTwo" = "當你知道有人中風的時候，你應該怎麽做?";
+"Faq.answerTwo" = "馬上打電話給專業醫療人員尋求幫助。";
+"Faq.questionThree" = "為什麼你需要盡快求助?";
+"Faq.answerThree" = "第一時間得到醫療會降低中風病人殘疾甚至死亡的風險。";
+//
+///* BLOOD PRESSURE */
+"BloodPressure.problem" = "過高的血壓會破壞全身動脈，導致動脈更易堵塞或者破裂，從而引起中風。";
+"BloodPressure.problemBoldPart" = "高血壓";
+"BloodPressure.problemNonBoldPart" = "會破壞全身的動脈，導致動脈更易堵塞或者破裂，從而引起中風。";
+"BloodPressure.whatToDo" = "對普通人群來說，60歲之後，治療高血壓，把血壓控制在低於150/90 mm Hg 可以降低中風的風險。";
+"BloodPressure.whatToDoBoldPart" = "低於150/90 mm Hg";
+//
+///* HEART RATE */
+"HeartRate.problem" = "心房顫動和不規律的心跳是中風的危險因素。";
+"HeartRate.problemBoldPart" = "心房顫動";
+"HeartRate.whatToDo" = "如果你懷疑自己心跳不規律，請馬上聯系你的醫生做測試，包括心電電極（ECG/EKG)。在評估你之前的病歷和未來中風風險的基礎上，醫生會給你一系列藥物選擇，包括抗凝血劑，用來幫助你控制心房顫動。";
+"HeartRate.whatToDoFirstBoldPart" = "心電電極";
+"HeartRate.whatToDoSecondBoldPart" = "抗凝血劑";
+//
+///* BLOOD SUGAR */
+"BloodSugar.problem" = "高血糖會增加患中風和心臟疾病的風險。一種叫HbA1c的血液檢驗可以告訴你最近2到3個月來的血糖控制情況。";
+"BloodSugar.problemBoldPart" = "高血糖r";
+"BloodSugar.whatToDo" = "美國心臟病協會建議，有糖尿病先兆的患者需要把血糖濃度控制在6%以下，而糖尿病患者需要把血糖濃度控制在7%以下。";
+"BloodSugar.whatToDoFirstBoldPart" = "6%以下";
+"BloodSugar.whatToDoSecondBoldPart" = "7%以下 ";
+//
+///* DIET */
+"Diet.problem" = "保持一個健康的生活習慣對中風患者而言非常重要。 长时间在看护所的中风患者有缺钙和维他命D缺乏的风险。.";
+"Diet.whatToDo" = "最佳的飲食計劃是吃健康的不同種類的蔬菜和水果，粗糧，低脂奶制品，去皮的肉和魚，堅果和豆類。減少飽和脂肪，反式脂肪，鈉，紅肉，甜品和甜飲料的攝入。";
+//
+///* BLADDER/BOWEL */
+"BladderBowel.problem" = "有些病人可能會有尿失禁或者尿滯留的癥狀。";
+"BladderBowel.whatToDoBulletOne" = "排泄後做膀胱掃描或者間歇性導尿術來檢驗尿滯留，記錄尿量。";
+"BladderBowel.whatToDoBulletTwo" = "按照一定規律去廁所可以幫助訓練你的膀胱功能，每2-3小時尿一次可以幫助減小意外發生。";
+"BladderBowel.whatToDoBulletThree" = "每天喝大量的液體可以讓你的身體處在一個水分充足的狀態，避免便秘。";
+//
+///* EXERCISES */
+"Exercises.problem" = "中風患者常常沒有辦法恢復正常的身體力量和機能。";
+"Exercises.parOne" = "中風患者需要接受與他們承受能力相匹配的康復訓練。";
+"Exercises.bulletOne" = "如何突破步態限制：病人需要在醫療專業人員的督導下做高強度，重復性的身體移動訓練。";
+"Exercises.bulletOneBoldPart" = "步态限制gait limitations";
+"Exercises.bulletTwo" = "如何防止摔倒：病人需要訓練平衡感。";
+"Exercises.bulletTwoBoldPart" = "摔倒";
+"Exercises.bulletThree" = "住院期間和早期康復階段訓練：美國心臟病協會建議病人可以嘗試做平地走，自我護理活動，間歇性坐或立，坐著的運動，柔韌性活動。這些活動強度需要在病人可承受範圍內，把心率增控制在每分鐘增加10-20下的範圍內，取決於醫生給你的建議。";
+"Exercises.bulletThreeBoldPart" = "住院治療和早期康復階段";
+"Exercises.bulletFour" = "住院或門診治療階段恢復性訓練治療：美國心臟病協會建議,每周2到3天，每次20到60分鐘的散步；在散步和拉伸之外，還可以進行太極拳，瑜伽以及其他休閑活動。";
+"Exercises.bulletFourBoldPart" = "住院或門診治療階段恢復性訓練治療。";
+"Exercises.bulletFive" = "在做練習的時候請註意安全：走路可以借助輔助工具，並且在有人監督的情況下進行。";
+"Exercises.bulletFiveBoldPart" = "練習的時候請注意安全";
+"Exercises.bulletSix" = "保持身體健康：咨詢你的醫生為你定制你喜歡的活動，以及明確哪些活動是你能做的，哪些不能做。";
+"Exercises.bulletSixBoldPart" = "身體健康:";
+//
+///* SHOWER/BATH */
+"ShowerBath.problem" = "病人洗澡的時候可能會有滑到的危險。";
+"ShowerBath.bulletOne" = "淋浴 > 浴缸: 淋浴比浴缸更安全。";
+"ShowerBath.bulletOneBoldPart" = "淋浴>浴缸";
+"ShowerBath.bulletTwo" = "走動的時候請抓好把手。";
+"ShowerBath.bulletTwoBoldPart" = "抓住把手";
+"ShowerBath.bulletThree" = "在沐浴處放一塊防滑墊可以避免滑倒。";
+"ShowerBath.bulletThreeBoldPart" = "防滑墊";
+"ShowerBath.paragraph" = " 保證在你需要幫助的時候有人在身邊。可以隨身帶一個鈴鐺或者準備好其他可以求助的方式。平衡訓練可以幫助有平衡問題的病人。";
+//
+///* HOME MOD */
+"HomeMod.problem" = "由於病人已經有了一些行動上的不便，所以把家裏布置地對病人來說安全方便非常重要。";
+"HomeMod.subHeaderOne" = "房間：";
+"HomeMod.contentOne" = "為了進出房間更容易，請把所有物品都移到一邊，讓門可以完全；拓寬門的寬度; 把門的鏈條反裝，這樣門可以從外部打開。. 如果床是靠墻放置的，那就調整床的位置，讓病人比較不方便的一邊身體靠墻，這樣方便病人下床。";
+"HomeMod.subHeaderTwo" = "常規：";
+"HomeMod.contentTwo" = "把小塊的毛毯毛巾之類的物品清理掉，防止病人踩到摔倒。";
+"HomeMod.subHeaderThree" = "洗浴:";
+"HomeMod.contentThree" = "把浴室的門拓寬，方便輪椅進出。擡高坐便器方便病人上廁所：在地面和坐便器之間架上一個升降器；在坐便器上放一個可升降的座位，讓座位變高；安裝手把，讓病人可以借力行動。";
+//
+///* REMINDERS VIEW CONTROLLER */
+"Reminders.title" = "提醒";
+"Reminders.todaysReminders" = "今日提醒";
+"Reminders.allReminders" = "所有提醒";
+"Reminders.addReminderButton" = "增加新提醒";
+//
+///* ADDING REMINDERS */
+"Reminders.remindMeTo" = "提醒我...";
+"Reminders.takeMedicine" = "吃藥";
+"Reminders.doctorsVisit" = "醫生來訪";
+"Reminders.bloodTest" = "驗血";
+"Reminders.exercise" = "鍛煉";
+"Reminders.medication" = "藥物";
+"Reminders.howOften" = "頻率？";
+"Reminders.daily" = "每天";
+"Reminders.weekly" = "每週";
+"Reminders.custom" = "定期";
+"Reminders.everyday" = "每天";
+"Reminders.every" = "每次 ";
+"Reminders.and" = "和";
+"Reminders.next" = "下一個";
+"Reminders.save" = "保存";
+"Reminders.back" = "後退";
+"Reminders.sunday" = "週日";
+"Reminders.monday" = "週一";
+"Reminders.tuesday" = "週二";
+"Reminders.wednesday" = "週三";
+"Reminders.thursday" = "週四";
+"Reminders.friday" = "週五";
+"Reminders.saturday" = "週六";
+"Reminders.sundays" = "週日";
+"Reminders.mondays" = "每週一";
+"Reminders.tuesdays" = "週二";
+"Reminders.wednesdays" = "每週三";
+"Reminders.thursdays" = "每週四";
+"Reminders.fridays" = "每週五";
+"Reminders.saturdays" = "每週六";
+"Reminders.sundayAbbrev" = "週日";
+"Reminders.mondayAbbrev" = "週一";
+"Reminders.tuesdayAbbrev" = "週二";
+"Reminders.wednesdayAbbrev" = "週三";
+"Reminders.thursdayAbbrev" = "週四";
+"Reminders.fridayAbbrev" = "週五";
+"Reminders.saturdayAbbrev" = "週六";
+"Reminders.atWhatTime" = "現在幾點?";
+"Reminders.remindMeAt" = "在x點提醒我";
+"Reminders.addTime" = "添加時間";
+"Reminders.editTitle" = "編輯提醒";
+"Reminders.saveChanges" = "保存修改";
+"Reminders.oneTimeReminder" = "一次性提醒";
+//
+///* SURVEYS */
+"Surveys.password" = "密碼";
+//
+///* GENERAL INFO */
+"GeneralInfo.aboutUs" = "關於我們";
+"GeneralInfo.termsOfUse" = "使用條款";
+"GeneralInfo.privacyPolicy" = "保密協議";
+"GeneralInfo.copyright" = "版權";
+//
+///* ABOUT US */
+"AboutUs.aboutTheApp" = "關於這個app";
+"AboutUs.paragraphOne" = " HEALTH4THEWORLD 中风者希望软件是一款免費使用的教育工具軟件，科普中風風險因素，二級預防，中風後康復鍛煉等基本知識和策略。 是由非營利組織 Health4TheWorld設計的，旨在改善世界性的醫療資源短缺情況。這家組織的使命是通過技術創新解決世界各地健康資源不平等的問題，希望世界上每一個角落的人都能綻放出笑容。請在我們的網站上關注我們，了解更多信息： health4theworld.org.";
+"AboutUs.paragraphTwo" = "根据世界卫生组织估计，根據世界衛生組織估計，有1690万人發病和3300万人有患者，中風是心血管疾病中最主要的壹種，並且很容易導致長期的殘疾狀態。 中低收入國家在世界範圍內承擔了與他們經濟能力不相稱的中風相關負擔。激勵我們擴大全球健康教育宣傳。我們希望這款中風科普軟件能夠幫到你。";
+"AboutUs.paragraphThree" = "我們希望你能覺得這款軟件的壹系列功能對你有用！";
+"AboutUs.featureOne" = "中風教育內容 - 告訴你關於於中風起因和高危因素的信息，教育指南來自美國中風協會，美國心臟協會，實證論文以及其他健康保健方面的內容。妳需要記住這些建議小貼士不等同於臨床治療。 病人和醫生應該坐到壹起，共同研究具體的個性化的中風預防方案。";
+"AboutUs.featureTwo" = "中風康復的動畫視頻和鍛煉建議- 康複訓練的內容均由來自斯坦福，加州大學，北加州舊金山大學的健康領域專家制定。這些是常規的練習，並不是醫療建議。這些必須與醫生配合使用，正確的使用方式才能使效用最大化。病人使用的時候身邊必須有一個隨時可以提供幫助的護理人員。內容被劃分為強化，拉伸以及功能性移動。請指導你的病人以正確的動作，正確的頻率和方法來使用這些練習。";
+"AboutUs.featureThree" = "吃藥和就診預約提醒：按時吃藥和就診非常重要，希望這個功能可以有幫助病人按時吃藥和就診。如果有可能，請為妳的 病人設設置好提醒時間。";
+"AboutUs.featureFour" = "中風後交流問題：語音輸出按鈕可以幫助病人進行基本交流。我們的目標是把這些翻譯成不同的語言，這樣世界偏遠地區缺乏醫療資源的醫生和病人都可以受益於此。";
+"AboutUs.team" = "團隊";
+"AboutUs.teamIntro" = "這個應用軟件的誕生離不開一個完美的團隊！";
+"AboutUs.founders" = "創始人";
+"AboutUs.developers" = "Developers";
+"AboutUs.animations" = "動畫";
+"AboutUs.illustrations" = "Illustrations";
+"AboutUs.contentEditing" = "內容編輯";
+"AboutUs.movies" = "電影";
+"AboutUs.advisoryBoard" = "我们的专业顾问";
+"AboutUs.marcFisher" = "Marc Fisher博士:  Fisher醫生是“中風”雜誌的主編，哈佛醫學院BIDMC中風服務中心的高級醫師。他在領域里非常著名，發表過250篇論文，並且編寫或合作編寫過13本書籍。";
+"AboutUs.jeffreyTeraoke" = "Jeffrey Teraoke博士: Teraoke博士 is Chief, PM &R at 帕罗奥托医药中心P. 他也是医药复健中心和帕罗奥托健康系统的项目主管。";
+"AboutUs.ericaPitsch" = "Dr. Erica A Pitsch, PT, MPT, 臨床博士，DPT, NCS: Health Science Assistant Clinical Professor, UCSF. Dr. Pitsch 專職神經科治療，他的多種治療方式均側重於提高神經性疾病的病人的正常身體機能的恢復。";
+"AboutUs.lorenWard" = "Loren Ward, PT, 臨床博士，執照物理治療師，她從2007年就開始了理療事業，同時在麻省的MGH機構獲得了博士學位。她曾在芝加哥復健中心， Spaulding 復健中心和國家復健中心醫院實習，現就職于斯坦福的退伍軍人事務系統。 Loren希望幫助她的病人擁有獨立的生活能力，不管他們的身體機能因為疾病收到多大的限制。.";
+"AboutUs.roseHamm" = "Rose Hamm, PT, 臨床博士，CWS, FACCWS: Rose 在北卡教堂山大學獲得了她的學士學位，在南加州大學分別獲得碩士和博後學位，她現在是南加州大學臨床理療的講師，並且在南加大的Keck醫院工作。";
+
+///* TERMS OF USE */
+"Terms.thankYouParOne" = "以上使用條款和條件是我們Health4TheWorld合約和你/你們(無論是個人還是組織）之間的一個網站的使用合約，包括每天，文件，圖片和文字內容，也包括其他任何Health4TheWorld的產品，服務或者下載應用的使用。請仔細閱讀這些條款，如果有任何問題，請用以下郵箱地址聯繫我們：contact@health4theworld.org。 我們的服務還包括下載應用軟件，云應用，移動設備，和桌面應用，以及一些通過第三方網站發佈我內容的應用。";
+"Terms.thankYouParTwo" = "复制，下载或者以其他途径使用該網站，App或其他相關服務，表示你已經同意受遵循條款，包括以下提到的免責申明和責任限制。如果你不明白或者不同意這些條款，請不要使用網站和任何相關服務，并退出網站。";
+"Terms.thankYouParThree" = "Health4TheWorld 擁有不作提前通知，在任何時候修改這些條款的權力。任何條款修改將會在發佈時即時生效。條款更新後后登陸使用網站或相關服務的，表示你接受新的條款內容和其他更新的內容。 ";
+"Terms.useSectionOneHeader" = "進入并使用網站，移動應用，以及相關服務。";
+"Terms.useSectionOneParOne" = "只有在同意并遵循Health4TheWorld提出的協議后，你方可以使用網站，移動應用和相關服務。When retrieving information from the Website or Services, you are prohibited from (a) using or attempting to use spiders, robots, avatars, intelligent agents, or any other extraction or navigation search except for a normal browser, (b) aggregating, copying or duplicating any of the materials or information available from the Website or Services except for the small amount of materials and information temporarily required for an ordinary single use of the Website and/or Services, or (c) 使用與你不相關的數據. 作為使用網站和服務的條件，你需要遵守以下協議：";
+"Terms.useSectionOneBulletOne" = "任何13歲以下的個人禁止使用，網站所提供的部分特定的課程材料可能會有額外的權限限制。";
+"Terms.useSectionOneBulletTwo" = "你需要給我們提供完整和準確的信息，並及時同意更新你的聯繫方式和賬號信息，并保證完整性和準確性。";
+"Terms.useSectionOneBulletThree" = "你需要通過合適的終端或者電腦使用網站和相關服務。我们对于不遵守这项规定而造成的任何损失不负责。";
+"Terms.useSectionOneBulletFour" = "你不能把網站和相關服務用於任何非法目的或者未經授權的用途。";
+"Terms.useSectionOneBulletFive" = "你不能複製并銷售這些服務。";
+"Terms.useSectionOneBulletSix" = "你不能向Health4TheWorld或其他用戶，網站和服務傳播破壞性病毒。";
+"Terms.useSectionOneParTwo" = "違背前面所提到的使用規則可能引起你的使用權限被暫停和終止。我們保留監督你遵守條件，並且在法律和政府政策的範圍內使用網站和服務的權利。 同時，我們擁有因為任何原因終止或者暫停你的使用權的權利。除了以上条款，你的使用还需要遵守我们的保密协议。你同意 Health4TheWorld’s 收集,使用或分享任何个人信息都会在保密协议中提出，我们也可能会对此做修正。.這些條款以引用的方式包含了隱私政策以及所有以及發佈的條款。";
+"Terms.useSectionTwoHeader" = "你的使用權限";
+"Terms.useSectionTwoParagraph" = " Subject to your compliance with these Terms and our policies (包括接受使用條款，誠信準則，保密協議和其他條款), 我们授予你個人的，非獨佔性的，不可流通的，可撤銷的有限權利使用我們的網站和服務。你僅可以以個人的非商用的目的下載我們網站和服務的內容，除非你獲得Health4TheWorld的編寫或者其他權限使用這些內容。其他權利都被保留。你需要同意你只創建，進入和使用用戶賬戶，你將不會和任何第三方分享你的賬戶使用權。 你需要同意以下協議獲得使用權限：(a) 你從網站上或者手機應用上複印的任何紙張，數據，文字，圖片，音頻，視頻或其他內容，都需要在材料上顯示版權和申明來源。和 (b) 這些材料只能在條款允許的範圍內使用。 除了以上規定，你不能出售，轉售，分享，授權或轉授權網站，移動應用或服務給任何第三方，以及你不能以與Health4TheWorld競爭關係的目的使用網站，移動應用和服務。使用網站，移動應用和服務不代表你有這些產品或你所看到內容的所有權。再者，我們的一些服務是軟件，你可以下載到電腦，手機和其他終端，你需要同意我們會不定期自動更新軟件，這些協議也將對更新后的所有內容有效。  ";
+"Terms.eduSectionOneHeader" = "內容修改";
+"Terms.eduSectionOnePar" = "儘管我們對我們世界領先的教學內容非常有信心也非常自豪，但是不可預知永遠可能發生。Health4TheWorld 保留取消，中斷，重新編排或者修改任何教學內容，作業和考試的權重，以及其他測評的權利。我們提供的教學內容包括以下責任免除和責任限制條款。";
+"Terms.eduSectionTwoHeader" = "沒有學分";
+"Terms.eduSectionTwoPar" = "除非被正規授予學分的機構特別說明，在網站上參與我們課程并完成課程的參與者不能得到任何學分。 哪怕學分被一所機構認可，不代表其他機構同樣認可。你需要同意除了那門課的課程證書（或者其他等價于Health4TheWorld 的信用證明，你將不会通過我們網站和服務完成課程而得到學分。Health4TheWorld, 課程導師，以及相關參與課程編制的機構，都沒有義務需要得到任何教育機構或評審組織的認證。";
+"Terms.eduSectionThreeHeader" = "學生與學校關係的免責申明Disclaimer of Student-University Relationship";
+"Terms.eduSectionThreePar" = "Nothing in these Terms or otherwise with respect to your participation in any course: (a) 你與任何和Health4TheWorld可能有合作關係的教育機構建立的關係; (b) 你被任何教育機構錄取，或者註冊任何教育機構提供的課程; 或者 (c) 在參加我們的課程之外，授權你使用任何教育機構的資源。";
+"Terms.eduSectionFourHeader" = "教育研究Education Research";
+"Terms.eduSectionFourPar" = "Health4TheWorld 致力於教與學的科學研究，你的參與學習記錄可能會被作為研究目的保留。為了更好的研究，你可能會接觸到各種不同的課程內容。研究發現通常要在集體水平上匯報。在你同意之前，你的個人信息將不會在任何地方被公佈。";
+"Terms.eduSectionFiveHeader" = "關於醫療內容和其使用的免責申明";
+"Terms.eduSectionFivePar" = "在講座過程中，演講者提供的信息，表達的觀念，想法都是演講者個人的，並不代表Health4TheWorld或者其從屬項目/部門的觀念。Health4TheWorld在這裏或者其他相關地方提供的材料只用於教學目的，而不是醫療建議。雖然我們講座的內容和材料均來自於最前沿的醫學論文，但是，無論是health4theworld，還是任何口頭或者書面參與材料編寫的個人，都不對內容的準確性和有效性負責。無論是通過講座還是廣播，或者手機應用，我們不承認任何形式的病人與醫生通過這個渠道建立關係。";
+"Terms.yourContentSectionOneHeader" = "用戶內容";
+"Terms.yourContentSectionOnePar" = "網站和移動應用以及相關服務使你可以和Health4TheWorld，導師，和其他用戶分享你的東西，例如你提交的小測驗，考試，項目，作業等，包括不限量的數據，文字，鏈接，視頻，圖片和你論壇上發表的內容，以及點讚 (\"用戶內容\"),    這些用戶內容包括你通過\"聯繫我們\" 提交的內容和你郵件Health4TheWorld工作人員的內容都被視為非私密性內容。你需要保證所有你發送到Health4TheWorld 的用戶內容是你的原創材料（除非你已經在使用的材料已經獲得原創作者的授權），對任何第三方都不能有任何盜用，侵害或者其他違背其版權，商標，知識產權，或其他權利的行為，包括隱私權和公開權。";
+"Terms.yourContentSectionTwoHeader" = "Health4TheWorld和其他相關者如何使用用戶內容";
+"Terms.yourContentSectionTwoPar" = "一旦你提交用戶內容，表示你授予Health4TheWorld對用戶內容在世界範圍內免費轉讓，轉授權的權利，可以在原有內容基礎上複製，傳播，修改和公開展示用戶內容。這也包括授權Health4TheWorld授權其參與成員組織使用用戶內容。这項授權包括有權利授權其合作機構獨立使用註冊后在用戶內容。 以上條款不限制Health4TheWorld在其他方面可能享有的使用用戶內容的法律權利，比如在其他授權下，我們用其他任何方式使用用戶內容的權利。 我們保留以任何理由刪除或者修改用戶內容的權利，包括我們認為違背相關協議的用戶內容。";
+"Terms.yourContentSectionThreeHeader" = "反饋";
+"Terms.yourContentSectionThreePar" = "我們歡迎你針對我們的網站和服務提出建議，想法，評論或其他反饋。 (\"反饋\"). 當你提交反饋，代表你同意我們不受任何限制并不需要提供補償地使用你的反饋內容。接受到你的反饋的同時，Health4TheWorld 不放棄使用之前收到的員工，合同方，或其他來源的相似反饋意見的權利。";
+"Terms.securityParagraph" = "我們關心用戶的信息安全。我們盡心保護你的賬戶和相關信息的安全，但是不能排除未經授權的第三方威脅我們的安全系統的可能性。 如果你發現你的賬戶有任何未經授權的被使用現象，請在第一時間寫郵件到以下地址告訴我們：contact@Health4TheWorld.org。";
+"Terms.thirdPartyContentPar" = "通過網站和相關服務，你將可以進入并使用導師，其他用戶或者第三方提供的內容。Health4TheWorld不能控制，同時也假定不對任何第三方網站的內容或保密政策負責，我們不能保證第三方網站或者內容提供方不會有令你不悅的內容，或者病毒侵害你的電腦，移動終端，或者裡面的任何文件。 使用我們的網站或者移動應用，代表你同意Health4TheWorld不對你進入或使用第三方的內容或者網站引起的任何後果的負有責任，而我們也作此免責申明。任何使用第三方軟件或服務的風險將由你自己承擔，你可能需要接受第三方提出的額外的調控和限制。相應的，我們鼓勵你在進入或使用第三方軟件或服務之前，仔細閱讀每一個條款和保密協議。";
+"Terms.copyrightPar" = "Health4TheWorld 尊重用戶，參與機構，和其他第三方的知識產權，並且希望我們的用戶在使用我們的網站和服務時也能這麼做。 我们根据适当的法律和数字千年版权法行驶Health4TheWorld的版权和商标权。 ";
+"Terms.modifyingPar" = "我們會持續更新我們的網站，移動應用和服務。我們可能會增加或移除一些功能和要求，我們也可能暫停或終止我們的網站或服務。相應的，Health4TheWorld有可能因為任何原因終止你對網站和服務的使用。如果你使用的付費功能被終止了，可能可以根據退款政策得到退款。 Health4TheWorld, 合作參與機構，導師，贊助商，商業合作者，或其工作人員，代表，合同方和其他代理人 (總的來說 \"Health4TheWorld 方\") 都不為此負責。你可以在任何時候選擇停止使用網站和服務。";
+"Terms.disclaimersParOne" = "THE WEBSITE, MOBILE APPLICATION AND ANY INFORMATION, CONTENT OR SERVICES MADE AVAILABLE ON OR THROUGH THE WEBSITE & MOBILE APPLICATION ARE PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTY OF ANY KIND (明示，暗示，或其他形式), INCLUDING,包括但不限于， WITHOUT LIMITATION, 任何暗示性的ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT, EXCEPT INSOFAR AS ANY SUCH IMPLIED WARRANTIES MAY NOT BE DISCLAIMED UNDER APPLICABLE LAW.";
+"Terms.disclaimersParTwo" = " HEALTH4THEWORLD方不能保證網站，移動應用和服務，會一直不中斷的良好運行， 不發生任何故障，也不能保證網站和服務沒有錯誤，不攜帶病毒或者其他危害，或者課程內容會完全符合你的需要 和期望。HEALTH4THEWORLD方同時也不保證網站，移動應用，服務和課程內容或其他持續更新的特定課程的準確性，完整性，和其他質量保證。 使用網站，移動應用，內容和其他服務的風險均有你自己承擔。如果你在我們網站或者移動應用上使用或者下載信息，資料，軟件和數據時，對你的財產造成損害（比如電腦系統），或因為下載或者使用資料，軟件，數據造成你數據丟失，都需要你自己承擔責任，除非HEALTH4THEWORLD 的保密協議有其他明確表示。为了避免不必要的质疑，HEALTH4THEWORLD 方在任何情況下讀不需要為妳使用網站和服務造成的損失，或者網站和移動應用的使用問題負責。 妳只可以向HEALTH4THEWORLD提出請求來解決妳的問題，但是如果我們沒有辦法做到，妳可停止使用網站和服務。";
+"Terms.limitationsParOne" = "TO THE MAXIMUM EXTENT PERMITTED BY LAW,  HEALTH4THEWORLD方不對任何直接或者間接的意外事故，後果，損害，或者利潤和受益的損失負責，也不對由以下情況的數據，信譽等其他不可見財產的損失負責：(A)妳可以進入並使用，或者不能進入使用網站和服務，移動應用； (B) 除了HEALTH4THEWORLD 之外的任何其他參與方行為，包括但不限於任何誹謗，攻擊的，非法的行為; (C) 任何從網站或者服務或者移動設備上獲取的內容; OR (C) 未经授权的进入没使用，转换你的用户内容，或者你提供的信息。在任何情况下HEALTH4THEWORLD方都不不需要为用户在使用网站服务时可能遇到的时间负责，AGGREGATE LIABILITY FOR ALL CLAIMS RELATED TO THE WEBSITE AND/OR SERVICES EXCEED THE GREATER OF TWENTY U.S. DOLLARS ($20) OR THE TOTAL AMOUNT OF FEES RECEIVED BY HEALTH4THEWORLD FROM YOU FOR THE USE OF PAID FUNCTIONS OF THE WEBSITE, MOBILE APPLICATION AND SERVICES DURING THE PAST SIX (6) MONTHS.";
+"Terms.limitationsParTwo" = "你需要知道這些免責申明和責任限制申明合理的說明了你和HEALTH4THEWORLD雙方需要承擔的風險，以上責任協議是我們為你提供經濟可行的網站和服務的基礎。";
+"Terms.limitationsParThree" = "您需要同意處於任何原因的與網站，移動應用和服務相關的行動必須開始於，YOU AGREE THAT ANY CAUSE OF ACTION RELATED TO THE WEBSITE, MOBILE APPLICATION OR SERVICES MUST COMMENCE WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES, OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY BARRED.";
+"Terms.idemnificationPar" = "You agree to indemnify, defend, and hold harmless the Health4TheWorld Parties from any and all claims, liabilities, expenses, and damages, including reasonable attorneys' fees and costs, made by any third party arising from or related to: (a)  你在違背條款的情況下試圖使用或使用網站和服務。; (b) 你違背法律或侵害任何第三方的權益;  (c) 用戶內容; 或 (d) 你被指控盜用或違背其他個人或實體的知識產權和其他產權的申明 ";
+"Terms.governingParOne" = "這些服務由 Health4TheWorld管理, 我們的辦公地點在美國帕羅奧托市，加利福尼亞州。你需要同意任何條款爭議都需要遵守美國法律和加州法律，不包括 You agree that any dispute arising under or related to these Terms will be governed by the laws of the United States of America and the State of California, excluding its conflicts of law provisions. 你還需要承認加州帕羅奧托市的聯邦法庭處理任何爭議，持有個人裁決權，You further consent to the personal jurisdiction of and exclusive venue in the federal and state courts located in and serving Palo Alto, California as the legal forum for any such dispute, and waive any objection as to inconvenient forum.";
+"Terms.governingParTwo" = "Excluding claims for injunctive or other equitable relief, for claims related to the Services where the total amount sought is less than ten thousand U.S. Dollars ($10,000.00 USD), either you or Health4TheWorld may elect at any point during the dispute to resolve the claim through binding, non-appearance-based arbitration. 爭議將通過使用已有的“替代爭議解決方式”(\"ADR\")的供應方來解決，需要你和Health4TheWorld雙方都同意。The parties and the selected ADR provider shall not involve any personal appearance by the parties or witnesses, unless otherwise mutually agreed by the parties; rather, the arbitration shall be conducted, at the option of the party seeking relief, online, by telephone, or via written submissions alone. Any judgment rendered by the arbitrator may be entered in any court of competent jurisdiction.";
+"Terms.generalTermsSectionOneHeader" = "條款修訂";
+"Terms.generalTermsSectionOnePar" = "我們保留隨時修改這些條款的權力。修訂后條款在我們公佈后立即生效。對於任何條款材料的修訂，我們會嘗試通知你；但是，我們不承認我們有通知你條款修訂的義務。在所有情況下，你如果在條款修訂后繼續使用網站和相關服務，無論是否收到通知，都代表你接受修訂后的條款。";
+"Terms.generalTermsSectionTwoHeader" = "Successors";
+"Terms.generalTermsSectionTwoPar" = "These Terms shall be binding on and inure to the benefit of your respective successors and assigns.";
+"Terms.generalTermsSectionThreeHeader" = "可分割性";
+"Terms.generalTermsSectionThreePar" = "如果這些條款的其中某條條款不可實施，這不會影響其他條款的可實施性。如果妳沒有遵守條款規定，而我們也沒有馬上做出回應，並不代表我們放棄了追究責任的權利（比如在未來某個時候追究權責）
+
+。.";
+"Terms.generalTermsSectionFourHeader" = "參與合作機構";
+"Terms.generalTermsSectionFourPar" = "Health4TheWorld的參與合作機構是這些條款的第三方受益人，他們可能實施某項相關條款。";
+"Terms.generalTermsSectionFiveHeader" = "加州用戶須知";
+"Terms.generalTermsSectionFivePar" = "根据加州民事诉讼法1789.3，加州网络用户享有以下特定消费者权益通知：The Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs may be contacted in writing at 1625 N. Market Blvd., Suite S-202, Sacramento, California 95834, or by telephone at (800) 952-5210.";
+"Terms.referencedPoliciesBulletOne" = "接受使用政策";
+"Terms.referencedPoliciesBulletTwo" = "保密政策";
+"Terms.referencedPoliciesBulletThree" = "版權和商標侵權政策";
+"Terms.referencedPoliciesBulletFour" = "榮譽代碼";
+"Terms.acceptableUseParOne" = "Health4TheWorld's 的使命是讓世界各地都可以方便地接觸到健康教育資料，包括媒體，文件，圖片和其他內容， (總的來說, 這個 \"網站\"), 還提供產品使用，服務和應用下載，從而為全球的健康發展做貢獻。 (\"服務\").我们堅信我們的學習者保留自由言論和表達的權力，我們的合作機構和導師享有學術自由的權力。我們還想保證我們所有的學習者和導師能夠在使用我們網站和服務的時候感到安全舒適。我們撰寫了這些指南確保大家能夠在參與我們線上社區，使用我們網站和服務的同時了解并遵守一定的規則。雖然我們不會常規性的檢查或監管用戶提供的內容，但是我們有可能刪除或編輯被舉報的不合適的內容或者活動，並且中斷甚至終止該用戶的所有使用權限。 請記住使用我們網站服務的用戶最小只有13歲，我們不允許任何不適合青少年的內容出現在我們網站上。";
+"Terms.acceptableUseSectionOneHeader" = "你被禁止在我們網站和服務上分享以下內容:";
+"Terms.acceptableUseSectionOneBulletOne" = "包含非法內容或者宣傳非法活動";
+"Terms.acceptableUseSectionOneBulletTwo" = "包含現實世界威脅和暴力性的行動。我們不允許有任何內容可能增加身體傷害或者財產損失，或者威脅人們和公眾安全，或者組織和鼓勵傷害產生的風險。";
+"Terms.acceptableUseSectionOneBulletThree" = "騷擾他人。我們鼓勵大家相互評價以及討論公眾興趣，但是不允許任何對私人有人身攻擊和其他不合適的內容。";
+"Terms.acceptableUseSectionOneBulletFour" = "違背知識產權，保密性，和其他第三方的權益。不要分享你沒有權限分享的內容和或者宣揚任何你不是你創建的內容，或者其他違背和盜用別人的知識產權或其他權利。記得在使用別人的資料時候註明作者出處。 ";
+"Terms.acceptableUseSectionOneBulletFive" = "給其他人發垃圾信息.不要分享不相關和不合適的廣告，促銷或者社交內容。";
+"Terms.acceptableUseSectionOneBulletSix" = "其他方面違背Health4TheWorld的使用條款. 請注意，特定的課程可能含有額外的條款和要求。";
+"Terms.acceptableUseSectionTwoHeader" = "你還不被允許:";
+"Terms.acceptableUseSectionTwoBulletOne" = "做任何違背當地，州或者國家法律，以及個人義務和信用的事情。";
+"Terms.acceptableUseSectionTwoBulletTwo" = "分享你的密碼，讓其他人進入你的賬戶，增加賬戶風險。";
+"Terms.acceptableUseSectionTwoBulletThree" = "嘗試進入其他用戶的賬戶。";
+"Terms.acceptableUseSectionTwoBulletFour" = "再製造，轉發，出售，再出售，或者濫用任何我們網站或者服務上的內容，除非被授權這樣做。";
+"Terms.acceptableUseSectionTwoBulletFive" = "進入，篡改或者使用我們非公開領域內容，除非被特別授權這樣做。";
+"Terms.acceptableUseSectionTwoBulletSix" = "打破或者入侵我們的安全系統或者試圖測試我們的系統和網絡，除非被特別授權這樣做。";
+"Terms.acceptableUseSectionTwoBulletSeven" = "試圖反向工程，反編譯，解碼，解密，分解或者以其他任何形式盜取網站和服務的源代碼。";
+"Terms.acceptableUseSectionTwoBulletEight" = "試圖干擾其他用戶，戶主或者用戶網絡，比如發送病毒，垃圾郵件或者郵件轟炸。";
+"Terms.acceptableUseSectionTwoBulletNine" = "使用我們的網站和服務來發散惡意軟件，病毒，木馬，間諜，破壞性文件或其他相似軟件來破壞電腦運行。";
+"Terms.acceptableUseSectionTwoBulletTen" = "假扮或者誤傳你和任何機構或者個人的聯繫。";
+"Terms.acceptableUseSectionTwoBulletEleven" = "鼓勵或者幫助任何人做以上列出的事情";
+"Terms.acceptableUseSectionThreeHeader" = "網站對以下各項嚴厲禁止:";
+
+"Terms.acceptableUseSectionThreeBulletOne" = "誹謗，威脅，騷擾他人的內容；";
+"Terms.acceptableUseSectionThreeBulletTwo" = "討論非法活動並且有意向參與的內容;";
+"Terms.acceptableUseSectionThreeBulletThree" = "侵犯他人知識產權，包括，但不限於版權和商標權；";
+"Terms.acceptableUseSectionThreeBulletFour" = "色情隱晦內容;";
+"Terms.acceptableUseSectionThreeBulletFive" = "廣告和其他商業宣傳內容;";
+"Terms.acceptableUseSectionThreeBulletSix" = "黨派活動相關內容;";
+"Terms.acceptableUseSectionThreeBulletSeven" = "病毒，木馬，蠕蟲，定時炸彈，混壞的問卷，惡意軟件，間諜軟件，或其他相似軟件破壞電腦運行和財產安全；以及；";
+"Terms.acceptableUseSectionThreeBulletEight" = "包含有意識用不準確信息誤導他人的內容";
+"Terms.acceptableUseSectionThreeParOne" = "再者，你同意Furthermore, you agree not to scrape, or otherwise download in bulk, any Website content, including but not limited to a list or directory of users on the system, on-line textbooks, User Content or user information. 你同意不在網站上誤傳或者試圖誤傳你的身份，（儘管我們歡迎和鼓勵你匿名使用我們的網站，並且保持得體hi方式的來保護你的真實身份）。";
+"Terms.auUserContentSectionOneHeader" = "用戶內容特約條款";
+"Terms.auUserContentSectionOnePar" = " 在網站上提交你的用戶內容表示你確認，代表並且保證（1）你有權利再版和公佈你的用戶內容，以及在以下條款範圍內，你答應授權Health4theworld和其用戶再版，修改，公佈或者用其他方式使用你的用戶內容，以及 (2) 你提交的內容和以下授權的練習都不會侵害第三方的利益 。 你只為你提交的內容和發佈后的後果負責。 “用戶內容” 在這裡定義為任何你在使用網站和服務時分享或者提交的內容，包括數據，文字，鏈接，文件，照片，資料或其他你在論壇發表的內容，以及點讚 (\"用戶內容\")";
+"Terms.auUserContentSectionTwoHeader" = "你對Health4TheWorld的授權";
+"Terms.auUserContentSectionTwoPar" = "提交你的用戶內容，代表你授權Health4TheWorld 世界性的，非獨佔性的，可轉讓的，可轉授權的，已支付的，永久性的權利來對你的全部或者部分內容，以任何形式或者通過任何媒體平台，進行主持，轉讓，展示，表現，再創造，修改和發散，再授權或用於其他用途。";
+"Terms.auUserContentSectionThreeHeader" = "你對其他用戶的授權";
+"Terms.auUserContentSectionThreePar" = "當你提交你的用戶內容，代表你授權給每一個其他網站和服務的用戶，他們有權利看到并使用你的用戶內容來達到他們使用網站和服務的任何目的。";
+"Terms.copyRightParOne" = "Health4TheWorld尊重我們導師和第三方的知識產權，並且希望我們的用戶在使用我們網站，相關媒體，文件，圖片和其他內容，(總的來說 ”網站“), 以及相關服務和應用產品時也能同樣做到。如果發現用戶侵害第三方的版權，商標權或其他知識產權，我們保留中斷或終止用戶賬號的權利。.";
+"Terms.copyrightSectionOneHeader" = "版權Copyrights";
+"Terms.copyrightSectionOneParOne" = "1998數字千禧年版權法 (\"DMCA\") 為認為自己權益在美國版權法規定下被侵害的版權所有者提供追索權。 你可以在我們網站上的美國版權工作室找到DMCA的複印件，網址為http://www.copyright.gov/legislation/dmca.pdf	";
+"Terms.copyrightSectionOneParagraphTwo" = "如果你認為任何在我們網站上出現的資料侵害了你的版權， DMCA會讓你給我們發送一個通知，要求撤下或者封禁侵權的資料。";
+"Terms.copyrightSectionOneParThree" = "請注意，使用 DMCA 包括以下信息:";
+"Terms.copyrightSectionOneBulletOne" = "一個人的簽名或者電子簽名The physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed;";
+"Terms.copyrightSectionOneBulletTwo" = "侵權作品的身份證明Identification of the copyrighted work claimed to have been infringed (or,如果在網站的某一處有多個作品只有一個通知，請列出代表性的作品，);";
+"Terms.copyrightSectionOneBulletThree" = "Identification of the material that is claimed to be infringing or the subject of infringing activity, and 足夠的信息使得可以定位網站和服務上的資料。information reasonably sufficient to allow Health4TheWorld to locate the material on the Website or in the Services;";
+"Terms.copyrightSectionOneBulletFour" = "申訴人的名稱，地址，電話，和郵件地址；";
+"Terms.copyrightSectionOneBulletFive" = "一份在現有法律下，申訴人相信作品的使用方並沒有得到版權所有者的授權的聲明；以及";
+"Terms.copyrightSectionOneBulletSix" = "一份聲明，A statement, under penalty of perjury, that the information in the notification is accurate and the complaining party is authorized to act on behalf of the owner of the copyright that is allegedly infringed.";
+"Terms.copyRightSectionOneParFour" = "通知必須符合DMCA當前的法定要求。可以發送關於網站和服務的通知書或反通知書:";
+"Terms.copyrightSectionOneBulletsTwoOne" = "通過郵箱： 版權代理處，Health4TheWorld, 501 Forest Ave Apt 1207, Palo Alto CA 94301";
+"Terms.copyrightSectionOneBulletsTwoTwo" = "通過電子郵箱：contact@health4theworld.org";
+"Terms.copyrightSectionOneParFive" = "我們建議你在發生DMCA通知書之前先咨詢你的法律顧問，無根據的申訴可能會給申訴者帶來法律懲處。";
+"Terms.copyrightSectionTwoHeader" = "商標權Trademarks";
+"Terms.sectionTwoPar" = "Health4TheWorld尊重他人的商標權 。故意誤導他人商標權的賬戶內容會在不予通知的情況下被修改，中斷，或者終止使用。如果你認為有人在網站上侵害了你的商標權，請給我們發電子郵件 ：contact@Health4TheWorld.org, 我們會審查你的舉報。如果舉報屬實，我們會移除侵權內容，警告發帖的用戶，並且暫時或者永久封鎖該用戶的賬戶。";
+"Terms.honorCodeParOne" = "所有參與課程的用戶必須同意以下條款。我在這裡同意 :";
+"Terms.honorCodeBulletOne" = "我只在 Health4TheWorld.com上註冊一個用戶賬。";
+"Terms.honorCodeBulletTwo" = "我的測驗，考試，項目和其他作業答案都是我獨立完成的，（除了需要合作的作業任務）。";
+"Terms.honorCodeBulletThree" = "我不會讓其他任何人使用我測驗，考慮，項目和其他作業的答案，（除非有些作業答案明確允許分享），這包括我自己的答案和這門課工作人員和其他人提供的答案。";
+"Terms.honorCodeBulletFour" = "我不會參與任何有違誠信的提高自己的成績或者有違誠信的提高或損害他人的成績的活動。";
+
+
+

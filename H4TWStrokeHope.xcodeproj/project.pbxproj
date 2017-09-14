@@ -250,6 +250,9 @@
 		17E0BB451EA4139E001FC7F3 /* ExercisesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExercisesViewController.xib; sourceTree = "<group>"; };
 		680C4F0184FB59272CA0743A /* libPods-H4TWStrokeHope.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-H4TWStrokeHope.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E1D5BC6AFF988A11E4C970D /* Pods-H4TWStrokeHope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H4TWStrokeHope.release.xcconfig"; path = "Pods/Target Support Files/Pods-H4TWStrokeHope/Pods-H4TWStrokeHope.release.xcconfig"; sourceTree = "<group>"; };
+		AB78C48B1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		AB78C48C1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		AB78C48D1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CAB005F6C1031EB530EC7DE2 /* Pods-H4TWStrokeHope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H4TWStrokeHope.debug.xcconfig"; path = "Pods/Target Support Files/Pods-H4TWStrokeHope/Pods-H4TWStrokeHope.debug.xcconfig"; sourceTree = "<group>"; };
 		CC11D1181EB3B8DE0063E72A /* ReminderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderTableViewCell.h; sourceTree = "<group>"; };
 		CC11D1191EB3B8DE0063E72A /* ReminderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderTableViewCell.m; sourceTree = "<group>"; };
@@ -915,6 +918,7 @@
 				fr,
 				"ne-NP",
 				"fil-PH",
+				"zh-Hans",
 			);
 			mainGroup = CC4C10A31E7A26DE00515CDC;
 			productRefGroup = CC4C10AD1E7A26DE00515CDC /* Products */;
@@ -1176,6 +1180,7 @@
 				CCA0DABD1EC7500B00FAD751 /* fr */,
 				CC9D6BD41F3548540018F8CB /* ne-NP */,
 				CC3284711F38D1E200607ADE /* fil-PH */,
+				AB78C48D1F61D72E00226869 /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1188,6 +1193,7 @@
 				CCA0DABB1EC7500B00FAD751 /* fr */,
 				CC9D6BD21F3548530018F8CB /* ne-NP */,
 				CC32846F1F38D1E100607ADE /* fil-PH */,
+				AB78C48B1F61D72E00226869 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1200,6 +1206,7 @@
 				CCA0DABC1EC7500B00FAD751 /* fr */,
 				CC9D6BD31F3548530018F8CB /* ne-NP */,
 				CC3284701F38D1E200607ADE /* fil-PH */,
+				AB78C48C1F61D72E00226869 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1229,7 +1236,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: maitri.b.mehta@gmail.com (EKHUQ85338)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1277,7 +1284,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: maitri.b.mehta@gmail.com (EKHUQ85338)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;

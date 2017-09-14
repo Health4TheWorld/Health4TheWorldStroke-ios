@@ -2,17 +2,17 @@
   Localizable.strings
   H4TWStrokeHope
 
-  Created by Rachel on 5/6/17.
-  Copyright © 2017 Rachel. All rights reserved.
+  Created by Maitri on 5/6/17.
+  Copyright © 2017 Maitri. All rights reserved.
 */
 
 /* DISCLAIMER */
-"Disclaimer.paragraphOne" = "Although this application is to be used as an educational tool for stroke patients, nothing contained in any part of this application, creates, has created, or is intended to create, implicitly or explicitly, any manner of patient-physician relationship.";
-"Disclaimer.paragraphTwo" = "The instructions herein are based on general and well-accepted guidelines and expert opinions for post-stroke care and self-management. Although reasonable efforts have been made to ensure the information contained in these lectures was current and accurate at the time of publication, neither Health4TheWorld, nor any individual who has furnished content or been involved in the presentation of this material, either orally or in writing can guarantee that all information is accurate and valid.";
-"Disclaimer.paragraphThree" = "Each given situation requires an individual judgment and approach, and this application is intended only for educational purposes, and is not intended to be, and should not be interpreted as, medical advice.";
-"Disclaimer.paragraphFour" = "The use of this application and its content is at your own risk, and Health4TheWorld, or any individual who has furnished content or been involved in the design or development of the application and its content expressly disclaims any liability for any injury and/or damage to persons and/or property arising from the use of this application.";
-"Disclaimer.paragraphFive" = "Any usage of this application may be tracked to enable us to monitor usage patterns and progress.";
-"Disclaimer.paragraphSix" = "By clicking Accept, you agree with our Terms of Use and Privacy Policy.";
+"Disclaimer.paragraphOne" = "यद्यपि यो अनुप्रयोग स्ट्रोक रोगीहरूको लागि शैक्षिक उपकरणको रुपमा प्रयोग गर्न सकिन्छ, यस अनुप्रयोगको कुनै पनि भागमा समावेश गरिएको कुनै पनि चीज, सिर्जना, सिर्जना वा उद्देश्य हो, स्पष्ट रूपमा वा स्पष्ट रूपमा, कुनै पनि प्रकारको रोगी-चिकित्सक सम्बन्ध।";
+"Disclaimer.paragraphTwo" = "यहाँ निर्देशनहरू पछि-स्ट्रोक हेरचाह र आत्म-व्यवस्थापनको लागि सामान्य र राम्रो-स्वीकृत दिशानिर्देश र विशेषज्ञ रायहरूमा आधारित छन्। यद्यपि यी व्याख्यानहरूमा जानकारी समावेश गरिएको उपयुक्त प्रयासहरू भएको छ प्रकाशनको समयमा वर्तमान र सही थियो, न हे Health4TheWorld, न त कुनै सामग्री जसले सुसज्जित सामग्री वा यस सामग्रीको प्रस्तुतिमा समावेश गरेको थियो, मौलिक वा लिखित रूपमा। सुनिश्चित गर्नुहोस् कि सबै जानकारी सही र मान्य छ।";
+"Disclaimer.paragraphThree" = "प्रत्येक दिइएको अवस्थालाई एक व्यक्तिगत निर्णय र दृष्टिकोण चाहिन्छ, र यो अनुप्रयोग केवल शैक्षिक प्रयोजनको लागि उद्देश्य हो, र उद्देश्य छैन, र व्याख्या गरिनु पर्दैन, चिकित्सा सल्लाह।";
+"Disclaimer.paragraphFour" = "यस अनुप्रयोग र यसको सामग्रीको प्रयोग तपाईंको जोखिममा छ, र Health4TheWorld, वा कुनै पनि सामग्री जसले सामग्री तयार गरेको छ वा डिजाइनमा समावेश गरिएको वा अनुप्रयोग र यसको विकासको विकासमा कुनै चोट र / वा क्षतिको लागि कुनै दायित्व स्पष्ट रूपमा अस्वीकार गर्दछ। व्यक्ति र / वा सम्पत्ति यस अनुप्रयोगको प्रयोगबाट उत्पन्न हुन्छ।";
+"Disclaimer.paragraphFive" = "यस अनुप्रयोगको कुनै पनि उपयोगले हामीलाई प्रयोगको ढाँचा र प्रगति को निगरानी गर्न सक्षम पार्न पत्ता लगाउन सक्छ।";
+"Disclaimer.paragraphSix" = "स्वीकार गर्न क्लिक गरेर, तपाइँ हाम्रो प्रयोगको प्रयोग र गोपनीयता नीतिसँग सहमत हुनुहुन्छ।";
 
 /* ENTER VIEW CONTROLLER */
 "Enter.firstQuote" = "\"The best preparation for tomorrow is doing your best today.\"";
@@ -29,117 +29,117 @@
 "Enter.sixthAuthor" = "– Helen Keller";
 "Enter.seventhQuote" = "\"Setting goals is the first step in turning the invisible into the visible.\"";
 "Enter.seventhAuthor" = "– Tony Robbins";
-"Enter.enterButton" = "Enter";
+"Enter.enterButton" = "प्रविष्ट गर्नुहोस्";
 
 /* HOME VIEW CONTROLLER */
-"Home.title" = "Home";
-"Home.helpMeSpeak" = "Help Me Speak";
-"Home.exercises" = "Exercises";
-"Home.learn" = "Learn";
-"Home.reminders" = "Reminders";
-"Home.generalInfo" = "General Info";
-"Home.surveys" = "Surveys";
+"Home.title" = "घर";
+"Home.helpMeSpeak" = "मलाई बोल्नुहोस्";
+"Home.exercises" = "व्यायाम गर्नुहोस्";
+"Home.learn" = "सिक्नुहोस्";
+"Home.reminders" = "अनुस्मारकहरू";
+"Home.generalInfo" = "सामान्य जानकारी";
+"Home.surveys" = "सर्वेक्षणहरू";
 "Home.chatBot" = "ChatBot";
 
 /* HELP ME SPEAK VIEW CONTROLLER */
-"HelpMeSpeak.title" = "Help Me Speak";
-"HelpMeSpeak.yes" = "Yes";
-"HelpMeSpeak.no" = "No";
-"HelpMeSpeak.thankYou" = "Thank you";
-"HelpMeSpeak.bathroom" = "I need a bathroom";
-"HelpMeSpeak.water" = "I need water";
-"HelpMeSpeak.hungry" = "I'm hungry";
-"HelpMeSpeak.notGivingUp" = "I'm not giving up";
-"HelpMeSpeak.pain" = "I am in pain";
-"HelpMeSpeak.cantSpeak" = "Sorry, I can't speak";
-"HelpMeSpeak.iLoveYou" = "I love you";
-"HelpMeSpeak.imCold" = "I'm cold";
-"HelpMeSpeak.imHot" = "I'm hot";
-"HelpMeSpeak.dizzy" = "I'm dizzy";
-"HelpMeSpeak.lightsOn" = "Turn on the lights";
-"HelpMeSpeak.lightsOff" = "Turn off the lights";
-"HelpMeSpeak.getInBed" = "I want to get in bed";
-"HelpMeSpeak.getOutOfBed" = "I want to get out of bed";
-"HelpMeSpeak.howAreYou" = "How are you?";
-"HelpMeSpeak.ambulance" = "I need an ambulance";
-"HelpMeSpeak.inALittle" = "In a little";
-"HelpMeSpeak.now" = "Now";
-"HelpMeSpeak.goOutside" = "I want to go outside";
-"HelpMeSpeak.sayHi" = "Hi!";
+"HelpMeSpeak.title" = "मलाई बोल्नुहोस्";
+"HelpMeSpeak.yes" = "हो";
+"HelpMeSpeak.no" = "होइन";
+"HelpMeSpeak.thankYou" = "धन्यवाद";
+"HelpMeSpeak.bathroom" = "मलाई बाथरूम चाहिन्छ";
+"HelpMeSpeak.water" = "मलाई पनि चहियो";
+"HelpMeSpeak.hungry" = "म भोकाएको छु";
+"HelpMeSpeak.notGivingUp" = "म दिइरहेछु";
+"HelpMeSpeak.pain" = "म दुखाइमा छु";
+"HelpMeSpeak.cantSpeak" = "माफ गर्नुहोस्, म बोल्न सक्दैनु";
+"HelpMeSpeak.iLoveYou" = "म तिमीलाई माया गर्छु";
+"HelpMeSpeak.imCold" = "मलाई चिसो लागेको छ";
+"HelpMeSpeak.imHot" = "मलाइ गमी लागेको";
+"HelpMeSpeak.dizzy" = "म चिसो छु";
+"HelpMeSpeak.lightsOn" = "बत्ति बाल";
+"HelpMeSpeak.lightsOff" = "रोशनीहरू बन्द";
+"HelpMeSpeak.getInBed" = "म बिस्तरमा जान चाहन्छु";
+"HelpMeSpeak.getOutOfBed" = "म बिस्तारै बाहिर जान चाहन्छु";
+"HelpMeSpeak.howAreYou" = "तिमीलाई कस्तो छ?";
+"HelpMeSpeak.ambulance" = "मलाई एम्बुलेंस चाहिन्छ";
+"HelpMeSpeak.inALittle" = "सानो मा";
+"HelpMeSpeak.now" = "अहिले";
+"HelpMeSpeak.goOutside" = "म बाहिर जान चाहन्छु";
+"HelpMeSpeak.sayHi" = "नमस्कार!";
 
 /* EXERCISES VIEW CONTROLLER */
-"Exercises.title" = "Exercises";
-"Exercises.strengthening" = "Strengthening";
-"Exercises.stretching" = "Stretching";
-"Exercises.functionalMobility" = "Functional Mobility";
-"Exercises.mindExercises" = "Mind Exercises";
-"Exercises.instructions" = "Please repeat the exercises 10 times a day with assistance from family caregiver if needed. Consult your medical provider before starting the exercise program.";
+"Exercises.title" = "व्यायाम गर्नुहोस्";
+"Exercises.strengthening" = "बलियो बनाउने";
+"Exercises.stretching" = "पछाडि";
+"Exercises.functionalMobility" = "कार्यात्मक गतिशीलता";
+"Exercises.mindExercises" = "मन व्यायाम";
+"Exercises.instructions" = "यदि आवश्यक भएमा पारिवारिक हेरविचारकर्ताको सहयोगको साथमा 10 दिनको अभ्यास दोहोर्याउनुहोस्। व्यायाम कार्यक्रम सुरु गर्नु अघि आफ्नो मेडिकल प्रदायकलाई सल्लाह दिनुहोस्।";
 
 /* STRENGTHENING VIEW CONTROLLER */
-"Strengthening.title" = "Strengthening";
-"Strenghtening.legs" = "Legs";
-"Strengthening.arms" = "Arms";
-"Strengthening.coordination" = "Coordination";
+"Strengthening.title" = "बलियो बनाउने";
+"Strenghtening.legs" = "खुट्टा";
+"Strengthening.arms" = "हात";
+"Strengthening.coordination" = "सङ्गठन";
 /* LEGS VIEW CONTROLLER */
-"Legs.toe" = "Toe Flexion";
-"Legs.knee" = "Knee Flexion";
-"Legs.hip" = "Hip Flexion";
+"Legs.toe" = "पैर फ्लेक्सियन";
+"Legs.knee" = "घुटने फ्लेक्सियन";
+"Legs.hip" = "हिप फ्लेक्सन";
 
 /* ARMS VIEW CONTROLLER */
-"Arms.elbow" = "Elbow Flexion";
-"Arms.shoulder" = "Shoulder Flexion";
+"Arms.elbow" = "कोहिन फ्लेक्सन";
+"Arms.shoulder" = "क्यान्सर फ्लेक्सन";
 
 /* COORDINATION VIEW CONTROLLER */
-"Coordination.legControl1" = "Leg Control 1";
-"Coordination.legControl2" = "Leg Control 2";
+"Coordination.legControl1" = "पैदल नियंत्रण 1";
+"Coordination.legControl2" = "पैदल नियंत्रण 2";
 
 
 
 /* STRETCHING VIEW CONTROLLER */
-"Stretching.title" = "Stretching";
-"Stretching.armsAndHands" = "Arms & Hands";
-"Stretching.legsAndFeet" = "Legs & Feet";
-"Stretching.handStretch" = "Hand Stretch";
-"Stretching.shoulderStretch" = "Shoulder Stretch";
-"Stretching.armStretch" = "Arm Stretch";
-"Stretching.adductors" = "Adductors";
-"Stretching.hamstrings" = "Hamstrings";
-"Stretching.dorsiflexors" = "Dorsiflexors";
-"Stretching.legStretch" = "Leg Stretch";
-"Stretching.kneeStretch" = "Knee Stretch";
-"Stretching.ankleStretch" = "Ankle Stretch";
-"Stretching.handStretch" = "Hand Stretch";
-"Stretching.adductorsInstructions" = "You can do this exercise lying down or sitting in a stable chair. Lying on your back, slide the affected leg out to the side for 30 seconds and back in. Repeat 3 times";
-"Stretching.hamstringsInstructions" = "You can do this exercise lying down or sitting in a stable chair. Lie down on your back with your knees bent and straighten the knee upwards towards the sky for 30 seconds.";
-"Stretching.dorsiflexorsInstructions" = "You can do this exercise lying down or sitting in a stable chair. Push the foot upwards towards torso and hold for 30 sec. Repeat 3 times.";
+//"Stretching.title" = "Stretching.title";
+"Stretching.armsAndHands" = "आर्म र ह्यान्ड";
+"Stretching.legsAndFeet" = "पैर र फीट";
+"Stretching.handStretch" = "ह्यान्ड स्ट्रिच";
+"Stretching.shoulderStretch" = "कंधे खिच्नुहोस्";
+"Stretching.armStretch" = "आर्म स्ट्रेच";
+"Stretching.adductors" = "विज्ञापन";
+"Stretching.hamstrings" = "हम्स्त्रिन्ग्स";
+"Stretching.dorsiflexors" = "डोर्सिफ़्लेक्षोर्स";
+"Stretching.legStretch" = "लेग स्ट्रेच";
+"Stretching.kneeStretch" = "घुटने को खिंचाव";
+"Stretching.ankleStretch" = "टकराव खिच्नुहोस्";
+"Stretching.handStretch" = "ह्यान्ड स्ट्रिच";
+"Stretching.adductorsInstructions" = "तपाईं यो व्यायाम एक स्थिर कुर्सीमा तल बस्न वा बस्न सक्नुहुन्छ। तपाईंको पछाडि बिरोध, प्रभावित प्यानललाई 30 सेकेन्ड र पछाडिको लागि साइड आउट गर्नुहोस् 3 गुणा दोहोर्याउनुहोस्";
+"Stretching.dorsiflexorsInstructions" = "तपाईं यो व्यायाम एक स्थिर कुर्सीमा तल बस्न वा बस्न सक्नुहुन्छ। तुरुन्तै खुट्टा तिर माथि उठाउनुहोस् र 30 सेकेन्डको लागि समात्नुहोस्। 3 पटक दोहोर्याउनुहोस्।";
 "Stretching.handStretchInstructions" = "Side lying with the involved side up and arm resting on the hip. Support the elbow on the hip but use your other hand to move the wrist up and away from the stomach. Bring the wrist back to its resting position Support the wrist with one hand  and try to open the fingers with the other hand. Progress to trying to open the hand when the wrist is moved up and away from the stomach. Hold the stretch for 30 seconds. Repeat 3 times.";
-"Stretching.shoulderStretchInstructions" = "With the side lying with involved arm resting on hip. Bring shoulder up towards the ear and then gently back and down.";
-"Stretching.armStretchInstructions" = "Side lying with the involved side up and arm resting on the hip. Gently bring the lower arm towards the leg.Hold for 30 seconds. Repeat 3 times. Make sure that  you hold the shoulder and stop it from moving forward.";
+"Stretching.shoulderStretchInstructions" = "पक्षले हिपमा संलग्न हात समात्न साथ झूट। कानमा कंधे माथि र त्यसपछि छिटो र तल ल्याउनुहोस्।";
+"Stretching.armStretchInstructions" = "पक्षमा संलग्न साइड अप र हिपमा बाहिरी हातले झण्डा। धीरे टाँस्नु टाढा तिर लाग्नु पर्छ। 30 सेकेण्डका लागि। 3 पटक दोहोर्याउनुहोस्। निश्चित गर्नुहोस् कि तपाइँ कंधे राख्नुहोस् र अगाडि बढ्नबाट रोक्नुहोस्।";
 
 /* MIND EXERCISES VIEW CONTROLLER */
-"MindExercises.bellsInstructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on the peaceful surroundings and the sounds.\n* Imagine walking in this surrounding.\n* Move the phone side ways to enjoy the view.\n* Close your eyes now and take another deep breath.\n* Focus back in to your room.";
-"MindExercises.buddhaInstructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on the peaceful scene and the natural sounds.\n* Imagine walking towards the Buddha Statue.\n* Move the phone up to see the sky and side ways to enjoy the view.\n* Close your eyes now and take another deep breath.\n* Focus back in to your room.";
-"MindExercises.flagsInstructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on this beach and the sound of the waves.\n* Imagine the feeling of sand on your feet.\n* Imagine walking on the beach and creating your own foot prints in sand.\n* Move the phone side ways to enjoy the beach.\n* Close your eyes now and take another deep breath.\nFocus back in to your room.";
-"MindExercises.marketplace1Instructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on the market scene and the natural sounds.\n* Imagine reaching out and picking up the fruit.\n* Move the phone side ways to enjoy the view.\n* Close your eyes now and take another deep breath.\n* Focus back in to your room.";
-"MindExercises.marketplace2Instructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on the market scene and the natural sounds.\n* Imagine walking in the market place.\n* Move the phone side ways to enjoy the view.\n* Close your eyes now and take another deep breath.\n* Focus back in to your room.";
-"MindExercises.rockybeachInstructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on this beach and the sound of the waves. \n* Notice the beautiful rocks.\n* Imagine reaching for and picking one rock.\n* Imagine making a tower of rocks.\n* Move the phone up to see the beautiful sky.\n* Close your eyes now and take another deep breath.\n* Focus back in to your room.";
-"MindExercises.sandybeachInstructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on this beach and the sound of the waves.\n* Imagine the feeling of sand on your feet.\n* Imagine walking on the beach and creating your own foot prints in sand.\n* Move the phone side ways to enjoy the beach.\n* Close your eyes now and take another deep breath.\n* Focus back in to your room.";
+"MindExercises.bellsInstructions" = "सजिलो रुपमा बस्नुहोस् र सज्जन मुस्कानसँग गहिरो सास लिनुहोस्।\n* शान्त वातावरण र आवाजहरूमा फोकस गर्नुहोस्।.\n* वरिपरि हिंड्ने कल्पना गर्नुहोस्।\n* दृश्यको आनन्द लिन फोन साइड तरिकाहरू सार्नुहोस्।.\n* अब तपाईंको आँखा बन्द गर्नुहोस् र अर्को गहिरो सास लिनुहोस्।\n* तपाईंको कोठामा फर्कनुहोस्।";
+"MindExercises.buddhaInstructions" = "* सजिलो रुपमा बस्नुहोस् र सज्जन मुस्कानसँग गहिरो सास लिनुहोस्। \n* शान्त दृश्य र प्राकृतिक ध्वनीहरूमा फोकस गर्नुहोस्। \n* बुद्धको प्रतिमा हिँड्ने कल्पना गर्नुहोस्। \n* फोन र माथिल्लो साउन्ड हेर्नका लागि आकाशमा जानुहोस्। दृश्यको आनन्द लिनुहोस्। \n* अब आफ्नो आँखा बन्द गर्नुहोस् र अर्को गहिरो सास लिनुहोस्। \n* तपाईंको कोठामा फर्कनुहोस्।";
+"MindExercises.flagsInstructions" = "* सजिलो रुपमा बस्नुहोस् र सज्जन मुस्कानसँग गहिरो सास लिनुहोस्। \ N * यस समुद्र तटमा फोकस र लहरहरूको आवाज। \ N * तपाईंको खुट्टामा बालुवाको भावना कल्पना गर्नुहोस्। \ N * समुद्र तटमा हिँड्ने कल्पना गर्नुहोस् र आफ्नै बालुवामा खुट्टा छाप। \ N * समुद्र तटको आनन्द लिने फोनका तरिकाहरू सार्नुहोस्। \ N * अहिलेका आँखा बन्द गर्नुहोस् र अर्को गहिरो सास लिनुहोस्। \ N आफ्नो कोठामा फर्कनुहोस्।";
+"MindExercises.marketplace1Instructions" = "* आरामपूर्वक बस्नुहोस् र सज्जन मुस्कानसँग गहिरो सास लिनुहोस्। \ N * बजार दृश्य र प्राकृतिक ध्वनीहरूमा फोकस गर्नुहोस्। \ N * बाहिर पुग्न र फल उठाएर कल्पना गर्नुहोस्। \ N * दृश्यको आनन्द लिन फोन साइड मार्फत सार्नुहोस्। । \ N * अब आफ्नो आँखा बन्द गर्नुहोस् र अर्को गहिरो सास लिनुहोस्। \ N * तपाईंको कोठामा फर्कनुहोस्।";
+//Need verification
+"MindExercises.marketplace2Instructions" = "* आरामपूर्वक बस्नुहोस् र सज्जन मुस्कानसँग गहिरो सास लिनुहोस्। \ N * बजार दृश्य र प्राकृतिक ध्वनियाँमा फोकस गर्नुहोस्। \ N * बजारमा हिँड्ने कल्पना गर्नुहोस्। \ N * दृश्यको मजा लिनको लागि फोनका माध्यमहरू सार्नुहोस्। \ N * N * अब तपाईंको आँखा बन्द गर्नुहोस् र अर्को गहिरो सास लिनुहोस्। \ N * तपाईंको कोठामा फर्कनुहोस्।";
+"MindExercises.rockybeachInstructions" = "* आरामपूर्वक बस्नुहोस् र सज्जन मुस्कानसँग गहिरो सास लिनुहोस्। \ N * यस समुद्र तटमा फोकस र लहरहरूको आवाज। \ N * सुन्दर चट्टानलाई ध्यान दिनुहोस्। \ N * एक रकलाको लागि पुग्ने कल्पना गर्नुहोस्। \ N * चट्टानको टवर बनाउने कल्पना गर्नुहोस्। \ N * फोनमा जानुहोस् सुन्दर आकाश हेर्न। \ N * अहिलेका आँखा बन्द गर्नुहोस् र अर्को गहिरो सास लिनुहोस्। \ N * तपाईंको कोठामा फर्कनुहोस्।";
+"MindExercises.sandybeachInstructions" = "* सान्त्वनामा रहनुहोस् र सज्जन मुस्कानसँग गहिरो सास लिनुहोस्। \ N * यस समुद्र तटमा फोकस र लहरहरूको आवाज। \ N * तपाईंको खुट्टामा बालुवाको भावना कल्पना गर्नुहोस्। \ N * समुद्र तटमा हिँड्ने कल्पना गर्नुहोस् र तपाईंको सिर्जना गर्नुहोस् बालुवामा आफ्नै खुट्टा छाप। \ N * समुद्र किनाराको आनन्द लिने फोनका तरिकाहरू सार्नुहोस्। \ N * अहिलेका आँखा बन्द गर्नुहोस् र अर्को गहिरो सास लिनुहोस्। \ N * तपाईंको कोठामा फर्कनुहोस्।";
 
 /* FUNCTIONAL MOBILITY VIEW CONTROLLER */
-"FunctionalMobility.bridgeHipLift" = "Bridge Hip Lift";
-"FunctionalMobility.armTrunkStrengthening" = "Arm Trunk Strengthening";
-"FunctionalMobility.sitToStand" = "Sit To Stand";
+"FunctionalMobility.bridgeHipLift" = "ब्रिज हिप लिफ्ट";
+"FunctionalMobility.armTrunkStrengthening" = "आर्म ट्रंक सुदृढीकरण";
+"FunctionalMobility.sitToStand" = "खडा हुनुहोस्";
 
 /* LEARN VIEW CONTROLLER */
-"Learn.title" = "Learn";
+"Learn.title" = "सिक्नुहोस्";
 "Learn.b" = "B";
 "Learn.e" = "E";
 "Learn.f" = "F";
 "Learn.a" = "A";
 "Learn.s" = "S";
 "Learn.t" = "T";
-"Learn.befastB" = "Balance: Sudden loss of balance.";
-"Learn.befastE" = "Eye: Sudden loss of vision in one or both eyes.";
+"Learn.befastB" = "सन्तुलन: सन्तुलनको अचानक हानि।";
+"Learn.befastE" = "आँखा: अनुहारको अचानक एक वा दुवै आँखामा।";
 "Learn.befastF" = "Face drooping on one side when asked to smile.";
 "Learn.befastA" = "Arm weakness; can't raise arms and keep them there.";
 "Learn.befastS" = "Speech difficulty.";
