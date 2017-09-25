@@ -48,8 +48,8 @@
     
     //Set up profile image view
     self.profileImage = [[UIImageView alloc] init];
-    self.profileImage.contentMode = UIViewContentModeScaleAspectFill;
-    self.profileImage.layer.cornerRadius = 15;
+    self.profileImage.contentMode = UIViewContentModeScaleAspectFit;
+    self.profileImage.layer.cornerRadius = 20;
     self.profileImage.layer.masksToBounds =true;
     
     [self addSubview: self.bubbleView];
@@ -61,8 +61,8 @@
     
     //add constraints for profile image
     NSDictionary *views = @{ @"profileImage" : self.profileImage };
-    [self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-8-[profileImage(30)]" options:0 metrics:nil views: views]];
-    [self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:[profileImage(30)]|" options:0 metrics:nil views: views]];
+    [self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-8-[profileImage(40)]" options:0 metrics:nil views: views]];
+    [self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:[profileImage(40)]|" options:0 metrics:nil views: views]];
     
     [self.bubbleView addSubview:self.chatBubbleView];
     self.chatBubbleView.translatesAutoresizingMaskIntoConstraints = NO;

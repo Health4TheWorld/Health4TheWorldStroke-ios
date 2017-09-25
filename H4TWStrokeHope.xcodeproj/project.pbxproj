@@ -881,7 +881,7 @@
 				TargetAttributes = {
 					CC4C10AB1E7A26DE00515CDC = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = X7FF3N72Z3;
+						DevelopmentTeam = VQM3AFB3H9;
 						ProvisioningStyle = Automatic;
 					};
 					CC4C10C71E7A26DE00515CDC = {
@@ -1284,7 +1284,7 @@
 			baseConfigurationReference = CAB005F6C1031EB530EC7DE2 /* Pods-H4TWStrokeHope.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X7FF3N72Z3;
+				DEVELOPMENT_TEAM = VQM3AFB3H9;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;
@@ -1297,7 +1297,7 @@
 			baseConfigurationReference = 6E1D5BC6AFF988A11E4C970D /* Pods-H4TWStrokeHope.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X7FF3N72Z3;
+				DEVELOPMENT_TEAM = VQM3AFB3H9;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;

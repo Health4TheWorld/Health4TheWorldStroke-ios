@@ -15,11 +15,12 @@
 #import "ExercisesViewController.h"
 #import "RelaxingMusicViewController.h"
 
+
 @interface ChatBotViewController ()
 
 @end
 
-#define PROFILE_IMAGE @"ChatBotProfile"
+#define PROFILE_IMAGE @"DoctorBot"
 #define NO_BUTTON @"NO"
 #define YES_BUTTON @"YES"
 #define LONELY_BUTTON1 @"Watch 360 videos"
@@ -162,7 +163,17 @@ NSMutableArray *messages;
     [self.collectionView setContentInset: UIEdgeInsetsMake(0, 0, 100, 0)];
     
     //Initiate welcome message
-    [self initiateWelcomeMessage];
+    if([self.welcomeText  isEqual: @"good"]){
+    [self initiateWelcomeMessage: self.welcomeText];
+    } else if ([self.welcomeText  isEqual: @"sad"]){
+        [self icon3ButtonPressed];
+    } else if ([self.welcomeText  isEqual: @"very sad"]){
+        [self icon4ButtonPressed];
+    }
+    else if ([self.welcomeText  isEqual: @"painful"]){
+        [self icon5ButtonPressed];
+    }
+
 }
 
 - (void)backPressed {
@@ -176,9 +187,22 @@ NSMutableArray *messages;
     [self.collectionView reloadData];
 }
 
+-(void) viewWillDisappear:(BOOL)animated {
+    // write code to execute when the view dissapears
+    [self stopSpeech];
+    [self.synthesizer speakUtterance:nil];
+}
+
+// AV Stop Speech
+-(void) stopSpeech {
+    if([self.synthesizer isSpeaking]){
+        [self.synthesizer stopSpeakingAtBoundary:AVSpeechBoundaryImmediate];
+    }
+}
+
 /* Initial Welcome message */
--(void) initiateWelcomeMessage {
-    NSString *text = @"Hi";
+-(void) initiateWelcomeMessage: (NSString*) initialtext{
+    NSString *text = initialtext;
     AITextRequest *request = [self createAndFetchRequest:text];
     [self retrieveAPIResponseWithRequest:request withSharedInstance: self.apiai];
 }
@@ -431,6 +455,12 @@ NSMutableArray *messages;
             [self.collectionView insertItemsAtIndexPaths: items];
             [self.collectionView scrollToItemAtIndexPath:insertIndexPath atScrollPosition:UICollectionViewScrollPositionBottom animated:true];
             
+            
+            // Text to Speech - toggle this on or off for speech
+            self.synthesizer = [[AVSpeechSynthesizer alloc] init];
+            self.utterance = [AVSpeechUtterance speechUtteranceWithString:text];
+            [self.synthesizer speakUtterance:self.utterance];
+            
             [self processResponse:text withIntent:intent];
             
         } @catch (NSException *exception) {
@@ -498,12 +528,15 @@ NSMutableArray *messages;
         NSLog(@"%@",textResponse);
         
         //clear the textField
+        if(!self.textField.isHidden){
         self.textField.text = @"";
+        }
         
     } failure:^(AIRequest *request, NSError *error) {
 //        __strong typeof(selfWeak) selfStrong = selfWeak;
         
         [self customAlertMessageWithTitle:@"Error" withMessage:[error localizedDescription]];
+        NSLog(@"%@", error.description);
         
     }];
     
@@ -763,7 +796,7 @@ UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
         // Check if sender or receiver and change the UI based on the boolean
         if(!message.isSender){
                 cell.messageView.frame = CGRectMake(profileImageSpace + 8, 0, estimatedFrame.width + padding, estimatedFrame.height + padding);
-                cell.bubbleView.frame = CGRectMake(profileImageSpace - 8, 0, estimatedFrame.width + padding + 8, estimatedFrame.height + padding);
+                cell.bubbleView.frame = CGRectMake(profileImageSpace - 8, 0, estimatedFrame.width + padding + 8 + 10, estimatedFrame.height + padding);
                 
                 // text color - black
                 cell.messageView.textColor = [UIColor blackColor];

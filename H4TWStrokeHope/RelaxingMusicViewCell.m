@@ -7,6 +7,7 @@
 //
 
 #import "RelaxingMusicViewCell.h"
+#import "Constants.h"
 
 @implementation RelaxingMusicViewCell
 
@@ -38,7 +39,7 @@
     self.label.textAlignment = NSTextAlignmentCenter;
     self.layer.opacity = 0.9;
     self.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    self.layer.borderWidth = 1.0;
+    self.layer.borderWidth = 2.0;
     [self.label sizeToFit];
     [self addSubview:self.label];
     

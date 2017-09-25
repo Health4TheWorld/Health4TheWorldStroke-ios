@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ChatMessages.h"
 #import <ApiAI/ApiAI.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ChatBotViewController : UICollectionViewController <UITextFieldDelegate , UICollectionViewDelegateFlowLayout>
 @property (nonnull,retain) UIButton *sendButton;
@@ -42,6 +43,18 @@
 @property (nonnull, retain) UIButton *feelingOption5;
 @property (nonnull, retain) UIButton *feelingOption6;
 
-// Feeling Options
+// Icon Button action methods
+- (void) icon1ButtonPressed;
+- (void) icon2ButtonPressed;
+- (void) icon3ButtonPressed;
+- (void) icon4ButtonPressed;
+- (void) icon5ButtonPressed;
+
+// initial Text Message
+@property (nonnull, retain) NSString *welcomeText;
+
+// AV Speech
+@property (strong,nonatomic) AVSpeechUtterance * _Nullable utterance;
+@property (strong,nonatomic) AVSpeechSynthesizer * _Nullable synthesizer;
 
 @end
