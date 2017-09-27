@@ -46,9 +46,50 @@
 
 - (void)setUpView {
     static int SPACE_BETWEEN_CELLS = 10;
-    float cellWidth = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
+    float cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
     
     float startingY = SPACE_BETWEEN_CELLS;
+     NSLog(@"%f",cellWidth);
+    // Chatbot images - doctor and chat message
+    
+    UIView *chatbotView = [[UIView alloc] initWithFrame: CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth/6)];
+    UIImageView *chatbotMessageImage = [[UIImageView alloc] init];
+    chatbotMessageImage.image = [UIImage imageNamed:@"ChatMessage"];
+    
+    UIImageView *chatbotDoctorImage = [[UIImageView alloc] init];
+    chatbotDoctorImage.image = [UIImage imageNamed:@"Doctor"];
+    
+    chatbotMessageImage.contentMode = UIViewContentModeScaleAspectFit;
+    chatbotMessageImage.layer.masksToBounds =true;
+    chatbotMessageImage.translatesAutoresizingMaskIntoConstraints = false;
+    chatbotDoctorImage.contentMode = UIViewContentModeScaleAspectFit;
+    chatbotDoctorImage.layer.masksToBounds =true;
+    chatbotDoctorImage.translatesAutoresizingMaskIntoConstraints = false;
+    
+    [chatbotView addSubview: chatbotMessageImage];
+     [chatbotView addSubview: chatbotDoctorImage];
+    
+    //add constraints for  images
+    NSDictionary *views = @{ @"chatbotMessageImage" :  chatbotMessageImage, @"chatbotDoctorImage" : chatbotDoctorImage};
+    [chatbotView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[chatbotDoctorImage][chatbotMessageImage]|" options:0 metrics:nil views: views]];
+    [chatbotView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[chatbotMessageImage]|" options:0 metrics:nil views: views]];
+       [chatbotView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[chatbotDoctorImage]|" options:0 metrics:nil views: views]];
+    
+    //chatbot  smiley icons
+    startingY += (cellWidth/6);
+    //startingY += SPACE_BETWEEN_CELLS;
+    NSLog(@"%f",startingY);
+    
+    UIView *chatbotView2 = [[UIView alloc] initWithFrame: CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth/6)];
+    
+    chatbotView2 = [self smileyIconsSetup: chatbotView2];
+    
+    //Other home buttons
+    
+    cellWidth = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
+    
+    startingY += cellWidth/3;
+    startingY += SPACE_BETWEEN_CELLS;
     
     HomeButton *helpMeSpeakButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.helpMeSpeak", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
     [helpMeSpeakButton addImageBottomRight:[UIImage imageNamed:HELP_ME_SPEAK_ICON]];
@@ -72,21 +113,15 @@
     startingY += cellWidth;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *generalInfoButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.generalInfo", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
+    
+   HomeButton *generalInfoButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.generalInfo", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
     [generalInfoButton addImageCentered:[UIImage imageNamed:GENERAL_INFO_ICON]];
     [generalInfoButton addTarget:self action:@selector(generalInfoPressed) forControlEvents:UIControlEventTouchUpInside];
     
     HomeButton *surveysButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.surveys", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
     [surveysButton addImageBottomRight:[UIImage imageNamed:SURVEYS_ICON]];
     [surveysButton addTarget:self action:@selector(surveysPressed) forControlEvents:UIControlEventTouchUpInside];
-    
-    startingY += cellWidth;
-    startingY += SPACE_BETWEEN_CELLS;
-    
-    HomeButton *chatBotButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.chatBot", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2), cellWidth)];
-    [chatBotButton addImageCentered:[UIImage imageNamed:CHATBOT_ICON]];
-    [chatBotButton addTarget:self action:@selector(chatBotPressed) forControlEvents:UIControlEventTouchUpInside];
-    
+
     startingY += cellWidth;
     startingY += SPACE_BETWEEN_CELLS;
 
@@ -96,7 +131,8 @@
     [self.contentView addSubview:remindersButton];
     [self.contentView addSubview:generalInfoButton];
     [self.contentView addSubview:surveysButton];
-    [self.contentView addSubview:chatBotButton];
+    [self.contentView addSubview:chatbotView];
+    [self.contentView addSubview:chatbotView2];
 
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
 }
@@ -144,10 +180,110 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (void)chatBotPressed {
+// Smiley icons setup
+- (UIView*) smileyIconsSetup: (UIView*) chatbotView2{
+    
+    // Setup welcome Icons
+    self.chatbotsmiley1 = [self createButton:self.chatbotsmiley1 withImage:QUOTES_IMAGE1];
+    self.chatbotsmiley1.translatesAutoresizingMaskIntoConstraints = false;
+    [self.chatbotsmiley1 addTarget:self action:@selector(icon1Pressed) forControlEvents:UIControlEventTouchUpInside];
+    self.chatbotsmiley1.contentMode = UIViewContentModeScaleAspectFit;
+    self.chatbotsmiley1.layer.masksToBounds = true;
+    
+    self.chatbotsmiley2 = [self createButton:self.chatbotsmiley2 withImage:QUOTES_IMAGE2];
+    self.chatbotsmiley2.translatesAutoresizingMaskIntoConstraints = false;
+    [self.chatbotsmiley2 addTarget:self action:@selector(icon2Pressed) forControlEvents:UIControlEventTouchUpInside];
+    self.chatbotsmiley2.contentMode = UIViewContentModeScaleAspectFit;
+    self.chatbotsmiley2.layer.masksToBounds = true;
+    
+    self.chatbotsmiley3 = [self createButton:self.chatbotsmiley3 withImage:QUOTES_IMAGE3];
+    self.chatbotsmiley3.translatesAutoresizingMaskIntoConstraints = false;
+    [self.chatbotsmiley3 addTarget:self action:@selector(icon3Pressed) forControlEvents:UIControlEventTouchUpInside];
+    self.chatbotsmiley3.contentMode = UIViewContentModeScaleAspectFit;
+    self.chatbotsmiley3.layer.masksToBounds = true;
+    
+    self.chatbotsmiley4 = [self createButton:self.chatbotsmiley4 withImage:QUOTES_IMAGE4];
+    self.chatbotsmiley4.translatesAutoresizingMaskIntoConstraints = false;
+    [self.chatbotsmiley4 addTarget:self action:@selector(icon4Pressed) forControlEvents:UIControlEventTouchUpInside];
+    self.chatbotsmiley4.contentMode = UIViewContentModeScaleAspectFit;
+    self.chatbotsmiley4.layer.masksToBounds = true;
+    
+    self.chatbotsmiley5 = [self createButton:self.chatbotsmiley5 withImage:QUOTES_IMAGE5];
+    self.chatbotsmiley5.translatesAutoresizingMaskIntoConstraints = false;
+    [self.chatbotsmiley5 addTarget:self action:@selector(icon5Pressed) forControlEvents:UIControlEventTouchUpInside];
+    self.chatbotsmiley5.contentMode = UIViewContentModeScaleAspectFit;
+    self.chatbotsmiley5.layer.masksToBounds = true;
+    
+    [chatbotView2 addSubview:self.chatbotsmiley1];
+    [chatbotView2 addSubview:self.chatbotsmiley2];
+    [chatbotView2 addSubview:self.chatbotsmiley3];
+    [chatbotView2 addSubview:self.chatbotsmiley4];
+    [chatbotView2 addSubview:self.chatbotsmiley5];
+    
+    //Horizontal Constraints
+    
+    NSDictionary *viewsIconsButton = @{ @"icon1" : self.chatbotsmiley1, @"icon2" : self.chatbotsmiley2 ,@"icon3" : self.chatbotsmiley3, @"icon4" : self.chatbotsmiley4, @"icon5" : self.chatbotsmiley5};
+    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-35-[icon1(45)]-20-[icon2(45)]-20-[icon3(45)]-20-[icon4(45)]-20-[icon5(45)]-20-|" options:0 metrics:nil views: viewsIconsButton]];
+    
+    //Vertical Constraints
+    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon1(45)]-5-|" options:0 metrics:nil views: viewsIconsButton]];
+    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon2(45)]-5-|" options:0 metrics:nil views: viewsIconsButton]];
+    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon3(45)]-5-|" options:0 metrics:nil views: viewsIconsButton]];
+    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon4(45)]-5-|" options:0 metrics:nil views: viewsIconsButton]];
+    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon5(45)]-5-|" options:0 metrics:nil views: viewsIconsButton]];
+    
+    return chatbotView2;
+}
+
+
+// Smiley icon1 pressed
+- (void) icon1Pressed {
     UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout alloc];
     ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
+    vc.welcomeText = @"good";
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+// Smiley icon2 pressed
+- (void) icon2Pressed {
+    UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout alloc];
+    ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
+    vc.welcomeText = @"good";
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+// Smiley icon3 pressed
+- (void) icon3Pressed {
+    UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout alloc];
+    ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
+    vc.welcomeText = @"sad";
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+// Smiley icon4 pressed
+- (void) icon4Pressed {
+    UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout alloc];
+    ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
+    vc.welcomeText = @"very sad";
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+// Smiley icon5 pressed
+- (void) icon5Pressed {
+    UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout alloc];
+    ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
+    vc.welcomeText = @"painful";
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+// Custom icon creator for Container View
+- (UIButton*) createButton: (UIButton*) button withImage: (NSString*) imageName{
+    button = [UIButton buttonWithType: UIButtonTypeCustom];
+    UIImage *image = [UIImage imageNamed:imageName];
+    [button setImage:image forState:UIControlStateNormal];
+    button.layer.cornerRadius = 15;
+    button.clipsToBounds = YES;
+    return button;
 }
 
 /*

@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeViewController : UIViewController
+// Smiley icons 
+@property (nonnull, retain) UIButton *chatbotsmiley1;
+@property (nonnull, retain) UIButton *chatbotsmiley2;
+@property (nonnull, retain) UIButton *chatbotsmiley3;
+@property (nonnull, retain) UIButton *chatbotsmiley4;
+@property (nonnull, retain) UIButton *chatbotsmiley5;
 
 @end

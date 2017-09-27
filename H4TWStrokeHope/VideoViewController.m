@@ -10,9 +10,9 @@
 #import "Constants.h"
 
 @interface VideoViewController ()
-@property (nonatomic,retain) AVPlayer *player;
-@property (nonatomic,retain) AVPlayerViewController *controller;
-@property (nonatomic,retain) AVQueuePlayer *queue;
+@property (nonatomic,strong) AVPlayer *player;
+@property (nonatomic,strong) AVPlayerViewController *controller;
+@property (nonatomic,strong) AVQueuePlayer *queue;
 @end
 
 @implementation VideoViewController
@@ -113,12 +113,15 @@
 -(void) viewWillDisappear:(BOOL)animated{
     [self.player pause];
     [self.queue removeAllItems];
+    //[self.player removeTimeObserver:AVPlayerItemDidPlayToEndTimeNotification];
     self.player = nil;
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    self.player =nil;
 }
 
 /*
