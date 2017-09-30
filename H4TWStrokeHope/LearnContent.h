@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 
 #define CONTENT_TYPE_FAQ NSLocalizedString(@"Learn.faq", nil)
+#define CONTENT_TYPE_SIGNSOFSTROKE NSLocalizedString(@"Learn.signsOfStroke", nil)//MM
+#define CONTENT_TYPE_RISKFACTORS NSLocalizedString(@"Learn.riskFactors", nil)//MM
 #define CONTENT_TYPE_BLOOD_PRESSURE NSLocalizedString(@"Learn.bloodPressure", nil)
 #define CONTENT_TYPE_HEART_RATE NSLocalizedString(@"Learn.heartRate", nil)
 #define CONTENT_TYPE_BLOOD_SUGAR NSLocalizedString(@"Learn.bloodSugar", nil)

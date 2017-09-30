@@ -11,4 +11,5 @@
 
 @interface LearnContentViewController : UIViewController
 @property LearnContent *content;
+@property BOOL justImage;
 @end

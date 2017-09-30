@@ -27,8 +27,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *language = [[NSLocale preferredLanguages] objectAtIndex:0];
-    NSLog(@"Language: %@", language);
+//    NSString *language = [[NSLocale preferredLanguages] objectAtIndex:0];
+//    NSLog(@"Language: %@", language);
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
     [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
@@ -96,7 +96,7 @@
     [helpMeSpeakButton addTarget:self action:@selector(helpMeSpeakPressed) forControlEvents:UIControlEventTouchUpInside];
     
     HomeButton *exercisesButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.exercises", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
-    [exercisesButton addImageRightCenter:[UIImage imageNamed:EXERCISE_ICON]];
+    [exercisesButton addImageCentered:[UIImage imageNamed:EXERCISE_ICON]];
     [exercisesButton addTarget:self action:@selector(exercisePressed) forControlEvents:UIControlEventTouchUpInside];
 
     startingY += cellWidth;

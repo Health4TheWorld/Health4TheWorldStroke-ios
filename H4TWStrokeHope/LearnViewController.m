@@ -34,7 +34,7 @@
     [super viewDidLoad];
     self.title = [NSLocalizedString(@"Learn.title", nil) uppercaseString];
     self.befastExplanationLabel.text = BEFAST_B;
-    self.learnCategories = @[CONTENT_TYPE_FAQ, CONTENT_TYPE_BLOOD_PRESSURE, CONTENT_TYPE_HEART_RATE, CONTENT_TYPE_BLOOD_SUGAR, CONTENT_TYPE_DIET, CONTENT_TYPE_BLADDER_BOWEL, CONTENT_TYPE_EXERCISES, CONTENT_TYPE_SHOWER_BATH, CONTENT_TYPE_HOME_MOD];
+    self.learnCategories = @[CONTENT_TYPE_FAQ,CONTENT_TYPE_SIGNSOFSTROKE, CONTENT_TYPE_RISKFACTORS,  CONTENT_TYPE_BLOOD_PRESSURE, CONTENT_TYPE_HEART_RATE, CONTENT_TYPE_BLOOD_SUGAR, CONTENT_TYPE_DIET, CONTENT_TYPE_BLADDER_BOWEL, CONTENT_TYPE_EXERCISES, CONTENT_TYPE_SHOWER_BATH, CONTENT_TYPE_HOME_MOD];
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     /* Gets rid of extra blank cells */
@@ -118,7 +118,9 @@
         }
     }
 }
+- (void) showImageWithLoadHTMLString {
 
+}
 /* Change button appearances and befast explanation. */
 - (void)selectedBefastButton:(id)sender {
     UIButton *button = (UIButton *)sender;
@@ -192,9 +194,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     self.selectedIndexPath = indexPath;
-    LearnContentViewController *dest = [[LearnContentViewController alloc] init];
-    dest.content = [[LearnContent alloc] initWithContentTitle:[self.learnCategories objectAtIndex:indexPath.row]];
-    [self.navigationController pushViewController:dest animated:YES];
+        LearnContentViewController *dest = [[LearnContentViewController alloc] init];
+        if(indexPath.row == 1 || indexPath.row == 2){
+            dest.justImage = TRUE;
+            NSLog(@"Change scrollview size");
+        }else{
+            dest.justImage = FALSE;
+        }    
+        dest.content = [[LearnContent alloc] initWithContentTitle:[self.learnCategories objectAtIndex:indexPath.row]];
+            [self.navigationController pushViewController:dest animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;

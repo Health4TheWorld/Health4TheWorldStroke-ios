@@ -10,10 +10,19 @@
 #import "Constants.h"
 
 @implementation LearnContent
+
+-(void) addWeb{
+    
+}
+
 - (id)initWithContentTitle:(NSString *)title {
     self = [super init];
     if (self) {
-        if ([title isEqualToString:CONTENT_TYPE_BLOOD_PRESSURE]) {
+        if ([title isEqualToString:CONTENT_TYPE_SIGNSOFSTROKE]) {//MM
+            [self setUpSignsOFStroke];
+        }else if ([title isEqualToString:CONTENT_TYPE_RISKFACTORS]) {//MM
+            [self setUpRiskFactors];
+        }else if ([title isEqualToString:CONTENT_TYPE_BLOOD_PRESSURE]) {
             [self setUpBloodPressure];
         } else if ([title isEqualToString:CONTENT_TYPE_BLOOD_SUGAR]) {
             [self setUpBloodSugar];
@@ -36,9 +45,15 @@
     return self; 
 }
 
+
 + (NSString *)getImageNameForType:(NSString *)type {
     NSString *imageName = @"";
-    if ([type isEqualToString:CONTENT_TYPE_BLOOD_PRESSURE]) {
+    if ([type isEqualToString:CONTENT_TYPE_SIGNSOFSTROKE]) {//MM
+        return AMBULANCE_ICON;//MM
+    }//
+    else if ([type isEqualToString:CONTENT_TYPE_RISKFACTORS]) {//MM
+        return CANE_WALKER;//MM
+    }else if ([type isEqualToString:CONTENT_TYPE_BLOOD_PRESSURE]) {
         return BLOOD_PRESSURE_ICON;
     } else if ([type isEqualToString:CONTENT_TYPE_BLOOD_SUGAR]) {
         return BLOOD_SUGAR_ICON;
@@ -78,6 +93,49 @@
     [self.content addObject:[self headerWithTitle:FAQ_QUESTION_THREE]];
     [self.content addObject:[self paragraphWithText:FAQ_ANSWER_THREE]];
 }
+- (void)setUpRiskFactors {//MM
+    self.contentTitle = CONTENT_TYPE_RISKFACTORS;
+    self.contentBGColor = HFTW_DARK;
+    self.textColor = [UIColor whiteColor];
+    self.backButtonImageStr = BLUE_BACK_BUTTON;
+    self.content = [[NSMutableArray alloc] init];
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 786, 587)];
+    imgView.bounds = CGRectMake(0, 0, 786, 587);
+    [imgView setImage:[UIImage imageNamed:RISK_FACTORS]];
+    self.images = @[imgView];
+}
+
+- (void)setUpRiskFactor {//MM
+    self.contentTitle = CONTENT_TYPE_RISKFACTORS;
+    //Need to modify
+    self.contentBGColor = HFTW_RED;
+    self.textColor = [UIColor whiteColor];
+    self.backButtonImageStr = RED_BACK_BUTTON;
+    
+    //    UIImageView *imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:RISK_FACTORS]];
+    //    imgView.bounds = CGRectMake(0, 0, 783, 577);
+    //    self.images = @[imgView];
+    
+    UIWebView *webView = [[UIWebView alloc]initWithFrame:CGRectMake(0.0, 0.0, 1000, 760)];
+    [webView setScalesPageToFit:YES];
+    webView.backgroundColor=[UIColor clearColor];
+    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"RiskFactors" ofType:@"html" inDirectory:@"html_files"];
+    NSData *htmlData = [NSData dataWithContentsOfFile:htmlFile];
+    [webView loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:[NSURL URLWithString:@""]];
+    //    [self addObject:webView];
+}//MM
+
+- (void)setUpSignsOFStroke {//MM
+    self.contentTitle = CONTENT_TYPE_SIGNSOFSTROKE;
+    self.contentBGColor = HFTW_RED;
+    self.textColor = [UIColor whiteColor];
+    self.backButtonImageStr = RED_BACK_BUTTON;
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 786, 587)];
+    imgView.bounds = CGRectMake(0, 0, 786, 587);
+    [imgView setImage:[UIImage imageNamed:BEFAST]];
+    self.images = @[imgView];
+}//MM
+
 
 - (void)setUpBloodPressure {
     self.contentTitle = CONTENT_TYPE_BLOOD_PRESSURE;
@@ -340,6 +398,10 @@
     [subheaderThree addAttribute:NSFontAttributeName value:LEARN_PARAGRAPH_FONT_BOLD range:[HOME_MOD_SUBHEADER_THREE rangeOfString:HOME_MOD_SUBHEADER_THREE]];
     [self.content addObject:[self attributedParagraphWithText:subheaderThree]];
     [self.content addObject:[self paragraphWithText:HOME_MOD_CONTENT_THREE]];
+}
+
+-(void)addWebView{
+    
 }
 
 /* Dictionaries that represent a chunk of text

@@ -30,7 +30,7 @@
 "Enter.secondAuthor" = "– Theodore Roosevelt";
 "Enter.thirdQuote" = "\"沒有什麽事情是不可能的，這個世界到處都是可能性!\"";
 "Enter.thirdAuthor" = "– Audrey Hepburn";
-"Enter.fourthQuote" = "\"只有我自己可以掌控自己的命運。Only I can change my life. No one can do it for me.\"";
+"Enter.fourthQuote" = "\"只有我自己可以掌控自己的命運。\"";
 "Enter.fourthAuthor" = "– Carol Burnett";
 "Enter.fifthQuote" = "\" 做最好的自己，現在的耕耘會帶來今後的收獲。\"";
 "Enter.fifthAuthor" = "– Og Mandino";
@@ -123,7 +123,7 @@
 ///* FUNCTIONAL MOBILITY VIEW CONTROLLER */
 "FunctionalMobility.bridgeHipLift" = "臀橋練習";
 "FunctionalMobility.armTrunkStrengthening" = "手臂拉伸";
-"FunctionalMobility.sitToStand" = "Sit To Stand坐立訓練";
+"FunctionalMobility.sitToStand" = "坐立訓練";
 //
 ///* LEARN VIEW CONTROLLER */
 "Learn.title" = "学习";
@@ -140,6 +140,8 @@
 "Learn.befastS" = "說話困難。";
 "Learn.befastT" = "我现在需要救护车。";
 "Learn.faq" = "常見問題";
+"Learn.signsOfStroke" = "中风信号";
+"Learn.riskFactors" = "风险因素";
 "Learn.bloodPressure" = "血壓";
 "Learn.heartRate" = "心跳";
 "Learn.bloodSugar" = "血糖";
@@ -147,7 +149,7 @@
 "Learn.bladderBowel" = "膀胱/腸道";
 "Learn.exercises" = "鍛煉";
 "Learn.showerBath" = "洗澡";
-"Learn.homeMod" = "Home Modification";
+"Learn.homeMod" = "家里改造";
 "Learn.smoking" = "吸煙";
 "Learn.sleep" = "睡覺";
 "Learn.problem" = "問題";
@@ -316,7 +318,7 @@
 "Terms.thankYouParTwo" = "复制，下载或者以其他途径使用該網站，App或其他相關服務，表示你已經同意受遵循條款，包括以下提到的免責申明和責任限制。如果你不明白或者不同意這些條款，請不要使用網站和任何相關服務，并退出網站。";
 "Terms.thankYouParThree" = "Health4TheWorld 擁有不作提前通知，在任何時候修改這些條款的權力。任何條款修改將會在發佈時即時生效。條款更新後后登陸使用網站或相關服務的，表示你接受新的條款內容和其他更新的內容。 ";
 "Terms.useSectionOneHeader" = "進入并使用網站，移動應用，以及相關服務。";
-"Terms.useSectionOneParOne" = "只有在同意并遵循Health4TheWorld提出的協議后，你方可以使用網站，移動應用和相關服務。When retrieving information from the Website or Services, you are prohibited from (a) using or attempting to use spiders, robots, avatars, intelligent agents, or any other extraction or navigation search except for a normal browser, (b) aggregating, copying or duplicating any of the materials or information available from the Website or Services except for the small amount of materials and information temporarily required for an ordinary single use of the Website and/or Services, or (c) 使用與你不相關的數據. 作為使用網站和服務的條件，你需要遵守以下協議：";
+"Terms.useSectionOneParOne" = "只有在同意并遵循Health4TheWorld提出的協議后，你方可以使用網站，移動應用和相關服務。當你在網站和相關服務商追索信息的時候，你不能（a）使用出了正常瀏覽器之外的比如蜘蛛，機器人，阿凡達，或其他引擎； (b) 誇大，複製，或者再製造除了臨時需要在網站和服務上單次使用的少量材料外，任何網站和服務上的材料和信息(c) 使用與你不相關的數據. 作為使用網站和服務的條件，你需要遵守以下協議：";
 "Terms.useSectionOneBulletOne" = "任何13歲以下的個人禁止使用，網站所提供的部分特定的課程材料可能會有額外的權限限制。";
 "Terms.useSectionOneBulletTwo" = "你需要給我們提供完整和準確的信息，並及時同意更新你的聯繫方式和賬號信息，并保證完整性和準確性。";
 "Terms.useSectionOneBulletThree" = "你需要通過合適的終端或者電腦使用網站和相關服務。我们对于不遵守这项规定而造成的任何损失不负责。";

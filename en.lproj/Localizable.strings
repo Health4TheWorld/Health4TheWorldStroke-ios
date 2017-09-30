@@ -145,6 +145,8 @@
 "Learn.befastS" = "Speech difficulty.";
 "Learn.befastT" = "Time to call an ambulance.";
 "Learn.faq" = "FAQ";
+"Learn.signsOfStroke" = "Signs Of Stroke";
+"Learn.riskFactors" = "Risk Factors";
 "Learn.bloodPressure" = "Blood Pressure";
 "Learn.heartRate" = "Heart Rate";
 "Learn.bloodSugar" = "Blood Sugar";
@@ -157,6 +159,7 @@
 "Learn.sleep" = "Sleep";
 "Learn.problem" = "PROBLEM";
 "Learn.whatToDo" = "WHAT TO DO";
+
 
 /* FAQ */
 "Faq.questionOne" = "What is stroke?";

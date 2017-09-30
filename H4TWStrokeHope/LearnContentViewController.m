@@ -19,6 +19,7 @@
 @property UIScrollView *scrollView;
 @property UIView *contentView;
 @property BOOL alreadyAddedText;
+
 @end
 
 @implementation LearnContentViewController
@@ -91,7 +92,7 @@
         
         NSArray *imgs = self.content.images;
         for (UIImageView *imgView in imgs) {
-            imgView.center = self.view.center;
+           // imgView.center = self.view.center;
             CGRect imgViewFrame = imgView.frame;
             imgViewFrame.origin.y = self.currentY;
             imgView.frame = imgViewFrame;
@@ -102,7 +103,11 @@
         
         self.alreadyAddedText = YES;
         self.currentY += 140;
-        self.scrollView.contentSize = CGSizeMake(self.contentView.frame.size.width, self.currentY);
+        if(_justImage){//786 × 587
+            self.scrollView.contentSize = CGSizeMake(990, 587);
+        }else{
+            self.scrollView.contentSize = CGSizeMake(self.contentView.frame.size.width, self.currentY);
+        }
         [self.view addSubview:self.scrollView];
     }
 }

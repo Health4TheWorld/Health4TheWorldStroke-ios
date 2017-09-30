@@ -21,6 +21,8 @@
 #define HFTW_MAGENTA [UIColor colorWithRed:0.85 green:0.18 blue:0.31 alpha:1.0] // #D82F50
 
 /* IMAGES */
+#define RISK_FACTORS @"RiskFactors"
+#define BEFAST @"BEFAST"
 #define WHITE_BACK_BUTTON @"WhiteBackArrow"
 #define RED_BACK_BUTTON @"RedBackArrow"
 #define BLUE_BACK_BUTTON @"BlueBackArrow"
