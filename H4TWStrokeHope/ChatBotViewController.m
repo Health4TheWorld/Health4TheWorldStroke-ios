@@ -20,7 +20,7 @@
 
 @end
 
-#define PROFILE_IMAGE @"DoctorBot"
+#define PROFILE_IMAGE @"Doctor"
 #define NO_BUTTON @"NO"
 #define YES_BUTTON @"YES"
 #define LONELY_BUTTON1 @"Watch 360 videos"
