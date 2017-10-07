@@ -50,7 +50,7 @@
     [handStretchButton addImageCentered:[UIImage imageNamed:STRETCHING_HAND_STRETCH_1]];
     [handStretchButton addTarget:self action:@selector(handStretchPressed) forControlEvents:UIControlEventTouchUpInside];
     
-    HomeButton *shoulderStretchButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Stretching.shoulderStretch", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
+    HomeButton *shoulderStretchButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Stretching.shoulderStretch", nil) withFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
     [shoulderStretchButton addImageCentered:[UIImage imageNamed:STRETCHING_SHOULDER_STRETCH_1]];
     [shoulderStretchButton addTarget:self action:@selector(shoulderStretchPressed) forControlEvents:UIControlEventTouchUpInside];
     

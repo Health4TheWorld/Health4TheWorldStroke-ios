@@ -50,7 +50,7 @@
     [adductorsButton addImageCentered:[UIImage imageNamed:STRETCHING_LEG_STRETCH_1]];
     [adductorsButton addTarget:self action:@selector(adductorsPressed) forControlEvents:UIControlEventTouchUpInside];
     
-    HomeButton *hamstringsButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Stretching.hamstrings", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
+    HomeButton *hamstringsButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Stretching.hamstrings", nil) withFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
     [hamstringsButton addImageCentered:[UIImage imageNamed:STRETCHING_KNEE_STRETCH_1]];
     [hamstringsButton addTarget:self action:@selector(hamstringsPressed) forControlEvents:UIControlEventTouchUpInside];
     

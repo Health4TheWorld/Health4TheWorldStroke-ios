@@ -80,7 +80,7 @@
     //startingY += SPACE_BETWEEN_CELLS;
     NSLog(@"%f",startingY);
     
-    UIView *chatbotView2 = [[UIView alloc] initWithFrame: CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth/6)];
+    UIView *chatbotView2 = [[UIView alloc] initWithFrame: CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, (cellWidth/8))];
     
     chatbotView2 = [self smileyIconsSetup: chatbotView2];
     
@@ -223,14 +223,14 @@
     //Horizontal Constraints
     
     NSDictionary *viewsIconsButton = @{ @"icon1" : self.chatbotsmiley1, @"icon2" : self.chatbotsmiley2 ,@"icon3" : self.chatbotsmiley3, @"icon4" : self.chatbotsmiley4, @"icon5" : self.chatbotsmiley5};
-    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-35-[icon1(45)]-20-[icon2(45)]-20-[icon3(45)]-20-[icon4(45)]-20-[icon5(45)]-20-|" options:0 metrics:nil views: viewsIconsButton]];
+    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-35-[icon1(==icon2)]-20@750-[icon2(==icon3)]-20@750-[icon3(==icon4)]-20@750-[icon4(==icon5)]-20@750-[icon5(==icon1)]-20-|" options:0 metrics:nil views: viewsIconsButton]];
     
     //Vertical Constraints
-    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon1(45)]-5-|" options:0 metrics:nil views: viewsIconsButton]];
-    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon2(45)]-5-|" options:0 metrics:nil views: viewsIconsButton]];
-    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon3(45)]-5-|" options:0 metrics:nil views: viewsIconsButton]];
-    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon4(45)]-5-|" options:0 metrics:nil views: viewsIconsButton]];
-    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-10-[icon5(45)]-5-|" options:0 metrics:nil views: viewsIconsButton]];
+    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-3-[icon1(45)]-1-|" options:0 metrics:nil views: viewsIconsButton]];
+    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-3-[icon2(45)]-1-|" options:0 metrics:nil views: viewsIconsButton]];
+    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-3-[icon3(45)]-1-|" options:0 metrics:nil views: viewsIconsButton]];
+    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-3-[icon4(45)]-1-|" options:0 metrics:nil views: viewsIconsButton]];
+    [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-3-[icon5(45)]-1-|" options:0 metrics:nil views: viewsIconsButton]];
     
     return chatbotView2;
 }

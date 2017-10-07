@@ -55,7 +55,7 @@
     [bellsButton addImageFullSize:[UIImage imageNamed:VR_CLIP_BELLS]];
     [bellsButton addTarget:self action:@selector(bellsPressed) forControlEvents:UIControlEventTouchUpInside];
     
-    HomeButton *buddhaButton = [[HomeButton alloc] initWithText: VR_TITLE_BUDDHA withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
+    HomeButton *buddhaButton = [[HomeButton alloc] initWithText: VR_TITLE_BUDDHA withFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
     [buddhaButton addImageFullSize:[UIImage imageNamed:VR_CLIP_BUDDHA]];
     [buddhaButton addTarget:self action:@selector(buddhaPressed) forControlEvents:UIControlEventTouchUpInside];
     
@@ -66,7 +66,7 @@
     [flagsButton addImageFullSize:[UIImage imageNamed:VR_CLIP_FLAGS]];
     [flagsButton addTarget:self action:@selector(flagsPressed) forControlEvents:UIControlEventTouchUpInside];
     
-    HomeButton *marketPlace1Button = [[HomeButton alloc] initWithText: VR_TITLE_MARKET_PLACE_1 withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
+    HomeButton *marketPlace1Button = [[HomeButton alloc] initWithText: VR_TITLE_MARKET_PLACE_1 withFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
     [marketPlace1Button addImageFullSize:[UIImage imageNamed:VR_CLIP_MARKET_PLACE_1]];
     [marketPlace1Button addTarget:self action:@selector(marketPlace1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
@@ -77,7 +77,7 @@
     [marketPlace2Button addImageFullSize:[UIImage imageNamed:VR_CLIP_MARKET_PLACE_2]];
     [marketPlace2Button addTarget:self action:@selector(marketPlace2Pressed) forControlEvents:UIControlEventTouchUpInside];
     
-    HomeButton *rockyButton = [[HomeButton alloc] initWithText: VR_TITLE_ROCKY_BEACH withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
+    HomeButton *rockyButton = [[HomeButton alloc] initWithText: VR_TITLE_ROCKY_BEACH withFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
     [rockyButton addImageFullSize:[UIImage imageNamed:VR_CLIP_ROCKY_BEACH]];
     [rockyButton addTarget:self action:@selector(rockyPressed) forControlEvents:UIControlEventTouchUpInside];
     

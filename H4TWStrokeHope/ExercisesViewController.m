@@ -58,7 +58,7 @@
         self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 20000)];
         [self.contentView setBackgroundColor:[UIColor clearColor]];
         [self.scrollView addSubview:self.contentView];
-        self.currentY = 75;
+        self.currentY = 40;
         
         /* Video */
         self.videoView = [[UIView alloc] initWithFrame:CGRectMake(MARGIN, self.currentY, screenWidth - (2 * MARGIN), 180)];

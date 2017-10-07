@@ -50,7 +50,7 @@
     [legAndFeetButton addImageTopRight:[UIImage imageNamed: STRONG_LEG_ICON]];
     [legAndFeetButton addTarget:self action:@selector(legAndFeetPressed) forControlEvents:UIControlEventTouchUpInside];
     
-    HomeButton *armsAndHandsButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Stretching.armsAndHands", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), self.currentY, cellWidth, cellWidth)];
+    HomeButton *armsAndHandsButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Stretching.armsAndHands", nil) withFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), self.currentY, cellWidth, cellWidth)];
     [armsAndHandsButton addImageRightCenter:[UIImage imageNamed:STRONG_ARM_ICON]];
     [armsAndHandsButton addTarget:self action:@selector(armsAndHandsPressed) forControlEvents:UIControlEventTouchUpInside];
     
