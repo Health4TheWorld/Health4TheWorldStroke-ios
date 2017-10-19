@@ -442,5 +442,30 @@
 "Terms.honorCodeBulletTwo" = "My answers to quizzes, exams, projects, and other assignments will be my own work (except for assignments that explicitly permit collaboration).";
 "Terms.honorCodeBulletThree" = "I will not make solutions to quizzes, exams, projects, and other assignments available to anyone else (except to the extent an assignment explicitly permits sharing solutions). This includes both solutions written by me, as well as any solutions provided by the course staff or others.";
 "Terms.honorCodeBulletFour" = "I will not engage in any other activities that will dishonestly improve my results or dishonestly improve or hurt the results of others.";
+
+/* CHATBOT */
+"Chatbot.no" = "NO";
+"Chatbot.yes" = "YES";
+"Chatbot.lonelybutton1" = "Watch 360 videos";
+"Chatbot.lonelybutton2" = "Listen to music";
+"Chatbot.lonelybutton3" = "Inspiring quotes";
+"Chatbot.lonelybutton4" = "Stroke exercise video";
+"Chatbot.lonelybutton5" = "Get tips to tackle this";
+"Chatbot.lonelyoptions" = "What do you want to do";
+"Chatbot.exit" = "EXIT";
+"Chatbot.icon1message" = "good";
+"Chatbot.feelingbutton1" = "Lonely?";
+"Chatbot.feelingbutton2" = "Not Recovering soon?";
+"Chatbot.feelingbutton3" = "Anxious?";
+"Chatbot.feelingbutton4" = "Depressed?";
+"Chatbot.feelingbutton5" = "Can't Sleep?";
+"Chatbot.feelingbutton6" = "Feeling tired?";
+"Chatbot.feelingmessage1" = "Lonely";
+"Chatbot.feelingmessage2" = "recovery";
+"Chatbot.feelingmessage3" = "anxious";
+"Chatbot.feelingmessage4" = "Depressed";
+"Chatbot.feelingmessage5" = "sleepy";
+"Chatbot.feelingmessage6" = "fatigue";
+
 >>>>>>> master
 

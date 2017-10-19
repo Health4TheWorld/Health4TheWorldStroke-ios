@@ -21,31 +21,10 @@
 @end
 
 #define PROFILE_IMAGE @"Doctor"
-#define NO_BUTTON @"NO"
-#define YES_BUTTON @"YES"
-#define LONELY_BUTTON1 @"Watch 360 videos"
-#define LONELY_BUTTON2 @"Listen to music"
-#define LONELY_BUTTON3 @"Inspiring quotes"
-#define LONELY_BUTTON4 @"Stroke exercise video"
-#define LONELY_BUTTON5 @"Get tips to tackle this"
 #define TIPS_INTENT_TEXT @"know more"
 #define FALLBACK_NO_INTENT @"FALLBACK-NO"
-#define LONELY_OPTIONS_TEXT @"What do you want to do"
 #define FEELING_INTENT @"How are you feeling"
-#define EXIT_BUTTON @"EXIT"
-#define ICON1_MESSAGE @"good"
-#define FEELING_BUTTON1 @"Lonely?"
-#define FEELING_BUTTON2 @"Not Recovering soon?"
-#define FEELING_BUTTON3 @"Anxious?"
-#define FEELING_BUTTON4 @"Depressed?"
-#define FEELING_BUTTON5 @"Can't Sleep?"
-#define FEELING_BUTTON6 @"Feeling tired?"
-#define FEELING_MESSAGE1 @"Lonely"
-#define FEELING_MESSAGE2 @"recovery"
-#define FEELING_MESSAGE3 @"anxious"
-#define FEELING_MESSAGE4 @"Depressed"
-#define FEELING_MESSAGE5 @"sleepy"
-#define FEELING_MESSAGE6 @"fatigue"
+
 
 #define HEIGHT_CONSTRAINT_DEFAULT 48
 
@@ -190,7 +169,7 @@ NSMutableArray *messages;
 -(void) viewWillDisappear:(BOOL)animated {
     // write code to execute when the view dissapears
     [self stopSpeech];
-    [self.synthesizer speakUtterance:nil];
+    //[self.synthesizer speakUtterance:nil];
 }
 
 // AV Stop Speech
