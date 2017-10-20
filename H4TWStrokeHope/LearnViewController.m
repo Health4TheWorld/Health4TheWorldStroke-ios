@@ -195,14 +195,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     self.selectedIndexPath = indexPath;
         LearnContentViewController *dest = [[LearnContentViewController alloc] init];
-        if(indexPath.row == 1 || indexPath.row == 2){
-            dest.justImage = TRUE;
-            NSLog(@"Change scrollview size");
-        }else{
-            dest.justImage = FALSE;
-        }    
+//        if(indexPath.row == 1 || indexPath.row == 2){
+//            dest.justImage = TRUE;
+//            NSLog(@"Change scrollview size");
+//        }else{
+//            dest.justImage = FALSE;
+//        }
         dest.content = [[LearnContent alloc] initWithContentTitle:[self.learnCategories objectAtIndex:indexPath.row]];
-            [self.navigationController pushViewController:dest animated:YES];
+        [self.navigationController pushViewController:dest animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;

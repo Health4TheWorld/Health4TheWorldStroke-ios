@@ -159,7 +159,12 @@
 "Learn.sleep" = "Sleep";
 "Learn.problem" = "PROBLEM";
 "Learn.whatToDo" = "WHAT TO DO";
-
+"Learn.riskFactorsForStroke" = "RISK FACTORS FOR STROKE";
+"Learn.riskFactorsOne" = "HIGH BLOOD PRESSURE";
+"Learn.riskFactorsTwo" = "HEART DISEASE";
+"Learn.riskFactorsThree" = "SMOKING";
+"Learn.riskFactorsFour" = "DIABETES";
+"Learn.riskFactorsFive" = "PRIOR STROKE";
 
 /* FAQ */
 "Faq.questionOne" = "What is stroke?";
@@ -442,5 +447,4 @@
 "Terms.honorCodeBulletTwo" = "My answers to quizzes, exams, projects, and other assignments will be my own work (except for assignments that explicitly permit collaboration).";
 "Terms.honorCodeBulletThree" = "I will not make solutions to quizzes, exams, projects, and other assignments available to anyone else (except to the extent an assignment explicitly permits sharing solutions). This includes both solutions written by me, as well as any solutions provided by the course staff or others.";
 "Terms.honorCodeBulletFour" = "I will not engage in any other activities that will dishonestly improve my results or dishonestly improve or hurt the results of others.";
->>>>>>> master
 

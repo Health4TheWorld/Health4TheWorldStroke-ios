@@ -1,0 +1,414 @@
+///* DISCLAIMER */
+"Disclaimer.paragraphOne" = "Ingawa Programu hii itatumika kama chombo cha elimu kwa wagonjwa wa Kiharusi,hakuna sehemu ya programu hii, inajenga, au ina nia ya kujenga ,kikamilifu au waziwazi, uhusiano wowote kati ya mgonjwa na daktari.";
+"Disclaimer.paragraphTwo" = "Maagizo yaliyomo hapa yanategemea miongozo ya jumla na yenye kukubalika, na maoni ya wataalam kuhusu utunzaji baada ya kiharusi na utunzaji wa kujitegemea. Ingawa jitihada zimefanyika ili kuhakikisha taarifa zilizomo katika mihadhara hii ni ya sasa na sahihi wakati wa kuchapishwa, wala Health4TheWorld, wala mtu yeyote ambaye ametoa maudhui au amehusika katika uwasilishaji wa taarifa hii, kwa maneno au kwa maandiko, anaweza kuhakikisha kuwa habari zote  ni sahihi na halali .";
+"Disclaimer.paragraphThree" = "Kila hali tofauti inahitaji hukumu na mbinu ya kibinafsi, na Programu hii inapaswa kutumika kwa madhumuni ya elimu tu,na haikusidiwa kuwa, na haipaswi kutafsiriwa kama ushauri wa matibabu.";
+"Disclaimer.paragraphFour" = "Matumuzi ya Programu hii na maudhui yake ni kwa hatari yako mwenyewe,na Health4TheWorld, au mtu yeyote ambaye ametoa maudhui au amehusika katika kubuni au maendeleo ya Programu hii na yaliyomo, inakataa waziwazi dhima yoyote kwa ajili ya kujeruhiwa au uharibifu kwa watu au mali, inayotokana na matumizi ya Programu hii.";
+"Disclaimer.paragraphFive" = "Matumizi yoyote ya Programu hii yanaweza kufuatiliwa ili kutuwezesha kufuatilia mifumo ya matumizi na maendeleo.";
+"Disclaimer.paragraphSix" = "Kwa kubonyeza Kukubali, unakubaliana na Masharti yetu ya Matumizi na Sera Ya Faragha.";
+
+///* ENTER VIEW CONTROLLER */
+"Enter.firstQuote" = "\"Maandilizi bora ya kesho ni kujitahidi leo.\"";
+"Enter.firstAuthor" = " – H. Jackson Brown, Jr";
+"Enter.secondQuote" = "\"Amini unaweza na uko nusu ya kumaliza.\"";
+"Enter.secondAuthor" = "– Theodore Roosevelt";
+"Enter.thirdQuote" = "\"Hakuna kisichowezekana, Neno lenyewe linasema 'I'm possible'!\"";
+"Enter.thirdAuthor" = "– Audrey Hepburn";
+"Enter.fourthQuote" = "\"Ni mimi tu ninaweza kubadilisha maisha yangu. Hakuna mtu mwingine anayeweza kunibadilishia.\"";
+"Enter.fourthAuthor" = "– Carol Burnett";
+"Enter.fifthQuote" = "\"Jitahidi kila wakati. Kile Unachopanda sasa utavuna baadaye.\"";
+"Enter.fifthAuthor" = "– Og Mandino";
+"Enter.sixthQuote" = "\"Matumaini ndio Imani inayoleta mafanikio.Hakuna kitu kinachoweza kufanywa bila tumaini na ujasiri.\"";
+"Enter.sixthAuthor" = "– Helen Keller";
+"Enter.seventhQuote" = "\"Kuweka malengo ndio hatua ya kwanza katika kugeuza kisichoonekana kuonekana.\"";
+"Enter.seventhAuthor" = "– Tony Robbins";
+"Enter.enterButton" = "Ingia";
+//
+///* HOME VIEW CONTROLLER */
+"Home.title" = "Nyumbani";
+"Home.helpMeSpeak" = "Nisaidie Kuzungumza";
+"Home.exercises" = "Mazoezi";
+"Home.learn" = "Kujifunza";
+"Home.reminders" = "Kikumbusho";
+"Home.generalInfo" = "Maelezo ya jumla";
+"Home.surveys" = "Utafiti";
+"Home.chatBot" = "ChatBot";
+//
+///* HELP ME SPEAK VIEW CONTROLLER */
+"HelpMeSpeak.title" = "Nisaidie Kuzungumza";
+"HelpMeSpeak.yes" = "Ndiyo";
+"HelpMeSpeak.no" = "Hapana";
+"HelpMeSpeak.thankYou" = "Asante";
+"HelpMeSpeak.bathroom" = "ninahitaji kujisaidia";
+"HelpMeSpeak.water" = "Ninahitaji maji";
+"HelpMeSpeak.hungry" = "Ninahisi njaa";
+"HelpMeSpeak.notGivingUp" = "Sitakata tamaa";
+"HelpMeSpeak.pain" = "Nina maumivu";
+"HelpMeSpeak.cantSpeak" = "Pole, siwezi kuzungumza";
+"HelpMeSpeak.iLoveYou" = "Nakupenda";
+"HelpMeSpeak.imCold" = "Nahisi baridi";
+"HelpMeSpeak.imHot" = "Nahisi joto";
+"HelpMeSpeak.dizzy" = "Ninahisi kizunguzungu";
+"HelpMeSpeak.lightsOn" = "Washa taa";
+"HelpMeSpeak.lightsOff" = "Zima taa";
+"HelpMeSpeak.getInBed" = "Ninataka kuingia kitandani ";
+"HelpMeSpeak.getOutOfBed" = "Ninataka kutoka kwenye kitanda ";
+"HelpMeSpeak.howAreYou" = "Habari yako?";
+"HelpMeSpeak.ambulance" = "Ninahitaji ambulensi";
+"HelpMeSpeak.inALittle" = "Kwa muda mfupi";
+"HelpMeSpeak.now" = "Sasa hivi";
+"HelpMeSpeak.goOutside" = "Ninataka kwenda nje";
+"HelpMeSpeak.sayHi" = "Hujambo!";
+
+///* EXERCISES VIEW CONTROLLER */
+"Exercises.title" = "Mazoezi";
+"Exercises.strengthening" = "Kuimarisha";
+"Exercises.stretching" = "Kunyoosha";
+"Exercises.functionalMobility" = "Uwezo wa kusonga ili kufanya kazi";
+"Exercises.mindExercises" = "Mazoezi ya akili";
+"Exercises.instructions" = "Tafadhali rudia mazoezi mara 10 kwa siku kwa msaada kutoka kwa mlezi wa familia ikiwa inahitajika.Wasiliana na daktari wako kabla ya kuanza mazoezi.";
+
+///* STRENGTHENING VIEW CONTROLLER */
+"Strengthening.title" = "Kuimarisha";
+"Strenghtening.legs" = "Miguu";
+"Strengthening.arms" = "Mikono";
+"Strengthening.coordination" = "Uratibu";
+
+///* STRETCHING VIEW CONTROLLER */
+"Stretching.title" = "Kunyoosha";
+"Stretching.armsAndHands" = "Mikono";
+"Stretching.legsAndFeet" = "Mikono";
+"Stretching.handStretch" = "Kunyoosha mkono";
+"Stretching.shoulderStretch" = "Kunyoosha mabega";
+"Stretching.armStretch" = "Kunyoosha Mkono";
+"Stretching.adductors" = "Adductors";
+"Stretching.hamstrings" = "Hamstrings";
+"Stretching.dorsiflexors" = "Dorsiflexors";
+"Stretching.legStretch" = "Kunyoosha Mguu";
+"Stretching.kneeStretch" = "Kunyoosha Magoti";
+"Stretching.ankleStretch" = "Kunyoosha Kifundo cha mguu";
+"Stretching.handStretch" = "Kunyoosha mkono";
+"Stretching.adductorsInstructions" = "Unaweza kufanya zoezi hili ukilala chini au kuketi kwa kiti.Lala kwa mgongo, peleka mguu ulioathiriwa upande kwa sekunde 30 kisha urudishe ndani.Rudia mara 3.";
+"Stretching.hamstringsInstructions" = "Unaweza kufanya zoezi hili ukilala chini au kuketi kwa kiti. Lala kwa mgongo na ukunje magoti, kisha nyosha magoti kuelekea mbinguni kwa sekunde 30.";
+"Stretching.dorsiflexorsInstructions" = "Unaweza kufanya zoezi hili ukilala chini au kuketi kwa kiti.Shinikiza mguu kelekea kiwiliwili na ushikilie kwa sekunde 30. Rudia mara 3.";
+"Stretching.handStretchInstructions" = "Lala kwa upande ulioathiriwa ukiwa juu na mkono ukipumzika juu ya nyonga.Tegemeza kiwiko kwenye nyonga na utumie huo mkono mwingine kusongesha kifundo cha mkono juu, mbali na mwili. Rudisha kifundo cha mkono kwenye hali ya kupumzika. Shikilia kifundo cha mkono na mkono mmoja kisha jaribu kufungua vidole na huo mkono mwingine.Endelea kujaribu kufungua vidole wakati kifundo cha mkono kimesongeshwa juu mbali na mwili. Shikilia kwa sekunde 30. Rudia mara 3.";
+"Stretching.shoulderStretchInstructions" = "Lala kwa upande ulioathiriwa ukiwa juu na mkono ukipumzika juu ya nyonga.Leta bega juu kelekea sikio na kisha rudisha chini kwa upole.";
+"Stretching.armStretchInstructions" = "Lala kwa upande ulioathiriwa ukiwa juu na mkono ukipumzika juu ya nyonga. Kwa upole leta mkono chini kuelekea mguu.Shikilia hapo kwa sekunde 30.Rudia mara 3. Hakikisha kwamba unashikilia bega na kuacha kuendeleza mbele.";
+
+///* MIND EXERCISES VIEW CONTROLLER */
+"MindExercises.bellsInstructions" = "* Keti kwa starehe, vuta pumzi kubwa na utabasamu.\n* Zingatia amani ya maeneo na sauti.\n*Fikiria kutembea katika maeneo haya.\n* Peleka simu upande ili ufurahie mandhari.\n* Funga macho yako na uvute pumzi tena.\n* Zingatia kurudi  kwenye chumba chako.";
+"MindExercises.buddhaInstructions" = "* Keti kwa starehe, vuta pumzi kubwa na utabasamu.\n* Zingatia amani ya maeneo na sauti.\n* Fikiria kutembea kuelekea sanamu ya Buddha.\n* Peleka Simu juu ili kuona anga na upande kufurahia mandhari.\n* funga macho yako na uvute pumzi tena.\n* Zingatia kurudi kwenye chumba chako.";
+"MindExercises.flagsInstructions" = "* Keti kwa starehe, vuta pumzi kubwa na utabasamu.\n* Zingatia Pwani hii na sauti ya mawimbi.\n* Fikiria hisia ya mchanga kwenye miguu yako.\n* Fikiria Kutembea kwenye pwani na kufanya alama ya nyayo kwenye mchanga.\n* Peleka simu upande ili kufurahia pwani.\n* Funga macho yako na uvute pumzi tena.\nZingatia kurudi kwenye chumba chako.";
+"MindExercises.marketplace1Instructions" = "* Keti kwa starehe, vuta pumzi kubwa na utabasamu.\n* Zingatia eneo la soko  na sauti za asili.\n* Fikiria kufikia na kuokota matunda.\n*Peleka simu upande ili ufurahie mandhari .\n* Funga macho yako na uvute pumzi tena.\n* Zingatia kurudi kwenye chumba chako.";
+"MindExercises.marketplace2Instructions" = "*Keti kwa starehe, vuta pumzi kubwa na utabasamu .\n* Zingatia eneo la soko na sauti za asili.\n* Fikiria kutembea kwenye soko.\n* Peleka simu upande ili ufurahie mandhari\n* Funga macho yako na uvute  pumzi tena.\n* Zingatia kurudi kwenye chumba chako.";
+"MindExercises.rockybeachInstructions" = "* Keti kwa starehe, vuta pumzi kubwa na utabasamu.\n* Zingatia Pwani hii na sauti ya mawimbi \n* Tazama mawe mazuri\n* Fikiria kufikia na kuokota jiwe\n* Fikiria kujenga mnara wa mawe.\n* Peleka simu juu ili uone anga nzuri.\n* Funga macho yako na uvute pumzi tena.\n* Zingatia kurudi kwenye chumba chako.";
+"MindExercises.sandybeachInstructions" = "* Keti kwa starehe, vuta pumzi kubwa na utabasamu.\n* Zingatia Pwani hii na sauti ya mawimbi.\n*Fikiria hisia ya mchanga kwenye miguu yako.\n*Fikiria Kutembea kwenye pwani na kufanya alama ya nyayo .\n*Peleka simu upande ili kufurahia pwani.\n* Funga macho yako na uvute pumzi tenaanother deep breath.\n* Zingatia kurudi kwenye chumba chako.";
+
+///* FUNCTIONAL MOBILITY VIEW CONTROLLER */
+"FunctionalMobility.bridgeHipLift" = "Kuinua nyonga";
+"FunctionalMobility.armTrunkStrengthening" = "Kuimarisha Mkono na Mwili.";
+"FunctionalMobility.sitToStand" = "Kaa Kusimama";
+
+///* LEARN VIEW CONTROLLER */
+"Learn.title" = "Kujifunza";
+"Learn.b" = "B";
+"Learn.e" = "E";
+"Learn.f" = "F";
+"Learn.a" = "A";
+"Learn.s" = "S";
+"Learn.t" = "T";
+"Learn.befastB" = "Usawa: Kupoteza usawa.";
+"Learn.befastE" = "Jicho: Kupoteza kwa ghafla uwezo wa kuona kwa la jicho moja au macho yote.";
+"Learn.befastF" = "Uso kusonga kwa upande mmoja unapoambiwa utabasamu.";
+"Learn.befastA" = "Udhaifu wa mkono; huwezi kuinua mikono na kuiweka juu kwa muda.";
+"Learn.befastS" = "Ugumu wa kuzungumza.";
+"Learn.befastT" = "wakati wa kuita ambulensi.";
+"Learn.faq" = "FAQ";
+"Learn.bloodPressure" = "Shinikizo la damu";
+"Learn.heartRate" = "Kiwango cha moyo";
+"Learn.bloodSugar" = "Sukari ya damu";
+"Learn.diet" = "Utaratibu maalum wa chakula";
+"Learn.bladderBowel" = "Kibofu/Matumbo";
+"Learn.exercises" = "Mazoezi";
+"Learn.showerBath" = "Kuoga";
+"Learn.homeMod" = "Marekebisho ya Nyumbani";
+"Learn.smoking" = "Kuvuta Sigara";
+"Learn.sleep" = "Kulala";
+"Learn.problem" = "TATIZO";
+"Learn.whatToDo" = "NIFANYEJE";
+
+///* FAQ */
+"Faq.questionOne" = "Kiharusi ni nini?";
+"Faq.answerOne" = "Katika Ugonjwa wa Kiharusi , utoaji wa damu sehemu fulani ya ubongo imezuiwa au mshipa wa damuamabo hutoa damau sehemu fulanihupasuka. Hii husababisha kifo cha seli katika sehemu iliyoathirika ya ubongo.Hii inaweza kusababisha hasara ya muda au ya kudumu ya kazi kupotea katika sehemu moja au zaidi ya mwili.";
+"Faq.questionTwo" = "Unapaswa kufanya nini ikiwa unadhani mtu ana kiharusi?";
+"Faq.answerTwo" = "Piga simu kwa msaada wa kitaalamu wa matibabu (daktari au muuguzi) mara moja.";
+"Faq.questionThree" = "Kwa nini unahitaji kuchukua hatua haraka?";
+"Faq.answerThree" = "Kupata matibabu ya haraka hupunguza hatari ya ulemavu au hata kifo.";
+
+/* BLOOD PRESSURE */
+"BloodPressure.problem" = "Shinikizo la damu huweza kusababisha kiharusi kwa kuharibu mishipa ya damu katika mwili, na kuifanya kupasuka au kufungwa kwa urahisi.";
+"BloodPressure.problemBoldPart" = "Shinikizo la damu";
+"BloodPressure.problemNonBoldPart" = "huweza kusababisha kiharusi kwa kuharibu mishipa ya damu katika mwili, na kuifanya kupasuka au kufungwa kwa urahisi.";
+"BloodPressure.whatToDo" = "Kwa idadi ya watu wenye miaka 60 au zaidi, kutibu shinikizo la damu kwa lengo la chini kuliko 150/90 mmHg  inapunguza kiharusi.";
+"BloodPressure.whatToDoBoldPart" = "Chini ya 150/90 mm Hg";
+
+/* HEART RATE */
+"HeartRate.problem" = "Kiwango cha moyo kisicho cha kawaida, ni hatari ya kiharusi.";
+"HeartRate.problemBoldPart" = "Moyo kupiga kwa kiwango kisicho cha kawaida";
+"HeartRate.whatToDo" = "Ikiwa una shaka ya kiwango cha moyo kisicho cha kawaida, wasiliana na daktari wako mara moja kwa ajili ya kupimwa, kipimo kama cha kiwango cha moyo (ECG/EKG). Kulingana na historia yako ya matibabu ya zamani na hatari yako ya kuwa na kiharusi baadaye kuna madawa kadhaa, kama vile madawa ya kufanya damu nyembamba, ambayo yatasaidia kutibu kiwango cha moyo kisicho cha kawaida.";
+"HeartRate.whatToDoFirstBoldPart" = "Kipimo cha kiwango cha moyo kisicho  cha kwaida";
+"HeartRate.whatToDoSecondBoldPart" = "madawa ya kufanya damu nyembamba";
+
+/* BLOOD SUGAR */
+"BloodSugar.problem" = "Sukari ya damu kuwa juu inaweza kuongeza hatari ya kupatwa na ugonjwa wa kiharusi na ugonjwa wa moyo. Kipimo cha damu kichoitwa HbA1c kinatoa picha ya kudhibiti sukari yako ya damu kwa miezi2 au 3 iliyopita.";
+"BloodSugar.problemBoldPart" = "Sukari ya damu kuwa juu";
+"BloodSugar.whatToDo" = "Shirika la moyo la Marekani linapendekeza kuweka kiwango cha sukari ya damu(Hgb1A1c) chini ya 6% kwa wagonjwa kabla ya kupata kisukari na chini ya 7% kwa wagonjwa wa kisukari.";
+"BloodSugar.whatToDoFirstBoldPart" = "Chini ya 6%";
+"BloodSugar.whatToDoSecondBoldPart" = "Chini ya 7%";
+
+/* DIET */
+"Diet.problem" = "Ni muhimu kwa wagonjwa wa kiharusi kudumisha maisha ya afya bora. Wagonjwa wa kiharusi wanoishi katika vituo vya huduma vya muda mrefu wana hatari ya kukosa Kalsiamu na Vitamini D.";
+"Diet.whatToDo" = "Ni bora kula chakula cha afya kama aina mbalimbali za matunda na mboga, nafaka, bidhaa za maziwa zilizo na kiwango cha chini cha mafuta, nyama isiyo na ngozi na samaki, njugu na mboga.Punguza kiwango cha mafuta, sodiamu, nyama nyekundu, permende na vinywaji vitamu vilivyoongezwa sukari.";
+
+///* BLADDER/BOWEL */
+"BladderBowel.problem" = "Wagonjwa wengine watajiskia kutokwa na mkojo bila hiari au uhifadhi wa mkojo.";
+"BladderBowel.whatToDoBulletOne" = "Tathmini uhifadhi wa mkojo kwa njia ya kupiga picha kibofu au kuwekwa mpira wa kukojoa baada ya kurisha na kurekodi kiwango cha mkojo.";
+"BladderBowel.whatToDoBulletTwo" = "Nenda kwa choo kwa nyakati za kawaida ili kusaidia kufanyisha kibofu mazoezi. Kurisha kila baada ya masaa  2-3 hours kunaweza kuzuia ajali ya mkojo kutoka bila hiari.";
+"BladderBowel.whatToDoBulletThree" = "Kunywa maji mengi wakati wa mchana ili kukusaidia kuzuia kuvimbiwa.";
+
+/* EXERCISES */
+"Exercises.problem" = "Wagonjwa wa kiharusi huwa na shida ya kurejea nguvu za kimwili na uwezo.";
+"Exercises.parOne" = "Waathirika wa kiharusi wanapaswa kupokea ukarabati wa kimwili kwa kinachofanana na manufaa na uvumilivu.";
+"Exercises.bulletOne" = "Kusaidia na upungufu wa namna ya kutembea: Wagonjwa  wanapaswa kufanya mazoezi makubwa, ya kurudia na uhamiaji chini ya usimammizi wa  mtaalamu wa huduma za afya.";
+"Exercises.bulletOneBoldPart" = "Upungufu wa namna za kutembea";
+"Exercises.bulletTwo" = "Ili kusaidia na kuanguka : Wagonjwa wanapaswa kufanya mazoezi ya usawa.";
+"Exercises.bulletTwoBoldPart" = "Kuanguka:";
+"Exercises.bulletThree" = "Kusaidia wakati wa kulala hospitalini na kupona mapema: AHA/ASA inapendekeza kutembea kidogo, shughuki za kujitegemea, kuketi au kusimama kwa muda, shughuli za kuketi au shughuli za mwendo.Shughuli hizi zinapaswa kufanywa kulingana na kiwango cha uvumilivu, na mwongozo wa kufikia ongezeka la 10-20 kwa kiwango cha moyo kila dakika, kulingana na amri ya daktari wako.";
+"Exercises.bulletThreeBoldPart" = "Wakati wa kulala hospitalini na kupona mapema";
+"Exercises.bulletFour" = "Kusaidia wakati wa tiba ya mazoezi au ukarabati wa mwili: AHA/ASA inapendekeza shughuli kama kutembea kwa dakika 20-60 kwa muda mara 3-5 kwa wiki (per week for 20-60 min/session (au vikao vingi vya dakika 10); mazoezi ya kunyoosha siku 2 kwa wiki kwa sekunde 10 kila mara; Tai chi, yoga, na shughuliza burudani zinazosaidia kutembea na kujinyoosha.";
+"Exercises.bulletFourBoldPart" = "Wagonjwa kutumia tiba ya mazoezi au ukarabati wa kimwili";
+"Exercises.bulletFive" = "Kubaki salama wakati wa mazoezi ya kimwili: Tumia vifaa vya kusaidia kwa kutembea na kufanya mazoezi kwa makini, tu chini ya usimamizi.";
+"Exercises.bulletFiveBoldPart" = "Kubaki salama wakati wa mazoezi ya kimwili";
+"Exercises.bulletSix" = "Kudumisha afya bora ya kimwili: Uliza dakatari wako juu mazoezi ya upendeleo,mapungufu ya shughuli maalum, na vikwazo vya ushiriki wa mazoezi.";
+"Exercises.bulletSixBoldPart" = "Afya ya kimwili:";
+
+/* SHOWER/BATH */
+"ShowerBath.problem" = "Kuingia na kutoka bafuni inaweza kuwa hatari, na wagonjwa wako katika hatari ya kuanguka.";
+"ShowerBath.bulletOne" = "Mfereji wa kuogea >hodhi: Mifereji ya kuogea ni salama kuliko hodhi kwa ujumla.";
+"ShowerBath.bulletOneBoldPart" = "Mfereji wa kuogea>hodhi:";
+"ShowerBath.bulletTwo" = "Vizuizi vya kushikilia vinaweza kufanya harakati iwe rahisi.";
+"ShowerBath.bulletTwoBoldPart" = "Vizuizi vya kushikilia";
+"ShowerBath.bulletThree" = "Mikeka ya kuoga iliyo na vikombe vya kumumunya inaweza kuzuia kuanguka.";
+"ShowerBath.bulletThreeBoldPart" = "Mikeka ya kuoga";
+"ShowerBath.paragraph" = "Hakikisha kuna mtu yuko karibu ili kukusaidia ikiwa unahitaji usaidizi. Weka kengele karibu au kuwa na njia nyingine ya kuitisha msaada. Mazoezi ya usawa inaweza kusaidia watu wenye matatizo ya usawa.";
+
+/* HOME MOD */
+"HomeMod.problem" = "Kwa sabau wagonjwa wanaweza kupata shida ya kutembea, ni muhimu kurekebisha nyumba yako ili iwe salama na rahisi kupatikana.";
+"HomeMod.subHeaderOne" = "Chumba cha kulala:";
+"HomeMod.contentOne" = "Upatikanaji wa chumba cha kulala unaweza kuboreshwa kwa kusongesha vitu ili mlango ufunguke kikamilifu; kupanua milango; kugeuza bawaba ili mlango ufunguke na nje badala ya ndani. Kama kitanda kinapaswa kuwa karibu na ukuta , kinapsawa kuelelezwa kama upande wa mgonjwa ulioadhirika(upande dhaifu) uko karibu na ukuta, ili upande ulio na nguvu unaweza kumsaidia mgonjwa kutoka kwa kitanda.";
+"HomeMod.subHeaderTwo" = "Jumla :";
+"HomeMod.contentTwo" = "Ondoa mikeka ambayo inaweza kusonga kwa urahisis ili kuzuia kuteleza na kuanguka.";
+"HomeMod.subHeaderThree" = "Kuoga:";
+"HomeMod.contentThree" = "Vyumba vya bafu vinaweza kufikika kwa urahisi zaidi kwa viti vya gurudumu kwa kupanua milango. Viti vya choo vinaweza kuinuliwa ili kupunguza changamoto ya kuingia na kutoka kwenye choo: Lifti ya choo ambayo inawekwa katika ya sakafu na choo; Lifti ya kiti ambayo inaunganishwa na bakuli ya choo na inainua kiti; kuweka reli za choo na vizuizi vya kushikilia ili kusaidia uhamaji.";
+
+/* REMINDERS VIEW CONTROLLER */
+"Reminders.title" = "Kikumbusho";
+"Reminders.todaysReminders" = "Kikumbusho cha leo";
+"Reminders.allReminders" = "Vikumbusho vyote";
+"Reminders.addReminderButton" = "Ongeza kikumbusho";
+
+/* ADDING REMINDERS */
+"Reminders.remindMeTo" = "Nikumbushe ku...";
+"Reminders.takeMedicine" = "Kunywa madawa yangu";
+"Reminders.doctorsVisit" = "Kutembelea daktari";
+"Reminders.bloodTest" = "Kipimo cha damu";
+"Reminders.exercise" = "Mazoezi";
+"Reminders.medication" = "Madawa";
+"Reminders.howOften" = "Mara ngapi?";
+"Reminders.daily" = "Kila siku";
+"Reminders.weekly" = "Kila wiki";
+"Reminders.custom" = "Desturi";
+"Reminders.everyday" = "Kila siku.";
+"Reminders.every" = "Kila ";
+"Reminders.and" = "Na";
+"Reminders.next" = "Ijayo";
+"Reminders.save" = "Hifadhi";
+"Reminders.back" = "Nyuma";
+"Reminders.sunday" = "Jumapili";
+"Reminders.monday" = "Jumatatu";
+"Reminders.tuesday" = "Jumanne";
+"Reminders.wednesday" = "Jumatano";
+"Reminders.thursday" = "Alhamisi";
+"Reminders.friday" = "Ijumaa";
+"Reminders.saturday" = "Jumamosi";
+"Reminders.sundays" = "Kila Jumapili";
+"Reminders.mondays" = "Kila Jumatatu";
+"Reminders.tuesdays" = "Kila Jumanne";
+"Reminders.wednesdays" = "Kila Jumatano";
+"Reminders.thursdays" = "Kila Alhamisi";
+"Reminders.fridays" = "Kila Ijumaa";
+"Reminders.saturdays" = "Kila Jumamosi";
+"Reminders.sundayAbbrev" = "S";
+"Reminders.mondayAbbrev" = "M";
+"Reminders.tuesdayAbbrev" = "T";
+"Reminders.wednesdayAbbrev" = "W";
+"Reminders.thursdayAbbrev" = "T";
+"Reminders.fridayAbbrev" = "F";
+"Reminders.saturdayAbbrev" = "S";
+"Reminders.atWhatTime" = "Saa ngapi?";
+"Reminders.remindMeAt" = "Nikumbushe saa:";
+"Reminders.addTime" = "Ongeza muda";
+"Reminders.editTitle" = "Hariri kikumbusho";
+"Reminders.saveChanges" = "Hifadhi mabadiliko";
+"Reminders.oneTimeReminder" = "Kikumbusho cha wakati mmoja tu";
+
+/* SURVEYS */
+"Surveys.password" = "Nenosiri";
+
+/* GENERAL INFO */
+"GeneralInfo.aboutUs" = "Kuhusu Sisi";
+"GeneralInfo.termsOfUse" = "Masharti ya matumizi";
+"GeneralInfo.privacyPolicy" = "Sera ya faragha";
+"GeneralInfo.copyright" = "Hati miliki";
+
+/* ABOUT US */
+"AboutUs.aboutTheApp" = "Kuhusu Programu hii";
+"AboutUs.paragraphOne" = "Programu ya  HEALTH4THEWORLD STROKE HOPE APP ni chombo cha elimu cha bure cha kueneza ujuzi juu ya hatari za kiharusi, jinsi ya kuzuia, na kutembea baada ya kiharusi , elimu ya mazoezi na mikakati ya kuzungumza.  Imeundwa na Health4TheWorld ambayo ni shirika lisilo faida lililoongozwa na mahitaji ya matibabu duniani kote.Ujumbe wa shirika ni kutatua uhaba wa afya kupitia uvumbuzi na teknolojia na kuleta tabasamu duniani kote. Tafadhali pat maelezo zaidi kutuhusu health4theworld.org.";
+"AboutUs.paragraphTwo" = "Kwa matukio inakadiriwa milioni 16.9 na kuenea kwa milioni 33 kulingana na shirika la Afya duniani, kiharusi ni kipengele kikubwa  katika jamii ya magonjwa ya moyo na mishipa ya damu, na ni sababu inayoongoza ya ulemavu mkubwa wa muda mrefu.mzigo wa kimataifa wa kiharusi huanguka kwa kiasi kikubwa kwenye nchi za kipato cha chini na za kipato cha kati,inatuhimiza kuboresha ufikiaji wa mafunzo ya  afya duniani kote. Tunatarajia kuwa programu hii ya elimu ya kiharusi itasaidia.";
+"AboutUs.paragraphThree" = "Programu hii ina sifa kadhaa ambazo tunatarajia utapata muhimu!";
+"AboutUs.featureOne" = "Maudhui ya elimu ya kiharusi – Maelezo juu ya sababu na hatari za kiharusi na miongozo kutoka kwa Shirika la kiharusi la Marekani na Shirika la Moyo la Marekani,Makala ya msingi ya ushahidi na vyanzo vingine vya afya. Ni vizuri kukumbuka kuwa haya ni vidokezo vya jumla vya elimu na wala si mapendekezo kwa huduma za matibabu. Wagonjwa na wataalamu wa afya waliohitimu wanapaswa kukaa pamoja kufanya kazi kutafuta mbinu ya kibinafsi ya kuzuia kiharusi.";
+"AboutUs.featureTwo" = "Video ya uhuishaji na vidokezo vya mazoezi ya kupona kiharusi –Elimu ya mazoezi na ukarabati wa kimwili baada ya kiharusi imepigwa muhtasari na wataalamu wa mazoezi na wataamu wa ukarabati wa kimwili kutoka Stanford, Chuo Kikuu cha California, San Francisco na  Chuo Kikuu cha Southern California. Mazoezi yaliyomo ni ya jumla na yana nia ya kuwa mwongozo wa elimu wala si kama ushauri wa matibabu . Haya yanapaswa kufanywa pamoja na mtaalamu wa ukarabati wa kimwili au mtaalamu wa mazoezi ya kimwili,Ambaye anaweza kusaidia na mbinu sahihi na kubuni mbinu ambayo itasaidia mgonjwa wa kiharusi zaidi. Mlezi lazima daima awepo kusaidia. Imegawanyika katika kuimarisha, kunyoosha na kazi ya uhamaji. Tafadhali shauri wagonjwa wako kuhusu mbinu sahihi, marudio na mbinu ya mazoezi haya.";
+"AboutUs.featureThree" = "Vikumbusho vya madawa na kukutana na daktari: Ufuatiliaji wa dawa na kwenda hospitalini  ni suala kubwa na chombo hiki ni matumaini kitasaidia!  Tafadhali weka vikumbusho kwa wagonjwa wako ikiwa inawezekana.";
+"AboutUs.featureFour" = "Mikkakti ya kuzungumza baada ya kiharusi:kufinya kipengele cha kutoa sauti inaweza kusaidia kwa mawasiliano ya msingi sana.Lengo ni kutafsiri hiii kwa lugha tofauti ili wataalam wa afya na wagonjwa katika maeneo mbalimbali ya dunia ambao hawana upatikanaji wa afya wanaweza kufaidika nayo .";
+"AboutUs.team" = "Timu";
+"AboutUs.teamIntro" = "Programu hii ingekuwa haiwezekani bila timu !";
+"AboutUs.founders" = "Waanzilishi";
+"AboutUs.developers" = "Msanidi Programu";
+"AboutUs.animations" = "Uhuishaji";
+"AboutUs.illustrations" = "Vielelezo";
+"AboutUs.contentEditing" = "Uhariri wa maudhui";
+"AboutUs.movies" = "Sinema";
+"AboutUs.advisoryBoard" = "Bodi ya ushauri wa matibabu kwa programu";
+"AboutUs.marcFisher" = "Dr. Marc Fisher:  Dr Fisher hivi sasa ni mhariri mkuu wa kiharusi na daktari mwandamizi juu ya huduma ya kiharusi katika BIDMC, Harvard Medical School. Yeye ni maarufu sana na amechapisha zaidi ya makla 260 zilizopitiwa na rika na amehariri au kusaidia kuhariri vitabu 13.";
+"AboutUs.jeffreyTeraoke" = "Dr. Jeffrey Teraoke: Dr. Teraoke ni mkuu, PM &R katika  Palo Alto VA Medical Center. Yeye ndiye mkurugenzi wa programu ya mafunzo ya wataalamu wa PM&R na mkurugenzi , Polytrauma, VA Palo Alto Health System";
+"AboutUs.ericaPitsch" = "Dr. Erica A Pitsch, PT, MPT, DPT, NCS: Profesa wa afya ya sayansi , UCSF. Dr. Pitsch ni mtaalamu wa tiba ya kimwili na neva na hutumia mikakati na mbinu kadhaa ,inayolenga  kukuza changamoto kamili, kazi na kurejesha afya kwa watu wenye magonjwa ya neva";
+"AboutUs.lorenWard" = "Loren Ward, PT, DPT ni mtaalamu wa kimwili ambaye alianza kazi yake ya tiba ya mazoezi mwaka wa 2007, wakati akipata shahada ya udaktari katika MGH taasisi ya kazi ya afya huko Massachusetts. Alifanya mafunzo katika ukarabati wa Chicago, Spaulding Rehabilitation and National Rehabilitation Hospital na sasa anafanya kazi kwa  Stanford Veteran’s Affairs System. Loren ni mtetezi wa uhuru wa kibinafsi na anajitahidi kuwasaidia wagonjwa wake kufikia kiwango binafsi cha uhuru bila kujali upungufu wao.";
+"AboutUs.roseHamm" = "Rose Hamm, PT, DPT, CWS, FACCWS: Rose alipokea BS katika tiba ya mazoezi ya kimwili kutoka Chuo Kikuu cha North Carolina, Chapel Hill, na  MS na shahada ya pili ya  DPT kutoka Chuo Kikuu cha Southern California.  Yeye sasa ni profesa msaidizi wa tiba ya kimwili katika Chuo Kikuu cha Southern California na anafanya kazi katika Keck Hospital  USC.";
+
+/* TERMS OF USE */
+"Terms.thankYouParOne" = "Sheria na masharti haya ya matumizi  (\"Terms\") ni makubaliano kati ya Health4TheWorld (the “Health4TheWorld,” “we,” “us,” or “our”) na wewe  (wewe kama mtu binafsi au shirika ambalo kwa niaba yake unakubali sheria na masharti haya) kwa upatikanaji na matumizi ya tovuti hii, ambayo inajumuisha,vyombo vya habari, nyaraka, picha na maudhui mengine, (kwa pamoja,  \"Tovuti\"), pamoja na upatikanaji na matumizi ya bidhaa yoyote, huduma na  programu zinazopakuliwa zinazotolewa na Health4TheWorld ( “Huduma”). Tafadhali soma masharti kwa uangalifu, na wasiliana nasi kwa contact@health4theworld.org ikiwa una maswali. Huduma zetu pia zinajumuisha programu zinazoweza kupakuliwa, programu z amawingu, programu za simu na komputa, na programu ambazo maudhui yako yanashirikiwa kupitia maeneo ya watu wengine.";
+"Terms.thankYouParTwo" = "KWA KUIGA, KUPAKUA AU KUTUMIA TOVUTI HII, PROGRAMU AU HUDUMA, UNAKUBALI KUFUNGWA NA MASHARTI HAYA NA HATI YA UDHAMINI NA VIKWAZO VYA DHIMA HAPA CHINI.IKIWA HUELEWI AU KUKUBALIANA NA MASHARTI HAYA, USIPATIE AU KUTUMIA TOVUTI AU HUDUMA ,NA TAFADHALI TOKA KWA TOVUTI SAA HII.";
+"Terms.thankYouParThree" = "Health4TheWorld ina haki ya kurekebisha masharti haya kwa wakati wowote bila taarifa ya apema.Mabadiliko yoyote kwa masharti haya yatakuwa na ufanisi mara moja baada ya kutuma kwa ukurasa huu, na tarehe ya ufanisi iliyopangwa. Kwakutumia tovuti au hudma baada ya mabadiliko yoyote kufanywa ,unaashiria makubaliano yako juu ya masharti yaliyobadilishwa na mabadiliko yote.";
+"Terms.useSectionOneHeader" = "Upatikanaji na matumizi ya Tovuti, programu ya simu na huduma";
+"Terms.useSectionOneParOne" = "Unaweza kutumia tovuti yetu, programu ya simu na huduma tu kama unaweza kuunda mkataba wa kisheria na Health4TheWorld, na tu kwa kufuata masharti haya na sheria zote zinazohusika. Wakati unarejesha maelezo kutoka kwa tovuti au huduma, umepigwa marufuku kutoka  (a) kutumia au kujaribu kutumia buibui, robot, udhihirisho,mawakala wa akili, au uchimbaji mwingine wowote au utafutaji wa urambazaji isipokuwa kivinjari cha kawaida, (b) kuunganisha, kuiga au kunakalisha vifaa vyovyote au habari inayopatika katika Tovuti au huduma isipokuwa kiasi kidogo cha vifaa na maelezo yanayohitajika kwa muda kwa matumizi ya kawaida ya tovuti au huduma, au (c) kufikia maudhui yasiyo kusudia. Kwa hali ya matumizi yako au upatikanaji wa tovuti na huduma , unakubaliana kama ifuatavyo:";
+"Terms.useSectionOneBulletOne" = "Matumizi yoyote au kupatikana na mtu yeyote chini ya umri wa miaka 13 umepigwa marufuku, na mafunzo na vifaa fulani zinazotolewa kwenye tovuti na kufanywa kupatikana kupitia huduma zinaweza kuwa na vikwazo vya ziada.";
+"Terms.useSectionOneBulletTwo" = "Utatupayia taarifa sahihi na maelezo kamiliYou shall provide us with accurate and complete information, na unakubali kusahihisha maelezo yako ya kuwasiliana na ya akaunti na kuiweka sahihi na kamili wakati wote.";
+"Terms.useSectionOneBulletThree" = "Utapata tu au kutumia tovuti au huduma kwa kifaa sambamba au kompyuta.Hatukubali jukumu au dhima kwa hasara kutokana na kushindwa kuzingatia utoaji huu.";
+"Terms.useSectionOneBulletFour" = "Hutatumia Tovuti au huduma kwa madhumuni yoyote halali au iliyokatazwa kisheria.";
+"Terms.useSectionOneBulletFive" = "Haupaswi kunakilisha au kuuza huduma hizi.";
+"Terms.useSectionOneBulletSix" = "Haupaswi kusambaza minyoo, virusi au kanuni yoyote ya uharibifu kwa Health4TheWorld, watumizi wengine, tovuti au huduma.";
+"Terms.useSectionOneParTwo" = "Matumizi yoyote ya tovuti au huduma kwa ukiukaji wa yaliyotajwa, inakiuka masharti haya na inaweza kusababisha , kati ya mambo mengine, kukomeshwa au kusimamishwa kwa haki yako ya kutumia tovuti na huduma. Tuna haki ya kufuatilia matumizi yako ya tovuti na huduma ili kuhakikisha kufuata kwa sheria hizi au kwa mujibu wa utaratibu wa mahakama au utawala. Zaidi ya hayo,tunahifadhi haki ya kukomesha au kusimamisha matumizi yako ya tovuti au huduma kwa sababu. Mbali na masharti haya, matumizi yako ya tovuti na huduma yanatawaliwa na sera yetu ya faragha. Unakubali kwamba ukusanyaji, matumizi na usambazaji wa habari yangu binafsi na Health4TheWorld itakuwa kama ilivyoelezwa katika sera ya faragha ambayo inaweza kubadilishwa na sisi mara kwa mara. Sera ya faragha na masharti au miongozo yoyote iliyowekwa yameingizwa kwa kutafakari kwa masharti haya.";
+"Terms.useSectionTwoHeader" = "Leseni yetu kwako";
+"Terms.useSectionTwoParagraph" = "Kulingana na kufuata kwa masharti haya na sera zingine (Ikiwa ni pamoja na sera ya matumizi ya kukubalika, kanuni ya heshima, sera ya faragha na masharti mengine),tunakupa ruhusa kidogo, ya kibinafsi, isiyo ya kipekee, ambayo haiwezi kuhamishwa na kuachwa ili kutumia tovuti yetu na huduma.Unaweza kupakua maudhui kutoka kwa tovuti yetu na huduma, tu kwa matumizi ya kibinafsi ,yasiyo ya kibiashara, isipokuwa ukipata idhini iliyoandikwa  na Health4TheWorld ili kutumia maudhui vinginevyo.haki zote zingine zimehifadhiwa. Pia unakubali kwamba utaunda, fungua na kutumia akaunti moja tu ya mtumiaji, na hutashiriki upatikanaji wowote wa watu wengine au kupata maelezo kwa akaunti yako. Kwa kuzingatia leseni hii, unakubali ya kwamba: (a) nakala yoyote unayofanya katika kurasa, maudhui, maandishi, picha, sauti, video au maudhui mengine kwenye tovuti, programu ya simu au huduma, itahifadhi hati miliki zote na matangazo mengine ya wamiliki yaliyomo katika vifaa vile; na (b) vifaa vyovyote vile vitasambazwa tu kulingana na masharti haya. Bila kuzingatia hapo awali, huwezi kuuza, kuhamisha au kusambaza leseni ya tovuti, programu ya simu au huduma kwa lengo la kushindan moja kwa moja na Health4TheWorld. Kutumia tovuti yetu, Programu ya simu au huduma haikupi umiliki wa haki za mali za kiinjili au maudhui unayopata.  Zaidi ya hayo, kwa vile baadhi ya huduma zetu zinaweza kuwa programu ambayo imepakuliwa kwenye kompyuta yako, simu, kompyuta kibao au kifaa kingine , unakubali ya kwamba tunaweza kuboresha programu hii na kwamba masharti haya yatatumika katika sahihisho za programu.";
+"Terms.eduSectionOneHeader" = "Marekebisho ya maudhui";
+"Terms.eduSectionOnePar" = "Ingawa tunajivunia maudhui yetu ya kimataifa ya elimu, matokeo isiyotarajiwa hutokea. Health4TheWorld inahifadhi haki ya kufuta, kudakiza,kuahirisha aukurekebisha maudhui yoyote ya elimu au thamani ya uhakika au uzito wa kazi yoyote, jaribio au tahmini nyingine. Maudhui yaliyomo ya mafunzo yanakbiliwa na uhalali na ugavi wa sehemu za dhima hapa chini.";
+"Terms.eduSectionTwoHeader" = "Hakuna matokeo ya kitaaluma";
+"Terms.eduSectionTwoPar" = "Isipokuwa kama imeonyeshwa wazi na taasisi ya kutoa alama za kitaaluma, kushiriki au kukamilika kwa kozi iliyotolewa kupitia tovuti yetu au huduma haitoi alma za kitaaluma. Hata kama alama zitatolewa na taasisi moja, hakuna dhana kwamba taasisi zingine zitakubali alama hizo. Unakubali kutopewa alama za kitaalamu kwa kukamilisha kozi kupitia tovuti yetu au huduma isipokuwa kama umepatacheti cha kozi (au sifa nyingine sawa nayo kutoka Health4TheWorld) kwa kozi hiyo. Health4TheWorld, walimu wa masomo, na taasisi zinazoshiriki,hawana wajibu wa kuwa na kozi inayojulikana na taasisi yoyote ya elimu au shirika la kibali.";
+"Terms.eduSectionThreeHeader" = "Kizuizi Cha uhusiano kati ya Chuo Kikuu na mwanafunzi";
+"Terms.eduSectionThreePar" = "hakuna kitu katika masharti haya au vinginevyo kwa heshima na ushiriki wako katika kozi yoyote: (a) inaanzisha uhusiano kati yako na taasisi yoyote ya elimu ambayo Health4TheWorld inaweza kuhusishwa; (b) inakuandikisha au kukusajilisha katika taasisi yoyote ya elimu, au katika kozi yoyote inayotolewa na taasisi ya elimu ;au  (c) inakuwezesha kutumia rasilimali za taasisi yoyote ya elimu zaidi ya kushiriki kwenye kozi.";
+"Terms.eduSectionFourHeader" = "Utafiti wa Elimu";
+"Terms.eduSectionFourPar" = "Health4TheWorld ina nia ya kuendeleza sayansi ya kujifunza na kufundisha, na kumbukumbu za ushiriki wako katika kozi zinaweza kutumika kwa ajili ya utafiti wa elimu. Kwa maslahi ya utafiti huu unaweza kuonyeshwa tofauti katika maudhui ya kozi .Matokeo ya utafiti itatolewa katika kiwango cha jumla. Utambulisho wako wa kibinafsi hautafafanuliwa hadharani katika matokeo yoyote ya utafiti bila kibali chako cha wazi.";
+"Terms.eduSectionFiveHeader" = "Kizuizi kuhusu maudhui ya matibabu na matumizi yake";
+"Terms.eduSectionFivePar" = "Maelezo yanayotolewa na maoni yaliyotolewa na watu wote wakati wa kipindi cha masomo, yaliyomo kwenye programu ya simu au kupitia huduma zingine, ni yao wenyewe na sio lazima kuwakilisha maoni na nafasi ya Health4TheWorld au mipango yake yoyote au migawanyiko. Kituo, tovuti na vifaa vyote vilivyo hapa au vinginevyo vinavyohusishwa na Health4TheWorld ina lengo tu la madhumuni ya elimu , na sio lengo kuwa, na haipaswi kufasiriwa kama, ushauri wa matibabu. Ijapokuwa jitihada za busara zimefanyika ili kuhakikisha maelezo yaliyomo katika mihadhara hii  na vifaa vya elimu kwenye programu ya simu ni ya sasa na sahihi kwa wakati wa kuchapishwa, wala Health4TheWorld, wala mtu yeyote amabye ametoa maudhui au amehusika katika uwasilishaji wa maelezo haya, kwa maneno au kwa maandiko inaweza kuhakikisha kuwa habari zote ni sahihi na halali. Health4TheWorld haifanyi udhamini, kueleza au kutaja, kwamba taarifa yoyote iliyotolewa katika mhadhiri ni sahihi au imebaki sahihi kutokana na maendeleo katika utafiti, au mabadiliko katika miongozo na viwango vingine vya utunzaji. Hakuna kitu kilichowekwa katika taarifa yoyote, podcast, programu ya simu, au jukwaa nyingine ya vyombo vya habari inaunda au inalenga kuunda , kwa usahihi au kwa wazi, aina yoyote ya uhusiano kati ya mgonjwa  na dakaari.";
+"Terms.yourContentSectionOneHeader" = "Maudhui ya mtumiaji";
+"Terms.yourContentSectionOnePar" = "Tovuti hii, programu ya simu na huduma The Website, Mobile application and Services inakuwezesha kushiriki maudhui yako, kama vile majaribio,mitihani miradi, kazi na maudhui mengine unayowasilisha kwa kutumia Tovuti na huduma, ikiwa ni pamoja na hariz yoyote, maandishi, viungo, faili za video, picha , machapisho unayofanya kwenye vikao, na kadhalika, (\"Maudhui ya mtumiaji\"), na  Health4TheWorld,waalimu na watumiaji wengine. Maudhu kama hayo ya mtumiaji yatachukuliwa kuwa yasiyo ya siri na pia yanajumuisha maudhui yoyote unayowasilisha kwa Health4TheWorld kupitia kwa ukurasa wetu wa  \"Wasiliana nasi\" au kwa kutuma barua pepe kwa wafanyakazi wowote wa Health4TheWorld. Unawakilisha na kuhakikisha kwamba maudhui yote ya mtumiaji ambayo unaweza kutuma kwa Health4TheWorld itakuwa nyenzo yako ya asili kabisa (isipokuwa maudhui unayotumia kwa idhini ya mmiliki), na haitumii vibaya, kukiuka au vinginevyo kukiuka hati miliki, alam aya bishara,  mali asili au haki nyingine za watu wengine, ikiwa ni pamoja na  haki za faragha na utangazaji.";
+"Terms.yourContentSectionTwoHeader" = "Jinsi Health4TheWorld na wengine wanaweza kutumia maudhui ya mtumiaji";
+"Terms.yourContentSectionTwoPar" = "Kwa kiwango ambacho unatoa maudhui ya mtumiaji unaipa Health4TheWorld leseni inayoweza kuhamishwa, bila malipo, isiyo ya kipekee na leseni duniani kote ya kupiga nakala,kusambaza, kurekebisha, kuunda kazi kulingana na kunfanywa kwa umma, kuonyesha hadharani na kutumia vinginevyo maudhui ya mtumiaji. Leseni hii inatoa haki kwa Health4TheWorld ya kuidhinisha taasisi zinazoshiriki kutumia maudhui ya mtumaiji na washiriki wao waliosajiliwa bila kutegemea tovuti na huduma. Hakuna kitu katika masharti haya kitazuia haki nyingine za kisheria Health4TheWorld inaweza kuwa nazo kwa maudhui ya mtujiami, kwa mfano chini ya leseni zingine ,au haki zetu za kutumia maudhui ya mtumiaji yoyote kwa njia yoyote tunayochagua. Tunahifadhi haki ya kuondoa au kurekebisha maudhui ya mtumiaji kwa sababu yoyote, ikiwa ni pamoja na maudhui ya mtumiaji tunayoamini yanakiuka masharti haya.";
+"Terms.yourContentSectionThreeHeader" = "Maoni";
+"Terms.yourContentSectionThreePar" = "Tunakaribisha maoni yako, mawazo  na maonni mengine kuhusu tovuti hii na huduma (\"Maoni\"). Kwa kuwasilisha maoni yoyote, unatupa haki ya kutumia maoni bila kizuizi au faida yoyote kwako. Kwa kukubali maoni yako, Health4TheWorld haitoi haki yoyote ya kutumia maoni sawa au yanayohusiana na hapo awali inayojulikana na  Health4TheWorld, iliyoendelezwa na wafanyakazi wake, makandarasi au kupatikana kutoka vyanzo vingine.";
+"Terms.securityParagraph" = "Tunajali kushusu usalama wa watumiaji wetu.Ingawa tunajitahidi kulinda usalama wa akaunti yako na habari zinazohusaina nayo, Health4TheWorld haiwezi kuthibitisha kwamba watu wengine wasioidhinishwa hawawezi kushinda hatua zetu za usalama. Tafadhali tujulishe mara moja kuhusu matumizi yasioyoidhinishwa kwa akaunti yako , kwa kutuma barua pepe kwa contact@Health4TheWorld.org.";
+"Terms.thirdPartyContentPar" = "Kupitia tovuti na huduma , utakuwa na uwezo wa kuffikia na kutumia maudhui yaliyotolewa na waalimu,, watumiaji wengine, na watu wengine wowote na viungo kwenye tovuti, programu na huduma zilizosimamiwa na kudhibitiwa na watu wengine. Health4TheWorld haina udhibiti na haina wajibu kwa maudhui, sera za faragha au shughuli za tovuti za watu wengine au waliotoa maudhui na hawawezi kuhakikisha kwamba maudhui ya watu wengine katika huduma za tovuti au mahali pengine, itakuwa bila maudhui unaweza kupata visivyofaa au haifai au zisizo na programu zinazoweza kuharibu kompyuta yako, simu au faili yoyote iliyomo ndani. Kwa kutumia tovuti hii, programu ya simu au huduma,unatoa  Health4TheWorld waziwazi kutoka na, na tunakataa waziwazi jukumu lolote au dhima inayohusiana na au kutokana na upatikanaji au matumizi ya maudhui hayo au tovuti. Matumizi yoyote ya programu hiyo au huduma hizo ni kwa hatari yako mwenyewe na inaweza kuwa chini ya  masharti na vikwazo tofauti au vya ziada kutoka watu wengine wanaotoa programu kama hiyo au kutoa huduma kama hizo.  Kwa hivyo, tunakuhimiza ujue na kusoma sheria na masharti na sera za faragha kwa kila kipengee cha programu au huduma ya watu wengine ambayo unapata kupitia tovuti hii na huduma.";
+"Terms.copyrightPar" = "Health4TheWorld inaheshimu haki za miliki za watumiaji wetu, taasisi zinazoshiriki , na watu wengine na tunatarajia watumiaji wetu kuheshimu haki hizi wakati wa kutumia tovuti au huduma. Tumechukua na kutekeleza sera ya  hati ya miliki na alama za biashara ya  Health4TheWorld kulingana na sheria inayohusika ikiwa ni pamoja na Kitendo cha hati miliki ya milenia Digital.";
+"Terms.modifyingPar" = "Tunaendelea kubadilisha na kuboresha tovuti na huduma zetu na programu ya simu.Tunaweza kuongeza au kutoa kazi , vipengele au mahitaji, na tunaweza kusimamisha au kuacha kazi ya tovuti yetu kwa huduma zote. Kwa hivyo, Health4TheWorld inaweza kusimamisha matumizi yako ya tovuti na huduma zozote kwa sababu yoyote. Ikiwa matumizi yako ya kipengele kilicholipiwa au tovuti, programu ya simu, au huduma imesimamishwa , pesa zinaweza kurejeshwa chini ya sera yetu ya kurejesha pesa. Health4TheWorld, taasisi zake zinazoshiriki, waalimu, wachangiaji wake, wadhamini wake,na washirika wengine wa biashara na wafanyakazi wao, maafisa, wakurugenzi, wawakilishi, makandarasi na mawakala wengine (kwa pamoja \"vyama vya pamoja vya Health4TheWorld \") watakuwa na dhima yoyote kwako kwa hatua yoyote hiyo. Unaweza kuacha kutumia tovuti na huduma zetu wakati wowote.";
+"Terms.disclaimersParOne" = "TOVUTI, PROGRAMU YA SIMU NA MAUDHUI YOYOTE YA HUDUMA YANAYOPATIKANA KWENYE AU KUPITIA TOVUTI NA PROGRAMU YA SIMU YANATOLEWA \"YALIVYO\" NA \"YANAVYOPATIKANA\" BILA UDHAMINI WA AINA YOYOTE (WAZIWAZI, KUELEZWA AU VINGINEVYO), IKIWA NI PAMOJA, NA BILA YA KUPUNGUZWA, DHAMANA YOYOTE YA JINA, BIASHARA, KWA KUSUDI FULANI NA YASIYO YA UKIUKAJI,iSIPOKUWA KAMA VILE VIKWAZO VYOVYOTE VILE VINAWEZA KUTOKUBALIWA CHINI YA SHERIA HUSIKA.";
+"Terms.disclaimersParTwo" = "VYAMA VYA PAMOJA VYA HEALTH4THEWORLD HAVIHAKIKI KWAMBA TOVUTI, PROGRAMU YA SIMU AU HUDUMA,ZITAFANYA KAZI KWA NJIA ISIYOINGILIWA AU ISIYO NA HITILAFU NA KWAMBA TOVUTI NA HUDUMA HAZINA MAKOSA, VIRUSI NA VIPENGELE VINGINE VYA HATARI, AU KWAMBA KOZI NA MAUDHUI YANAYOTOLEWA YATAKUTANA NA MAHITAJI YAKO AU MATARAJIO YAKO. HEALTH4THEWORLD HAIDHAMINI KUHUSU USAHIHI, UKAMILIFU AU UBORA WA TOVUTI,PROGRAMU YA SIMU AU HUDUMA , KOZI NA MAUDHUI, AU KWAMBA, KOZI YOYOTE AU MAUDHUI YOYOTE YATAENDELEA KUPATIKANA.  MATUMIZI YA TOVUTI, PROGRAMU YA SIMU, MAUDHUI NA HUDUMA INAYOPATIKANA KUTOKA AU KUPITIA TOVUTI HII NI KWA HATARI YAKO MWENYEWE. UFIKIAJI WAKO AU KUPAKUA PROGRAMU YA VIFAA VYA HABARI, MAUDHUI KUPITIA TOVUTI , PROGRAMU YA SIMU NI KWA BUSARA YAKO NA HATARI YAKO MWENYEWE, NA UTAWAJIBIKA MWENYEWE KWA UHARIBIFU WA MALI YAKO(IKIWA NI PAMOJA NA KOMPYUTA YAKO) AU KUPOTEZA HABARI AU VIFAA KUTOKANA NA KUPAKUA NA MATUMIZI YA VIFAA VYA PROGRAMU HII,ISIPOKUWA KAMA IMEANDIKWA KATIKA SERA YA FARAGHA YA  HEALTH4THEWORLD . KWA KUEPUKA NA SHAKA, HAKUNA TUKIO AMBALO VYAMA VYA PAMOJA VYA HEALTH4THEWORLD VITAWAJIBIKA KWA UPUNGUFU WOWOTE, MAKOSA,KUTOKUWA SAHIHI, AU USUMBUFU KWENYE TOVUTI, PROGRAMU YA SIMU AU HUDUMA AU KWA UHARIBIFU WA AINA YOYOTE. SULUHISHO LAKO LA PEKEE KATIKA TUKIO LOLOTE LA UPUNGUFU, MAKOSA, KUTOKUWA SAHAIHI ITAKUWA  KUOMBA HEALTH4THEWORLD KUREKEBISHA JAMBO HILO, AU TUKISHINDWA KUFANYA HIVYO,KUSIMAMISHA MATUMIZI YAKO YA TOVUTI NA HUDUMA.";
+"Terms.limitationsParOne" = "KWA KIWANGO CHA JUU KINACHORUHUSIWA NA SHERIA, VYAMA VYA PAMOJA VYA HEALTH4THEWORLD HAVITAWAJIBIKA KWA UHARIBIFU WA MOJA KWA MOJA, WA KAWAIDA, WA PEKEE, WA MATOKEO AU HASARA YOYOTE YA FAIDA AU MAPATO,IKIWA IMETOKANA MOJA KWA MOJA AU HASARA NYINGINE YOYOTE YA KUPOTEZA DATA, MATUMIZI, MSAMAHA AU HASARA NYINGINE ZISIZOWEZA KUONEKANA, KUTOKANA NA: (A) UPATIKANAJI WAKO AU MATUMIZI, AU KUKOSA UWEZO WA KUFIKIA AU KUTUMIA TOVUTI AU HUDUMA; (B) MWENENDO WOWOTE WA SHIRIKA LINGINE ISIPOKUWA SHIRIKA HUSIKA LA HEALTH4THEWORLD, IKIWA NI PAMOJA NA BILA KUPUNGUZWA , UHARIBIFU WOWOTE, KUKERA AU MIENENDO YA HARAMUI ; (C) MAUDHUI YOYOTE YALIYOPATIKANA KUTOKA KWENYE TOVUTI, PROGRAMU YA SIMU AU HUDUMA; AU (C) MATUMIZI BILA IDHINI, UFIKIAJI USIO NA IDHINI,AU MABADILIKO YA MAUDHUI YAKO YA MTUMIAJI AU TAARIFA YOYOTE INAYOTOLEWA NA WEWE. HAKUNA TUKIO AMBALO HEALTH4THEWORLD ITAKUWA NA DHIMA YA JUMLA KWA MADAI YOTE KUHUSIANA NA TOVUTI NA HUDUMA ITAKUWA KUBWA ZAIDI YA ($20) AU KUZIDI JUMLA YA MALIPO KWA HEALTH4THEWORLD KUTOKA KWAKO KWA MATUMIZI YA KAZI ZA KULIPWA ZA TOVUTI, PROGRAMU YA SIMU NA HUDUMA KWA WAKATI WA MIEZI SITA ILIYOPITA.";
+"Terms.limitationsParTwo" = "UNAKUBALI NA KUKUBALIANA KUWA MADAI NA UHABA WA DHIMA AMBAYO IMEWEKWA KWA MASHARTI INAONYESHA UGAWAJI SAWA NA WA HAKI WA HATARI KATI YAKO NA HEALTH4THEWORLD, NA KWAMBA MAPUNGUFU HAYA NI MSINGI MUHIMU KWA UWEZO WA HEALTH4THEWORLD KUFANYA TOVUTI NA HUDUMA ZIWEPO KWA MISINGI YA KIUCHUMI INAYOWEZEKANA.";
+"Terms.limitationsParThree" = "UNAKUBALI KWAMBA HATUA YOYOTE INAYOHUSIANA NA TOVUTI, PROGRAMU YA SIMU, AU HUDUMA , INAPASWA KUANZA NDANI YA MWAKA MMOJA BAADA YA KUONGEZEKA KWA SABABU YA HATUA ,LA SIVYO, SABABU YA HATUA YA KITENDO HICHO, HAIRUHUSIWA KABISA.";
+"Terms.idemnificationPar" = "Umekubali kuzuia, kutetea, na kutopata shida shirika la Health4TheWorld kutokana na madai, wajibu, madeni na uharibifu woowte, ikiwa ni pamoja na ada ya wakili na gharama zilizoletwa na watu wengine kutokana au kuhusiana na: (a) kutumia au kujaribu kutumia tovuti na Huduma kwa ukiukaji wa sheria hizi; (b) ukiukaji wa sheria yoyote au haki za mtu yeyote;  (c) tmaudhui ya mtumiaji; au (d) Madai yoyote ya ukiukaji au matumizi mabaya ya mali milki au haki nyingine za wamiliki za mtu yeyote kutoka kwako.";
+"Terms.governingParOne" = "huduma zinasimamiwa na Health4TheWorld, ambayo iko Palo Alto, California, USA. Unakubali ya kwamba mgogoro wowote unaotokea au unaohusiana na masharti haya utaongozwa na sheria za nchi ya Marekani na mji wa California, ukiondoa migogoro yake ya sheria. Unakubaliana na mamlaka ya kibinafsi ya mahali pekee katika mahakama za shirikisho na za serikali ambazo ziko na zinatumikia Palo Alto, California kama jukwaa la kisheria kwa mgogoro wowote huo, na kutoa pingamizi yoyote kama jukwaa lisilosababishwa.";
+"Terms.governingParTwo" = "Ukiondoa madai ya adhabu au misaada sawa,kwa madai inayohusiana na huduma ambapo kiwango cha jumla ni chini ya Dola elfu kumi za marekani ($10,000.00 USD), wewe au Health4TheWorld unaweza kuchagua wakati wowote wakati wa mgogoro, kutatua madai kwa njia ya usuluhishi wa kufunga bila kuonana. Mgogoro basi utatatuliwa kwa kutumia mtoa huduma wa kutatua mgogoro wa mbadala (\"ADR\"), aliyekubaliwa na wewe na Health4TheWorld. Wewe na mtoaji huduma mbadala aliyechaguliwa, hamtahusisha kuonekana kwa kibinafsi kwa washiriki au mashahid, isipokuwa kama imekubaliwa na washiriki wote;badala yake, usuluhisho utafanyika kwa chaguo mshiriki anayetafuta malipo, mtandaoni, kwa simu au kupitia maandishi yaliyoandikwa pekee.Hukumu yoyote iliyotolewa na mkaguzi mbadala inaweza kuingia katika mahakama yoyote ya mamlaka husika.";
+"Terms.generalTermsSectionOneHeader" = "Kurekebishwa kwa masharti";
+"Terms.generalTermsSectionOnePar" = "Tunahifadhi haki ya kurekebisha masharti kwa hiari yetu pekee na wakati wowote. Marekebisho yoyote ya masharti yatakuw ayenye ufanisi mara moja baada ya siis kuchapisha.Kwa mabadiliko yoyote ya masharti, tutajaribu kukujulisha mabadailiko hayo; hata hivyo, hatuna wajibu wowote kukujulisha kuhusu mabadiliko  wakati wowote. Kwa matukio yote, matumizi yako ya tovuti na huduma baada ya kuchapishwa kwa mabadiliko hayo, bila ya arifa, inaonyesha kukubalika kwa kisheria kwa maneno yaliyorekebishwa.";
+"Terms.generalTermsSectionTwoHeader" = "Wafuasi";
+"Terms.generalTermsSectionTwoPar" = "Masharti haya yatakuwa ya lazima na ya faida kwa wafuasi wako.";
+"Terms.generalTermsSectionThreeHeader" = "Kutofautisha";
+"Terms.generalTermsSectionThreePar" = "Ikiwa itakuwa kwamba utoaji maalum wa Masharti haya hauwezi kutekelezwa, hii haitaathiri sehemu nyingine yoyote ya Masharti haya. Ikiwa hutatii Masharti haya, na hatutachukua hatua za haraka, hii haionyeshi kwamba tunapeana haki yoyote ambayo tunaweza kuwa nayo (kama vile kuchukua hatua katika siku zijazo) .";
+"Terms.generalTermsSectionFourHeader" = "Kushiriki";
+"Terms.generalTermsSectionFourPar" = "Health4TheWorld taasisi zinazoshiriki ni walengwa  wa tatu wa Sheria na inaweza kutekeleza masharti hayo ya Masharti yanayohusiana nao.";
+"Terms.generalTermsSectionFiveHeader" = "Tahadhari kwa watumiaji wa California";
+"Terms.generalTermsSectionFivePar" = "Chini ya California Civil Code Sehemu ya 1789.3, Watumiaji wa tovuti wa California wana haki ya taarifa ya haki ya watumiaji maalum: Sehemu ya Usaidizi wa Malalamiko ya Idara ya Huduma za Wateja wa California, inaweza kuwasiliana kwa kuandika barua kwa 1625 N. Market Blvd., Suite S-202, Sacramento, California 95834, au kwa kupiga simu kwa nambari (800) 952-5210.";
+"Terms.referencedPoliciesBulletOne" = "Sera ya matumizi ya kukubalika";
+"Terms.referencedPoliciesBulletTwo" = "Sera ya faragha";
+"Terms.referencedPoliciesBulletThree" = "Sera ya ukiukaji wa hati miliki na alam za biashara";
+"Terms.referencedPoliciesBulletFour" = "Kanuni ya heshima";
+"Terms.acceptableUseParOne" = "Ujumbe wa Health4TheWorld ni kutoa upatikanaji wote wa vifaa vya elimu ya afya ili kuboresha afya ya kimataifa kupitia matumizi ya tovuti yetu (www.Health4TheWorld.org), ambayo ni pamoja na, vyombo vya habari, nyaraka, picha na maudhui mengine (kwa pamoja, \"Tovuti \"), pamoja na upatikanaji na matumizi ya bidhaa yoyote,huduma, na programu zinazopakuliwa zinazotolewa na Health4TheWorld ( \"Huduma\"). Tunaamini sana katika kulinda mazungumzo ya uhuru wa bure kwa wanafunzi wetu pamoja na uhuru wa kitaaluma kwa taasisi zetu na waalimu. Tunataka pia kuhakikisha kuwa wanafunzi na waalimu wetu wanahisi salama na vizuri wakati wa kutumia tovuti na huduma zetu. Tumeandika miongozo hii ili kuhakikisha kwamba watu wanaelewa na kufuata sheria wakati wanashiriki katika jumuia yetu ya mtandaoni au kutumiatovuti na huduma zetu. Ingawa hatuwezi kutazama au kufuatilia maudhui yaliyotolewa na watumiaji kila wakati, tunaweza kuondoa au kuhariri maudhui yasiyofaa au shughuli ambazo zimeripotiwa au kusimamisha, kuzima, au kuondosha upatikanaji wa mtumiaji kutoka sehemu au tovuti yote na huduma zetu. Tafadhali zingatia kwamba vijana  watumiaji chini ya umri wa miaka 13 hutumia Tovuti na Huduma zetu, na hatuwezi kuruhusu maudhui yasiyofaa kwa wanafunzi hawa wadogo. ";
+"Terms.acceptableUseSectionOneHeader" = "Umepigwa  marufuku kutumia Mtandao wetu au Huduma ili kushiriki maudhui ambayo:";
+"Terms.acceptableUseSectionOneBulletOne" = "Ina maudhui ya kinyume cha sheria au inakuza shughuli za haramu na nia ya kufanya shughuli hizo. ";
+"Terms.acceptableUseSectionOneBulletTwo" = "Ina vitisho vya kuaminika au huandaa vitendo vya vurugu halisi ya dunia. Haturuhusu maudhui yanayotengeneza hatari halisi ya uharibifu wa kimwili au uharibifu wa mali, yanayotishia watu au usalama wa umma, au huandaa au kuhamasisha madhara.";
+"Terms.acceptableUseSectionOneBulletThree" = "Yanayosumbua wengine. Tunasisitiza maoni juu ya watu na masuala ya maslahi ya umma, lakini maudhui mabaya au vinginevyo yasiyofaa yaliyoelekezwa kwa watu binafsi hayaruhusiwi.";
+"Terms.acceptableUseSectionOneBulletFour" = "Inapunguza kaki za mali, faragha, au haki nyingine za watu wa tatu. Usishiriki maudhui ambayo huna haki ya kushiriki, dai maudhui ambayo haukujenga kama yako mwenyewe, au vinginevyo kukiuka au matumizi mabaya ya mali ya mtu mwingine au haki nyingine. Daima sifa zote zinazotumiwa au zilizotajwa na wewe kwa mmiliki wa awali.";
+"Terms.acceptableUseSectionOneBulletFive" = "Kutumia wengine virusi vya kompyuta. Usishiriki matangazo yasiyofaa au yasiyoruhusiwa, matangazo, au uombaji. ";
+"Terms.acceptableUseSectionOneBulletSix" = "Vinginevyo hukiuka Sheria ya Matumizi ya Health4TheWorld. Tafadhali kumbuka kuwa kozi maalum inaweza kuwa na sheria na mahitaji ya ziada.";
+"Terms.acceptableUseSectionTwoHeader" = "Wewe pia hauruhusiwi ku:";
+"Terms.acceptableUseSectionTwoBulletOne" = "Fanya chochote kinachokiuka sheria za mitaa, serikali, kitaifa au kimataifa au uvunjaji majukumu yako yoyote ya mkataba au wajibu wa imani.";
+"Terms.acceptableUseSectionTwoBulletTwo" = "Shiriki nenosiri lako, kumruhusu mtu yeyote kufikia akaunti yako, au kufanya chochote ambacho kinaweza kuweka akaunti yako katika hatari.";
+"Terms.acceptableUseSectionTwoBulletThree" = "Jaribu kufikia akauti ya mtumiaji mwingine.";
+"Terms.acceptableUseSectionTwoBulletFour" = "Kunakilisha, kuhamisha, kuuza, kuuza bidhaa, au vinginevyo kutumia maudhui yoyote kutoka kwenye Tovuti yetu au Huduma, isipokuwa ikiwa una kibali maalum cha kufanya hivyo.";
+"Terms.acceptableUseSectionTwoBulletFive" = "Kufikia, kuoongeza, au kutumia maeneo yasiyo ya umma ya mifumo yetu, isipokuwa ukona mamlaka ya kufanya hivyo.";
+"Terms.acceptableUseSectionTwoBulletSix" = "Kuvunja au kuzuia hatua zetu za kuthibitisha au usalama au vinginevyo kujaribu uwezekano wa mifumo yetu au mitandao, isipokuwa ukona mamlaka ya kufanya hivyo.";
+"Terms.acceptableUseSectionTwoBulletSeven" = "Kujaribu kurekebisha uhandisi, kuvunja, kusimbua, kufungua, kuvunja , au kwa njia yoyote hupata code ya chanzo kutoka sehemu yoyote ya tovuti yetu au huduma zetu.";
+"Terms.acceptableUseSectionTwoBulletEight" = "Kujaribu kuingilia kati na mtumiaji yeyote, mwenyeji, au mtandao, kwa mfano kwa kutuma virusi, kujaza, kutuma virusi au kutuma barua pepe mingi.";
+"Terms.acceptableUseSectionTwoBulletNine" = "Kutumia tovuti yetu au Huduma zetu kusambaza viharibifu, virusi, farasi wa Trojan, minyoo, spyware, faili zilizoharibiwa au programu yoyote inayofanana ambayo inaweza kuharibu operesheni ya kompyuta au mali ya mwingine.";
+"Terms.acceptableUseSectionTwoBulletTen" = "Fanya au usijulishe uhusiano wako na mtu yeyote au chombo.";
+"Terms.acceptableUseSectionTwoBulletEleven" = "Kuhimiza au kusaidia mtu yeyote kufanya mambo yoyote kwenye orodha hii.";
+"Terms.acceptableUseSectionThreeHeader" = "Orodha ifuatayo ya vitu ni marufuku madhubuti kwenye Tovuti:";
+
+"Terms.acceptableUseSectionThreeBulletOne" = "Maudhui ambayo husababisha, huzunisha au kutishia wengine";
+"Terms.acceptableUseSectionThreeBulletTwo" = "Maudhui ambayo inazungumzia shughuli haramu kwa nia ya kuitenda";
+"Terms.acceptableUseSectionThreeBulletThree" = "Maudhui ambayo inakiuka haki ya mali ya mtu mwingine, ikiwa ni pamoja na, haki miliki au alama za biashara;";
+"Terms.acceptableUseSectionThreeBulletFour" = "Maneno machafu, ponografia, maneno mabaya yasiyofaa au yaliyomo kinyume cha sheria;";
+"Terms.acceptableUseSectionThreeBulletFive" = "Matangazo au aina yoyote ya kuomba kibiashara";
+"Terms.acceptableUseSectionThreeBulletSix" = "Maudhui yanayohusiana na shughuli za kisiasa za kisiasa";
+"Terms.acceptableUseSectionThreeBulletSeven" = "Virusi, farasi wa Trojan, minyoo, mabomu ya wakati, faili zilizoharibiwa, programu za uharibifu,  au programu yoyote inayofanana ambayo inaweza kuharibu operesheni ya  kompyuta au mali ya mwingine;";
+"Terms.acceptableUseSectionThreeBulletEight" = "Maudhui yaliyo na taarifa isiyo sahihi au iliyowekwa kwa nia ya kuwapotosha wengine.";
+"Terms.acceptableUseSectionThreeParOne" = "Zaidi ya hayo, unakubali kutopiga, au kupakua kwa wingi, maudhui yoyote ya wavuti, ikiwa ni pamoja na orodha au saraka ya watumiaji kwenye mfumo, vitabu vya mtandaoni, Maudhui ya mtumiaji au maelezo ya mtumiaji. Unakubali kutokueleza vibaya au kujaribu kujitambulisha kinyume utambulisho wako wakati wa kutumia tovuti (ingawa unakaribishwa na unastahili kutumia jina la mtumiaji bila majina katika vikao na kutenda kwa njia inayoweka utambulisho wako siri).";
+"Terms.auUserContentSectionOneHeader" = "Uwakilishi wa Maudhui ya Mtumiaji na vyeti";
+"Terms.auUserContentSectionOnePar" = "Kwa kuwasilisha au kusambaza Maudhui yako ya Mtumiaji kupitia tovuti na / au Huduma, unathibitisha, unawakilisha na kukubali (1) kwamba una haki zinazohitajika, leseni, vibali na / au ruhusa ya kunakilisha na kuchapisha Maudhui ya mtumiaji na kuidhinisha Health4TheWorld na watumiaji wake kunakilisha, kurekebisha, kuchapisha na kutumia vinginevyo na kusambaza Maudhui yako ya Mtumiaji kwa namna inayoendana na leseni iliyopewa na wewe hapo chini, na (2) kwamba usiyowasilisha kwa Maudhui yako ya Mtumiaji wala utumiaji wa leseni zilizopatikana hapo chini utaingiliana au kukiuka haki za chama chochote cha tatu. Wewe, unaajibika tu kwa Maudhui ya Mtumiaji  na matokeo ya kutuma au kuchapisha. \"Maudhui ya mtumiaji\" hufafanuliwa hapa kama maudhui yoyote na yaliyoshirikiwa au yaliyotolewa na wewe kwa kushirikiana na matumizi yako ya Tovuti na / au Huduma, ikiwa ni pamoja na bila ya kupunguzwa data yoyote, maandishi, viungo, faili za video, picha, nyaraka, vifaa, au taarifa unazounda kwenye vikao, na kadhalika (\"Maudhui ya Mtumiaji \"), ";
+"Terms.auUserContentSectionTwoHeader" = "Ruzuku ya Leseni kwa Health4TheWorld";
+"Terms.auUserContentSectionTwoPar" = "Kwa kuwasilisha au kusambaza Maudhui yako ya Mtumiaji, wewe unatoa haki kwa Health4TheWorld duniani kote, haki isiyo ya kipekee, inayohamishwa, yenyewajibika, chini ya leseni, kikamilifu ya malipo, isiyo ya kifalme, ya daima, ya haki isiyoweza kubadilishwa na leseni ya kuhudhuria, kuhamisha, kuonyesha, fanya, nakilisha, kurekebisa, kusambaza,kusambaza upya,kufanya upya tena na uitumie vinginevyo, fanya kupatikana na kutumia Maudhui yako ya mtumiaji , kwa ujumla au sehemu, kwa fomu yoyote na katika muundo wowote wa vyombo vya habari na kwa njia yoyote ya vyombo vya habari (sasa inayojulikana au iliyoandaliwa baadaye ).";
+"Terms.auUserContentSectionThreeHeader" = "Ruzuku ya Leseni kwa Watumiaji wa Health4TheWorld";
+"Terms.auUserContentSectionThreePar" = "Kwa kuwasilisha au kusambaza Maudhui yako ya mtumiaji, wewe hupa kila mtumiaji wa Tovuti au Huduma, leseni isiyo ya kipekee ya kufikia na kutumia Matumizi yako ya Mtumiaji kuhusiana na matumizi yao ya Tovuti na / au Huduma kwa madhumuni yao wenyewe.";
+"Terms.copyRightParOne" = "Health4TheWorld inaheshimu haki za miliki za waalimu wetu na vyama vingine vya tatu na inatarajia watumiaji wetu kufanya hivyo pia, wakati wa kutumia tovuti ya Health4TheWorld.org, na vyombo vya habari vilivyounganishwa, nyaraka, picha au maudhui mengine (pamoja ni \"Tovuti\"), au kuhusiana na huduma, bidhaa au programu (\"Huduma\"). Tuna haki ya kusimamisha, kuzima, au kuondosha akaunti za watumiaji wanaovunja au wanaoshtakiwa kukiuka haki za haki miliki, alama za biashara, au haki nyingine za urithi wa wahusika wa tatu.";
+"Terms.copyrightSectionOneHeader" = "Haki miliki";
+"Terms.copyrightSectionOneParOne" = "Sheria ya  Hati miliki ya Milenia ya 1998 (\"DMCA \") hutoa matumizi ya wamiliki wa hakimiliki ambao wanaamini kuwa vifaa vinavyoonekana kwenye mtandao vinakiuka haki zao chini ya sheria ya hati miliki ya U.S. Nakala ya DMCA inapatikana kwenye tovuti ya Ofisi ya Copyright ya U.S., iliyoko http://www.copyright.gov/legislation/dmca.pdf ";
+"Terms.copyrightSectionOneParagraphTwo" = "Ikiwa unaamini kwa uaminifu kwamba taarifa iliyomo kwenye Tovuti au zinazotolewa kwa njia ya Huduma zinakiuka hati miliki yako, DMCA inakupa haki  wewe (au wakala wako) atutumie taarifa inayoomba kwamba vifaa vya kukiuka viondolewe au kufikia imefungwa.";
+"Terms.copyrightSectionOneParThree" = "Taarifa chini ya DMCA lazima zijumuishe maelezo ifuatayo:";
+"Terms.copyrightSectionOneBulletOne" = "Saini ya kimwili au ya elektroniki ya mtu aliyeidhinishwa kutenda kwa niaba ya mmiliki wa haki ya pekee inayohesabiwa kukiuka;";
+"Terms.copyrightSectionOneBulletTwo" = "utambulisho wa kazi ya hakimiliki inayodaiwa kuwa imevunjwa (au, ikiwa kazi nyingi za hakimiliki ziko kwenye tovuti au zinazotolewa kwa njia ya Huduma zinafunikwa na taarifa moja, orodha ya mwakilishi wa kazi hizo);";
+"Terms.copyrightSectionOneBulletThree" = "Utambulisho wa nyenzo ambazo zinasemekana kuwa ni ukiukaji au suala la shughuli za ukiukaji, na taarifa ya kutosha ili kuruhusu Health4TheWorld kupata taarifa kwenye Tovuti au katika Huduma;";
+"Terms.copyrightSectionOneBulletFour" = "Jina, anwani, nambari ya simu, na anwani ya barua pepe (ikiwa iko) ya chama cha kulalamika;";
+"Terms.copyrightSectionOneBulletFive" = "Taarifa kwamba chama cha kulalamika kina imani ya kwamba matumizi ya vifaa kwa namna ya madai haipatikani na mmiliki wa hakimiliki, wakala wake, au chini ya sheria; na";
+"Terms.copyrightSectionOneBulletSix" = "Taarifa, chini ya adhabu ya uongo, kwamba taarifa katika taarifa ni sahihi na chama cha kulalamika kinaruhusiwa kutenda kwa niaba ya mmiliki wa hakimiliki ambayo inadaiwa kuwa imevunjwa.";
+"Terms.copyRightSectionOneParFour" = "Arifa zinapaswa kukidhi mahitaji ya kisheria ya sasa yaliyowekwa na DMCA. Arifa na matangazo ya kukabiliana na tovuti na / au Huduma zinaweza kutumwa:";
+"Terms.copyrightSectionOneBulletsTwoOne" = "Kutumia barua pepe kwa: Copyright Agent, Health4TheWorld, 501 Forest Ave Apt 1207, Palo Alto CA 94301";
+"Terms.copyrightSectionOneBulletsTwoTwo" = "Kupitia barua pepe kwa : contact@health4theworld.org";
+"Terms.copyrightSectionOneParFive" = "Tunashauri kuwa shauriana na mshauri wako wa kisheria kabla ya kufungua taarifa ya DMCA, kwani madai ya uwongo chini ya DMCA yanaweza kushtakiwa kwenye vijiti kwa adhabu za kisheria.";
+"Terms.copyrightSectionTwoHeader" = "Alama za biashara";
+"Terms.sectionTwoPar" = "Health4TheWorld pia inaheshimu haki za alama za biashara za wengine. Akaunti zilizo na maudhui ambayo kwa makusudi huwadanganya wengine au inakiuka haki za alama za biashara ya mtu mwingine zinaweza kubadilishwa, kusimamishwa, kuzimwa, au zisimamishwe na Health4TheWorld kwa hiari yake pekee, bila ya taarifa. Ikiwa una wasiwasi kuwa mtu anaweza kuwa anatumia alama yako ya biashara kwa njia ya ukiukaji au isiyoidhinishwa kwenye Tovuti yetu au Huduma, tafadhali tuma barua pepe kwa contact@Health4TheWorld.org, na tutaangalia malalamiko yako. Ikiwa tunapaswa kustahili, tunaweza kuondoa maudhui yaliyotukia, onya mtumiaji ambaye amesajili maudhui, na / au kusimamisha kwa muda au kusimamisha kwa kudumu akaunti ya mtu huyo binafsi.";
+"Terms.honorCodeParOne" = "Watumiaji wote wanaohusika katika darasa lolote wanapaswa kukubaliana na kufuata kanuni ya maadilii. Mimi nakubaliana:";
+"Terms.honorCodeBulletOne" = "Mimi nitajiandikisha kwa akaunti moja tu (1)  ya mtumiaji kwenye Health4TheWorld.com.";
+"Terms.honorCodeBulletTwo" = "Majibu yangu kwa maswali, majaribio, miradi, na majukumu mengine yatakuwa kazi yangu mwenyewe(isipokuwa kwa kazi ambazo zinaruhusu kushirikiana).";
+"Terms.honorCodeBulletThree" = "Siwezi kufanya ufumbuzi wa maswali, mitihani, miradi, na kazi nyingine zipatikane kwa mtu mwingine yeyote (ila kwa kiwango ambacho kazi inaruhusu ufumbuzi wa kushirikiana). Hii inajumuisha ufumbuzi wote ulioandikwa na mimi, pamoja na ufumbuzi wowote uliotolewa na wafanyakazi wa kozi au wengine.";
+"Terms.honorCodeBulletFour" = "Sitashiriki katika shughuli zingine zozote ambazo zitaweza kuboresha matokeo yangu kwa udanganyifu au kuboresha kwa udanganyifu au kuumiza matokeo ya wengine.";
+
+

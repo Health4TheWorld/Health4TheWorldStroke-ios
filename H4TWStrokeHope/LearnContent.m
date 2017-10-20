@@ -99,30 +99,9 @@
     self.textColor = [UIColor whiteColor];
     self.backButtonImageStr = BLUE_BACK_BUTTON;
     self.content = [[NSMutableArray alloc] init];
-    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 786, 587)];
-    imgView.bounds = CGRectMake(0, 0, 786, 587);
-    [imgView setImage:[UIImage imageNamed:RISK_FACTORS]];
-    self.images = @[imgView];
-}
-
-- (void)setUpRiskFactor {//MM
-    self.contentTitle = CONTENT_TYPE_RISKFACTORS;
-    //Need to modify
-    self.contentBGColor = HFTW_RED;
-    self.textColor = [UIColor whiteColor];
-    self.backButtonImageStr = RED_BACK_BUTTON;
-    
-    //    UIImageView *imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:RISK_FACTORS]];
-    //    imgView.bounds = CGRectMake(0, 0, 783, 577);
-    //    self.images = @[imgView];
-    
-    UIWebView *webView = [[UIWebView alloc]initWithFrame:CGRectMake(0.0, 0.0, 1000, 760)];
-    [webView setScalesPageToFit:YES];
-    webView.backgroundColor=[UIColor clearColor];
-    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"RiskFactors" ofType:@"html" inDirectory:@"html_files"];
-    NSData *htmlData = [NSData dataWithContentsOfFile:htmlFile];
-    [webView loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:[NSURL URLWithString:@""]];
-    //    [self addObject:webView];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.riskFactorsForStroke", nil)]];
+    NSArray *bullets = @[(NSLocalizedString(@"Learn.riskFactorsOne", nil)), (NSLocalizedString(@"Learn.riskFactorsTwo", nil)), (NSLocalizedString(@"Learn.riskFactorsThree", nil)),(NSLocalizedString(@"Learn.riskFactorsFour", nil)),         (NSLocalizedString(@"Learn.riskFactorsFive", nil))];
+    [self.content addObject:[self bulletsWithText:bullets]];
 }//MM
 
 - (void)setUpSignsOFStroke {//MM
@@ -130,10 +109,17 @@
     self.contentBGColor = HFTW_RED;
     self.textColor = [UIColor whiteColor];
     self.backButtonImageStr = RED_BACK_BUTTON;
-    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 786, 587)];
-    imgView.bounds = CGRectMake(0, 0, 786, 587);
-    [imgView setImage:[UIImage imageNamed:BEFAST]];
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGFloat screenWidth = screenRect.size.width;
+    UIImageView *imgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:BEFAST]];
+    imgView.frame = CGRectMake(imgView.frame.origin.x, imgView.frame.origin.y, screenWidth, 300);
+    imgView.bounds = CGRectMake(0, 0, screenWidth, 300);//786, 587)
+    imgView.contentMode = UIViewContentModeScaleAspectFit;
     self.images = @[imgView];
+    self.content = [[NSMutableArray alloc] init];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.signsOfStroke", nil)]];
+    NSArray *bullets = @[(NSLocalizedString(@"Learn.befastB", nil)), (NSLocalizedString(@"Learn.befastE", nil)), (NSLocalizedString(@"Learn.befastF", nil)),(NSLocalizedString(@"Learn.befastA", nil)), (NSLocalizedString(@"Learn.befastS", nil)),(NSLocalizedString(@"Learn.befastT", nil))];
+    [self.content addObject:[self bulletsWithText:bullets]];
 }//MM
 
 
@@ -399,11 +385,6 @@
     [self.content addObject:[self attributedParagraphWithText:subheaderThree]];
     [self.content addObject:[self paragraphWithText:HOME_MOD_CONTENT_THREE]];
 }
-
--(void)addWebView{
-    
-}
-
 /* Dictionaries that represent a chunk of text
  * --------------------------------------------
  */
