@@ -10,6 +10,10 @@
 #import "Constants.h"
 #import <ApiAI/ApiAI.h>
 #import <ApiAI/AIConfiguration.h>
+#import <AWSCore/AWSCore.h>
+#import <AWSCognito/AWSCognito.h>
+#import "AWSCognitoIdentityProvider.h"
+#import "AWSConstants.m"
 
 @interface AppDelegate ()
 
@@ -50,6 +54,19 @@
     id <AIConfiguration> configuration = [[AIDefaultConfiguration alloc] init];
     configuration.clientAccessToken = APIAI_CLIENT_ACCESS_TOKEN;
     apiai.configuration = configuration;
+    
+    /* AWS Service Configuration */
+    AWSCognitoCredentialsProvider *credentialsProvider = [[AWSCognitoCredentialsProvider alloc] initWithRegionType:AWSRegionUSEast1 identityPoolId: COGNITO_IDENTITY_POOL_ID];
+    
+    AWSServiceConfiguration *serviceConfiguration = [[AWSServiceConfiguration alloc] initWithRegion:AWSRegionUSEast1 credentialsProvider:credentialsProvider];
+    
+    AWSServiceManager.defaultServiceManager.defaultServiceConfiguration = serviceConfiguration;
+    
+    //create a pool
+    AWSCognitoIdentityUserPoolConfiguration *config = [[AWSCognitoIdentityUserPoolConfiguration alloc] initWithClientId: AWS_APP_CLIENT_ID clientSecret: AWS_APP_CLIENT_SECRET poolId: COGNITO_IDENTITY_POOL_ID];
+    [AWSCognitoIdentityUserPool registerCognitoIdentityUserPoolWithConfiguration:serviceConfiguration userPoolConfiguration:config forKey:@"UserPool"];
+    AWSCognitoIdentityUserPool *pool = [AWSCognitoIdentityUserPool CognitoIdentityUserPoolForKey:@"UserPool"];
+
     
     return YES;
 }

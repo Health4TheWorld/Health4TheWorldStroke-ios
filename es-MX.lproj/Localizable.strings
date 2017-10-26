@@ -289,3 +289,27 @@
 "AboutUs.ericaPitsch" = "Dr. Erica A Pitsch, PT, MPT, DPT, NCS: La Dra. Pitsch se especializa en terapia física neurológica y utiliza varias estrategias de tratamiento enfocadas en promover el reto óptimo, la función y la recuperación en personas con enfermedades neurológicas.";
 "AboutUs.lorenWard" = "Loren Ward, PT, DPT  es una fisioterapista licenciada que comenzó su carrera en Fisioterapia en 2007, mientras obtenía su doctorado en el Instituto de Profesiones de Salud del MGH en Massachusetts. Realizó prácticas en Rehabilitation of Chicago, Spaulding Rehabilitation y National Rehabilitation Hospital y ahora trabaja en el Sistema de Asuntos de Veteranos de Stanford. Loren es una defensora de la independencia funcional y se esfuerza en ayudar a sus pacientes a alcanzar su propio nivel de independencia, independientemente de sus limitaciones.";
 "AboutUs.roseHamm" = "Rose Hamm, PT, DPT, CWS, FACCWS: Rose recibió una licenciatura en Fisioterapia de la Universidad de Carolina del Norte, Chapel Hill, y una maestría y post-grado de DPT de la Universidad del Sur de California. Actualmente es Profesora Asistente Adjunta de Terapia Física Clínica en la Universidad del Sur de California y practica en el Hospital Keck de USC.";
+
+/* CHATBOT */
+"Chatbot.no" = "NO";
+"Chatbot.yes" = "SI";
+"Chatbot.lonelybutton1" = "Ver 360 videos";
+"Chatbot.lonelybutton2" = "Escuchar música";
+"Chatbot.lonelybutton3" = "Citas inspiradoras";
+"Chatbot.lonelybutton4" = "Video de ejercicios";
+"Chatbot.lonelybutton5" = "Consejos para superarlo";
+"Chatbot.lonelyoptions" = "Qué quieres hacer";
+"Chatbot.exit" = "SALIR";
+"Chatbot.icon1message" = "bien";
+"Chatbot.feelingbutton1" = "¿Solitario?";
+"Chatbot.feelingbutton2" = "Sin pronta recuperación?";
+"Chatbot.feelingbutton3" = "Con ansiedad?";
+"Chatbot.feelingbutton4" = "Deprimido?";
+"Chatbot.feelingbutton5" = "No puedes dormir?";
+"Chatbot.feelingbutton6" = "Te encuentras cansado?";
+"Chatbot.feelingmessage1" = "Solitario";
+"Chatbot.feelingmessage2" = "Recuperando";
+"Chatbot.feelingmessage3" = "Con ansiedad";
+"Chatbot.feelingmessage4" = "Deprimido";
+"Chatbot.feelingmessage5" = "Con sueño";
+"Chatbot.feelingmessage6" = "fatigado";

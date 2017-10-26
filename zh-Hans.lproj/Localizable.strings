@@ -432,5 +432,27 @@
 "Terms.honorCodeBulletThree" = "我不會讓其他任何人使用我測驗，考慮，項目和其他作業的答案，（除非有些作業答案明確允許分享），這包括我自己的答案和這門課工作人員和其他人提供的答案。";
 "Terms.honorCodeBulletFour" = "我不會參與任何有違誠信的提高自己的成績或者有違誠信的提高或損害他人的成績的活動。";
 
-
+/* CHATBOT */
+"Chatbot.no" = "不是";
+"Chatbot.yes" = "是的";
+"Chatbot.lonelybutton1" = "觀看360视频";
+"Chatbot.lonelybutton2" = "聽音樂";
+"Chatbot.lonelybutton3" = "勵志格言";
+"Chatbot.lonelybutton4" = "中風康復鍛煉視頻 ";
+"Chatbot.lonelybutton5" = "小竅門";
+"Chatbot.lonelyoptions" = "你想做什麼呢 ";
+"Chatbot.exit" = "退出";
+"Chatbot.icon1message" = "很好";
+"Chatbot.feelingbutton1" = "孤獨？";
+"Chatbot.feelingbutton2" = "沒有很快康復?";
+"Chatbot.feelingbutton3" = "焦慮?";
+"Chatbot.feelingbutton4" = "抑鬱?";
+"Chatbot.feelingbutton5" = "不能入睡?";
+"Chatbot.feelingbutton6" = "感覺疲憊?";
+"Chatbot.feelingmessage1" = "孤獨";
+"Chatbot.feelingmessage2" = "康復";
+"Chatbot.feelingmessage3" = "焦慮";
+"Chatbot.feelingmessage4" = "抑鬱";
+"Chatbot.feelingmessage5" = "困倦";
+"Chatbot.feelingmessage6" = "疲勞";
 

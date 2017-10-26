@@ -13,6 +13,7 @@
 		167883A91EE1029900B106AD /* ChatBotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883A71EE1029900B106AD /* ChatBotViewController.m */; };
 		167883AA1EE1029900B106AD /* ChatBotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167883A81EE1029900B106AD /* ChatBotViewController.xib */; };
 		167883AF1EE25EED00B106AD /* GVRVideoViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883AE1EE25EED00B106AD /* GVRVideoViewManager.m */; };
+		16811F411FA04720008B3E1F /* AWSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 16811F401FA04720008B3E1F /* AWSConstants.m */; };
 		168389811EC66D8F007D15C6 /* VRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683897F1EC66D8F007D15C6 /* VRViewController.m */; };
 		168389821EC66D8F007D15C6 /* VRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 168389801EC66D8F007D15C6 /* VRViewController.xib */; };
 		16AADA781F219CBD00D8A8EB /* RelaxingMusicViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AADA761F219CBD00D8A8EB /* RelaxingMusicViewCell.m */; };
@@ -167,6 +168,8 @@
 		167883A81EE1029900B106AD /* ChatBotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatBotViewController.xib; sourceTree = "<group>"; };
 		167883AD1EE25EED00B106AD /* GVRVideoViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVRVideoViewManager.h; sourceTree = "<group>"; };
 		167883AE1EE25EED00B106AD /* GVRVideoViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVRVideoViewManager.m; sourceTree = "<group>"; };
+		16811F3F1FA04720008B3E1F /* AWSConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSConstants.h; sourceTree = "<group>"; };
+		16811F401FA04720008B3E1F /* AWSConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWSConstants.m; sourceTree = "<group>"; };
 		1683897E1EC66D8F007D15C6 /* VRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRViewController.h; sourceTree = "<group>"; };
 		1683897F1EC66D8F007D15C6 /* VRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRViewController.m; sourceTree = "<group>"; };
 		168389801EC66D8F007D15C6 /* VRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRViewController.xib; sourceTree = "<group>"; };
@@ -405,6 +408,15 @@
 			name = ChatBot;
 			sourceTree = "<group>";
 		};
+		16811F3D1FA04548008B3E1F /* AWS Config */ = {
+			isa = PBXGroup;
+			children = (
+				16811F3F1FA04720008B3E1F /* AWSConstants.h */,
+				16811F401FA04720008B3E1F /* AWSConstants.m */,
+			);
+			name = "AWS Config";
+			sourceTree = "<group>";
+		};
 		16EDA54E1F0074C500906891 /* Inspirational Quotes */ = {
 			isa = PBXGroup;
 			children = (
@@ -601,6 +613,7 @@
 		CC4C10AE1E7A26DE00515CDC /* H4TWStrokeHope */ = {
 			isa = PBXGroup;
 			children = (
+				16811F3D1FA04548008B3E1F /* AWS Config */,
 				CC73E42C1E841EE0001131AF /* Utilities */,
 				CC73E4531E86AC18001131AF /* Storyboards */,
 				CC4C10B21E7A26DE00515CDC /* AppDelegate.h */,
@@ -1127,6 +1140,7 @@
 				CC11D12E1EB650320063E72A /* AddReminderFrequencyViewController.m in Sources */,
 				168389811EC66D8F007D15C6 /* VRViewController.m in Sources */,
 				1720A0681EA9E7DC009C2B87 /* DorsiflexorsViewController.m in Sources */,
+				16811F411FA04720008B3E1F /* AWSConstants.m in Sources */,
 				CC73E4271E841875001131AF /* EnterViewController.m in Sources */,
 				CCDFBECE1ECDE5E700C09CC8 /* TermsViewController.m in Sources */,
 				17DE3D4A1EA95F2300D350A1 /* LegAndFeetViewController.m in Sources */,
