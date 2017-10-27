@@ -13,7 +13,7 @@
 #import <AWSCore/AWSCore.h>
 #import <AWSCognito/AWSCognito.h>
 #import "AWSCognitoIdentityProvider.h"
-#import "AWSConstants.m"
+#import "AWSConstants.h"
 
 @interface AppDelegate ()
 
