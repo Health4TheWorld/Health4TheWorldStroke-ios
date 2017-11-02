@@ -14,6 +14,8 @@
 		167883AA1EE1029900B106AD /* ChatBotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167883A81EE1029900B106AD /* ChatBotViewController.xib */; };
 		167883AF1EE25EED00B106AD /* GVRVideoViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883AE1EE25EED00B106AD /* GVRVideoViewManager.m */; };
 		16811F411FA04720008B3E1F /* AWSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 16811F401FA04720008B3E1F /* AWSConstants.m */; };
+		16811F451FA3E433008B3E1F /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = 16811F441FA3E433008B3E1F /* Users.m */; };
+		16811F481FA80D95008B3E1F /* AWSDynamoDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 16811F471FA80D95008B3E1F /* AWSDynamoDBHelper.m */; };
 		168389811EC66D8F007D15C6 /* VRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683897F1EC66D8F007D15C6 /* VRViewController.m */; };
 		168389821EC66D8F007D15C6 /* VRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 168389801EC66D8F007D15C6 /* VRViewController.xib */; };
 		16AADA781F219CBD00D8A8EB /* RelaxingMusicViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AADA761F219CBD00D8A8EB /* RelaxingMusicViewCell.m */; };
@@ -170,6 +172,10 @@
 		167883AE1EE25EED00B106AD /* GVRVideoViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVRVideoViewManager.m; sourceTree = "<group>"; };
 		16811F3F1FA04720008B3E1F /* AWSConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSConstants.h; sourceTree = "<group>"; };
 		16811F401FA04720008B3E1F /* AWSConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWSConstants.m; sourceTree = "<group>"; };
+		16811F431FA3E433008B3E1F /* Users.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Users.h; sourceTree = "<group>"; };
+		16811F441FA3E433008B3E1F /* Users.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Users.m; sourceTree = "<group>"; };
+		16811F461FA80D95008B3E1F /* AWSDynamoDBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSDynamoDBHelper.h; sourceTree = "<group>"; };
+		16811F471FA80D95008B3E1F /* AWSDynamoDBHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWSDynamoDBHelper.m; sourceTree = "<group>"; };
 		1683897E1EC66D8F007D15C6 /* VRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRViewController.h; sourceTree = "<group>"; };
 		1683897F1EC66D8F007D15C6 /* VRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRViewController.m; sourceTree = "<group>"; };
 		168389801EC66D8F007D15C6 /* VRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRViewController.xib; sourceTree = "<group>"; };
@@ -413,8 +419,19 @@
 			children = (
 				16811F3F1FA04720008B3E1F /* AWSConstants.h */,
 				16811F401FA04720008B3E1F /* AWSConstants.m */,
+				16811F461FA80D95008B3E1F /* AWSDynamoDBHelper.h */,
+				16811F471FA80D95008B3E1F /* AWSDynamoDBHelper.m */,
 			);
 			name = "AWS Config";
+			sourceTree = "<group>";
+		};
+		16811F421FA3E3B5008B3E1F /* DynamoDb Object Models */ = {
+			isa = PBXGroup;
+			children = (
+				16811F431FA3E433008B3E1F /* Users.h */,
+				16811F441FA3E433008B3E1F /* Users.m */,
+			);
+			name = "DynamoDb Object Models";
 			sourceTree = "<group>";
 		};
 		16EDA54E1F0074C500906891 /* Inspirational Quotes */ = {
@@ -577,6 +594,7 @@
 		CC3CB64A1EA11F8A00CA9429 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				16811F421FA3E3B5008B3E1F /* DynamoDb Object Models */,
 				CC3CB64B1EA11F9E00CA9429 /* LearnContent.h */,
 				CC3CB64C1EA11F9E00CA9429 /* LearnContent.m */,
 				CC11D11D1EB51AB40063E72A /* Reminder.h */,
@@ -904,7 +922,7 @@
 					CC4C10AB1E7A26DE00515CDC = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = VQM3AFB3H9;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					CC4C10C71E7A26DE00515CDC = {
 						CreatedOnToolsVersion = 8.2;
@@ -1096,6 +1114,7 @@
 				CC73E4591E86BD65001131AF /* HomeButton.m in Sources */,
 				CCEF72EB1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m in Sources */,
 				CCB7B4091E9413590058C32E /* LearnViewController.m in Sources */,
+				16811F481FA80D95008B3E1F /* AWSDynamoDBHelper.m in Sources */,
 				CC73E42F1E841EF4001131AF /* GraphicUtils.m in Sources */,
 				CCB7B4031E9413260058C32E /* ExercisesViewController.m in Sources */,
 				CC4C10E71E7A272C00515CDC /* Constants.m in Sources */,
@@ -1112,6 +1131,7 @@
 				CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */,
 				CC11D1381EB6B7BC0063E72A /* NoResultsTableViewCell.m in Sources */,
 				CC3CB6481EA11EC800CA9429 /* LearnContentViewController.m in Sources */,
+				16811F451FA3E433008B3E1F /* Users.m in Sources */,
 				16EDA5641F00934100906891 /* QuotesCollectionViewCell.m in Sources */,
 				17E0BB3E1EA4127D001FC7F3 /* StretchingViewController.m in Sources */,
 				16AADA781F219CBD00D8A8EB /* RelaxingMusicViewCell.m in Sources */,
@@ -1334,14 +1354,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Health4TheWorld (VQM3AFB3H9)";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = VQM3AFB3H9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "18fa7297-d947-4636-a9e1-c3c74a70ff2e";
-				PROVISIONING_PROFILE_SPECIFIER = "Health 4 The World Stroke";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -1351,14 +1372,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Health4TheWorld (VQM3AFB3H9)";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = VQM3AFB3H9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "18fa7297-d947-4636-a9e1-c3c74a70ff2e";
-				PROVISIONING_PROFILE_SPECIFIER = "Health 4 The World Stroke";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
