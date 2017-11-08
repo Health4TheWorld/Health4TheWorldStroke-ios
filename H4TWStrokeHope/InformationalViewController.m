@@ -46,7 +46,7 @@
     }
     self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
     self.scrollView.bounces = NO;
-    self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 20000)];
+    self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height )];//20000
     [self.scrollView addSubview:self.contentView];
     
     self.currentY = 15;
@@ -80,7 +80,7 @@
     [self addSubheaderWithText:NSLocalizedString(@"AboutUs.founders", nil)];
     [self addMainText:@"Dr. Bhavya Rehani, Dr. Bill Dillon & Dr. Ankur Bharija"];
     [self addSubheaderWithText:NSLocalizedString(@"AboutUs.developers", nil)];
-    [self addMainText:@"Rachel Grau & Premnath Ramanathan"];
+    [self addMainText:@"Rachel Grau, Premnath Ramanathan & Maitri Mehta"];
     [self addSubheaderWithText:NSLocalizedString(@"AboutUs.animations", nil)];
     [self addMainText:@"Ernesto Aguilar"];
     [self addSubheaderWithText:NSLocalizedString(@"AboutUs.illustrations", nil)];

@@ -11,13 +11,25 @@
 #import "Utils.h"
 #import "HomeViewController.h"
 #import "TermsViewController.h"
+#import "LanguageManager.h"
+#import "AppDelegate.h"
 
-@interface EnterViewController ()
+@interface EnterViewController (){
+    
+        NSArray *data;
+    
+}
+@property (weak, nonatomic) IBOutlet UIButton *btnLanguage;
+@property (weak, nonatomic) IBOutlet UITableView *tblList;
+@property (weak, nonatomic) IBOutlet UIPickerView *languagePicker;
+@property (weak, nonatomic) IBOutlet UIView *viewForPicker;
 @property (strong, nonatomic) IBOutlet UIButton *enterButton;
 @property CGPoint startPosition;
+@property NSString *langKey;
 @property NSMutableArray *quotes;
 @property NSMutableArray *authors;
 @property NSMutableArray *circles; /* Circles to navigate between quotes */
+@property (weak, nonatomic) IBOutlet UIButton *languageButton;
 @property int currentQuoteIndex;
 @end
 
@@ -25,17 +37,44 @@
 #define BG_IMAGE_WIDTH 4342.0f
 #define BG_IMAGE_HEIGHT 3434.0f
 #define BG_IMAGE_NAME @"Patagonia.jpg"
+
 @implementation EnterViewController
+
+//static NSString * const CurrentLanguageKey = @"currentLanguageKey";
+
+//+ (void) setUserPref:(NSString *)key withValue:(NSString*)value{
+//    [[NSUserDefaults standardUserDefaults] setObject:value forKey:key];
+//    [[NSUserDefaults standardUserDefaults] synchronize];
+//}
+//
+//+ (NSString*) getUserPref:(NSString*)key{
+//    return [[NSUserDefaults standardUserDefaults] valueForKey:key];
+//}
+
+-(void)restart
+{
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    NSString *storyboardName = @"Main";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:[NSBundle mainBundle]];
+    delegate.window.rootViewController = [storyboard instantiateInitialViewController];
+    [self.view setNeedsDisplay];
+
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    data = [LanguageManager languageStrings];
+    //static NSString * const LanguageCodes[] = { @"en", @"es_MX", @"fr", @"fil",@"zh_Hans_CN",@"ne_NP",@"sw" };
+//    arrKey = [[NSArray alloc] initWithObjects:@"en",@"es",@"fr",@"fil",@"zh",@"ne",@"sw",nil];//MM
+    arrLanguage = [[NSArray alloc] initWithObjects:@"English",@"Español",@"Français",@"Filipino",@"汉语/漢語",@"नेपाली", @"Kiswahili", nil];//MM
+//        self.languagePicker.dataSource = self;
+//        self.languagePicker.delegate = self;
     [self addBackgroundImage];
-    
+    [self setUpQuote];
+
     [GraphicUtils styleButton:self.enterButton];
     [self.enterButton setTitle:[NSLocalizedString(@"Enter.enterButton", nil) uppercaseString] forState:UIControlStateNormal];
-    [self setUpQuote];
-    
+    //[GraphicUtils styleButton:self.languageButton];
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedLeft:)];
     [swipeLeft setDirection:UISwipeGestureRecognizerDirectionLeft ];
     [self.view addGestureRecognizer:swipeLeft];
@@ -45,16 +84,18 @@
     [self.view addGestureRecognizer:swipeRight];
 }
 
+-(void) tap:(UITapGestureRecognizer *)recognizer{
+    
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
-    
     /* If first launch, then show disclaimer popup */
     if (![@"1" isEqualToString:[[NSUserDefaults standardUserDefaults]
                                 objectForKey:@"aValue"]]) {
         [[NSUserDefaults standardUserDefaults] setValue:@"1" forKey:@"aValue"];
         [[NSUserDefaults standardUserDefaults] synchronize];
-        
         /* Show disclaimer */
         TermsViewController *controller = [[TermsViewController alloc] initWithNibName:@"TermsViewController" bundle:nil];
         controller.modalPresentationStyle = UIModalPresentationPopover;
@@ -65,9 +106,10 @@
         popover.permittedArrowDirections = UIPopoverArrowDirectionAny;
         // display the controller in the usual way
         [self presentViewController:controller animated:YES completion:nil];
-        
     }
+
 }
+
 
 /* Creates a quote label with the given text in Lato-light 22.0, 120 pixels from the top of the screen, centered horizontally, with 20 pixel borders on left and right. */
 + (UILabel *)getQuoteLabelWithText:(NSString *)quoteText offscreen:(BOOL)isOffscreen {
@@ -85,6 +127,7 @@
     if (isOffscreen) {
         quoteFrame.origin.x = screenWidth + 20;
     }
+    quoteFrame.origin.y = ([UIScreen mainScreen].bounds.size.height /2) - 60;//MM
     quoteFrame.size.height = [Utils heightOfString:quoteText containedToWidth:quoteFrame.size.width withFont:quoteFont];
     quote.frame = quoteFrame;
     return quote;
@@ -123,14 +166,13 @@
 - (void)setUpQuote {
     self.quotes = [[NSMutableArray alloc] init];
     self.authors = [[NSMutableArray alloc] init];
-
+    
     /* First quote */
     UILabel *firstQuote = [EnterViewController getQuoteLabelWithText:NSLocalizedString(@"Enter.firstQuote", nil) offscreen:NO];
     UILabel *firstAuthorLabel = [EnterViewController getAuthorLabelWithText:NSLocalizedString(@"Enter.firstAuthor", nil) forQuoteLabel:firstQuote offScreen:NO];
-    
     [self.view addSubview:firstQuote];
     [self.view addSubview:firstAuthorLabel];
-
+    
     [self.quotes addObject:firstQuote];
     [self.authors addObject:firstAuthorLabel];
     
@@ -183,7 +225,7 @@
     
     [self.quotes addObject:seventhQuote];
     [self.authors addObject:seventhAuthorLabel];
-
+    
     self.currentQuoteIndex = 0;
     
     /* Add circles below quote that show which index you're on */
@@ -207,7 +249,6 @@
         [self.circles addObject:circle];
         [self.view addSubview:circle];
     }
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -218,7 +259,6 @@
 - (IBAction)enterPressed:(id)sender {
     HomeViewController *hvc = [[HomeViewController alloc] init];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-
     [self.navigationController pushViewController:hvc animated:YES];
 }
 
@@ -226,6 +266,7 @@
 
 - (IBAction)swipedRight:(UISwipeGestureRecognizer *)recognizer
 {
+    [self closeList];
     if (self.currentQuoteIndex > 0) {
         CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
         /* Update quote frames */
@@ -265,9 +306,17 @@
         }
     }
 }
+- (IBAction)btnLanguageChanged:(id)sender {
+    [self showPicker];
+}
+
+-(void)closeList{
+    _tblList.hidden = YES;
+}
 
 - (IBAction)swipedLeft:(UISwipeGestureRecognizer *)recognizer
 {
+    [self closeList];
     if (self.currentQuoteIndex < (self.quotes.count - 1)) {
         CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
         /* Update quote frames */
@@ -358,7 +407,7 @@
             [EnterViewController shiftLabelScreenWidthRight:[self.quotes objectAtIndex:buttonIndex]];
             [EnterViewController shiftLabelScreenWidthRight:[self.authors objectAtIndex:buttonIndex]];
         }
-
+        
     } completion:^(BOOL finished) {
         //code for completion
     }];
@@ -374,6 +423,57 @@
         }
     }
     
+}
+
+
+#pragma UIPicker delegate
+-(void)showPicker{
+//    _viewForPicker.hidden = false;
+    _tblList.hidden = false;
+    [self.view bringSubviewToFront:self.tblList];
+}
+
+//- (NSString *) localizedString:(NSString *)key
+//{
+//    if ([EnterViewController getUserPref:CurrentLanguageKey] == nil) {
+//        self.langKey = @"en";
+//    }
+//    NSString* path = [[NSBundle mainBundle] pathForResource:[self.langKey lowercaseString] ofType:@"lproj"];
+//    NSBundle* languageBundle = [NSBundle bundleWithPath:path];
+//    [[NSUserDefaults standardUserDefaults] setObject:@[self.langKey] forKey:CurrentLanguageKey];
+//    [[NSUserDefaults standardUserDefaults] synchronize];    
+//    return [languageBundle localizedStringForKey:key value:@"" table:nil];
+//}
+
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    
+    NSString *SimpleIdentifier = @"SimpleIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SimpleIdentifier];
+    if (cell == nil) {
+        cell = ([[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:(SimpleIdentifier)]);
+    }
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", [arrLanguage objectAtIndex:indexPath.row]];
+//    if (indexPath.row == [LanguageManager currentLanguageIndex]) {
+//        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+//    }
+//    else {
+//        cell.accessoryType = UITableViewCellAccessoryNone;
+//    }
+    return cell;
+}
+- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return ELanguageCount;//arrLanguage.count;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    [_btnLanguage setTitle:cell.textLabel.text forState:UIControlStateNormal];
+//    self.langKey = [arrKey objectAtIndex:indexPath.row];
+//    [self localizedString:self.langKey];
+//    [EnterViewController setUserPref:CurrentLanguageKey withValue:self.langKey];
+    [LanguageManager saveLanguageByIndex:indexPath.row];
+    [self restart];
+//    [self closeList];
 }
 
 @end

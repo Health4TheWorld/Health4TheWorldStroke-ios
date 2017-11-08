@@ -7,270 +7,416 @@
 */
 
 /* DISCLAIMER */
-"Disclaimer.paragraphOne" = "यद्यपि यो अनुप्रयोग स्ट्रोक रोगीहरूको लागि शैक्षिक उपकरणको रुपमा प्रयोग गर्न सकिन्छ, यस अनुप्रयोगको कुनै पनि भागमा समावेश गरिएको कुनै पनि चीज, सिर्जना, सिर्जना वा उद्देश्य हो, स्पष्ट रूपमा वा स्पष्ट रूपमा, कुनै पनि प्रकारको रोगी-चिकित्सक सम्बन्ध।";
-"Disclaimer.paragraphTwo" = "यहाँ निर्देशनहरू पछि-स्ट्रोक हेरचाह र आत्म-व्यवस्थापनको लागि सामान्य र राम्रो-स्वीकृत दिशानिर्देश र विशेषज्ञ रायहरूमा आधारित छन्। यद्यपि यी व्याख्यानहरूमा जानकारी समावेश गरिएको उपयुक्त प्रयासहरू भएको छ प्रकाशनको समयमा वर्तमान र सही थियो, न हे Health4TheWorld, न त कुनै सामग्री जसले सुसज्जित सामग्री वा यस सामग्रीको प्रस्तुतिमा समावेश गरेको थियो, मौलिक वा लिखित रूपमा। सुनिश्चित गर्नुहोस् कि सबै जानकारी सही र मान्य छ।";
-"Disclaimer.paragraphThree" = "प्रत्येक दिइएको अवस्थालाई एक व्यक्तिगत निर्णय र दृष्टिकोण चाहिन्छ, र यो अनुप्रयोग केवल शैक्षिक प्रयोजनको लागि उद्देश्य हो, र उद्देश्य छैन, र व्याख्या गरिनु पर्दैन, चिकित्सा सल्लाह।";
-"Disclaimer.paragraphFour" = "यस अनुप्रयोग र यसको सामग्रीको प्रयोग तपाईंको जोखिममा छ, र Health4TheWorld, वा कुनै पनि सामग्री जसले सामग्री तयार गरेको छ वा डिजाइनमा समावेश गरिएको वा अनुप्रयोग र यसको विकासको विकासमा कुनै चोट र / वा क्षतिको लागि कुनै दायित्व स्पष्ट रूपमा अस्वीकार गर्दछ। व्यक्ति र / वा सम्पत्ति यस अनुप्रयोगको प्रयोगबाट उत्पन्न हुन्छ।";
-"Disclaimer.paragraphFive" = "यस अनुप्रयोगको कुनै पनि उपयोगले हामीलाई प्रयोगको ढाँचा र प्रगति को निगरानी गर्न सक्षम पार्न पत्ता लगाउन सक्छ।";
-"Disclaimer.paragraphSix" = "स्वीकार गर्न क्लिक गरेर, तपाइँ हाम्रो प्रयोगको प्रयोग र गोपनीयता नीतिसँग सहमत हुनुहुन्छ।";
+
+"Disclaimer.paragraphOne"= "यद्पि यो अनुप्रयोग पक्ष्घात रोगीहरूको लागि एक शैक्षिक उपकरणको रूपमा प्रयोग गरिनु पर्दछ, यस अनुप्रयोगको कुनैपनि पक्षमा समावेश गरिएको कुनै पनि चीजले, कुनै पनि प्रकारको रोगी-चिकित्सक  सम्बन्ध सुरुवात गर्दैन ।";
+
+"Disclaimer.paragraphTwo" = "यहाँ भएका निर्देशनहरू पक्ष्घात  पछि हेरचाह र आत्म-व्यवस्थापनको लागि सामान्य र राम्रो-स्वीकृत दिशानिर्देश र विशेषज्ञहरुको रायहरूमा आधारित छन्। यद्यपि यी व्याख्यानहरूमा समावेश गरिएको जानकारी प्रकाशनको समयमा वर्तमान र सही बनाउन उपयुक्त प्रयासहरू भ​एका छन्, न त Health4TheWorld, न त कुनै ब्यक्ति  जसले यस सामग्रीको लिखीत या मौखीक रुपमा तयार पारेका छ्न अथवा तयार पार्न मद्दत पुराएका छन, ले यहा भ​एका सबै जानकारी सही र मान्य छ भन्ने कुरा  सुनिश्चित गर्न सक्दैनन्।";
+
+"Disclaimer.paragraphThree" = "कुनै पनि अवस्थामा, प्रत्येकपल्ट एक व्यक्तिगत निर्णय र दृष्टिकोण चाहिन्छ, र यो अनुप्रयोगको उद्देश्य केवल शैक्षिक प्रयोजनको लागि मात्रै हो। यसलाई चिकित्सा सल्लाहको रुपमा लिनू हुदैन।";
+
+"Disclaimer.paragraphFour" = "यस अनुप्रयोग र यसको सामग्रीको प्रयोग तपाईंको आफ्नो जिम्वेवारीमा  छ, र Health4TheWorld, वा कुनै पनि ब्यक्ति जसले सामग्री तयार गरेको छ वा डिजाइनमा समावेश गरिएको वा अनुप्रयोग र यसको विकासमा संलग्न छ,  यस अनुप्रयोगको प्रयोगबाट उत्पन्न कुनै चोट र / वा क्षतिको लागि कुनै दायित्व स्पष्ट रूपमा अस्वीकार गर्दछ।";
+
+"Disclaimer.paragraphFive" = "यस अनुप्रयोगको कुनै पनि उपयोगको निगरानी गर्न सकिनेछ,​ जसले हामीलाई यसको प्रयोगको ढाँचा र प्रगतिको निगरानी गर्न सक्षम गर्नेछ​।";
+
+"Disclaimer.paragraphSix" = "क्लिक गरेर, तपाइँ हाम्रो प्रयोगको प्रयोग र गोपनीयता नीतिसँग सहमत हुनुहुन्छ र स्वीकार गर्नु हुन्छ​ ।";
 
 /* ENTER VIEW CONTROLLER */
-"Enter.firstQuote" = "\"The best preparation for tomorrow is doing your best today.\"";
-"Enter.firstAuthor" = " – H. Jackson Brown, Jr";
-"Enter.secondQuote" = "\"Believe you can and you're halfway there.\"";
-"Enter.secondAuthor" = "– Theodore Roosevelt";
-"Enter.thirdQuote" = "\"Nothing is impossible, the word itself says 'I'm possible'!\"";
-"Enter.thirdAuthor" = "– Audrey Hepburn";
-"Enter.fourthQuote" = "\"Only I can change my life. No one can do it for me.\"";
-"Enter.fourthAuthor" = "– Carol Burnett";
-"Enter.fifthQuote" = "\"Always do your best. What you plant now will harvest later.\"";
-"Enter.fifthAuthor" = "– Og Mandino";
-"Enter.sixthQuote" = "\"Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.\"";
-"Enter.sixthAuthor" = "– Helen Keller";
-"Enter.seventhQuote" = "\"Setting goals is the first step in turning the invisible into the visible.\"";
-"Enter.seventhAuthor" = "– Tony Robbins";
-"Enter.enterButton" = "प्रविष्ट गर्नुहोस्";
+"Enter.LanguageChange" = "भाषा परिवर्तन";
+"Enter.firstQuote" = "\"भोलिको लागि सबैभन्दा राम्रो तयारी भनेको आजको तपाईले सबैभन्दा उत्तम गर्नु हो ।\"";
+
+"Enter.firstAuthor" = " - एच. जैक्सन ब्राउन, जूनियर";
+
+"Enter.secondQuote" = "\"विश्वास गर्नुस् तपाई गर्न सक्नुहुन्छ् र तपाईं आधा बाटो पुगिसक्नुहुन्छ्।\"";
+
+"Enter.secondAuthor" = "- थिओडोर रोस्वेल्ट";
+
+"Enter.thirdQuote" = "\"केहि पनि असंभव छैन, शब्दले आफैलाई भन्छ 'म सम्भव छु'!\"";
+
+"Enter.thirdAuthor" = "- अड्रे हेपबर्न";
+
+"Enter.fourthQuote" = "\"केवल म आफ्नो जीवन परिवर्तन गर्न सक्छु। कसैले यो मेरो लागि गर्न सक्दैन।\"";
+
+"Enter.fourthAuthor" = "- क्यारोल बर्नेट";
+
+"Enter.fifthQuote" = "\"सधै तपाईंको उत्तम गर्नुहोस्। तपाईले अहिले रोपेको पछि पाउनुहुन्छ।\"";
+"Enter.fifthAuthor" = "– अनि मेन्डेडो";
+
+"Enter.sixthQuote" = "\"अनुकूलता यो विश्वास हो जसले उपलब्धिको लागि जान्छ। आशा र भरोसा बिना केहि गर्न सकिँदैन।\"";
+
+"Enter.sixthAuthor" = "–हेलेन केलर";
+
+"Enter.seventhQuote" = "\"लक्ष्य लक्ष्यहरू दृश्यात्मक रूपमा अदृश्य मोडमा पहिलो चरण हो।\"";
+
+"Enter.seventhAuthor" = "-टोनी रोबिन्स";
+
+"Enter.enterButton" = "प्रबेश् गर्नुहोस्";
+
 
 /* HOME VIEW CONTROLLER */
 "Home.title" = "घर";
-"Home.helpMeSpeak" = "मलाई बोल्नुहोस्";
-"Home.exercises" = "व्यायाम गर्नुहोस्";
+
+"Home.helpMeSpeak" = "मलाई बोल्न सहयोग गर्नुहोस्";
+
+"Home.exercises" = "व्याम";
+
 "Home.learn" = "सिक्नुहोस्";
+
 "Home.reminders" = "अनुस्मारकहरू";
+
 "Home.generalInfo" = "सामान्य जानकारी";
+
 "Home.surveys" = "सर्वेक्षणहरू";
+
 "Home.chatBot" = "ChatBot";
 
 /* HELP ME SPEAK VIEW CONTROLLER */
-"HelpMeSpeak.title" = "मलाई बोल्नुहोस्";
+"HelpMeSpeak.title" = "मलाई बोल्न सहयोग  गर्नुहोस्";
+
 "HelpMeSpeak.yes" = "हो";
+
 "HelpMeSpeak.no" = "होइन";
+
 "HelpMeSpeak.thankYou" = "धन्यवाद";
-"HelpMeSpeak.bathroom" = "मलाई बाथरूम चाहिन्छ";
-"HelpMeSpeak.water" = "मलाई पनि चहियो";
-"HelpMeSpeak.hungry" = "म भोकाएको छु";
-"HelpMeSpeak.notGivingUp" = "म दिइरहेछु";
-"HelpMeSpeak.pain" = "म दुखाइमा छु";
-"HelpMeSpeak.cantSpeak" = "माफ गर्नुहोस्, म बोल्न सक्दैनु";
+
+"HelpMeSpeak.bathroom" = "मलाई बाथरूम चाहियो";
+
+"HelpMeSpeak.water" = "मलाई पानी चहियो";
+
+"HelpMeSpeak.hungry" = "मलाई भोक लाग्यो";
+
+"HelpMeSpeak.notGivingUp" = "मैले हार मानेको छैन​";
+
+"HelpMeSpeak.pain" = "मलाई दुखीराखेको छ";
+
+"HelpMeSpeak.cantSpeak" = "माफ गर्नुहोस्, म बोल्न सक्दिन​";
+
 "HelpMeSpeak.iLoveYou" = "म तिमीलाई माया गर्छु";
-"HelpMeSpeak.imCold" = "मलाई चिसो लागेको छ";
-"HelpMeSpeak.imHot" = "मलाइ गमी लागेको";
-"HelpMeSpeak.dizzy" = "म चिसो छु";
-"HelpMeSpeak.lightsOn" = "बत्ति बाल";
-"HelpMeSpeak.lightsOff" = "रोशनीहरू बन्द";
-"HelpMeSpeak.getInBed" = "म बिस्तरमा जान चाहन्छु";
-"HelpMeSpeak.getOutOfBed" = "म बिस्तारै बाहिर जान चाहन्छु";
+
+"HelpMeSpeak.imCold" = "मलाई चिसो / जाडो लागेको छ";
+
+"HelpMeSpeak.imHot" = "मलाइ तातो / गर्मी  लागेको छ";
+
+"HelpMeSpeak.dizzy" = "मलाई झम्म​ / चक्कर लागिराकोछ";
+
+"HelpMeSpeak.lightsOn" = "बत्ति बाल्नु";
+
+"HelpMeSpeak.lightsOff" = "बत्तिहरू बन्द गर्नु";
+
+"HelpMeSpeak.getInBed" = "म बिस्तरामा जान चाहन्छु";
+
+"HelpMeSpeak.getOutOfBed" = "म बिस्तराबाट बहिरा निस्किन चाहन्छु ";
+
 "HelpMeSpeak.howAreYou" = "तिमीलाई कस्तो छ?";
+
 "HelpMeSpeak.ambulance" = "मलाई एम्बुलेंस चाहिन्छ";
+
 "HelpMeSpeak.inALittle" = "सानो मा";
+
 "HelpMeSpeak.now" = "अहिले";
+
 "HelpMeSpeak.goOutside" = "म बाहिर जान चाहन्छु";
-"HelpMeSpeak.sayHi" = "नमस्कार!";
+
+"HelpMeSpeak.sayHi" = "के छ​? / नमस्कार!";
+
 
 /* EXERCISES VIEW CONTROLLER */
-"Exercises.title" = "व्यायाम गर्नुहोस्";
-"Exercises.strengthening" = "बलियो बनाउने";
-"Exercises.stretching" = "पछाडि";
-"Exercises.functionalMobility" = "कार्यात्मक गतिशीलता";
-"Exercises.mindExercises" = "मन व्यायाम";
-"Exercises.instructions" = "यदि आवश्यक भएमा पारिवारिक हेरविचारकर्ताको सहयोगको साथमा 10 दिनको अभ्यास दोहोर्याउनुहोस्। व्यायाम कार्यक्रम सुरु गर्नु अघि आफ्नो मेडिकल प्रदायकलाई सल्लाह दिनुहोस्।";
+
+"Exercises.stretching" = "तन्काउनु";
+
+"Exercises.functionalMobility" = "दैनिक कार्यात्मक गतिशीलता";
+
+"Exercises.mindExercises" = "मानसिक​ व्यायाम";
+
+"Exercises.instructions" = "दैनिक हरेक आभ्यास १० पटक दोहोराउनुहोस् । यदी अभ्यास गर्न गाह्रो हुन्छ भने परिवार अथवा हेरबिचारगर्ने ब्यक्तिको सहयोग लिनुहोस। ब्यायम सुरु गर्नु अघि आफ्नो चिकित्सकको सल्लाह लिनुहोस।";
 
 /* STRENGTHENING VIEW CONTROLLER */
 "Strengthening.title" = "बलियो बनाउने";
-"Strenghtening.legs" = "खुट्टा";
-"Strengthening.arms" = "हात";
-"Strengthening.coordination" = "सङ्गठन";
+
+"Strenghtening.legs" = "खुट्टा बलियो  बनाउने  अभ्यास";
+
+"Strengthening.arms" = "हात बलियो  बनाउने अभ्यास";
+
+"Strengthening.coordination" = "सङ्गठन मिलाउने";
+
 /* LEGS VIEW CONTROLLER */
-"Legs.toe" = "पैर फ्लेक्सियन";
-"Legs.knee" = "घुटने फ्लेक्सियन";
-"Legs.hip" = "हिप फ्लेक्सन";
+"Legs.toe" = "पैताला माथि तल चालाउने";
+
+"Legs.knee" = "घुडा खुम्चाउने";
+
+"Legs.hip" = "खुट्टा खुम्चाउने";
 
 /* ARMS VIEW CONTROLLER */
-"Arms.elbow" = "कोहिन फ्लेक्सन";
-"Arms.shoulder" = "क्यान्सर फ्लेक्सन";
+"Arms.elbow" = "कुहिना चलाउने";
+
+"Arms.shoulder" = "कुम चलाउने ";
+
 
 /* COORDINATION VIEW CONTROLLER */
-"Coordination.legControl1" = "पैदल नियंत्रण 1";
-"Coordination.legControl2" = "पैदल नियंत्रण 2";
+"Coordination.legControl1" = "खुट्टा नियंत्रण १";
 
+
+"Coordination.legControl2" = "खुट्टा नियन्त्रण२";
 
 
 /* STRETCHING VIEW CONTROLLER */
-//"Stretching.title" = "Stretching.title";
-"Stretching.armsAndHands" = "आर्म र ह्यान्ड";
-"Stretching.legsAndFeet" = "पैर र फीट";
-"Stretching.handStretch" = "ह्यान्ड स्ट्रिच";
-"Stretching.shoulderStretch" = "कंधे खिच्नुहोस्";
-"Stretching.armStretch" = "आर्म स्ट्रेच";
-"Stretching.adductors" = "विज्ञापन";
-"Stretching.hamstrings" = "हम्स्त्रिन्ग्स";
-"Stretching.dorsiflexors" = "डोर्सिफ़्लेक्षोर्स";
-"Stretching.legStretch" = "लेग स्ट्रेच";
-"Stretching.kneeStretch" = "घुटने को खिंचाव";
-"Stretching.ankleStretch" = "टकराव खिच्नुहोस्";
-"Stretching.handStretch" = "ह्यान्ड स्ट्रिच";
-"Stretching.adductorsInstructions" = "तपाईं यो व्यायाम एक स्थिर कुर्सीमा तल बस्न वा बस्न सक्नुहुन्छ। तपाईंको पछाडि बिरोध, प्रभावित प्यानललाई 30 सेकेन्ड र पछाडिको लागि साइड आउट गर्नुहोस् 3 गुणा दोहोर्याउनुहोस्";
-"Stretching.dorsiflexorsInstructions" = "तपाईं यो व्यायाम एक स्थिर कुर्सीमा तल बस्न वा बस्न सक्नुहुन्छ। तुरुन्तै खुट्टा तिर माथि उठाउनुहोस् र 30 सेकेन्डको लागि समात्नुहोस्। 3 पटक दोहोर्याउनुहोस्।";
-"Stretching.handStretchInstructions" = "Side lying with the involved side up and arm resting on the hip. Support the elbow on the hip but use your other hand to move the wrist up and away from the stomach. Bring the wrist back to its resting position Support the wrist with one hand  and try to open the fingers with the other hand. Progress to trying to open the hand when the wrist is moved up and away from the stomach. Hold the stretch for 30 seconds. Repeat 3 times.";
-"Stretching.shoulderStretchInstructions" = "पक्षले हिपमा संलग्न हात समात्न साथ झूट। कानमा कंधे माथि र त्यसपछि छिटो र तल ल्याउनुहोस्।";
-"Stretching.armStretchInstructions" = "पक्षमा संलग्न साइड अप र हिपमा बाहिरी हातले झण्डा। धीरे टाँस्नु टाढा तिर लाग्नु पर्छ। 30 सेकेण्डका लागि। 3 पटक दोहोर्याउनुहोस्। निश्चित गर्नुहोस् कि तपाइँ कंधे राख्नुहोस् र अगाडि बढ्नबाट रोक्नुहोस्।";
+
+"Stretching.legsAndFeet" = "पैताला अनि खुट्टा";
+
+"Stretching.handStretch" = "हत्केल तन्काउने";
+
+"Stretching.shoulderStretch" = "कुम तन्काउने";
+
+"Stretching.armStretch" = "हात तन्काउने";
+
+"Stretching.adductors" = "तिग्राको मान्स्पेशी तन्काउने";
+
+"Stretching.hamstrings" = "तिग्राको पछाडिको मान्स्पेशी तान्काउने";
+
+"Stretching.dorsiflexors" = "पैताला माथि तान्ने";
+
+"Stretching.legStretch" = "खुट्टा तान्काउने";
+
+
+"Stretching.kneeStretch" = "घुँदा पछाडिको तिग्रा तान्काउने";
+
+"Stretching.ankleStretch" = "पिडौला तान्काउने";
+
+"Stretching.handStretch" = "हत्केला तन्काउने";
+
+"Stretching.adductorsInstructions" = "यो ब्यायाम तपाईं उत्तानो परेर वा स्थिर कुर्सिमा बसेर गर्न सक्नुहुन्छ। ब्यायाम गर्दा पहिला कम्जोर खुट्टालाई शरिर बाट बाहिरतिर तान्नुहोस ताकी तपाईंको तिग्राको बिचको मान्स्पेशी तन्कियोस । तन्काउदा ३० सेकेन्ड जती राख्नुहोस अनि पहिलाको स्थानमा रखिदिनुहोस । यसरी यो अभ्यास ३ पटक सम्म दोहोराउनुहोस।";
+
+"Stretching.hamstringsInstructions" = "यो ब्यायाम तपाईं उत्तानो परेर वा  स्थिर कुर्सिमा बसेर गर्न सक्नुहुन्छ। यो ब्यायाम गर्दा पहिला घुंडा खुम्चाएर ९० डिग्री लाने र घुंडालाई सिधा माथितिर लेजाने अनि ३० सेकेन्ड  रख्हने र आफ्नो पहिलेको आवोस्थमा  फर्काउनुहोस । यसरी यो अभ्यास ३ पटक सम्म दोहोराउनुहोस।";
+
+"Stretching.dorsiflexorsInstructions" = "यो ब्यायाम तपाईं उत्तनो परेर, स्थिर कुर्सिमा बसेर वा उभिएर पनि गर्न सक्नुहुनेछ।पैतालालाई माथि लगेर पिडौलालाई तन्काएर ३० सेकेन्ड रख्नुहोस अनि छोडिदिनुहोस यसरी यो अभ्यास ३ पटक सम्म दोहोराउनुहोस।";
+
+"Stretching.handStretchInstructions" = "पक्षमा संलग्न पक्षसँग झुन्डिएको र हिपमा आराम गर्ने हात। हिपमा कोहनीलाई समर्थन गर्नुहोस् तर पेटबाट कलाई र टाढा सार्न तपाईँको अर्को हात प्रयोग गर्नुहोस्। कलाई आफ्नो आरामको स्थितिमा कलाई ल्याउनुहोस् एक हात संग कलाई समर्थन गर्नुहोस् र अर्को हातले औंला खोल्न प्रयास गर्नुहोस्। कलाई माथि र दूर देखि दूर हुँदा हात खोल्न प्रयास गर्न प्रगति। खिच्नुहोस् 30 सेकेण्डका लागि। 3 पटक दोहोर्याउनुहोस्।";
+"Stretching.handStretchInstructions" = "पहिला कोल्टो परेर सुत्नुहोस्, अनि कम्जोर हातलाई कम्मर माथि रख्नुहोस्, हेरबिचारकर्ताले हत्केलाको मुट्ठी खोलेर औंलाहरुलाई माथितिर लगेर हातलाई ३० सेकेन्ड तन्काएर राखानुहोस । यसरी यो अभ्यास ३ पटकसम्म​ दोहोराउनुहोस ।";
+
+"Stretching.shoulderStretchInstructions" = "पहिला कोल्टो परेर सुत्नुहोस्, अनि कम्जोर हातलाई कम्मर माथि रख्नुहोस्, हेरबिचारकर्ताले आफ्नो हात बिमारिको कम्जोर काधंमा रख्नुहोस अनि बिरामीको कुमलाई माथि कानतिर लानुहोस त्यसपछि बिस्तारै काधंलाई पछाडी तिर लानुहोस र हल्का तलतिर पनि लिएर आउनुहोस । यसरी यो अभ्यास ३ पाटक्सम्म दोहोराउनुहोस ।";
+
+
+"Stretching.armStretchInstructions" = "पहिला कोल्टो परेर सुत्नुहोस्, अनि कम्जोर हातलाई कम्मर माथि रख्नुहोस्, हेरबिचारकर्ताले एउटा हात बिमारिको कम्जोर काधंमा रखेर अर्को हातले बिमारिको हत्केलामा समाउने अनि खुम्चिएको कुइनालाई सिधा तन्कएर ३० सेकेन्ड सम्म राख्नुहोस । यसरी यो अभ्यास ३ पाटक्सम्म दोहोराउनुहोस ।";
+
 
 /* MIND EXERCISES VIEW CONTROLLER */
-"MindExercises.bellsInstructions" = "* सजिलो  बस्नुहोस् र सज्जन मुस्कानसँग गहिरो सास लिनुहोस्।\n* शान्त वातावरण र आवाजहरूमा फोकस गर्नुहोस्।.\n* वरिपरि हिंड्ने कल्पना गर्नुहोस्।\n* दृश्यको आनन्द लिन फोन साइड तरिकाहरू सार्नुहोस्।.\n* अब तपाईंको आँखा बन्द गर्नुहोस् र अर्को गहिरो सास लिनुहोस्।\n* तपाईंको कोठामा फर्कनुहोस्।";
-"MindExercises.buddhaInstructions" = "* सजिलो रुपमा बस्नुहोस् र सज्जन मुस्कानसँग गहिरो सास लिनुहोस्। \n* शान्त दृश्य र प्राकृतिक ध्वनीहरूमा फोकस गर्नुहोस्। \n* बुद्धको प्रतिमा हिँड्ने कल्पना गर्नुहोस्। \n* फोन र माथिल्लो साउन्ड हेर्नका लागि आकाशमा जानुहोस्। दृश्यको आनन्द लिनुहोस्। \n* अब आफ्नो आँखा बन्द गर्नुहोस् र अर्को गहिरो सास लिनुहोस्। \n* तपाईंको कोठामा फर्कनुहोस्।";
-"MindExercises.flagsInstructions" = "* सजिलो रुपमा बस्नुहोस् र सज्जन मुस्कानसँग गहिरो सास लिनुहोस्। \ N * यस समुद्र तटमा फोकस र लहरहरूको आवाज। \ N * तपाईंको खुट्टामा बालुवाको भावना कल्पना गर्नुहोस्। \ N * समुद्र तटमा हिँड्ने कल्पना गर्नुहोस् र आफ्नै बालुवामा खुट्टा छाप। \ N * समुद्र तटको आनन्द लिने फोनका तरिकाहरू सार्नुहोस्। \ N * अहिलेका आँखा बन्द गर्नुहोस् र अर्को गहिरो सास लिनुहोस्। \ N आफ्नो कोठामा फर्कनुहोस्।";
-"MindExercises.marketplace1Instructions" = "* आरामपूर्वक बस्नुहोस् र सज्जन मुस्कानसँग गहिरो सास लिनुहोस्। \ N * बजार दृश्य र प्राकृतिक ध्वनीहरूमा फोकस गर्नुहोस्। \ N * बाहिर पुग्न र फल उठाएर कल्पना गर्नुहोस्। \ N * दृश्यको आनन्द लिन फोन साइड मार्फत सार्नुहोस्। । \ N * अब आफ्नो आँखा बन्द गर्नुहोस् र अर्को गहिरो सास लिनुहोस्। \ N * तपाईंको कोठामा फर्कनुहोस्।";
-//Need verification
-"MindExercises.marketplace2Instructions" = "* आरामपूर्वक बस्नुहोस् र  खुसी भएर गहिरो सास लिनुहोस्। \ N * बजार दृश्य र प्राकृतिक ध्वनियाँमा फोकस गर्नुहोस्। \ N * बजारमा हिदेको कल्पना गर्नुहोस्। \ N * दृश्यको मजा लिनको लागि फोनको प्रयोग नगर्नुस् । \ N * N * अब तपाईंको आँखा बन्द गर्नुहोस् र अर्को गहिरो सास लिनुहोस्। \ N * तपाईंको कोठामा फर्कनुहोस्।";
-"MindExercises.rockybeachInstructions" = "* आरामपूर्वक बस्नुहोस् र खुसी भएर  गहिरो सास लिनुहोस्। \ N * यस समुद्र र लहरहरूको आवाज मा ध्‍यान दिनुहोस । \ N * सुन्दर चट्टानलाई ध्यान दिनुहोस्। \ N * एक चतानमा  पुग्ने कल्पना गर्नुहोस्। \ N * चट्टानको टवर बनाउने कल्पना गर्नुहोस्। \ N * फोनलाई माथि उठाएर सुन्दर आकाश हेर्नुहोश । \ N * अहिलेका आँखा बन्द गर्नुहोस् र अर्को गहिरो सास लिनुहोस्। \ N * तपाईंको कोठामा फर्कनुहोस्।";
-"MindExercises.sandybeachInstructions" = "* आरामपूर्वक बस्नुहोस् र खुसी भएर  गहिरो सास लिनुहोस्। \ N *यस समुद्र र लहरहरूको आवाज मा ध्‍यान दिनुहोस । \ N * तपाईंको खुट्टामा बालुवाको छ भने कल्पना गर्नुहोस्। \ N * समुद्र तटमा हिँड्ने कल्पना गर्नुहोस् र तपाईंको सिर्जना गर्नुहोस् बालुवामा आफ्नै खुट्टाको छाप। \ N * समुद्र किनाराको आनन्द लिनुस्  र फोनलाई साइड राख्नुस् । \ N * अहिले  आँखा बन्द गर्नुहोस् र अर्को गहिरो सास लिनुहोस्। \ N * तपाईंको कोठामा फर्कनुहोस्।";
+"MindExercises.bellsInstructions" = "* आरामपूर्वक बस्नुहोस् र मन्द​ मुस्कानसँग गहिरो साँस लिनुहोस्।\n* शान्त वातावरण र आवाजहरूमा ध्‍यान दिनुहोस।.\n* वरिपरि हिंड्ने कल्पना गर्नुहोस्।\n* दृश्यको आनन्द लिन फोन दायाँ-बायाँ सार्नुहोस्।.\n* अब तपाईंको आँखा बन्द गर्नुहोस् र अर्को गहिरो साँस लिनुहोस्।\n* अब तपाईंको कोठामा ध्यानाकर्शण गर्नुहोस्।";
+
+"MindExercises.buddhaInstructions" = "* आरामपूर्वक बस्नुहोस् र मन्द​ मुस्कानसँग गहिरो साँस लिनुहोस्। \n* शान्त दृश्य र प्राकृतिक ध्वनीहरूमा ध्‍यान दिनुहोस। \n* बुद्धको प्रतिमातर्फ़​ हिँड्ने कल्पना गर्नुहोस्। \n* दृश्यको आनन्द लिन​ फोन आकाशतर्फ़​ र दायाँ-बायाँ लानुहोस। \n* अब आफ्नो आँखा बन्द गर्नुहोस् र अर्को गहिरो साँस लिनुहोस्। \n* अब तपाईंको कोठामा ध्यानाकर्शण गर्नुहोस्।";
+
+"MindExercises.flagsInstructions" = "* आरामपूर्वक बस्नुहोस् र मन्द​ मुस्कानसँग गहिरो साँस लिनुहोस्। \ N * यो समुद्र तट र लहरहरूको आवाजमा ध्‍यान दिनुहोस। \ N * तपाईंको खुट्टामा बालुवाको स्पर्श​ कल्पना गर्नुहोस्। \ N * समुद्र तटमा हिँडेको र बालुवामा आफ्नै खुट्टाको छाप  बसेको कल्पना गर्नुहोस् । \ N * समुद्र तटको आनन्द लिन​ फोन दायाँ-बायाँ लानुहोस। \ N * अब आफ्नो आँखा बन्द गर्नुहोस् र अर्को गहिरो साँस लिनुहोस्। । \ N अब तपाईंको कोठामा ध्यानाकर्शण गर्नुहोस्।";
+
+"MindExercises.marketplace1Instructions" = "* आरामपूर्वक बस्नुहोस् र मन्द​ मुस्कानसँग गहिरो साँस लिनुहोस्। \ N * बजारको दृश्य र प्राकृतिक ध्वनीहरूमा ध्‍यान दिनुहोस। \ N * फलफुलतर्फ़​ हात बढ़ाएर उठाएको कल्पना गर्नुहोस्। \ N * दृश्यको आनन्द लिन फोन फोन दायाँ-बायाँ लानुहोस। । \ N * अब आफ्नो आँखा बन्द गर्नुहोस् र अर्को गहिरो साँस लिनुहोस्। \ N * अब तपाईंको कोठामा ध्यानाकर्शण गर्नुहोस्।";
+
+"MindExercises.marketplace2Instructions" = "* आरामपूर्वक बस्नुहोस् र मन्द​ मुस्कानसँग गहिरो साँस लिनुहोस्। \ N * बजार दृश्य र प्राकृतिक ध्वनियाँमा ध्‍यान दिनुहोस। \ N * बजारमा हिँडेको कल्पना गर्नुहोस्। \ N * दृश्यको आनन्द लिन फोन फोन दायाँ-बायाँ लानुहोस। \ N * N * अब तपाईंको आँखा बन्द गर्नुहोस् र अर्को गहिरो साँस लिनुहोस्। \ N * अब तपाईंको कोठामा ध्यानाकर्शण गर्नुहोस्।";
+
+"MindExercises.rockybeachInstructions" = "* आरामपूर्वक बस्नुहोस् र मन्द​ मुस्कानसँग गहिरो साँस लिनुहोस्। \ N * यस समुद्रतटमा र लहरहरूको आवाजमा ध्‍यान दिनुहोस । \ N * सुन्दर चट्टानतर्फ़​ ध्यान दिनुहोस्। \ N * एक चट्टानतर्फ़​ हात बढ़ाएर उठाएको कल्पना गर्नुहोस्। \ N * चट्टानको टावर बनाउने कल्पना गर्नुहोस्। \ N * फोनलाई माथि घुमाएर​ सुन्दर आकाश हेर्नुहोश । \ N * अब तपाईंको आँखा बन्द गर्नुहोस् र अर्को गहिरो साँस लिनुहोस्। \ N * अब तपाईंको कोठामा ध्यानाकर्शण गर्नुहोस्।";
+
+"MindExercises.sandybeachInstructions" = "* आरामपूर्वक बस्नुहोस् र मन्द​ मुस्कानसँग गहिरो साँस लिनुहोस्। \ N * यो समुद्र तट र लहरहरूको आवाजमा ध्‍यान दिनुहोस। \ N * तपाईंको पैतलामा बालुवाको स्पर्श​ कल्पना गर्नुहोस्। \ N * समुद्रको तटमा हिँडेको र बालुवामा आफ्नै पैतलाको छाप  बसेको कल्पना गर्नुहोस् । \ N * समुद्र तटको आनन्द लिन​ फोन दायाँ-बायाँ लानुहोस। \ N * अब आफ्नो आँखा बन्द गर्नुहोस् र अर्को गहिरो साँस लिनुहोस्। । \ N अब तपाईंको कोठामा ध्यानाकर्शण गर्नुहोस्।";
+
 
 /* FUNCTIONAL MOBILITY VIEW CONTROLLER */
-"FunctionalMobility.bridgeHipLift" = "ब्रिज हिप लिफ्ट";
-"FunctionalMobility.armTrunkStrengthening" = "आर्म ट्रंक सुदृढीकरण";
-"FunctionalMobility.sitToStand" = "खडा हुनुहोस्";
+"FunctionalMobility.bridgeHipLift" = "उत्तानो परेर कम्मर उठाउने";
+
+"FunctionalMobility.armTrunkStrengthening" = "हात-शरीर बलियो बनाउने";
+
+"FunctionalMobility.sitToStand" = "बसेर उठ्ने";
+
 
 /* LEARN VIEW CONTROLLER */
 "Learn.title" = "सिक्नुहोस्";
+
 "Learn.b" = "B";
+
 "Learn.e" = "E";
+
 "Learn.f" = "F";
+
 "Learn.a" = "A";
+
 "Learn.s" = "S";
+
 "Learn.t" = "T";
-"Learn.befastB" = "सन्तुलन: सन्तुलनको अचानक हानि।";
-"Learn.befastE" = "आँखा: अचानक दुबै  वा एउता आखाँ नढेख्ने  ।";
-"Learn.befastF" = "मुस्कान गर्न सोध्दा एक तरफ अनुहार फर्काउने ।";
-"Learn.befastA" = "अंगह  कमजोरी; हातहरु उठाउन नसक्ने  र त्यहिँ छोडी दिने।";
-"Learn.befastS" = "बोलीको  समस्या।";
+
+"Learn.befastB" = "सन्तुलन: अचानक सन्तुलन हराउने ।";
+
+"Learn.befastE" = "आँखा: अचानक एउटा वा दुबै आखाँ नढेख्ने ।";
+
+"Learn.befastF" = "मुस्कान गर्दा एक तर्फ़​ अनुहार बाङ्गिने ।";
+
+"Learn.befastA" = "हात कमजोरी; हातहरु उठाउन नसक्ने र त्यहिँ अडाउन​ नसक्ने";
+
+"Learn.befastS" = "बोलीमा समस्या।";
+
 "Learn.befastT" = "एम्बुलेंसलाई कल गर्ने समय।";
+
 "Learn.faq" = "FAQ";
+
 "Learn.signsOfStroke" = "Signs Of Stroke";
+
 "Learn.riskFactors" = "Risk Factors";
-"Learn.bloodPressure" = "Blood Pressure";
-"Learn.heartRate" = "Heart Rate";
-"Learn.bloodSugar" = "रगतमा चिनी";
-"Learn.diet" = "Diet";
-"Learn.bladderBowel" = "Bladder/Bowel";
-"Learn.exercises" = "Exercises";
-"Learn.showerBath" = "Shower/Bath";
-"Learn.homeMod" = "Home Modification";
-"Learn.smoking" = "Smoking";
-"Learn.sleep" = "Sleep";
-"Learn.problem" = "PROBLEM";
-"Learn.whatToDo" = "WHAT TO DO";
+
+"Learn.bloodPressure" = "रक्तचाप";
+
+"Learn.heartRate" = "धडकनकाे गति";
+
+"Learn.bloodSugar" = "मधुमेह​ ";
+
+"Learn.diet" = "आहार";
+
+"Learn.bladderBowel" = "दिसा-पिसाब";
+
+"Learn.exercises" = "व्यायाम गर्नुहोस्";
+"Learn.showerBath" = "शावर/स्नान";
+"Learn.homeMod" = "गृह/घर परिमार्जन";
+
+"Learn.smoking" = "धुम्रपान";
+
+"Learn.sleep" = "निद्रा";
+
+"Learn.problem" = "समस्या";
+
+"Learn.whatToDo" = "के गर्ने";
 
 /* FAQ */
-"Faq.questionOne" = "What is stroke?";
-"Faq.answerOne" = "स्ट्रोक मा, दिमाग को एक विशेष हिस्साको रगत को आपूर्ति अवरुद्ध हुन्छ  या एक रक्त पोत जसले मस्तिष्क मा पठाउन् छ त्यो फुथ्छ  । एसको परिनाम कोशको  मृत्यु कुनै अफ्फेचतेद ठाउको दिमाग मा हुन्छ । यो शरीरको एक वा बढी भाग (हरू) मा प्रकार्यको अस्थायी वा स्थायी हानि हुन सक्छ।";
-"Faq.questionTwo" = "What should you do if you think someone is having a stroke?";
-"Faq.answerTwo" = "Call for professional medical help (doctor or nurse) immediately.";
-"Faq.questionThree" = "Why do you need to act quickly?";
-"Faq.answerThree" = "Getting fast medical treatment lowers the risk of disability or even death.";
+"Faq.questionOne" = "स्ट्रोक (पक्ष्घात) के हो?";
+
+"Faq.answerOne" = "स्ट्रोकमा, दिमाग को एक विशेष हिस्सामा रगत को आपूर्ति अवरुद्ध हुन्छ या कुनै मस्तिष्कमा रगत पुराउने रक्तनली फुटछ​ । यस्ले गर्दा त्येस् भागको मस्तिष्कको कोशहरुको मृत्यु हुन्छ । यस्ले गर्दा शरीरको एक वा बढी भागहरूको काममा अस्थायी वा स्थायी हानि हुन सक्छ।";
+
+"Faq.questionTwo" = "कसैलाई पक्ष्घात भयको शँका तपाई भयो भने तपाई के गर्नु पर्छ​ ?";
+
+
+"Faq.answerTwo" = " चिकित्सा सहायता (डाक्टर वा नर्स) को लागी चाँडै कल गर्नुहोस्।";
+
+"Faq.questionThree" = "तपाईंले किन चाँडैनै कार्य गर्न आवश्यक छ?";
+
+"Faq.answerThree" = "चाँडैनै  मेडिकल उपचार गर्नाले पछ्घातबाट हुने अपांगता वा मृत्यु बाट बच्न सकिन्छ​।";
 
 /* BLOOD PRESSURE */
-"BloodPressure.problem" = "High blood pressure can cause strokes by damaging arteries throughout the body, causing them to burst or clog more easily.";
-"BloodPressure.problemBoldPart" = "High blood pressure";
-"BloodPressure.problemNonBoldPart" = " can cause strokes by damaging arteries throughout the body, causing them to burst or clog more easily.";
-"BloodPressure.whatToDo" = "In the general population aged 60 years or older, treating high BP to a goal of lower than 150/90 mm Hg reduces stroke.";
-"BloodPressure.whatToDoBoldPart" = "lower than 150/90 mm Hg";
+"BloodPressure.problem" = "उच्च रक्तचापले शरीरको सबैतिरको धमनी बिगार्दछ जसले गर्दा ती धमनीहरुमा रगत सजिलै जम्दछ या फ़ुट्दछ​ र  स्ट्रोक (पक्ष्घात) गराउँदछ​ ।";
+
+"BloodPressure.problemBoldPart" = "उच्च रक्तचाप";
+
+"BloodPressure.problemNonBoldPart" = "उच्च रक्तचापले शरीरको सबैतिरको धमनी बिगार्दछ जसले गर्दा ती धमनीहरुमा रगत सजिलै जम्दछ या फ़ुट्दछ​ र  स्ट्रोक (पक्ष्घात) गराउँदछ​।";
+"BloodPressure.whatToDo" = "सामान्यता ६० वर्ष वा माथिका उमेरका ब्यक्तिहरुलाई रक्तचाप (BP) 150/90 mmHg भन्दा कम राख्ने लक्ष्यगरी उपचार गरे स्ट्रोक (पक्ष्घात) घटदछ​ ।";
+
+"BloodPressure.whatToDoBoldPart" = "150/ 90 मिमी एच.जी. भन्दा कम";
 
 /* HEART RATE */
-"HeartRate.problem" = "Atrial Fibrillation, or irregular heart rate, is a risk factor for stroke.";
-"HeartRate.problemBoldPart" = "Atrial Fibrillation";
-"HeartRate.whatToDo" = "If you have suspicion of an irregular heart rate, contact your doctor immediately for testing, which might include electrocardiogram (ECG/EKG). Based on your past medical history and your risk for having a future stroke, there are several options for medications, like anticoagulants, that will help manage AFib.";
-"HeartRate.whatToDoFirstBoldPart" = "electrocardiogram";
+"HeartRate.problem" = "एट्रियल फ़ीब्रिलेशन्, अथार्थ​ अनियमित हृदयदर, स्ट्रोक को लागी एक जोखिम कारक हो।";
+
+"HeartRate.problemBoldPart" = "एट्रियल फ़ीब्रिलेशन्";
+
+"HeartRate.whatToDo" = "यदि तपाईंलाई अनियमित हृदयदरको शंका छ भने, परीक्षण को लागि तुरुन्तै तपाईंको डाक्टर संग संपर्क गर्नुहोस् , जसमा इलेक्ट्रोकार्डियोयोग्राम (ईसीजी / ईकेजी) हुन सक्छ। तपाईंको मेडिकल हिस्टोरीको आधार र​ भविष्यमा तपाईंलाई स्ट्रोक हुनसक्ने जोखिमको आधारमा, औषधिका धेरै विकल्पहरू हुनसक्छन्, जस्तै anticoagulants, जसले एट्रियल फ़ीब्रिलेशन् (AFib) व्यवस्थापन गर्न मद्दत गर्नेछ।";
+
+"HeartRate.whatToDoFirstBoldPart" = "इलेक्ट्रोकार्डियोग्राम";
+
+
 "HeartRate.whatToDoSecondBoldPart" = "anticoagulants";
 
 /* BLOOD SUGAR */
-"BloodSugar.problem" = "High blood sugar can increase the risk of developing strokes and heart disease. A blood test called HbA1c gives a picture of your average blood sugar control for the past 2 to 3 months.";
-"BloodSugar.problemBoldPart" = "High blood sugar";
-"BloodSugar.whatToDo" = "The American Heart Association recommends keeping blood sugar levels (Hgb1A1c) below 6% for patients with pre diabetes and below 7% for diabetic patients.";
-"BloodSugar.whatToDoFirstBoldPart" = "below 6%";
-"BloodSugar.whatToDoSecondBoldPart" = "below 7%";
+"BloodSugar.problem" = "रगतमा सुगरको मात्रा धेरै भयोभने स्ट्रोक र ​​हृदय रोग हुने सँम्भवना बड्न​ सक्छ। HbA1c भन्ने एउटा रगतको जाँचले ग​एको 2 देखि 3 महिना सम्मको तपाईंको औसत सुगरको जानकारी दिन्छ​ ।";
+"BloodSugar.problemBoldPart" = "उच्च सुगरको स्तर ";
 
-/* DIET */
-"Diet.problem" = "It’s important for stroke patients to maintain a healthy lifestyle. Stroke patients residing in long-term care facilities are at risk for calcium and vitamin D deficiencies.";
-"Diet.whatToDo" = "It’s best to eat an overall healthy diet with a variety of fruits and vegetables, whole grains, low-fat dairy products, skinless meat and fish, and nuts and legumes. Cut back on saturated fat, trans fat, sodium, red meat, sweets and sugar-sweetened beverages.";
+"BloodSugar.whatToDo" = "अमेरिकन हार्ट एसोसिएसनले सुगरको स्तर (HbA1C, एचबी ए1 सी) को 6% भन्दा कम पूर्व मधुमेह र 7% भन्दा कम मधुमेह रोगका लागि सिफारिस गर्दछ।";
+"BloodSugar.whatToDoFirstBoldPart" = " 6% मुनि ";
+"BloodSugar.whatToDoSecondBoldPart" = " 7% मुनि ";
+
+///* DIET */
+"Diet.problem" = "पक्ष्घातका रोगीहरूको लागि एक स्वस्थ जीवनशैली कायम राख्न महत्त्वपूर्ण छ। दीर्घकालीन हेरचाह सुविधाहरूमा रहने  पक्ष्घात रोगीहरूलाई क्याल्सियम र भिटामिन डी को कमी हुने जोखिम हुन्छ​।";
+
+"Diet.whatToDo" = "फलफूल र सब्जीहरू, सम्पूर्ण अन्न, कम-मोटो डेरी उत्पादन, छाला रहित मासु र माछा, र नट र फलफुलको विभिन्न स्वस्थ आहार खानेकुरा राम्रो हुन्छ। संतृप्त बोसो, ट्रांस बोसो, नुन, रातो मासु, मिठाई र चिनी, गुलियो पेयहरु कम  गर्नुहोस।";
 
 /* BLADDER/BOWEL */
-"BladderBowel.problem" = "Some patients will experience urinary incontinence or retention.";
-"BladderBowel.whatToDoBulletOne" = "Assess urinary retention through bladder scanning or intermittent catheterizations after voiding, and record volumes.";
-"BladderBowel.whatToDoBulletTwo" = "Go to the bathroom at regular times to help train your bladder. Urinating every 2-3 hours can help prevent accidents.";
-"BladderBowel.whatToDoBulletThree" = "Drink plenty of fluids during the day to stay hydrated to help you avoid constipation.";
+"BladderBowel.problem" = "केही रोगीहरूलाई पिसाब फ़ेर्न नसक्ने अथवा पिसाब रोक्न नसक्ने हुन सक्दछ​।";
+
+"BladderBowel.whatToDoBulletOne" = "पिसाब अडकिएमा, मुत्रथैलीको जाँच पिसाब फ़ेरेपछि ब्लडेर स्क्यानिङ वा intermittent catheterization द्वारा गर्नुहोस र पिसाब को मत्रा नाप्नुहोस् र रेकर्ड​ राखनुहोस्।";
+
+"BladderBowel.whatToDoBulletTwo" = "नियमित रूपमा समयमै बाथरूममा जानुहोस् तपाईंको मूत्राशयलाई प्रशिक्षण दिन मद्दत गर्नुहोस्। हरेक 2-3 घण्टा पिसाब फेर्नाले दुर्घटनाहरू रोक्न मद्दत गर्न सक्छ।";
+
+"BladderBowel.whatToDoBulletThree" = "शरीरमा पानीको मत्रा ठिक राख्न​ दिनको बेलामा धेरै झोल पदार्थ पिउनुहोस जसले कब्जियत बाट बच्न मद्दत पुर्याउछ ।";
+
 
 /* EXERCISES */
-"Exercises.problem" = "Stroke patients often have difficulties regaining physical strength and capabilities.";
-"Exercises.parOne" = "Stroke survivors should receive rehabilitation at an intensity that matches with anticipated benefit and tolerance.";
-"Exercises.bulletOne" = "To help with gait limitations: Patients should do intensive, repetitive, mobility-task training under supervision of a health care professional.";
-"Exercises.bulletOneBoldPart" = "gait limitations";
-"Exercises.bulletTwo" = "To help with falling: Patients should do balance training.";
-"Exercises.bulletTwoBoldPart" = "falling:";
-"Exercises.bulletThree" = "To help during hospitalization and early recovery: AHA/ASA recommends low-level walking, self care activities, intermittent sitting or standing, seated activities, or range of motion activities. These activities should be performed as tolerated with a guideline of achieving 10 to 20 beats per minute increases in heart rate, depending on what your physician recommends.";
-"Exercises.bulletThreeBoldPart" = "hospitalization and early recovery";
-"Exercises.bulletFour" = "To help during inpatient and outpatient exercise therapy or rehabilitation: The AHA/ASA recommends activities such as walking 3-5 days per week for 20-60 min/session (or multiple 10-min sessions); stretching 2-3 days per week for 10-30 seconds; Tai chi, yoga, and recreational activities as a complement to walking or stretching.";
-"Exercises.bulletFourBoldPart" = "inpatient and outpatient exercise therapy or rehabilitation";
-"Exercises.bulletFive" = "To remain safe during physical exercise: Use assistive devices for walking and exercise carefully, only under supervision.";
-"Exercises.bulletFiveBoldPart" = "safe during physical exercise";
-"Exercises.bulletSix" = "To maintain physical health: Check with your doctor for customized physical activity preference, specific activity limitations, and exercise participation restrictions.";
-"Exercises.bulletSixBoldPart" = "physical health:";
+"Exercises.problem" = "पक्ष्घातका रोगीहरूले पहिलेकै शारीरिक शक्ति र क्षमताहरू प्राप्त गर्न अक्सर कठिनाइहरू भोग्ने गर्दछन्।";
+"Exercises.parOne" = "पक्ष्घात भएका व्यक्तिहरुले पुनर्वास प्राप्त गर्नुपर्दछ जुन प्रत्याशित लाभ र सहनशीलता संग मेल खान्छ ।";
+"Exercises.bulletOne" = "हिड्न गर्होको सहयोग पाउन : रोगीहरूले स्वास्थ्य सम्ब्न्धी पेशेवरको निरीक्षणमा गहन, दोहोरो, गतिशीलता-कार्य प्रशिक्षण गर्नु पर्छ।";
+"Exercises.bulletOneBoldPart" = "हिड्न गर्हो";
+"Exercises.bulletTwo" = "लड्न लागेको बेला मद्दतको लागि: बिरामीले सन्तुलनको प्रशिक्षण लिनुपर्छ।";
+"Exercises.bulletTwoBoldPart" = "लड्ने :";
+"Exercises.bulletThree" = "अस्पतालम़ा भर्ना हुदा वा चाडैनै निको हुन मद्दत गर्नको लागि: AHA / ASA ले निम्न स्तरको हिड्ने , स्वयं हेरविचार गतिविधि, बेला-बेलामा बस्ने वा खडा हुने, बसेर गर्ने  गतिविधिहरू, वा चलेर​ गर्ने गतिविधिहरूको सिफारिस गर्छ । यी क्रियाकलापहरू आफ़ुले सहन सक्नेगरी दिशानिर्देश अनुसार र आफ़्नो चिकित्सकको सल्लाह बमोजिम हृदय रेटमा 10 देखि 20 बीट प्रति मिनेट बडी प्राप्त गर्ने गरी गर्न सकिन्छ।";
+"Exercises.bulletThreeBoldPart" = "अस्पताल भर्ना र चाडै निको हुने";
+"Exercises.bulletFour" = "इनपेटिन्ट र आउटपेन्टेंट व्यायाम थेरेपी वा पुनर्वासको समयमा मद्दत गर्न: AHA/ASA सिफारिश अनुसार ३-५ दिन हप्ताको 20-60 मिनेट / सत्र (वा धेरै 10-मिनेट सत्र) हिड्ने, तन्किने २-३ दिन प्रति हप्ता 10-30 सेकेण्ड; ताई ची, योग, र मनोरञ्जन गतिविधिहरू हिंड्ने वा तन्किने";
+"Exercises.bulletFourBoldPart" = "अस्पताल भित्रको बिरामी र बहिरको बिरामी लाई  व्यायाम थेरेपी वा पुनर्वास";
+"Exercises.bulletFive" = "शारीरिक व्यायामको समयमा सुरक्षित रहन: हिड्न र ध्यानपूर्वक अभ्यास गर्न सहायक यन्त्रहरू प्रयोग गर्नुहोस्, केवल अरुको पर्यवेक्षणमा।";
+"Exercises.bulletFiveBoldPart" = "शारीरिक व्यायामको समयमा सुरक्षित";
+
+"Exercises.bulletSix" = "शारीरिक स्वास्थ्य कायम राख्न: आँफ़ु अनुकूलित शारीरिक क्रियाकलाप प्राथमिकता, विशिष्ट क्रियाकलापमा सावधानीहरु, र सहभागी प्रतिबन्धहरूको अभ्यासको लागि तपाईंको डाक्टरसँग जाँच/सम्पर्क​ गर्नुहोस्।";
+
+"Exercises.bulletSixBoldPart" = "शारीरिक स्वास्थ्य:";
 
 /* SHOWER/BATH */
-"ShowerBath.problem" = "Getting in and out of bathtubs/showers can be dangerous, and patients are at risk of falling.";
-"ShowerBath.bulletOne" = "Showers > tubs: showers are safer than tubs generally.";
-"ShowerBath.bulletOneBoldPart" = "Showers > tubs:";
-"ShowerBath.bulletTwo" = "Grab bars might help make movement easier.";
-"ShowerBath.bulletTwoBoldPart" = "Grab bars";
-"ShowerBath.bulletThree" = "Bath mats with suction cups will help you avoid slipping.";
-"ShowerBath.bulletThreeBoldPart" = "Bath mats";
-"ShowerBath.paragraph" = "Make sure someone is nearby to help you if needed. Keep a bell handy or have another way to call for help. Balance training can help individuals with balance problems.";
+"ShowerBath.problem" = "बाथटब बाट भित्र र बाहिर गरिराख्दा खतरनाक हुन सक्छ, र बिरामीहरू लड्ने सम्भावना हुन्छ ।";
 
-/* HOME MOD */
-"HomeMod.problem" = "Because patients might experience limited mobility, it’s important to modify your home so that it is safe and accessible.";
-"HomeMod.subHeaderOne" = "Bedroom:";
-"HomeMod.contentOne" = "Bedroom accessibility can be improved by moving items so that the door opens fully; widen doorways; reverse hinges so that door opens outwards instead of inwards. If a bed needs to be up against a wall, it should be oriented such that the patient’s affected side (weak side) is closer to the wall, so the strong side can assist the patient getting out of bed.";
-"HomeMod.subHeaderTwo" = "General:";
-"HomeMod.contentTwo" = "Eliminate rugs that can easily move to avoid trips and falls.";
-"HomeMod.subHeaderThree" = "Bath:";
-"HomeMod.contentThree" = "Bathrooms can be made more accessible to wheelchairs by widening the doorway. Toilet seats can be raised to make it less challenging in getting to and from the toilet: a toilet elevator that mounts between the floor and toilet; a seat elevator that attaches to the bowl and raises the seat; installing toilet rails/grab bars to improve support for mobility.";
+"ShowerBath.bulletOne" = "फोहरा > टब: फोहरा साधारणतया टबहरु भन्दा सुरक्षित हुन्छ।";
+
+"ShowerBath.bulletOneBoldPart" = "फोहरा > टबहरू:";
+
+"ShowerBath.bulletTwo" = " समाउने बारहरूले हिड्न/चल्न​ लाई सजिलो बनाउन मदत गर्न सक्छ।";
+
+"ShowerBath.bulletTwoBoldPart" = "बारहरू लिनुस् ";
+
+"ShowerBath.bulletThree" = "नुहाउने ठाउमा राख्ने कार्पेट, suction cup सँग​ भयो भने चिप्लिनबाट बच्न सकिन्छ​।";
+"ShowerBath.bulletThreeBoldPart" = "स्नान चटाई";
+"ShowerBath.paragraph" = "तपाईंको सहयोगको लागी आवश्यक परेमा कोहि नजिकै छ भन्ने शुनिश्चित गर्नुहोस्। एउटा घण्टी नजिकै राख्नुहोस् वा मद्दतको लागि कल गर्न अर्को तरिका राख्नुहोस्। बैलेंस प्रशिक्षणले बैलेंस गुम​एका व्यक्तिहरूलाई सन्तुलनमा मद्दत गर्न सक्छ।";
+
+///* HOME MOD */
+"HomeMod.problem" = "बिरामीको कम गतिशीलता हुने करणले गर्दा, तपाईंको घर तपाईंकोलागी सुरक्षित र पहुँचयोग्य बनाउन तपाईंको घर परिमार्जन गर्नु पर्ने हुन्छ।";
+"HomeMod.subHeaderOne" = "सुत्ने कोठा :";
+"HomeMod.contentOne" = "सुत्ने कोठा सजिलो बनाउन सामान हटाउने र पुरा ढोका खोल्न मिल्ने गर्ने ,रिवर्स हिञजेस् ताकि ढोका बाहिरबाट खोल्न मिल्ने । यदि बेडलाई भित्ताको छेउमा राख्नु छ भने, बिमरीको प्रभावित पक्ष (कमजोर पक्ष) भित्ता नजिक हुनुपर्छ​, यसले बलियो पक्षले रोगीलाई बिस्तारै बेडबाट बाहिर निस्कन​ मद्दत गर्दछ।";
+"HomeMod.subHeaderTwo" = "सामान्य:";
+
+"HomeMod.contentTwo" = "सजिलै छिप्लेर लड्न सक्ने हुनाले कम्बलहरु हटाउनुहोस्";
+
+"HomeMod.subHeaderThree" = "स्नान:";
+
+"HomeMod.contentThree" = "बाथरूमको ढोका चौडा गरेर व्हीलचेयर सजिलै लैजान सकिन्छ। शौचालयको सीटहरु माथी उचाले, बस्दा र उठ्दा सजिलो हुन्छ, शौचालय-लिफ्ट जो भुँई र भित्तामा अडीन्छ​; सीट लिफ्ट जो कटोरामा संलग्न गर्दछ र सीट उठाउँछ; गतिशीलताको लागि समर्थन सुधार गर्न शौचालय रेल / ह्याण्डर बारहरू स्थापना गर्नुहोस् ।";
 
 /* REMINDERS VIEW CONTROLLER */
-"Reminders.title" = "Reminders";
-"Reminders.todaysReminders" = "Today's reminders";
-"Reminders.allReminders" = "All reminders";
-"Reminders.addReminderButton" = "Add Reminder";
-
+"Reminders.title" = "अनुस्मारकहरू";
+"Reminders.todaysReminders" = "आजका अनुस्मारकहरू";
+"Reminders.allReminders" = "सबै अनुस्मारकहरू";
+"Reminders.addReminderButton" = "अनुस्मारकहरू थप्नुहोस्";
 /* ADDING REMINDERS */
-"Reminders.remindMeTo" = "Remind me to...";
-"Reminders.takeMedicine" = "Take my medicine";
-"Reminders.doctorsVisit" = "Doctor's visit";
-"Reminders.bloodTest" = "Blood test";
-"Reminders.exercise" = "Exercise";
-"Reminders.medication" = "Medication";
-"Reminders.howOften" = "How often?";
-"Reminders.daily" = "Daily";
-"Reminders.weekly" = "Weekly";
-"Reminders.custom" = "Custom";
-"Reminders.everyday" = "Everyday.";
-"Reminders.every" = "Every ";
-"Reminders.and" = "and";
-"Reminders.next" = "next";
-"Reminders.save" = "save";
-"Reminders.back" = "back";
-"Reminders.sunday" = "Sunday";
-"Reminders.monday" = "Monday";
-"Reminders.tuesday" = "Tuesday";
-"Reminders.wednesday" = "Wednesday";
-"Reminders.thursday" = "Thursday";
-"Reminders.friday" = "Friday";
-"Reminders.saturday" = "Saturday";
-"Reminders.sundays" = "Sundays";
-"Reminders.mondays" = "Mondays";
-"Reminders.tuesdays" = "Tuesdays";
-"Reminders.wednesdays" = "Wednesdays";
-"Reminders.thursdays" = "Thursdays";
-"Reminders.fridays" = "Fridays";
-"Reminders.saturdays" = "Saturdays";
+"Reminders.remindMeTo" = "मलाई सम्झाउनुहोस्";
+"Reminders.takeMedicine" = "मेरो दवाई लिनुहोस्";
+"Reminders.doctorsVisit" = "डाक्टरको भ्रमण";
+"Reminders.bloodTest" = "रगत जाँच";
+"Reminders.exercise" = "व्यायाम गर्नुहोस्";
+"Reminders.medication" = "औषधि";
+"Reminders.howOften" = "कति पटक?";
+"Reminders.daily" = "दैनिक";
+"Reminders.weekly" = "साप्ताहिक";
+"Reminders.custom" = "अनुकूलन";
+"Reminders.everyday" = "हरेक दिन।";
+"Reminders.every" = "हरेक ";
+"Reminders.and" = "र";
+"Reminders.next" = "अर्को";
+"Reminders.save" = "बचत गर्नुहोस्";
+"Reminders.back" = "फिर्ता";
+"Reminders.sunday" = "आइतबार";
+"Reminders.monday" = "सोमबार";
+"Reminders.tuesday" = "मंगलवार";
+"Reminders.wednesday" = "बुधबार";
+"Reminders.thursday" = "बिहीवार";
+"Reminders.friday" = "शुक्रबार";
+"Reminders.saturday" = "शनिबार";
+"Reminders.sundays" = "आइतबार";
+"Reminders.mondays" = "सोमबार";
+"Reminders.tuesdays" = "मंगलवार";
+"Reminders.wednesdays" = "बुधबार";
+"Reminders.thursdays" = "बिहीवार";
+"Reminders.fridays" = "शुक्रबार";
+"Reminders.saturdays" = "शनिबार";
 "Reminders.sundayAbbrev" = "S";
 "Reminders.mondayAbbrev" = "M";
 "Reminders.tuesdayAbbrev" = "T";
@@ -278,168 +424,362 @@
 "Reminders.thursdayAbbrev" = "T";
 "Reminders.fridayAbbrev" = "F";
 "Reminders.saturdayAbbrev" = "S";
-"Reminders.atWhatTime" = "What time(s)?";
-"Reminders.remindMeAt" = "Remind me at:";
-"Reminders.addTime" = "Add Time";
-"Reminders.editTitle" = "Edit Reminder";
-"Reminders.saveChanges" = "Save changes";
-"Reminders.oneTimeReminder" = "Make this a one time reminder";
+"Reminders.atWhatTime" = "कुन समय?";
+"Reminders.remindMeAt" = "मलाई सम्झाउनुहोस्:";
+"Reminders.addTime" = "समय थप्नुहोस्";
+"Reminders.editTitle" = "अनुस्मारक सम्पादन गर्नुहोस्";
+"Reminders.saveChanges" = "परिवर्तनहरू सुरक्षित गर्नुहोस";
+"Reminders.oneTimeReminder" = "यो एक समय को लागी याद् गराउनुहोस्";
 
-/* SURVEYS */
-"Surveys.password" = "Password";
+// SURVEYS
+"Surveys.password" = "पासवर्ड";
 
 /* GENERAL INFO */
-"GeneralInfo.aboutUs" = "About Us";
-"GeneralInfo.termsOfUse" = "Terms of Use";
-"GeneralInfo.privacyPolicy" = "Privacy Policy";
-"GeneralInfo.copyright" = "Copyright";
+
+"GeneralInfo.aboutUs" = "हाम्रोबारे";
+
+"GeneralInfo.termsOfUse" = "प्रयोगका शर्तहरू";
+
+"GeneralInfo.privacyPolicy" = "गोपनीयता नीति";
+
+"GeneralInfo.copyright" = "प्रतिलिपि अधिकार";
 
 /* ABOUT US */
-"AboutUs.aboutTheApp" = "About the app";
-"AboutUs.paragraphOne" = "The HEALTH4THEWORLD STROKE HOPE APP is a free of cost educational tool to spread knowledge about stroke risk factors, secondary prevention, post stroke mobility & exercise education and speech strategies.  It has been created by Health4TheWorld which is a non profit organization inspired by the unmet medical needs worldwide. The mission of the organization is solving health inequities through innovation & technology and bringing smiles around the world. Please learn more about us at health4theworld.org.";
-"AboutUs.paragraphTwo" = "With an estimated incidence of 16.9 million and a prevalence of 33 million according to the World Health Organization, stroke is a dominant diseased entity in the category of cardiovascular diseases, and is a leading cause of serious long-term disability. The global burden of stroke falls disproportionately on low and middle-income countries, prompting us to improve global health educational outreach. We hope that this stroke educational app will be helpful.";
-"AboutUs.paragraphThree" = "The app has several features that we hope you will find useful!";
-"AboutUs.featureOne" = "Stroke Educational Content – Information on causes and risk factors of stroke with guidelines from the American Stroke Association, American Heart Association, evidence based articles and other healthcare sources. It is good to remember that these are general educational tips and not recommendations for clinical care. Both the patient and trained health professionals should sit together to work on a personalized prevention regimen for stroke.";
-"AboutUs.featureTwo" = "Video Animation and Exercise Tips for Stroke Recovery –Education for exercise and rehabilitation after stroke has been summarized by Physical Medicine and Rehabilitation experts from Stanford, University of California, San Francisco and University of Southern California. The exercises here are general and are intended to serve as educational guide not as medical advice.  These should be done with an occupational therapist and/or physical therapist, which can help with the correct technique and designing a regimen that will benefit a stroke patient best. A caregiver should always be present to help. These are divided into strengthening, stretching and functional mobility. Please advise your patients about the correct technique, frequency and regimen of these exercises.";
-"AboutUs.featureThree" = "Reminders for Medications and Appointments: Medication and Appointment compliance is a major issue and this tool is hopefully helpful!  Please set reminders for your patients if possible.";
-"AboutUs.featureFour" = "Speech Strategies After Stroke: The press button voice output can help with very basic communication. The aim is to translate these to different languages so health professions and patients in remote parts of the world who lack health access can benefit from these.";
-"AboutUs.team" = "Team";
-"AboutUs.teamIntro" = "This application wouldn’t have been possible without work of a dream team!";
-"AboutUs.founders" = "Founders";
-"AboutUs.developers" = "Developers";
-"AboutUs.animations" = "Animations";
-"AboutUs.illustrations" = "Illustrations";
-"AboutUs.contentEditing" = "Content editing";
-"AboutUs.movies" = "Movies";
-"AboutUs.advisoryBoard" = "Medical Advisory Board for the App";
-"AboutUs.marcFisher" = "Dr. Marc Fisher:  Dr Fisher currently serves as editor-in-chief of Stroke and Senior Physician on the Stroke Service at BIDMC, Harvard Medical School. He is well renowned and has published extensively over 260 peer-reviewed articles and has edited or co-edited 13 books.";
-"AboutUs.jeffreyTeraoke" = "Dr. Jeffrey Teraoke: Dr. Teraoke is Chief, PM &R at Palo Alto VA Medical Center. He is the program director of PM&R Residency Program and Director, Polytrauma, VA Palo Alto Health System";
-"AboutUs.ericaPitsch" = "Dr. Erica A Pitsch, PT, MPT, DPT, NCS: Health Science Assistant Clinical Professor, UCSF. Dr. Pitsch specializes in neurologic physical therapy and uses several treatment strategies and approaches, all focused on promoting optimal challenge, function, and recovery in persons with neurologic illness";
-"AboutUs.lorenWard" = "Loren Ward, PT, DPT is licensed Physical Therapist who began her career in Physical Therapy in 2007, while earning her Doctorate at MGH Institute of Health Professions in Massachusetts. She did internships at Rehabilitation of Chicago, Spaulding Rehabilitation and National Rehabilitation Hospital and now works at Stanford Veteran’s Affairs System. Loren is an advocate of functional independence and strives to help her patients reach their own level of independence regardless of their limitations.";
-"AboutUs.roseHamm" = "Rose Hamm, PT, DPT, CWS, FACCWS: Rose received a BS in Physical Therapy from the University of North Carolina, Chapel Hill, and an MS and post-graduate DPT from the University of Southern California.  She is currently Adjunct Assistant Professor of Clinical Physical Therapy at the University of Southern California and practices at Keck Hospital at USC.";
 
+"AboutUs.aboutTheApp" = "अनुप्रयोगको बारेमा";
+
+"AboutUs.paragraphOne" = "HEALTH4THEWORLD STROKE HOPE APP स्ट्रोक जोखिम कारकहरू, स्ट्रोकपछिको रोकथाम, पोस्ट स्ट्रोक गतिशीलता र व्यायाम शिक्षा र भाषण रणनीतिहरूको बारेमा जानकारी फ़ैलाउने नि:शुल्क शैक्षिक उपकरणको हो। यो Health4TheWorld, एक गैर लाभकारी संगठन, जो दुनियाभर कमी भ​एका चिकित्सा आवश्यकताहरुद्वारा प्रेरित भइ बनाईएको छ। संगठन को मिशन स्वास्थ्य असमानता को नवाचार र प्रौद्योगिकी को माध्यम ले समाधान गर्ने र सँसार भरी खुशी ल्याउने छ। हाम्रो बारेमा थप जानकारीको लागी health4theworld.org मा हेर्नुहोस्।";
+
+"AboutUs.paragraphTwo" = "विश्व स्वास्थ्य संगठनको अनुसार अनुमानित १६.९ मिलियन (१ करोड ६९ लाख) नयाँ घटना र ३३ मिलियन (३ करोड ३०लाख) जनसंख्याको साथ, स्ट्रोक (पक्ष्घात) हृदय र रक्तनलीका रोगहरुमध्हे एक प्रमुख रोग साथै गम्भीर-दीर्घकालिन​ अक्षमताको एक प्रमुख कारण हो। संसारभरी स्ट्रोकको बोझ हेर्दा, यस्को बोझ कम र मध्यम आयश्रोतका राष्ट्रहरूमा धेरै देखिन्छ​, जसले हामीलाई वैश्विक स्वास्थ्य शिक्षाको सुधार गर्न उत्प्रेरित गर्दछ। हामी आशा गर्छौं कि यो स्ट्रोक शैक्षिक अनुप्रयोग उपयोगी हुनेछ।";
+
+
+"AboutUs.paragraphThree" = "यस एपमा धेरै सुविधाहरू छन् जुन हामी आशा गर्दछौं कि तपाईलाई उपयोगी हुनेछ !";
+
+"AboutUs.featureOne" = "स्ट्रोक शैक्षिक सामग्री - अमेरिकी स्ट्रोक एसोसिएस, अमेरिकन हार्ट एसोसिएस,सबूत आधारित लेख र अन्य स्वास्थ्य सेवा स्रोतहरूका दिशानिर्देशका साथ स्ट्रोकका कारणहरू र जोखिम कारकहरूमा जानकारी। यी सामान्य शैक्षिक सुझावहरू हुन् र यस्लाई क्लिनिकल हेरविचारका लागि सिफारिस गरिएको छैन। दुवै रोगी र प्रशिक्षित स्वस्थ्यकर्मी एकसाथ बसेर​ स्ट्रोकको लागि निजीकृत रोकथाम सम्बन्धी उपाय बनाउनु पर्छ।";
+
+"AboutUs.featureTwo" = "स्ट्रोक रिकभरीको लागि भिडियो एनिमेसन र व्यायाम युक्तिहरू - स्ट्रोक पछि व्यायाम र पुन: पुनर्निर्माणको लागि भौतिक चिकित्सा स्ट्यानफोर्ड विश्वविद्यालय, क्यालिफोर्निया विश्वविद्यालय, सान फ्रान्सिस्को र दक्षिणी क्यालिफोर्निया विश्वविद्यालयका पुनर्वास विशेषज्ञहरु द्वारा संक्षेप गरिएको छ। यहाँ व्यायाम सामान्य छन् र यो मेडिकल गाइडको रूपमा नभई, शैक्षिक मार्गदर्शकको रूपमा सेवा गर्ने उद्देश्य छ। यो एक व्यवसायिक चिकित्सक र / वा शारीरिक चिकित्सकसँग गर्नुपर्छ, जसले सही प्रविधि र रेजिमेन् डिजाइन गर्न मद्दत गर्छ​, जुन एक स्ट्रोक रोगीलाई राम्रो फाइदा पुग्न सक्छ। एक हेरविचार गर्ने ब्य्क्ती सधैं मद्दत गर्न उपस्थित हुनुपर्दछ। यी शक्ति बढाउने, तन्काउने, र कार्यात्मक गतिशीलतामा विभाजित छन् । कृपया तपाईंको रोगीहरूलाई सही प्रविधि, आवृत्ति र यी अभ्यासहरूको आशंकाको बारेमा सल्लाह दिनुहोस्।";
+
+"AboutUs.featureThree" = "औषधि र नियुक्तिको लागि अनुस्मारकहरू: औषधि र नियुक्ति अनुपालन एक प्रमुख मुद्दा हो र यो उपकरण आशापूर्वक उपयोगी छ! यदि सम्भव भएमा तपाईंको बिरामीहरूको लागि रिमाइन्डरहरू सेट गर्नुहोस्।";
+
+"AboutUs.featureFour" = "स्ट्रोक पछिको भाषण (बोली) रणनीतिहरू: प्रेस बटन भ्वाईस आउटपुटले धेरै आधारभूत संचारमा मद्दत गर्न सक्छ। यसलाई विभिन्न भाषाहरूमा अनुवाद गर्नु हाम्रो उद्देश्य छ जसले स्वास्थ्य व्यवसायहरू र संसारको दूरगम भागका बिरामीहरू जसलाई स्वास्थ्य पहुँचको कमी छ​, ले लाभ उठाउन सक्दछन।";
+
+"AboutUs.team" = "टोली";
+
+"AboutUs.teamIntro" = "यो अनुप्रयोग ड्रिम टोलिको काम बिना सम्भव थिएन!";
+
+"AboutUs.founders" = "संस्थापकहरू";
+
+"AboutUs.developers" = "विकासकर्ताहरू";
+
+"AboutUs.animations" = "एनिमेशन";
+
+"AboutUs.illustrations" = "चित्रहरू";
+
+"AboutUs.contentEditing" = "सामग्री सम्पादन";
+
+"AboutUs.movies" = "चलचित्रहरू";
+
+"AboutUs.advisoryBoard" = "एपका लागि मेडिकल सल्लाहकार बोर्ड";
+"AboutUs.marcFisher" = "डा.मार्क फिशर: वर्तमानमा डा. फिशर \"स्ट्रोक\" को र वरिष्ठ चिकित्सक को प्रमुख संपादक र​ हर्वार्ड  मेडिकल स्कूल, बीआईडीएमसी मा बरिष्ट स्ट्रोक फ़िजिसियन हुनुहुन्छ​। उहाँ प्रतिष्ठित वक्तित्व हुनुहुन्छ र वहाँले २६० भन्दा धेरै सहकर्मीहरूसँग समीक्षा गरिएका लेखहरू प्रकाशित गर्नुभ​एको छ र १३ वटा पुस्तकहरू सम्पादन र सह​-सम्पादन गर्नुभएको छ।";
+
+"AboutUs.jeffreyTeraoke" = "डा. जेफरी टेरोक: डा. टेरोको चीफ, पीएम र आर पालो अल्टो वी मेडिकल सेन्टरमा। उहाँ पीएम र आर रेजीडेंसी कार्यक्रम र निर्देशक, पोलिटेरामा, वी पा पालो अल्टो स्वास्थ्य प्रणालीको कार्यक्रम निर्देशक हुनुहुन्छ।";
+
+"AboutUs.ericaPitsch" = "डा. एरिक ए पिट्सच, पीटी, एमपीटी, डीपीटी, एन सी एस: हेल्थ साइंस सहायक क्लिनिकल प्रोफेसर, यूसीएफसी। डा.पिट्स  न्यूरोलोजिक शारीरिक थेरेपी मा माहिर हुन्छन् र धेरै उपचार रणनीतिहरु र दृष्टिकोणहरु को उपयोग गर्नुहुन्छ, जुन् सबै न्यूयोलोजिक बीमारी संग इष्टतम चुनौती, प्रकार्य र रिकवरी को प्रचार मा केंद्रित छन् ";
+
+"AboutUs.lorenWard" = "लरेन वार्ड, पीटी, डीपीटी लाइसेन्स फिजिकल थेरेपिस्ट हुनुहुन्छ​ जसले मेचचुसेट्स मा एमजीएच इन्सटिच्युट् अफ हेल्थ् प्रोफेससन्स्मा आफ़्नो डाक्टर डिग्री गर्दा देखि शारीरिक थेरेपीमा आफ्नो क्यारियर सन् २००७मा सुरु गर्नु भयो । उहाँले शिकागोमा, स्पाउडिंग रेडिभरेसन र राष्ट्रिय पुनर्वास अस्पतालको पुनर्वासमा इन्टर्नशिप गर्नुभयो र अहिले स्ट्यानफोर्डको दिग्गज अफिस प्रणालीमा काम गर्नुहुन्छ । Loren कार्यात्मक स्वतन्त्रता को एक अधिवक्ता हुनुहुन्छ र उहाँको रोगीहरुलाई आफ्नो सीमा को बावजूद स्वतंत्रता को आफ्नो स्तर मा पुग्न  को लागि प्रयास गर्नुहुन्छ";
+
+"AboutUs.roseHamm" = "रोज  ह्याम, पीटी, डीपीटी, सीएडब्ल्यूएस, एफएसीसीडब्लू: रोजले नर्थ केरोलिना विश्वविद्यालय, चैपल हिल विश्वविद्यालय, र साउथ क्यालिफोर्निया विश्वविद्यालय बाट एमएस र स्नातकोत्तर डीपीटी बाट भौतिक थेरेपी मा बीएस प्राप्त गर्नुभयो। उहाँ अहिले दक्षिणी क्यालिफोर्निया विश्वविद्यालयमा क्लिनिकल फिजिकल थेरेपी को एड्ज्क्ट्ं सहायक प्रोफेसर हुनुहुन्छ​ र यूएससीको केके अस्पतालमा काम गर्नुहुन्छ​।";
 
 /* Quotes Section */
-"Quotes.title" = "Today's Inspirational Quote";
+"Quotes.title" = "आजको प्रेरणात्मक उद्धरण";
 
 /* Relaxing Music Section */
-"Music.title" = "Relaxing Music";
+//"Music.title" = "Relaxing Music";
+"Music.title" = "आनन्दको  सङ्गीत";
 
 /* TERMS OF USE */
-"Terms.thankYouParOne" = "These terms and conditions of use (\"Terms\") are an agreement between Health4TheWorld (the “Health4TheWorld,” “we,” “us,” or “our”) and you (either you as an individual or the entity or organization on whose behalf you are entering into these terms and conditions) for access to and use of this website, which includes, media, documentation, pictures and other content, (collectively, the \"Website\"), as well as for access to and use of any products, services, and downloadable applications provided by Health4TheWorld (the “Services”). Please read these Terms carefully, and contact us at contact@health4theworld.org for any questions. Our Services also include downloadable applications, cloud-based applications, mobile and desktop applications, and applications in which our content is distributed via third-party sites.";
-"Terms.thankYouParTwo" = "BY COPYING, DOWNLOADING OR OTHERWISE ACCESSING OR USING THE WEBSITE, APP OR SERVICES, YOU AGREE TO BE BOUND BY THESE TERMS, INCLUDING THE WARRANTY DISCLAIMERS AND LIMITATION OF LIABILITY PROVISIONS BELOW. IF YOU DO NOT UNDERSTAND OR AGREE TO THESE TERMS, DO NOT ACCESS OR USE THE WEBSITE OR SERVICES AND PLEASE EXIT THE WEBSITE NOW.";
-"Terms.thankYouParThree" = "Health4TheWorld reserves the right to modify these Terms at any time without advance notice. Any changes to these Terms will be effective immediately upon posting on this page, with an updated effective date. By accessing the Website or Services after any changes have been made, you signify your agreement on to the modified Terms and all of the changes.";
-"Terms.useSectionOneHeader" = "Access to and Use of Website, mobile app and Services";
-"Terms.useSectionOneParOne" = "You may use our Website, Mobile application and Services only if you can form a binding contract with Health4TheWorld, and only in compliance with these Terms and all applicable laws. When retrieving information from the Website or Services, you are prohibited from (a) using or attempting to use spiders, robots, avatars, intelligent agents, or any other extraction or navigation search except for a normal browser, (b) aggregating, copying or duplicating any of the materials or information available from the Website or Services except for the small amount of materials and information temporarily required for an ordinary single use of the Website and/or Services, or (c) accessing data not intended for you. As a condition of your use or access of the Website and Services, you agree as follows:";
-"Terms.useSectionOneBulletOne" = "Any use or access by anyone under the age of 13 is prohibited, and certain courses and materials provided on the Website and made available through the Services may have additional requirements and/or restrictions.";
-"Terms.useSectionOneBulletTwo" = "You shall provide us with accurate and complete information, and you agree to update your contact and account information and to keep it accurate and complete at all times.";
-"Terms.useSectionOneBulletThree" = "You shall only access or use the Website or Services with a compatible device or computer. We assume no responsibility or liability for loss resulting from failure to comply with this provision.";
-"Terms.useSectionOneBulletFour" = "You shall not use the Website or Services for any illegal or unauthorized purposes.";
-"Terms.useSectionOneBulletFive" = "You shall not duplicate or resell the Services.";
-"Terms.useSectionOneBulletSix" = "You shall not transmit worms, viruses or any code of a destructive nature to the Health4TheWorld, other users, the Website, or the Services.";
-"Terms.useSectionOneParTwo" = "Any use of the Website or the Services in violation of the foregoing violates these Terms and may result in, among other things, termination or suspension of your rights to use the Website and the Services. We reserve the right to monitor your use of the Website and the Services to ensure your compliance with these Terms, or pursuant to a court, administrative, or governmental order. Furthermore, we reserve the right to deactivate or suspend your use of the Website or the Services for any reason. In addition to these Terms, your use of the Website and/or Services is governed by our Privacy Policy. You agree that Health4TheWorld’s collection, use and sharing of any personal information will be as set forth in the Privacy Policy, which may be amended by us from time to time. The Privacy Policy and any posted terms or guidelines are hereby incorporated by reference into these Terms.";
-"Terms.useSectionTwoHeader" = "Our License to You";
-"Terms.useSectionTwoParagraph" = "Subject to your compliance with these Terms and our policies (including the Acceptable Use Policy, Honor Code, Privacy Policy and other terms), we grant you a limited, personal, non-exclusive, non-transferable, and revocable license to use our Website and Services. You may download content from our Website and Services only for your personal, non-commercial use, unless you obtain Health4TheWorld's written permission to otherwise use the content. All other rights are reserved. You also agree that you will create, access, and/or use only one user account, and you will not share with any third party access to or access information for your account. In consideration of this license, you agree that: (a) any copy you make of the pages, data, text, images, audio, video, or other content within the Website, Mobile application or Services shall retain all copyright and other proprietary notices contained in such materials; and (b) any such materials shall distributed solely in accordance with these Terms. Notwithstanding the foregoing, you may not sell, transfer, share, license, or sublicense the Website, mobile application or Services to any third party and you may not use the Website, Mobile application or Services for the purpose of indirectly or directly competing with Health4TheWorld. Using our Website, Mobile application or Services does not give you ownership of any intellectual property rights therein or to the content you access.  Furthermore, as some of our Services may be software that is downloaded to your computer, phone, tablet, or other device, you agree that we may automatically update this software, and that these Terms will apply to such updates.";
-"Terms.eduSectionOneHeader" = "Content Modifications";
-"Terms.eduSectionOnePar" = "While we take pride in our world-class educational content, unexpected events do occur. Health4TheWorld reserves the right to cancel, interrupt, reschedule or modify any educational content or the point value or weight of any assignment, quiz, or other assessment. Offered educational contents are subject to the Disclaimers and Limitation of Liability sections below.";
-"Terms.eduSectionTwoHeader" = "No Academic Credit";
-"Terms.eduSectionTwoPar" = "Unless otherwise explicitly indicated by a credit-granting institution, participation in or completion of a course provided through our Website or Services does NOT confer any academic credit. Even if credit is awarded by one institution, there is no presumption that other institutions will accept that credit. You agree not to accept credit for completing a course through our Website or Services unless you have earned a Course Certificate (or other equivalent Health4TheWorld credential) for that course. Health4TheWorld, the course instructors, and the associated participating institutions have no obligation to have a course recognized by any educational institution or accreditation organization.";
-"Terms.eduSectionThreeHeader" = "Disclaimer of Student-University Relationship";
-"Terms.eduSectionThreePar" = "Nothing in these Terms or otherwise with respect to your participation in any course: (a) establishes any relationship between you and any educational institution with which Health4TheWorld may be affiliated; (b) enrolls or registers you in any educational institution, or in any course offered by any educational institution; or (c) entitles you to use the resources of any educational institution beyond participation in the course.";
-"Terms.eduSectionFourHeader" = "Education Research";
-"Terms.eduSectionFourPar" = "Health4TheWorld is committed to advancing the science of learning and teaching, and records of your participation in courses may be used for education research. In the interest of this research, you may be exposed to variations in the course content. Research findings will typically be reported at the aggregate level. Your personal identity will not be publicly disclosed in any research findings without your express consent.";
-"Terms.eduSectionFiveHeader" = "Disclaimer about Medical Content and its Use";
-"Terms.eduSectionFivePar" = "The information provided and views and opinions expressed by any individuals during the course of lecturers, mobile application content or via any other services,  are their own and do not necessarily represent the views, opinions, or positions of the Health4TheWorld or any of its subsidiary programs or divisions. The channel, site, and all materials contained herein or otherwise affiliated with Health4TheWorld are intended only for educational purposes, and are not intended to be, and should not be interpreted as, medical advice. Although reasonable efforts have been made to ensure the information contained in these lectures and educational material in the mobile application was current and accurate at the time of publication, neither Health4TheWorld, nor any individual who has furnished content or been involved in the presentation of this material, either orally or in writing can guarantee that all information is accurate and valid. Health4TheWorld makes no warranty, express or implied, that any information provided in the lectures is accurate or has remained accurate due to advances in research, or changes to guidelines and other standards of care. Nothing contained in any lecture, podcast, mobile application or other media platform creates or has created or is intended to create, implicitly or explicitly, any manner of patient-physician relationship.";
-"Terms.yourContentSectionOneHeader" = "User Content";
-"Terms.yourContentSectionOnePar" = "The Website, Mobile application and Services enable you to share your content, such as quizzes, exams, projects, assignments, and other content you submit in association with your use of the Website and Services, including without limitation any data, text, links, video files, photos, posts you make in the forums, and the like (\"User Content\"), with Health4TheWorld, instructors, and/or other users. Such User Content will be deemed to be non-confidential and shall also include any content you submit to Health4TheWorld via our \"Contact Us\" page or by emailing any employees of Health4TheWorld. You represent and warrant that all User Content that you may send to Health4TheWorld shall be your wholly original material (except for material that you are using with the permission of its owner), and does not misappropriate, infringe or otherwise violate any copyright, trademark, intellectual property or other rights of any third party, including any rights of privacy or publicity.";
-"Terms.yourContentSectionTwoHeader" = "How Health4TheWorld and Others May Use User Content";
-"Terms.yourContentSectionTwoPar" = "To the extent that you provide User Content, you grant Health4TheWorld a fully-transferable, royalty-free, perpetual, sublicensable, non-exclusive, worldwide license to copy, distribute, modify, create derivative works based on, publicly perform, publicly display, and otherwise use the User Content. This license includes granting Health4TheWorld the right to authorize participating institutions to use User Content with their registered participants independent of the Website and Services. Nothing in these Terms shall restrict other legal rights Health4TheWorld may have to User Content, for example under other licenses, or our rights to use any User Content in any way we choose. We further reserve the right to remove or modify User Content for any reason, including User Content that we believe violates these Terms.";
-"Terms.yourContentSectionThreeHeader" = "Feedback";
-"Terms.yourContentSectionThreePar" = "We welcome your suggestions, ideas, comments, and other feedback regarding the Website or Services (\"Feedback\"). By submitting any Feedback, you grant us the right to use the Feedback without any restriction or any compensation to you. By accepting your Feedback, Health4TheWorld does not waive any rights to use similar or related Feedback previously known to Health4TheWorld, developed by its employees or contractors, or obtained from other sources.";
-"Terms.securityParagraph" = "We care about the security of our users. While we work to protect the security of your account and related information, Health4TheWorld cannot guarantee that unauthorized third parties will not be able to defeat our security measures. Please notify us immediately of any compromise or unauthorized use of your account by emailing contact@Health4TheWorld.org.";
-"Terms.thirdPartyContentPar" = "Through the Website and/or Services, you will have the ability to access and/or use content provided by instructors, other users, and/or other third parties and links to websites, software and services maintained and/or controlled by third parties. Health4TheWorld has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party websites or content providers and cannot guarantee that such third party content, in the Website, Services or elsewhere, will be free of material you may find objectionable or otherwise inappropriate or of malware or other contaminants that may harm your computer, mobile device, or any files therein. By using the Website, Mobile application or the Services, you expressly relieve the Health4TheWorld from and we expressly disclaim any responsibility or liability related to or arising from your access or use of such third party content or website. Any use of such third-party software or services is at your own risk and may subject you to additional or different terms and restrictions by the third party or third parties providing such software or operating such services.  Accordingly, we encourage you to be aware of and to read the terms and conditions and privacy policy for each item of third party software or each third party service through which you access the Website or Services.";
-"Terms.copyrightPar" = "Health4TheWorld respects the intellectual property rights of our users, participating institutions, and other third parties and expects our users to do the same when using the Website or Services. We have adopted and implemented the Health4TheWorld Copyright and Trademark Policy in accordance with applicable law, including the Digital Millennium Copyright Act.";
-"Terms.modifyingPar" = "We are constantly changing and improving our Website, Mobile Applications and Services. We may add or remove functions, features, or requirements, and we may suspend or stop a function of our Website or Services altogether. Accordingly, Health4TheWorld may terminate your use of the Website and any Services for any reason. If your use of a paid feature or the Website, Mobile application or Services is terminated, a refund may be available under our Refund Policy. None of Health4TheWorld, its participating institutions and instructors, its contributors, sponsors, and other business partners, and their respective employees, officers, directors, representatives, contractors, and other agents (collectively the \"Health4TheWorld Parties\") shall have any liability to you for any such action. You can stop using our Website or Services at any time.";
-"Terms.disclaimersParOne" = "THE WEBSITE, MOBILE APPLICATION AND ANY INFORMATION, CONTENT OR SERVICES MADE AVAILABLE ON OR THROUGH THE WEBSITE & MOBILE APPLICATION ARE PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTY OF ANY KIND (EXPRESS, IMPLIED OR OTHERWISE), INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT, EXCEPT INSOFAR AS ANY SUCH IMPLIED WARRANTIES MAY NOT BE DISCLAIMED UNDER APPLICABLE LAW.";
-"Terms.disclaimersParTwo" = "THE HEALTH4THEWORLD PARTIES DO NOT WARRANT THAT THE WEBSITE, MOBILE APPLICATION OR SERVICES WILL OPERATE IN AN UNINTERRUPTED OR ERROR-FREE MANNER, THAT THE WEBSITE OR SERVICES ARE FREE OF ERRORS, VIRUSES OR OTHER HARMFUL COMPONENTS, OR THAT THE COURSES OR CONTENT PROVIDED WILL MEET YOUR NEEDS OR EXPECTATIONS. THE HEALTH4THEWORLD PARTIES ALSO MAKE NO WARRANTY ABOUT THE ACCURACY, COMPLETENESS, TIMELINESS, OR QUALITY OF THE WEBSITE, MOBILE APPLICATION OR SERVICES OR ANY COURSES OR CONTENT, OR THAT ANY PARTICULAR COURSES OR CONTENT WILL CONTINUE TO BE MADE AVAILABLE. USE OF THE WEBSITE, MOBILE APPLICATION AND THE CONTENT AND SERVICES OBTAINED FROM OR THROUGH THE WEBSITE & MOBILE APPLICATION, IS AT YOUR OWN RISK. YOUR ACCESS TO OR DOWNLOAD OF INFORMATION, MATERIALS, SOFTWARE OR DATA THROUGH THE WEBSITE, MOBILE APPLICATIONS OR ANY REFERENCE SITES IS AT YOUR OWN DISCRETION AND RISK, AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR PROPERTY (INCLUDING YOUR COMPUTER SYSTEM) OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OR USE OF SUCH MATERIALS, SOFTWARE OR DATA, UNLESS OTHERWISE EXPRESSLY PROVIDED FOR IN THE HEALTH4THEWORLD PRIVACY POLICY. FOR THE AVOIDANCE OF DOUBT, IN NO EVENT SHALL THE HEALTH4THEWORLD PARTIES BE LIABLE TO YOU FOR ANY DEFICIENCY, ERROR, INACCURACY OR INTERRUPTION IN THE WEBSITE, MOBILE APPLICATION OR SERVICES OR FOR DAMAGES OF ANY KIND. YOUR SOLE REMEDY IN THE EVENT OF ANY DEFICIENCY, ERROR, OR INACCURACY SHALL BE TO REQUEST THAT HEALTH4THEWORLD CORRECT THE MATTER OR, IF WE FAIL TO DO SO, TO DISCONTINUE YOUR USE OF THE WEBSITE AND/OR SERVICES.";
-"Terms.limitationsParOne" = "TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE HEALTH4THEWORLD PARTIES SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM: (A) YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE THE WEBSITE, MOBILE APPLICATION OR SERVICES; (B) ANY CONDUCT OF ANY PARTY OTHER THAN THE APPLICABLE HEALTH4THEWORLD PARTIES, INCLUDING WITHOUT LIMITATION, ANY DEFAMATORY, OFFENSIVE, OR ILLEGAL CONDUCT ; (C) ANY CONTENT OBTAINED FROM THE WEBSITE, MOBILE APPLICATION OR SERVICES,; OR (C) UNAUTHORIZED ACCESS, USE, OR ALTERATION OF YOUR USER CONTENT OR ANY INFORMATION PROVIDED BY YOU. IN NO EVENT SHALL THE HEALTH4THEWORLD PARTIES’ AGGREGATE LIABILITY FOR ALL CLAIMS RELATED TO THE WEBSITE AND/OR SERVICES EXCEED THE GREATER OF TWENTY U.S. DOLLARS ($20) OR THE TOTAL AMOUNT OF FEES RECEIVED BY HEALTH4THEWORLD FROM YOU FOR THE USE OF PAID FUNCTIONS OF THE WEBSITE, MOBILE APPLICATION AND SERVICES DURING THE PAST SIX (6) MONTHS.";
-"Terms.limitationsParTwo" = "YOU ACKNOWLEDGE AND AGREE THAT THE DISCLAIMERS AND THE LIMITATIONS OF LIABILITY SET FORTH IN THE TERMS REFLECT A REASONABLE AND FAIR ALLOCATION OF RISK BETWEEN YOU AND THE HEALTH4THEWORLD PARTIES, AND THAT THESE LIMITATIONS ARE AN ESSENTIAL BASIS TO HEALTH4THEWORLD'S ABILITY TO MAKE THE WEBSITE AND SERVICES AVAILABLE TO YOU ON AN ECONOMICALLY FEASIBLE BASIS.";
-"Terms.limitationsParThree" = "YOU AGREE THAT ANY CAUSE OF ACTION RELATED TO THE WEBSITE, MOBILE APPLICATION OR SERVICES MUST COMMENCE WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES, OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY BARRED.";
-"Terms.idemnificationPar" = "You agree to indemnify, defend, and hold harmless the Health4TheWorld Parties from any and all claims, liabilities, expenses, and damages, including reasonable attorneys' fees and costs, made by any third party arising from or related to: (a) your use or attempted use of the Website and/or Services in violation of these Terms; (b) your violation of any law or rights of any third party;  (c) the User Content; or (d) or any claim of infringement or misappropriation of intellectual property or other proprietary rights of any person or entity by you.";
-"Terms.governingParOne" = "The Services are managed by Health4TheWorld, which is located in Palo Alto, California, USA. You agree that any dispute arising under or related to these Terms will be governed by the laws of the United States of America and the State of California, excluding its conflicts of law provisions. You further consent to the personal jurisdiction of and exclusive venue in the federal and state courts located in and serving Palo Alto, California as the legal forum for any such dispute, and waive any objection as to inconvenient forum.";
-"Terms.governingParTwo" = "Excluding claims for injunctive or other equitable relief, for claims related to the Services where the total amount sought is less than ten thousand U.S. Dollars ($10,000.00 USD), either you or Health4TheWorld may elect at any point during the dispute to resolve the claim through binding, non-appearance-based arbitration. The dispute will then be resolved using an established alternative dispute resolution (\"ADR\") provider, mutually agreed upon by you and Health4TheWorld. The parties and the selected ADR provider shall not involve any personal appearance by the parties or witnesses, unless otherwise mutually agreed by the parties; rather, the arbitration shall be conducted, at the option of the party seeking relief, online, by telephone, or via written submissions alone. Any judgment rendered by the arbitrator may be entered in any court of competent jurisdiction.";
-"Terms.generalTermsSectionOneHeader" = "Revisions to the Terms";
-"Terms.generalTermsSectionOnePar" = "We reserve the right to revise the Terms at our sole discretion at any time. Any revisions to the Terms will be effective immediately upon posting by us. For any material changes to the Terms, we will attempt to notify you of such changes; however, we do not assume any obligation to notify you of changes to these Terms. In all cases, your continued use of the Website and/or Services after publication of such changes, with or without notification, constitutes binding acceptance of the revised Terms.";
-"Terms.generalTermsSectionTwoHeader" = "Successors";
-"Terms.generalTermsSectionTwoPar" = "These Terms shall be binding on and inure to the benefit of your respective successors and assigns.";
-"Terms.generalTermsSectionThreeHeader" = "Severability";
-"Terms.generalTermsSectionThreePar" = "If it turns out that a particular provision of these Terms is not enforceable, this will not affect any other provisions of these Terms. If you do not comply with these Terms, and we do not take immediate action, this does not indicate that we relinquish any rights that we may have (such as taking action in the future).";
-"Terms.generalTermsSectionFourHeader" = "Participating";
-"Terms.generalTermsSectionFourPar" = "Health4TheWorld's participating institutions are third party beneficiaries of the Terms and may enforce those provisions of the Terms that relate to them.";
-"Terms.generalTermsSectionFiveHeader" = "Notice for California Users";
-"Terms.generalTermsSectionFivePar" = "Under California Civil Code Section 1789.3, California website users are entitled to the following specific consumer rights notice: The Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs may be contacted in writing at 1625 N. Market Blvd., Suite S-202, Sacramento, California 95834, or by telephone at (800) 952-5210.";
-"Terms.referencedPoliciesBulletOne" = "Acceptable Use Policy";
-"Terms.referencedPoliciesBulletTwo" = "Privacy Policy";
-"Terms.referencedPoliciesBulletThree" = "Copyright and Trademark Infringement Policy";
-"Terms.referencedPoliciesBulletFour" = "Honor Code";
-"Terms.acceptableUseParOne" = "Health4TheWorld's mission is to provide universal access to health educational materials to improve global health through the use of our website (www.Health4TheWorld.org), which includes, media, documentation, pictures and other content (collectively, the \"Website\"), as well as for access to and use of any products, services, and downloadable applications provided by Health4TheWorld (the \"Services\"). We believe strongly in preserving free speech and expression for our learners as well as academic freedom for our partner institutions and instructors. We also want to make sure that all of our learners and instructors feel safe and comfortable while using our Website and Services. We have drafted these guidelines to ensure that people understand and follow the rules when participating in our online community and otherwise using our Website and Services. Although we do not routinely screen or monitor content provided by users, we may remove or edit inappropriate content or activity reported to us or suspend, disable, or terminate a user's access to all or part of our Website or Services. Please keep in mind users who are as young as 13 years of age use our Website and Services, and we do not allow content that is inappropriate for these younger learners.";
-"Terms.acceptableUseSectionOneHeader" = "You are prohibited from using our Website or Services to share content that:";
-"Terms.acceptableUseSectionOneBulletOne" = "Contains illegal content or promotes illegal activities with the intent to commit such activities.";
-"Terms.acceptableUseSectionOneBulletTwo" = "Contains credible threats or organizes acts of real-world violence. We do not allow content that creates a genuine risk of physical injury or property damage, credibly threatens people or public safety, or organizes or encourages harm.";
-"Terms.acceptableUseSectionOneBulletThree" = "Harasses others. We encourage commentary about people and matters of public interest, but abusive or otherwise inappropriate content directed at private individuals is not allowed.";
-"Terms.acceptableUseSectionOneBulletFour" = "Violates the intellectual property, privacy, or other rights of third parties. Do not share content that you do not have the right to share, claim content that you did not create as your own, or otherwise infringe or misappropriate someone else’s intellectual property or other rights. Always attribute materials used or quoted by you to the original owner.";
-"Terms.acceptableUseSectionOneBulletFive" = "Spams others. Do not share irrelevant or inappropriate advertising, promotional, or solicitation content.";
-"Terms.acceptableUseSectionOneBulletSix" = "Otherwise violates the Health4TheWorld Terms of Use. Please note that specific courses may have additional rules and requirements.";
-"Terms.acceptableUseSectionTwoHeader" = "You also are not allowed to:";
-"Terms.acceptableUseSectionTwoBulletOne" = "Do anything that violates local, state, national or international law or breaches any of your contractual obligations or fiduciary duties.";
-"Terms.acceptableUseSectionTwoBulletTwo" = "Share your password, let anyone access your account, or do anything that might put your account at risk.";
-"Terms.acceptableUseSectionTwoBulletThree" = "Attempt to access any other user's account.";
-"Terms.acceptableUseSectionTwoBulletFour" = "Reproduce, transfer, sell, resell, or otherwise misuse any content from our Website or Services, unless specifically authorized to do so.";
-"Terms.acceptableUseSectionTwoBulletFive" = "Access, tamper with, or use non-public areas of our systems, unless specifically authorized to do so.";
-"Terms.acceptableUseSectionTwoBulletSix" = "Break or circumvent our authentication or security measures or otherwise test the vulnerability of our systems or networks, unless specifically authorized to do so.";
-"Terms.acceptableUseSectionTwoBulletSeven" = "Try to reverse engineer, reverse engineer, decompile, decode, decrypt, disassemble, or in any way derive source code from any portion of our Website or Services.";
-"Terms.acceptableUseSectionTwoBulletEight" = "Try to interfere with any user, host, or network, for example by sending a virus, overloading, spamming, or mail-bombing.";
-"Terms.acceptableUseSectionTwoBulletNine" = "Use our Website or Services to distribute malware, viruses, Trojan horses, worms, spyware, corrupted files or any other similar software that may damage the operation of another's computer or property.";
-"Terms.acceptableUseSectionTwoBulletTen" = "Impersonate or misrepresent your affiliation with any person or entity.";
-"Terms.acceptableUseSectionTwoBulletEleven" = "Encourage or help anyone do any of the things on this list.";
-"Terms.acceptableUseSectionThreeHeader" = "The following list of items is strictly prohibited on the Website:";
+"Terms.thankYouParOne" = "यी सर्तहरू र प्रयोगका सर्तहरू (\"सर्तहरू\") Health4TheWorld (\"the\"Health4TheWorld,\" \"हामी,\" \"हामीलाई,\" वा \"हाम्रो\") र तपाई (या एक व्यक्ति वा इकाई सरह​ वा संस्था जसको लागि तपाई यी सर्तहरूमा प्रवेश गरिरहनु भएको छ) जो यो वेबसाइटको पहुँच​ र प्रयोगको लागि जसमा, मिडिया, दस्तावेज, तस्वीरहरू र अन्य सामग्रीको (यो सामूहिक, \"वेबसाइट \") साथै Health4TheWorld (the “Services”) द्वारा उत्पादन, सेवा, र डाउनलोडयोग्य अनुप्रयोगहरू पहुँच​ र प्रयोगको लागि, बीचको सम्झौता हो। क्रिपया सर्तहरू सावधानीपूर्वक पढ्नुहोस् र हामीलाई कुनै पनि प्रश्नको लागि contact@health4theworld.org मा सम्पर्क गर्नुहोस् । हाम्रो सेवाहरुमा डाउनलोडयोग्य अनुप्रयोगहरू, क्लाउड-आधारित अनुप्रयोगहरू, मोबाइल र डेस्कटप अनुप्रयोगहरू, र अनुप्रयोगहरू जसमा हाम्रो सामग्री तेस्रो-पक्ष साइटहरू मार्फत वितरण गरिन्छ, पर्दछन्। ";
 
-"Terms.acceptableUseSectionThreeBulletOne" = "Content that defames, harasses or threatens others;";
-"Terms.acceptableUseSectionThreeBulletTwo" = "Content that discusses illegal activities with the intent to commit them;";
-"Terms.acceptableUseSectionThreeBulletThree" = "Content that infringes another's intellectual property, including, but not limited to, copyrights or trademarks;";
-"Terms.acceptableUseSectionThreeBulletFour" = "Profane, pornographic, obscene, indecent or unlawful content;";
-"Terms.acceptableUseSectionThreeBulletFive" = "Advertising or any form of commercial solicitation;";
-"Terms.acceptableUseSectionThreeBulletSix" = "Content related to partisan political activities;";
-"Terms.acceptableUseSectionThreeBulletSeven" = "Viruses, Trojan horses, worms, time bombs, corrupted files, malware, spyware or any other similar software that may damage the operation of another's computer or property; and";
-"Terms.acceptableUseSectionThreeBulletEight" = "Content that contains intentionally inaccurate information or that is posted with the intent of misleading others.";
-"Terms.acceptableUseSectionThreeParOne" = "Furthermore, you agree not to scrape, or otherwise download in bulk, any Website content, including but not limited to a list or directory of users on the system, on-line textbooks, User Content or user information. You agree not to misrepresent or attempt to misrepresent your identity while using the Website (although you are welcome and encouraged to use an anonymous username in the forums and to act in a manner that keeps your identity concealed).";
-"Terms.auUserContentSectionOneHeader" = "User Content Representations and Warranties";
-"Terms.auUserContentSectionOnePar" = "By submitting or distributing your User Content through the Website and/or Services, you affirm, represent and warrant (1) that you have the necessary rights, licenses, consents and/or permissions to reproduce and publish the User Content and to authorize Health4TheWorld and its users to reproduce, modify, publish and otherwise use and distribute your User Content in a manner consistent with the licenses granted by you below, and (2) that neither your submission of your User Content nor the exercise of the licenses granted below will infringe or violate the rights of any third party. You, are solely responsible for your User Content and the consequences of its posting or publishing. “User Content” is defined herein as any and all content shared or submitted by you in association with your use of the Website and/or Services, including without limitation any data, text, links, video files, photos, documents, materials, or posts you make in the forums, and the like (\"User Content\")";
-"Terms.auUserContentSectionTwoHeader" = "License Grant to Health4TheWorld";
-"Terms.auUserContentSectionTwoPar" = "By submitting or distributing your User Content, you hereby grant to Health4TheWorld a worldwide, non-exclusive, transferable, assignable, sub-licensable, fully paid-up, royalty-free, perpetual, irrevocable right and license to host, transfer, display, perform, reproduce, modify, distribute, re-distribute, relicense and otherwise use, make available and exploit your User Content, in whole or in part, in any form and in any media formats and through any media channels (now known or hereafter developed).";
-"Terms.auUserContentSectionThreeHeader" = "License Grant to Health4TheWorld Users";
-"Terms.auUserContentSectionThreePar" = "By submitting or distributing your User Content, you hereby grant to each user of the Website or Services a non-exclusive license to access and use your User Content in connection with their use of the Website and/or Services for their own personal purposes.";
-"Terms.copyRightParOne" = "Health4TheWorld respects the intellectual property rights of our instructors and other third parties and expects our users to do the same when using the Health4TheWorld.org website, and any associated media, documentation, pictures or other content (collectively the ”Website), or any related services, products or applications (the “Services”). We reserve the right to suspend, disable, or terminate the accounts of users who infringe or who are charged with infringing the copyrights, trademarks, or other intellectual property rights of third parties.";
-"Terms.copyrightSectionOneHeader" = "Copyrights";
-"Terms.copyrightSectionOneParOne" = "The Digital Millennium Copyright Act of 1998 (the \"DMCA\") provides recourse for copyright owners who believe that material appearing on the Internet infringes their rights under U.S. copyright law. A copy of the DMCA is available on the website of the U.S. Copyright Office, located at http://www.copyright.gov/legislation/dmca.pdf	";
-"Terms.copyrightSectionOneParagraphTwo" = "If you believe in good faith that any materials contained on the Website or provided through the Service infringe your copyright(s), the DMCA provides that you (or your agent) may send us a notice requesting that the infringing material be removed or access to it blocked.";
-"Terms.copyrightSectionOneParThree" = "Notices under the DMCA must include the following information:";
-"Terms.copyrightSectionOneBulletOne" = "The physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed;";
-"Terms.copyrightSectionOneBulletTwo" = "Identification of the copyrighted work claimed to have been infringed (or, if multiple copyrighted works located on the Website or provided through the Services are covered by a single notification, a representative list of such works);";
-"Terms.copyrightSectionOneBulletThree" = "Identification of the material that is claimed to be infringing or the subject of infringing activity, and information reasonably sufficient to allow Health4TheWorld to locate the material on the Website or in the Services;";
-"Terms.copyrightSectionOneBulletFour" = "The name, address, telephone number, and email address (if available) of the complaining party;";
-"Terms.copyrightSectionOneBulletFive" = "A statement that the complaining party has a good faith belief that use of the material in the alleged manner is not authorized by the copyright owner, its agent, or under law; and";
-"Terms.copyrightSectionOneBulletSix" = "A statement, under penalty of perjury, that the information in the notification is accurate and the complaining party is authorized to act on behalf of the owner of the copyright that is allegedly infringed.";
+"Terms.thankYouParTwo" = "तपाईले यस वेबसाईट, एप अथवा सेवा मर्फ़त प्रतिलिपी बनाएर, डाउनलोड गरेर अथवा पहुँच गरेर, तपाई तल दिईएको नियम साथसाथै अनुतरदायी वांरटी दायित्व सीमितता प्रावधान मा सहमति जनाउनु हुन्छ​। यदि तपाईंले यी सर्तहरू बुझ्नु भएन भने वा सहमति छैन भने, वेबसाइट वा सेवाहरू प्रयोग नगर्नुहोस् र​ वेबसाइटबाट निस्कनुहोस्।";
+
+"Terms.thankYouParThree" = "Health4TheWorldलाई अग्रिम सूचना बिना कुनै पनि समय यी शर्तहरू परिमार्जन गर्न अधिकार छ । यी सर्तहरूमा कुनै पनि परिवर्तनहरू अपडेट गरिएको प्रभावकारी मितिको साथमा यो पोस्टमा तत्काल प्रभावकारी हुनेछ। कुनै पनि परिवर्तनहरूपछि वेबसाइट वा सेवाहरू पहुँच गरेमा, तपाइँ परिमार्जित नियमहरू र सबै परिवर्तनहरूमा तपाईंको सम्झौता छ भन्ने बुझिन्छ​ ";
+
+"Terms.useSectionOneHeader" = "पहुँच र वेबसाइटको प्रयोग, मोबाइल अनुप्रयोग र सेवाहरू";
+
+"Terms.useSectionOneParOne" = "यदि तपाईं Health4TheWorld सँग बाध्यकारी अनुबंध सिर्जना गर्न सक्नुहुनेछ र मात्र यी सर्तहरू र सबै लागू कानुनी नियमहरूको अनुपालना गर्नुहुन्छ भने तपाईले हाम्रो वेबसाइट, मोबाइल अनुप्रयोग र सेवाहरू प्रयोग गर्न सक्नुहुनेछ । वेबसाइट वा सेवाबाट जानकारी प्राप्त गर्दा (ए) सामान्य ब्राउजर को लागी स्पाईड्रर, रोबोट, अवतार, बुद्धिमान एजेन्टहरू, वा कुनै अन्य निकासी वा नेभिगेसन खोज प्रयोग गरेर प्रयोग गर्न निषेध गरिन्छ (b) एकत्रित, प्रतिलिपि वा नक्कल गर्ने कुनै सामग्री वा जानकारी वेबसाइट र सेवाहरू कम मात्रामा सामग्री र सूचनाको बाहेक वेबसाइट र / वा सेवाहरूको सामान्य एकल प्रयोगको लागि आवश्यक छ, वा (सी) तपाईंको लागि प्रयोग नहुने डेटाको पहुँच नगर्ने । तपाईंको प्रयोग वा वेबसाइटको पहुँच र सेवाहरूको रूपमा तपाइँ निम्नानुसार सहमत हुनुहुन्छ: ";
+
+"Terms.useSectionOneBulletOne" = "१३ वर्ष भन्दा कम उमेरको कसैले  पनि प्रयोग वा पहुँच निषेध गरिएको छ, र वेबसाइटमा प्रदान गरिएको निश्चित पाठ्यक्रमहरू र सामग्रीहरू द्वारा उपलब्ध गराई अतिरिक्त आवश्यकताहरू र / वा प्रतिबन्ध हुन सक्छ।";
+
+"Terms.useSectionOneBulletTwo" = "तपाईले हामीलाई सही  र पूर्ण जानकारी प्रदान गर्नुहुनेछ, र तपाइँ आफ्नो सम्पर्क र खाता जानकारी अद्यावधिक गर्न र यसलाई सही राख्न र सधैं समयमा पूरा गर्न सहमत हुनुहुन्छ।";
+
+"Terms.useSectionOneBulletThree" = "तपाईले मात्र उपयुक्त उपकरण वा कम्प्यूटरसँग वेबसाइट वा सेवाहरू पहुँच गर्न वा प्रयोग गर्नुहुनेछ। हामी यस्  प्रावधानको अनुपालनको विफलताको कारण हुने हानिको लागि कुनै जिम्मेवारी वा दायित्व मान्दैनौं।";
+
+"Terms.useSectionOneBulletFour" = "तपाईले यस वेबसाइट वा सेवा कुनै गैरकानूनी वा अनधिकृत उद्देश्यको लागि प्रयोग गर्नु हुन्न​";
+
+"Terms.useSectionOneBulletFive" = "तपाईंले सेवाहरू दोहोर्याउनु वा पुन अरूलाई प्रयोग गर्न दिनुहुन्न ।";
+
+"Terms.useSectionOneBulletSix" = "तपाईंले स्वास्थ्य 4TheWorld, अन्य प्रयोगकर्ताहरू, वेबसाइट, वा सेवाहरूमा वोर्म्स, भाइरस वा विनाशकारी प्रकृतिको कुनै पनि कोडलाई प्रयोग गर्न हुन्न ।";
+
+"Terms.useSectionOneParTwo" = "उजुरीको उल्लङ्घनमा वेबसाइट वा सेवाहरूको कुनै प्रयोग यी सर्तहरूको उल्लङ्घन गर्दछ र परिणामहरू, अन्य चीजहरू, वेबसाइट र सेवाहरू प्रयोग गर्नको लागि तपाईंको अधिकारको अन्त्य वा निलम्बन हुन सक्छ। वेबसाइट र सेवाहरूको प्रयोगको निगरानी गर्न यी सर्तहरूसँग तपाईंको अनुपालन सुनिश्चित गर्न वा अदालत, प्रशासनिक वा सरकारी व्यवस्थाको अनुपालन सुनिश्चित गर्नका लागि हो । यसको वाहेक, हामी वेबसाइट वा सेवाका लागि तपाइँको प्रयोगलाई निष्क्रिय वा निलम्बित गर्ने अधिकार हामीमा सुरक्षित छ। यसका लागि, यी सर्तहरू, तपाईंको वेबसाइटको प्रयोग र / वा सेवाहरू हाम्रो गोपनीयता नीति द्वारा नियन्त्रित छ। तपाइँ सहमत हुनुहुन्छ कि Health4TheWorld को संग्रह, प्रयोग र कुनै पनि व्यक्तिगत जानकारीको साझेदारी साझा गर्नाले गोपनीयता नीतिमा सेट आउट गरिनेछ। हामी समय-समयमा परिमार्जित गर्दछौ । गोपनीयता नीति र कुनै पोस्ट गरिएको सर्तहरू वा दिशानिर्देशहरू यहाँ यी सर्तहरूमा सन्दर्भद्वारा समावेश गरिएको छ। ";
+
+"Terms.useSectionTwoHeader" = "तपाईंको लागी लाइसेन्स";
+
+
+"Terms.useSectionTwoParagraph" = "यी सर्तहरू र हाम्रो नीतिहरू (स्वीकार्य प्रयोग नीति, आदर गर्ने कोड, गोपनीयता नीति र अन्य सर्तहरू सहित) तपाईंको अनुपालनको विषय, हामी तपाईंलाई सीमित, व्यक्तिगत, गैर-विशेष, गैर-स्थानान्तरण गर्न दिन्छौं। पुनर्व्यवस्थित इजाजतपत्र हाम्रो वेबसाइट र सेवा प्रयोग गर्नका लागी तपाईले तपाइँको व्यक्तिगत र गैर-व्यावसायिक प्रयोगको लागि मात्र हाम्रो वेबसाइट र सेवाबाट सामग्री डाउनलोड गर्न सक्नुहुनेछ, जब सम्म तपाई स्वास्थ्य प्राप्त गर्न सक्नुहुनेछ अन्यथा सामग्री प्रयोग गर्नका लागि लिखित अनुमति चाहिन्छ । कि तपाई सिर्जना, पहुँच, र / वा केवल एक प्रयोगकर्ता खाता प्रयोग गर्नुहुनेछ, र तपाइँ कुनै पनि तेस्रो पक्षको पहुँचसँग साझेदारी गर्नुहुने वा तपाईंको खाताको लागि जानकारी पहुँच गर्न सक्नुहुनेछ। यस लाइसेन्सको बारेमा, तपाईं सहमत हुनुहुन्छ: (ए) कुनै पनि प्रतिलिपि पृष्ठ, पाठ, छविहरू, अडियो, भिडीयो, वा वेबसाईट भित्र अन्य सामग्रीहरू बनाउनुहोस्, मोबाइल अनुप्रयोग वा सेवाहरूले यस्ता प्रतिलिपि अधिकार र अन्य स्वामित्वका सूचनाहरू समावेश गर्दछ जुन त्यस्ता सामग्रीहरूमा समावेश छ; र (ख) यी सर्तहरू अनुसार मात्र एक्लै बनाइयो। अग्रिमको साथ, तपाइँ कुनै पनि तृतीय पक्षमा वेबसाइट, मोबाइल अनुप्रयोग वा सेवाहरू बेच्न, स्थानान्तरण, साझेदारी, इजाजतपत्र वा sublicense नहुन सक्नुहुन्न र तपाईंले वेबसाइट, मोबाइल अनुप्रयोग वा सेवाहरू प्रयोग नगर्न सक्नुहुनेछ Health4TheWorld सँग अप्रत्यक्ष रूपमा वा सीधा प्रतिस्पर्धाको उद्देश्यका लागि। । हाम्रो वेबसाइट प्रयोग गरी, मोबाइल अनुप्रयोग वा सेवाले तपाईंलाई कुनै बौद्धिक सम्पदा अधिकारको स्वामित्व वा तपाईंको पहुँचको सामग्रीमा स्वामित्व प्रदान गर्दैन। साथै, हाम्रा केही सेवाहरू जस्तै तपाईको कम्प्युटर, फोन, ट्याब्लेट, वा अन्य यन्त्रमा डाउनलोड गरिएको सफ्टवेयर हुन सक्छ, तपाइँ सहमत हुनुहुन्छ कि हामी स्वचालित रूपमा यो सफ्टवेयर अद्यावधिक गर्न सक्छौं, र यी सर्तहरू यस्तो अद्यावधिकहरूमा लागू हुनेछ। ";
+"Terms.eduSectionOneHeader" = "सामग्री संशोधन";
+
+
+"Terms.eduSectionOnePar" = "हामी हाम्रो world-class शैक्षिक सामग्रीमा गर्व गर्छौं, तर​ अप्रत्याशित घटनाहरू हुन्छन्। Health4TheWorld विश्वव्यापी अधिकारहरू रद्द गर्न, अवरोध, पुन: निर्धारण गर्न वा कुनै पनि शैक्षिक सामग्री वा कुनै पनि असाइनमेंट, बिन्दुको बिन्दु मूल्य वा अन्य मूल्यांकन वा वजन परिमार्जन गर्ने अधिकार राखद्छ​। शैक्षिक सामग्री प्रस्तावित तल अस्वीकरण र दायित्व सेक्शन को सीमा,  तल रहेको छ। ";
+
+
+"Terms.eduSectionTwoHeader" = "अकादमिक क्रेडिट नभएको";
+
+"Terms.eduSectionTwoPar" = "जब सम्म कुनै अन्यथा स्पष्ट रूपमा क्रेडिट-प्रावधान संस्था द्वारा संकेतित नगरेसम्म, हाम्रो वेबसाइट वा सेवाहरू द्वारा प्रदान गरिएको पाठ्यक्रमको सहभागिता वा पूर्णतया कुनै पनि शैक्षिक क्रेडिटको प्रस्ताव छैन। यहाँ सम्म कि यदि एक संस्था द्वारा क्रेडिट प्रदान गरिएको छ भने पनि अरु संस्थाहरु ले स्वीकार गर्ने छन भन्ने अनुमान गर्न सकिदैन।​ तापाईले हाम्रो वेब साईट वा सेवाहरु मार्फत पाठ्यक्रम पूरा गरे वापत क्रेडिट स्वीकार गर्नुहुदैन भन्ने कुरामा सहमत हुनुहुन्छ​, जबसम्म तपाईले त्यो पाठ्यक्रमकोलागि पाठ्यक्रम प्रमाणपत्र (वा अन्य समकक्ष Health4TheWorld प्रमाणपत्र) प्राप्त गर्नुभएको छैन​। Health4TheWorld, पाठ्यक्रम प्रशिक्षक, र सम्बद्ध सहभागी संस्थाहरूलाई कुनै पनि शैक्षिक संस्थान वा मान्यता संगठन द्वारा मान्यता प्राप्त पाठ्यक्रम राख्ने कुनै दायित्व छैन। ";
+
+
+"Terms.eduSectionThreeHeader" = "अस्वीकार गर्ने बिध्यार्थी-विश्वविद्यालय सम्बन्ध ";
+
+"Terms.eduSectionThreePar" = "यी सर्तहरूमा केही पनि हुँदैन वा अन्यथा कुनै पनि पाठ्यक्रममा तपाईंको सहभागिताले: (क) तपाईंको कुनै पनि शैक्षिक संस्था, जो Health4TheWorld सँग​ सम्बद्ध छ​, सम्बद्ध राख्दछ​; (ख ) शैक्षिक संस्थान, वा कुनै पनि शैक्षिक संस्था द्वारा प्रस्ताव गरिएको कुनै पनि पाठ्यक्रममा तपाइँलाई कुनै पनि नामांकन वा रजिस्टर गर्छ; वा (ग ) तपाईंलाई पाठ्यक्रममा भाग लिन बाहिर कुनै शैक्षिक संस्थाको स्रोतहरू प्रयोग गर्न अधिकार दिन्छ। ";
+
+"Terms.eduSectionFourHeader" = "शिक्षा अनुसन्धान";
+
+"Terms.eduSectionFourPar" = "Health4TheWorld सिक्न र शिक्षण विज्ञान को प्रगति गर्न प्रतिबद्ध छ, र पाठ्यक्रममा तपाईंको सहभागिताको रेकर्ड शिक्षा अनुसन्धानको लागि प्रयोग गर्न सक्छ। यस अनुसन्धानको रुचिमा तपाइँले पाठ्यक्रम सामग्रीमा विविधताहरूको सामना गर्नु पर्ने हुन सक्छ​। अनुसन्धान सामान्यतया समग्र स्तरमा रिपोर्ट गरिनेछ। तपाईंको व्यक्तिगत सहमति बिना तपाईको कुनै पनि ब्यक्तिगत पहिचान अनुसन्धान निष्कर्षमा सार्वजनिक रूपमा खुलाइने छैन​। ";
+
+"Terms.eduSectionFiveHeader" = "मेडिकल सामग्री र यसको प्रयोगको बारे अस्वीकरण ";
+
+
+"Terms.eduSectionFivePar" = "यहाँ प्रस्तुत जानकारी र विचारहरू व्याख्याकर्ताहरू, मोबाइल अनुप्रयोग सामग्री वा कुनै अन्य सेवाहरू मार्फत व्यक्त गरिएको तिनीहरूको आफ्नै हो र आवश्यक रूपमा Health4TheWorld अथवा यसका अरु कार्यक्रम वा बिभाग हरुको विचार, भनाई, वा पदहरू को प्रतिनिधित्व गर्दैन। यसमा भएका चैनल्, साईट, सथै सबै सामाग्रीहरु मेडिकल सुझावका लागी नभैइ, शैक्षिक प्रावधानका लागी मात्रै हो। यद्धपी मोबाइल अनुप्रयोगमा यी व्याख्यानहरू र शैक्षिक सामग्री प्रकाशनको समयमा वर्तमान र सही थियो भन्ने ​र निहित जानकारी सुनिश्चित गर्नका लागि उपयुक्त प्रयासहरू गरिएको छ, न त Health4TheWorld, न त कुनै वयक्ति जसले सुसज्जित सामग्री वा यस सामग्रीको प्रस्तुतिमा समावेश हुनुभएको छ, यहा भ​एका जानकारीहरु सही छन भन्ने कुरा मौखिक वा लिखित रूपमा ग्यारेन्टी गर्न सक्दैनन् । अग्रिम अनुसन्धान, निर्देशिकामा परिवर्तन, र हेरविचार को मानकका कारणले गर्दा Health4TheWorld ले यहाँ लेक्चरमा भ​एका जानकारी सही छन वा सही थिए भन्ने कुराको ग्यारेन्टी गर्न सक्दैन​। कुनै पनि व्याख्यान, पोडकास्ट, मोबाइल अनुप्रयोग वा अन्य मिडिया प्लेटफर्ममा समावेश चिजले स्पष्ट रूपमा वा स्पष्ट रूपमा नभएमा, कुनै पनि प्रकारको रोगी-चिकित्सको सम्बन्ध राख्दैन​। ";
+
+"Terms.yourContentSectionOneHeader" = "प्रयोगकर्ता सामग्री";
+
+"Terms.yourContentSectionOnePar" = "वेबसाइट, मोबाइल अनुप्रयोग र सेवाहरूले तपाईंलाई आफ्नो सामग्री, क्विजहरू, परीक्षाहरू, परियोजनाहरू, असाइनमेन्टहरू, र अन्य सामग्रीहरू जुन तपाइँले वेबसाइट र सेवाहरूको प्रयोगको साथमा बिना कुनै सीमा समावेश गर्न साझेदारी गर्न सक्षम गर्दछ। कुनै पनि डाटा, पाठ, लिङ्कहरू, भिडियो फाइलहरू, फोटाहरू, पोष्टहरू जुन तपाईंले फोरममा बनाउनु भएको छ, र जस्तै (\"प्रयोगकर्ता सामग्री \"), Health4TheWorld, प्रशिक्षक, र / वा अन्य प्रयोगकर्ताहरूसँग। यस्तो प्रयोगकर्ता सामग्री गैर गोपनीय र तपाइँले हाम्रो \"हाम्रो सम्पर्क\" पृष्ठ मार्फत वा Health4TheWorld को कुनै कर्मचारीलाई ईमेल गरेर दिईएको सामग्री समावेश गर्नुपर्नेछ। तपाई प्रतिनिधित्व र वारंट गर्नुहुन्छ कि तपाईंले Health4TheWorld लाई पठाउने सम्पूर्ण प्रयोगकर्ता सामग्री तपाइँको पूर्ण वास्तविक सामग्री हुनेछ (त्य्स सामग्रीको बाहेक जुन तपाईं यसको मालिकको अनुमति साथ प्रयोग गर्दै हुनुहुन्छ), र गलत, उल्लङ्घन वा अन्यथा कुनै पनि कपीराइट, ट्रेडमार्क, बौद्धिक सम्पदा वा कुनै तेस्रो पक्षका अन्य अधिकारहरू, गोपनीयता वा प्रचारसहित कुनै पनि अधिकार को उल्लङ्घन गर्दैन । ";
+
+"Terms.yourContentSectionTwoHeader" = "कसरी Health4TheWorld र अन्यले प्रयोगकर्ता सामग्री प्रयोग गर्न सक्छ";
+
+"Terms.yourContentSectionTwoPar" = "तपाइँले प्रयोगकर्ता सामग्री प्रदान गरेको खन्डमा, तपाइँ Health4TheWorld लाई पूर्ण-स्थानान्तरणयोग्य, रोयल्टी-फ्रि, स्थायी, सामूहिक, गैर-विशेष, प्रतिलिपि गर्न, वितरण, परिमार्जन गर्न, विश्वव्यापी इजाजतपत्र प्रदान गरी प्रयोगकर्ता सामग्री सार्वजनिक रूपमा प्रदर्शन, सार्वजनिक प्रदर्शन, र अन्यथा प्रयोगकोलागी अनुमती दिनुहुन्छ​। यस लाइसेन्समा Health4TheWorld ले सहभगी संस्थानहरुलाई आँफ़ुसँग​ दर्ता भ​एका प्रयोगकर्ता सामग्री, कुनै पनि वेबसाइट र सेवाहरुमार्फ़त् उपयोग गर्ने अधिकार दिन सक्ने हुन्छ​। अधिकार को रूप मा अन्य शर्तों को कुनै अन्य कानूनी अधिकार को प्रतिबंधित हुनेछ Health4TheWorld प्रयोगकर्ता सामग्रीमा हुन सक्छ, उदाहरणका लागि अन्य इजाजत पत्रहरू अन्तर्गत, वा कुनैपनि तरिकाले हामी छनौट गर्ने कुनै पनि प्रयोगकर्ता सामग्री प्रयोग गर्न हाम्रो अधिकारहरू। हामी थप कुनै पनि कारणका लागि साथै प्रयोगकर्ताहरूले सर्तहरूको उल्लङ्घन गरेको भान भ​एमा प्रयोगकर्ता सामग्री हटाउन वा परिमार्जन गर्ने अधिकार सुरक्षित गर्छौं ।  ";
+
+"Terms.yourContentSectionThreeHeader" = "प्रतिक्रिया";
+
+"Terms.yourContentSectionThreePar" = "हामी तपाईंको सुझावहरू, विचारहरू, टिप्पणीहरू, र वेबसाइट वा सेवाहरूको सम्बन्धमा अन्य प्रतिक्रियाहरूको स्वागत गर्दछौं। कुनै पनि प्रतिक्रिया पेश गरेर, तपाइँ हामीलाई कुनै पनि प्रतिबन्ध बिना प्रतिक्रिया प्रयोग गर्न अधिकार प्रदान गर्नुहुन्छ​। तपाईंको प्रतिक्रिया स्वीकार गरेर, Health4TheWorld ले आफ्नो कर्मचारी या ठेकेदार द्वारा विकसित या अन्य स्रोतबाट प्राप्त Health4TheWorld ले पहिले जानेको प्रतिक्रिया को उपयोग गर्न कुनै पनि अधिकार कम गर्दैन। ";
+
+"Terms.securityParagraph" = "हामी हाम्रो प्रयोगकर्ताहरूको सुरक्षाको हेरचाह गर्दछौं। हामीले तपाईंको खाताको र सम्बन्धित जानकारीको सुरक्षा र​ संरक्षणको काम गर्दा, अनधिकृत तेस्रो पक्षहरूले हाम्रो सुरक्षा उपायहरूलाई हराउन सक्दैन​ भन्ने Health4TheWorld ले ग्यारेन्टी गर्न सक्दैन। कुनै पनि सम्झौता वा तपाईंको खाताको अनधिकृत प्रयोगको बारेमा कृपया हामीलाई contact@Health4TheWorld.org मा इमेल गरेर तुरुन्त​ सूचित गर्नुहोस्।";
+
+"Terms.thirdPartyContentPar" = "वेबसाइट र / वा सेवा मार्फत, तपाइँसँग प्रशिक्षकहरू, अन्य प्रयोगकर्ताहरू, र / वा अन्य तेस्रो पक्षहरू र वेबसाइटहरू, सफ्टवेयर र सेवाहरूमा राखिएका लिङ्कहरूको द्वारा प्रदान गरिएको सामग्रीको पहुँच र / वा उपयोग गर्न सक्ने क्षमता हुनेछ। / वा तेस्रो पक्षहरूले नियन्त्रण गर्दछ। Health4TheWorld मा कुनै नियन्त्रण छैन, र सामग्री, गोपनीयता नीतिहरू, वा कुनै तेस्रो पक्ष वेबसाइटहरू वा सामग्री प्रदायकहरूको प्रथाहरू र कुनै पनि तेस्रो पार्टी सामग्री, वेबसाइटमा, सेवा वा ग्यारेन्टी गर्न सक्दैन भन्ने गम्भीरता छैन। अन्यथा सामग्रीबाट मुक्त हुनेछ जुन तपाईले जुनसुकै अन्यथा अनुचित वा अन्यथा अनुचित वा मालवेयर वा अन्य प्रोटेमेन्टन्टहरू फेला पार्न सक्दछ जुन तपाइँको कम्प्यूटर, मोबाइल उपकरण, वा कुनैपनि फाईलहरू हानिकारक हुन सक्दछ। वेबसाइट प्रयोग गरी, मोबाइल अनुप्रयोग वा सेवा प्रयोग गरी तपाइँलाई Health4TheWorld देखि र हामी स्पष्ट रूप देखि कुनै पनि उत्तरदायित्व या सम्बन्धित सम्बन्धित या तपाईंको उपयोग देखि उत्पन्न हुन सक्छ या यस्तो तृतीय पक्ष सामाग्री या वेबसाइट को उपयोग .नयाँ तृतीय पक्ष softw को कुनै पनि उपयोग हो वा सेवा तपाईको जोखिममा छ र तेस्रो पक्ष वा तेस्रो पक्षहरूले अतिरिक्त वा फरक सर्तहरू र प्रतिबन्धलाई अधीन गर्न सक्दछ यस्तो सफ्टवेयर वा त्यस्ता सेवाहरू सञ्चालन गर्ने। तदनुसार, हामी तपाइँलाई सजग रहनु प्रोत्साहन र तेस्रो पार्टी सफ्टवेयरको प्रत्येक वस्तुको लागि सर्तहरू र सर्तहरू र गोपनीयता नीति पढ्न प्रोत्साहन गर्दछौं वा तपाइँका वेबसाइट वा सेवाहरूको माध्यमबाट प्रत्येक तेस्रो पक्ष सेवा। ";
+
+"Terms.copyrightPar" = "Health4TheWorld हाम्रो प्रयोगकर्ताहरू, सहभागी संस्थाहरू र अन्य तेस्रो पक्षहरूको बौद्धिक सम्पदा ​र अधिकारको आदर गर्दछ र वेबसाइट वा सेवाहरू प्रयोग गर्दा हाम्रा प्रयोगकर्ताहरूले त्यसै गर्न चाहानुहुन्छ। हामीले Health4TheWorld प्रतिलिपि अधिकार र ट्रेडमार्क नीति लागू गरेका छौं र लागू गर्नुभएको छ। डिजिटल मिलेनियम प्रतिलिपि अधिकार अधिनियम सहित लागू कानून अनुसार। ";
+
+"Terms.modifyingPar" = "हामी लगातार हाम्रो वेबसाइट, मोबाइल अनुप्रयोगहरू र सेवाहरू सुधार गर्दै छौं। हामी कार्य, विशेषताहरू वा आवश्यकताहरू थप्न वा हटाउन सक्छौं, र हामी सबैले हाम्रो वेबसाइट वा सेवाहरूको प्रकार्यलाई निलम्बन गर्न वा रोक्न सक्दछौं। तदनुसार, स्वास्थ्य चौकीले तपाइँको वेबसाइट र कुनै पनि कारणको लागि कुनै पनि सेवाको प्रयोग समाप्त गर्न सक्छ। यदि तपाइँले भुक्तान गरिएको सुविधा वा वेबसाइटको प्रयोग गर्नुहुन्छ, मोबाइल अनुप्रयोग वा सेवाहरू समाप्त भएमा, फिर्ता रकम हाम्रो रकम फिर्ता नीतिको अधीनमा उपलब्ध हुन सक्छ। कुनै पनि Health4TheWorld, यसको सहभागी संस्थाहरू र शिक्षकहरू, यसको योगदानकर्ताहरू, प्रायोजकहरू, र अन्य व्यवसायिक साझेदारहरू, र उनीहरूको सम्बन्धित कर्मचारीहरू, अधिकारीहरू, निर्देशकहरू, प्रतिनिधिहरू, ठेकेदारहरू र अन्य एजेन्टहरू (सामूहिक रूपमा \"हेल्थ 4 द वर्ल्ड पार्टीहरू \") सँग कुनैपनि कार्यको लागि तपाईंसँग कुनै पनि दायित्व हुनेछ। तपाईं कुनै पनि समयमा हाम्रो वेबसाइट वा सेवाहरू प्रयोग गर्न रोक्न सक्नुहुन्छ। ";
+
+
+"Terms.disclaimersParOne" = "वेबसाइट, मोबाइल अनुप्रयोग र कुनै जानकारी, सामग्री वा सेवा उपलब्ध गराउन वा वेबसाईट र मोबाइल अनुप्रयोगमा उपलब्ध गराईएको छ\" कुनै पनि प्रकारको वारंटी \"को रूपमा \" एएस उपलब्ध छ \"र\" AS उपलब्ध \" एक्सप्रेस, सम्बद्ध वा अन्यथा), लिङ्क सहित, लिखित कुनै पनि प्रकारका वारियन्सहरू, कार्यक्षमता, कुनै साझेदार र गैर-अपरिवर्तनको लागि फिटनेस, कुनै पनि निश्चित वारिटियन्सको रूपमा अतिरिक्त आवेदनको लागी उपयुक्त कानूनको विरूद्ध अस्वीकार गरिएको छैन। ";
+
+
+"Terms.disclaimersParTwo" = "हेल्थथ्रथ पार्टनर पार्टनरहरूले डराउँदैनन् कि वेबसाइट, मोबाइल एप्लिकेसन वा सर्भरहरू अप्रत्यक्ष वा त्रुटि-मुक्त प्रबन्धकमा सक्रिय हुन्छन्, कि वेबसाइट वा सेवाहरू त्रुटिहरू, भाइरसहरू वा अन्य हानिकारक घटकहरूबाट मुक्त छन्, वा त्यो सजावट वा सामग्री तपाईंको प्रदानका लागि वा विवरणहरू भेट्टाइनेछ। स्वास्थ्य सेवाहरू पनि खाता, पूर्णता, आम्दानी, वा वेबसाइट, मोबाइल अनुप्रयोग वा सेवा वा कुनै पनि प्रकार वा सामग्रीको योग्यता, पूर्णता, प्रतिबद्धता, वा कुनै पनि सहभागी हुन वा सामग्रीको बारेमा कुनै चासो छैन। उपलब्ध हुनेछ भनेर उपलब्ध गराइनेछ। वेबसाइट, मोबाइल अनुप्रयोग र सामग्रीको प्रयोग गरी सेवा वा सेवा वा वेबसाइट र मोबाइल अनुप्रयोगको माध्यमबाट प्राप्त गरिएको छ, तपाईंको मात्र जोखिममा छ। तपाईंको जानकारी, सामग्री, सफ्टवेयर वा डेटाको पहुँच वा डाउनलोड गर्नुहोस्। वेबसाइट, मोबाइल अनुप्रयोगहरू वा तपाईंको सन्दर्भमा कुनै पनि सन्दर्भ तपाईंको जोखिम र जोखिममा छ, र तपाईं आफ्नो सम्पत्तिको लागि कुनै पनि दु: खको लागि उत्तरदायी हुनेछ (जस्तै तपाईंको कम्प्यूटर प्रणाली) वा डाटाको नतिजा कि यी सामग्रीहरू, सफ्टवेयर वा डेटाको प्रयोगबाट वा परिणामहरू प्रयोग गर्दछ, स्वास्थ्यको रूपमा स्वास्थ्य सेवाको लागि प्रदान गरिएको अन्य बुझाइलाई असंबद्ध गर्नुहोस्। दुबई को हेरविचार को लागि, कुनै घटना मा स्वास्थ्य स्वास्थ्यहरु लाई कुनै पनि रोकथाम, त्रुटि, निवारण या वेबसाइट, मोबाइल अनुप्रयोग या सेवा मा या कुनै पनि देश को लागि क्षति को लागी तपाईंको लागी लागी हुन सक्दछ। कुनै पनि रोकथाम, त्रुटि, वा आचरणको घटनामा तपाईंको पूर्ण दुरुपयोग गर्नुपर्दछ कि हेलोथ्याथर्सलले भौतिक सुधार गर्ने सामग्री वा यदि हामीले त्यसो गर्न सक्दछौं, तपाईको वेबसाइट र / वा सेवाको प्रयोगलाई अस्वीकार गर्न।";
+
+"Terms.limitationsParOne" = "कानून अनुसार सीमा पारित अधिकतम सीमामा, स्वास्थ्य सेवाका पक्षहरू कुनै पनि प्रत्यक्ष, मौलिक, विशेष, गोपनीय, वा मौद्रिक हिसाबले, वा सुरक्षा वा क्षतिपूर्तिहरूको कुनै पनि कारणको लागि मिल्दैन, जो पूर्ण रूपमा पूर्ण रूपमा वा निस्क्रिय हुन्छ, वा कुनै पनि नोकसान, डाटा, गोडविल, वा अन्य अज्ञात ढङ्गहरू, बाट परिणाम: (ए) तपाईंको वेबसाइट, मोबाइल अनुप्रयोग वा सेवाहरू प्रयोग गर्न वा प्रयोग गर्न वा पहुँच गर्न वा प्रयोग गर्न वा प्रयोग गर्न; (बी) कुनै पनि पक्षको कुनै पनि सल्लाह (कुनै पनि सामग्री, वेबसाइट, मोबाइल अनुप्रयोग वा सर्भरबाट प्राप्त गरिएको सामग्री, वा (C) अनुमोदित पहुँच, प्रयोग वा तपाईंको प्रयोगकर्ता सामग्रीको परिमार्जन, कुनै पनि सामाग्री, सीमित सामाग्री, कुनै पनि डिफेक्टरी, अफगानिस्तान वा अवैध कल्याण सहित; वा तपाईंको द्वारा प्रदान गरिएको कुनै जानकारीले कुनै पनि घटनामा वेबसाइटमा सम्बन्धित सबै क्लियम्सहरू र / वा सर्भरहरूमा प्रायः अमेरिकी डलर ($ 20) वा फिचरको कुल मात्राको बिरुद्ध सबै क्लियम्सहरूको लागि स्वास्थ्य सेवा प्रदान गर्दछ। HEALTH4THEWORLD पास्त  छ  (6) मासिक महिना को समयमा वेबसाइट, मोबाइल अनुप्रयोग र सेवाहरु को फिड कार्य को उपयोग को लागि प्रयोग गरिन्छ ";
+
+"Terms.limitationsParTwo" = "तपाईं अक्टोबरमा लिनुहोस् र अस्वीकार गर्नुहोला कि सम्झौताकर्ताहरू र सेवाहरूमा जिम्मेवारीको सीमिततालाई तपाइँले र स्वास्थ्य सेवाहरूबीचको जोखिमको अभाव र चासोको साटोको बारेमा बताउनुहुन्छ, र यी सीमाहरू स्वास्थ्यको लागि एक महत्त्वपूर्ण आधार हुन्। एउटा वेबसाइटमा र सेवाहरू बनाउन को लागी एक आर्थिक समस्यालाई तपाईं उपलब्ध गराउँदछ। ";
+
+"Terms.limitationsParThree" = "तपाईले काम गर्ने कुनै पनि कारणले वेबसाइट, मोबाइल अनुप्रयोग वा सर्भरको सम्बन्धमा कुनै पनि प्रतिक्रियाको सामना गर्नु आवश्यक हुन्छ (1) कार्य गतिविधिका अन्य कारणहरू, अन्यथा, कार्यको कारणले मात्र खराब छ।";
+
+"Terms.idemnificationPar" = "तपाईं health4TheWorld पार्टियों कुनै पनि र सबै दावी, देनदारियों, खर्च, र क्षतिहरू हानिकारक, रक्षा, र होल्ड गर्न सहमत छु, उचित वकील फीस र लागत सहित कुनै पनि तेस्रो पार्टी द्वारा उत्पन्न वा सम्बन्धित : (क) तपाईंको प्रयोग वा वेबसाइट र / वा सेवाहरूको प्रयोग यी सर्तहरूको उल्लङ्घनको उल्लङ्घनको प्रयोग गरी; (बी) कुनै पनि कानूनको उल्लङ्घन वा कुनै तेस्रो पक्षको अधिकार; (c) प्रयोगकर्ता सामग्री; वा (डी) वा उल्लंघनको कुनै पनि दावी वा बौद्धिक सम्पदाको दुरुपयोग वा तपाईंको द्वारा कुनै पनि व्यक्ति वा इकाईको अन्य स्वामित्व अधिकार। ";
+
+"Terms.governingParOne" = "सेवाहरू Health4TheWorld द्वारा व्यवस्थित गरिएको छ, जुन पाली अल्टो, क्यालिफोर्निया, संयुक्त राज्य अमरीकामा स्थित छ। तपाईं सहमत हुनुहुन्छ कि यी सर्तहरूसँग सम्बन्धित वा सम्बन्धित सर्तहरू संयुक्त राज्य अमेरिकाका कानुन र कानूनको द्वारा संचालित गरिनेछ। क्यालिफोर्निया राज्य, कानुनी प्रावधानहरूको यस विवादको बाहेक, तपाइँले अधिकृत क्षेत्र र संघीय र राज्य अदालतहरूमा विशेष स्थान र पालो अल्टो, क्यालिफोर्नियालाई कुनै पनि विवादको लागि कानुनी फोरमको रूपमा सेवा गर्ने, र कुनै पनि अपमान असुविधाजनक फोरमको रूपमा प्रयोग गरिन्छ ।";
+
+"Terms.governingParTwo" = "हेमनटक्टिभ वा अन्य इमानदार राहतको लागि दावीहरू बाहेक, सेवासँग सम्बन्धित दावीहरूको लागि जहाँ कुल रकमले दस हजार अमेरिकी डलर ($ 10,000.00 अमरीकी डालर) भन्दा कम छ, वा तपाइँ वा Health4TheWorld कुनै पनि समयमा चयन गर्न सक्नुहुनेछ। त्यसो भए उनीहरुसँगको सम्बन्धको बारेमा जानकारी गराईरहेकी थिईन। उनीहरु एक अर्काको साथमा बसेका थिए। प्रदाताले पक्ष वा साक्षीहरूको कुनै पनि व्यक्तिगत उपस्थिति समावेश गर्दैन, जबसम्म अन्यतया अन्य पक्षहरू द्वारा पारस्परिक रूपले सहमत भएन, बरु, मध्यस्थता, राहत, अनलाइन, टेलिफोन द्वारा लिखित, वा लिखित पेश्कीहरु को माध्यम ले मात्र खोज्न को लागी। मध्यस्थकर्ता द्वारा प्रदान गरिएको निर्णय सक्षम न्यायालयको कुनै पनि अदालतमा प्रवेश गर्न सकिन्छ। ";
+
+"Terms.generalTermsSectionOneHeader" = "सर्तहरूमा संशोधन";
+
+"Terms.generalTermsSectionOnePar" = "हामी कुनै पनि समयमा हाम्रो एकमात्र विवेकका शर्तहरू पुन: संशोधन गर्ने अधिकार आरक्षित गर्दछौं। सर्तहरूमा कुनैपनि परिमार्जनले हामीलाई पोस्ट गरेर तुरुन्तै प्रभावकारी हुने छ। सर्तहरूमा कुनै पनि भौतिक परिवर्तनका लागि, हामी सूचित गर्ने प्रयास गर्नेछौं। तपाईं यस्तो परिवर्तनहरूको; तथापि, हामी यी सर्तहरूमा परिवर्तनहरूको सूचित गर्न कुनै दायित्व मान्दैनौं। सबै अवस्थाहरूमा, तपाईंको सूचनाको निरन्तर प्रयोग र / वा सेवाहरू यस अधिसूचनाको प्रकाशित वा बिना सूचना बिना प्रकाशनको लागि बाध्यकारी स्वीकृतिको छनौट गर्दछ।";
+
+"Terms.generalTermsSectionTwoHeader" = "सफलता";
+
+"Terms.generalTermsSectionTwoPar" = "यी सर्तहरूमा तपाईंको सम्बन्धित उत्तराधिकारीहरूको लाभ उठाउन र अनिवार्य हुनेछ र प्रदान गर्दछ।";
+
+"Terms.generalTermsSectionThreeHeader" = "सेविरेबिलिटि";
+
+"Terms.generalTermsSectionThreePar" = "यदि यो जान्छ कि यी सर्तहरू को एक विशेष प्रावधान लागूयोग्य छैन, यसले यी सर्तहरूको कुनै अन्य प्रावधानलाई असर गर्दैन। यदि तपाइँ यी सर्तहरू पालन गर्नुहुन्न भने हामी तत्काल कार्य गर्नुहुन्न, यो हामी संकेत गर्दछौं कि हामीले कुनै पनि अधिकारलाई त्याग्नु पर्छ (जस्तै भविष्यमा कार्य गरिरहेको)। ";
+
+"Terms.generalTermsSectionFourHeader" = "भागीदारी";
+
+"Terms.generalTermsSectionFourPar" = "Health4TheWorld को सहभागी संस्थाहरूले नियमहरूको तेस्रो पक्ष लाभार्थीहरू हुन् र उनीसँग सम्बन्धित सर्तहरूको यी प्रावधानहरू लागू गर्न सक्छन्।";
+
+"Terms.generalTermsSectionFiveHeader" = "क्यालिफोर्निया प्रयोगकर्ताहरूको लागि सूचना";
+
+"Terms.generalTermsSectionFivePar" = "क्यालिफोर्निया सिविल कोड सेक्शन 1789.3 को तहत, क्यालिफोर्निया वेबसाइट प्रयोगकर्ताहरु लाई निम्न विशिष्ट उपभोक्ता अधिकार नोटिस को हकदार छन्: उपभोक्ता मामलाहरु कैलिफोर्निया विभाग को उपभोक्ता सेवा को डिपार्टमेंट एकाइ को लिखित मा संपर्क गर्न सकिन्छ 1625 एन। मार्केट ब्लेड., सुइट एस-202, सक्रेरेंटो, क्यालिफोर्निया 95834, वा फोन (800) 952-5210 मा। ";
+
+"Terms.referencedPoliciesBulletOne" = "स्वीकार्य प्रयोग नीति";
+
+"Terms.referencedPoliciesBulletTwo" = "गोपनीयता नीति";
+
+"Terms.referencedPoliciesBulletThree" = "प्रतिलिपि अधिकार र ट्रेडमार्क उल्लङ्घन नीति";
+
+"Terms.referencedPoliciesBulletFour" = "आदर गर्ने कोड";
+
+
+"Terms.acceptableUseParOne" = "Health4TheWorld को मिशन हाम्रो वेबसाइट (www.Health4TheWorld.org) को उपयोग को माध्यम ले वैश्विक स्वास्थ्य को सुधार को लागि स्वास्थ्य शैक्षिक सामाग्री को सार्वभौमिक उपयोग प्रदान गर्न को लागी छ, जसमा मीडिया, दस्तावेज, तस्वीरहरु र अन्य सामाग्री (सामूहिक रूप देखि, Health4TheWorld (\"सेवाहरू\") द्वारा प्रदान गरिएको कुनै पनि उत्पाद, सेवाहरू, र डाउनलोडयोग्य अनुप्रयोगहरूको पहुँच र साथै यसको पहुँचको लागि र हाम्रा शिक्षार्थकहरूको लागि निःशुल्क भाषण र अभिव्यक्तिको संरक्षणमा हामी दृढ विश्वास गर्दछौं। हाम्रो साथी संस्थाहरू र प्रशिक्षकहरूको लागि अकादमिक स्वतन्त्रताका साथ हामी पनि यो सुनिश्चित गर्न चाहन्छौं कि हाम्रा सबै शिक्षकहरू र प्रशिक्षकहरूले हाम्रो वेबसाइट र सेवाहरू प्रयोग गर्दा सुरक्षित र सहज महसूस गर्छन्। हाम्रो अनलाइन समुदायमा भाग लिन र अन्यथा हाम्रो वेबसाइट र सेवाहरू प्रयोग गर्दै। यद्यपि हामी नियमित रूपमा प्रयोगकर्ताद्वारा प्रदान गरिएको सामग्रीलाई स्क्रिन वा मनिटर गर्दैनौं, हामी हटाउन वा सम्पादन गर्न सक्दछौं। विचाराधीन सामग्री वा क्रियाकलापले हामीलाई रिपोर्ट गर्यो वा हाम्रो वेबसाइट वा सेवाहरूको सबै वा भागमा प्रयोगकर्ताको पहुँचलाई निलम्बित, असक्षम वा समाप्त पार्दछ। कृपया ध्यान दिनुहोस प्रयोगकर्ताहरू जुन 13 बर्षको उमेरमा हाम्रो वेबसाइट र सेवाहरू प्रयोग गर्दछन्, र हामी यी साना शिक्षकहरूको लागि अनुचित सामग्रीलाई अनुमति दिँदैनौं। ";
+
+"Terms.acceptableUseSectionOneHeader" = "तपाईँ सामग्रीहरू साझेदारी गर्न हाम्रो वेबसाइट वा सेवाहरू प्रयोग गर्न निषेध गरिएको छ:";
+
+"Terms.acceptableUseSectionOneBulletOne" = "अवैध सामग्री समावेश गर्दछ वा त्यस्तो गतिविधिहरू गर्न इरादासँग अवैध गतिविधिहरू बढाउँछ।";
+
+"Terms.acceptableUseSectionOneBulletTwo" = "विश्वसनीय धम्कीहरू समावेश गर्दछ वा वास्तविक विश्व हिंसाको कार्यहरू व्यवस्थित गर्दछ। हामी सामग्रीलाई अनुमति दिन्छौं जसले शारीरिक चोट वा सम्पत्तीको क्षतिको वास्तविक जोखिम सिर्जना गर्दछ, सार्थक रूपमा मानिसलाई वा सार्वजनिक सुरक्षालाई धम्की दिन्छ, वा हानिकारक वा हानिकारक बनाउँछ।" ;
+
+"Terms.acceptableUseSectionOneBulletThree" = "अन्यहरूलाई हानि गर्छौं। हामी मानिसहरू र सार्वजनिक रुचिको बारेमा टिप्पणीलाई प्रोत्साहित गर्छौं, तर अपमानजनक वा अन्यथा व्यक्तिगत व्यक्तिहरूमा निर्देशित अनुपयुक्त सामग्रीलाई अनुमति छैन।";
+
+"Terms.acceptableUseSectionOneBulletFour" = "बौद्धिक सम्पदा, गोप्य वा तेस्रो पक्षहरूको अन्य अधिकारहरू उल्लङ्घन गर्दछ। तपाइँसँग साझेदारी गर्ने अधिकार छैन भन्ने सामग्री साझा नगर्नु, सामग्रीको दावी गर्नुभएन जुन तपाईंले आफैंको रूपमा सिर्जना गर्नुभएन, वा अन्यथा उल्लङ्घन गर्न वा दावी गर्दछ। गलत अरू कसैको बौद्धिक सम्पदा वा अन्य अधिकारहरू। सधैं मूल मालिकमा प्रयोग गरिएको वा उद्धृत सामग्रीको विशेषता। ";
+
+"Terms.acceptableUseSectionOneBulletFive" = "अरूलाई स्प्याम गर्दछ। अप्रासंगिक वा अनुपयुक्त विज्ञापन, प्रोमोशनल, वा सान्दर्भिक सामग्री साझेदारी नगर्नुहोस्।";
+
+"Terms.acceptableUseSectionOneBulletSix" = "अन्यथा प्रयोगको Health4TheWorld प्रयोगका सर्तहरूको उल्लङ्घन गर्दछ। कृपया ध्यान दिनुहोस् कि निर्दिष्ट पाठ्यक्रमहरू थप नियम र आवश्यकता हुन सक्छ।";
+
+"Terms.acceptableUseSectionTwoHeader" = "तपाइँलाई पनि अनुमति छैन:";
+
+"Terms.acceptableUseSectionTwoBulletOne" = "स्थानीय, राज्य, राष्ट्रिय र अन्तर्राष्ट्रिय कानूनको उल्लङ्घन गर्ने वा तपाईंको कुनै पनि सम्झौताको दायित्व वा फाइनल कर्तव्यहरू उल्लङ्घन गर्ने सबै कुरा।";
+
+"Terms.acceptableUseSectionTwoBulletTwo" = "तपाईंको पासवर्ड साझा गर्नुहोस्, कसैलाई तपाईंको खातामा पहुँच गर्न दिनुहोस्, वा तपाईंको खातालाई जोखिममा राख्न सक्ने केहि पनि गर्न सक्दछ।";
+
+"Terms.acceptableUseSectionTwoBulletThree" = "कुनै अन्य प्रयोगकर्ताको खाता पहुँच गर्न प्रयास गर्नुहोस्।";
+
+"Terms.acceptableUseSectionTwoBulletFour" = "हाम्रो वेबसाइट वा सेवाहरूबाट कुनै पनि सामग्रीलाई पुन: प्रसोधन, स्थानान्तरण, बेच्न, पुन: पुन: प्रयोग गर्न वा अन्यथा दुरुपयोग नगरेसम्म, जबसम्म विशेष गरी यो गर्न अधिकृत छैन।";
+
+"Terms.acceptableUseSectionTwoBulletFive" = "पहुँच, सँगै जोड्नुहोस्, वा हाम्रो प्रणालीको गैर-सार्वजनिक क्षेत्रहरू प्रयोग नगरेसम्म, जबसम्म विशेष गरी यो गर्न अधिकृत छैन।";
+
+"Terms.acceptableUseSectionTwoBulletSix" = "हाम्रो प्रमाणिकरण वा सुरक्षा उपायहरू तोड्नुहोस् वा खारेज गर्नुहोस् वा अन्यथा हाम्रो कार्यान्वयन वा प्रणालीहरूको सञ्जालको परीक्षण गर्नुहोस्, जबसम्म विशेष गरी यो गर्ने अधिकार छैन।";
+
+"Terms.acceptableUseSectionTwoBulletSeven" = "हाम्रो रिवर्स ईन्जिनियर, रिवर्स इन्जिनियरिङ, डिम्पाइल, डिकोड, डिक्रीट, डिसेम्बर, वा कुनै पनि तरिका हाम्रो वेबसाइट वा सेवाको कुनै पनि भाग स्रोत स्रोत प्राप्त गर्न प्रयास गर्नुहोस्।";
+
+"Terms.acceptableUseSectionTwoBulletEight" = "कुनै पनि प्रयोगकर्ता, होस्ट, वा नेटवर्कसँग हस्तक्षेप गर्न प्रयास गर्नुहोस्, उदाहरणका लागि भाइरस, ओभरलोडिङ, स्प्यामिंग, वा मेल ब्लाफिग पठाएर।";
+
+"Terms.acceptableUseSectionTwoBulletNine" = "मालवेयर, भाइरसहरू, ट्रोजन घोडाहरू, केशहरू, स्पाइवेयर, बिग्रिएका फाईल वा अन्य यस्तै समान सफ्टवेयर वितरण गर्न हाम्रो वेबसाइट वा सेवाहरू प्रयोग गर्नुहोस् जुन अर्को कम्प्युटर वा सम्पत्तिको सञ्चालनलाई हान्न सक्छ।";
+
+
+"Terms.acceptableUseSectionTwoBulletTen" = "तपाईंको सम्बद्धता कुनै पनि व्यक्ति वा इकाईसँग गलत छ।";
+
+"Terms.acceptableUseSectionTwoBulletEleven" = "यस सूचीमा भएका कुनै पनि चीजलाई, कसै लाइ गर्न सहयोग व​ प्रोत्साहन गर्नुहोस्";
+
+"Terms.acceptableUseSectionThreeHeader" = "वस्तुहरूको निम्न सूची वेबसाइटमा निषेध गरिएको छ:";
+
+"Terms.acceptableUseSectionThreeBulletOne" = "सामग्री जसले अरूलाई दुर्व्यवहार, हिंसा वा धम्की दिन्छ";
+
+"Terms.acceptableUseSectionThreeBulletTwo" = "सामग्री जो तिनीहरूलाई प्रतिबद्ध गर्न आविष्कार गरी अवैध गतिविधिहरूबारे चर्चा गर्दछ;";
+
+"Terms.acceptableUseSectionThreeBulletThree" = "सामग्री जो अर्को बौद्धिक सम्पत्तिको उल्लङ्घन गर्छ, समावेश गर्दछ, तर प्रतिलिपि अधिकार वा ट्रेडमार्कहरूमा सीमित छैन;";
+
+"Terms.acceptableUseSectionThreeBulletFour" = "प्रोन, अश्लील, अश्लील, अनावश्यक वा गैरकानूनी सामग्री";
+
+"Terms.acceptableUseSectionThreeBulletFive" = "विज्ञापन वा व्यावसायिक अनुरोध को कुनै पनि प्रकार";
+
+"Terms.acceptableUseSectionThreeBulletSix"= "पार्टीको राजनीतिक गतिविधिसँग सम्बन्धित सामग्री";
+
+"Terms.acceptableUseSectionThreeBulletSeven" = "भाइरसहरू, ट्रोजन घोडाहरू, कीड़ेहरू, समय बमहरू, बिग्रिएका फाइलहरू, मालवेयरहरू, स्पाइवेयरहरू वा कुनै पनि अन्य समान सफ्टवेयर जुन अर्को कम्प्युटर वा सम्पत्तिको सञ्चालनलाई क्षति पुर्याउन सक्छ \"र";
+
+"Terms.acceptableUseSectionThreeBulletEight" = "सामग्री जो जानबूझी गलत जानकारी समावेश गर्दछ वा जुन अरूलाई भ्रामक गर्ने उद्देश्यको साथ पोस्ट गरिएको छ।";
+
+"Terms.acceptableUseSectionThreeParOne" = "यसबाहेक, तपाईं सहमत गर्न सहमत हुनुहुन्न, वा अन्यथा थोकमा डाउनलोड गर्नुहोस्, कुनै पनि वेबसाइट सामग्री सहित, तर प्रणालीमा प्रयोगकर्ताहरूको सूची वा डाइरेक्ट्रीमा सीमित छैन, अन-लाइन पाठपुस्तकहरू, प्रयोगकर्ता सामग्री वा प्रयोगकर्ता जानकारी तपाईं असम्भव गर्न सहमत हुनुहुन्न वा वेबसाइटको प्रयोग गर्दा तपाईंको पहिचानलाई गलत गर्न प्रयास गर्ने प्रयास गर्नुहोस् (यद्यपि तपाई स्वागतमा हुनुहुन्छ र फोरममा बेनामी प्रयोगकर्तानाम प्रयोग गर्न प्रोत्साहित गरिएको छ र तपाईंको पहिचान राख्ने तरिकामा कार्य गर्ने तरिकामा कार्यान्वयन गर्न)। ";
+
+"Terms.auUserContentSectionOneHeader" = "प्रयोगकर्ता का सामग्री प्रतिनिधि र वारेन्टी";
+
+"Terms.auUserContentSectionOnePar" = "वेबसाइट र / वा सेवाहरू मार्फत तपाईंको प्रयोगकर्ता सामग्री पेश गरेर वा वितरण गरेर, तपाइँ पुष्टि गर्नुहुन्छ, प्रतिनिधित्व गर्नुहोस् र वारंट गर्नुहोस् (1) जुन तपाइँसँग आवश्यक अधिकार, इजाजत पत्र, अनुमति र / वा अनुमतिहरू पुन: पेश र प्रकाशित गर्नका लागि। प्रयोगकर्ता सामग्री र Health4TheWorld र यसको प्रयोगकर्ताहरूलाई पुन: पेश, परिमार्जन, प्रकाशित र अन्यथा प्रयोग गर्न र तपाईंको प्रयोगकर्ता सामग्रीलाई तल दिइएका इजाजतपत्रहरूको साथमा तुरुन्तै वितरण गर्न, र (2) कि तपाइँ तपाइँको प्रयोगकर्ता सामग्री र व्यायाम पेश गर्नु पर्दछ। तल दिइएका इजाजतपत्रहरू उल्लङ्घन गर्ने वा तेस्रो पक्षको अधिकार उल्लङ्घन गर्ने वा उल्लङ्घन गर्नेछन्। तपाईले तपाइँको प्रयोगकर्ता सामग्रीको लागि मात्र जिम्मेवार हुनुहुन्छ र यसको पोस्टिङ वा प्रकाशनको नतीजाहरू। \"प्रयोगकर्ता सामग्री\" यहाँ परिभाषित गरिएको छ कुनै पनि र सबै सामग्री साझा गरी वा द्वारा पेश गरिएको तपाईं वेबसाइट र / वा सेवाहरूको कुनै पनि डाटा, पाठ, लिङ्कहरू, भिडियो फाइलहरू, तस्बिरहरू, कागजातहरू, सामग्रीहरू, वा तपाईँले पोस्ट गर्नुभएका पोस्टहरू बिना सीमाको प्रयोगमा सहभागी हुन। rums, र जस्तै (\"प्रयोगकर्ता सामग्री \") ";
+
+"Terms.auUserContentSectionTwoHeader" = "Health4TheWorld लाइ लाइसेन्स अनुदान";
+
+"Terms.auUserContentSectionTwoPar" = "तपाईंको प्रयोगकर्ता सामग्री पेश गरेर वा वितरण गरेर, तपाईले विश्वव्यापी, गैर-अनन्य, ट्राफिक योग्य, असाइनयोग्य, उप-लाइसेन्स योग्य, पुरा तरिकाले भुक्तानी-अप, रोयल्टी-फ्रि, सतत, अपरिवर्तनीय अधिकार र इजाजतपत्र प्रदान गर्नुहुनेछ। होस्ट, ट्राफिक, प्रदर्शन, प्रदर्शन, प्रदर्शन, पुन: वितरण, पुन: वितरण, र अन्यथा प्रयोग गर्नुहोस्, उपलब्ध गराउनुहोस् र तपाईंको प्रयोगकर्ताको सामग्रीको शोषण गर्नुहोस्, सम्पूर्ण वा भागमा, कुनै पनि फारममा र कुनै पनि मीडिया ढाँचामा र कुनै पनि माध्यमबाट च्यानलहरु (अब ज्ञात या बाद मा विकसित)। ";
+
+"Terms.auUserContentSectionThreeHeader" = "स्वास्थ्य 4TheWorld प्रयोगकर्ताहरूमा लाइसेन्स अनुदान";
+
+"Terms.auUserContentSectionThreePar" = "तपाईंको प्रयोगकर्ता सामग्री पेश गरेर वा वितरण गरेर, तपाईले वेबसाइट वा सेवाहरूको प्रत्येक प्रयोगकर्तालाई पहुँच गर्न र अनधिकृत इजाजतपत्र प्रदान गर्न र वेबसाइट र / वा सेवाहरूको प्रयोगको सम्बन्धमा तपाईंको प्रयोगकर्ता सामग्री प्रयोग गर्नुहोला। आफ्नै व्यक्तिगत उद्देश्यका लागि। ";
+
+"Terms.copyRightParOne" = "Health4TheWorld हाम्रो प्रशिक्षकहरू र अन्य तेस्रो पक्षहरूको बौद्धिक सम्पदा अधिकारको आदर गर्छ र स्वास्थ्य 4TheWorld.org वेबसाइट, र सम्बद्ध मिडिया कागजात, दस्तावेज, तस्वीरहरू वा अन्य सामग्री (सामूहिक रूपमा प्रयोग गरी प्रयोग गर्दा हाम्रा प्रयोगकर्ताहरूले त्यसै गर्न चाहन्छन्। \"वेबसाइट\"), वा कुनै सम्बन्धित सेवाहरू, उत्पादनहरू वा अनुप्रयोगहरू (\"सेवाहरू\")। हामी प्रयोगकर्ताहरूको खाताहरू निषेधित वा असक्षम गर्ने अधिकार सुरक्षित छौं जुन उल्लङ्घन गर्ने वा प्रतिलिपि अधिकारहरू, ट्रेडमार्कहरू, वा अन्य बौद्धिक व्यक्तिहरूको आरोप लगाएका छन् वा  तेस्रो पक्षको सम्पत्ति अधिकार। ";
+
+"Terms.copyrightSectionOneHeader" = "प्रतिलिपि अधिकार";
+
+"Terms.copyrightSectionOneParOne" = "1998 को डिजिटल मिलेनियम प्रतिलिपि अधिकार अधिनियम (\" DMCA \") प्रतिलिपि अधिकार मालिकहरूका लागि पुनरावेदन प्रदान गर्दछ जसले विश्वास गर्दछ कि इन्टरनेटमा देखा पर्ने सामग्रीले अमेरिकी प्रतिलिपि अधिकार कानून अन्तर्गत तिनीहरूको अधिकारलाई उल्लङ्घन गर्दछ। DMCA को एक प्रतिलिपि उपलब्ध छ http://www.copyright.gov/legislation/dmca.pdf मा स्थित अमेरिकाको प्रतिलिपि अधिकार कार्यालयको वेबसाइटमा छ";
+
+"Terms.copyrightSectionOneParagraphTwo" = "यदि तपाईं राम्रो विश्वासमा विश्वास गर्नुहुन्छ भने वेबसाइटमा समावेश गरिएको कुनै सामग्री वा तपाईंको प्रतिलिपि अधिकार (हरू) सेवाको उल्लङ्घन गरेर प्रदान गरिएको छ, DMCA ले प्रदान गर्दछ कि तपाइँ (वा एजेन्सी) ले हामीलाई एउटा सूचना पठाउन सक्छ कि उल्लङ्घनकारी सामग्री हटाइनेछ वा यसलाई ब्लक गर्न पहुँच गर्नुहोस्। ";
+
+"Terms.copyrightSectionOneParThree" = "DMCA को अधिसूचनाहरू निम्न जानकारी समावेश गर्नुपर्छ:";
+
+"Terms.copyrightSectionOneBulletOne" = "एक व्यक्तिको भौतिक वा इलेक्ट्रोनिक हस्ताक्षर जो कि कथित रूपमा उल्लङ्घन गरिएको विशेष अधिकारको मालिकको तर्फबाट कार्यान्वयन गर्न अधिकृत";
+
+"Terms.copyrightSectionOneBulletTwo" = "उल्लङ्घन गर्ने दाबी गरिएको दाबी गरिएको प्रतिलिपि अधिकारको पहिचान (वा, यदि प्रतिलिपि अधिकार काम गर्ने वेबसाइटमा अवस्थित छ वा सेवाको माध्यमद्वारा प्रदान गरिएको एक सूचना, यस्तो कार्यहरूको प्रतिनिधि सूची)";
+
+"Terms.copyrightSectionOneBulletThree" = "उल्लङ्घन गर्ने वा उल्लङ्घन गतिविधिको विषय भन्ने सामग्रीको पहिचान, र स्वास्थ्य 4TheWorld लाई वेबसाइट वा सेवामा सामग्री फेला पार्न अनुमति पर्याप्त रूपमा जानकारी गरिन्छ";
+
+"Terms.copyrightSectionOneBulletFour" = "The name, address, telephone number, and email address (if available) of the complaining party";
+
+"Terms .copyrightSectionOneBulletFour" = "उजुरी पार्टी को नाम, ठेगाना, टेलिफोन नम्बर, र ईमेल ठेगाना (उपलब्ध छ भने);";
+
+"Terms.copyrightSectionOneBulletFive" = "एक ब्यान जसमा उजुरी पक्षलाई राम्रो विश्वास छ की कथित तरिकाले सामग्रीको प्रयोग प्रतिलिपि अधिकार मालिक, यसको दलाल वा कानुनी तवरबाट​ अधिकृत छैन​, र​";
+
+"Terms.copyrightSectionOneBulletSix" = "एक बयान, भ्कुटो कसम खाने काम को दण्ड अन्तर्गत सूचना मा जानकारी सही छ भनेर र उजुरी गर्ने पार्टी कथित उल्लङ्घन छ कि प्रतिलिपि अधिकार मालिक को तर्फबाट कदम चाल्न अधिकृत छ।";
+
 "Terms.copyRightSectionOneParFour" = "Notices must meet the then-current statutory requirements imposed by the DMCA. Notices and counter-notices with respect to the Website and/or Services can either be sent:";
-"Terms.copyrightSectionOneBulletsTwoOne" = "Via mail to: Copyright Agent, Health4TheWorld, 501 Forest Ave Apt 1207, Palo Alto CA 94301";
-"Terms.copyrightSectionOneBulletsTwoTwo" = "Via email to: contact@health4theworld.org";
-"Terms.copyrightSectionOneParFive" = "We suggest that you consult your legal advisor before filing a DMCA notice, as false claims under the DMCA may subject filers to statutory penalties.";
-"Terms.copyrightSectionTwoHeader" = "Trademarks";
-"Terms.sectionTwoPar" = "Health4TheWorld also respects the trademark rights of others. Accounts containing content that intentionally misleads others or violates a third-party’s trademark rights may be modified, suspended, disabled, or terminated by Health4TheWorld in its sole discretion, without notice. If you are concerned that someone may be using your trademark in an infringing or unauthorized manner on our Website or Services, please email us at contact@Health4TheWorld.org, and we will review your complaint. If we deem appropriate, we may remove the offending content, warn the user who posted the content, and/or temporarily or permanently suspend or disable the individual’s account.";
-"Terms.honorCodeParOne" = "All users participating in any class must agree to abide by the following code of conduct. I hereby agree:";
-"Terms.honorCodeBulletOne" = "I will register for only one (1) user account on Health4TheWorld.com.";
-"Terms.honorCodeBulletTwo" = "My answers to quizzes, exams, projects, and other assignments will be my own work (except for assignments that explicitly permit collaboration).";
-"Terms.honorCodeBulletThree" = "I will not make solutions to quizzes, exams, projects, and other assignments available to anyone else (except to the extent an assignment explicitly permits sharing solutions). This includes both solutions written by me, as well as any solutions provided by the course staff or others.";
-"Terms.honorCodeBulletFour" = "I will not engage in any other activities that will dishonestly improve my results or dishonestly improve or hurt the results of others.";
->>>>>>> master
 
+"Terms.copyRightSectionOneParFour" = "सूचनाहरूले DMCA द्वारा तोक्ने हालको वैधानिक आवश्यकताहरू पूरा गर्नु पर्छ। वेबसाइट र / वा सेवाको सन्दर्भमा सूचना र काउन्टर सूचनाहरू पठाउन सकिन्छ:";
+
+"Terms.copyrightSectionOneBulletsTwoOne" = "Via mail to: Copyright Agent, Health4TheWorld, 501 Forest Ave Apt 1207, Palo Alto CA 94301";
+
+"Terms.copyrightSectionOneBulletsTwoOne" = "मेल मार्फत: प्रतिलिपि अधिकार एजेन्ट, हेल्थ 4 द वर्ल्ड, 501 वन एव एट 1207, पालो अल्टो सीए 9 4301";
+
+"Terms.copyrightSectionOneBulletsTwoTwo" = "ईमेल मार्फत: contact@health4theworld.org";
+
+"Terms.copyrightSectionOneParFive" = "हामी सुझाव दिन्छौं कि तपाइँ DMCA सूचना दावी गर्नु अघि तपाइँको कानूनी सल्लाहकारलाई सल्लाह लिनुहोला, किनभने DMCA अन्तर्गत गलत दावीहरूले वैधानिक दण्डमा फाइल गर्न सक्छ।";
+
+"Terms.copyrightSectionTwoHeader" = "ट्रेडमार्क";
+
+"Terms.sectionTwoPar" = "Health4TheWorld ले अरूलाई ट्रेडमार्क अधिकारको पनि आदर गर्दछ। खाताहरूमा सामूहिक रूपमा गुप्तता वा खाताहरू तेस्रो-पक्षका ट्रेडमार्क अधिकारहरू उल्लङ्घन गर्न, निलम्बित, असक्षम, वा समाप्त हुन सक्दछ खाताहरू बिनाको विवेकमा स्वास्थ्य 4TheWorld द्वारा, बिना सूचना यदि तपाइँ चिन्तित हुनुहुन्छ कि कसैले हाम्रो वेबसाइट वा सेवाहरूमा उल्लङ्घन वा अनधिकृत तरिकामा तपाईंको ट्रेडमार्क प्रयोग गर्न सक्दछ भने, कृपया हामीलाई सम्पर्क गर्नुहोस् ईमेल: contact@Health4TheWorld.org मा, र हामी तपाईंको उजूरीको समीक्षा गर्नेछौं। अपमानजनक सामग्री, सामग्री पोस्ट गर्ने प्रयोगकर्तालाई चेतावनी दिनुहोस्, र / वा अस्थायी रूपमा वा स्थायी रूपमा निलम्बित वा व्यक्तिगत खाताको असक्षम पार्नुहोस्।";
+
+"Terms.honorCodeParOne" = "कुनै पनि कक्षामा सहभागी सबै प्रयोगकर्ताहरू आचरणको निम्न कोड पालन गर्न सहमत हुनुपर्दछ। म यहाँ सम्म सहमत छु:";
+
+"Terms.honorCodeBulletOne" = "म Health 4TheWorld.com मा केवल एक (1) प्रयोगकर्ता खाताको लागि दर्ता गर्नेछु।";
+
+"Terms.honorCodeBulletTwo" = "क्विजहरू, परीक्षाहरू, परियोजनाहरू, र अन्य असाइनमेन्टहरूमा जवाफहरू मेरो आफ्नै हुनेछ (असाइनमेन्टका लागि जो स्पष्ट रूपमा सहयोग अनुमति दिइनेछ)।";
+
+"Terms.honorCodeBulletThree" = "म कसैको लागि उपलब्ध प्रश्नहरू, परीक्षाहरू, परियोजनाहरू, र अन्य असाइनमेन्टहरूको समाधान गर्दैनन् (हदसम्म असाइनमेन्ट स्पष्ट रूपमा साझेदारी समाधानहरू अनुमति दिन्छ)। येस्मा मेरो द्वारा लिखित दुवै समाधानहरू साथै पाठ्यक्रम कर्मचारी वा अरुलाई प्रदान गरिएको कुनै पनि समाधान छ​। ";
+
+
+"Terms.honorCodeBulletFour" = "म कुनै पनि अन्य गतिविधिहरूमा संलग्न हुनुहुने छैन जुन मेरो नतिजालाई बेवास्ता गर्दछ वा बेवास्तापूर्वक अरूको परिणामलाई सुधार गर्न वा चोट पुर्याउँदछ।";
+
+///*Risk Factors */
+///*जोखिम कारकहरू*/
+//
+"Learn.riskFactorsForStroke" = "स्ट्रोकका लागि खतराहरू";
+"Learn.riskFactorsOne" = "उच्च रक्तचाप";
+
+"Learn.riskFactorsTwo" = "मुटुु  रोग्";
+
+"Learn.riskFactorsThree" = "धुम्रपान ";
+
+"Learn.riskFactorsFour" = "मधुमेह ";
+
+"Learn.riskFactorsFive" = "पूर्व स्ट्रोक";
+
+/*Chat Bot*/
+
+
+/* CHATBOT */
+"Chatbot.no" = "होइन";
+"Chatbot.yes" = "हो";
+"Chatbot.lonelybutton1" = "३६० चलद्रिश्य​ (videos) हेर्नुहोस";
+"Chatbot.lonelybutton2" = "संगीत सुन्नुहोस";
+"Chatbot.lonelybutton3" = "प्रेरक उद्धरण (भनाई)";
+"Chatbot.lonelybutton4" = "पक्ष्घात कसरत् भिडियो";
+"Chatbot.lonelybutton5" = "सामना गर्न​ सुझाव लिनुहोस";
+"Chatbot.lonelyoptions" = "तपाई के गर्न चाहनुहुन्छ​";
+"Chatbot.exit" = "बाहिर";
+"Chatbot.icon1message" = "राम्रो";
+"Chatbot.feelingbutton1" = "एक्लोपान?";
+"Chatbot.feelingbutton2" = "चाँडो सन्चो भछैन?";
+"Chatbot.feelingbutton3" = "दु:चीन्ता?";
+"Chatbot.feelingbutton4" = "उदासिनता?";
+"Chatbot.feelingbutton5" = "सुत्न सक्नुभछैन​?";
+"Chatbot.feelingbutton6" = "थकै लगेको छ​?";
+"Chatbot.feelingmessage1" = "एक्लोपन";
+"Chatbot.feelingmessage2" = "स्वस्थ्यलाभ";
+"Chatbot.feelingmessage3" = "दु:चीन्ता";
+"Chatbot.feelingmessage4" = "उदासिनता";
+"Chatbot.feelingmessage5" = "निन्द्रा लागेको";
+"Chatbot.feelingmessage6" = "थकान​";
+
+"Language change" ="भाषा परिवर्तन" ;

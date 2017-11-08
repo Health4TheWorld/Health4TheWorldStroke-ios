@@ -16,6 +16,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EnterViewController : UIViewController <UIGestureRecognizerDelegate>
+@interface EnterViewController : UIViewController <UIGestureRecognizerDelegate, UITableViewDataSource,UITableViewDelegate>{
+    //UIPickerViewDelegate, UIPickerViewDataSource
+    NSArray *arrLanguage;
+    NSArray *arrKey;
+    NSString *selectedLanguage;
+}
 
 @end

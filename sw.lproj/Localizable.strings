@@ -22,6 +22,7 @@
 "Enter.seventhQuote" = "\"Kuweka malengo ndio hatua ya kwanza katika kugeuza kisichoonekana kuonekana.\"";
 "Enter.seventhAuthor" = "– Tony Robbins";
 "Enter.enterButton" = "Ingia";
+"Enter.LanguageChange" = "Mabadiliko ya lugha";
 //
 ///* HOME VIEW CONTROLLER */
 "Home.title" = "Nyumbani";
@@ -412,3 +413,26 @@
 "Terms.honorCodeBulletFour" = "Sitashiriki katika shughuli zingine zozote ambazo zitaweza kuboresha matokeo yangu kwa udanganyifu au kuboresha kwa udanganyifu au kuumiza matokeo ya wengine.";
 
 
+/* CHATBOT */
+"Chatbot.no" = "HAPANA";
+"Chatbot.yes" = "NDIO";
+"Chatbot.lonelybutton1" = "Tazama video 360";
+"Chatbot.lonelybutton2" = "Sikiliza muziki";
+"Chatbot.lonelybutton3" = "Maneno ya kuhimiza";
+"Chatbot.lonelybutton4" = "Video ya mazoezi ya kiharusi";
+"Chatbot.lonelybutton5" = "Pata vidokezo vya kukabiliana na hili";
+"Chatbot.lonelyoptions" = "Unataka kufanya nini";
+"Chatbot.exit" = "TOKA";
+"Chatbot.icon1message" = "nzuri";
+"Chatbot.feelingbutton1" = "upweke?";
+"Chatbot.feelingbutton2" = "si kupona hivi karibuni?";
+"Chatbot.feelingbutton3" = "Wasiwasi?";
+"Chatbot.feelingbutton4" = "Huzuni?";
+"Chatbot.feelingbutton5" = "Huwezi kulala?";
+"Chatbot.feelingbutton6" = "Unahisi umechoka?";
+"Chatbot.feelingmessage1" = "Upweke";
+"Chatbot.feelingmessage2" = "Kupona";
+"Chatbot.feelingmessage3" = "Wasiwasi";
+"Chatbot.feelingmessage4" = "Huzuni";
+"Chatbot.feelingmessage5" = "Usingizi";
+"Chatbot.feelingmessage6" = "Uchovu";
