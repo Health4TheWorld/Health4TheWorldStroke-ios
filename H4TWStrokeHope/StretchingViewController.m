@@ -12,6 +12,7 @@
 #import "HomeButton.h"
 #import "ArmsAndHandsViewController.h"
 #import "LegAndFeetViewController.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface StretchingViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -133,21 +134,28 @@
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"back Button", @"NA"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
 }
 /* Action listeners for buttons */
 
 - (void)legAndFeetPressed {
     LegAndFeetViewController *vc = [[LegAndFeetViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Leg And Feet", @"Sub-Section"]];
 }
 
 - (void)armsAndHandsPressed {
     ArmsAndHandsViewController *vc = [[ArmsAndHandsViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Arms And Hands", @"Sub-Section"]];
 }
 
 

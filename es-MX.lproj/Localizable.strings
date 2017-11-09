@@ -29,7 +29,7 @@
 "Enter.sixthAuthor" = "– Helen Keller";
 "Enter.seventhQuote" = "\"Establecer objetivos es el primer paso para convertir lo invisible en visible.\"";
 "Enter.seventhAuthor" = "– Tony Robbins";
-"Enter.enterButton" = "Entrar";
+"Enter.loginButton" = "iniciar sesión";
 
 /* HOME VIEW CONTROLLER */
 "Home.title" = "Inicio";
@@ -313,3 +313,4 @@
 "Chatbot.feelingmessage4" = "Deprimido";
 "Chatbot.feelingmessage5" = "Con sueño";
 "Chatbot.feelingmessage6" = "fatigado";
+

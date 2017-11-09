@@ -15,7 +15,8 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.h>
 
-@interface EnterViewController : UIViewController <UIGestureRecognizerDelegate>
-
+@interface EnterViewController : UIViewController <UIGestureRecognizerDelegate,AWSCognitoIdentityPasswordAuthentication>
+@property (nonatomic, strong) NSString * usernameText;
 @end

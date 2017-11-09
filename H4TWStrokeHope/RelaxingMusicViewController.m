@@ -10,6 +10,7 @@
 #import "RelaxingMusicViewCell.h"
 #import "Constants.h"
 #import "VideoViewController.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface RelaxingMusicViewController ()
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -72,6 +73,8 @@ static NSString * const reuseIdentifier = @"RelaxingMusicCell";
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{

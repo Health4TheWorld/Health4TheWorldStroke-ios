@@ -29,7 +29,7 @@
 "Enter.sixthAuthor" = "– Helen Keller";
 "Enter.seventhQuote" = "\"Définir les objectifs est la première étape pour transformer l'invisible en visible.\"";
 "Enter.seventhAuthor" = "– Tony Robbins";
-"Enter.enterButton" = "Entrée";
+"Enter.loginButton" = "s'identifier";
 
 /* HOME VIEW CONTROLLER */
 "Home.title" = "Accueil";
@@ -397,6 +397,7 @@
 "Terms.honorCodeBulletFour" = "I will not engage in any other activities that will dishonestly improve my results or dishonestly improve or hurt the results of others.";
 
 /* CHATBOT */
+
 "Chatbot.no" = "NON";
 "Chatbot.yes" = "OUI";
 "Chatbot.lonelybutton1" = "Regarder des vidéos 360";
@@ -404,7 +405,7 @@
 "Chatbot.lonelybutton3" = "Citations inspirantes";
 "Chatbot.lonelybutton4" = "Vidéo d'exercices d'AVC";
 "Chatbot.lonelybutton5" = "Obtenir des conseils pour résoudre ce problème";
-"Chatbot.lonelyoptions" = "Que voulez-vous faire?";";
+"Chatbot.lonelyoptions" = "Que voulez-vous faire?";
 "Chatbot.exit" = "SORTIE";
 "Chatbot.icon1message" = "bien";
 "Chatbot.feelingbutton1" = "Solitaire?";

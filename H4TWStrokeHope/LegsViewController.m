@@ -12,6 +12,7 @@
 #import "HomeButton.h"
 
 #import "VideoViewController.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface LegsViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -74,6 +75,8 @@
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"BackButton", @"NA"]];
 }
 
 
@@ -82,6 +85,8 @@
     videoVC.title = LEGS_TITLE_1A_TOE;
     [videoVC setUpVideo: VIDEO_1A_TOE_FLEXION];
     [self.navigationController pushViewController:videoVC animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"1A_Toe_Flexion", @"Video"]];
 }
 
 - (void)b1Pressed {
@@ -89,6 +94,8 @@
     videoVC.title = LEGS_TITLE_1B_KNEE;
     [videoVC setUpVideo: VIDEO_1B_KNEE_FLEXION];
     [self.navigationController pushViewController:videoVC animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"1B_Knee_Flexion", @"Video"]];
 }
 
 - (void)c1Pressed {
@@ -96,6 +103,8 @@
     videoVC.title = LEGS_TITLE_1C_HIP;
     [videoVC setUpVideo: VIDEO_1C_HIP_FLEXION];
     [self.navigationController pushViewController:videoVC animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"1C_Hip_Flexion", @"Video"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

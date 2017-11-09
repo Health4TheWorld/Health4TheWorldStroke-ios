@@ -9,6 +9,7 @@
 #import "QuotesViewController.h"
 #import "Constants.h"
 #import "QuotesCollectionViewCell.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface QuotesViewController ()
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -107,6 +108,8 @@ static NSString * const reuseIdentifier = @"QuotesCell";
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{

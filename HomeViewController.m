@@ -18,6 +18,8 @@
 #import "SurveysViewController.h"
 #import "ChatBotViewController.h"
 
+#import "AWSDynamoDBHelper.h"
+
 @interface HomeViewController ()
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -37,11 +39,27 @@
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     self.navigationItem.leftBarButtonItem = backButton;
     
+    [self createLogoutButton];
+    
     self.title = [NSLocalizedString(@"Home.title", nil) uppercaseString];
+    
+    // User table
+  /*  NSArray *userData = @[[NSNumber numberWithInteger:101],@"10/31/2017",@"10/31/2017",@"abc@gmail.com",@"abc",@"xyz",@"abcxyz"];
+    [self insertUserData: userData];
+   */
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [self setUpView];
+}
+
+- (void) createLogoutButton {
+    UIButton *logoutBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    logoutBtn.frame = CGRectMake(0, 0, 35, 25);
+    [logoutBtn setTitle: [NSLocalizedString(@"Home.LogoutButtontitle", nil) uppercaseString] forState: UIControlStateNormal];
+    [logoutBtn addTarget:self action:@selector(logoutPressed) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *logoutButton = [[UIBarButtonItem alloc] initWithCustomView:logoutBtn];
+    self.navigationItem.rightBarButtonItem = logoutButton;
 }
 
 - (void)setUpView {
@@ -143,6 +161,9 @@
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+     /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"tap",@"back",@"Home"]];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -153,31 +174,43 @@
 - (void)helpMeSpeakPressed {
     HelpMeSpeakViewController *vc = [[HelpMeSpeakViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Help Me Speak", @"Section"]];
 }
 
 - (void)exercisePressed {
     ExercisesViewController *vc = [[ExercisesViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Exercise", @"Section"]];
 }
 
 - (void)learnPressed {
     LearnViewController *vc = [[LearnViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Learn", @"Section"]];
 }
 
 - (void)remindersPressed {
     RemindersViewController *vc = [[RemindersViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Reminders", @"Section"]];
 }
 
 - (void)generalInfoPressed {
     GeneralInfoViewController *vc = [[GeneralInfoViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"General Info", @"Section"]];
 }
 
 - (void)surveysPressed {
     SurveysViewController *vc = [[SurveysViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Surveys", @"Section"]];
 }
 
 // Smiley icons setup
@@ -242,6 +275,8 @@
     ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
     vc.welcomeText = @"good";
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 1", @"Icon"]];
 }
 
 // Smiley icon2 pressed
@@ -250,6 +285,8 @@
     ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
     vc.welcomeText = @"good";
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 3", @"Icon"]];
 }
 
 // Smiley icon3 pressed
@@ -258,6 +295,8 @@
     ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
     vc.welcomeText = @"sad";
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 3", @"Icon"]];
 }
 
 // Smiley icon4 pressed
@@ -266,6 +305,8 @@
     ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
     vc.welcomeText = @"very sad";
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 4", @"Icon"]];
 }
 
 // Smiley icon5 pressed
@@ -274,6 +315,8 @@
     ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
     vc.welcomeText = @"painful";
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 5", @"Icon"]];
 }
 
 // Custom icon creator for Container View
@@ -286,14 +329,16 @@
     return button;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+// Logout button pressed
+- (void) logoutPressed {
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Logout", @"NA"]];
+    /* calculate user session information and load everything in the database table*/
+    
 }
-*/
+
+- (void) insertUserData: (NSArray*) data{
+    [AWSDynamoDBHelper InsertDataIntoUsersTable:data];
+}
 
 @end

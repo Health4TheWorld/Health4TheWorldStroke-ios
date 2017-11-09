@@ -11,6 +11,7 @@
 #import "Utils.h"
 #import "HomeButton.h"
 #import "VideoViewController.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface CoordinationViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -64,6 +65,8 @@
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 
 - (void)a3Pressed {
@@ -71,6 +74,8 @@
     videoVC.title =  COORDINATION_TITLE_3A_LEG_CONTROL_1;
     [videoVC setUpVideo: VIDEO_3A_LEG_CONTROL_1];
     [self.navigationController pushViewController:videoVC animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"3A_Leg_Control1", @"Video"]];
 }
 
 - (void)b3Pressed {
@@ -78,6 +83,8 @@
     videoVC.title = COORDINATION_TITLE_3B_LEG_CONTROL_2;
     [videoVC setUpVideo: VIDEO_3B_LEG_CONTROL_2];
     [self.navigationController pushViewController:videoVC animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"3B_Leg_Control2", @"Video"]];
 }
 
 

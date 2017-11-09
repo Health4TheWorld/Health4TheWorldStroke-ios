@@ -11,6 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "Utils.h"
 #import "HelpMeSpeakCollectionViewCell.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface HelpMeSpeakViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *searchTextField;
@@ -75,6 +76,8 @@
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 
 

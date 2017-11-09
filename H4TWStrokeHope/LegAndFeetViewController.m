@@ -13,6 +13,7 @@
 #import "AdductorsViewController.h"
 #import "HamstringsViewController.h"
 #import "DorsiflexorsViewController.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface LegAndFeetViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -76,21 +77,29 @@
 - (void)adductorsPressed {
     AdductorsViewController *vc = [[AdductorsViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Adductors", @"Sub-Section"]];
 }
 
 - (void)hamstringsPressed {
     HamstringsViewController *vc = [[HamstringsViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Hamstrings", @"Sub-Section"]];
 }
 
 - (void)dorsiflexorsPressed {
     DorsiflexorsViewController *vc = [[DorsiflexorsViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Dorsiflexors", @"Sub-Section"]];
 }
 
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 /*
 #pragma mark - Navigation

@@ -16,6 +16,7 @@
 #import "StretchingViewController.h"
 #import "FunctionalMobilityViewController.h"
 #import "MindExercisesViewController.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface ExercisesViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -177,6 +178,8 @@
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -192,21 +195,29 @@
 - (void)strengtheningPressed {
     StrengtheningViewController *vc = [[StrengtheningViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Strengthening", @"Sub-Section"]];
 }
 
 - (void)stretchingPressed {
     StretchingViewController *vc = [[StretchingViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Stretching", @"Sub-Section"]];
 }
 
 - (void)functionalMobilityPressed {
     FunctionalMobilityViewController *vc = [[FunctionalMobilityViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"FunationalMobility", @"Sub-Section"]];
 }
 
 - (void)mindExercisesPressed {
     MindExercisesViewController *vc = [[MindExercisesViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"MindExercises", @"Sub-Section"]];
 }
 /*
  #pragma mark - Navigation

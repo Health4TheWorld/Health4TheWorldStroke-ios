@@ -21,4 +21,7 @@
 + (NSInteger)numberOfLinesForString:(NSString *)str constrainedToWidth:(float)width withFont:(UIFont *)font;
 + (BOOL)day:(NSDate *)dayOne isSameDayAs:(NSDate *)dayTwo;
 + (NSDate *)getDateFromTime:(NSString *)time weekday:(NSString *)weekday;
++ (NSString *) getUDID ;
++ (NSDate *) getCurrentDateTime;
++ (NSString *) deviceName;
 @end

@@ -12,6 +12,7 @@
 #import "LearnContentViewController.h"
 #import "LearnContent.h"
 #import "LearnContentTypeTableViewCell.h"
+#import "AWSDynamoDBHelper.h"
 
 #define SPACE_BETWEEN_BEFAST_BUTTONS 10
 
@@ -153,6 +154,8 @@
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 
 

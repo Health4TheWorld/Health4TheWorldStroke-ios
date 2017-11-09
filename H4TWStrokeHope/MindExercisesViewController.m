@@ -11,6 +11,7 @@
 #import "Utils.h"
 #import "HomeButton.h"
 #import "VRViewController.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface MindExercisesViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -106,6 +107,8 @@
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -133,8 +136,10 @@
     vc.title = VR_TITLE_BELLS;
     //Video Instructions
     vc.instructions = VR_BELLS_INSTRUCTIONS;
-    
     [self.navigationController pushViewController:vc animated:YES];
+    
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"Bells", @"VR Video"]];
 }
 
 - (void)buddhaPressed {
@@ -149,6 +154,9 @@
     vc.instructions = VR_BUDDHA_INSTRUCTIONS;
     
     [self.navigationController pushViewController:vc animated:YES];
+    
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"Buddha", @"VR Video"]];
 }
 
 - (void)flagsPressed {
@@ -162,6 +170,9 @@
     //Video Instructions
     vc.instructions = VR_FLAGS_INSTRUCTIONS;
     [self.navigationController pushViewController:vc animated:YES];
+    
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"Flag", @"VR Video"]];
 }
 
 - (void)marketPlace1Pressed {
@@ -175,6 +186,9 @@
     //Video Instructions
     vc.instructions = VR_MARKET_PLACE_1_INSTRUCTIONS;
     [self.navigationController pushViewController:vc animated:YES];
+    
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"MarketPlace 1", @"VR Video"]];
 }
 
 - (void)marketPlace2Pressed {
@@ -188,6 +202,9 @@
     //Video Instructions
     vc.instructions = VR_MARKET_PLACE_2_INSTRUCTIONS;
     [self.navigationController pushViewController:vc animated:YES];
+    
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"MarketPlace 2", @"VR Video"]];
 }
 
 - (void)rockyPressed {
@@ -201,6 +218,9 @@
     //Video Instructions
     vc.instructions = VR_ROCKY_BEACH_INSTRUCTIONS;
     [self.navigationController pushViewController:vc animated:YES];
+    
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"Rocky Beach", @"VR Video"]];
 }
 
 - (void)sandyPressed {
@@ -214,6 +234,9 @@
     //Video Instructions
     vc.instructions = VR_SANDY_BEACH_INSTRUCTIONS;
     [self.navigationController pushViewController:vc animated:YES];
+    
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"Sandy Beach", @"VR Video"]];
 }
 
 @end

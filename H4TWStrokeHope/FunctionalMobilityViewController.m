@@ -11,6 +11,7 @@
 #import "Utils.h"
 #import "HomeButton.h"
 #import "VideoViewController.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface FunctionalMobilityViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -93,6 +94,8 @@
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -105,6 +108,9 @@
     videoVC.title = FUNCTIONALMOBILITY_4A_BRIDGE_HIP_LIFT;
     [videoVC setUpVideo: VIDEO_4A_BRIDGE_HIP_LIFT];
     [self.navigationController pushViewController:videoVC animated:YES];
+    
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"4A_Bridge_Hip_Lift", @"Video"]];
 }
 
 - (void)b4Pressed {
@@ -112,6 +118,8 @@
     videoVC.title = FUNCTIONALMOBILITY_4B_ARM_AND_TRUNK_STRENGTHENING;
     [videoVC setUpVideo: VIDEO_4B_ARM_AND_STRENGTHENING];
     [self.navigationController pushViewController:videoVC animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"4B_ArmAndTrunk_Strengthening", @"Video"]];
 }
 
 - (void)c4Pressed {
@@ -119,6 +127,8 @@
     videoVC.title = FUNCTIONALMOBILITY_4C_SIT_TO_STAND;
     [videoVC setUpVideo: VIDEO_4C_SIT_TO_STAND];
     [self.navigationController pushViewController:videoVC animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"4C_Sit_To_Stand", @"Video"]];
 }
 /*
 #pragma mark - Navigation
