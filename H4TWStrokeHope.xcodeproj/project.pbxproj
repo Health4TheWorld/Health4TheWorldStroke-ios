@@ -19,7 +19,6 @@
 		16AADA791F219CBD00D8A8EB /* RelaxingMusicViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16AADA771F219CBD00D8A8EB /* RelaxingMusicViewCell.xib */; };
 		16C3C37C1EEA37EF005991D5 /* ChatBotViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C3C37A1EEA37EF005991D5 /* ChatBotViewCell.m */; };
 		16C3C37D1EEA37EF005991D5 /* ChatBotViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C3C37B1EEA37EF005991D5 /* ChatBotViewCell.xib */; };
-		16DFC0C41EC7F2D3007322BF /* Bells.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 16DFC0C31EC7F2D3007322BF /* Bells.mp4 */; };
 		16EDA5641F00934100906891 /* QuotesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EDA5621F00934100906891 /* QuotesCollectionViewCell.m */; };
 		16EDA5651F00934100906891 /* QuotesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16EDA5631F00934100906891 /* QuotesCollectionViewCell.xib */; };
 		16EDA5691F009BD600906891 /* QuotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EDA5671F009BD600906891 /* QuotesViewController.m */; };
@@ -72,6 +71,8 @@
 		17E0BB441EA41370001FC7F3 /* FunctionalMobilityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB421EA41370001FC7F3 /* FunctionalMobilityViewController.xib */; };
 		17E0BB461EA4139E001FC7F3 /* ExercisesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB451EA4139E001FC7F3 /* ExercisesViewController.xib */; };
 		9D97478370E7B7322756F1D2 /* libPods-H4TWStrokeHope.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 680C4F0184FB59272CA0743A /* libPods-H4TWStrokeHope.a */; };
+		AB070D041FA2CDDC00D1C6F7 /* LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB070D031FA2CDDC00D1C6F7 /* LanguageManager.m */; };
+		ABCD3CA11F9AA7D500BA412E /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCD3CA01F9AA7D500BA412E /* NSBundle+Language.m */; };
 		CC11D11B1EB3B8DE0063E72A /* ReminderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1191EB3B8DE0063E72A /* ReminderTableViewCell.m */; };
 		CC11D11C1EB3B8DE0063E72A /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D11A1EB3B8DE0063E72A /* ReminderTableViewCell.xib */; };
 		CC11D11F1EB51AB40063E72A /* Reminder.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D11E1EB51AB40063E72A /* Reminder.m */; };
@@ -176,7 +177,6 @@
 		16C3C3791EEA37EF005991D5 /* ChatBotViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotViewCell.h; sourceTree = "<group>"; };
 		16C3C37A1EEA37EF005991D5 /* ChatBotViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBotViewCell.m; sourceTree = "<group>"; };
 		16C3C37B1EEA37EF005991D5 /* ChatBotViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatBotViewCell.xib; sourceTree = "<group>"; };
-		16DFC0C31EC7F2D3007322BF /* Bells.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bells.mp4; sourceTree = "<group>"; };
 		16EDA5611F00934100906891 /* QuotesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuotesCollectionViewCell.h; sourceTree = "<group>"; };
 		16EDA5621F00934100906891 /* QuotesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuotesCollectionViewCell.m; sourceTree = "<group>"; };
 		16EDA5631F00934100906891 /* QuotesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuotesCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -249,9 +249,19 @@
 		17E0BB451EA4139E001FC7F3 /* ExercisesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExercisesViewController.xib; sourceTree = "<group>"; };
 		680C4F0184FB59272CA0743A /* libPods-H4TWStrokeHope.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-H4TWStrokeHope.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E1D5BC6AFF988A11E4C970D /* Pods-H4TWStrokeHope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H4TWStrokeHope.release.xcconfig"; path = "Pods/Target Support Files/Pods-H4TWStrokeHope/Pods-H4TWStrokeHope.release.xcconfig"; sourceTree = "<group>"; };
+		AB0219D61F9069E700BDB667 /* sw */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sw; path = sw.lproj/Main.strings; sourceTree = "<group>"; };
+		AB0219D71F9069E700BDB667 /* sw */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sw; path = sw.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		AB0219D81F9069E700BDB667 /* sw */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sw; path = sw.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AB070CFF1FA2CD9500D1C6F7 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		AB070D021FA2CDDC00D1C6F7 /* LanguageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageManager.h; sourceTree = "<group>"; };
+		AB070D031FA2CDDC00D1C6F7 /* LanguageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageManager.m; sourceTree = "<group>"; };
+		AB070D051FA2F43500D1C6F7 /* H4TWStrokeHope.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H4TWStrokeHope.pch; sourceTree = SOURCE_ROOT; };
 		AB78C48B1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		AB78C48C1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		AB78C48D1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		ABCD3C9E1F9AA67700BA412E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		ABCD3C9F1F9AA7D500BA412E /* NSBundle+Language.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
+		ABCD3CA01F9AA7D500BA412E /* NSBundle+Language.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
 		CAB005F6C1031EB530EC7DE2 /* Pods-H4TWStrokeHope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H4TWStrokeHope.debug.xcconfig"; path = "Pods/Target Support Files/Pods-H4TWStrokeHope/Pods-H4TWStrokeHope.debug.xcconfig"; sourceTree = "<group>"; };
 		CC11D1181EB3B8DE0063E72A /* ReminderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderTableViewCell.h; sourceTree = "<group>"; };
 		CC11D1191EB3B8DE0063E72A /* ReminderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderTableViewCell.m; sourceTree = "<group>"; };
@@ -459,7 +469,6 @@
 		17E0BB271EA41032001FC7F3 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
-				16DFC0C31EC7F2D3007322BF /* Bells.mp4 */,
 				17593E6E1EA83B0300F37C74 /* 5BMaleDocWaving.m4v */,
 				17593E6F1EA83B0300F37C74 /* 5AFemaleDocWaving.m4v */,
 				17593E701EA83B0300F37C74 /* 4CSitToStand.m4v */,
@@ -541,6 +550,18 @@
 				6E1D5BC6AFF988A11E4C970D /* Pods-H4TWStrokeHope.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		AB0219D51F8D62B900BDB667 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				ABCD3C9F1F9AA7D500BA412E /* NSBundle+Language.h */,
+				ABCD3CA01F9AA7D500BA412E /* NSBundle+Language.m */,
+				AB070CFF1FA2CD9500D1C6F7 /* Defines.h */,
+				AB070D021FA2CDDC00D1C6F7 /* LanguageManager.h */,
+				AB070D031FA2CDDC00D1C6F7 /* LanguageManager.m */,
+			);
+			name = Language;
 			sourceTree = "<group>";
 		};
 		CC11D1251EB64FD00063E72A /* Add Reminder */ = {
@@ -629,6 +650,7 @@
 				17E0BB2B1EA41069001FC7F3 /* VideoViewController.m */,
 				17E0BB2C1EA41069001FC7F3 /* VideoViewController.xib */,
 				CC4C10B01E7A26DE00515CDC /* main.m */,
+				ABCD3C9E1F9AA67700BA412E /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -654,6 +676,7 @@
 		CC73E42C1E841EE0001131AF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				AB0219D51F8D62B900BDB667 /* Language */,
 				CC4C10E51E7A272C00515CDC /* Constants.h */,
 				CC4C10E61E7A272C00515CDC /* Constants.m */,
 				CCAE42A61E7C2F33006F490E /* Utils.h */,
@@ -667,6 +690,7 @@
 		CC73E4311E842354001131AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AB070D051FA2F43500D1C6F7 /* H4TWStrokeHope.pch */,
 				17E0BB271EA41032001FC7F3 /* Videos */,
 				CC73E4321E842369001131AF /* Fonts */,
 				CC73E42A1E841CAC001131AF /* Patagonia.jpg */,
@@ -916,6 +940,7 @@
 				"ne-NP",
 				"fil-PH",
 				"zh-Hans",
+				sw,
 			);
 			mainGroup = CC4C10A31E7A26DE00515CDC;
 			productRefGroup = CC4C10AD1E7A26DE00515CDC /* Products */;
@@ -949,7 +974,6 @@
 				CCEF72EC1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib in Resources */,
 				17E0BB291EA41043001FC7F3 /* 1AToeFlexion.m4v in Resources */,
 				167883AA1EE1029900B106AD /* ChatBotViewController.xib in Resources */,
-				16DFC0C41EC7F2D3007322BF /* Bells.mp4 in Resources */,
 				CCB7B4101E94136C0058C32E /* RemindersViewController.xib in Resources */,
 				17E0BB461EA4139E001FC7F3 /* ExercisesViewController.xib in Resources */,
 				CC73E43F1E842370001131AF /* Lato-BlackItalic.ttf in Resources */,
@@ -1081,6 +1105,7 @@
 				17E0BB251EA40F9A001FC7F3 /* MindExercisesViewController.m in Sources */,
 				179726B51EB3109B0053378E /* WebViewController.m in Sources */,
 				CC73E4591E86BD65001131AF /* HomeButton.m in Sources */,
+				ABCD3CA11F9AA7D500BA412E /* NSBundle+Language.m in Sources */,
 				CCEF72EB1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m in Sources */,
 				CCB7B4091E9413590058C32E /* LearnViewController.m in Sources */,
 				CC73E42F1E841EF4001131AF /* GraphicUtils.m in Sources */,
@@ -1133,6 +1158,7 @@
 				16EDA5691F009BD600906891 /* QuotesViewController.m in Sources */,
 				CC73E4511E86AB1C001131AF /* HomeViewController.m in Sources */,
 				CC11D11B1EB3B8DE0063E72A /* ReminderTableViewCell.m in Sources */,
+				AB070D041FA2CDDC00D1C6F7 /* LanguageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1177,6 +1203,7 @@
 				CC9D6BD41F3548540018F8CB /* ne-NP */,
 				CC3284711F38D1E200607ADE /* fil-PH */,
 				AB78C48D1F61D72E00226869 /* zh-Hans */,
+				AB0219D81F9069E700BDB667 /* sw */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1190,6 +1217,7 @@
 				CC9D6BD21F3548530018F8CB /* ne-NP */,
 				CC32846F1F38D1E100607ADE /* fil-PH */,
 				AB78C48B1F61D72E00226869 /* zh-Hans */,
+				AB0219D61F9069E700BDB667 /* sw */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1203,6 +1231,7 @@
 				CC9D6BD31F3548530018F8CB /* ne-NP */,
 				CC3284701F38D1E200607ADE /* fil-PH */,
 				AB78C48C1F61D72E00226869 /* zh-Hans */,
+				AB0219D71F9069E700BDB667 /* sw */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1251,7 +1280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "18fa7297-d947-4636-a9e1-c3c74a70ff2e";
@@ -1294,7 +1323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "18fa7297-d947-4636-a9e1-c3c74a70ff2e";
 				SDKROOT = iphoneos;
@@ -1310,7 +1339,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Health4TheWorld (VQM3AFB3H9)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VQM3AFB3H9;
+				GCC_PREFIX_HEADER = H4TWStrokeHope.pch;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1327,12 +1358,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Health4TheWorld (VQM3AFB3H9)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = VQM3AFB3H9;
+				GCC_PREFIX_HEADER = H4TWStrokeHope.pch;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "18fa7297-d947-4636-a9e1-c3c74a70ff2e";
-				PROVISIONING_PROFILE_SPECIFIER = "Health 4 The World Stroke";
+				PROVISIONING_PROFILE = "faf2258d-3f1e-4fcf-9285-71cbd0b2f1a9";
+				PROVISIONING_PROFILE_SPECIFIER = Health4TheWorld;
 			};
 			name = Release;
 		};
