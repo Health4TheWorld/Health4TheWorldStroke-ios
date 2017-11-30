@@ -116,6 +116,14 @@
     return [dateFormatter stringFromDate:[NSDate date]];
 }
 
++ (NSString *) getCurrentDate {
+    /* Current date time */
+    NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MM-dd-yyyy"];
+    
+    return [dateFormatter stringFromDate:[NSDate date]];
+}
+
 + (NSString *) deviceName
 {
     struct utsname systemInfo;

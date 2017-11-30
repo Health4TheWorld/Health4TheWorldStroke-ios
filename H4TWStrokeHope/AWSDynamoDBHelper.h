@@ -20,4 +20,5 @@
 + (AWSTask *) InsertDataIntoAppUsageTable:(NSArray*) data;
 + (void)loadAllUsageData ;
 + (void)saveAllUsageData ;
++ (void) calcSessionUsage;
 @end

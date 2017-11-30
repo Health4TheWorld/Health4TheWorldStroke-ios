@@ -72,7 +72,7 @@ static NSMutableArray *appUsageArray;
         NSLog(@" app_usage array : %@", [appUsageArray objectAtIndex: i] );
     }
     
-    
+    /*
     [[dynamoDBObjectMapper save:app_usage]
      continueWithBlock:^id(AWSTask *task) {
          if (task.error) {
@@ -82,7 +82,7 @@ static NSMutableArray *appUsageArray;
          }
          return nil;
      }];
-    
+    */
     
     return nil;
 }
@@ -114,10 +114,93 @@ static NSMutableArray *appUsageArray;
         data = [[NSMutableArray alloc] init];
     }
     
+    NSString *loginDateTime;
+    NSString *logoutDateTime;
+    for(int i=0; i< [data count]; i++){
+        AppUsage *usageData = [data objectAtIndex:i];
+        if([usageData.object  isEqual: @"Login"]){
+            loginDateTime = usageData.date_time;
+        }
+        if([usageData.object  isEqual: @"Logout"]){
+            logoutDateTime = usageData.date_time;
+        }
+    }
+    NSLog(@"Login date %@", loginDateTime);
+    NSLog(@"Logout date %@", logoutDateTime);
     
+    NSTimeInterval ti = [self timeIntervalForDates: loginDateTime to: logoutDateTime];
+    NSString *TotalDuration = [self stringFromTimeInterval: ti];
+    NSLog(@"total session time : %@", TotalDuration);
+    
+    // Calc time taken for under each section
+    NSString *chatbotSectionDuration;
+    NSString *exerciseSectionDuration;
+    NSString *helpMeSpeakSectionDuration;
+    NSString *learnSectionDuration;
+    NSString *surveysSectionDuration;
+    chatbotSectionDuration = [self calculateSectionDuration: @"Smiley" withData: data];
+    exerciseSectionDuration = [self calculateSectionDuration: @"Exercise" withData: data];
+    helpMeSpeakSectionDuration = [self calculateSectionDuration: @"Help Me Speak" withData: data];
+    learnSectionDuration = [self calculateSectionDuration: @"Learn" withData: data];
+    surveysSectionDuration = [self calculateSectionDuration: @"Surveys" withData: data];
+    
+    AppUsage *usageData = [data objectAtIndex:0];
+    NSString *currentDate = [Utils getCurrentDate];
+    
+    NSArray *dailyUsageData = @[usageData.unique_device_id,@"2", currentDate, usageData.device_type,
+                                TotalDuration,chatbotSectionDuration,exerciseSectionDuration
+                                ,helpMeSpeakSectionDuration,learnSectionDuration,surveysSectionDuration];
     
     //Upload the daily usage into DyanmoDB table
-    [self InsertDataIntoDailyUsageTable: data];
+    [self InsertDataIntoDailyUsageTable: dailyUsageData];
+}
++ (NSTimeInterval) timeIntervalForDates: (NSString *) fromDate to: (NSString *) toDate{
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"MM-dd-yyyy HH:mm:ss"];
+    NSDate *loginDate = [dateFormat dateFromString:  fromDate];
+    NSDate *logoutDate = [dateFormat dateFromString:  toDate];
+    NSTimeInterval ti = [logoutDate timeIntervalSinceDate:loginDate];
+    //NSLog(@"%f", ti);
+    return ti;
+}
+
++ (NSString *)stringFromTimeInterval:(NSTimeInterval)interval {
+    NSDateComponentsFormatter *dateComponentsFormatter = [[NSDateComponentsFormatter alloc] init];
+    dateComponentsFormatter.unitsStyle = NSDateComponentsFormatterUnitsStylePositional;
+    dateComponentsFormatter.zeroFormattingBehavior = NSDateComponentsFormatterZeroFormattingBehaviorPad;
+    dateComponentsFormatter.allowedUnits = (NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond);
+    //NSLog(@"%@", [dateComponentsFormatter stringFromTimeInterval:interval]);
+    return [dateComponentsFormatter stringFromTimeInterval:interval];
+}
+
++ (NSString *) calculateSectionDuration: (NSString *) sectionName withData:(NSMutableArray *) data {
+    NSString *totalDuration;
+    NSString *startTime;
+     NSString *endTime;
+    NSTimeInterval ti;
+    NSLog(@"Section: %@", sectionName);
+    for(int i=0; i< [data count]; i++){
+        AppUsage *usageData = [data objectAtIndex:i];
+        if([usageData.object containsString: sectionName]){
+            startTime = usageData.date_time;
+            if([data objectAtIndex: i+1]){
+                AppUsage *nextData = [data objectAtIndex: i+1];
+                endTime = nextData.date_time;
+            }else {
+                endTime = @"0";
+            }
+            // Find the time interval
+            ti = [self timeIntervalForDates: startTime to: endTime];
+            totalDuration = [self stringFromTimeInterval: ti];
+        }
+    }
+    if(totalDuration == NULL){
+        totalDuration = @"00:00:00";
+    }
+    NSLog(@"Start Time: %@", startTime);
+    NSLog(@"End time: %@", endTime);
+    NSLog(@"Total duration: %@",totalDuration);
+    return totalDuration;
 }
 
 + (AWSTask *) InsertDataIntoDailyUsageTable:(NSArray*) data {

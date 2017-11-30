@@ -23,5 +23,6 @@
 + (NSDate *)getDateFromTime:(NSString *)time weekday:(NSString *)weekday;
 + (NSString *) getUDID ;
 + (NSDate *) getCurrentDateTime;
++ (NSString *) getCurrentDate;
 + (NSString *) deviceName;
 @end

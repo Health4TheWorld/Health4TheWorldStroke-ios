@@ -286,7 +286,7 @@
     vc.welcomeText = @"good";
     [self.navigationController pushViewController:vc animated:YES];
     /* insert app usage info into table*/
-    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 3", @"Icon"]];
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 2", @"Icon"]];
 }
 
 // Smiley icon3 pressed
@@ -334,7 +334,7 @@
     /* insert app usage info into table*/
     [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Logout", @"NA"]];
     /* calculate user session information and load everything in the database table*/
-    
+    [AWSDynamoDBHelper calcSessionUsage];
 }
 
 - (void) insertUserData: (NSArray*) data{
