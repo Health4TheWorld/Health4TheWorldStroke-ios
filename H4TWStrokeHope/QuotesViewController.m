@@ -23,6 +23,7 @@
 #define BG_IMAGE_NAME @"Patagonia.jpg"
 @implementation QuotesViewController
 static NSString * const reuseIdentifier = @"QuotesCell";
+    
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
