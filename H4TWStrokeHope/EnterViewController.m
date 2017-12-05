@@ -88,8 +88,8 @@
     
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     /* If first launch, then show disclaimer popup */
     if (![@"1" isEqualToString:[[NSUserDefaults standardUserDefaults]
