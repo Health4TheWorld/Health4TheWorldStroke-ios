@@ -62,6 +62,7 @@ static NSString * const reuseIdentifier = @"QuotesCell";
     
 }
 -(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     //Set current date and check if already set
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     [df setDateFormat:@"dd-MM-yyyy"];
