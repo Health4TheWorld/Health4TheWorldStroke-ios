@@ -46,6 +46,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     if (!self.alreadySetUpView) {
         float screenWidth = [UIScreen mainScreen].bounds.size.width;
         static int MARGIN = 16;
@@ -180,6 +181,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 

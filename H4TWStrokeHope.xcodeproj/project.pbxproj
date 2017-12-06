@@ -915,7 +915,7 @@
 					CC4C10AB1E7A26DE00515CDC = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = VQM3AFB3H9;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					CC4C10C71E7A26DE00515CDC = {
 						CreatedOnToolsVersion = 8.2;
@@ -1056,13 +1056,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-H4TWStrokeHope-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EF031F2A3979FECE1E54314C /* [CP] Embed Pods Frameworks */ = {
@@ -1086,9 +1089,24 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-H4TWStrokeHope/Pods-H4TWStrokeHope-resources.sh",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AICubeIconImage.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AICubeIconImage@2x.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AICubeIconImage@3x.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AIMicrophoneControlImage.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AIMicrophoneControlImage@2x.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AIMicrophoneControlImage@3x.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Classes/AIVoiceRequestButton.xib",
+				"${PODS_ROOT}/ApiAI/ApiAI/VoiceRequest/Resources/beep.caf",
+				"${PODS_ROOT}/GVRSDK/Resources/CardboardSDK.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitCore.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitDialogs.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitHUD.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/MaterialRobotoFontLoader.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1337,16 +1355,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Health4TheWorld (VQM3AFB3H9)";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = VQM3AFB3H9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = H4TWStrokeHope.pch;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "18fa7297-d947-4636-a9e1-c3c74a70ff2e";
-				PROVISIONING_PROFILE_SPECIFIER = "Health 4 The World Stroke";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -1356,16 +1375,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Health4TheWorld (VQM3AFB3H9)";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = VQM3AFB3H9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = H4TWStrokeHope.pch;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "faf2258d-3f1e-4fcf-9285-71cbd0b2f1a9";
-				PROVISIONING_PROFILE_SPECIFIER = Health4TheWorld;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

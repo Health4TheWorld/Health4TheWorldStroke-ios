@@ -202,6 +202,7 @@ NSMutableArray *messages;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     //Initiate welcome message
     //[self initiateWelcomeMessage];
