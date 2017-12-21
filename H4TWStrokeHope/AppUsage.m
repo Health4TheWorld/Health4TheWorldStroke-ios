@@ -12,7 +12,6 @@
 
 static NSString *const TableName = @"app_usage";
 static NSString *const HashKeyAttribute = @"unique_device_id";
-
 static NSString *const RangeKeyAttribute = @"date_time";
 // Helper Tasks for the table
 + (AWSTask *)describeTable {

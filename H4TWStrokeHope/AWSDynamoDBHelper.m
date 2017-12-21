@@ -147,7 +147,14 @@ static NSMutableArray *appUsageArray;
     AppUsage *usageData = [data objectAtIndex:0];
     NSString *currentDate = [Utils getCurrentDate];
     
-    NSArray *dailyUsageData = @[usageData.unique_device_id,@"2", currentDate, usageData.device_type,
+    NSNumber *SessionId = [NSNumber numberWithInt: 1];
+    // Check if this is user's first session today
+    SessionId = [self generateSessionID];
+    
+    NSString *primary_key = [NSString stringWithFormat: @"%@_%@_%@",usageData.unique_device_id,currentDate, SessionId];
+    
+    // Entry point where the data for all the columns are entered
+    NSArray *dailyUsageData = @[primary_key,SessionId, currentDate, usageData.device_type,
                                 TotalDuration,chatbotSectionDuration,exerciseSectionDuration
                                 ,helpMeSpeakSectionDuration,learnSectionDuration,surveysSectionDuration];
     
@@ -171,6 +178,13 @@ static NSMutableArray *appUsageArray;
     dateComponentsFormatter.allowedUnits = (NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond);
     //NSLog(@"%@", [dateComponentsFormatter stringFromTimeInterval:interval]);
     return [dateComponentsFormatter stringFromTimeInterval:interval];
+}
+
++(NSNumber *)generateSessionID{
+    NSNumber *sessionId;
+     AWSDynamoDBObjectMapper *dynamoDBObjectMapper = [AWSDynamoDBObjectMapper defaultDynamoDBObjectMapper];
+    
+    return sessionId;
 }
 
 + (NSString *) calculateSectionDuration: (NSString *) sectionName withData:(NSMutableArray *) data {
@@ -207,11 +221,11 @@ static NSMutableArray *appUsageArray;
     AWSDynamoDBObjectMapper *dynamoDBObjectMapper = [AWSDynamoDBObjectMapper defaultDynamoDBObjectMapper];
     
     SessionDetails *daily_usage = [SessionDetails new];
-    daily_usage.device_id = [data objectAtIndex:0];
+    daily_usage.primary_key = [data objectAtIndex:0];
     daily_usage.session_id = [data objectAtIndex:1];
     daily_usage.date = [data objectAtIndex:2];
     daily_usage.device_type  = [data objectAtIndex:3];
-    daily_usage.duration = [data objectAtIndex:4];
+    daily_usage.app_duration = [data objectAtIndex:4];
     daily_usage.section_learn = [data objectAtIndex: 5];
     daily_usage.section_exercises = [data objectAtIndex: 6];
     daily_usage.section_chatbot = [data objectAtIndex: 7];

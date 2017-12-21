@@ -11,11 +11,11 @@
 
 @interface SessionDetails : AWSDynamoDBObjectModel <AWSDynamoDBModeling>
 
-@property (nonatomic, strong) NSString *device_id;
+@property (nonatomic, strong) NSString *primary_key;
 @property (nonatomic, strong) NSNumber *session_id;
 @property (nonatomic, strong) NSString *date;
 @property (nonatomic, strong) NSString *device_type;
-@property (nonatomic, strong) NSString *duration;
+@property (nonatomic, strong) NSString *app_duration;
 @property (nonatomic, strong) NSString *section_learn;
 @property (nonatomic, strong) NSString *section_exercises;
 @property (nonatomic, strong) NSString *section_chatbot;

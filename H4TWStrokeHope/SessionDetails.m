@@ -11,7 +11,8 @@
 @implementation SessionDetails
 
 static NSString *const TableName = @"daily_usage";
-static NSString *const HashKeyAttribute = @"device_id";
+static NSString *const HashKeyAttribute = @"primary_key";
+static NSString *const RangeKeyAttribute = @"date";
 
 // Helper Tasks for the table
 + (AWSTask *)describeTable {
@@ -31,6 +32,10 @@ static NSString *const HashKeyAttribute = @"device_id";
 
 + (NSString *)hashKeyAttribute {
     return HashKeyAttribute;
+}
+
++ (NSString *)rangeKeyAttribute {
+    return RangeKeyAttribute;
 }
 
 @end
