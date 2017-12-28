@@ -22,6 +22,7 @@
 		16AADA791F219CBD00D8A8EB /* RelaxingMusicViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16AADA771F219CBD00D8A8EB /* RelaxingMusicViewCell.xib */; };
 		16AC5DA61FAFE4810092868B /* AppUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC5DA51FAFE4810092868B /* AppUsage.m */; };
 		16AC5DA91FAFE50C0092868B /* SessionDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC5DA81FAFE50C0092868B /* SessionDetails.m */; };
+		16BB397F1FEC47AB00E3C7BD /* ChatbotLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BB397E1FEC47AB00E3C7BD /* ChatbotLog.m */; };
 		16C3C37C1EEA37EF005991D5 /* ChatBotViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C3C37A1EEA37EF005991D5 /* ChatBotViewCell.m */; };
 		16C3C37D1EEA37EF005991D5 /* ChatBotViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C3C37B1EEA37EF005991D5 /* ChatBotViewCell.xib */; };
 		16DFC0C41EC7F2D3007322BF /* Bells.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 16DFC0C31EC7F2D3007322BF /* Bells.mp4 */; };
@@ -188,6 +189,8 @@
 		16AC5DA51FAFE4810092868B /* AppUsage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppUsage.m; sourceTree = "<group>"; };
 		16AC5DA71FAFE50C0092868B /* SessionDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionDetails.h; sourceTree = "<group>"; };
 		16AC5DA81FAFE50C0092868B /* SessionDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionDetails.m; sourceTree = "<group>"; };
+		16BB397D1FEC47AB00E3C7BD /* ChatbotLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatbotLog.h; sourceTree = "<group>"; };
+		16BB397E1FEC47AB00E3C7BD /* ChatbotLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatbotLog.m; sourceTree = "<group>"; };
 		16C3C3791EEA37EF005991D5 /* ChatBotViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotViewCell.h; sourceTree = "<group>"; };
 		16C3C37A1EEA37EF005991D5 /* ChatBotViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBotViewCell.m; sourceTree = "<group>"; };
 		16C3C37B1EEA37EF005991D5 /* ChatBotViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatBotViewCell.xib; sourceTree = "<group>"; };
@@ -440,6 +443,8 @@
 				16AC5DA51FAFE4810092868B /* AppUsage.m */,
 				16AC5DA71FAFE50C0092868B /* SessionDetails.h */,
 				16AC5DA81FAFE50C0092868B /* SessionDetails.m */,
+				16BB397D1FEC47AB00E3C7BD /* ChatbotLog.h */,
+				16BB397E1FEC47AB00E3C7BD /* ChatbotLog.m */,
 			);
 			name = "DynamoDb Object Models";
 			sourceTree = "<group>";
@@ -1155,6 +1160,7 @@
 				16AC5DA91FAFE50C0092868B /* SessionDetails.m in Sources */,
 				CC9604931EA3DE110030D2C7 /* LearnContentTypeTableViewCell.m in Sources */,
 				167883AF1EE25EED00B106AD /* GVRVideoViewManager.m in Sources */,
+				16BB397F1FEC47AB00E3C7BD /* ChatbotLog.m in Sources */,
 				CC4C10BD1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld in Sources */,
 				167883A91EE1029900B106AD /* ChatBotViewController.m in Sources */,
 				CC11D11F1EB51AB40063E72A /* Reminder.m in Sources */,
@@ -1368,7 +1374,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Health4TheWorld (VQM3AFB3H9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = VQM3AFB3H9;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;
@@ -1386,7 +1392,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Health4TheWorld (VQM3AFB3H9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = VQM3AFB3H9;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;

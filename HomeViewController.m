@@ -17,6 +17,7 @@
 #import "GeneralInfoViewController.h"
 #import "SurveysViewController.h"
 #import "ChatBotViewController.h"
+#import "EnterViewController.h"
 
 #import "AWSDynamoDBHelper.h"
 
@@ -335,6 +336,12 @@
     [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Logout", @"NA"]];
     /* calculate user session information and load everything in the database table*/
     [AWSDynamoDBHelper calcSessionUsage];
+    [AWSDynamoDBHelper detailedChatLog];
+    [AWSDynamoDBHelper clearSessionDataLog];
+    
+    // Navigate to Login page
+    EnterViewController *vc = [[EnterViewController alloc] init];
+    [self.navigationController popToRootViewControllerAnimated:true ];
 }
 
 - (void) insertUserData: (NSArray*) data{

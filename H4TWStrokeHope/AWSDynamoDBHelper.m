@@ -9,9 +9,11 @@
 #import "AWSDynamoDBHelper.h"
 
 static NSMutableArray *appUsageArray;
+static NSMutableArray *appSessionDetailsArray;
 
 @implementation AWSDynamoDBHelper
 #define USER_DEFAULTS_APP_USAGE_KEY @"app_usage_data"
+#define USER_DEFAULTS_SESSION_DETAILS_KEY @"session_details_data"
 
 + (AWSTask *) InsertDataIntoUsersTable:(NSArray*) data {
     AWSDynamoDBObjectMapper *dynamoDBObjectMapper = [AWSDynamoDBObjectMapper defaultDynamoDBObjectMapper];
@@ -102,6 +104,21 @@ static NSMutableArray *appUsageArray;
     [[NSUserDefaults standardUserDefaults] setObject:dataSave forKey:USER_DEFAULTS_APP_USAGE_KEY];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
++ (void)loadAllSessionData {
+    NSData *appSessionData = [[NSUserDefaults standardUserDefaults] objectForKey:USER_DEFAULTS_SESSION_DETAILS_KEY];
+    if (appSessionData != nil) {
+        NSArray *savedArray = [NSKeyedUnarchiver unarchiveObjectWithData: appSessionData];
+        appSessionDetailsArray = [savedArray mutableCopy];
+    } else {
+        appSessionDetailsArray = [[NSMutableArray alloc] init];
+    }
+}
+
++ (void)saveAllSessionData {
+    NSData *dataSave = [NSKeyedArchiver archivedDataWithRootObject:appSessionDetailsArray];
+    [[NSUserDefaults standardUserDefaults] setObject:dataSave forKey:USER_DEFAULTS_SESSION_DETAILS_KEY];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
 
 + (void) calcSessionUsage {
     // Retrieve the app_usage data
@@ -118,11 +135,13 @@ static NSMutableArray *appUsageArray;
     NSString *logoutDateTime;
     for(int i=0; i< [data count]; i++){
         AppUsage *usageData = [data objectAtIndex:i];
-        if([usageData.object  isEqual: @"Login"]){
-            loginDateTime = usageData.date_time;
-        }
-        if([usageData.object  isEqual: @"Logout"]){
-            logoutDateTime = usageData.date_time;
+        if([usageData.date_time containsString: [Utils getCurrentDate]]){
+            if([usageData.object  isEqual: @"Login"]){
+                loginDateTime = usageData.date_time;
+            }
+            if([usageData.object  isEqual: @"Logout"]){
+                logoutDateTime = usageData.date_time;
+            }
         }
     }
     NSLog(@"Login date %@", loginDateTime);
@@ -149,7 +168,7 @@ static NSMutableArray *appUsageArray;
     
     NSNumber *SessionId = [NSNumber numberWithInt: 1];
     // Check if this is user's first session today
-    SessionId = [self generateSessionID];
+    SessionId = [self generateSessionID: usageData.unique_device_id date: currentDate];
     
     NSString *primary_key = [NSString stringWithFormat: @"%@_%@_%@",usageData.unique_device_id,currentDate, SessionId];
     
@@ -180,10 +199,37 @@ static NSMutableArray *appUsageArray;
     return [dateComponentsFormatter stringFromTimeInterval:interval];
 }
 
-+(NSNumber *)generateSessionID{
-    NSNumber *sessionId;
-     AWSDynamoDBObjectMapper *dynamoDBObjectMapper = [AWSDynamoDBObjectMapper defaultDynamoDBObjectMapper];
-    
++(NSNumber *)generateSessionID: (NSString *)deviceId date: (NSString *) date   {
+    NSNumber *sessionId = [NSNumber numberWithInt: 1];
+    NSString *primaryKey;
+    [self loadAllSessionData];
+    NSLog(@"%lu",(unsigned long)[appSessionDetailsArray count]);
+    if([appSessionDetailsArray count] >= 1){
+        for(int i=0; i< [appSessionDetailsArray count]; i++){
+            NSString *key = [appSessionDetailsArray objectAtIndex:i];
+            NSArray *keyItems = [key componentsSeparatedByString:@"_"];
+            if([[keyItems objectAtIndex:0]  isEqual: deviceId]){
+                if([[keyItems objectAtIndex:1]  isEqual: date]){
+                    sessionId = [keyItems objectAtIndex:2];
+                    int value = [sessionId intValue];
+                    sessionId = [NSNumber numberWithInteger: value  + 1];
+                    primaryKey = [NSString stringWithFormat:@"%@_%@_%@", deviceId,date, sessionId];
+                     NSLog(@"primary key :  \n %@",primaryKey);
+                }
+            }
+        }
+        if(primaryKey == NULL){
+            primaryKey = [NSString stringWithFormat:@"%@_%@_%@",deviceId,date,sessionId];
+        }
+        [appSessionDetailsArray addObject: primaryKey];
+    }
+    else{
+        primaryKey = [NSString stringWithFormat:@"%@_%@_%@",deviceId,date,sessionId];
+        [appSessionDetailsArray addObject:primaryKey];
+    }
+    [self saveAllSessionData];
+    NSLog(@"primary key :  \n %@",primaryKey);
+
     return sessionId;
 }
 
@@ -195,17 +241,19 @@ static NSMutableArray *appUsageArray;
     NSLog(@"Section: %@", sectionName);
     for(int i=0; i< [data count]; i++){
         AppUsage *usageData = [data objectAtIndex:i];
-        if([usageData.object containsString: sectionName]){
-            startTime = usageData.date_time;
-            if([data objectAtIndex: i+1]){
-                AppUsage *nextData = [data objectAtIndex: i+1];
-                endTime = nextData.date_time;
-            }else {
-                endTime = @"0";
+        if([usageData.date_time containsString: [Utils getCurrentDate]]){
+            if([usageData.object containsString: sectionName]){
+                startTime = usageData.date_time;
+                if([data objectAtIndex: i+1]){
+                    AppUsage *nextData = [data objectAtIndex: i+1];
+                    endTime = nextData.date_time;
+                }else {
+                    endTime = @"0";
+                }
+                // Find the time interval
+                ti = [self timeIntervalForDates: startTime to: endTime];
+                totalDuration = [self stringFromTimeInterval: ti];
             }
-            // Find the time interval
-            ti = [self timeIntervalForDates: startTime to: endTime];
-            totalDuration = [self stringFromTimeInterval: ti];
         }
     }
     if(totalDuration == NULL){
@@ -246,6 +294,49 @@ static NSMutableArray *appUsageArray;
     
     
     return nil;
+}
+
++ (void) detailedChatLog {
+    NSString *device_dateTime = [NSString stringWithFormat:@"%@_%@",[Utils getUDID],[Utils getCurrentDateTime]];
+    
+    ChatBotViewController *botVC = [ChatBotViewController alloc];
+    
+    NSLog(@"%@",  botVC.message);
+    
+    //NSArray *dataToInsert = @[device_dateTime,[data objectAtIndex:0], [data objectAtIndex: 1],  [data objectAtIndex: 2] ];
+    //[self InsertDataIntoChatBotLogTable: dataToInsert];
+    
+}
+
++ (AWSTask *) InsertDataIntoChatBotLogTable:(NSArray*) data {
+    AWSDynamoDBObjectMapper *dynamoDBObjectMapper = [AWSDynamoDBObjectMapper defaultDynamoDBObjectMapper];
+    
+    ChatbotLog *chat_log = [ChatbotLog new];
+    chat_log.device_datetime = [data objectAtIndex:0];
+    chat_log.chat_log_dict = [data objectAtIndex:1];
+    chat_log.duration = [data objectAtIndex:2];
+    chat_log.icon_selected  = [data objectAtIndex:3];
+    
+    NSLog(@" current object : %@",chat_log);
+    
+    [[dynamoDBObjectMapper save: chat_log]
+     continueWithBlock:^id(AWSTask *task) {
+         if (task.error) {
+             NSLog(@"The request failed. Error: [%@]", task.error);
+         } else {
+             //Do something with task.result or perform other operations.
+         }
+         return nil;
+     }];
+    
+    
+    return nil;
+}
+
+// Clear objects from User Defaults to retain only current session information
++ (void) clearSessionDataLog {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults removeObjectForKey: USER_DEFAULTS_APP_USAGE_KEY];
 }
 
 

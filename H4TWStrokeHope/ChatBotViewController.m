@@ -18,7 +18,7 @@
 
 
 @interface ChatBotViewController ()
-
+@property NSMutableArray *messages;
 @end
 
 #define PROFILE_IMAGE @"Doctor"
@@ -34,7 +34,6 @@
 
 @implementation ChatBotViewController
 static NSString * const reuseIdentifier = @"Cell";
-NSMutableArray *messages;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,7 +55,7 @@ NSMutableArray *messages;
     
     //Set Up Data Source
     
-    messages = [[NSMutableArray alloc] init];
+    _messages = [[NSMutableArray alloc] init];
 
 }
 
@@ -432,8 +431,8 @@ NSMutableArray *messages;
     self.message = [[ChatMessages alloc] initWithText:text withDate: [NSDate date] withSender:false];
     
         @try {
-            [messages addObject:self.message];
-            NSInteger item = messages.count - 1;
+            [_messages addObject:self.message];
+            NSInteger item = _messages.count - 1;
             NSIndexPath *insertIndexPath = [NSIndexPath indexPathForItem:item inSection:0 ];
             NSArray *items = [[NSArray alloc] initWithObjects:insertIndexPath, nil ];
             
@@ -456,8 +455,8 @@ NSMutableArray *messages;
 - (void) storeRequest: (NSString*) text {
     self.message = [[ChatMessages alloc] initWithText:text withDate: [NSDate date] withSender:true];
     @try {
-        [messages addObject:self.message];
-        NSInteger item = messages.count - 1 ;
+        [_messages addObject:self.message];
+        NSInteger item = _messages.count - 1 ;
         NSIndexPath *insertIndexPath = [NSIndexPath indexPathForItem:item inSection:0 ];
         NSArray *items = [[NSArray alloc] initWithObjects:insertIndexPath, nil ];
         
@@ -540,8 +539,8 @@ NSMutableArray *messages;
             [self.view layoutIfNeeded];
         } completion:^(BOOL finished) {
             if(notification.name == UIKeyboardWillShowNotification ){
-                if(messages.count >= 1){
-            NSIndexPath *indexpath = [NSIndexPath indexPathForItem: messages.count - 1 inSection:0];
+                if(_messages.count >= 1){
+                    NSIndexPath *indexpath = [NSIndexPath indexPathForItem: _messages.count - 1 inSection:0];
             [self.collectionView scrollToItemAtIndexPath:indexpath atScrollPosition:UICollectionViewScrollPositionBottom animated:true];
                 }
             }
@@ -765,8 +764,8 @@ UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    if (messages){
-    return messages.count;
+    if (_messages){
+        return _messages.count;
     }
     return 0;
 }
@@ -774,7 +773,7 @@ UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
      ChatBotViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier: reuseIdentifier forIndexPath:indexPath];
 
-    ChatMessages *message = [messages objectAtIndex: indexPath.item];
+    ChatMessages *message = [_messages objectAtIndex: indexPath.item];
     
     cell.messageView.text = message.text;
     
@@ -825,7 +824,7 @@ UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
     return cell;
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    ChatMessages *message = [messages objectAtIndex: indexPath.item];
+    ChatMessages *message = [_messages objectAtIndex: indexPath.item];
     NSLog(@"%@", message);
     if(message){
         CGSize size = CGSizeMake(250, 1000);

@@ -68,11 +68,12 @@
     /* Get device Name */
     NSLog(@"Device Name : %@", [Utils deviceName]);
     
+    self.passwordTF.text = nil;
+    self.usernameTF.text = self.usernameText;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    self.passwordTF.text = nil;
-    self.usernameTF.text = self.usernameText;
+
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     
