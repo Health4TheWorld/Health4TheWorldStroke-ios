@@ -11,6 +11,7 @@
 #import "Utils.h"
 #import "HomeButton.h"
 #import "VideoViewController.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface ArmsViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -65,19 +66,26 @@
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 
 - (void)a2Pressed{
     VideoViewController *videoVC = [[VideoViewController alloc] init];
     videoVC.title = ARMS_TITLE_2A_ELBOW;
     [videoVC setUpVideo: VIDEO_2A_ELBOW_FLEXION];
-    [self.navigationController pushViewController:videoVC animated:YES];}
+    [self.navigationController pushViewController:videoVC animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"2A_Elbow_Flexion", @"Video"]];
+}
 
 - (void)b2Pressed{
     VideoViewController *videoVC = [[VideoViewController alloc] init];
     videoVC.title = ARMS_TITLE_2B_SHOULDER;
     [videoVC setUpVideo: VIDEO_2B_SHOULDER_FLEXION];
     [self.navigationController pushViewController:videoVC animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Start",@"2B_Shoulder_Flexion", @"Video"]];
 }
 
 

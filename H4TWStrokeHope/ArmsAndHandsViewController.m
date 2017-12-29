@@ -12,6 +12,7 @@
 #import "HandStretchViewController.h"
 #import "ShoulderStretchViewController.h"
 #import "ArmStretchViewController.h"
+#import "AWSDynamoDBHelper.h"
 
 
 @interface ArmsAndHandsViewController ()
@@ -76,21 +77,29 @@
 - (void)handStretchPressed {
     HandStretchViewController *vc = [[HandStretchViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Hand Stretch", @"Sub-Section"]];
 }
 
 - (void)shoulderStretchPressed {
     ShoulderStretchViewController *vc = [[ShoulderStretchViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Shoulder Stretch", @"Sub-Section"]];
 }
 
 - (void)armStretchPressed {
     ArmStretchViewController *vc = [[ArmStretchViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Arm Stretch", @"Sub-Section"]];
 }
 
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"back Button", @"NA"]];
 }
 
 /*

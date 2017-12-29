@@ -7,6 +7,7 @@
 //
 
 #import "Utils.h"
+#import <sys/utsname.h>
 
 @implementation Utils
 
@@ -99,6 +100,37 @@
     [dateComponents setMinute: minute];
 
     return [calendar dateFromComponents:dateComponents];
+}
+
++ (NSString *) getUDID {
+    /* User device ID */
+    NSString *uniqueIdentifier = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    return uniqueIdentifier;
+}
+
++ (NSString *) getCurrentDateTime {
+    /* Current date time */
+    NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MM-dd-yyyy HH:mm:ss"];
+    
+    return [dateFormatter stringFromDate:[NSDate date]];
+}
+
++ (NSString *) getCurrentDate {
+    /* Current date time */
+    NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MM-dd-yyyy"];
+    
+    return [dateFormatter stringFromDate:[NSDate date]];
+}
+
++ (NSString *) deviceName
+{
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    
+    return [NSString stringWithCString:systemInfo.machine
+                              encoding:NSUTF8StringEncoding];
 }
 
 @end

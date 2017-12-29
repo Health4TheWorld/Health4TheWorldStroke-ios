@@ -4,5 +4,13 @@
 target 'H4TWStrokeHope' do
 	pod ‘GVRSDK’
 	pod ‘ApiAI’
+    pod 'AWSAutoScaling'
+    pod 'AWSCognito'
+    pod 'AWSCognitoIdentityProvider'
+    pod 'AWSDynamoDB'
+    pod 'AWSLambda'
+    pod 'AWSMachineLearning'
+    pod 'AWSS3'
+
 
 end

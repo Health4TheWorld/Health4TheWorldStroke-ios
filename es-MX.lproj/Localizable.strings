@@ -29,7 +29,7 @@
 "Enter.sixthAuthor" = "– Helen Keller";
 "Enter.seventhQuote" = "\"Establecer objetivos es el primer paso para convertir lo invisible en visible.\"";
 "Enter.seventhAuthor" = "– Tony Robbins";
-"Enter.enterButton" = "Entrar";
+"Enter.loginButton" = "iniciar sesión";
 
 /* HOME VIEW CONTROLLER */
 "Home.title" = "Inicio";
@@ -304,6 +304,7 @@
 "AboutUs.roseHamm" = "Rose Hamm, PT, DPT, CWS, FACCWS: Rose recibió una licenciatura en Fisioterapia de la Universidad de Carolina del Norte, Chapel Hill, y una maestría y post-grado de DPT de la Universidad del Sur de California. Actualmente es Profesora Asistente Adjunta de Terapia Física Clínica en la Universidad del Sur de California y practica en el Hospital Keck de USC.";
 
 
+
 /* Quotes Section */
 "Quotes.title" = "Today's Inspirational Quote";
 
@@ -450,3 +451,4 @@
 "Chatbot.feelingmessage4" = "Deprimido";
 "Chatbot.feelingmessage5" = "Con sueño";
 "Chatbot.feelingmessage6" = "fatigado";
+

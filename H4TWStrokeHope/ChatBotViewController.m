@@ -14,10 +14,11 @@
 #import "QuotesViewController.h"
 #import "ExercisesViewController.h"
 #import "RelaxingMusicViewController.h"
+#import "AWSDynamoDBHelper.h"
 
 
 @interface ChatBotViewController ()
-
+@property NSMutableArray *messages;
 @end
 //"Chatbot.no" = "NO";
 //"Chatbot.yes" = "YES";
@@ -42,6 +43,7 @@
 //"Chatbot.feelingmessage5" = "sleepy";
 //"Chatbot.feelingmessage6" = "fatigue";
 #define PROFILE_IMAGE @"Doctor"
+
 #define NO_BUTTON [NSLocalizedString(@"Chatbot.no", nil) uppercaseString]
 #define YES_BUTTON @"YES"
 #define LONELY_BUTTON1 [NSLocalizedString(@"Chatbot.lonelybutton1", nil) uppercaseString]
@@ -51,28 +53,16 @@
 #define LONELY_BUTTON5 @"Get tips to tackle this"
 #define TIPS_INTENT_TEXT @"know more"
 #define FALLBACK_NO_INTENT @"FALLBACK-NO"
-#define LONELY_OPTIONS_TEXT @"What do you want to do"
 #define FEELING_INTENT @"How are you feeling"
-#define EXIT_BUTTON @"EXIT"
-#define ICON1_MESSAGE @"good"
-#define FEELING_BUTTON1 @"Lonely?"
-#define FEELING_BUTTON2 @"Not Recovering soon?"
-#define FEELING_BUTTON3 @"Anxious?"
-#define FEELING_BUTTON4 @"Depressed?"
-#define FEELING_BUTTON5 @"Can't Sleep?"
-#define FEELING_BUTTON6 @"Feeling tired?"
-#define FEELING_MESSAGE1 @"Lonely"
-#define FEELING_MESSAGE2 @"recovery"
-#define FEELING_MESSAGE3 @"anxious"
-#define FEELING_MESSAGE4 @"Depressed"
-#define FEELING_MESSAGE5 @"sleepy"
-#define FEELING_MESSAGE6 @"fatigue"
+
+#define SEND_BUTTON_TITLE NSLocalizedString(@"Chatbot.sendButtonTitle", nil)
+#define ENTER_MESSAGE_PLACEHOLDER NSLocalizedString(@"Chatbot.enterMessage", nil)
+
 
 #define HEIGHT_CONSTRAINT_DEFAULT 48
 
 @implementation ChatBotViewController
 static NSString * const reuseIdentifier = @"Cell";
-NSMutableArray *messages;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -94,7 +84,7 @@ NSMutableArray *messages;
     
     //Set Up Data Source
     
-    messages = [[NSMutableArray alloc] init];
+    _messages = [[NSMutableArray alloc] init];
 
 }
 
@@ -136,7 +126,7 @@ NSMutableArray *messages;
     
     // Adding button to container view
     self.sendButton = [UIButton buttonWithType: UIButtonTypeSystem];
-    [self.sendButton setTitle: @"Send" forState:UIControlStateNormal];
+    [self.sendButton setTitle:SEND_BUTTON_TITLE  forState:UIControlStateNormal];
     [self.sendButton addTarget:self action:@selector(sendButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     self.sendButton.translatesAutoresizingMaskIntoConstraints = false;
     
@@ -149,7 +139,7 @@ NSMutableArray *messages;
     
     //Add text field
     self.textField = [[UITextField alloc] init];
-    self.textField.placeholder = @"Enter message...";
+    self.textField.placeholder = ENTER_MESSAGE_PLACEHOLDER;
     [self.textField setClearButtonMode:UITextFieldViewModeAlways];
     self.textField.translatesAutoresizingMaskIntoConstraints = false;
     
@@ -199,6 +189,8 @@ NSMutableArray *messages;
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -212,7 +204,7 @@ NSMutableArray *messages;
 -(void) viewWillDisappear:(BOOL)animated {
     // write code to execute when the view dissapears
     [self stopSpeech];
-    [self.synthesizer speakUtterance:nil];
+    //[self.synthesizer speakUtterance:nil];
 }
 
 // AV Stop Speech
@@ -469,8 +461,8 @@ NSMutableArray *messages;
     self.message = [[ChatMessages alloc] initWithText:text withDate: [NSDate date] withSender:false];
     
         @try {
-            [messages addObject:self.message];
-            NSInteger item = messages.count - 1;
+            [_messages addObject:self.message];
+            NSInteger item = _messages.count - 1;
             NSIndexPath *insertIndexPath = [NSIndexPath indexPathForItem:item inSection:0 ];
             NSArray *items = [[NSArray alloc] initWithObjects:insertIndexPath, nil ];
             
@@ -493,8 +485,8 @@ NSMutableArray *messages;
 - (void) storeRequest: (NSString*) text {
     self.message = [[ChatMessages alloc] initWithText:text withDate: [NSDate date] withSender:true];
     @try {
-        [messages addObject:self.message];
-        NSInteger item = messages.count - 1 ;
+        [_messages addObject:self.message];
+        NSInteger item = _messages.count - 1 ;
         NSIndexPath *insertIndexPath = [NSIndexPath indexPathForItem:item inSection:0 ];
         NSArray *items = [[NSArray alloc] initWithObjects:insertIndexPath, nil ];
         
@@ -577,8 +569,8 @@ NSMutableArray *messages;
             [self.view layoutIfNeeded];
         } completion:^(BOOL finished) {
             if(notification.name == UIKeyboardWillShowNotification ){
-                if(messages.count >= 1){
-            NSIndexPath *indexpath = [NSIndexPath indexPathForItem: messages.count - 1 inSection:0];
+                if(_messages.count >= 1){
+                    NSIndexPath *indexpath = [NSIndexPath indexPathForItem: _messages.count - 1 inSection:0];
             [self.collectionView scrollToItemAtIndexPath:indexpath atScrollPosition:UICollectionViewScrollPositionBottom animated:true];
                 }
             }
@@ -634,25 +626,35 @@ NSMutableArray *messages;
     // Re-direct to VR vidoes section
     MindExercisesViewController *vc = [[MindExercisesViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Mind Exercises", @"Sub-Section"]];
 }
 - (void) lonely2ButtonPressed {
     //[self customAlertMessageWithTitle:@"Music" withMessage:@"Music section Coming soon!"];
     RelaxingMusicViewController *vc = [[RelaxingMusicViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Relaxing Music", @"Sub-Section"]];
 }
 - (void) lonely3ButtonPressed {
     QuotesViewController *vc = [[QuotesViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Inspiring Quotes", @"Sub-Section"]];
 }
 - (void) lonely4ButtonPressed {
-    //[self customAlertMessageWithTitle:@"Stroke Survivor Video" withMessage:@"Stroke Survivor video Coming soon!"];
     ExercisesViewController *vc = [[ExercisesViewController alloc] init];
     [self.navigationController pushViewController:vc animated:true];
+    
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Exercises", @"Section"]];
 }
 - (void) lonely5ButtonPressed {
     // Get Tips from API.AI
-    NSString *text = @"5";
+    NSString *text = @"Get tips";
     [self storeRequest:text];
     AITextRequest *request = [self createAndFetchRequest:text];
     [self retrieveAPIResponseWithRequest:request withSharedInstance: self.apiai];
@@ -792,8 +794,8 @@ UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    if (messages){
-    return messages.count;
+    if (_messages){
+        return _messages.count;
     }
     return 0;
 }
@@ -801,7 +803,7 @@ UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
      ChatBotViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier: reuseIdentifier forIndexPath:indexPath];
 
-    ChatMessages *message = [messages objectAtIndex: indexPath.item];
+    ChatMessages *message = [_messages objectAtIndex: indexPath.item];
     
     cell.messageView.text = message.text;
     
@@ -852,7 +854,7 @@ UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
     return cell;
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    ChatMessages *message = [messages objectAtIndex: indexPath.item];
+    ChatMessages *message = [_messages objectAtIndex: indexPath.item];
     NSLog(@"%@", message);
     if(message){
         CGSize size = CGSizeMake(250, 1000);

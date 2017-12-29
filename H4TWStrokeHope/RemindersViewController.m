@@ -14,6 +14,7 @@
 #import "Constants.h"
 #import "Utils.h"
 #import <UserNotifications/UserNotifications.h>
+#import "AWSDynamoDBHelper.h"
 
 #define SECTION_HEADER_HEIGHT 40
 #define CELL_HEIGHT 75
@@ -144,6 +145,8 @@
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 
 - (IBAction)addReminderPressed:(id)sender {

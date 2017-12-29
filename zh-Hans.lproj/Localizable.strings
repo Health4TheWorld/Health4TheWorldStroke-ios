@@ -31,7 +31,7 @@
 "Enter.sixthAuthor" = "– Helen Keller";
 "Enter.seventhQuote" = "\"制定目標是願望成真的第一步。\"";
 "Enter.seventhAuthor" = "– Tony Robbins";
-"Enter.enterButton" = "進入";
+"Enter.loginButton" = "登录";
 //
 ///* HOME VIEW CONTROLLER */
 "Home.title" = "主界面";
