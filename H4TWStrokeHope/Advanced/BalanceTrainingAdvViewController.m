@@ -53,7 +53,7 @@
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *b1Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.balanceTraining.Standing", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *b1Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.balanceTraining.sitting", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [b1Button addRoundImageCentered:[UIImage imageNamed:FUNCTIONALMOBILITY_4C]];
     [b1Button addTarget:self action:@selector(b1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
@@ -74,23 +74,17 @@
 - (void)a1Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
     videoVC.title = NSLocalizedString(@"Exercises.functionalMobility.h1", nil) ;
-    [videoVC setUpVideo: VIDEO_FM_ROLLINGINBED];
+//    [videoVC setUpVideo: VIDEO_FM_ROLLINGINBED];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
 - (void)b1Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
-    videoVC.title = NSLocalizedString(@"Exercises.functionalMobility.h2", nil) ;
-    [videoVC setUpVideo: VIDEO_FM_ROLLINGOUTBED];
+    videoVC.title = NSLocalizedString(@"Exercises.balanceTraining.Standing", nil) ;
+//    [videoVC setUpVideo: VIDEO_FM_ROLLINGOUTBED];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
-- (void)c1Pressed {
-    VideoViewController *videoVC = [[VideoViewController alloc] init];
-    videoVC.title = LEGS_TITLE_1C_HIP;
-    [videoVC setUpVideo: VIDEO_1C_HIP_FLEXION];
-    [self.navigationController pushViewController:videoVC animated:YES];
-}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
