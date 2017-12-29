@@ -69,6 +69,7 @@
 
 /* EXERCISES VIEW CONTROLLER */
 "Exercises.title" = "Mga Ehersisyo";
+"Exercises.advancedExercises" = "Advanced Exercises";//MM
 "Exercises.strengthening" = "Pagpapalakas";
 "Exercises.stretching" = "Pag-iinat";
 "Exercises.functionalMobility" = "Magagamit sa Pagkilos/Paggalaw";

@@ -1,30 +1,32 @@
 //
-//  LegsViewController.m
+//  FunctionalMobilityViewController.m
 //  H4TWStrokeHope
 //
-//  Created by Premnath Ramanathan on 4/11/17.
+//  Created by Maitri Mehta on 12/28/17.
 //  Copyright © 2017 Rachel. All rights reserved.
 //
 
-#import "LegsViewController.h"
+#import "FunctionalMobilityAdvViewController.h"
+
 #import "Constants.h"
 #import "Utils.h"
 #import "HomeButton.h"
 
 #import "VideoViewController.h"
 
-@interface LegsViewController ()
+@interface FunctionalMobilityAdvViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIView *contentView;
-        
+@property (strong, nonatomic) UILabel *welcomeMessage;
+
 @end
 
-@implementation LegsViewController
+@implementation FunctionalMobilityAdvViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = [NSLocalizedString(@"Strenghtening.legs", nil) uppercaseString];
+    self.title = [NSLocalizedString(@"Exercises.functionalMobility", nil) uppercaseString];
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -34,7 +36,6 @@
     backBtn.frame = CGRectMake(0, 0, 15, 25);
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     self.navigationItem.leftBarButtonItem = backButton;
-    
     [self setUpView];
 }
 
@@ -42,33 +43,36 @@
     static int SPACE_BETWEEN_CELLS = 10;
     float cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
     float cellHeight = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS/2);
-    
     float startingY = SPACE_BETWEEN_CELLS;
+    self.welcomeMessage = [[UILabel alloc] initWithFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, 0)];
+    self.welcomeMessage.text = NSLocalizedString(@"Exercises.functionalMobility.Instructions", nil);
+    self.welcomeMessage.font = [UIFont fontWithName:@"Lato-regular" size:16.0];
+    self.welcomeMessage.textColor = HFTW_TEXT_GRAY;
+    self.welcomeMessage.numberOfLines = 0;
+    self.welcomeMessage.textAlignment = NSTextAlignmentLeft;
+    [self.welcomeMessage sizeToFit];
+    CGRect welcomeMessageFrame = self.welcomeMessage.frame;
+    welcomeMessageFrame.size.height = [Utils heightOfString:self.welcomeMessage.text containedToWidth:welcomeMessageFrame.size.width withFont:self.welcomeMessage.font];
+    self.welcomeMessage.frame = welcomeMessageFrame;
+    startingY += (welcomeMessageFrame.size.height + 20);
     
-    HomeButton *a1Button = [[HomeButton alloc] initWithText:@"Toe Flexion" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [a1Button addRoundImageCentered:[UIImage imageNamed:LEGS_1A_TOE]];
+    HomeButton *a1Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.functionalMobility.h1", nil)   withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    [a1Button addRoundImageCentered:[UIImage imageNamed:ARMS_2A_ELBOW]];
     [a1Button addTarget:self action:@selector(a1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *b1Button = [[HomeButton alloc] initWithText:@"Knee Flexion" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [b1Button addRoundImageCentered:[UIImage imageNamed:LEGS_1B_KNEE]];
+    HomeButton *b1Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.functionalMobility.h2", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    [b1Button addRoundImageCentered:[UIImage imageNamed:ARMS_2B_SHOULDER]];
     [b1Button addTarget:self action:@selector(b1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
-    //cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
-    
-    HomeButton *c1Button = [[HomeButton alloc] initWithText:@"Hip Flexion" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [c1Button addRoundImageCentered:[UIImage imageNamed:LEGS_1C_HIP]];
-    [c1Button addTarget:self action:@selector(c1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     [self.contentView addSubview: a1Button];
     [self.contentView addSubview: b1Button];
-    [self.contentView addSubview: c1Button];
-    
-    
+    [self.contentView addSubview: self.welcomeMessage];
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
 }
 
@@ -79,15 +83,15 @@
 
 - (void)a1Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
-    videoVC.title = LEGS_TITLE_1A_TOE;
-    [videoVC setUpVideo: VIDEO_1A_TOE_FLEXION];
+    videoVC.title = NSLocalizedString(@"Exercises.functionalMobility.h1", nil) ;
+    [videoVC setUpVideo: VIDEO_FM_ROLLINGINBED];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
 - (void)b1Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
-    videoVC.title = LEGS_TITLE_1B_KNEE;
-    [videoVC setUpVideo: VIDEO_1B_KNEE_FLEXION];
+    videoVC.title = NSLocalizedString(@"Exercises.functionalMobility.h2", nil) ;
+    [videoVC setUpVideo: VIDEO_FM_ROLLINGOUTBED];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
@@ -103,13 +107,14 @@
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
+

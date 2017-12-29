@@ -62,6 +62,7 @@
 
 ///* EXERCISES VIEW CONTROLLER */
 "Exercises.title" = "Mazoezi";
+"Exercises.advancedExercises" = "Advanced Exercises";//MM
 "Exercises.strengthening" = "Kuimarisha";
 "Exercises.stretching" = "Kunyoosha";
 "Exercises.functionalMobility" = "Uwezo wa kusonga ili kufanya kazi";

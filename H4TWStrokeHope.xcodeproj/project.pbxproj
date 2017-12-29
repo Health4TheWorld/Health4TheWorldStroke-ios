@@ -72,6 +72,14 @@
 		17E0BB461EA4139E001FC7F3 /* ExercisesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB451EA4139E001FC7F3 /* ExercisesViewController.xib */; };
 		9D97478370E7B7322756F1D2 /* libPods-H4TWStrokeHope.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 680C4F0184FB59272CA0743A /* libPods-H4TWStrokeHope.a */; };
 		AB070D041FA2CDDC00D1C6F7 /* LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB070D031FA2CDDC00D1C6F7 /* LanguageManager.m */; };
+		AB2677931FF57E8C00BB12E0 /* AdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2677911FF57E8C00BB12E0 /* AdvancedViewController.m */; };
+		AB2677941FF57E8C00BB12E0 /* AdvancedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2677921FF57E8C00BB12E0 /* AdvancedViewController.xib */; };
+		AB2677981FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2677961FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m */; };
+		AB2677991FF5950500BB12E0 /* FunctionalMobilityAdvViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2677971FF5950500BB12E0 /* FunctionalMobilityAdvViewController.xib */; };
+		AB26779C1FF5B1D600BB12E0 /* 1FunctionalMobility.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB26779A1FF5B1D500BB12E0 /* 1FunctionalMobility.mp4 */; };
+		AB26779D1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB26779B1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 */; };
+		AB2677A11FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB26779F1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m */; };
+		AB2677A21FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2677A01FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib */; };
 		ABCD3CA11F9AA7D500BA412E /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCD3CA01F9AA7D500BA412E /* NSBundle+Language.m */; };
 		CC11D11B1EB3B8DE0063E72A /* ReminderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1191EB3B8DE0063E72A /* ReminderTableViewCell.m */; };
 		CC11D11C1EB3B8DE0063E72A /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D11A1EB3B8DE0063E72A /* ReminderTableViewCell.xib */; };
@@ -256,6 +264,17 @@
 		AB070D021FA2CDDC00D1C6F7 /* LanguageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageManager.h; sourceTree = "<group>"; };
 		AB070D031FA2CDDC00D1C6F7 /* LanguageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageManager.m; sourceTree = "<group>"; };
 		AB070D051FA2F43500D1C6F7 /* H4TWStrokeHope.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H4TWStrokeHope.pch; sourceTree = SOURCE_ROOT; };
+		AB2677901FF57E8C00BB12E0 /* AdvancedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvancedViewController.h; sourceTree = "<group>"; };
+		AB2677911FF57E8C00BB12E0 /* AdvancedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvancedViewController.m; sourceTree = "<group>"; };
+		AB2677921FF57E8C00BB12E0 /* AdvancedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvancedViewController.xib; sourceTree = "<group>"; };
+		AB2677951FF5950500BB12E0 /* FunctionalMobilityAdvViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionalMobilityAdvViewController.h; sourceTree = "<group>"; };
+		AB2677961FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionalMobilityAdvViewController.m; sourceTree = "<group>"; };
+		AB2677971FF5950500BB12E0 /* FunctionalMobilityAdvViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FunctionalMobilityAdvViewController.xib; sourceTree = "<group>"; };
+		AB26779A1FF5B1D500BB12E0 /* 1FunctionalMobility.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1FunctionalMobility.mp4; sourceTree = "<group>"; };
+		AB26779B1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3FunctionalMobility.mp4; sourceTree = "<group>"; };
+		AB26779E1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BalanceTrainingAdvViewController.h; sourceTree = "<group>"; };
+		AB26779F1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalanceTrainingAdvViewController.m; sourceTree = "<group>"; };
+		AB2677A01FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceTrainingAdvViewController.xib; sourceTree = "<group>"; };
 		AB78C48B1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		AB78C48C1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		AB78C48D1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -481,6 +500,8 @@
 				17593E771EA83B0300F37C74 /* 1CHipFlexion.m4v */,
 				17593E781EA83B0300F37C74 /* 1BKneeFlexion.m4v */,
 				17E0BB281EA41043001FC7F3 /* 1AToeFlexion.m4v */,
+				AB26779A1FF5B1D500BB12E0 /* 1FunctionalMobility.mp4 */,
+				AB26779B1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 */,
 			);
 			name = Videos;
 			sourceTree = "<group>";
@@ -562,6 +583,22 @@
 				AB070D031FA2CDDC00D1C6F7 /* LanguageManager.m */,
 			);
 			name = Language;
+			sourceTree = "<group>";
+		};
+		AB26778C1FF57E3800BB12E0 /* Advanced */ = {
+			isa = PBXGroup;
+			children = (
+				AB2677901FF57E8C00BB12E0 /* AdvancedViewController.h */,
+				AB2677911FF57E8C00BB12E0 /* AdvancedViewController.m */,
+				AB2677921FF57E8C00BB12E0 /* AdvancedViewController.xib */,
+				AB2677951FF5950500BB12E0 /* FunctionalMobilityAdvViewController.h */,
+				AB2677961FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m */,
+				AB2677971FF5950500BB12E0 /* FunctionalMobilityAdvViewController.xib */,
+				AB26779E1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.h */,
+				AB26779F1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m */,
+				AB2677A01FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib */,
+			);
+			path = Advanced;
 			sourceTree = "<group>";
 		};
 		CC11D1251EB64FD00063E72A /* Add Reminder */ = {
@@ -759,6 +796,7 @@
 		CCB7B3FF1E9413170058C32E /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				AB26778C1FF57E3800BB12E0 /* Advanced */,
 				CCB7B4001E9413260058C32E /* ExercisesViewController.h */,
 				CCB7B4011E9413260058C32E /* ExercisesViewController.m */,
 				17E0BB451EA4139E001FC7F3 /* ExercisesViewController.xib */,
@@ -909,7 +947,7 @@
 		CC4C10A41E7A26DE00515CDC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Rachel;
 				TargetAttributes = {
 					CC4C10AB1E7A26DE00515CDC = {
@@ -962,11 +1000,13 @@
 				CC73E4481E842370001131AF /* OFL.txt in Resources */,
 				CC11D12F1EB650320063E72A /* AddReminderFrequencyViewController.xib in Resources */,
 				CC73E4401E842370001131AF /* Lato-Bold.ttf in Resources */,
+				AB2677991FF5950500BB12E0 /* FunctionalMobilityAdvViewController.xib in Resources */,
 				CC73E42B1E841CAC001131AF /* Patagonia.jpg in Resources */,
 				CC73E4431E842370001131AF /* Lato-HairlineItalic.ttf in Resources */,
 				1737A19D1EA897D300C6D71E /* 3ALegControl1.m4v in Resources */,
 				CC4C10C21E7A26DE00515CDC /* LaunchScreen.storyboard in Resources */,
 				CC11D1461EB6E7D00063E72A /* TimeTableViewCell.xib in Resources */,
+				AB26779C1FF5B1D600BB12E0 /* 1FunctionalMobility.mp4 in Resources */,
 				CC73E4441E842370001131AF /* Lato-Italic.ttf in Resources */,
 				CC73E4411E842370001131AF /* Lato-BoldItalic.ttf in Resources */,
 				179726B61EB3109B0053378E /* WebViewController.xib in Resources */,
@@ -974,6 +1014,7 @@
 				CCEF72EC1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib in Resources */,
 				17E0BB291EA41043001FC7F3 /* 1AToeFlexion.m4v in Resources */,
 				167883AA1EE1029900B106AD /* ChatBotViewController.xib in Resources */,
+				AB2677A21FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib in Resources */,
 				CCB7B4101E94136C0058C32E /* RemindersViewController.xib in Resources */,
 				17E0BB461EA4139E001FC7F3 /* ExercisesViewController.xib in Resources */,
 				CC73E43F1E842370001131AF /* Lato-BlackItalic.ttf in Resources */,
@@ -1015,12 +1056,14 @@
 				CC11D12A1EB650150063E72A /* AddReminderTitleViewController.xib in Resources */,
 				1737A19A1EA8977300C6D71E /* 1CHipFlexion.m4v in Resources */,
 				16AADA791F219CBD00D8A8EB /* RelaxingMusicViewCell.xib in Resources */,
+				AB2677941FF57E8C00BB12E0 /* AdvancedViewController.xib in Resources */,
 				16EDA5651F00934100906891 /* QuotesCollectionViewCell.xib in Resources */,
 				1737A19F1EA897DB00C6D71E /* 4ABridgeHipLift.m4v in Resources */,
 				17E0BB3A1EA4125E001FC7F3 /* CoordinationViewController.xib in Resources */,
 				CC4C10BA1E7A26DE00515CDC /* Main.storyboard in Resources */,
 				CCB7B41C1E94139A0058C32E /* SurveysViewController.xib in Resources */,
 				1788309C1EA8985200690787 /* 5BMaleDocWaving.m4v in Resources */,
+				AB26779D1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 in Resources */,
 				1737A1A21EA897E800C6D71E /* 5AFemaleDocWaving.m4v in Resources */,
 				CC11D1341EB6504E0063E72A /* AddReminderTimesViewController.xib in Resources */,
 				CC73E4461E842370001131AF /* Lato-LightItalic.ttf in Resources */,
@@ -1125,8 +1168,10 @@
 				CC73E4591E86BD65001131AF /* HomeButton.m in Sources */,
 				ABCD3CA11F9AA7D500BA412E /* NSBundle+Language.m in Sources */,
 				CCEF72EB1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m in Sources */,
+				AB2677A11FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m in Sources */,
 				CCB7B4091E9413590058C32E /* LearnViewController.m in Sources */,
 				CC73E42F1E841EF4001131AF /* GraphicUtils.m in Sources */,
+				AB2677981FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m in Sources */,
 				CCB7B4031E9413260058C32E /* ExercisesViewController.m in Sources */,
 				CC4C10E71E7A272C00515CDC /* Constants.m in Sources */,
 				CC11D13D1EB6B99E0063E72A /* EditReminderViewController.m in Sources */,
@@ -1138,6 +1183,7 @@
 				CCB7B40F1E94136C0058C32E /* RemindersViewController.m in Sources */,
 				CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */,
 				162856CB1F1F08F200CE1327 /* RelaxingMusicViewController.m in Sources */,
+				AB2677931FF57E8C00BB12E0 /* AdvancedViewController.m in Sources */,
 				17DE3D4F1EA9604900D350A1 /* ArmsAndHandsViewController.m in Sources */,
 				CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */,
 				CC11D1381EB6B7BC0063E72A /* NoResultsTableViewCell.m in Sources */,
@@ -1267,7 +1313,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -1275,7 +1323,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1316,7 +1368,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -1324,7 +1378,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

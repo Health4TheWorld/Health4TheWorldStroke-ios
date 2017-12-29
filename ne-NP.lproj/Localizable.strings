@@ -122,7 +122,7 @@
 /* EXERCISES VIEW CONTROLLER */
 
 "Exercises.stretching" = "तन्काउनु";
-
+"Exercises.advancedExercises" = "Advanced Exercises";//MM
 "Exercises.functionalMobility" = "दैनिक कार्यात्मक गतिशीलता";
 
 "Exercises.mindExercises" = "मानसिक​ व्यायाम";

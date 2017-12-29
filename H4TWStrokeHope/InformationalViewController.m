@@ -13,8 +13,9 @@
 @interface InformationalViewController ()
 /* We add labels on this page verticaly, so need to keep track of current Y value */
 @property CGFloat currentY;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollViewForContent;
 
-@property UIScrollView *scrollView;
+//@property UIScrollView *scrollView;
 @property UIView *contentView;
 @property BOOL alreadyCreatedView;
 @end
@@ -44,10 +45,10 @@
     if (self.alreadyCreatedView) {
         return;
     }
-    self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
-    self.scrollView.bounces = NO;
+//    self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+    self.scrollViewForContent.bounces = NO;
     self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height )];//20000
-    [self.scrollView addSubview:self.contentView];
+    [self.scrollViewForContent addSubview:self.contentView];
     
     self.currentY = 15;
     
@@ -61,8 +62,8 @@
         [self layoutCopyright];
     }
     
-    self.scrollView.contentSize = CGSizeMake(self.contentView.frame.size.width, self.currentY);
-    [self.view addSubview:self.scrollView];
+    self.scrollViewForContent.contentSize = CGSizeMake(self.scrollViewForContent.frame.size.width, self.currentY);
+//    [self.view addSubview:self.scrollView];
     self.alreadyCreatedView = YES;
 }
 

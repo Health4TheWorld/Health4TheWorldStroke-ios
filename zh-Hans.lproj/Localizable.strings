@@ -71,6 +71,7 @@
 //
 ///* EXERCISES VIEW CONTROLLER */
 "Exercises.title" = "鍛煉";
+"Exercises.advancedExercises" = "Advanced Exercises";//MM
 "Exercises.strengthening" = "強化";
 "Exercises.stretching" = "拉伸";
 "Exercises.functionalMobility" = "功能性移動";

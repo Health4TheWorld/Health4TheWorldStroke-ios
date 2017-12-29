@@ -68,6 +68,7 @@
 
 /* EXERCISES VIEW CONTROLLER */
 "Exercises.title" = "Ejercicios";
+"Exercises.advancedExercises" = "Advanced Exercises";//MM
 "Exercises.strengthening" = "Fortalecimiento";
 "Exercises.stretching" = "Estiramiento ";
 "Exercises.functionalMobility" = "Movilidad funcional";
