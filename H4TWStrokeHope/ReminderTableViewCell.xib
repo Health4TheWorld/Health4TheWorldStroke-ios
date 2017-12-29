@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,37 +24,37 @@
             <rect key="frame" x="0.0" y="0.0" width="336" height="72"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="336" height="71"/>
+                <rect key="frame" x="0.0" y="0.0" width="336" height="71.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leQ-Ml-pHa">
-                        <rect key="frame" x="18" y="15" width="40" height="40"/>
+                        <rect key="frame" x="26" y="15" width="40" height="40"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="bib-hs-Jnd"/>
                             <constraint firstAttribute="width" constant="40" id="kN4-IT-jL6"/>
                         </constraints>
-                        <state key="normal" title="Button" image="Reminder_check_unselected"/>
+                        <state key="normal" title="Button" image="ReminderCheckUnselected"/>
                         <connections>
                             <action selector="clickedCheck:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1xj-Aw-0fm"/>
                         </connections>
                     </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYI-bz-eiL">
-                        <rect key="frame" x="74" y="15" width="229" height="42"/>
+                        <rect key="frame" x="82" y="15" width="213" height="42"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIy-6S-DOj">
-                                <rect key="frame" x="0.0" y="0.0" width="229" height="22"/>
+                                <rect key="frame" x="0.0" y="0.0" width="213" height="22"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
                                 <color key="textColor" red="0.396078431372549" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndL-Pi-g0M">
-                                <rect key="frame" x="0.0" y="25" width="229" height="17"/>
+                                <rect key="frame" x="0.0" y="25" width="213" height="17"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                 <color key="textColor" red="0.84705882352941175" green="0.18431372549019609" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedInfoButton" translatesAutoresizingMaskIntoConstraints="NO" id="dnR-QC-Tct">
-                                <rect key="frame" x="226" y="10" width="22" height="22"/>
+                                <rect key="frame" x="210" y="10" width="22" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="S1x-mu-BUc"/>
                                     <constraint firstAttribute="width" constant="22" id="XHX-s4-Vr5"/>
@@ -94,6 +94,6 @@
     </objects>
     <resources>
         <image name="RedInfoButton" width="22" height="22"/>
-        <image name="Reminder_check_unselected" width="42" height="42"/>
+        <image name="ReminderCheckUnselected" width="42" height="42"/>
     </resources>
 </document>

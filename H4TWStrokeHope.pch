@@ -1,0 +1,17 @@
+//
+//  H4TWStrokeHope.pch
+//  H4TWStrokeHope
+//
+//  Created by Maitri Mehta on 10/26/17.
+//  Copyright © 2017 Rachel. All rights reserved.
+//
+
+#ifndef H4TWStrokeHope_pch
+#define H4TWStrokeHope_pch
+#import "Defines.h"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* H4TWStrokeHope_pch */

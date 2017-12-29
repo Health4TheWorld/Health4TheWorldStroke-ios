@@ -74,6 +74,29 @@
 
 /* EXERCISES VIEW CONTROLLER */
 "Exercises.title" = "Exercises";
+"Exercises.advancedExercises" = "Advanced Exercises";//MM
+
+"Exercises.arms" = "Arms";//MM
+//"Exercises.functionalMobility" = "Functional Mobility";//MM
+"Exercises.balanceTraining" = "Balance Training";//MM
+
+"Exercises.functionalMobility.Instructions" = "Keep Arms at shoulder level or below";//MM
+"Exercises.functionalMobility.h1" = "Rolling in Bed";//MM
+"Exercises.functionalMobility.h2" = "Rolling out of Bed";//MM
+
+
+//"Balance Training"//MM
+"Exercises.balanceTraining.sitting" = "Sitting";
+"Exercises.balanceTraining.sitting.H1" = "Sitting with one hand support";// 3721";
+"Exercises.balanceTraining.sitting.H2" = "Sitting with no hand support";// 3722";
+"Exercises.balanceTraining.sitting.H3" = "Sitting and leaning in different directions";//: #3571, 3572"
+
+"Exercises.balanceTraining.Standing" = "Standing";
+"Exercises.balanceTraining.Standing.H1" = "Standing Practice.";// Pics #3729-3732";
+"Exercises.balanceTraining.Standing.H2" = "Standing and shifting weight side to side";// (Video #3574, 3580)";
+"Exercises.balanceTraining.Standing.H3" = "Step tap";//(Video #3575, 3576, 3578 )
+//MM
+
 "Exercises.strengthening" = "Strengthening";
 "Exercises.stretching" = "Stretching";
 "Exercises.functionalMobility" = "Functional Mobility";
@@ -164,7 +187,12 @@
 "Learn.sleep" = "Sleep";
 "Learn.problem" = "PROBLEM";
 "Learn.whatToDo" = "WHAT TO DO";
-
+"Learn.riskFactorsForStroke" = "RISK FACTORS FOR STROKE";
+"Learn.riskFactorsOne" = "HIGH BLOOD PRESSURE";
+"Learn.riskFactorsTwo" = "HEART DISEASE";
+"Learn.riskFactorsThree" = "SMOKING";
+"Learn.riskFactorsFour" = "DIABETES";
+"Learn.riskFactorsFive" = "PRIOR STROKE";
 
 /* FAQ */
 "Faq.questionOne" = "What is stroke?";
@@ -474,5 +502,5 @@
 "Chatbot.sendButtonTitle" = "Send";
 "Chatbot.enterMessage" =  "Enter message...";
 
->>>>>>> master
+
 

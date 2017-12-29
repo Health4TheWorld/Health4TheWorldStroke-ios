@@ -54,6 +54,7 @@
 
 /* EXERCISES VIEW CONTROLLER */
 "Exercises.title" = "Exercices";
+"Exercises.advancedExercises" = "Advanced Exercises";//MM
 "Exercises.strengthening" = "Renforcement";
 "Exercises.stretching" = "Étirage";
 "Exercises.functionalMobility" = "Mobilité fonctionnelle";
@@ -118,6 +119,12 @@
 "Learn.sleep" = "Dormir";
 "Learn.problem" = "PROBLÈME";
 "Learn.whatToDo" = "QUOI FAIRE";
+"Learn.riskFactorsForStroke" = "RISK FACTORS FOR STROKE";
+"Learn.riskFactorsOne" = "HIGH BLOOD PRESSURE";
+"Learn.riskFactorsTwo" = "HEART DISEASE";
+"Learn.riskFactorsThree" = "SMOKING";
+"Learn.riskFactorsFour" = "DIABETES";
+"Learn.riskFactorsFive" = "PRIOR STROKE";
 
 /* FAQ */
 "Faq.questionOne" = "Qu’est-ce que c’est l’AVC?";
@@ -421,6 +428,48 @@
 "Chatbot.feelingmessage5" = "somnolent";
 "Chatbot.feelingmessage6" = "fatiguer";
 
+"HelpMeSpeak.iLoveYou" = "Je t’aime";
+"HelpMeSpeak.imCold" = "J'ai froid";
+"HelpMeSpeak.imHot" = "J'ai chaud";
+"HelpMeSpeak.dizzy" = "J'ai le vertige";
+"HelpMeSpeak.lightsOn" = "Allumez les lumières";
+"HelpMeSpeak.lightsOff" = "Éteignez les lumières";
+"HelpMeSpeak.getInBed" = "Je veux aller au lit";
+"HelpMeSpeak.getOutOfBed" = "Je veux sortir du lit";
+"HelpMeSpeak.howAreYou" = "Comment vas-tu?";
+"HelpMeSpeak.ambulance" = "J'ai besoin d'une ambulance";
+"HelpMeSpeak.inALittle" = "Dans quelque minutes";
+"HelpMeSpeak.now" = "Maintenant";
+"HelpMeSpeak.goOutside" = "Je veux sortir";
+"HelpMeSpeak.sayHi" = "Salut!";
 
+/* LEGS VIEW CONTROLLER */
+"Legs.toe" = "Flexion des orteils";
+"Legs.knee" = "Flexion du genou";
+"Legs.hip" = "Flexion de la hanche";
 
+/* ARMS VIEW CONTROLLER */
+"Arms.elbow" = "Flexion du coude";
+"Arms.shoulder" = "Flexion de l'épaule";
+
+/* COORDINATION VIEW CONTROLLER */
+"Coordination.legControl1" = "Control des jambes 1";
+"Coordination.legControl2" = "Control des jambes 2";
+
+/* MIND EXERCISES VIEW CONTROLLER */
+"MindExercises.bellsInstructions" = "* Asseyez-vous confortablement et prenez une grande respiration avec un doux sourire.\n*Concentrez-vous sur les environs paisibles et les sons.\n* Imaginez-vous marcher dans cet environnement.\n* Déplacez le téléphone pour appréciez la vue.\n* Fermez les yeux maintenant et respirez profondément.\n* Ramenez vos pensés dans le présent.";
+"MindExercises.buddhaInstructions" = "* Asseyez-vous confortablement et prenez une profonde respiration avec un doux sourire.\n*Concentrez-vous sur la scène paisible et les sons naturels.\n* Imaginez-vous en train de marcher vers la statue de Bouddha.\n* Déplacez le téléphone en haut pour voir le ciel, et bougez-le du côté pour profiter de la vue.\n* Fermez les yeux maintenant et respirez profondément.\n* Recentrez-vous les pensées dans le présent dans votre chambre.";
+"MindExercises.flagsInstructions" = "* Asseyez-vous confortablement et prenez une profonde respiration avec un doux sourire.\n* Mettez votre focus sur cette plage et le son des vagues.\n* Imaginez le sable entre vos orteils.\n* Imaginez marcher sur la plage et créer vos propres empreintes dan le sable.\n* Déplacez le téléphone du côté pour profiter de la plage.\n* Fermez les yeux miantenant et respirez profondément.\n* Rapportez le focus dans votre chambre.";
+"MindExercises.marketplace1Instructions" = "* Asseyez-vous confortablement et respirez profondément avec un sourire doux.\n*Concentrez-vous sur la scène du marché et les sons naturels.\n* Imaginez que vous tendez la main et que vous ramassez le fruit.\n*Bougez le téléphone du côté pour profiter de la vue.\n* Fermez les yeux maintenant et prend un autre respiration profonde.\n* Rapportez le focus dans votre chambre.";
+"MindExercises.marketplace2Instructions" = "* Asseyez-vous confortablement et respirez profondément avec un sourire doux.\n*Concentrez-vous sur la scène du marché et les sons naturels.\n* Imaginez-vous marcher sur le marché.\n* Déplacer le téléphone du côté pour profiter de la vue.\n* Fermez les yeux maintenant et prenez une autre respiration profonde.\n* Rapportez le focus dans votre chambre.";
+"MindExercises.rockybeachInstructions" = "* Asseyez-vous confortablement et respirez profondément avec un doux sourire.\n*Focalisez-vous sur cette plage et le bruit des vagues. \n* Remarquez les rochers magnifiques.\n* Imaginez-vous en train de chercher et de cueillir un roche.\n* Imaginez-vous en train de faire une tour avec les roches.\n* Bougez le téléphone en haut pour voir le beau ciel.\n* Fermez les yeux maintenant et prenez une autre respiration profonde.\n* Rapportez le focus dans votre chambre.";
+"MindExercises.sandybeachInstructions" = "* Asseyez-vous confortablement et prenez une grande respiration avec un doux sourire.\n*Focus sur cette plage et le bruit des vagues.\n* Imaginez la sensation de sable sur vos pieds.\n* Imaginez marcher sur la plage et créer vos propres empreintes dans le sable.\n* Déplacer le téléphone sur le côté pour profiter de la plage.\n* Fermez les yeux maintenant et respirez profondément.\n* Recentrez-vous dans votre chambre.";
+
+"Learn.riskFactorsForStroke" = "FACTEURS DE RISQUE POUR L'AVC";
+"Learn.riskFactorsOne" = "PRESSION SANGUINE ÉLEVÉE";
+"Learn.riskFactorsTwo" = "MALADIE CARDIAQUE";
+"Learn.riskFactorsThree" = "FUMER";
+"Learn.riskFactorsFour" = "DIABETES";
+"Learn.riskFactorsFive" = "PATIENT ATTEINT D’AVC DÉJÀ";
+"Reminders.oneTimeReminder" = "Faites-en un rappel unique";
 

@@ -55,6 +55,23 @@
     [self bringSubviewToFront:self.myTitleLabel];
 }
 
+- (void)addImageBottomLeft:(UIImage *)image {
+    float imgWidth, imgHeight;
+    if (image.size.width > image.size.height) {
+        /* If the image is wider than it is tall, then set the width to be this button's width - 30 and scale the height proportionally. */
+        imgWidth = self.frame.size.width - 30;
+        imgHeight = (image.size.height * imgWidth) / (image.size.width);
+    } else {
+        /* If the image is taller than it is wide, then set the height to be this button's width - 30 and scale the height proportionally. */
+        imgHeight = self.frame.size.height - 30;
+        imgWidth = (image.size.width * imgHeight) / (image.size.height);
+    }
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 40, imgWidth/2 - 10, imgHeight/2)];
+    [imgView setImage:image];
+    [self addSubview:imgView];
+    [self bringSubviewToFront:self.myTitleLabel];
+}
+
 - (void)addImageTopRight:(UIImage *)image {
     float imgWidth, imgHeight;
     if (image.size.width > image.size.height) {

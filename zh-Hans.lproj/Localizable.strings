@@ -14,16 +14,9 @@
 "Disclaimer.paragraphFour" = "使用這款軟件的任何風險均由使用者個人承擔，Health4theworld和其他任何參與內容制定的個人均不為应用軟件使用過程中造成的人和物品的損傷和損失承擔任何責任。";
 "Disclaimer.paragraphFive" = "為了了解用戶的使用習慣和進度，軟件的使用記錄可能會被追蹤。";
 "Disclaimer.paragraphSix" = "點擊接受，表示您同意以上使用條款和保密協議。";
-//
-///* ENTER VIEW CONTROLLER */
-//"Enter.firstQuote" = "\"The best preparation for tomorrow is doing your best today.\"";
-//"Enter.secondQuote" = "\"Believe you can and you're halfway there.\"";
-//"Enter.thirdQuote" = "\"Nothing is impossible, the word itself says 'I'm possible'!\"";
-//"Enter.fourthQuote" = "\"Only I can change my life. No one can do it for me.\"";
-//"Enter.fifthQuote" = "\"Always do your best. What you plant now will harvest later.\"";
-//"Enter.sixthQuote" = "\"Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.\"";
-//"Enter.seventhQuote" = "\"Setting goals is the first step in turning the invisible into the visible.\"";
 
+///* ENTER VIEW CONTROLLER */
+"Enter.LanguageChange" = "語言切換";//"語言切換";
 "Enter.firstQuote" = "\"做好今天的自己是為明天的到來所做的最好的準備。\"";
 "Enter.firstAuthor" = " – H. Jackson Brown, Jr";
 "Enter.secondQuote" = "\"相信自己可以是成功的一半。\"";
@@ -78,6 +71,7 @@
 //
 ///* EXERCISES VIEW CONTROLLER */
 "Exercises.title" = "鍛煉";
+"Exercises.advancedExercises" = "Advanced Exercises";//MM
 "Exercises.strengthening" = "強化";
 "Exercises.stretching" = "拉伸";
 "Exercises.functionalMobility" = "功能性移動";
@@ -89,7 +83,7 @@
 "Strenghtening.legs" = "腿";
 "Strengthening.arms" = "手臂";
 "Strengthening.coordination" = "協調性";
-//
+
 ///* STRETCHING VIEW CONTROLLER */
 "Stretching.title" = "拉伸";
 "Stretching.armsAndHands" = "手臂和手掌";
@@ -110,7 +104,21 @@
 "Stretching.handStretchInstructions" = "病人侧躺，不方便的那一侧面向上，手臂放在臀部上。手肘托住病人臀部，用你的另一只手扳动病人手腕，使手腕向后远离腹部。再把手腕放回原处。一只手托住手腕，另一只手打开病人的手指。当手腕抬起远离腹部的同时，打开病人手指。这个拉伸时间停留30秒，重複三次";
 "Stretching.shoulderStretchInstructions" = "病人側躺，把受影響的手臂放在臀部上。將病人肩膀抬起，使之靠近耳朵方向舉起，然後再輕輕的慢慢的放回起始點。";
 "Stretching.armStretchInstructions" = "病人側躺，把受影響的手臂放在臀部上。輕輕的把病人下手臂向腿部方向移動，停留30秒，重複三次。確保你穩住了病人肩膀，使之不會前傾。";
-//
+
+/* LEGS VIEW CONTROLLER */
+"Legs.toe" = "腳趾彎曲";
+"Legs.knee" = "膝蓋彎曲";
+"Legs.hip" = "屈髖關節";
+
+"Arms.elbow" = "手肘彎曲";
+"Arms.shoulder" = "肩部抬升";
+
+"Coordination.legControl1" = "腿部控制1";
+"Coordination.legControl2" = "腿部控制2";
+"Quotes.title" = "今天的勵志格言";
+"Music.title" = "輕鬆音樂";
+
+
 ///* MIND EXERCISES VIEW CONTROLLER */
 "MindExercises.bellsInstructions" = "* 找一個舒適的姿勢坐好，微笑，深呼吸。\n* 注意力集中在宁静的环境和声音中。\n* 想象自己在這裡散步。\n* 拿起手機，享受眼前景色。Move the phone side ways to enjoy the view.\n*闭上眼睛，再次深呼吸。 \n*注意力回到你的房间。";
 "MindExercises.buddhaInstructions" = "*找一個舒適的姿勢坐好，微笑，深呼吸。\n* 集中注意力在周圍寧靜的環境和自然的聲音中.\n* 想象你正慢慢走向一座佛像。\n* 舉起手機到你的上方，欣賞上空和兩邊 ，享受眼前的景色。\n*閉上你的眼睛，再次深呼吸。\n* 注意力回到你的房間。";
@@ -278,7 +286,7 @@
 "Reminders.addTime" = "添加時間";
 "Reminders.editTitle" = "編輯提醒";
 "Reminders.saveChanges" = "保存修改";
-"Reminders.oneTimeReminder" = "一次性提醒";
+"Reminders.oneTimeReminder" = "設置一次性提醒";
 //
 ///* SURVEYS */
 "Surveys.password" = "密碼";
@@ -456,3 +464,10 @@
 "Chatbot.feelingmessage5" = "困倦";
 "Chatbot.feelingmessage6" = "疲勞";
 
+
+"Learn.riskFactorsForStroke" = "中風的風險因素";
+"Learn.riskFactorsOne" = "高血壓";
+"Learn.riskFactorsTwo" = "心臟病";
+"Learn.riskFactorsThree" = "吸煙";
+"Learn.riskFactorsFour" = "糖尿病";
+"Learn.riskFactorsFive" = "PRIOR STROKE";

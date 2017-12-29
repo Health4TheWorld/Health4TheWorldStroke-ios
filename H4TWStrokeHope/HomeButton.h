@@ -14,6 +14,7 @@
 - (id)initWithText:(NSString *)text withFrame:(CGRect)frame;
 /* Scales image and adds it to the bottom right. */
 - (void)addImageBottomRight:(UIImage *)image;
+- (void)addImageBottomLeft:(UIImage *)image;//MM
 /* Scales image and adds it to the right of the button, vertically centered. */
 - (void)addImageRightCenter:(UIImage *)image;
 /* Scales image and adds it to the center of the button. */

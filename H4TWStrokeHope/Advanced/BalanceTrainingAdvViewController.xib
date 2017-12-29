@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BalanceTrainingAdvViewController">
+            <connections>
+                <outlet property="contentView" destination="2I4-nT-s47" id="f6e-Xd-Rbu"/>
+                <outlet property="scrollView" destination="qvP-rv-hiV" id="aRD-fi-GXd"/>
+                <outlet property="view" destination="hpw-Fa-DxX" id="Z1N-pV-TX4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="hpw-Fa-DxX">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvP-rv-hiV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2I4-nT-s47" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="2I4-nT-s47" firstAttribute="leading" secondItem="qvP-rv-hiV" secondAttribute="leading" id="CXV-DQ-yuw"/>
+                        <constraint firstAttribute="bottom" secondItem="2I4-nT-s47" secondAttribute="bottom" id="eVF-kR-DhX"/>
+                        <constraint firstItem="2I4-nT-s47" firstAttribute="top" secondItem="qvP-rv-hiV" secondAttribute="top" id="llU-Ih-t79"/>
+                        <constraint firstAttribute="trailing" secondItem="2I4-nT-s47" secondAttribute="trailing" id="x0G-q9-tfM"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qvP-rv-hiV" secondAttribute="trailing" id="1jh-Tx-ruH"/>
+                <constraint firstItem="qvP-rv-hiV" firstAttribute="leading" secondItem="hpw-Fa-DxX" secondAttribute="leading" id="7QA-ue-9YV"/>
+                <constraint firstItem="2I4-nT-s47" firstAttribute="width" secondItem="hpw-Fa-DxX" secondAttribute="width" id="BOd-VJ-q0o"/>
+                <constraint firstAttribute="bottom" secondItem="qvP-rv-hiV" secondAttribute="bottom" id="K8r-rB-i5W"/>
+                <constraint firstItem="qvP-rv-hiV" firstAttribute="top" secondItem="hpw-Fa-DxX" secondAttribute="top" id="VdH-4t-xv2"/>
+                <constraint firstItem="2I4-nT-s47" firstAttribute="height" secondItem="hpw-Fa-DxX" secondAttribute="height" id="doo-T0-qhk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vLb-oP-HKi"/>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

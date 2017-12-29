@@ -17,6 +17,7 @@
 #import "FunctionalMobilityViewController.h"
 #import "MindExercisesViewController.h"
 #import "AWSDynamoDBHelper.h"
+#import "AdvancedViewController.h"
 
 @interface ExercisesViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -47,6 +48,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     if (!self.alreadySetUpView) {
         float screenWidth = [UIScreen mainScreen].bounds.size.width;
         static int MARGIN = 16;
@@ -72,6 +74,15 @@
         self.currentY += self.videoView.frame.size.height + 20;
         
        
+        /* Advanced Exercises */
+        HomeButton *advancedButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.advancedExercises", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, self.currentY, self.view.frame.size.width - SPACE_BETWEEN_CELLS - SPACE_BETWEEN_CELLS, cellWidth)];
+        [advancedButton addImageBottomLeft:[UIImage imageNamed: BALANCE_ICON]];
+        [advancedButton addImageCentered:[UIImage imageNamed:FUNCTIONAL_MOBILITY_ICON]];
+        [advancedButton addImageBottomRight:[UIImage imageNamed: STRONG_ARM_ICON]];
+        [advancedButton addTarget:self action:@selector(AdvancedPressed) forControlEvents:UIControlEventTouchUpInside];
+        
+        self.currentY += cellWidth;
+        self.currentY += SPACE_BETWEEN_CELLS;
         
         /* Buttons for different types of exercises  */
         HomeButton *strengtheningButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.strengthening", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, self.currentY, cellWidth, cellWidth)];
@@ -99,6 +110,7 @@
         
         cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
         
+        [self.contentView addSubview: advancedButton];
         [self.contentView addSubview: strengtheningButton];
         [self.contentView addSubview: stretchingButton];
         [self.contentView addSubview: functionalMobilityButton];
@@ -183,6 +195,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
@@ -191,6 +204,13 @@
     // Dispose of any resources that can be recreated.
 }
 /* Action listeners for buttons */
+
+//AdvancedViewController
+
+- (void)AdvancedPressed {
+    AdvancedViewController *vc = [[AdvancedViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)strengtheningPressed {
     StrengtheningViewController *vc = [[StrengtheningViewController alloc] init];

@@ -25,7 +25,6 @@
 		16BB397F1FEC47AB00E3C7BD /* ChatbotLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BB397E1FEC47AB00E3C7BD /* ChatbotLog.m */; };
 		16C3C37C1EEA37EF005991D5 /* ChatBotViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C3C37A1EEA37EF005991D5 /* ChatBotViewCell.m */; };
 		16C3C37D1EEA37EF005991D5 /* ChatBotViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C3C37B1EEA37EF005991D5 /* ChatBotViewCell.xib */; };
-		16DFC0C41EC7F2D3007322BF /* Bells.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 16DFC0C31EC7F2D3007322BF /* Bells.mp4 */; };
 		16EDA5641F00934100906891 /* QuotesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EDA5621F00934100906891 /* QuotesCollectionViewCell.m */; };
 		16EDA5651F00934100906891 /* QuotesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16EDA5631F00934100906891 /* QuotesCollectionViewCell.xib */; };
 		16EDA5691F009BD600906891 /* QuotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EDA5671F009BD600906891 /* QuotesViewController.m */; };
@@ -78,6 +77,16 @@
 		17E0BB441EA41370001FC7F3 /* FunctionalMobilityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB421EA41370001FC7F3 /* FunctionalMobilityViewController.xib */; };
 		17E0BB461EA4139E001FC7F3 /* ExercisesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB451EA4139E001FC7F3 /* ExercisesViewController.xib */; };
 		9D97478370E7B7322756F1D2 /* libPods-H4TWStrokeHope.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 680C4F0184FB59272CA0743A /* libPods-H4TWStrokeHope.a */; };
+		AB070D041FA2CDDC00D1C6F7 /* LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB070D031FA2CDDC00D1C6F7 /* LanguageManager.m */; };
+		AB2677931FF57E8C00BB12E0 /* AdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2677911FF57E8C00BB12E0 /* AdvancedViewController.m */; };
+		AB2677941FF57E8C00BB12E0 /* AdvancedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2677921FF57E8C00BB12E0 /* AdvancedViewController.xib */; };
+		AB2677981FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2677961FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m */; };
+		AB2677991FF5950500BB12E0 /* FunctionalMobilityAdvViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2677971FF5950500BB12E0 /* FunctionalMobilityAdvViewController.xib */; };
+		AB26779C1FF5B1D600BB12E0 /* 1FunctionalMobility.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB26779A1FF5B1D500BB12E0 /* 1FunctionalMobility.mp4 */; };
+		AB26779D1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB26779B1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 */; };
+		AB2677A11FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB26779F1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m */; };
+		AB2677A21FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2677A01FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib */; };
+		ABCD3CA11F9AA7D500BA412E /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCD3CA01F9AA7D500BA412E /* NSBundle+Language.m */; };
 		CC11D11B1EB3B8DE0063E72A /* ReminderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1191EB3B8DE0063E72A /* ReminderTableViewCell.m */; };
 		CC11D11C1EB3B8DE0063E72A /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D11A1EB3B8DE0063E72A /* ReminderTableViewCell.xib */; };
 		CC11D11F1EB51AB40063E72A /* Reminder.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D11E1EB51AB40063E72A /* Reminder.m */; };
@@ -194,7 +203,6 @@
 		16C3C3791EEA37EF005991D5 /* ChatBotViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotViewCell.h; sourceTree = "<group>"; };
 		16C3C37A1EEA37EF005991D5 /* ChatBotViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBotViewCell.m; sourceTree = "<group>"; };
 		16C3C37B1EEA37EF005991D5 /* ChatBotViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatBotViewCell.xib; sourceTree = "<group>"; };
-		16DFC0C31EC7F2D3007322BF /* Bells.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bells.mp4; sourceTree = "<group>"; };
 		16EDA5611F00934100906891 /* QuotesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuotesCollectionViewCell.h; sourceTree = "<group>"; };
 		16EDA5621F00934100906891 /* QuotesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuotesCollectionViewCell.m; sourceTree = "<group>"; };
 		16EDA5631F00934100906891 /* QuotesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuotesCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -267,9 +275,30 @@
 		17E0BB451EA4139E001FC7F3 /* ExercisesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExercisesViewController.xib; sourceTree = "<group>"; };
 		680C4F0184FB59272CA0743A /* libPods-H4TWStrokeHope.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-H4TWStrokeHope.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E1D5BC6AFF988A11E4C970D /* Pods-H4TWStrokeHope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H4TWStrokeHope.release.xcconfig"; path = "Pods/Target Support Files/Pods-H4TWStrokeHope/Pods-H4TWStrokeHope.release.xcconfig"; sourceTree = "<group>"; };
+		AB0219D61F9069E700BDB667 /* sw */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sw; path = sw.lproj/Main.strings; sourceTree = "<group>"; };
+		AB0219D71F9069E700BDB667 /* sw */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sw; path = sw.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		AB0219D81F9069E700BDB667 /* sw */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sw; path = sw.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AB070CFF1FA2CD9500D1C6F7 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		AB070D021FA2CDDC00D1C6F7 /* LanguageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageManager.h; sourceTree = "<group>"; };
+		AB070D031FA2CDDC00D1C6F7 /* LanguageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageManager.m; sourceTree = "<group>"; };
+		AB070D051FA2F43500D1C6F7 /* H4TWStrokeHope.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H4TWStrokeHope.pch; sourceTree = SOURCE_ROOT; };
+		AB2677901FF57E8C00BB12E0 /* AdvancedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvancedViewController.h; sourceTree = "<group>"; };
+		AB2677911FF57E8C00BB12E0 /* AdvancedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvancedViewController.m; sourceTree = "<group>"; };
+		AB2677921FF57E8C00BB12E0 /* AdvancedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvancedViewController.xib; sourceTree = "<group>"; };
+		AB2677951FF5950500BB12E0 /* FunctionalMobilityAdvViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionalMobilityAdvViewController.h; sourceTree = "<group>"; };
+		AB2677961FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionalMobilityAdvViewController.m; sourceTree = "<group>"; };
+		AB2677971FF5950500BB12E0 /* FunctionalMobilityAdvViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FunctionalMobilityAdvViewController.xib; sourceTree = "<group>"; };
+		AB26779A1FF5B1D500BB12E0 /* 1FunctionalMobility.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1FunctionalMobility.mp4; sourceTree = "<group>"; };
+		AB26779B1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3FunctionalMobility.mp4; sourceTree = "<group>"; };
+		AB26779E1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BalanceTrainingAdvViewController.h; sourceTree = "<group>"; };
+		AB26779F1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalanceTrainingAdvViewController.m; sourceTree = "<group>"; };
+		AB2677A01FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceTrainingAdvViewController.xib; sourceTree = "<group>"; };
 		AB78C48B1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		AB78C48C1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		AB78C48D1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		ABCD3C9E1F9AA67700BA412E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		ABCD3C9F1F9AA7D500BA412E /* NSBundle+Language.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
+		ABCD3CA01F9AA7D500BA412E /* NSBundle+Language.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
 		CAB005F6C1031EB530EC7DE2 /* Pods-H4TWStrokeHope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H4TWStrokeHope.debug.xcconfig"; path = "Pods/Target Support Files/Pods-H4TWStrokeHope/Pods-H4TWStrokeHope.debug.xcconfig"; sourceTree = "<group>"; };
 		CC11D1181EB3B8DE0063E72A /* ReminderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderTableViewCell.h; sourceTree = "<group>"; };
 		CC11D1191EB3B8DE0063E72A /* ReminderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderTableViewCell.m; sourceTree = "<group>"; };
@@ -503,7 +532,6 @@
 		17E0BB271EA41032001FC7F3 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
-				16DFC0C31EC7F2D3007322BF /* Bells.mp4 */,
 				17593E6E1EA83B0300F37C74 /* 5BMaleDocWaving.m4v */,
 				17593E6F1EA83B0300F37C74 /* 5AFemaleDocWaving.m4v */,
 				17593E701EA83B0300F37C74 /* 4CSitToStand.m4v */,
@@ -516,6 +544,8 @@
 				17593E771EA83B0300F37C74 /* 1CHipFlexion.m4v */,
 				17593E781EA83B0300F37C74 /* 1BKneeFlexion.m4v */,
 				17E0BB281EA41043001FC7F3 /* 1AToeFlexion.m4v */,
+				AB26779A1FF5B1D500BB12E0 /* 1FunctionalMobility.mp4 */,
+				AB26779B1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 */,
 			);
 			name = Videos;
 			sourceTree = "<group>";
@@ -585,6 +615,34 @@
 				6E1D5BC6AFF988A11E4C970D /* Pods-H4TWStrokeHope.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		AB0219D51F8D62B900BDB667 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				ABCD3C9F1F9AA7D500BA412E /* NSBundle+Language.h */,
+				ABCD3CA01F9AA7D500BA412E /* NSBundle+Language.m */,
+				AB070CFF1FA2CD9500D1C6F7 /* Defines.h */,
+				AB070D021FA2CDDC00D1C6F7 /* LanguageManager.h */,
+				AB070D031FA2CDDC00D1C6F7 /* LanguageManager.m */,
+			);
+			name = Language;
+			sourceTree = "<group>";
+		};
+		AB26778C1FF57E3800BB12E0 /* Advanced */ = {
+			isa = PBXGroup;
+			children = (
+				AB2677901FF57E8C00BB12E0 /* AdvancedViewController.h */,
+				AB2677911FF57E8C00BB12E0 /* AdvancedViewController.m */,
+				AB2677921FF57E8C00BB12E0 /* AdvancedViewController.xib */,
+				AB2677951FF5950500BB12E0 /* FunctionalMobilityAdvViewController.h */,
+				AB2677961FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m */,
+				AB2677971FF5950500BB12E0 /* FunctionalMobilityAdvViewController.xib */,
+				AB26779E1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.h */,
+				AB26779F1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m */,
+				AB2677A01FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib */,
+			);
+			path = Advanced;
 			sourceTree = "<group>";
 		};
 		CC11D1251EB64FD00063E72A /* Add Reminder */ = {
@@ -675,6 +733,7 @@
 				17E0BB2B1EA41069001FC7F3 /* VideoViewController.m */,
 				17E0BB2C1EA41069001FC7F3 /* VideoViewController.xib */,
 				CC4C10B01E7A26DE00515CDC /* main.m */,
+				ABCD3C9E1F9AA67700BA412E /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -700,6 +759,7 @@
 		CC73E42C1E841EE0001131AF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				AB0219D51F8D62B900BDB667 /* Language */,
 				CC4C10E51E7A272C00515CDC /* Constants.h */,
 				CC4C10E61E7A272C00515CDC /* Constants.m */,
 				CCAE42A61E7C2F33006F490E /* Utils.h */,
@@ -713,6 +773,7 @@
 		CC73E4311E842354001131AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AB070D051FA2F43500D1C6F7 /* H4TWStrokeHope.pch */,
 				17E0BB271EA41032001FC7F3 /* Videos */,
 				CC73E4321E842369001131AF /* Fonts */,
 				CC73E42A1E841CAC001131AF /* Patagonia.jpg */,
@@ -781,6 +842,7 @@
 		CCB7B3FF1E9413170058C32E /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				AB26778C1FF57E3800BB12E0 /* Advanced */,
 				CCB7B4001E9413260058C32E /* ExercisesViewController.h */,
 				CCB7B4011E9413260058C32E /* ExercisesViewController.m */,
 				17E0BB451EA4139E001FC7F3 /* ExercisesViewController.xib */,
@@ -931,7 +993,8 @@
 		CC4C10A41E7A26DE00515CDC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Rachel;
 				TargetAttributes = {
 					CC4C10AB1E7A26DE00515CDC = {
@@ -962,6 +1025,7 @@
 				"ne-NP",
 				"fil-PH",
 				"zh-Hans",
+				sw,
 			);
 			mainGroup = CC4C10A31E7A26DE00515CDC;
 			productRefGroup = CC4C10AD1E7A26DE00515CDC /* Products */;
@@ -983,11 +1047,13 @@
 				CC73E4481E842370001131AF /* OFL.txt in Resources */,
 				CC11D12F1EB650320063E72A /* AddReminderFrequencyViewController.xib in Resources */,
 				CC73E4401E842370001131AF /* Lato-Bold.ttf in Resources */,
+				AB2677991FF5950500BB12E0 /* FunctionalMobilityAdvViewController.xib in Resources */,
 				CC73E42B1E841CAC001131AF /* Patagonia.jpg in Resources */,
 				CC73E4431E842370001131AF /* Lato-HairlineItalic.ttf in Resources */,
 				1737A19D1EA897D300C6D71E /* 3ALegControl1.m4v in Resources */,
 				CC4C10C21E7A26DE00515CDC /* LaunchScreen.storyboard in Resources */,
 				CC11D1461EB6E7D00063E72A /* TimeTableViewCell.xib in Resources */,
+				AB26779C1FF5B1D600BB12E0 /* 1FunctionalMobility.mp4 in Resources */,
 				CC73E4441E842370001131AF /* Lato-Italic.ttf in Resources */,
 				CC73E4411E842370001131AF /* Lato-BoldItalic.ttf in Resources */,
 				179726B61EB3109B0053378E /* WebViewController.xib in Resources */,
@@ -995,7 +1061,7 @@
 				CCEF72EC1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib in Resources */,
 				17E0BB291EA41043001FC7F3 /* 1AToeFlexion.m4v in Resources */,
 				167883AA1EE1029900B106AD /* ChatBotViewController.xib in Resources */,
-				16DFC0C41EC7F2D3007322BF /* Bells.mp4 in Resources */,
+				AB2677A21FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib in Resources */,
 				CCB7B4101E94136C0058C32E /* RemindersViewController.xib in Resources */,
 				17E0BB461EA4139E001FC7F3 /* ExercisesViewController.xib in Resources */,
 				CC73E43F1E842370001131AF /* Lato-BlackItalic.ttf in Resources */,
@@ -1037,12 +1103,14 @@
 				CC11D12A1EB650150063E72A /* AddReminderTitleViewController.xib in Resources */,
 				1737A19A1EA8977300C6D71E /* 1CHipFlexion.m4v in Resources */,
 				16AADA791F219CBD00D8A8EB /* RelaxingMusicViewCell.xib in Resources */,
+				AB2677941FF57E8C00BB12E0 /* AdvancedViewController.xib in Resources */,
 				16EDA5651F00934100906891 /* QuotesCollectionViewCell.xib in Resources */,
 				1737A19F1EA897DB00C6D71E /* 4ABridgeHipLift.m4v in Resources */,
 				17E0BB3A1EA4125E001FC7F3 /* CoordinationViewController.xib in Resources */,
 				CC4C10BA1E7A26DE00515CDC /* Main.storyboard in Resources */,
 				CCB7B41C1E94139A0058C32E /* SurveysViewController.xib in Resources */,
 				1788309C1EA8985200690787 /* 5BMaleDocWaving.m4v in Resources */,
+				AB26779D1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 in Resources */,
 				1737A1A21EA897E800C6D71E /* 5AFemaleDocWaving.m4v in Resources */,
 				CC11D1341EB6504E0063E72A /* AddReminderTimesViewController.xib in Resources */,
 				CC73E4461E842370001131AF /* Lato-LightItalic.ttf in Resources */,
@@ -1078,13 +1146,17 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-H4TWStrokeHope-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EF031F2A3979FECE1E54314C /* [CP] Embed Pods Frameworks */ = {
@@ -1108,9 +1180,24 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-H4TWStrokeHope/Pods-H4TWStrokeHope-resources.sh",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AICubeIconImage.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AICubeIconImage@2x.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AICubeIconImage@3x.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AIMicrophoneControlImage.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AIMicrophoneControlImage@2x.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Images/AIMicrophoneControlImage@3x.png",
+				"${PODS_ROOT}/ApiAI/ApiAI/UIKit/Classes/AIVoiceRequestButton.xib",
+				"${PODS_ROOT}/ApiAI/ApiAI/VoiceRequest/Resources/beep.caf",
+				"${PODS_ROOT}/GVRSDK/Resources/CardboardSDK.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitCore.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitDialogs.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitHUD.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/MaterialRobotoFontLoader.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1127,10 +1214,13 @@
 				17E0BB251EA40F9A001FC7F3 /* MindExercisesViewController.m in Sources */,
 				179726B51EB3109B0053378E /* WebViewController.m in Sources */,
 				CC73E4591E86BD65001131AF /* HomeButton.m in Sources */,
+				ABCD3CA11F9AA7D500BA412E /* NSBundle+Language.m in Sources */,
 				CCEF72EB1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m in Sources */,
+				AB2677A11FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m in Sources */,
 				CCB7B4091E9413590058C32E /* LearnViewController.m in Sources */,
 				16811F481FA80D95008B3E1F /* AWSDynamoDBHelper.m in Sources */,
 				CC73E42F1E841EF4001131AF /* GraphicUtils.m in Sources */,
+				AB2677981FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m in Sources */,
 				CCB7B4031E9413260058C32E /* ExercisesViewController.m in Sources */,
 				CC4C10E71E7A272C00515CDC /* Constants.m in Sources */,
 				CC11D13D1EB6B99E0063E72A /* EditReminderViewController.m in Sources */,
@@ -1142,6 +1232,7 @@
 				CCB7B40F1E94136C0058C32E /* RemindersViewController.m in Sources */,
 				CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */,
 				162856CB1F1F08F200CE1327 /* RelaxingMusicViewController.m in Sources */,
+				AB2677931FF57E8C00BB12E0 /* AdvancedViewController.m in Sources */,
 				17DE3D4F1EA9604900D350A1 /* ArmsAndHandsViewController.m in Sources */,
 				CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */,
 				CC11D1381EB6B7BC0063E72A /* NoResultsTableViewCell.m in Sources */,
@@ -1185,6 +1276,7 @@
 				CC73E4511E86AB1C001131AF /* HomeViewController.m in Sources */,
 				CC11D11B1EB3B8DE0063E72A /* ReminderTableViewCell.m in Sources */,
 				16AC5DA61FAFE4810092868B /* AppUsage.m in Sources */,
+				AB070D041FA2CDDC00D1C6F7 /* LanguageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1229,6 +1321,7 @@
 				CC9D6BD41F3548540018F8CB /* ne-NP */,
 				CC3284711F38D1E200607ADE /* fil-PH */,
 				AB78C48D1F61D72E00226869 /* zh-Hans */,
+				AB0219D81F9069E700BDB667 /* sw */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1242,6 +1335,7 @@
 				CC9D6BD21F3548530018F8CB /* ne-NP */,
 				CC32846F1F38D1E100607ADE /* fil-PH */,
 				AB78C48B1F61D72E00226869 /* zh-Hans */,
+				AB0219D61F9069E700BDB667 /* sw */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1255,6 +1349,7 @@
 				CC9D6BD31F3548530018F8CB /* ne-NP */,
 				CC3284701F38D1E200607ADE /* fil-PH */,
 				AB78C48C1F61D72E00226869 /* zh-Hans */,
+				AB0219D71F9069E700BDB667 /* sw */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1309,7 +1404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "18fa7297-d947-4636-a9e1-c3c74a70ff2e";
@@ -1358,7 +1453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "18fa7297-d947-4636-a9e1-c3c74a70ff2e";
 				SDKROOT = iphoneos;
@@ -1375,7 +1470,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQM3AFB3H9;
+				GCC_PREFIX_HEADER = H4TWStrokeHope.pch;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1393,7 +1490,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQM3AFB3H9;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = H4TWStrokeHope.pch;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;
 				PRODUCT_NAME = "$(TARGET_NAME)";

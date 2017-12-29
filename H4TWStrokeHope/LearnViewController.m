@@ -60,6 +60,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     /* Set up nav bar color */
     [self.navigationController.navigationBar
      setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
@@ -71,6 +72,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     [self setUpBeFastButtons];
 }
 
@@ -198,14 +200,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     self.selectedIndexPath = indexPath;
         LearnContentViewController *dest = [[LearnContentViewController alloc] init];
-        if(indexPath.row == 1 || indexPath.row == 2){
-            dest.justImage = TRUE;
-            NSLog(@"Change scrollview size");
-        }else{
-            dest.justImage = FALSE;
-        }    
+//        if(indexPath.row == 1 || indexPath.row == 2){
+//            dest.justImage = TRUE;
+//            NSLog(@"Change scrollview size");
+//        }else{
+//            dest.justImage = FALSE;
+//        }
         dest.content = [[LearnContent alloc] initWithContentTitle:[self.learnCategories objectAtIndex:indexPath.row]];
-            [self.navigationController pushViewController:dest animated:YES];
+        [self.navigationController pushViewController:dest animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;

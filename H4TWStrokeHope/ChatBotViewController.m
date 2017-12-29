@@ -20,8 +20,37 @@
 @interface ChatBotViewController ()
 @property NSMutableArray *messages;
 @end
-
+//"Chatbot.no" = "NO";
+//"Chatbot.yes" = "YES";
+//"Chatbot.lonelybutton1" = "Watch 360 videos";
+//"Chatbot.lonelybutton2" = "Listen to music";
+//"Chatbot.lonelybutton3" = "Inspiring quotes";
+//"Chatbot.lonelybutton4" = "Stroke exercise video";
+//"Chatbot.lonelybutton5" = "Get tips to tackle this";
+//"Chatbot.lonelyoptions" = "What do you want to do";
+//"Chatbot.exit" = "EXIT";
+//"Chatbot.icon1message" = "good";
+//"Chatbot.feelingbutton1" = "Lonely?";
+//"Chatbot.feelingbutton2" = "Not Recovering soon?";
+//"Chatbot.feelingbutton3" = "Anxious?";
+//"Chatbot.feelingbutton4" = "Depressed?";
+//"Chatbot.feelingbutton5" = "Can't Sleep?";
+//"Chatbot.feelingbutton6" = "Feeling tired?";
+//"Chatbot.feelingmessage1" = "Lonely";
+//"Chatbot.feelingmessage2" = "recovery";
+//"Chatbot.feelingmessage3" = "anxious";
+//"Chatbot.feelingmessage4" = "Depressed";
+//"Chatbot.feelingmessage5" = "sleepy";
+//"Chatbot.feelingmessage6" = "fatigue";
 #define PROFILE_IMAGE @"Doctor"
+
+#define NO_BUTTON [NSLocalizedString(@"Chatbot.no", nil) uppercaseString]
+#define YES_BUTTON @"YES"
+#define LONELY_BUTTON1 [NSLocalizedString(@"Chatbot.lonelybutton1", nil) uppercaseString]
+#define LONELY_BUTTON2 @"Listen to music"
+#define LONELY_BUTTON3 @"Inspiring quotes"
+#define LONELY_BUTTON4 @"Stroke exercise video"
+#define LONELY_BUTTON5 @"Get tips to tackle this"
 #define TIPS_INTENT_TEXT @"know more"
 #define FALLBACK_NO_INTENT @"FALLBACK-NO"
 #define FEELING_INTENT @"How are you feeling"
@@ -82,10 +111,10 @@ static NSString * const reuseIdentifier = @"Cell";
     NSDictionary *views = @{ @"containerView" : self.containerView };
     [self.view addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[containerView]|" options:0 metrics:nil views: views]];
     [self.view addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:[containerView]" options:0 metrics:nil views: views]];
-    
-    self.heightConstraint = [NSLayoutConstraint constraintWithItem: self.containerView attribute: NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem: nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:HEIGHT_CONSTRAINT_DEFAULT];
-    
-    [self.view addConstraint: self.heightConstraint];
+///TESTED BY BILL
+//    self.heightConstraint = [NSLayoutConstraint constraintWithItem: self.containerView attribute: NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem: nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:HEIGHT_CONSTRAINT_DEFAULT];
+//
+//    [self.view addConstraint: self.heightConstraint];
     
     //Set constraint for keyboard resizing
     self.bottomConstraint = [NSLayoutConstraint constraintWithItem: self.containerView attribute: NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem: self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
@@ -165,6 +194,7 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     //Initiate welcome message
     //[self initiateWelcomeMessage];
@@ -205,25 +235,25 @@ static NSString * const reuseIdentifier = @"Cell";
     
     // Welcome Intent
     if([text localizedCaseInsensitiveContainsString: FEELING_INTENT]){
-        NSLog(@" Display Welcome Icons");
+//        NSLog(@" Display Welcome Icons");
         [self displayWelcomeIcons];
     }
     
     //Tips Intent
     if([text localizedCaseInsensitiveContainsString: TIPS_INTENT_TEXT]){
-        NSLog(@" Display Tips View");
+//        NSLog(@" Display Tips View");
         [self displayTipsView ];
     }
     
     // Fallback Intent
     if([intent localizedCaseInsensitiveContainsString:FALLBACK_NO_INTENT]){
-        NSLog(@" Display default View");
+//        NSLog(@" Display default View");
         [self defaultView];
     }
     
     // Lonely Options
     if([text localizedCaseInsensitiveContainsString:LONELY_OPTIONS_TEXT]){
-        NSLog(@" Display Lonely options View");
+//        NSLog(@" Display Lonely options View");
         [self lonelyOptionsView];
     }
     

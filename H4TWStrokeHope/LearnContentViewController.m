@@ -95,6 +95,8 @@
            // imgView.center = self.view.center;
             CGRect imgViewFrame = imgView.frame;
             imgViewFrame.origin.y = self.currentY;
+            CGFloat width = [UIScreen mainScreen].bounds.size.width;
+            imgViewFrame.origin.x = (width - imgViewFrame.size.width)/2.0;
             imgView.frame = imgViewFrame;
             [self.contentView addSubview:imgView];
             self.currentY += imgViewFrame.size.height;

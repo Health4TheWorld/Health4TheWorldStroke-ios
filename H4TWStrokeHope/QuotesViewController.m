@@ -24,6 +24,7 @@
 #define BG_IMAGE_NAME @"Patagonia.jpg"
 @implementation QuotesViewController
 static NSString * const reuseIdentifier = @"QuotesCell";
+    
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -62,6 +63,7 @@ static NSString * const reuseIdentifier = @"QuotesCell";
     
 }
 -(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     //Set current date and check if already set
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     [df setDateFormat:@"dd-MM-yyyy"];

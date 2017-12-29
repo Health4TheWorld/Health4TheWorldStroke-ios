@@ -329,6 +329,7 @@
     [self markWeekButtonUnselected:self.fridayButton];
     [self markWeekButtonUnselected:self.saturdayButton];
     self.frequencyDescriptionLabel.text = @"";
+    
 }
 
 - (void)markWeekButtonSelected:(UIButton *)button {
