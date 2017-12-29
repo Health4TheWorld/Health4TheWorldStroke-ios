@@ -11,6 +11,7 @@
 #import "Utils.h"
 #import "HomeViewController.h"
 #import "TermsViewController.h"
+#import "AWSDynamoDBHelper.h"
 #import "LanguageManager.h"
 #import "AppDelegate.h"
 
@@ -24,6 +25,11 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *languagePicker;
 @property (weak, nonatomic) IBOutlet UIView *viewForPicker;
 @property (strong, nonatomic) IBOutlet UIButton *enterButton;
+@property (strong, nonatomic) IBOutlet UITextField *usernameTF;
+@property (strong, nonatomic) IBOutlet UITextField *passwordTF;
+@property (strong, nonatomic) IBOutlet UIButton *signUpButton;
+@property (strong, nonatomic) IBOutlet UIButton *ForgotPasswordButton;
+@property (nonatomic, strong) AWSTaskCompletionSource<AWSCognitoIdentityPasswordAuthenticationDetails*>* passwordAuthenticationCompletion;
 @property CGPoint startPosition;
 @property NSString *langKey;
 @property NSMutableArray *quotes;
@@ -73,7 +79,16 @@
     [self setUpQuote];
 
     [GraphicUtils styleButton:self.enterButton];
-    [self.enterButton setTitle:[NSLocalizedString(@"Enter.enterButton", nil) uppercaseString] forState:UIControlStateNormal];
+    [self.enterButton setTitle:[NSLocalizedString(@"Enter.loginButton", nil) uppercaseString] forState:UIControlStateNormal];
+    [self setUpQuote];
+    
+    self.usernameTF.placeholder = NSLocalizedString(@"Enter.usernamePlaceholder", nil);
+    self.passwordTF.placeholder = NSLocalizedString(@"Enter.passwordPlaceholder", nil);
+    [self.signUpButton setTitle: [NSLocalizedString(@"Enter.signUpButton", nil) uppercaseString] forState:UIControlStateNormal ];
+    [self.ForgotPasswordButton setTitle: [NSLocalizedString(@"Enter.forgotPasswordButton", nil) lowercaseString] forState:UIControlStateNormal ];
+    
+    
+//     [self.enterButton setTitle:[NSLocalizedString(@"Enter.enterButton", nil) uppercaseString] forState:UIControlStateNormal];
     //[GraphicUtils styleButton:self.languageButton];
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedLeft:)];
     [swipeLeft setDirection:UISwipeGestureRecognizerDirectionLeft ];
@@ -82,10 +97,21 @@
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedRight:)];
     [swipeRight setDirection:UISwipeGestureRecognizerDirectionRight ];
     [self.view addGestureRecognizer:swipeRight];
-}
-
--(void) tap:(UITapGestureRecognizer *)recognizer{
     
+    /* User device info */
+    NSString *uniqueIdentifier = [Utils getUDID];
+    NSArray *array = [uniqueIdentifier componentsSeparatedByString:@"-"];
+    NSLog(@"unique Device ID: %@", [array objectAtIndex:0]);
+    
+    /* Retrieve current date time */
+    NSString *currentDateTime =  [Utils getCurrentDateTime];
+    NSLog(@"current Data & Time: %@", currentDateTime);
+    
+    /* Get device Name */
+    NSLog(@"Device Name : %@", [Utils deviceName]);
+    
+    self.passwordTF.text = nil;
+    self.usernameTF.text = self.usernameText;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -257,9 +283,18 @@
 }
 
 - (IBAction)enterPressed:(id)sender {
+        self.passwordAuthenticationCompletion.result = [[AWSCognitoIdentityPasswordAuthenticationDetails alloc] initWithUsername:self.usernameTF.text password:self.passwordTF.text];
+    
     HomeViewController *hvc = [[HomeViewController alloc] init];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     [self.navigationController pushViewController:hvc animated:YES];
+    
+      /* insert app usage info into table*/
+    NSArray *data = @[@"Tap",@"Login", @"NA"];
+    [AWSDynamoDBHelper detailedAppUsage: data];
+}
+- (IBAction)signUpPressed:(id)sender {
+    
 }
 
 #pragma mark – Swipe Gesture Recognizer
@@ -425,6 +460,27 @@
     
 }
 
+- (void)didCompletePasswordAuthenticationStepWithError:(NSError * _Nullable)error {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if(error){
+            [[[UIAlertView alloc] initWithTitle:error.userInfo[@"__type"]
+                                        message:error.userInfo[@"message"]
+                                       delegate:nil
+                              cancelButtonTitle:nil
+                              otherButtonTitles:@"Retry", nil] show];
+        }else{
+            self.usernameText = nil;
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    });
+}
+
+- (void)getPasswordAuthenticationDetails:(nonnull AWSCognitoIdentityPasswordAuthenticationInput *)authenticationInput passwordAuthenticationCompletionSource:(nonnull AWSTaskCompletionSource<AWSCognitoIdentityPasswordAuthenticationDetails *> *)passwordAuthenticationCompletionSource {
+    self.passwordAuthenticationCompletion = passwordAuthenticationCompletionSource;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if(!self.usernameText)
+            self.usernameText = authenticationInput.lastKnownUsername;
+    });
 
 #pragma UIPicker delegate
 -(void)showPicker{

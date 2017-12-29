@@ -13,10 +13,16 @@
 		167883A91EE1029900B106AD /* ChatBotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883A71EE1029900B106AD /* ChatBotViewController.m */; };
 		167883AA1EE1029900B106AD /* ChatBotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167883A81EE1029900B106AD /* ChatBotViewController.xib */; };
 		167883AF1EE25EED00B106AD /* GVRVideoViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883AE1EE25EED00B106AD /* GVRVideoViewManager.m */; };
+		16811F411FA04720008B3E1F /* AWSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 16811F401FA04720008B3E1F /* AWSConstants.m */; };
+		16811F451FA3E433008B3E1F /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = 16811F441FA3E433008B3E1F /* Users.m */; };
+		16811F481FA80D95008B3E1F /* AWSDynamoDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 16811F471FA80D95008B3E1F /* AWSDynamoDBHelper.m */; };
 		168389811EC66D8F007D15C6 /* VRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683897F1EC66D8F007D15C6 /* VRViewController.m */; };
 		168389821EC66D8F007D15C6 /* VRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 168389801EC66D8F007D15C6 /* VRViewController.xib */; };
 		16AADA781F219CBD00D8A8EB /* RelaxingMusicViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AADA761F219CBD00D8A8EB /* RelaxingMusicViewCell.m */; };
 		16AADA791F219CBD00D8A8EB /* RelaxingMusicViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16AADA771F219CBD00D8A8EB /* RelaxingMusicViewCell.xib */; };
+		16AC5DA61FAFE4810092868B /* AppUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC5DA51FAFE4810092868B /* AppUsage.m */; };
+		16AC5DA91FAFE50C0092868B /* SessionDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC5DA81FAFE50C0092868B /* SessionDetails.m */; };
+		16BB397F1FEC47AB00E3C7BD /* ChatbotLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BB397E1FEC47AB00E3C7BD /* ChatbotLog.m */; };
 		16C3C37C1EEA37EF005991D5 /* ChatBotViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C3C37A1EEA37EF005991D5 /* ChatBotViewCell.m */; };
 		16C3C37D1EEA37EF005991D5 /* ChatBotViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C3C37B1EEA37EF005991D5 /* ChatBotViewCell.xib */; };
 		16EDA5641F00934100906891 /* QuotesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EDA5621F00934100906891 /* QuotesCollectionViewCell.m */; };
@@ -176,12 +182,24 @@
 		167883A81EE1029900B106AD /* ChatBotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatBotViewController.xib; sourceTree = "<group>"; };
 		167883AD1EE25EED00B106AD /* GVRVideoViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVRVideoViewManager.h; sourceTree = "<group>"; };
 		167883AE1EE25EED00B106AD /* GVRVideoViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVRVideoViewManager.m; sourceTree = "<group>"; };
+		16811F3F1FA04720008B3E1F /* AWSConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSConstants.h; sourceTree = "<group>"; };
+		16811F401FA04720008B3E1F /* AWSConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWSConstants.m; sourceTree = "<group>"; };
+		16811F431FA3E433008B3E1F /* Users.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Users.h; sourceTree = "<group>"; };
+		16811F441FA3E433008B3E1F /* Users.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Users.m; sourceTree = "<group>"; };
+		16811F461FA80D95008B3E1F /* AWSDynamoDBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSDynamoDBHelper.h; sourceTree = "<group>"; };
+		16811F471FA80D95008B3E1F /* AWSDynamoDBHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWSDynamoDBHelper.m; sourceTree = "<group>"; };
 		1683897E1EC66D8F007D15C6 /* VRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRViewController.h; sourceTree = "<group>"; };
 		1683897F1EC66D8F007D15C6 /* VRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRViewController.m; sourceTree = "<group>"; };
 		168389801EC66D8F007D15C6 /* VRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VRViewController.xib; sourceTree = "<group>"; };
 		16AADA751F219CBD00D8A8EB /* RelaxingMusicViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelaxingMusicViewCell.h; sourceTree = "<group>"; };
 		16AADA761F219CBD00D8A8EB /* RelaxingMusicViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelaxingMusicViewCell.m; sourceTree = "<group>"; };
 		16AADA771F219CBD00D8A8EB /* RelaxingMusicViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RelaxingMusicViewCell.xib; sourceTree = "<group>"; };
+		16AC5DA41FAFE4810092868B /* AppUsage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppUsage.h; sourceTree = "<group>"; };
+		16AC5DA51FAFE4810092868B /* AppUsage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppUsage.m; sourceTree = "<group>"; };
+		16AC5DA71FAFE50C0092868B /* SessionDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionDetails.h; sourceTree = "<group>"; };
+		16AC5DA81FAFE50C0092868B /* SessionDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionDetails.m; sourceTree = "<group>"; };
+		16BB397D1FEC47AB00E3C7BD /* ChatbotLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatbotLog.h; sourceTree = "<group>"; };
+		16BB397E1FEC47AB00E3C7BD /* ChatbotLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatbotLog.m; sourceTree = "<group>"; };
 		16C3C3791EEA37EF005991D5 /* ChatBotViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotViewCell.h; sourceTree = "<group>"; };
 		16C3C37A1EEA37EF005991D5 /* ChatBotViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBotViewCell.m; sourceTree = "<group>"; };
 		16C3C37B1EEA37EF005991D5 /* ChatBotViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatBotViewCell.xib; sourceTree = "<group>"; };
@@ -354,7 +372,7 @@
 		CC73E43C1E842370001131AF /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		CC73E43D1E842370001131AF /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		CC73E44E1E86AB1C001131AF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ../HomeViewController.h; sourceTree = "<group>"; };
-		CC73E44F1E86AB1C001131AF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ../HomeViewController.m; sourceTree = "<group>"; };
+		CC73E44F1E86AB1C001131AF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ../HomeViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		CC73E4501E86AB1C001131AF /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = ../HomeViewController.xib; sourceTree = "<group>"; };
 		CC73E4571E86BD65001131AF /* HomeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeButton.h; sourceTree = "<group>"; };
 		CC73E4581E86BD65001131AF /* HomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeButton.m; sourceTree = "<group>"; };
@@ -432,6 +450,32 @@
 				16C3C37B1EEA37EF005991D5 /* ChatBotViewCell.xib */,
 			);
 			name = ChatBot;
+			sourceTree = "<group>";
+		};
+		16811F3D1FA04548008B3E1F /* AWS Config */ = {
+			isa = PBXGroup;
+			children = (
+				16811F3F1FA04720008B3E1F /* AWSConstants.h */,
+				16811F401FA04720008B3E1F /* AWSConstants.m */,
+				16811F461FA80D95008B3E1F /* AWSDynamoDBHelper.h */,
+				16811F471FA80D95008B3E1F /* AWSDynamoDBHelper.m */,
+			);
+			name = "AWS Config";
+			sourceTree = "<group>";
+		};
+		16811F421FA3E3B5008B3E1F /* DynamoDb Object Models */ = {
+			isa = PBXGroup;
+			children = (
+				16811F431FA3E433008B3E1F /* Users.h */,
+				16811F441FA3E433008B3E1F /* Users.m */,
+				16AC5DA41FAFE4810092868B /* AppUsage.h */,
+				16AC5DA51FAFE4810092868B /* AppUsage.m */,
+				16AC5DA71FAFE50C0092868B /* SessionDetails.h */,
+				16AC5DA81FAFE50C0092868B /* SessionDetails.m */,
+				16BB397D1FEC47AB00E3C7BD /* ChatbotLog.h */,
+				16BB397E1FEC47AB00E3C7BD /* ChatbotLog.m */,
+			);
+			name = "DynamoDb Object Models";
 			sourceTree = "<group>";
 		};
 		16EDA54E1F0074C500906891 /* Inspirational Quotes */ = {
@@ -623,6 +667,7 @@
 		CC3CB64A1EA11F8A00CA9429 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				16811F421FA3E3B5008B3E1F /* DynamoDb Object Models */,
 				CC3CB64B1EA11F9E00CA9429 /* LearnContent.h */,
 				CC3CB64C1EA11F9E00CA9429 /* LearnContent.m */,
 				CC11D11D1EB51AB40063E72A /* Reminder.h */,
@@ -659,6 +704,7 @@
 		CC4C10AE1E7A26DE00515CDC /* H4TWStrokeHope */ = {
 			isa = PBXGroup;
 			children = (
+				16811F3D1FA04548008B3E1F /* AWS Config */,
 				CC73E42C1E841EE0001131AF /* Utilities */,
 				CC73E4531E86AC18001131AF /* Storyboards */,
 				CC4C10B21E7A26DE00515CDC /* AppDelegate.h */,
@@ -947,6 +993,7 @@
 		CC4C10A41E7A26DE00515CDC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Rachel;
 				TargetAttributes = {
@@ -1108,6 +1155,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
+
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
@@ -1170,6 +1218,7 @@
 				CCEF72EB1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m in Sources */,
 				AB2677A11FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m in Sources */,
 				CCB7B4091E9413590058C32E /* LearnViewController.m in Sources */,
+				16811F481FA80D95008B3E1F /* AWSDynamoDBHelper.m in Sources */,
 				CC73E42F1E841EF4001131AF /* GraphicUtils.m in Sources */,
 				AB2677981FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m in Sources */,
 				CCB7B4031E9413260058C32E /* ExercisesViewController.m in Sources */,
@@ -1188,6 +1237,7 @@
 				CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */,
 				CC11D1381EB6B7BC0063E72A /* NoResultsTableViewCell.m in Sources */,
 				CC3CB6481EA11EC800CA9429 /* LearnContentViewController.m in Sources */,
+				16811F451FA3E433008B3E1F /* Users.m in Sources */,
 				16EDA5641F00934100906891 /* QuotesCollectionViewCell.m in Sources */,
 				17E0BB3E1EA4127D001FC7F3 /* StretchingViewController.m in Sources */,
 				16AADA781F219CBD00D8A8EB /* RelaxingMusicViewCell.m in Sources */,
@@ -1198,8 +1248,10 @@
 				1720A0731EA9E841009C2B87 /* ShoulderStretchViewController.m in Sources */,
 				17E0BB431EA41370001FC7F3 /* FunctionalMobilityViewController.m in Sources */,
 				17E0BB2D1EA41069001FC7F3 /* VideoViewController.m in Sources */,
+				16AC5DA91FAFE50C0092868B /* SessionDetails.m in Sources */,
 				CC9604931EA3DE110030D2C7 /* LearnContentTypeTableViewCell.m in Sources */,
 				167883AF1EE25EED00B106AD /* GVRVideoViewManager.m in Sources */,
+				16BB397F1FEC47AB00E3C7BD /* ChatbotLog.m in Sources */,
 				CC4C10BD1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld in Sources */,
 				167883A91EE1029900B106AD /* ChatBotViewController.m in Sources */,
 				CC11D11F1EB51AB40063E72A /* Reminder.m in Sources */,
@@ -1216,12 +1268,14 @@
 				CC11D12E1EB650320063E72A /* AddReminderFrequencyViewController.m in Sources */,
 				168389811EC66D8F007D15C6 /* VRViewController.m in Sources */,
 				1720A0681EA9E7DC009C2B87 /* DorsiflexorsViewController.m in Sources */,
+				16811F411FA04720008B3E1F /* AWSConstants.m in Sources */,
 				CC73E4271E841875001131AF /* EnterViewController.m in Sources */,
 				CCDFBECE1ECDE5E700C09CC8 /* TermsViewController.m in Sources */,
 				17DE3D4A1EA95F2300D350A1 /* LegAndFeetViewController.m in Sources */,
 				16EDA5691F009BD600906891 /* QuotesViewController.m in Sources */,
 				CC73E4511E86AB1C001131AF /* HomeViewController.m in Sources */,
 				CC11D11B1EB3B8DE0063E72A /* ReminderTableViewCell.m in Sources */,
+				16AC5DA61FAFE4810092868B /* AppUsage.m in Sources */,
 				AB070D041FA2CDDC00D1C6F7 /* LanguageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1415,7 +1469,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Health4TheWorld (VQM3AFB3H9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = VQM3AFB3H9;
 				GCC_PREFIX_HEADER = H4TWStrokeHope.pch;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1435,6 +1489,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Health4TheWorld (VQM3AFB3H9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQM3AFB3H9;
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = H4TWStrokeHope.pch;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;

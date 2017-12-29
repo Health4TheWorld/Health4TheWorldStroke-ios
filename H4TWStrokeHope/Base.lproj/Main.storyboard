@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UhO-rG-aJk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
@@ -31,6 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vL5-7R-kNE">
+
                                 <rect key="frame" x="26" y="479" width="323" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="JEy-sz-GEt"/>
@@ -40,6 +42,48 @@
                                 <connections>
                                     <action selector="enterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q2m-sA-mt7"/>
                                 </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RKs-n0-mSo">
+                                <rect key="frame" x="26" y="354" width="323" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="S3U-wx-FdI"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zrf-N2-j5h">
+                                <rect key="frame" x="26" y="406" width="323" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EhD-Vz-LNf"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vbq-WS-nLJ">
+                                <rect key="frame" x="26" y="552" width="61" height="31"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Sign Up">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="17" name="Arial-ItalicMT"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="signUpPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfY-d1-ad0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHg-ci-zdb">
+                                <rect key="frame" x="234" y="552" width="115" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Cz2-aH-rUM"/>
+                                </constraints>
+                                <state key="normal" title="Forgot Password"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJJ-7z-HgC">
                                 <rect key="frame" x="175" y="6" width="193" height="32"/>
@@ -67,6 +111,26 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="zrf-N2-j5h" firstAttribute="width" secondItem="vL5-7R-kNE" secondAttribute="width" id="10n-3U-Mcb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uHg-ci-zdb" secondAttribute="trailing" constant="10" id="3ot-YU-8T5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uHg-ci-zdb" secondAttribute="bottom" constant="21" id="6xI-zH-9Xp"/>
+                            <constraint firstItem="vbq-WS-nLJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="7NV-Ss-p8o"/>
+                            <constraint firstItem="vL5-7R-kNE" firstAttribute="top" secondItem="zrf-N2-j5h" secondAttribute="bottom" constant="34" id="7Up-R4-Vba"/>
+                            <constraint firstItem="zrf-N2-j5h" firstAttribute="top" secondItem="RKs-n0-mSo" secondAttribute="bottom" constant="22" id="AVr-mn-yAn"/>
+                            <constraint firstItem="vbq-WS-nLJ" firstAttribute="top" secondItem="vL5-7R-kNE" secondAttribute="bottom" constant="22" id="CpE-7Y-jgI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zrf-N2-j5h" secondAttribute="trailing" constant="10" id="CsZ-11-6Rk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vL5-7R-kNE" secondAttribute="trailing" constant="10" id="Jfk-3n-uqj"/>
+                            <constraint firstItem="RKs-n0-mSo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="NWH-lb-xp9"/>
+                            <constraint firstItem="uHg-ci-zdb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vbq-WS-nLJ" secondAttribute="trailing" constant="8" symbolic="YES" id="duI-ku-qwl"/>
+                            <constraint firstItem="uHg-ci-zdb" firstAttribute="top" secondItem="vL5-7R-kNE" secondAttribute="bottom" constant="22" id="eyM-88-m2f"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vbq-WS-nLJ" secondAttribute="bottom" constant="20" id="fDT-ry-8Wb"/>
+                            <constraint firstItem="zrf-N2-j5h" firstAttribute="top" secondItem="RKs-n0-mSo" secondAttribute="bottom" constant="22" id="l49-Dt-hrd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vbq-WS-nLJ" secondAttribute="bottom" constant="20" id="oWE-GO-zSx"/>
+                            <constraint firstItem="vL5-7R-kNE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="pzC-6b-9kY"/>
+                            <constraint firstItem="zrf-N2-j5h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="tWI-SE-bCG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RKs-n0-mSo" secondAttribute="trailing" constant="10" id="uZp-0q-D8M"/>
+                            <constraint firstItem="RKs-n0-mSo" firstAttribute="width" secondItem="zrf-N2-j5h" secondAttribute="width" id="vNL-IW-otO"/>
+                            <constraint firstItem="vbq-WS-nLJ" firstAttribute="top" secondItem="vL5-7R-kNE" secondAttribute="bottom" constant="22" id="ycw-Ua-anf"/>
                             <constraint firstAttribute="trailing" secondItem="uJJ-7z-HgC" secondAttribute="trailing" constant="16" id="456-rU-RLG"/>
                             <constraint firstItem="T1D-4e-FNj" firstAttribute="top" secondItem="uJJ-7z-HgC" secondAttribute="bottom" constant="8" id="H8Q-J6-8iM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vL5-7R-kNE" secondAttribute="trailing" constant="10" id="Jfk-3n-uqj"/>
@@ -84,6 +148,11 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="ForgotPasswordButton" destination="uHg-ci-zdb" id="WE8-6Z-fdT"/>
+                        <outlet property="enterButton" destination="vL5-7R-kNE" id="Iyu-DS-9tx"/>
+                        <outlet property="passwordTF" destination="zrf-N2-j5h" id="P3b-D5-CUf"/>
+                        <outlet property="signUpButton" destination="vbq-WS-nLJ" id="luZ-NG-IXP"/>
+                        <outlet property="usernameTF" destination="RKs-n0-mSo" id="77a-mc-XZ8"/>
                         <outlet property="btnLanguage" destination="uJJ-7z-HgC" id="d93-ut-fn2"/>
                         <outlet property="enterButton" destination="vL5-7R-kNE" id="Iyu-DS-9tx"/>
                         <outlet property="languageButton" destination="uJJ-7z-HgC" id="SYq-wG-P0b"/>

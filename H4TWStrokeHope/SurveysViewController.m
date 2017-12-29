@@ -12,6 +12,7 @@
 #import "GraphicUtils.h"
 #import "HomeButton.h"
 #import "WebViewController.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface SurveysViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
@@ -116,6 +117,8 @@
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 - (IBAction)enterButtonPressed:(UIButton *)sender {
     if ([self.passwordTextField.text  isEqual:SURVEY_PASSWORD]){
@@ -157,24 +160,36 @@
     WebViewController *vc = [[WebViewController alloc] init];
     [vc setUpWebView:@"https://h4theworld.typeform.com/to/qPXTtS"];
     [self.navigationController pushViewController:vc animated:YES];
+    
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Survey 1", @"NA"]];
 }
 
 - (void)survey2Pressed {
     WebViewController *vc = [[WebViewController alloc] init];
     [vc setUpWebView:@"https://h4theworld.typeform.com/to/PsbAIj"];
     [self.navigationController pushViewController:vc animated:YES];
+    
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Survey 2", @"NA"]];
 }
 
 - (void)survey3Pressed {
     WebViewController *vc = [[WebViewController alloc] init];
     [vc setUpWebView:@"https://h4theworld.typeform.com/to/bdznW3"];
     [self.navigationController pushViewController:vc animated:YES];
+    
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Survey 3", @"NA"]];
 }
 
 - (void)survey4Pressed {
     WebViewController *vc = [[WebViewController alloc] init];
     [vc setUpWebView:@"https://h4theworld.typeform.com/to/p5QuYQ"];
     [self.navigationController pushViewController:vc animated:YES];
+    
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Survey 4", @"NA"]];
 }
 
 - (void)didReceiveMemoryWarning {

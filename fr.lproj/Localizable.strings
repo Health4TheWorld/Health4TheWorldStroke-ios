@@ -29,7 +29,7 @@
 "Enter.sixthAuthor" = "– Helen Keller";
 "Enter.seventhQuote" = "\"Définir les objectifs est la première étape pour transformer l'invisible en visible.\"";
 "Enter.seventhAuthor" = "– Tony Robbins";
-"Enter.enterButton" = "Entrée";
+"Enter.loginButton" = "s'identifier";
 
 /* HOME VIEW CONTROLLER */
 "Home.title" = "Accueil";
@@ -403,7 +403,8 @@
 "Terms.honorCodeBulletThree" = "I will not make solutions to quizzes, exams, projects, and other assignments available to anyone else (except to the extent an assignment explicitly permits sharing solutions). This includes both solutions written by me, as well as any solutions provided by the course staff or others.";
 "Terms.honorCodeBulletFour" = "I will not engage in any other activities that will dishonestly improve my results or dishonestly improve or hurt the results of others.";
 
-///* CHATBOT */
+/* CHATBOT */
+
 "Chatbot.no" = "NON";
 "Chatbot.yes" = "OUI";
 "Chatbot.lonelybutton1" = "Regarder des vidéos 360";

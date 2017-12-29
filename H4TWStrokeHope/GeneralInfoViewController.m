@@ -10,6 +10,7 @@
 #import "Constants.h"
 #import "Utils.h"
 #import "InformationalViewController.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface GeneralInfoViewController ()
 @property NSArray *generalInfoCategories;
@@ -46,6 +47,8 @@
 }
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 
 - (void)didReceiveMemoryWarning {

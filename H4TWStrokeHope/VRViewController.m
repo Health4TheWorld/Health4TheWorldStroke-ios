@@ -9,6 +9,7 @@
 #import "VRViewController.h"
 #import "Constants.h"
 #import "Utils.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface VRViewController ()
 @property BOOL isPaused;
@@ -87,6 +88,8 @@
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

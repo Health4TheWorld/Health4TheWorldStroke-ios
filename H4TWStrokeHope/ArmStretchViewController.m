@@ -9,6 +9,7 @@
 #import "ArmStretchViewController.h"
 #import "Constants.h"
 #import "Utils.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface ArmStretchViewController ()
 @property CGFloat currentY;
@@ -98,6 +99,8 @@
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 
 

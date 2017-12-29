@@ -15,6 +15,7 @@
 #import "ArmsViewController.h"
 #import "LegsViewController.h"
 #import "CoordinationViewController.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface StrengtheningViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -96,6 +97,8 @@
 
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Back Button", @"NA"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -113,16 +116,22 @@
 - (void)armsPressed {
     ArmsViewController *vc = [[ArmsViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Arms", @"Sub-Section"]];
 }
 
 - (void)legsPressed {
     LegsViewController *vc = [[LegsViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Legs", @"Sub-Section"]];
 }
 
 - (void)coordinationPressed {
     CoordinationViewController *vc = [[CoordinationViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    /* insert app usage info into table*/
+    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Coordination", @"Sub-Section"]];
 }
 
 

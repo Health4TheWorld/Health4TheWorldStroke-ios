@@ -29,7 +29,11 @@
 "Enter.sixthAuthor" = "– Helen Keller";
 "Enter.seventhQuote" = "\"Setting goals is the first step in turning the invisible into the visible.\"";
 "Enter.seventhAuthor" = "– Tony Robbins";
-"Enter.enterButton" = "Enter";
+"Enter.loginButton" = "Login";
+"Enter.usernamePlaceholder" = "username";
+"Enter.passwordPlaceholder" = "password";
+"Enter.signUpButton" = "Sign Up";
+"Enter.forgotPasswordButton" = "Forgot Password";
 
 /* HOME VIEW CONTROLLER */
 "Home.title" = "Home";
@@ -40,6 +44,7 @@
 "Home.generalInfo" = "General Info";
 "Home.surveys" = "Surveys";
 "Home.chatBot" = "ChatBot";
+"Home.LogoutButtontitle" = "Logout";
 
 /* HELP ME SPEAK VIEW CONTROLLER */
 "HelpMeSpeak.title" = "Help Me Speak";
@@ -494,4 +499,8 @@
 "Chatbot.feelingmessage4" = "Depressed";
 "Chatbot.feelingmessage5" = "sleepy";
 "Chatbot.feelingmessage6" = "fatigue";
+"Chatbot.sendButtonTitle" = "Send";
+"Chatbot.enterMessage" =  "Enter message...";
+
+
 
