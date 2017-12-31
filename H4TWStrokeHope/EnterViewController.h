@@ -18,12 +18,11 @@
 #import <AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.h>
 
 
-@interface EnterViewController : UIViewController <UIGestureRecognizerDelegate,AWSCognitoIdentityPasswordAuthentication, UITableViewDataSource,UITableViewDelegate>{
-  @property (nonatomic, strong) NSString * usernameText;
+@interface EnterViewController : UIViewController
+<UIGestureRecognizerDelegate,AWSCognitoIdentityPasswordAuthentication, UITableViewDataSource,UITableViewDelegate>
+    @property (nonatomic, strong) NSString * usernameText;
     //UIPickerViewDelegate, UIPickerViewDataSource
-    NSArray *arrLanguage;
-    NSArray *arrKey;
-    NSString *selectedLanguage;
-}
-
+    @property NSArray *arrLanguage;
+    @property NSArray *arrKey;
+    @property NSString *selectedLanguage;
 @end
