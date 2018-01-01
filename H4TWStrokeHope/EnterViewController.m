@@ -72,7 +72,7 @@
     data = [LanguageManager languageStrings];
     //static NSString * const LanguageCodes[] = { @"en", @"es_MX", @"fr", @"fil",@"zh_Hans_CN",@"ne_NP",@"sw" };
 //    arrKey = [[NSArray alloc] initWithObjects:@"en",@"es",@"fr",@"fil",@"zh",@"ne",@"sw",nil];//MM
-    arrLanguage = [[NSArray alloc] initWithObjects:@"English",@"Español",@"Français",@"Filipino",@"汉语/漢語",@"नेपाली", @"Kiswahili", nil];//MM
+    self.arrLanguage = [[NSArray alloc] initWithObjects:@"English",@"Español",@"Français",@"Filipino",@"汉语/漢語",@"नेपाली", @"Kiswahili", nil];//MM
 //        self.languagePicker.dataSource = self;
 //        self.languagePicker.delegate = self;
     [self addBackgroundImage];
@@ -481,7 +481,7 @@
         if(!self.usernameText)
             self.usernameText = authenticationInput.lastKnownUsername;
     });
-
+}
 #pragma UIPicker delegate
 -(void)showPicker{
 //    _viewForPicker.hidden = false;
@@ -508,7 +508,7 @@
     if (cell == nil) {
         cell = ([[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:(SimpleIdentifier)]);
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", [arrLanguage objectAtIndex:indexPath.row]];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", [self.arrLanguage objectAtIndex:indexPath.row]];
 //    if (indexPath.row == [LanguageManager currentLanguageIndex]) {
 //        cell.accessoryType = UITableViewCellAccessoryCheckmark;
 //    }
