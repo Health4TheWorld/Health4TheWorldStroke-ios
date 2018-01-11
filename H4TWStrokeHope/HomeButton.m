@@ -158,6 +158,32 @@
     [self bringSubviewToFront:self.myTitleLabel];
 }
 
+- (void)addSquaredImageCentered:(UIImage *)image withSize: (float) size{
+    float imgWidth, imgHeight;
+    if (image.size.width > image.size.height) {
+        /* If the image is wider than it is tall, then set the width to be this button's width - 30 and scale the height proportionally. */
+        imgWidth = self.frame.size.width - size;
+        imgHeight = (image.size.height * imgWidth) / (image.size.width);
+    } else {
+        /* If the image is taller than it is wide, then set the height to be this button's width - 30 and scale the height proportionally. */
+        imgHeight = self.frame.size.height - size;
+        imgWidth = (image.size.width * imgHeight) / (image.size.height);
+    }
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, imgWidth, imgHeight)];
+    [imgView setImage:image];
+    CGRect frame = imgView.frame;
+    frame.origin.x = (self.frame.size.width / 2.0) - (imgView.frame.size.width / 2.0);
+    frame.origin.y = (self.frame.size.height / 2.0) - (imgView.frame.size.height / 2.0) + 15;
+    imgView.frame = frame;
+    //imgView.layer.cornerRadius = imgView.frame.size.width / 2;
+    //imgView.clipsToBounds = YES;
+    imgView.layer.borderWidth = 3.0f;
+    imgView.layer.borderColor = [UIColor whiteColor].CGColor;
+    [self addSubview:imgView];
+    [self bringSubviewToFront:self.myTitleLabel];
+}
+
+
 
 - (void)addImageFullSize:(UIImage *)image {
     
