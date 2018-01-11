@@ -20,13 +20,12 @@
 @end
 
 
-#define ARM_LEVEL3_IMG1 @"Level1"
-#define ARM_LEVEL3_IMG2 @"Level3_3711_Img"
-#define ARM_LEVEL3_IMG3 @"Level3_3712_Img"
-#define ARM_LEVEL3_IMG4 @"Level3_3713_Img"
-#define ARM_LEVEL3_IMG5 @"Level3_3714_Img"
-#define ARM_LEVEL3_IMG6 @"Level3_3566_Img"
-#define ARM_LEVEL3_IMG7 @"Level3_3567_Img"
+#define ARM_LEVEL3_IMG1 @"Level3_3711_Img"
+#define ARM_LEVEL3_IMG2 @"Level3_3713_Img"
+#define ARM_LEVEL3_IMG3 @"Level3_3714_Img"
+#define ARM_LEVEL3_IMG4 @"Level3_3566_Img"
+#define ARM_LEVEL3_IMG5 @"Level3_3567_Img"
+
 @implementation ArmLevel3ViewController
 
 - (void)viewDidLoad {
@@ -85,21 +84,10 @@
     
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
-    
-    HomeButton *e1Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.arms.level3.5", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [e1Button addRoundImageCentered:[UIImage imageNamed:ARM_LEVEL3_IMG5]];
-    [e1Button addTarget:self action:@selector(e1Pressed) forControlEvents:UIControlEventTouchUpInside];
-    
-    HomeButton *f1Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.arms.level3.6", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
-    [f1Button addRoundImageCentered: [UIImage imageNamed:ARM_LEVEL3_IMG6]];
-    [f1Button addTarget:self action:@selector(f1Pressed) forControlEvents:UIControlEventTouchUpInside];
-    
-    startingY += cellHeight;
-    startingY += SPACE_BETWEEN_CELLS;
     cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
     
-    HomeButton *g1Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.arms.level3.7", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [g1Button addSquaredImageCentered: [UIImage imageNamed:ARM_LEVEL3_IMG7] withSize: 210];
+    HomeButton *g1Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.arms.level3.5", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    [g1Button addSquaredImageCentered: [UIImage imageNamed:ARM_LEVEL3_IMG5] withSize: 210];
     [g1Button addTarget:self action:@selector(g1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
     startingY += cellHeight;
@@ -110,8 +98,6 @@
     [self.contentView addSubview: b1Button];
     [self.contentView addSubview: c1Button];
     [self.contentView addSubview: d1Button];
-    [self.contentView addSubview: e1Button];
-    [self.contentView addSubview: f1Button];
     [self.contentView addSubview: g1Button];
     [self.contentView addSubview: self.welcomeMessage];
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
@@ -149,24 +135,10 @@
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
-- (void)e1Pressed {
+- (void)g1Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
     videoVC.title = NSLocalizedString(@"Exercises.arms.level3.5", nil) ;
     [videoVC setUpVideo: VIDEO_ARM_LEVEL3_5];
-    [self.navigationController pushViewController:videoVC animated:YES];
-}
-
-- (void)f1Pressed {
-    VideoViewController *videoVC = [[VideoViewController alloc] init];
-    videoVC.title = NSLocalizedString(@"Exercises.arms.level3.6", nil) ;
-    [videoVC setUpVideo: VIDEO_ARM_LEVEL3_6];
-    [self.navigationController pushViewController:videoVC animated:YES];
-}
-
-- (void)g1Pressed {
-    VideoViewController *videoVC = [[VideoViewController alloc] init];
-    videoVC.title = NSLocalizedString(@"Exercises.arms.level3.7", nil) ;
-    [videoVC setUpVideo: VIDEO_ARM_LEVEL3_7];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 

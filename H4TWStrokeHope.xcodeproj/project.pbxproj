@@ -1612,7 +1612,7 @@
 				DEVELOPMENT_TEAM = VQM3AFB3H9;
 				GCC_PREFIX_HEADER = H4TWStrokeHope.pch;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1632,7 +1632,7 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = H4TWStrokeHope.pch;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;
 				PRODUCT_NAME = "$(TARGET_NAME)";

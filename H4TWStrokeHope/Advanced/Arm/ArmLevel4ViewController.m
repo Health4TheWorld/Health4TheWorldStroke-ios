@@ -46,7 +46,7 @@
     float cellHeight = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS/2);
     float startingY = SPACE_BETWEEN_CELLS;
     self.welcomeMessage = [[UILabel alloc] initWithFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, 0)];
-    self.welcomeMessage.text = NSLocalizedString(@"Exercises.arms.level2.instruction", nil);
+    self.welcomeMessage.text = NSLocalizedString(@"Exercises.arms.level4.instruction", nil);
     self.welcomeMessage.font = [UIFont fontWithName:@"Lato-regular" size:16.0];
     self.welcomeMessage.textColor = HFTW_TEXT_GRAY;
     self.welcomeMessage.numberOfLines = 0;
