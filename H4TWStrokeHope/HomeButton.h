@@ -25,6 +25,8 @@
 - (void)addImageFullSize:(UIImage *)image;
 /* Scales image and adds it to the top right of the button */
 - (void)addImageTopRight:(UIImage *)image;
+/* Scales image, makes it square and adds it to the center of the button. */
+- (void)addSquaredImageCentered:(UIImage *)image withSize: (float) size;
 
 /* Temp */
 - (void)addCoordinationImage:(UIImage *)image;

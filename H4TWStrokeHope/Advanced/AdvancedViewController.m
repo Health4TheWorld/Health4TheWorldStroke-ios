@@ -13,6 +13,7 @@
 #import "ArmsViewController.h"
 #import "FunctionalMobilityAdvViewController.h"
 #import "BalanceTrainingAdvViewController.h"
+#import "ArmViewController.h"
 
 @interface AdvancedViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -91,6 +92,8 @@
 
 /* Action listeners for buttons */
 - (void)armsPressed {
+    ArmViewController *vc = [[ArmViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)functionalMobilityButtonPressed {

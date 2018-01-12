@@ -74,15 +74,40 @@
 
 /* EXERCISES VIEW CONTROLLER */
 "Exercises.title" = "Exercises";
-"Exercises.advancedExercises" = "Advanced Exercises";//MM
+"Exercises.advancedExercises" = "New Exercises";//MM
 
-"Exercises.arms" = "Arms";//MM
+"Exercises.arms" = "Arm Exercises";//MM
 //"Exercises.functionalMobility" = "Functional Mobility";//MM
 "Exercises.balanceTraining" = "Balance Training";//MM
 
 "Exercises.functionalMobility.Instructions" = "Keep Arms at shoulder level or below";//MM
 "Exercises.functionalMobility.h1" = "Rolling in Bed";//MM
 "Exercises.functionalMobility.h2" = "Rolling out of Bed";//MM
+
+//"Arms "//MM
+"Exercises.arms.level1" = "Level 1";
+"Exercises.arms.level2" = "Level 2";
+"Exercises.arms.level3" = "Level 3";
+"Exercises.arms.level4" = "Level 4";
+
+"Exercises.arms.level1.instruction" = "Level 1: No Voluntary Movement";
+"Exercises.arms.level2.instruction" = "Level 2: Some arm movement against gravity but not hand";
+"Exercises.arms.level3.instruction" = "Level 3: Gross grasp and release";
+"Exercises.arms.level4.instruction" = "Level 4: Precision grasp";
+
+"Exercises.arms.level2.1" = "Level 2.1";
+"Exercises.arms.level2.2" = "Level 2.2";
+"Exercises.arms.level2.3" = "Level 2.3";
+"Exercises.arms.level2.4" = "Level 2.4";
+
+"Exercises.arms.level3.1" = "Level 3.1";
+"Exercises.arms.level3.2" = "Level 3.2";
+"Exercises.arms.level3.3" = "Level 3.3";
+"Exercises.arms.level3.4" = "Larger Objects 1";
+"Exercises.arms.level3.5" = "Larger Objects 2";
+
+"Exercises.arms.level4.1" = "Level 4.1";
+"Exercises.arms.level4.2" = "Level 4.2";
 
 
 //"Balance Training"//MM
