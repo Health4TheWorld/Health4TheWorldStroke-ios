@@ -51,7 +51,7 @@ static NSMutableArray *appSessionDetailsArray;
 
 + (AWSTask *) InsertDataIntoAppUsageTable:(NSArray*) data {
     appUsageArray = [[NSMutableArray alloc] init];
-    AWSDynamoDBObjectMapper *dynamoDBObjectMapper = [AWSDynamoDBObjectMapper defaultDynamoDBObjectMapper];
+//    AWSDynamoDBObjectMapper *dynamoDBObjectMapper = [AWSDynamoDBObjectMapper defaultDynamoDBObjectMapper];
     
     AppUsage *app_usage = [AppUsage new];
     app_usage.unique_device_id = [data objectAtIndex:0];

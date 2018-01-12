@@ -44,13 +44,13 @@
 //"Chatbot.feelingmessage6" = "fatigue";
 #define PROFILE_IMAGE @"Doctor"
 
-#define NO_BUTTON [NSLocalizedString(@"Chatbot.no", nil) uppercaseString]
-#define YES_BUTTON @"YES"
-#define LONELY_BUTTON1 [NSLocalizedString(@"Chatbot.lonelybutton1", nil) uppercaseString]
-#define LONELY_BUTTON2 @"Listen to music"
-#define LONELY_BUTTON3 @"Inspiring quotes"
-#define LONELY_BUTTON4 @"Stroke exercise video"
-#define LONELY_BUTTON5 @"Get tips to tackle this"
+//#define NO_BUTTON [NSLocalizedString(@"Chatbot.no", nil) uppercaseString]
+//#define YES_BUTTON @"YES"
+//#define LONELY_BUTTON1 [NSLocalizedString(@"Chatbot.lonelybutton1", nil) uppercaseString]
+//#define LONELY_BUTTON2 @"Listen to music"
+//#define LONELY_BUTTON3 @"Inspiring quotes"
+//#define LONELY_BUTTON4 @"Stroke exercise video"
+//#define LONELY_BUTTON5 @"Get tips to tackle this"
 #define TIPS_INTENT_TEXT @"know more"
 #define FALLBACK_NO_INTENT @"FALLBACK-NO"
 #define FEELING_INTENT @"How are you feeling"

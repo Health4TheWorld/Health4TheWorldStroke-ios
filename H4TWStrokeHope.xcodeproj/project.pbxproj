@@ -86,6 +86,23 @@
 		AB26779D1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB26779B1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 */; };
 		AB2677A11FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB26779F1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m */; };
 		AB2677A21FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2677A01FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib */; };
+		AB2677A61FFB43FC00BB12E0 /* SittingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2677A41FFB43FC00BB12E0 /* SittingViewController.m */; };
+		AB2677A71FFB43FC00BB12E0 /* SittingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2677A51FFB43FC00BB12E0 /* SittingViewController.xib */; };
+		AB2677B81FFC30F300BB12E0 /* IMG_3574_Side.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677AA1FFC30F300BB12E0 /* IMG_3574_Side.mp4 */; };
+		AB2677B91FFC30F300BB12E0 /* 3729.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB2677AB1FFC30F300BB12E0 /* 3729.jpg */; };
+		AB2677BA1FFC30F300BB12E0 /* 3731.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB2677AC1FFC30F300BB12E0 /* 3731.jpg */; };
+		AB2677BB1FFC30F300BB12E0 /* IMG_3575.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677AD1FFC30F300BB12E0 /* IMG_3575.mp4 */; };
+		AB2677BC1FFC30F300BB12E0 /* IMG_3576.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677AE1FFC30F300BB12E0 /* IMG_3576.mp4 */; };
+		AB2677BD1FFC30F300BB12E0 /* IMG_3580.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677AF1FFC30F300BB12E0 /* IMG_3580.mp4 */; };
+		AB2677BE1FFC30F300BB12E0 /* IMG_3578.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677B01FFC30F300BB12E0 /* IMG_3578.mp4 */; };
+		AB2677BF1FFC30F300BB12E0 /* 3732.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB2677B11FFC30F300BB12E0 /* 3732.jpg */; };
+		AB2677C01FFC30F300BB12E0 /* 3730.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB2677B21FFC30F300BB12E0 /* 3730.jpg */; };
+		AB2677C31FFC30F300BB12E0 /* 3572_side.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677B61FFC30F300BB12E0 /* 3572_side.mp4 */; };
+		AB2677C41FFC30F300BB12E0 /* 3571_Back.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677B71FFC30F300BB12E0 /* 3571_Back.mp4 */; };
+		AB2677E1200343FB00BB12E0 /* StandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2677DF200343FB00BB12E0 /* StandingViewController.m */; };
+		AB2677E2200343FB00BB12E0 /* StandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2677E0200343FB00BB12E0 /* StandingViewController.xib */; };
+		AB2677E62003456B00BB12E0 /* ImgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2677E42003456B00BB12E0 /* ImgViewController.m */; };
+		AB2677E72003456B00BB12E0 /* ImgViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2677E52003456B00BB12E0 /* ImgViewController.xib */; };
 		ABCD3CA11F9AA7D500BA412E /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCD3CA01F9AA7D500BA412E /* NSBundle+Language.m */; };
 		CC11D11B1EB3B8DE0063E72A /* ReminderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1191EB3B8DE0063E72A /* ReminderTableViewCell.m */; };
 		CC11D11C1EB3B8DE0063E72A /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D11A1EB3B8DE0063E72A /* ReminderTableViewCell.xib */; };
@@ -293,6 +310,26 @@
 		AB26779E1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BalanceTrainingAdvViewController.h; sourceTree = "<group>"; };
 		AB26779F1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalanceTrainingAdvViewController.m; sourceTree = "<group>"; };
 		AB2677A01FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceTrainingAdvViewController.xib; sourceTree = "<group>"; };
+		AB2677A31FFB43FC00BB12E0 /* SittingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SittingViewController.h; sourceTree = "<group>"; };
+		AB2677A41FFB43FC00BB12E0 /* SittingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SittingViewController.m; sourceTree = "<group>"; };
+		AB2677A51FFB43FC00BB12E0 /* SittingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SittingViewController.xib; sourceTree = "<group>"; };
+		AB2677AA1FFC30F300BB12E0 /* IMG_3574_Side.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3574_Side.mp4; sourceTree = "<group>"; };
+		AB2677AB1FFC30F300BB12E0 /* 3729.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3729.jpg; sourceTree = "<group>"; };
+		AB2677AC1FFC30F300BB12E0 /* 3731.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3731.jpg; sourceTree = "<group>"; };
+		AB2677AD1FFC30F300BB12E0 /* IMG_3575.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3575.mp4; sourceTree = "<group>"; };
+		AB2677AE1FFC30F300BB12E0 /* IMG_3576.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3576.mp4; sourceTree = "<group>"; };
+		AB2677AF1FFC30F300BB12E0 /* IMG_3580.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3580.mp4; sourceTree = "<group>"; };
+		AB2677B01FFC30F300BB12E0 /* IMG_3578.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3578.mp4; sourceTree = "<group>"; };
+		AB2677B11FFC30F300BB12E0 /* 3732.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3732.jpg; sourceTree = "<group>"; };
+		AB2677B21FFC30F300BB12E0 /* 3730.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3730.jpg; sourceTree = "<group>"; };
+		AB2677B61FFC30F300BB12E0 /* 3572_side.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3572_side.mp4; sourceTree = "<group>"; };
+		AB2677B71FFC30F300BB12E0 /* 3571_Back.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3571_Back.mp4; sourceTree = "<group>"; };
+		AB2677DE200343FB00BB12E0 /* StandingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StandingViewController.h; sourceTree = "<group>"; };
+		AB2677DF200343FB00BB12E0 /* StandingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StandingViewController.m; sourceTree = "<group>"; };
+		AB2677E0200343FB00BB12E0 /* StandingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandingViewController.xib; sourceTree = "<group>"; };
+		AB2677E32003456B00BB12E0 /* ImgViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImgViewController.h; sourceTree = "<group>"; };
+		AB2677E42003456B00BB12E0 /* ImgViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImgViewController.m; sourceTree = "<group>"; };
+		AB2677E52003456B00BB12E0 /* ImgViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImgViewController.xib; sourceTree = "<group>"; };
 		AB78C48B1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		AB78C48C1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		AB78C48D1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -532,6 +569,7 @@
 		17E0BB271EA41032001FC7F3 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				AB2677A81FFC30F300BB12E0 /* BalanceTraining */,
 				17593E6E1EA83B0300F37C74 /* 5BMaleDocWaving.m4v */,
 				17593E6F1EA83B0300F37C74 /* 5AFemaleDocWaving.m4v */,
 				17593E701EA83B0300F37C74 /* 4CSitToStand.m4v */,
@@ -641,8 +679,51 @@
 				AB26779E1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.h */,
 				AB26779F1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m */,
 				AB2677A01FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib */,
+				AB2677A31FFB43FC00BB12E0 /* SittingViewController.h */,
+				AB2677A41FFB43FC00BB12E0 /* SittingViewController.m */,
+				AB2677A51FFB43FC00BB12E0 /* SittingViewController.xib */,
+				AB2677DE200343FB00BB12E0 /* StandingViewController.h */,
+				AB2677DF200343FB00BB12E0 /* StandingViewController.m */,
+				AB2677E0200343FB00BB12E0 /* StandingViewController.xib */,
+				AB2677E32003456B00BB12E0 /* ImgViewController.h */,
+				AB2677E42003456B00BB12E0 /* ImgViewController.m */,
+				AB2677E52003456B00BB12E0 /* ImgViewController.xib */,
 			);
 			path = Advanced;
+			sourceTree = "<group>";
+		};
+		AB2677A81FFC30F300BB12E0 /* BalanceTraining */ = {
+			isa = PBXGroup;
+			children = (
+				AB2677A91FFC30F300BB12E0 /* Standing */,
+				AB2677B31FFC30F300BB12E0 /* Sitting */,
+			);
+			path = BalanceTraining;
+			sourceTree = "<group>";
+		};
+		AB2677A91FFC30F300BB12E0 /* Standing */ = {
+			isa = PBXGroup;
+			children = (
+				AB2677AA1FFC30F300BB12E0 /* IMG_3574_Side.mp4 */,
+				AB2677AB1FFC30F300BB12E0 /* 3729.jpg */,
+				AB2677AC1FFC30F300BB12E0 /* 3731.jpg */,
+				AB2677AD1FFC30F300BB12E0 /* IMG_3575.mp4 */,
+				AB2677AE1FFC30F300BB12E0 /* IMG_3576.mp4 */,
+				AB2677AF1FFC30F300BB12E0 /* IMG_3580.mp4 */,
+				AB2677B01FFC30F300BB12E0 /* IMG_3578.mp4 */,
+				AB2677B11FFC30F300BB12E0 /* 3732.jpg */,
+				AB2677B21FFC30F300BB12E0 /* 3730.jpg */,
+			);
+			path = Standing;
+			sourceTree = "<group>";
+		};
+		AB2677B31FFC30F300BB12E0 /* Sitting */ = {
+			isa = PBXGroup;
+			children = (
+				AB2677B61FFC30F300BB12E0 /* 3572_side.mp4 */,
+				AB2677B71FFC30F300BB12E0 /* 3571_Back.mp4 */,
+			);
+			path = Sitting;
 			sourceTree = "<group>";
 		};
 		CC11D1251EB64FD00063E72A /* Add Reminder */ = {
@@ -993,7 +1074,6 @@
 		CC4C10A41E7A26DE00515CDC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Rachel;
 				TargetAttributes = {
@@ -1046,15 +1126,18 @@
 			files = (
 				CC73E4481E842370001131AF /* OFL.txt in Resources */,
 				CC11D12F1EB650320063E72A /* AddReminderFrequencyViewController.xib in Resources */,
+				AB2677C31FFC30F300BB12E0 /* 3572_side.mp4 in Resources */,
 				CC73E4401E842370001131AF /* Lato-Bold.ttf in Resources */,
 				AB2677991FF5950500BB12E0 /* FunctionalMobilityAdvViewController.xib in Resources */,
 				CC73E42B1E841CAC001131AF /* Patagonia.jpg in Resources */,
+				AB2677C41FFC30F300BB12E0 /* 3571_Back.mp4 in Resources */,
 				CC73E4431E842370001131AF /* Lato-HairlineItalic.ttf in Resources */,
 				1737A19D1EA897D300C6D71E /* 3ALegControl1.m4v in Resources */,
 				CC4C10C21E7A26DE00515CDC /* LaunchScreen.storyboard in Resources */,
 				CC11D1461EB6E7D00063E72A /* TimeTableViewCell.xib in Resources */,
 				AB26779C1FF5B1D600BB12E0 /* 1FunctionalMobility.mp4 in Resources */,
 				CC73E4441E842370001131AF /* Lato-Italic.ttf in Resources */,
+				AB2677E2200343FB00BB12E0 /* StandingViewController.xib in Resources */,
 				CC73E4411E842370001131AF /* Lato-BoldItalic.ttf in Resources */,
 				179726B61EB3109B0053378E /* WebViewController.xib in Resources */,
 				CC3CB6491EA11EC800CA9429 /* LearnContentViewController.xib in Resources */,
@@ -1072,15 +1155,23 @@
 				CC11D13E1EB6B99E0063E72A /* EditReminderViewController.xib in Resources */,
 				1720A06F1EA9E82C009C2B87 /* HandStretchViewController.xib in Resources */,
 				17E0BB441EA41370001FC7F3 /* FunctionalMobilityViewController.xib in Resources */,
+				AB2677BD1FFC30F300BB12E0 /* IMG_3580.mp4 in Resources */,
 				CC73E4421E842370001131AF /* Lato-Hairline.ttf in Resources */,
+				AB2677BE1FFC30F300BB12E0 /* IMG_3578.mp4 in Resources */,
+				AB2677B81FFC30F300BB12E0 /* IMG_3574_Side.mp4 in Resources */,
+				AB2677B91FFC30F300BB12E0 /* 3729.jpg in Resources */,
 				162856CC1F1F08F200CE1327 /* RelaxingMusicViewController.xib in Resources */,
 				17DE3D501EA9604900D350A1 /* ArmsAndHandsViewController.xib in Resources */,
 				17DE3D4B1EA95F2300D350A1 /* LegAndFeetViewController.xib in Resources */,
+				AB2677C01FFC30F300BB12E0 /* 3730.jpg in Resources */,
 				17E0BB351EA41201001FC7F3 /* StrengtheningViewController.xib in Resources */,
 				1737A1991EA8976F00C6D71E /* 1BKneeFlexion.m4v in Resources */,
+				AB2677BB1FFC30F300BB12E0 /* IMG_3575.mp4 in Resources */,
 				16C3C37D1EEA37EF005991D5 /* ChatBotViewCell.xib in Resources */,
 				17E0BB1C1EA40F5A001FC7F3 /* LegsViewController.xib in Resources */,
 				CC4C10BF1E7A26DE00515CDC /* Assets.xcassets in Resources */,
+				AB2677E72003456B00BB12E0 /* ImgViewController.xib in Resources */,
+				AB2677BC1FFC30F300BB12E0 /* IMG_3576.mp4 in Resources */,
 				CC73E43E1E842370001131AF /* Lato-Black.ttf in Resources */,
 				CC29233A1EBE2ACE00DF1742 /* Localizable.strings in Resources */,
 				CCB7B3FE1E9412510058C32E /* HelpMeSpeakViewController.xib in Resources */,
@@ -1096,6 +1187,7 @@
 				CCB7B4161E9413820058C32E /* GeneralInfoViewController.xib in Resources */,
 				1737A19E1EA897D700C6D71E /* 3BLegControl2.m4v in Resources */,
 				1720A0791EA9E85D009C2B87 /* ArmStretchViewController.xib in Resources */,
+				AB2677BF1FFC30F300BB12E0 /* 3732.jpg in Resources */,
 				168389821EC66D8F007D15C6 /* VRViewController.xib in Resources */,
 				1720A0641EA9E7A3009C2B87 /* HamstringsViewController.xib in Resources */,
 				17E0BB211EA40F70001FC7F3 /* ArmsViewController.xib in Resources */,
@@ -1103,6 +1195,7 @@
 				CC11D12A1EB650150063E72A /* AddReminderTitleViewController.xib in Resources */,
 				1737A19A1EA8977300C6D71E /* 1CHipFlexion.m4v in Resources */,
 				16AADA791F219CBD00D8A8EB /* RelaxingMusicViewCell.xib in Resources */,
+				AB2677BA1FFC30F300BB12E0 /* 3731.jpg in Resources */,
 				AB2677941FF57E8C00BB12E0 /* AdvancedViewController.xib in Resources */,
 				16EDA5651F00934100906891 /* QuotesCollectionViewCell.xib in Resources */,
 				1737A19F1EA897DB00C6D71E /* 4ABridgeHipLift.m4v in Resources */,
@@ -1116,6 +1209,7 @@
 				CC73E4461E842370001131AF /* Lato-LightItalic.ttf in Resources */,
 				CC73E4521E86AB1C001131AF /* HomeViewController.xib in Resources */,
 				17E0BB261EA40F9A001FC7F3 /* MindExercisesViewController.xib in Resources */,
+				AB2677A71FFB43FC00BB12E0 /* SittingViewController.xib in Resources */,
 				CCB7B3F01E8FF7E90058C32E /* Lato-Light.ttf in Resources */,
 				17E0BB2E1EA41069001FC7F3 /* VideoViewController.xib in Resources */,
 				1720A0691EA9E7DC009C2B87 /* DorsiflexorsViewController.xib in Resources */,
@@ -1155,7 +1249,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
@@ -1219,6 +1312,7 @@
 				AB2677A11FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m in Sources */,
 				CCB7B4091E9413590058C32E /* LearnViewController.m in Sources */,
 				16811F481FA80D95008B3E1F /* AWSDynamoDBHelper.m in Sources */,
+				AB2677E62003456B00BB12E0 /* ImgViewController.m in Sources */,
 				CC73E42F1E841EF4001131AF /* GraphicUtils.m in Sources */,
 				AB2677981FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m in Sources */,
 				CCB7B4031E9413260058C32E /* ExercisesViewController.m in Sources */,
@@ -1233,6 +1327,7 @@
 				CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */,
 				162856CB1F1F08F200CE1327 /* RelaxingMusicViewController.m in Sources */,
 				AB2677931FF57E8C00BB12E0 /* AdvancedViewController.m in Sources */,
+				AB2677E1200343FB00BB12E0 /* StandingViewController.m in Sources */,
 				17DE3D4F1EA9604900D350A1 /* ArmsAndHandsViewController.m in Sources */,
 				CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */,
 				CC11D1381EB6B7BC0063E72A /* NoResultsTableViewCell.m in Sources */,
@@ -1242,6 +1337,7 @@
 				17E0BB3E1EA4127D001FC7F3 /* StretchingViewController.m in Sources */,
 				16AADA781F219CBD00D8A8EB /* RelaxingMusicViewCell.m in Sources */,
 				CC11D1451EB6E7D00063E72A /* TimeTableViewCell.m in Sources */,
+				AB2677A61FFB43FC00BB12E0 /* SittingViewController.m in Sources */,
 				1720A0781EA9E85D009C2B87 /* ArmStretchViewController.m in Sources */,
 				CCB7B3FD1E9412510058C32E /* HelpMeSpeakViewController.m in Sources */,
 				1720A0631EA9E7A3009C2B87 /* HamstringsViewController.m in Sources */,
@@ -1489,7 +1585,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Health4TheWorld (VQM3AFB3H9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VQM3AFB3H9;
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = H4TWStrokeHope.pch;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;

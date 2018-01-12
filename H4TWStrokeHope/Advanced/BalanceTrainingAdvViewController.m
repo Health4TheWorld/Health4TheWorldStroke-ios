@@ -12,8 +12,9 @@
 #import "Constants.h"
 #import "Utils.h"
 #import "HomeButton.h"
-
+#import "SittingViewController.h"
 #import "VideoViewController.h"
+#import "LearnContentViewController.h"
 
 @interface BalanceTrainingAdvViewController ()
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -53,7 +54,7 @@
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     
-    HomeButton *b1Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.balanceTraining.sitting", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
+    HomeButton *b1Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.balanceTraining.Standing", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [b1Button addRoundImageCentered:[UIImage imageNamed:FUNCTIONALMOBILITY_4C]];
     [b1Button addTarget:self action:@selector(b1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
@@ -72,16 +73,18 @@
 
 
 - (void)a1Pressed {
-    VideoViewController *videoVC = [[VideoViewController alloc] init];
-    videoVC.title = NSLocalizedString(@"Exercises.functionalMobility.h1", nil) ;
+    SittingViewController *vc = [[SittingViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+//    VideoViewController *videoVC = [[VideoViewController alloc] init];
+//    videoVC.title = NSLocalizedString(@"Exercises.balanceTraining.sitting", nil) ;
 //    [videoVC setUpVideo: VIDEO_FM_ROLLINGINBED];
-    [self.navigationController pushViewController:videoVC animated:YES];
+//    [self.navigationController pushViewController:videoVC animated:YES];
 }
 
 - (void)b1Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
     videoVC.title = NSLocalizedString(@"Exercises.balanceTraining.Standing", nil) ;
-//    [videoVC setUpVideo: VIDEO_FM_ROLLINGOUTBED];
+    [videoVC setUpVideo: VIDEO_FM_ROLLINGOUTBED];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
@@ -90,15 +93,6 @@
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 @end
 

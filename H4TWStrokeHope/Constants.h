@@ -98,10 +98,14 @@
 #define FEMALE_DOC_5A @"FemaleDoc5a"
 #define MALE_DOC_5B @"MaleDoc5b"
 
+
 //MM
 #define ADVANCED_EXERCISES @"Advanced Exercises"
 //Functional Mobility
-
+#define BT_Sitting_3572 @"3572_side.mp4"
+#define BT_Sitting_3571 @"3571_Back.mp4"
+#define BT_Sitting_3522 @"3722"
+#define BT_Sitting_3521 @"3721"
 
 /* STRETCHING CLIPS */
 #define STRETCHING_LEG_STRETCH_1 @"LegStretch1"
@@ -142,6 +146,9 @@
 
 #define VIDEO_FM_ROLLINGINBED @"1FunctionalMobility.mp4"//MM
 #define VIDEO_FM_ROLLINGOUTBED @"3FunctionalMobility.mp4"//MM
+
+#define VIDEO_BT_SITTING_3572 @"3572_side.mp4"//MM
+#define VIDEO_BT_SITTING_3571 @"3571_Back.mp4"//MM
 
 /* EXERCISE TITLE */
 #define LEGS_TITLE_1A_TOE NSLocalizedString(@"Legs.toe", nil)

@@ -342,7 +342,7 @@
     [AWSDynamoDBHelper clearSessionDataLog];
     
     // Navigate to Login page
-    EnterViewController *vc = [[EnterViewController alloc] init];
+//    EnterViewController *vc = [[EnterViewController alloc] init];
     [self.navigationController popToRootViewControllerAnimated:true ];
 }
 
