@@ -10,29 +10,6 @@
 		162856CB1F1F08F200CE1327 /* RelaxingMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 162856C91F1F08F200CE1327 /* RelaxingMusicViewController.m */; };
 		162856CC1F1F08F200CE1327 /* RelaxingMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 162856CA1F1F08F200CE1327 /* RelaxingMusicViewController.xib */; };
 		163CE0A31EEE4290001C43F3 /* ChatMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 163CE0A21EEE4290001C43F3 /* ChatMessages.m */; };
-		164F4F172002D45B00324D60 /* ArmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164F4F152002D45B00324D60 /* ArmViewController.m */; };
-		164F4F182002D45B00324D60 /* ArmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F162002D45B00324D60 /* ArmViewController.xib */; };
-		164F4F1D2002E41700324D60 /* ArmLevel1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164F4F1B2002E41700324D60 /* ArmLevel1ViewController.m */; };
-		164F4F1E2002E41700324D60 /* ArmLevel1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F1C2002E41700324D60 /* ArmLevel1ViewController.xib */; };
-		164F4F222002E42D00324D60 /* ArmLevel2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164F4F202002E42D00324D60 /* ArmLevel2ViewController.m */; };
-		164F4F232002E42D00324D60 /* ArmLevel2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F212002E42D00324D60 /* ArmLevel2ViewController.xib */; };
-		164F4F272002E44300324D60 /* ArmLevel3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164F4F252002E44300324D60 /* ArmLevel3ViewController.m */; };
-		164F4F282002E44300324D60 /* ArmLevel3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F262002E44300324D60 /* ArmLevel3ViewController.xib */; };
-		164F4F2C2002E45600324D60 /* ArmLevel4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164F4F2A2002E45600324D60 /* ArmLevel4ViewController.m */; };
-		164F4F2D2002E45600324D60 /* ArmLevel4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F2B2002E45600324D60 /* ArmLevel4ViewController.xib */; };
-		164F4F36200456E800324D60 /* IMG_3561_Converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F33200455C400324D60 /* IMG_3561_Converted.m4v */; };
-		164F4F37200456EB00324D60 /* IMG_3562_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F34200455C500324D60 /* IMG_3562_converted.m4v */; };
-		164F4F38200456EE00324D60 /* IMG_3563_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F35200455C600324D60 /* IMG_3563_converted.m4v */; };
-		164F4F39200456F000324D60 /* IMG_3565_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F32200455C400324D60 /* IMG_3565_converted.m4v */; };
-		164F4F3F20057E2E00324D60 /* IMG_3713_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F3A20057E2B00324D60 /* IMG_3713_converted.m4v */; };
-		164F4F4020057E2E00324D60 /* IMG_3710_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F3B20057E2C00324D60 /* IMG_3710_converted.m4v */; };
-		164F4F4120057E2E00324D60 /* IMG_3711_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F3C20057E2C00324D60 /* IMG_3711_converted.m4v */; };
-		164F4F4220057E2E00324D60 /* IMG_3712_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F3D20057E2D00324D60 /* IMG_3712_converted.m4v */; };
-		164F4F4320057E2E00324D60 /* IMG_3714_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F3E20057E2E00324D60 /* IMG_3714_converted.m4v */; };
-		164F4F4620057E5000324D60 /* 12_3567.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F4420057E4F00324D60 /* 12_3567.mp4 */; };
-		164F4F4720057E5000324D60 /* 4_3566-2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F4520057E4F00324D60 /* 4_3566-2.mp4 */; };
-		164F4F4920057F9500324D60 /* IMG_3569.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F4820057F9500324D60 /* IMG_3569.mp4 */; };
-		164F4F4B20057F9F00324D60 /* IMG_3720.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 164F4F4A20057F9F00324D60 /* IMG_3720.mp4 */; };
 		167883A91EE1029900B106AD /* ChatBotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883A71EE1029900B106AD /* ChatBotViewController.m */; };
 		167883AA1EE1029900B106AD /* ChatBotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167883A81EE1029900B106AD /* ChatBotViewController.xib */; };
 		167883AF1EE25EED00B106AD /* GVRVideoViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883AE1EE25EED00B106AD /* GVRVideoViewManager.m */; };
@@ -87,7 +64,6 @@
 		17E0BB211EA40F70001FC7F3 /* ArmsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB1F1EA40F70001FC7F3 /* ArmsViewController.xib */; };
 		17E0BB251EA40F9A001FC7F3 /* MindExercisesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E0BB231EA40F9A001FC7F3 /* MindExercisesViewController.m */; };
 		17E0BB261EA40F9A001FC7F3 /* MindExercisesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB241EA40F9A001FC7F3 /* MindExercisesViewController.xib */; };
-		17E0BB291EA41043001FC7F3 /* 1AToeFlexion.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB281EA41043001FC7F3 /* 1AToeFlexion.m4v */; };
 		17E0BB2D1EA41069001FC7F3 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E0BB2B1EA41069001FC7F3 /* VideoViewController.m */; };
 		17E0BB2E1EA41069001FC7F3 /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB2C1EA41069001FC7F3 /* VideoViewController.xib */; };
 		17E0BB321EA41129001FC7F3 /* StrengtheningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E0BB301EA41129001FC7F3 /* StrengtheningViewController.m */; };
@@ -101,16 +77,8 @@
 		17E0BB461EA4139E001FC7F3 /* ExercisesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E0BB451EA4139E001FC7F3 /* ExercisesViewController.xib */; };
 		9D97478370E7B7322756F1D2 /* libPods-H4TWStrokeHope.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 680C4F0184FB59272CA0743A /* libPods-H4TWStrokeHope.a */; };
 		AB070D041FA2CDDC00D1C6F7 /* LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB070D031FA2CDDC00D1C6F7 /* LanguageManager.m */; };
-		AB2677931FF57E8C00BB12E0 /* AdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2677911FF57E8C00BB12E0 /* AdvancedViewController.m */; };
-		AB2677941FF57E8C00BB12E0 /* AdvancedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2677921FF57E8C00BB12E0 /* AdvancedViewController.xib */; };
-		AB2677981FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2677961FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m */; };
-		AB2677991FF5950500BB12E0 /* FunctionalMobilityAdvViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2677971FF5950500BB12E0 /* FunctionalMobilityAdvViewController.xib */; };
-		AB26779C1FF5B1D600BB12E0 /* 1FunctionalMobility.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB26779A1FF5B1D500BB12E0 /* 1FunctionalMobility.mp4 */; };
+		AB13483620157FA000DB143D /* 1FunctionalMobility.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB13483520157F9F00DB143D /* 1FunctionalMobility.mp4 */; };
 		AB26779D1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB26779B1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 */; };
-		AB2677A11FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB26779F1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m */; };
-		AB2677A21FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2677A01FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib */; };
-		AB2677A61FFB43FC00BB12E0 /* SittingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2677A41FFB43FC00BB12E0 /* SittingViewController.m */; };
-		AB2677A71FFB43FC00BB12E0 /* SittingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2677A51FFB43FC00BB12E0 /* SittingViewController.xib */; };
 		AB2677B81FFC30F300BB12E0 /* IMG_3574_Side.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677AA1FFC30F300BB12E0 /* IMG_3574_Side.mp4 */; };
 		AB2677B91FFC30F300BB12E0 /* 3729.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB2677AB1FFC30F300BB12E0 /* 3729.jpg */; };
 		AB2677BA1FFC30F300BB12E0 /* 3731.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB2677AC1FFC30F300BB12E0 /* 3731.jpg */; };
@@ -122,10 +90,49 @@
 		AB2677C01FFC30F300BB12E0 /* 3730.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB2677B21FFC30F300BB12E0 /* 3730.jpg */; };
 		AB2677C31FFC30F300BB12E0 /* 3572_side.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677B61FFC30F300BB12E0 /* 3572_side.mp4 */; };
 		AB2677C41FFC30F300BB12E0 /* 3571_Back.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677B71FFC30F300BB12E0 /* 3571_Back.mp4 */; };
-		AB2677E1200343FB00BB12E0 /* StandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2677DF200343FB00BB12E0 /* StandingViewController.m */; };
-		AB2677E2200343FB00BB12E0 /* StandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2677E0200343FB00BB12E0 /* StandingViewController.xib */; };
-		AB2677E62003456B00BB12E0 /* ImgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2677E42003456B00BB12E0 /* ImgViewController.m */; };
-		AB2677E72003456B00BB12E0 /* ImgViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2677E52003456B00BB12E0 /* ImgViewController.xib */; };
+		ABADA6A3200AD040008C5977 /* 12_3567.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6A2200AD040008C5977 /* 12_3567.mp4 */; };
+		ABADA6BD200AD49C008C5977 /* IMG_3713_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6BC200AD49C008C5977 /* IMG_3713_converted.m4v */; };
+		ABADA6CC200DDD5B008C5977 /* IMG_3710_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6C3200DDD57008C5977 /* IMG_3710_converted.m4v */; };
+		ABADA6CD200DDD5B008C5977 /* IMG_3712_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6C4200DDD57008C5977 /* IMG_3712_converted.m4v */; };
+		ABADA6CE200DDD5B008C5977 /* IMG_3714_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6C5200DDD57008C5977 /* IMG_3714_converted.m4v */; };
+		ABADA6CF200DDD5B008C5977 /* IMG_3563_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6C6200DDD58008C5977 /* IMG_3563_converted.m4v */; };
+		ABADA6D0200DDD5B008C5977 /* IMG_3562_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6C7200DDD58008C5977 /* IMG_3562_converted.m4v */; };
+		ABADA6D1200DDD5B008C5977 /* IMG_3565_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6C8200DDD58008C5977 /* IMG_3565_converted.m4v */; };
+		ABADA6D4200DDD5B008C5977 /* IMG_3561_Converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6CB200DDD5A008C5977 /* IMG_3561_Converted.m4v */; };
+		ABADA6D7200DDECB008C5977 /* 4_3566-2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6D5200DDECA008C5977 /* 4_3566-2.mp4 */; };
+		ABADA6D8200DDECB008C5977 /* 12_3567.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6D6200DDECA008C5977 /* 12_3567.mp4 */; };
+		ABADA70B200E7266008C5977 /* StandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6E2200E7266008C5977 /* StandingViewController.xib */; };
+		ABADA70C200E7266008C5977 /* SittingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA6E3200E7266008C5977 /* SittingViewController.m */; };
+		ABADA70D200E7266008C5977 /* FunctionalMobilityAdvViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6E5200E7266008C5977 /* FunctionalMobilityAdvViewController.xib */; };
+		ABADA70F200E7266008C5977 /* ImgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA6E8200E7266008C5977 /* ImgViewController.m */; };
+		ABADA710200E7266008C5977 /* StandingH1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6E9200E7266008C5977 /* StandingH1ViewController.xib */; };
+		ABADA711200E7266008C5977 /* AdvancedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6EC200E7266008C5977 /* AdvancedViewController.xib */; };
+		ABADA713200E7266008C5977 /* FunctionalMobilityAdvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA6EE200E7266008C5977 /* FunctionalMobilityAdvViewController.m */; };
+		ABADA714200E7266008C5977 /* ArmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6EF200E7266008C5977 /* ArmViewController.xib */; };
+		ABADA715200E7266008C5977 /* StandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA6F1200E7266008C5977 /* StandingViewController.m */; };
+		ABADA716200E7266008C5977 /* SittingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6F2200E7266008C5977 /* SittingViewController.xib */; };
+		ABADA717200E7266008C5977 /* BalanceTrainingAdvViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6F4200E7266008C5977 /* BalanceTrainingAdvViewController.xib */; };
+		ABADA718200E7266008C5977 /* ArmLevel4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA6F6200E7266008C5977 /* ArmLevel4ViewController.m */; };
+		ABADA719200E7266008C5977 /* ArmLevel2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6F7200E7266008C5977 /* ArmLevel2ViewController.xib */; };
+		ABADA71A200E7266008C5977 /* ArmLevel3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6F8200E7266008C5977 /* ArmLevel3ViewController.xib */; };
+		ABADA71B200E7266008C5977 /* ArmLevel3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA6F9200E7266008C5977 /* ArmLevel3ViewController.m */; };
+		ABADA71C200E7266008C5977 /* ArmLevel2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA6FA200E7266008C5977 /* ArmLevel2ViewController.m */; };
+		ABADA71D200E7266008C5977 /* ArmLevel1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6FC200E7266008C5977 /* ArmLevel1ViewController.xib */; };
+		ABADA71E200E7266008C5977 /* ArmLevel4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6FD200E7266008C5977 /* ArmLevel4ViewController.xib */; };
+		ABADA71F200E7266008C5977 /* ArmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA6FE200E7266008C5977 /* ArmViewController.m */; };
+		ABADA721200E7266008C5977 /* ArmLevel1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA704200E7266008C5977 /* ArmLevel1ViewController.m */; };
+		ABADA722200E7266008C5977 /* StandingH1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA705200E7266008C5977 /* StandingH1ViewController.m */; };
+		ABADA723200E7266008C5977 /* AdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA708200E7266008C5977 /* AdvancedViewController.m */; };
+		ABADA724200E7266008C5977 /* BalanceTrainingAdvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA709200E7266008C5977 /* BalanceTrainingAdvViewController.m */; };
+		ABADA725200E7266008C5977 /* ImgViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA70A200E7266008C5977 /* ImgViewController.xib */; };
+		ABADA729200E73E2008C5977 /* IMG_3711_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = ABADA728200E73E2008C5977 /* IMG_3711_converted.m4v */; };
+		ABADA72D20111F4C008C5977 /* StandingH2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA72B20111F4C008C5977 /* StandingH2ViewController.m */; };
+		ABADA72E20111F4C008C5977 /* StandingH2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA72C20111F4C008C5977 /* StandingH2ViewController.xib */; };
+		ABADA73220112D56008C5977 /* StandingH3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA73020112D56008C5977 /* StandingH3ViewController.m */; };
+		ABADA73320112D56008C5977 /* StandingH3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA73120112D56008C5977 /* StandingH3ViewController.xib */; };
+		ABADA736201133FA008C5977 /* 3574.png in Resources */ = {isa = PBXBuildFile; fileRef = ABADA734201133F8008C5977 /* 3574.png */; };
+		ABADA737201133FA008C5977 /* 3780.png in Resources */ = {isa = PBXBuildFile; fileRef = ABADA735201133FA008C5977 /* 3780.png */; };
+		ABADA73B2011371C008C5977 /* 3576.png in Resources */ = {isa = PBXBuildFile; fileRef = ABADA7392011371C008C5977 /* 3576.png */; };
 		ABCD3CA11F9AA7D500BA412E /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCD3CA01F9AA7D500BA412E /* NSBundle+Language.m */; };
 		CC11D11B1EB3B8DE0063E72A /* ReminderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1191EB3B8DE0063E72A /* ReminderTableViewCell.m */; };
 		CC11D11C1EB3B8DE0063E72A /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D11A1EB3B8DE0063E72A /* ReminderTableViewCell.xib */; };
@@ -217,34 +224,6 @@
 		162856CA1F1F08F200CE1327 /* RelaxingMusicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RelaxingMusicViewController.xib; sourceTree = "<group>"; };
 		163CE0A11EEE4290001C43F3 /* ChatMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatMessages.h; sourceTree = "<group>"; };
 		163CE0A21EEE4290001C43F3 /* ChatMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatMessages.m; sourceTree = "<group>"; };
-		164F4F142002D45B00324D60 /* ArmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmViewController.h; sourceTree = "<group>"; };
-		164F4F152002D45B00324D60 /* ArmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmViewController.m; sourceTree = "<group>"; };
-		164F4F162002D45B00324D60 /* ArmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArmViewController.xib; sourceTree = "<group>"; };
-		164F4F1A2002E41700324D60 /* ArmLevel1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmLevel1ViewController.h; sourceTree = "<group>"; };
-		164F4F1B2002E41700324D60 /* ArmLevel1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmLevel1ViewController.m; sourceTree = "<group>"; };
-		164F4F1C2002E41700324D60 /* ArmLevel1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArmLevel1ViewController.xib; sourceTree = "<group>"; };
-		164F4F1F2002E42D00324D60 /* ArmLevel2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmLevel2ViewController.h; sourceTree = "<group>"; };
-		164F4F202002E42D00324D60 /* ArmLevel2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmLevel2ViewController.m; sourceTree = "<group>"; };
-		164F4F212002E42D00324D60 /* ArmLevel2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArmLevel2ViewController.xib; sourceTree = "<group>"; };
-		164F4F242002E44300324D60 /* ArmLevel3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmLevel3ViewController.h; sourceTree = "<group>"; };
-		164F4F252002E44300324D60 /* ArmLevel3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmLevel3ViewController.m; sourceTree = "<group>"; };
-		164F4F262002E44300324D60 /* ArmLevel3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArmLevel3ViewController.xib; sourceTree = "<group>"; };
-		164F4F292002E45600324D60 /* ArmLevel4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmLevel4ViewController.h; sourceTree = "<group>"; };
-		164F4F2A2002E45600324D60 /* ArmLevel4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmLevel4ViewController.m; sourceTree = "<group>"; };
-		164F4F2B2002E45600324D60 /* ArmLevel4ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArmLevel4ViewController.xib; sourceTree = "<group>"; };
-		164F4F32200455C400324D60 /* IMG_3565_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3565_converted.m4v; sourceTree = "<group>"; };
-		164F4F33200455C400324D60 /* IMG_3561_Converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3561_Converted.m4v; sourceTree = "<group>"; };
-		164F4F34200455C500324D60 /* IMG_3562_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3562_converted.m4v; sourceTree = "<group>"; };
-		164F4F35200455C600324D60 /* IMG_3563_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3563_converted.m4v; sourceTree = "<group>"; };
-		164F4F3A20057E2B00324D60 /* IMG_3713_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3713_converted.m4v; sourceTree = "<group>"; };
-		164F4F3B20057E2C00324D60 /* IMG_3710_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3710_converted.m4v; sourceTree = "<group>"; };
-		164F4F3C20057E2C00324D60 /* IMG_3711_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3711_converted.m4v; sourceTree = "<group>"; };
-		164F4F3D20057E2D00324D60 /* IMG_3712_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3712_converted.m4v; sourceTree = "<group>"; };
-		164F4F3E20057E2E00324D60 /* IMG_3714_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3714_converted.m4v; sourceTree = "<group>"; };
-		164F4F4420057E4F00324D60 /* 12_3567.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 12_3567.mp4; sourceTree = "<group>"; };
-		164F4F4520057E4F00324D60 /* 4_3566-2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4_3566-2.mp4"; sourceTree = "<group>"; };
-		164F4F4820057F9500324D60 /* IMG_3569.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3569.mp4; sourceTree = "<group>"; };
-		164F4F4A20057F9F00324D60 /* IMG_3720.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3720.mp4; sourceTree = "<group>"; };
 		167883A61EE1029900B106AD /* ChatBotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotViewController.h; sourceTree = "<group>"; };
 		167883A71EE1029900B106AD /* ChatBotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBotViewController.m; sourceTree = "<group>"; };
 		167883A81EE1029900B106AD /* ChatBotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatBotViewController.xib; sourceTree = "<group>"; };
@@ -324,7 +303,6 @@
 		17E0BB221EA40F9A001FC7F3 /* MindExercisesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MindExercisesViewController.h; sourceTree = "<group>"; };
 		17E0BB231EA40F9A001FC7F3 /* MindExercisesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MindExercisesViewController.m; sourceTree = "<group>"; };
 		17E0BB241EA40F9A001FC7F3 /* MindExercisesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MindExercisesViewController.xib; sourceTree = "<group>"; };
-		17E0BB281EA41043001FC7F3 /* 1AToeFlexion.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1AToeFlexion.m4v; sourceTree = "<group>"; };
 		17E0BB2A1EA41069001FC7F3 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		17E0BB2B1EA41069001FC7F3 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		17E0BB2C1EA41069001FC7F3 /* VideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
@@ -350,20 +328,8 @@
 		AB070D021FA2CDDC00D1C6F7 /* LanguageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageManager.h; sourceTree = "<group>"; };
 		AB070D031FA2CDDC00D1C6F7 /* LanguageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageManager.m; sourceTree = "<group>"; };
 		AB070D051FA2F43500D1C6F7 /* H4TWStrokeHope.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H4TWStrokeHope.pch; sourceTree = SOURCE_ROOT; };
-		AB2677901FF57E8C00BB12E0 /* AdvancedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvancedViewController.h; sourceTree = "<group>"; };
-		AB2677911FF57E8C00BB12E0 /* AdvancedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvancedViewController.m; sourceTree = "<group>"; };
-		AB2677921FF57E8C00BB12E0 /* AdvancedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvancedViewController.xib; sourceTree = "<group>"; };
-		AB2677951FF5950500BB12E0 /* FunctionalMobilityAdvViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionalMobilityAdvViewController.h; sourceTree = "<group>"; };
-		AB2677961FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionalMobilityAdvViewController.m; sourceTree = "<group>"; };
-		AB2677971FF5950500BB12E0 /* FunctionalMobilityAdvViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FunctionalMobilityAdvViewController.xib; sourceTree = "<group>"; };
-		AB26779A1FF5B1D500BB12E0 /* 1FunctionalMobility.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1FunctionalMobility.mp4; sourceTree = "<group>"; };
+		AB13483520157F9F00DB143D /* 1FunctionalMobility.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1FunctionalMobility.mp4; sourceTree = "<group>"; };
 		AB26779B1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3FunctionalMobility.mp4; sourceTree = "<group>"; };
-		AB26779E1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BalanceTrainingAdvViewController.h; sourceTree = "<group>"; };
-		AB26779F1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalanceTrainingAdvViewController.m; sourceTree = "<group>"; };
-		AB2677A01FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceTrainingAdvViewController.xib; sourceTree = "<group>"; };
-		AB2677A31FFB43FC00BB12E0 /* SittingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SittingViewController.h; sourceTree = "<group>"; };
-		AB2677A41FFB43FC00BB12E0 /* SittingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SittingViewController.m; sourceTree = "<group>"; };
-		AB2677A51FFB43FC00BB12E0 /* SittingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SittingViewController.xib; sourceTree = "<group>"; };
 		AB2677AA1FFC30F300BB12E0 /* IMG_3574_Side.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3574_Side.mp4; sourceTree = "<group>"; };
 		AB2677AB1FFC30F300BB12E0 /* 3729.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3729.jpg; sourceTree = "<group>"; };
 		AB2677AC1FFC30F300BB12E0 /* 3731.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3731.jpg; sourceTree = "<group>"; };
@@ -375,15 +341,66 @@
 		AB2677B21FFC30F300BB12E0 /* 3730.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3730.jpg; sourceTree = "<group>"; };
 		AB2677B61FFC30F300BB12E0 /* 3572_side.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3572_side.mp4; sourceTree = "<group>"; };
 		AB2677B71FFC30F300BB12E0 /* 3571_Back.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3571_Back.mp4; sourceTree = "<group>"; };
-		AB2677DE200343FB00BB12E0 /* StandingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StandingViewController.h; sourceTree = "<group>"; };
-		AB2677DF200343FB00BB12E0 /* StandingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StandingViewController.m; sourceTree = "<group>"; };
-		AB2677E0200343FB00BB12E0 /* StandingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandingViewController.xib; sourceTree = "<group>"; };
-		AB2677E32003456B00BB12E0 /* ImgViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImgViewController.h; sourceTree = "<group>"; };
-		AB2677E42003456B00BB12E0 /* ImgViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImgViewController.m; sourceTree = "<group>"; };
-		AB2677E52003456B00BB12E0 /* ImgViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImgViewController.xib; sourceTree = "<group>"; };
 		AB78C48B1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		AB78C48C1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		AB78C48D1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		ABADA6A2200AD040008C5977 /* 12_3567.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 12_3567.mp4; path = H4TWStrokeHope/12_3567.mp4; sourceTree = SOURCE_ROOT; };
+		ABADA6BC200AD49C008C5977 /* IMG_3713_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3713_converted.m4v; sourceTree = "<group>"; };
+		ABADA6C3200DDD57008C5977 /* IMG_3710_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = IMG_3710_converted.m4v; path = "../../../../../../../../Downloads/Health4TheWorldStroke-ios-master/H4TWStrokeHope/IMG_3710_converted.m4v"; sourceTree = "<group>"; };
+		ABADA6C4200DDD57008C5977 /* IMG_3712_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = IMG_3712_converted.m4v; path = "../../../../../../../../Downloads/Health4TheWorldStroke-ios-master/H4TWStrokeHope/IMG_3712_converted.m4v"; sourceTree = "<group>"; };
+		ABADA6C5200DDD57008C5977 /* IMG_3714_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = IMG_3714_converted.m4v; path = "../../../../../../../../Downloads/Health4TheWorldStroke-ios-master/H4TWStrokeHope/IMG_3714_converted.m4v"; sourceTree = "<group>"; };
+		ABADA6C6200DDD58008C5977 /* IMG_3563_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = IMG_3563_converted.m4v; path = "../../../../../../../../Downloads/Health4TheWorldStroke-ios-master/H4TWStrokeHope/IMG_3563_converted.m4v"; sourceTree = "<group>"; };
+		ABADA6C7200DDD58008C5977 /* IMG_3562_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = IMG_3562_converted.m4v; path = "../../../../../../../../Downloads/Health4TheWorldStroke-ios-master/H4TWStrokeHope/IMG_3562_converted.m4v"; sourceTree = "<group>"; };
+		ABADA6C8200DDD58008C5977 /* IMG_3565_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = IMG_3565_converted.m4v; path = "../../../../../../../../Downloads/Health4TheWorldStroke-ios-master/H4TWStrokeHope/IMG_3565_converted.m4v"; sourceTree = "<group>"; };
+		ABADA6CB200DDD5A008C5977 /* IMG_3561_Converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = IMG_3561_Converted.m4v; path = "../../../../../../../../Downloads/Health4TheWorldStroke-ios-master/H4TWStrokeHope/IMG_3561_Converted.m4v"; sourceTree = "<group>"; };
+		ABADA6D5200DDECA008C5977 /* 4_3566-2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4_3566-2.mp4"; sourceTree = "<group>"; };
+		ABADA6D6200DDECA008C5977 /* 12_3567.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 12_3567.mp4; sourceTree = "<group>"; };
+		ABADA6E2200E7266008C5977 /* StandingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StandingViewController.xib; sourceTree = "<group>"; };
+		ABADA6E3200E7266008C5977 /* SittingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SittingViewController.m; sourceTree = "<group>"; };
+		ABADA6E4200E7266008C5977 /* StandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandingViewController.h; sourceTree = "<group>"; };
+		ABADA6E5200E7266008C5977 /* FunctionalMobilityAdvViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunctionalMobilityAdvViewController.xib; sourceTree = "<group>"; };
+		ABADA6E6200E7266008C5977 /* StandingH1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandingH1ViewController.h; sourceTree = "<group>"; };
+		ABADA6E8200E7266008C5977 /* ImgViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgViewController.m; sourceTree = "<group>"; };
+		ABADA6E9200E7266008C5977 /* StandingH1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StandingH1ViewController.xib; sourceTree = "<group>"; };
+		ABADA6EA200E7266008C5977 /* BalanceTrainingAdvViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalanceTrainingAdvViewController.h; sourceTree = "<group>"; };
+		ABADA6EB200E7266008C5977 /* AdvancedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedViewController.h; sourceTree = "<group>"; };
+		ABADA6EC200E7266008C5977 /* AdvancedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdvancedViewController.xib; sourceTree = "<group>"; };
+		ABADA6EE200E7266008C5977 /* FunctionalMobilityAdvViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionalMobilityAdvViewController.m; sourceTree = "<group>"; };
+		ABADA6EF200E7266008C5977 /* ArmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArmViewController.xib; path = H4TWStrokeHope/New/ArmViewController.xib; sourceTree = SOURCE_ROOT; };
+		ABADA6F0200E7266008C5977 /* SittingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SittingViewController.h; sourceTree = "<group>"; };
+		ABADA6F1200E7266008C5977 /* StandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandingViewController.m; sourceTree = "<group>"; };
+		ABADA6F2200E7266008C5977 /* SittingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SittingViewController.xib; sourceTree = "<group>"; };
+		ABADA6F3200E7266008C5977 /* ImgViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgViewController.h; sourceTree = "<group>"; };
+		ABADA6F4200E7266008C5977 /* BalanceTrainingAdvViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BalanceTrainingAdvViewController.xib; sourceTree = "<group>"; };
+		ABADA6F6200E7266008C5977 /* ArmLevel4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArmLevel4ViewController.m; sourceTree = "<group>"; };
+		ABADA6F7200E7266008C5977 /* ArmLevel2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArmLevel2ViewController.xib; sourceTree = "<group>"; };
+		ABADA6F8200E7266008C5977 /* ArmLevel3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArmLevel3ViewController.xib; sourceTree = "<group>"; };
+		ABADA6F9200E7266008C5977 /* ArmLevel3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArmLevel3ViewController.m; sourceTree = "<group>"; };
+		ABADA6FA200E7266008C5977 /* ArmLevel2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArmLevel2ViewController.m; sourceTree = "<group>"; };
+		ABADA6FB200E7266008C5977 /* ArmLevel1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArmLevel1ViewController.h; sourceTree = "<group>"; };
+		ABADA6FC200E7266008C5977 /* ArmLevel1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArmLevel1ViewController.xib; sourceTree = "<group>"; };
+		ABADA6FD200E7266008C5977 /* ArmLevel4ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArmLevel4ViewController.xib; sourceTree = "<group>"; };
+		ABADA6FE200E7266008C5977 /* ArmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArmViewController.m; sourceTree = "<group>"; };
+		ABADA700200E7266008C5977 /* ArmLevel4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArmLevel4ViewController.h; sourceTree = "<group>"; };
+		ABADA701200E7266008C5977 /* ArmLevel3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArmLevel3ViewController.h; sourceTree = "<group>"; };
+		ABADA702200E7266008C5977 /* ArmLevel2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArmLevel2ViewController.h; sourceTree = "<group>"; };
+		ABADA703200E7266008C5977 /* ArmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArmViewController.h; sourceTree = "<group>"; };
+		ABADA704200E7266008C5977 /* ArmLevel1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArmLevel1ViewController.m; sourceTree = "<group>"; };
+		ABADA705200E7266008C5977 /* StandingH1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandingH1ViewController.m; sourceTree = "<group>"; };
+		ABADA707200E7266008C5977 /* FunctionalMobilityAdvViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionalMobilityAdvViewController.h; sourceTree = "<group>"; };
+		ABADA708200E7266008C5977 /* AdvancedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedViewController.m; sourceTree = "<group>"; };
+		ABADA709200E7266008C5977 /* BalanceTrainingAdvViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalanceTrainingAdvViewController.m; sourceTree = "<group>"; };
+		ABADA70A200E7266008C5977 /* ImgViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImgViewController.xib; sourceTree = "<group>"; };
+		ABADA728200E73E2008C5977 /* IMG_3711_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = IMG_3711_converted.m4v; path = "../../../../../../../../Downloads/Health4TheWorldStroke-ios-master/H4TWStrokeHope/IMG_3711_converted.m4v"; sourceTree = "<group>"; };
+		ABADA72A20111F4C008C5977 /* StandingH2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StandingH2ViewController.h; sourceTree = "<group>"; };
+		ABADA72B20111F4C008C5977 /* StandingH2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StandingH2ViewController.m; sourceTree = "<group>"; };
+		ABADA72C20111F4C008C5977 /* StandingH2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandingH2ViewController.xib; sourceTree = "<group>"; };
+		ABADA72F20112D56008C5977 /* StandingH3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StandingH3ViewController.h; sourceTree = "<group>"; };
+		ABADA73020112D56008C5977 /* StandingH3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StandingH3ViewController.m; sourceTree = "<group>"; };
+		ABADA73120112D56008C5977 /* StandingH3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandingH3ViewController.xib; sourceTree = "<group>"; };
+		ABADA734201133F8008C5977 /* 3574.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3574.png; sourceTree = "<group>"; };
+		ABADA735201133FA008C5977 /* 3780.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3780.png; sourceTree = "<group>"; };
+		ABADA7392011371C008C5977 /* 3576.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3576.png; sourceTree = "<group>"; };
 		ABCD3C9E1F9AA67700BA412E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		ABCD3C9F1F9AA7D500BA412E /* NSBundle+Language.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
 		ABCD3CA01F9AA7D500BA412E /* NSBundle+Language.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
@@ -526,69 +543,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		164F4F192002E3F800324D60 /* Arm */ = {
-			isa = PBXGroup;
-			children = (
-				164F4F1A2002E41700324D60 /* ArmLevel1ViewController.h */,
-				164F4F1B2002E41700324D60 /* ArmLevel1ViewController.m */,
-				164F4F1C2002E41700324D60 /* ArmLevel1ViewController.xib */,
-				164F4F1F2002E42D00324D60 /* ArmLevel2ViewController.h */,
-				164F4F202002E42D00324D60 /* ArmLevel2ViewController.m */,
-				164F4F212002E42D00324D60 /* ArmLevel2ViewController.xib */,
-				164F4F242002E44300324D60 /* ArmLevel3ViewController.h */,
-				164F4F252002E44300324D60 /* ArmLevel3ViewController.m */,
-				164F4F262002E44300324D60 /* ArmLevel3ViewController.xib */,
-				164F4F292002E45600324D60 /* ArmLevel4ViewController.h */,
-				164F4F2A2002E45600324D60 /* ArmLevel4ViewController.m */,
-				164F4F2B2002E45600324D60 /* ArmLevel4ViewController.xib */,
-			);
-			path = Arm;
-			sourceTree = "<group>";
-		};
-		164F4F2E2004558100324D60 /* Arm */ = {
-			isa = PBXGroup;
-			children = (
-				164F4F31200455A900324D60 /* Level4 */,
-				164F4F30200455A400324D60 /* Level3 */,
-				164F4F2F2004559C00324D60 /* Level2 */,
-			);
-			name = Arm;
-			sourceTree = "<group>";
-		};
-		164F4F2F2004559C00324D60 /* Level2 */ = {
-			isa = PBXGroup;
-			children = (
-				164F4F33200455C400324D60 /* IMG_3561_Converted.m4v */,
-				164F4F34200455C500324D60 /* IMG_3562_converted.m4v */,
-				164F4F35200455C600324D60 /* IMG_3563_converted.m4v */,
-				164F4F32200455C400324D60 /* IMG_3565_converted.m4v */,
-			);
-			name = Level2;
-			sourceTree = "<group>";
-		};
-		164F4F30200455A400324D60 /* Level3 */ = {
-			isa = PBXGroup;
-			children = (
-				164F4F3B20057E2C00324D60 /* IMG_3710_converted.m4v */,
-				164F4F3C20057E2C00324D60 /* IMG_3711_converted.m4v */,
-				164F4F3D20057E2D00324D60 /* IMG_3712_converted.m4v */,
-				164F4F3A20057E2B00324D60 /* IMG_3713_converted.m4v */,
-				164F4F3E20057E2E00324D60 /* IMG_3714_converted.m4v */,
-				164F4F4520057E4F00324D60 /* 4_3566-2.mp4 */,
-				164F4F4420057E4F00324D60 /* 12_3567.mp4 */,
-			);
-			name = Level3;
-			sourceTree = "<group>";
-		};
-		164F4F31200455A900324D60 /* Level4 */ = {
-			isa = PBXGroup;
-			children = (
-				164F4F4820057F9500324D60 /* IMG_3569.mp4 */,
-				164F4F4A20057F9F00324D60 /* IMG_3720.mp4 */,
-			);
-			name = Level4;
-			sourceTree = "<group>";
-		};
 		167883A51EE1025300B106AD /* ChatBot */ = {
 			isa = PBXGroup;
 			children = (
@@ -685,6 +639,7 @@
 			children = (
 				AB2677A81FFC30F300BB12E0 /* BalanceTraining */,
 				17593E6E1EA83B0300F37C74 /* 5BMaleDocWaving.m4v */,
+				ABADA6A2200AD040008C5977 /* 12_3567.mp4 */,
 				17593E6F1EA83B0300F37C74 /* 5AFemaleDocWaving.m4v */,
 				17593E701EA83B0300F37C74 /* 4CSitToStand.m4v */,
 				17593E711EA83B0300F37C74 /* 4BArmAndTrunkStrengthening.m4v */,
@@ -695,9 +650,19 @@
 				17593E761EA83B0300F37C74 /* 2AElbowFlexion.m4v */,
 				17593E771EA83B0300F37C74 /* 1CHipFlexion.m4v */,
 				17593E781EA83B0300F37C74 /* 1BKneeFlexion.m4v */,
-				17E0BB281EA41043001FC7F3 /* 1AToeFlexion.m4v */,
-				AB26779A1FF5B1D500BB12E0 /* 1FunctionalMobility.mp4 */,
+				ABADA6D5200DDECA008C5977 /* 4_3566-2.mp4 */,
+				ABADA6D6200DDECA008C5977 /* 12_3567.mp4 */,
+				AB13483520157F9F00DB143D /* 1FunctionalMobility.mp4 */,
 				AB26779B1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 */,
+				ABADA6CB200DDD5A008C5977 /* IMG_3561_Converted.m4v */,
+				ABADA6C7200DDD58008C5977 /* IMG_3562_converted.m4v */,
+				ABADA6C6200DDD58008C5977 /* IMG_3563_converted.m4v */,
+				ABADA6C8200DDD58008C5977 /* IMG_3565_converted.m4v */,
+				ABADA6C3200DDD57008C5977 /* IMG_3710_converted.m4v */,
+				ABADA6C4200DDD57008C5977 /* IMG_3712_converted.m4v */,
+				ABADA6BC200AD49C008C5977 /* IMG_3713_converted.m4v */,
+				ABADA728200E73E2008C5977 /* IMG_3711_converted.m4v */,
+				ABADA6C5200DDD57008C5977 /* IMG_3714_converted.m4v */,
 			);
 			name = Videos;
 			sourceTree = "<group>";
@@ -781,32 +746,6 @@
 			name = Language;
 			sourceTree = "<group>";
 		};
-		AB26778C1FF57E3800BB12E0 /* Advanced */ = {
-			isa = PBXGroup;
-			children = (
-				164F4F192002E3F800324D60 /* Arm */,
-				AB2677901FF57E8C00BB12E0 /* AdvancedViewController.h */,
-				AB2677911FF57E8C00BB12E0 /* AdvancedViewController.m */,
-				AB2677921FF57E8C00BB12E0 /* AdvancedViewController.xib */,
-				AB2677951FF5950500BB12E0 /* FunctionalMobilityAdvViewController.h */,
-				AB2677961FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m */,
-				AB2677971FF5950500BB12E0 /* FunctionalMobilityAdvViewController.xib */,
-				AB26779E1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.h */,
-				AB26779F1FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m */,
-				AB2677A01FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib */,
-				AB2677A31FFB43FC00BB12E0 /* SittingViewController.h */,
-				AB2677A41FFB43FC00BB12E0 /* SittingViewController.m */,
-				AB2677A51FFB43FC00BB12E0 /* SittingViewController.xib */,
-				AB2677DE200343FB00BB12E0 /* StandingViewController.h */,
-				AB2677DF200343FB00BB12E0 /* StandingViewController.m */,
-				AB2677E0200343FB00BB12E0 /* StandingViewController.xib */,
-				AB2677E32003456B00BB12E0 /* ImgViewController.h */,
-				AB2677E42003456B00BB12E0 /* ImgViewController.m */,
-				AB2677E52003456B00BB12E0 /* ImgViewController.xib */,
-			);
-			path = Advanced;
-			sourceTree = "<group>";
-		};
 		AB2677A81FFC30F300BB12E0 /* BalanceTraining */ = {
 			isa = PBXGroup;
 			children = (
@@ -828,6 +767,9 @@
 				AB2677B01FFC30F300BB12E0 /* IMG_3578.mp4 */,
 				AB2677B11FFC30F300BB12E0 /* 3732.jpg */,
 				AB2677B21FFC30F300BB12E0 /* 3730.jpg */,
+				ABADA734201133F8008C5977 /* 3574.png */,
+				ABADA7392011371C008C5977 /* 3576.png */,
+				ABADA735201133FA008C5977 /* 3780.png */,
 			);
 			path = Standing;
 			sourceTree = "<group>";
@@ -839,6 +781,70 @@
 				AB2677B71FFC30F300BB12E0 /* 3571_Back.mp4 */,
 			);
 			path = Sitting;
+			sourceTree = "<group>";
+		};
+		ABADA69D20095505008C5977 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		ABADA6E1200E7266008C5977 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				ABADA707200E7266008C5977 /* FunctionalMobilityAdvViewController.h */,
+				ABADA6EE200E7266008C5977 /* FunctionalMobilityAdvViewController.m */,
+				ABADA6E5200E7266008C5977 /* FunctionalMobilityAdvViewController.xib */,
+				ABADA6EB200E7266008C5977 /* AdvancedViewController.h */,
+				ABADA708200E7266008C5977 /* AdvancedViewController.m */,
+				ABADA6EC200E7266008C5977 /* AdvancedViewController.xib */,
+				ABADA6E4200E7266008C5977 /* StandingViewController.h */,
+				ABADA6F1200E7266008C5977 /* StandingViewController.m */,
+				ABADA6E2200E7266008C5977 /* StandingViewController.xib */,
+				ABADA6E6200E7266008C5977 /* StandingH1ViewController.h */,
+				ABADA705200E7266008C5977 /* StandingH1ViewController.m */,
+				ABADA6E9200E7266008C5977 /* StandingH1ViewController.xib */,
+				ABADA72A20111F4C008C5977 /* StandingH2ViewController.h */,
+				ABADA72B20111F4C008C5977 /* StandingH2ViewController.m */,
+				ABADA72C20111F4C008C5977 /* StandingH2ViewController.xib */,
+				ABADA72F20112D56008C5977 /* StandingH3ViewController.h */,
+				ABADA73020112D56008C5977 /* StandingH3ViewController.m */,
+				ABADA73120112D56008C5977 /* StandingH3ViewController.xib */,
+				ABADA6F0200E7266008C5977 /* SittingViewController.h */,
+				ABADA6E3200E7266008C5977 /* SittingViewController.m */,
+				ABADA6F2200E7266008C5977 /* SittingViewController.xib */,
+				ABADA6EA200E7266008C5977 /* BalanceTrainingAdvViewController.h */,
+				ABADA709200E7266008C5977 /* BalanceTrainingAdvViewController.m */,
+				ABADA6F4200E7266008C5977 /* BalanceTrainingAdvViewController.xib */,
+				ABADA6F3200E7266008C5977 /* ImgViewController.h */,
+				ABADA6E8200E7266008C5977 /* ImgViewController.m */,
+				ABADA70A200E7266008C5977 /* ImgViewController.xib */,
+				ABADA6F5200E7266008C5977 /* Arm */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		ABADA6F5200E7266008C5977 /* Arm */ = {
+			isa = PBXGroup;
+			children = (
+				ABADA6EF200E7266008C5977 /* ArmViewController.xib */,
+				ABADA6F6200E7266008C5977 /* ArmLevel4ViewController.m */,
+				ABADA6F7200E7266008C5977 /* ArmLevel2ViewController.xib */,
+				ABADA6F8200E7266008C5977 /* ArmLevel3ViewController.xib */,
+				ABADA6F9200E7266008C5977 /* ArmLevel3ViewController.m */,
+				ABADA6FA200E7266008C5977 /* ArmLevel2ViewController.m */,
+				ABADA6FB200E7266008C5977 /* ArmLevel1ViewController.h */,
+				ABADA6FC200E7266008C5977 /* ArmLevel1ViewController.xib */,
+				ABADA6FD200E7266008C5977 /* ArmLevel4ViewController.xib */,
+				ABADA6FE200E7266008C5977 /* ArmViewController.m */,
+				ABADA700200E7266008C5977 /* ArmLevel4ViewController.h */,
+				ABADA701200E7266008C5977 /* ArmLevel3ViewController.h */,
+				ABADA702200E7266008C5977 /* ArmLevel2ViewController.h */,
+				ABADA703200E7266008C5977 /* ArmViewController.h */,
+				ABADA704200E7266008C5977 /* ArmLevel1ViewController.m */,
+			);
+			path = Arm;
 			sourceTree = "<group>";
 		};
 		CC11D1251EB64FD00063E72A /* Add Reminder */ = {
@@ -884,6 +890,7 @@
 				CC4C10AD1E7A26DE00515CDC /* Products */,
 				4E3FE5A4D2E88F85F8656B5F /* Pods */,
 				32C77B21DCB4EBC6D5D3F8F5 /* Frameworks */,
+				ABADA69D20095505008C5977 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1038,7 +1045,7 @@
 		CCB7B3FF1E9413170058C32E /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
-				AB26778C1FF57E3800BB12E0 /* Advanced */,
+				ABADA6E1200E7266008C5977 /* New */,
 				CCB7B4001E9413260058C32E /* ExercisesViewController.h */,
 				CCB7B4011E9413260058C32E /* ExercisesViewController.m */,
 				17E0BB451EA4139E001FC7F3 /* ExercisesViewController.xib */,
@@ -1243,66 +1250,72 @@
 				CC11D12F1EB650320063E72A /* AddReminderFrequencyViewController.xib in Resources */,
 				AB2677C31FFC30F300BB12E0 /* 3572_side.mp4 in Resources */,
 				CC73E4401E842370001131AF /* Lato-Bold.ttf in Resources */,
-				AB2677991FF5950500BB12E0 /* FunctionalMobilityAdvViewController.xib in Resources */,
 				CC73E42B1E841CAC001131AF /* Patagonia.jpg in Resources */,
 				AB2677C41FFC30F300BB12E0 /* 3571_Back.mp4 in Resources */,
 				CC73E4431E842370001131AF /* Lato-HairlineItalic.ttf in Resources */,
-				164F4F282002E44300324D60 /* ArmLevel3ViewController.xib in Resources */,
 				1737A19D1EA897D300C6D71E /* 3ALegControl1.m4v in Resources */,
+				ABADA72E20111F4C008C5977 /* StandingH2ViewController.xib in Resources */,
 				CC4C10C21E7A26DE00515CDC /* LaunchScreen.storyboard in Resources */,
 				CC11D1461EB6E7D00063E72A /* TimeTableViewCell.xib in Resources */,
-				164F4F2D2002E45600324D60 /* ArmLevel4ViewController.xib in Resources */,
-				AB26779C1FF5B1D600BB12E0 /* 1FunctionalMobility.mp4 in Resources */,
-				164F4F4120057E2E00324D60 /* IMG_3711_converted.m4v in Resources */,
 				CC73E4441E842370001131AF /* Lato-Italic.ttf in Resources */,
-				AB2677E2200343FB00BB12E0 /* StandingViewController.xib in Resources */,
+				ABADA729200E73E2008C5977 /* IMG_3711_converted.m4v in Resources */,
 				CC73E4411E842370001131AF /* Lato-BoldItalic.ttf in Resources */,
+				ABADA6A3200AD040008C5977 /* 12_3567.mp4 in Resources */,
 				179726B61EB3109B0053378E /* WebViewController.xib in Resources */,
 				CC3CB6491EA11EC800CA9429 /* LearnContentViewController.xib in Resources */,
-				164F4F4620057E5000324D60 /* 12_3567.mp4 in Resources */,
 				CCEF72EC1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib in Resources */,
-				17E0BB291EA41043001FC7F3 /* 1AToeFlexion.m4v in Resources */,
 				167883AA1EE1029900B106AD /* ChatBotViewController.xib in Resources */,
-				AB2677A21FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.xib in Resources */,
+				ABADA6CE200DDD5B008C5977 /* IMG_3714_converted.m4v in Resources */,
 				CCB7B4101E94136C0058C32E /* RemindersViewController.xib in Resources */,
 				17E0BB461EA4139E001FC7F3 /* ExercisesViewController.xib in Resources */,
-				164F4F3F20057E2E00324D60 /* IMG_3713_converted.m4v in Resources */,
-				164F4F4720057E5000324D60 /* 4_3566-2.mp4 in Resources */,
+				ABADA6BD200AD49C008C5977 /* IMG_3713_converted.m4v in Resources */,
+				ABADA6D0200DDD5B008C5977 /* IMG_3562_converted.m4v in Resources */,
 				CC73E43F1E842370001131AF /* Lato-BlackItalic.ttf in Resources */,
-				164F4F4B20057F9F00324D60 /* IMG_3720.mp4 in Resources */,
 				1737A1A01EA897E100C6D71E /* 4BArmAndTrunkStrengthening.m4v in Resources */,
 				CCDFBECF1ECDE5E700C09CC8 /* TermsViewController.xib in Resources */,
+				ABADA737201133FA008C5977 /* 3780.png in Resources */,
+				ABADA71D200E7266008C5977 /* ArmLevel1ViewController.xib in Resources */,
 				CC9604941EA3DE110030D2C7 /* LearnContentTypeTableViewCell.xib in Resources */,
-				164F4F232002E42D00324D60 /* ArmLevel2ViewController.xib in Resources */,
 				CC11D1391EB6B7BC0063E72A /* NoResultsTableViewCell.xib in Resources */,
 				CC11D13E1EB6B99E0063E72A /* EditReminderViewController.xib in Resources */,
+				ABADA714200E7266008C5977 /* ArmViewController.xib in Resources */,
 				1720A06F1EA9E82C009C2B87 /* HandStretchViewController.xib in Resources */,
+				ABADA70D200E7266008C5977 /* FunctionalMobilityAdvViewController.xib in Resources */,
+				AB13483620157FA000DB143D /* 1FunctionalMobility.mp4 in Resources */,
 				17E0BB441EA41370001FC7F3 /* FunctionalMobilityViewController.xib in Resources */,
+				ABADA716200E7266008C5977 /* SittingViewController.xib in Resources */,
 				AB2677BD1FFC30F300BB12E0 /* IMG_3580.mp4 in Resources */,
 				CC73E4421E842370001131AF /* Lato-Hairline.ttf in Resources */,
 				AB2677BE1FFC30F300BB12E0 /* IMG_3578.mp4 in Resources */,
 				AB2677B81FFC30F300BB12E0 /* IMG_3574_Side.mp4 in Resources */,
 				AB2677B91FFC30F300BB12E0 /* 3729.jpg in Resources */,
+				ABADA6CF200DDD5B008C5977 /* IMG_3563_converted.m4v in Resources */,
 				162856CC1F1F08F200CE1327 /* RelaxingMusicViewController.xib in Resources */,
+				ABADA736201133FA008C5977 /* 3574.png in Resources */,
+				ABADA73B2011371C008C5977 /* 3576.png in Resources */,
 				17DE3D501EA9604900D350A1 /* ArmsAndHandsViewController.xib in Resources */,
 				17DE3D4B1EA95F2300D350A1 /* LegAndFeetViewController.xib in Resources */,
 				AB2677C01FFC30F300BB12E0 /* 3730.jpg in Resources */,
 				17E0BB351EA41201001FC7F3 /* StrengtheningViewController.xib in Resources */,
+				ABADA719200E7266008C5977 /* ArmLevel2ViewController.xib in Resources */,
 				1737A1991EA8976F00C6D71E /* 1BKneeFlexion.m4v in Resources */,
+				ABADA71A200E7266008C5977 /* ArmLevel3ViewController.xib in Resources */,
 				AB2677BB1FFC30F300BB12E0 /* IMG_3575.mp4 in Resources */,
 				16C3C37D1EEA37EF005991D5 /* ChatBotViewCell.xib in Resources */,
 				17E0BB1C1EA40F5A001FC7F3 /* LegsViewController.xib in Resources */,
 				CC4C10BF1E7A26DE00515CDC /* Assets.xcassets in Resources */,
-				AB2677E72003456B00BB12E0 /* ImgViewController.xib in Resources */,
+				ABADA711200E7266008C5977 /* AdvancedViewController.xib in Resources */,
 				AB2677BC1FFC30F300BB12E0 /* IMG_3576.mp4 in Resources */,
+				ABADA725200E7266008C5977 /* ImgViewController.xib in Resources */,
 				CC73E43E1E842370001131AF /* Lato-Black.ttf in Resources */,
-				164F4F39200456F000324D60 /* IMG_3565_converted.m4v in Resources */,
 				CC29233A1EBE2ACE00DF1742 /* Localizable.strings in Resources */,
 				CCB7B3FE1E9412510058C32E /* HelpMeSpeakViewController.xib in Resources */,
 				16EDA56A1F009BD600906891 /* QuotesViewController.xib in Resources */,
 				1737A19B1EA897C900C6D71E /* 2AElbowFlexion.m4v in Resources */,
+				ABADA6D7200DDECB008C5977 /* 4_3566-2.mp4 in Resources */,
 				1720A05F1EA9E78D009C2B87 /* AdductorsViewController.xib in Resources */,
 				CC11D11C1EB3B8DE0063E72A /* ReminderTableViewCell.xib in Resources */,
+				ABADA6D8200DDECB008C5977 /* 12_3567.mp4 in Resources */,
 				1737A1A11EA897E400C6D71E /* 4CSitToStand.m4v in Resources */,
 				CCB7B3F11E8FF7ED0058C32E /* Lato-Regular.ttf in Resources */,
 				17E0BB3F1EA4127D001FC7F3 /* StretchingViewController.xib in Resources */,
@@ -1310,37 +1323,39 @@
 				1720A0741EA9E841009C2B87 /* ShoulderStretchViewController.xib in Resources */,
 				CCB7B4161E9413820058C32E /* GeneralInfoViewController.xib in Resources */,
 				1737A19E1EA897D700C6D71E /* 3BLegControl2.m4v in Resources */,
+				ABADA73320112D56008C5977 /* StandingH3ViewController.xib in Resources */,
 				1720A0791EA9E85D009C2B87 /* ArmStretchViewController.xib in Resources */,
 				AB2677BF1FFC30F300BB12E0 /* 3732.jpg in Resources */,
 				168389821EC66D8F007D15C6 /* VRViewController.xib in Resources */,
 				1720A0641EA9E7A3009C2B87 /* HamstringsViewController.xib in Resources */,
 				17E0BB211EA40F70001FC7F3 /* ArmsViewController.xib in Resources */,
-				164F4F37200456EB00324D60 /* IMG_3562_converted.m4v in Resources */,
 				1737A19C1EA897CF00C6D71E /* 2BShoulderFlexion.m4v in Resources */,
 				CC11D12A1EB650150063E72A /* AddReminderTitleViewController.xib in Resources */,
 				1737A19A1EA8977300C6D71E /* 1CHipFlexion.m4v in Resources */,
+				ABADA717200E7266008C5977 /* BalanceTrainingAdvViewController.xib in Resources */,
+				ABADA710200E7266008C5977 /* StandingH1ViewController.xib in Resources */,
 				16AADA791F219CBD00D8A8EB /* RelaxingMusicViewCell.xib in Resources */,
 				AB2677BA1FFC30F300BB12E0 /* 3731.jpg in Resources */,
-				AB2677941FF57E8C00BB12E0 /* AdvancedViewController.xib in Resources */,
+				ABADA6D4200DDD5B008C5977 /* IMG_3561_Converted.m4v in Resources */,
 				16EDA5651F00934100906891 /* QuotesCollectionViewCell.xib in Resources */,
 				1737A19F1EA897DB00C6D71E /* 4ABridgeHipLift.m4v in Resources */,
 				17E0BB3A1EA4125E001FC7F3 /* CoordinationViewController.xib in Resources */,
+				ABADA6D1200DDD5B008C5977 /* IMG_3565_converted.m4v in Resources */,
+				ABADA70B200E7266008C5977 /* StandingViewController.xib in Resources */,
 				CC4C10BA1E7A26DE00515CDC /* Main.storyboard in Resources */,
 				CCB7B41C1E94139A0058C32E /* SurveysViewController.xib in Resources */,
+				ABADA6CC200DDD5B008C5977 /* IMG_3710_converted.m4v in Resources */,
 				1788309C1EA8985200690787 /* 5BMaleDocWaving.m4v in Resources */,
+				ABADA6CD200DDD5B008C5977 /* IMG_3712_converted.m4v in Resources */,
 				AB26779D1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 in Resources */,
 				1737A1A21EA897E800C6D71E /* 5AFemaleDocWaving.m4v in Resources */,
 				CC11D1341EB6504E0063E72A /* AddReminderTimesViewController.xib in Resources */,
 				CC73E4461E842370001131AF /* Lato-LightItalic.ttf in Resources */,
-				164F4F1E2002E41700324D60 /* ArmLevel1ViewController.xib in Resources */,
 				CC73E4521E86AB1C001131AF /* HomeViewController.xib in Resources */,
-				164F4F36200456E800324D60 /* IMG_3561_Converted.m4v in Resources */,
 				17E0BB261EA40F9A001FC7F3 /* MindExercisesViewController.xib in Resources */,
-				AB2677A71FFB43FC00BB12E0 /* SittingViewController.xib in Resources */,
+				ABADA71E200E7266008C5977 /* ArmLevel4ViewController.xib in Resources */,
 				CCB7B3F01E8FF7E90058C32E /* Lato-Light.ttf in Resources */,
 				17E0BB2E1EA41069001FC7F3 /* VideoViewController.xib in Resources */,
-				164F4F38200456EE00324D60 /* IMG_3563_converted.m4v in Resources */,
-				164F4F4220057E2E00324D60 /* IMG_3712_converted.m4v in Resources */,
 				1720A0691EA9E7DC009C2B87 /* DorsiflexorsViewController.xib in Resources */,
 				CC38386F1E95FCF400001213 /* InformationalViewController.xib in Resources */,
 			);
@@ -1436,19 +1451,18 @@
 				17E0BB251EA40F9A001FC7F3 /* MindExercisesViewController.m in Sources */,
 				179726B51EB3109B0053378E /* WebViewController.m in Sources */,
 				CC73E4591E86BD65001131AF /* HomeButton.m in Sources */,
+				ABADA70F200E7266008C5977 /* ImgViewController.m in Sources */,
 				ABCD3CA11F9AA7D500BA412E /* NSBundle+Language.m in Sources */,
 				CCEF72EB1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.m in Sources */,
-				AB2677A11FF5B3EB00BB12E0 /* BalanceTrainingAdvViewController.m in Sources */,
+				ABADA72D20111F4C008C5977 /* StandingH2ViewController.m in Sources */,
 				CCB7B4091E9413590058C32E /* LearnViewController.m in Sources */,
 				16811F481FA80D95008B3E1F /* AWSDynamoDBHelper.m in Sources */,
-				AB2677E62003456B00BB12E0 /* ImgViewController.m in Sources */,
 				CC73E42F1E841EF4001131AF /* GraphicUtils.m in Sources */,
-				164F4F222002E42D00324D60 /* ArmLevel2ViewController.m in Sources */,
-				AB2677981FF5950500BB12E0 /* FunctionalMobilityAdvViewController.m in Sources */,
 				CCB7B4031E9413260058C32E /* ExercisesViewController.m in Sources */,
 				CC4C10E71E7A272C00515CDC /* Constants.m in Sources */,
 				CC11D13D1EB6B99E0063E72A /* EditReminderViewController.m in Sources */,
 				CC3CB64D1EA11F9E00CA9429 /* LearnContent.m in Sources */,
+				ABADA71F200E7266008C5977 /* ArmViewController.m in Sources */,
 				17E0BB201EA40F70001FC7F3 /* ArmsViewController.m in Sources */,
 				1720A06E1EA9E82C009C2B87 /* HandStretchViewController.m in Sources */,
 				17E0BB321EA41129001FC7F3 /* StrengtheningViewController.m in Sources */,
@@ -1456,19 +1470,18 @@
 				CCB7B40F1E94136C0058C32E /* RemindersViewController.m in Sources */,
 				CC4C10B41E7A26DE00515CDC /* AppDelegate.m in Sources */,
 				162856CB1F1F08F200CE1327 /* RelaxingMusicViewController.m in Sources */,
-				AB2677931FF57E8C00BB12E0 /* AdvancedViewController.m in Sources */,
-				AB2677E1200343FB00BB12E0 /* StandingViewController.m in Sources */,
+				ABADA70C200E7266008C5977 /* SittingViewController.m in Sources */,
 				17DE3D4F1EA9604900D350A1 /* ArmsAndHandsViewController.m in Sources */,
+				ABADA715200E7266008C5977 /* StandingViewController.m in Sources */,
 				CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */,
+				ABADA721200E7266008C5977 /* ArmLevel1ViewController.m in Sources */,
 				CC11D1381EB6B7BC0063E72A /* NoResultsTableViewCell.m in Sources */,
 				CC3CB6481EA11EC800CA9429 /* LearnContentViewController.m in Sources */,
 				16811F451FA3E433008B3E1F /* Users.m in Sources */,
 				16EDA5641F00934100906891 /* QuotesCollectionViewCell.m in Sources */,
-				164F4F172002D45B00324D60 /* ArmViewController.m in Sources */,
 				17E0BB3E1EA4127D001FC7F3 /* StretchingViewController.m in Sources */,
 				16AADA781F219CBD00D8A8EB /* RelaxingMusicViewCell.m in Sources */,
 				CC11D1451EB6E7D00063E72A /* TimeTableViewCell.m in Sources */,
-				AB2677A61FFB43FC00BB12E0 /* SittingViewController.m in Sources */,
 				1720A0781EA9E85D009C2B87 /* ArmStretchViewController.m in Sources */,
 				CCB7B3FD1E9412510058C32E /* HelpMeSpeakViewController.m in Sources */,
 				1720A0631EA9E7A3009C2B87 /* HamstringsViewController.m in Sources */,
@@ -1477,11 +1490,12 @@
 				17E0BB2D1EA41069001FC7F3 /* VideoViewController.m in Sources */,
 				16AC5DA91FAFE50C0092868B /* SessionDetails.m in Sources */,
 				CC9604931EA3DE110030D2C7 /* LearnContentTypeTableViewCell.m in Sources */,
-				164F4F1D2002E41700324D60 /* ArmLevel1ViewController.m in Sources */,
 				167883AF1EE25EED00B106AD /* GVRVideoViewManager.m in Sources */,
 				16BB397F1FEC47AB00E3C7BD /* ChatbotLog.m in Sources */,
 				CC4C10BD1E7A26DE00515CDC /* H4TWStrokeHope.xcdatamodeld in Sources */,
 				167883A91EE1029900B106AD /* ChatBotViewController.m in Sources */,
+				ABADA723200E7266008C5977 /* AdvancedViewController.m in Sources */,
+				ABADA71C200E7266008C5977 /* ArmLevel2ViewController.m in Sources */,
 				CC11D11F1EB51AB40063E72A /* Reminder.m in Sources */,
 				CC38386E1E95FCF400001213 /* InformationalViewController.m in Sources */,
 				CCB7B41B1E94139A0058C32E /* SurveysViewController.m in Sources */,
@@ -1491,10 +1505,15 @@
 				CC11D1331EB6504E0063E72A /* AddReminderTimesViewController.m in Sources */,
 				CC4C10B11E7A26DE00515CDC /* main.m in Sources */,
 				16C3C37C1EEA37EF005991D5 /* ChatBotViewCell.m in Sources */,
+				ABADA724200E7266008C5977 /* BalanceTrainingAdvViewController.m in Sources */,
 				17E0BB391EA4125E001FC7F3 /* CoordinationViewController.m in Sources */,
 				1720A05E1EA9E78D009C2B87 /* AdductorsViewController.m in Sources */,
 				CC11D12E1EB650320063E72A /* AddReminderFrequencyViewController.m in Sources */,
+				ABADA718200E7266008C5977 /* ArmLevel4ViewController.m in Sources */,
+				ABADA73220112D56008C5977 /* StandingH3ViewController.m in Sources */,
 				168389811EC66D8F007D15C6 /* VRViewController.m in Sources */,
+				ABADA722200E7266008C5977 /* StandingH1ViewController.m in Sources */,
+				ABADA713200E7266008C5977 /* FunctionalMobilityAdvViewController.m in Sources */,
 				1720A0681EA9E7DC009C2B87 /* DorsiflexorsViewController.m in Sources */,
 				16811F411FA04720008B3E1F /* AWSConstants.m in Sources */,
 				CC73E4271E841875001131AF /* EnterViewController.m in Sources */,
@@ -1502,10 +1521,9 @@
 				17DE3D4A1EA95F2300D350A1 /* LegAndFeetViewController.m in Sources */,
 				16EDA5691F009BD600906891 /* QuotesViewController.m in Sources */,
 				CC73E4511E86AB1C001131AF /* HomeViewController.m in Sources */,
-				164F4F272002E44300324D60 /* ArmLevel3ViewController.m in Sources */,
+				ABADA71B200E7266008C5977 /* ArmLevel3ViewController.m in Sources */,
 				CC11D11B1EB3B8DE0063E72A /* ReminderTableViewCell.m in Sources */,
 				16AC5DA61FAFE4810092868B /* AppUsage.m in Sources */,
-				164F4F2C2002E45600324D60 /* ArmLevel4ViewController.m in Sources */,
 				AB070D041FA2CDDC00D1C6F7 /* LanguageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

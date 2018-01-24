@@ -102,10 +102,30 @@
 //MM
 #define ADVANCED_EXERCISES @"Advanced Exercises"
 //Functional Mobility
+#define VIDEO_FM_ROLLINGINBED @"1FunctionalMobility.mp4"//MM
+#define VIDEO_FM_ROLLINGOUTBED @"3FunctionalMobility.mp4"//MM
+#define VIDEO_BT_SITTING_3572 @"3572_side.mp4"//MM
+#define VIDEO_BT_SITTING_3571 @"3571_Back.mp4"//MM
 #define BT_Sitting_3572 @"3572_side.mp4"
 #define BT_Sitting_3571 @"3571_Back.mp4"
 #define BT_Sitting_3522 @"3722"
 #define BT_Sitting_3521 @"3721"
+#define BT_Sitting_sitting_c @"sitting_c"
+#define BT_Sitting_sitting_d @"sitting_d"
+#define BT_Standing_3729 @"3729.jpg"
+#define BT_Standing_3730 @"3730.jpg"
+#define BT_Standing_3731 @"3731.jpg"
+#define BT_Standing_3732 @"3732.jpg"
+#define BT_Standing_3734 @"IMG_3574_Side.mp4"
+#define BT_Standing_3780 @"IMG_3580.mp4"
+#define BT_Standing_3575 @"IMG_3575.mp4"
+#define BT_Standing_3576 @"IMG_3576.mp4"
+#define BT_Standing_3578 @"IMG_3578.mp4"
+#define BT_Standing_img_3574 @"3574.png"
+#define BT_Standing_img_3580 @"3580.png"
+#define BT_Standing_img_3575 @"3576.png"
+#define BT_Standing_img_3576 @"3576.png"
+#define BT_Standing_img_3578 @"3576.png"
 
 /* STRETCHING CLIPS */
 #define STRETCHING_LEG_STRETCH_1 @"LegStretch1"
@@ -144,11 +164,23 @@
 #define VIDEO_5A_FEMALE_DOC @"5AFemaleDocWaving.m4v"		
 #define VIDEO_5B_MALE_DOC @"5BMaleDocWaving.m4v"
 
-#define VIDEO_FM_ROLLINGINBED @"1FunctionalMobility.mp4"//MM
-#define VIDEO_FM_ROLLINGOUTBED @"3FunctionalMobility.mp4"//MM
 
-#define VIDEO_BT_SITTING_3572 @"3572_side.mp4"//MM
-#define VIDEO_BT_SITTING_3571 @"3571_Back.mp4"//MM
+
+#define VIDEO_ARM_LEVEL2_1 @"IMG_3561_Converted.m4v"
+#define VIDEO_ARM_LEVEL2_2 @"IMG_3562_converted.m4v"
+#define VIDEO_ARM_LEVEL2_3 @"IMG_3563_converted.m4v"
+#define VIDEO_ARM_LEVEL2_4 @"IMG_3565_converted.m4v"
+
+#define VIDEO_ARM_LEVEL3_1 @"IMG_3710_converted.m4v"
+#define VIDEO_ARM_LEVEL3_2 @"IMG_3711_converted.m4v"
+#define VIDEO_ARM_LEVEL3_3 @"IMG_3712_converted.m4v"
+#define VIDEO_ARM_LEVEL3_4 @"IMG_3713_converted.m4v"
+#define VIDEO_ARM_LEVEL3_5 @"IMG_3714_converted.m4v"
+#define VIDEO_ARM_LEVEL3_6 @"12_3567.mp4"
+#define VIDEO_ARM_LEVEL3_7 @"4_3566-2.mp4"
+
+#define VIDEO_ARM_LEVEL4_1 @"IMG_3569.mp4"
+#define VIDEO_ARM_LEVEL4_2 @"IMG_3720.mp4"
 
 /* EXERCISE TITLE */
 #define LEGS_TITLE_1A_TOE NSLocalizedString(@"Legs.toe", nil)
