@@ -21,6 +21,8 @@
 
 #import "AWSDynamoDBHelper.h"
 
+#import <StoreKit/StoreKit.h>
+
 @interface HomeViewController ()
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -40,8 +42,8 @@
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     self.navigationItem.leftBarButtonItem = backButton;
     
-    [self createLogoutButton];
-    
+//  [self createLogoutButton];
+    [self createRateButton];
     self.title = [NSLocalizedString(@"Home.title", nil) uppercaseString];
     
     // User table
@@ -55,6 +57,19 @@
     [self setUpView];
 }
 
+- (void) createRateButton {
+    UIButton *rateBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    rateBtn.frame = CGRectMake(0, 0, 25, 25);
+    [rateBtn setTitle:@"Rate" forState: UIControlStateNormal];
+    [rateBtn addTarget:self action:@selector(ratePressed) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rateBtnButton = [[UIBarButtonItem alloc] initWithCustomView:rateBtn];
+    self.navigationItem.rightBarButtonItem = rateBtnButton;
+}
+-(void)ratePressed{
+    if (@available(iOS 10.3, *)) {
+        [SKStoreReviewController requestReview];
+    }
+}
 - (void) createLogoutButton {
     UIButton *logoutBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     logoutBtn.frame = CGRectMake(0, 0, 35, 25);
@@ -145,6 +160,17 @@
     startingY += cellWidth;
     startingY += SPACE_BETWEEN_CELLS;
 
+    HomeButton *contactUsButton = [[HomeButton alloc] initWithText:@"Contact Us" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
+    [generalInfoButton addImageCentered:[UIImage imageNamed:GENERAL_INFO_ICON]];
+    [generalInfoButton addTarget:self action:@selector(generalInfoPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    HomeButton *rateButton = [[HomeButton alloc] initWithText:@"Rate" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
+    [surveysButton addImageBottomRight:[UIImage imageNamed:SURVEYS_ICON]];
+    [surveysButton addTarget:self action:@selector(surveysPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    startingY += cellWidth;
+    startingY += SPACE_BETWEEN_CELLS;
+    
     [self.contentView addSubview:helpMeSpeakButton];
     [self.contentView addSubview:exercisesButton];
     [self.contentView addSubview:learnButton];
@@ -153,7 +179,9 @@
     [self.contentView addSubview:surveysButton];
     [self.contentView addSubview:chatbotView];
     [self.contentView addSubview:chatbotView2];
-
+  
+//    [self.contentView addSubview:contactUsButton];
+//    [self.contentView addSubview:rateButton];
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
 }
 
