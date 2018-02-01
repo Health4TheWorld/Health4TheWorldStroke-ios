@@ -107,25 +107,32 @@
 #define VIDEO_BT_SITTING_3572 @"3572_side.mp4"//MM
 #define VIDEO_BT_SITTING_3571 @"3571_Back.mp4"//MM
 #define BT_Sitting_3572 @"3572_side.mp4"
-#define BT_Sitting_3571 @"3571_Back.mp4"
-#define BT_Sitting_3522 @"3722"
-#define BT_Sitting_3521 @"3721"
+//#define BT_Sitting_3571 @"3571_Back.mp4"
+#define BT_Sitting_3522 @"3722"//Sitting with no hand support
+#define BT_Sitting_3521 @"3721"//Sitting with one hand support
+//sitting and leaning in different directions
 #define BT_Sitting_sitting_c @"sitting_c"
 #define BT_Sitting_sitting_d @"sitting_d"
-#define BT_Standing_3729 @"3729.jpg"
-#define BT_Standing_3730 @"3730.jpg"
-#define BT_Standing_3731 @"3731.jpg"
-#define BT_Standing_3732 @"3732.jpg"
+#define BT_Standing_3729 @"One.jpg"
+#define BT_Standing_3730 @"Two.jpg"
+#define BT_Standing_3731 @"Three.jpg"
+#define BT_Standing_3732 @"Four.jpg"
+//Standing and shifting weight side to side
 #define BT_Standing_3734 @"IMG_3574_Side.mp4"
 #define BT_Standing_3780 @"IMG_3580.mp4"
-#define BT_Standing_3575 @"IMG_3575.mp4"
-#define BT_Standing_3576 @"IMG_3576.mp4"
-#define BT_Standing_3578 @"IMG_3578.mp4"
-#define BT_Standing_img_3574 @"3574.png"
-#define BT_Standing_img_3580 @"3580.png"
-#define BT_Standing_img_3575 @"3576.png"
-#define BT_Standing_img_3576 @"3576.png"
-#define BT_Standing_img_3578 @"3576.png"
+
+
+#define BT_Standing_3575 @"IMG_3575.mp4"//1
+#define BT_Standing_3576 @"IMG_3576.mp4"//2
+#define BT_Standing_3578 @"IMG_3578.mp4"//3
+
+
+#define BT_Standing_img_3574 @"Front.png"
+#define BT_Standing_img_3580 @"Back.png"
+
+#define BT_Standing_img_3575 @"1.png"
+#define BT_Standing_img_3576 @"2.png"
+#define BT_Standing_img_3578 @"3.png"
 
 /* STRETCHING CLIPS */
 #define STRETCHING_LEG_STRETCH_1 @"LegStretch1"

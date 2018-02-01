@@ -7,8 +7,6 @@
 //
 
 #import "SittingViewController.h"
-
-
 #import "Constants.h"
 #import "Utils.h"
 #import "HomeButton.h"
@@ -44,13 +42,13 @@
 
 
 - (void)setUpView {
-    
     static int SPACE_BETWEEN_CELLS = 10;
     float cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS * 2);
     float cellHeight = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS/2);
     float startingY = SPACE_BETWEEN_CELLS;
     //Heading: Sitting with one hand support 3721
 
+    
     HomeButton *h1 = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.balanceTraining.sitting.H1", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
     [h1 addImageCentered:[UIImage imageNamed:BT_Sitting_3521]];
     [h1 addTarget:self action:@selector(b1Pressed) forControlEvents:UIControlEventTouchUpInside];
@@ -65,27 +63,22 @@
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     
-    cellWidth = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
-    cellHeight = cellWidth;
+//    cellWidth = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
+//    cellHeight = cellWidth;
    /*
     sitting and leaning in different directions: #3571, 3572
     https://vimeo.com/248618873
     https://vimeo.com/248618875
     */
     HomeButton *v1 = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.balanceTraining.sitting.H3", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellHeight)];
-    [v1 addImageBottomRight:[UIImage imageNamed:BT_Sitting_3522]];
+    [v1 addImageCentered:[UIImage imageNamed:BT_Sitting_sitting_d]];
     [v1 addTarget:self action:@selector(b3Pressed) forControlEvents:UIControlEventTouchUpInside];
-    
-    HomeButton *v2 = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.balanceTraining.sitting.H3", nil) withFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width/ 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
-    [v2 addImageBottomRight:[UIImage imageNamed:BT_Sitting_3521]];
-    [v2 addTarget:self action:@selector(b4Pressed) forControlEvents:UIControlEventTouchUpInside];
 
     startingY += cellHeight;
     startingY += SPACE_BETWEEN_CELLS;
     [self.contentView addSubview: h1];
     [self.contentView addSubview: h2];
     [self.contentView addSubview: v1];
-    [self.contentView addSubview: v2];
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
 }
 

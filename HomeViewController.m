@@ -148,7 +148,6 @@
     startingY += cellWidth;
     startingY += SPACE_BETWEEN_CELLS;
     
-    
    HomeButton *generalInfoButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.generalInfo", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
     [generalInfoButton addImageCentered:[UIImage imageNamed:GENERAL_INFO_ICON]];
     [generalInfoButton addTarget:self action:@selector(generalInfoPressed) forControlEvents:UIControlEventTouchUpInside];
@@ -157,17 +156,6 @@
     [surveysButton addImageBottomRight:[UIImage imageNamed:SURVEYS_ICON]];
     [surveysButton addTarget:self action:@selector(surveysPressed) forControlEvents:UIControlEventTouchUpInside];
 
-    startingY += cellWidth;
-    startingY += SPACE_BETWEEN_CELLS;
-
-    HomeButton *contactUsButton = [[HomeButton alloc] initWithText:@"Contact Us" withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
-    [generalInfoButton addImageCentered:[UIImage imageNamed:GENERAL_INFO_ICON]];
-    [generalInfoButton addTarget:self action:@selector(generalInfoPressed) forControlEvents:UIControlEventTouchUpInside];
-    
-    HomeButton *rateButton = [[HomeButton alloc] initWithText:@"Rate" withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
-    [surveysButton addImageBottomRight:[UIImage imageNamed:SURVEYS_ICON]];
-    [surveysButton addTarget:self action:@selector(surveysPressed) forControlEvents:UIControlEventTouchUpInside];
-    
     startingY += cellWidth;
     startingY += SPACE_BETWEEN_CELLS;
     
@@ -179,7 +167,7 @@
     [self.contentView addSubview:surveysButton];
     [self.contentView addSubview:chatbotView];
     [self.contentView addSubview:chatbotView2];
-  
+
 //    [self.contentView addSubview:contactUsButton];
 //    [self.contentView addSubview:rateButton];
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
@@ -377,5 +365,4 @@
 - (void) insertUserData: (NSArray*) data{
     [AWSDynamoDBHelper InsertDataIntoUsersTable:data];
 }
-
 @end

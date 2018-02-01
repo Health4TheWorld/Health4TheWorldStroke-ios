@@ -13,6 +13,7 @@
 #import "Utils.h"
 #import "HomeButton.h"
 #import "SittingViewController.h"
+#import "StandingViewController.h"
 #import "VideoViewController.h"
 #import "LearnContentViewController.h"
 
@@ -82,10 +83,8 @@
 }
 
 - (void)b1Pressed {
-    VideoViewController *videoVC = [[VideoViewController alloc] init];
-    videoVC.title = NSLocalizedString(@"Exercises.balanceTraining.Standing", nil) ;
-    [videoVC setUpVideo: VIDEO_FM_ROLLINGOUTBED];
-    [self.navigationController pushViewController:videoVC animated:YES];
+    StandingViewController *vc = [[StandingViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
