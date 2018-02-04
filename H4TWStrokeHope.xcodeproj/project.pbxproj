@@ -22,6 +22,19 @@
 		16AADA791F219CBD00D8A8EB /* RelaxingMusicViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16AADA771F219CBD00D8A8EB /* RelaxingMusicViewCell.xib */; };
 		16AC5DA61FAFE4810092868B /* AppUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC5DA51FAFE4810092868B /* AppUsage.m */; };
 		16AC5DA91FAFE50C0092868B /* SessionDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC5DA81FAFE50C0092868B /* SessionDetails.m */; };
+		16B3A5172027B9C80008C784 /* IMG_3565_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 16B3A5132027B9C20008C784 /* IMG_3565_converted.m4v */; };
+		16B3A5182027B9C80008C784 /* IMG_3561_Converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 16B3A5142027B9C40008C784 /* IMG_3561_Converted.m4v */; };
+		16B3A5192027B9C80008C784 /* IMG_3562_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 16B3A5152027B9C70008C784 /* IMG_3562_converted.m4v */; };
+		16B3A51A2027B9C80008C784 /* IMG_3563_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 16B3A5162027B9C80008C784 /* IMG_3563_converted.m4v */; };
+		16B3A5222027BCA20008C784 /* IMG_3713_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 16B3A51D2027BC9C0008C784 /* IMG_3713_converted.m4v */; };
+		16B3A5232027BCA20008C784 /* IMG_3710_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 16B3A51E2027BC9D0008C784 /* IMG_3710_converted.m4v */; };
+		16B3A5242027BCA20008C784 /* IMG_3711_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 16B3A51F2027BC9F0008C784 /* IMG_3711_converted.m4v */; };
+		16B3A5252027BCA20008C784 /* IMG_3712_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 16B3A5202027BCA00008C784 /* IMG_3712_converted.m4v */; };
+		16B3A5262027BCA20008C784 /* IMG_3714_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 16B3A5212027BCA20008C784 /* IMG_3714_converted.m4v */; };
+		16B3A5292027BCBA0008C784 /* 12_3567.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 16B3A5272027BCB90008C784 /* 12_3567.mp4 */; };
+		16B3A52A2027BCBA0008C784 /* 4_3566-2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 16B3A5282027BCBA0008C784 /* 4_3566-2.mp4 */; };
+		16B3A52D2027BCCC0008C784 /* IMG_3569.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 16B3A52B2027BCCB0008C784 /* IMG_3569.mp4 */; };
+		16B3A52E2027BCCC0008C784 /* IMG_3720.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 16B3A52C2027BCCC0008C784 /* IMG_3720.mp4 */; };
 		16BB397F1FEC47AB00E3C7BD /* ChatbotLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BB397E1FEC47AB00E3C7BD /* ChatbotLog.m */; };
 		16C3C37C1EEA37EF005991D5 /* ChatBotViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C3C37A1EEA37EF005991D5 /* ChatBotViewCell.m */; };
 		16C3C37D1EEA37EF005991D5 /* ChatBotViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C3C37B1EEA37EF005991D5 /* ChatBotViewCell.xib */; };
@@ -85,10 +98,6 @@
 		AB2677BD1FFC30F300BB12E0 /* IMG_3580.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677AF1FFC30F300BB12E0 /* IMG_3580.mp4 */; };
 		AB2677BE1FFC30F300BB12E0 /* IMG_3578.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677B01FFC30F300BB12E0 /* IMG_3578.mp4 */; };
 		AB2677C41FFC30F300BB12E0 /* 3571_Back.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677B71FFC30F300BB12E0 /* 3571_Back.mp4 */; };
-		ABADA6A3200AD040008C5977 /* 12_3567.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6A2200AD040008C5977 /* 12_3567.mp4 */; };
-		ABADA6BD200AD49C008C5977 /* IMG_3713_converted.m4v in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6BC200AD49C008C5977 /* IMG_3713_converted.m4v */; };
-		ABADA6D7200DDECB008C5977 /* 4_3566-2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6D5200DDECA008C5977 /* 4_3566-2.mp4 */; };
-		ABADA6D8200DDECB008C5977 /* 12_3567.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6D6200DDECA008C5977 /* 12_3567.mp4 */; };
 		ABADA70B200E7266008C5977 /* StandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6E2200E7266008C5977 /* StandingViewController.xib */; };
 		ABADA70C200E7266008C5977 /* SittingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA6E3200E7266008C5977 /* SittingViewController.m */; };
 		ABADA70D200E7266008C5977 /* FunctionalMobilityAdvViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6E5200E7266008C5977 /* FunctionalMobilityAdvViewController.xib */; };
@@ -228,6 +237,19 @@
 		16AC5DA51FAFE4810092868B /* AppUsage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppUsage.m; sourceTree = "<group>"; };
 		16AC5DA71FAFE50C0092868B /* SessionDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionDetails.h; sourceTree = "<group>"; };
 		16AC5DA81FAFE50C0092868B /* SessionDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionDetails.m; sourceTree = "<group>"; };
+		16B3A5132027B9C20008C784 /* IMG_3565_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3565_converted.m4v; sourceTree = "<group>"; };
+		16B3A5142027B9C40008C784 /* IMG_3561_Converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3561_Converted.m4v; sourceTree = "<group>"; };
+		16B3A5152027B9C70008C784 /* IMG_3562_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3562_converted.m4v; sourceTree = "<group>"; };
+		16B3A5162027B9C80008C784 /* IMG_3563_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3563_converted.m4v; sourceTree = "<group>"; };
+		16B3A51D2027BC9C0008C784 /* IMG_3713_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3713_converted.m4v; sourceTree = "<group>"; };
+		16B3A51E2027BC9D0008C784 /* IMG_3710_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3710_converted.m4v; sourceTree = "<group>"; };
+		16B3A51F2027BC9F0008C784 /* IMG_3711_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3711_converted.m4v; sourceTree = "<group>"; };
+		16B3A5202027BCA00008C784 /* IMG_3712_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3712_converted.m4v; sourceTree = "<group>"; };
+		16B3A5212027BCA20008C784 /* IMG_3714_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3714_converted.m4v; sourceTree = "<group>"; };
+		16B3A5272027BCB90008C784 /* 12_3567.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 12_3567.mp4; sourceTree = "<group>"; };
+		16B3A5282027BCBA0008C784 /* 4_3566-2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4_3566-2.mp4"; sourceTree = "<group>"; };
+		16B3A52B2027BCCB0008C784 /* IMG_3569.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3569.mp4; sourceTree = "<group>"; };
+		16B3A52C2027BCCC0008C784 /* IMG_3720.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3720.mp4; sourceTree = "<group>"; };
 		16BB397D1FEC47AB00E3C7BD /* ChatbotLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatbotLog.h; sourceTree = "<group>"; };
 		16BB397E1FEC47AB00E3C7BD /* ChatbotLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatbotLog.m; sourceTree = "<group>"; };
 		16C3C3791EEA37EF005991D5 /* ChatBotViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotViewCell.h; sourceTree = "<group>"; };
@@ -322,10 +344,6 @@
 		AB78C48B1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		AB78C48C1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		AB78C48D1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		ABADA6A2200AD040008C5977 /* 12_3567.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 12_3567.mp4; path = H4TWStrokeHope/12_3567.mp4; sourceTree = SOURCE_ROOT; };
-		ABADA6BC200AD49C008C5977 /* IMG_3713_converted.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3713_converted.m4v; sourceTree = "<group>"; };
-		ABADA6D5200DDECA008C5977 /* 4_3566-2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4_3566-2.mp4"; sourceTree = "<group>"; };
-		ABADA6D6200DDECA008C5977 /* 12_3567.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 12_3567.mp4; sourceTree = "<group>"; };
 		ABADA6E2200E7266008C5977 /* StandingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StandingViewController.xib; sourceTree = "<group>"; };
 		ABADA6E3200E7266008C5977 /* SittingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SittingViewController.m; sourceTree = "<group>"; };
 		ABADA6E4200E7266008C5977 /* StandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandingViewController.h; sourceTree = "<group>"; };
@@ -549,6 +567,50 @@
 			name = "DynamoDb Object Models";
 			sourceTree = "<group>";
 		};
+		16B3A5112027B8F50008C784 /* Arm */ = {
+			isa = PBXGroup;
+			children = (
+				16B3A51C2027BA100008C784 /* Level4 */,
+				16B3A51B2027BA090008C784 /* Level3 */,
+				16B3A5122027B9A30008C784 /* Level2 */,
+			);
+			path = Arm;
+			sourceTree = "<group>";
+		};
+		16B3A5122027B9A30008C784 /* Level2 */ = {
+			isa = PBXGroup;
+			children = (
+				16B3A5142027B9C40008C784 /* IMG_3561_Converted.m4v */,
+				16B3A5152027B9C70008C784 /* IMG_3562_converted.m4v */,
+				16B3A5162027B9C80008C784 /* IMG_3563_converted.m4v */,
+				16B3A5132027B9C20008C784 /* IMG_3565_converted.m4v */,
+			);
+			path = Level2;
+			sourceTree = "<group>";
+		};
+		16B3A51B2027BA090008C784 /* Level3 */ = {
+			isa = PBXGroup;
+			children = (
+				16B3A51E2027BC9D0008C784 /* IMG_3710_converted.m4v */,
+				16B3A51F2027BC9F0008C784 /* IMG_3711_converted.m4v */,
+				16B3A5202027BCA00008C784 /* IMG_3712_converted.m4v */,
+				16B3A51D2027BC9C0008C784 /* IMG_3713_converted.m4v */,
+				16B3A5212027BCA20008C784 /* IMG_3714_converted.m4v */,
+				16B3A5282027BCBA0008C784 /* 4_3566-2.mp4 */,
+				16B3A5272027BCB90008C784 /* 12_3567.mp4 */,
+			);
+			path = Level3;
+			sourceTree = "<group>";
+		};
+		16B3A51C2027BA100008C784 /* Level4 */ = {
+			isa = PBXGroup;
+			children = (
+				16B3A52B2027BCCB0008C784 /* IMG_3569.mp4 */,
+				16B3A52C2027BCCC0008C784 /* IMG_3720.mp4 */,
+			);
+			path = Level4;
+			sourceTree = "<group>";
+		};
 		16EDA54E1F0074C500906891 /* Inspirational Quotes */ = {
 			isa = PBXGroup;
 			children = (
@@ -603,9 +665,9 @@
 		17E0BB271EA41032001FC7F3 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				16B3A5112027B8F50008C784 /* Arm */,
 				AB2677A81FFC30F300BB12E0 /* BalanceTraining */,
 				17593E6E1EA83B0300F37C74 /* 5BMaleDocWaving.m4v */,
-				ABADA6A2200AD040008C5977 /* 12_3567.mp4 */,
 				17593E6F1EA83B0300F37C74 /* 5AFemaleDocWaving.m4v */,
 				17593E701EA83B0300F37C74 /* 4CSitToStand.m4v */,
 				17593E711EA83B0300F37C74 /* 4BArmAndTrunkStrengthening.m4v */,
@@ -616,11 +678,8 @@
 				17593E761EA83B0300F37C74 /* 2AElbowFlexion.m4v */,
 				17593E771EA83B0300F37C74 /* 1CHipFlexion.m4v */,
 				17593E781EA83B0300F37C74 /* 1BKneeFlexion.m4v */,
-				ABADA6D5200DDECA008C5977 /* 4_3566-2.mp4 */,
-				ABADA6D6200DDECA008C5977 /* 12_3567.mp4 */,
 				AB13483520157F9F00DB143D /* 1FunctionalMobility.mp4 */,
 				AB26779B1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 */,
-				ABADA6BC200AD49C008C5977 /* IMG_3713_converted.m4v */,
 			);
 			name = Videos;
 			sourceTree = "<group>";
@@ -1207,14 +1266,12 @@
 				CC11D1461EB6E7D00063E72A /* TimeTableViewCell.xib in Resources */,
 				CC73E4441E842370001131AF /* Lato-Italic.ttf in Resources */,
 				CC73E4411E842370001131AF /* Lato-BoldItalic.ttf in Resources */,
-				ABADA6A3200AD040008C5977 /* 12_3567.mp4 in Resources */,
 				179726B61EB3109B0053378E /* WebViewController.xib in Resources */,
 				CC3CB6491EA11EC800CA9429 /* LearnContentViewController.xib in Resources */,
 				CCEF72EC1E9AA1670045B692 /* HelpMeSpeakCollectionViewCell.xib in Resources */,
 				167883AA1EE1029900B106AD /* ChatBotViewController.xib in Resources */,
 				CCB7B4101E94136C0058C32E /* RemindersViewController.xib in Resources */,
 				17E0BB461EA4139E001FC7F3 /* ExercisesViewController.xib in Resources */,
-				ABADA6BD200AD49C008C5977 /* IMG_3713_converted.m4v in Resources */,
 				CC73E43F1E842370001131AF /* Lato-BlackItalic.ttf in Resources */,
 				1737A1A01EA897E100C6D71E /* 4BArmAndTrunkStrengthening.m4v in Resources */,
 				CCDFBECF1ECDE5E700C09CC8 /* TermsViewController.xib in Resources */,
@@ -1228,9 +1285,11 @@
 				17E0BB441EA41370001FC7F3 /* FunctionalMobilityViewController.xib in Resources */,
 				ABADA716200E7266008C5977 /* SittingViewController.xib in Resources */,
 				AB2677BD1FFC30F300BB12E0 /* IMG_3580.mp4 in Resources */,
+				16B3A5262027BCA20008C784 /* IMG_3714_converted.m4v in Resources */,
 				CC73E4421E842370001131AF /* Lato-Hairline.ttf in Resources */,
 				AB2677BE1FFC30F300BB12E0 /* IMG_3578.mp4 in Resources */,
 				AB2677B81FFC30F300BB12E0 /* IMG_3574_Side.mp4 in Resources */,
+				16B3A5192027B9C80008C784 /* IMG_3562_converted.m4v in Resources */,
 				162856CC1F1F08F200CE1327 /* RelaxingMusicViewController.xib in Resources */,
 				ABFAAED92023D6160099203F /* ArmViewController.xib in Resources */,
 				17DE3D501EA9604900D350A1 /* ArmsAndHandsViewController.xib in Resources */,
@@ -1247,14 +1306,14 @@
 				AB2677BC1FFC30F300BB12E0 /* IMG_3576.mp4 in Resources */,
 				ABADA725200E7266008C5977 /* ImgViewController.xib in Resources */,
 				CC73E43E1E842370001131AF /* Lato-Black.ttf in Resources */,
+				16B3A52A2027BCBA0008C784 /* 4_3566-2.mp4 in Resources */,
+				16B3A5222027BCA20008C784 /* IMG_3713_converted.m4v in Resources */,
 				CC29233A1EBE2ACE00DF1742 /* Localizable.strings in Resources */,
 				CCB7B3FE1E9412510058C32E /* HelpMeSpeakViewController.xib in Resources */,
 				16EDA56A1F009BD600906891 /* QuotesViewController.xib in Resources */,
 				1737A19B1EA897C900C6D71E /* 2AElbowFlexion.m4v in Resources */,
-				ABADA6D7200DDECB008C5977 /* 4_3566-2.mp4 in Resources */,
 				1720A05F1EA9E78D009C2B87 /* AdductorsViewController.xib in Resources */,
 				CC11D11C1EB3B8DE0063E72A /* ReminderTableViewCell.xib in Resources */,
-				ABADA6D8200DDECB008C5977 /* 12_3567.mp4 in Resources */,
 				1737A1A11EA897E400C6D71E /* 4CSitToStand.m4v in Resources */,
 				CCB7B3F11E8FF7ED0058C32E /* Lato-Regular.ttf in Resources */,
 				17E0BB3F1EA4127D001FC7F3 /* StretchingViewController.xib in Resources */,
@@ -1274,22 +1333,31 @@
 				ABADA710200E7266008C5977 /* StandingH1ViewController.xib in Resources */,
 				16AADA791F219CBD00D8A8EB /* RelaxingMusicViewCell.xib in Resources */,
 				16EDA5651F00934100906891 /* QuotesCollectionViewCell.xib in Resources */,
+				16B3A5182027B9C80008C784 /* IMG_3561_Converted.m4v in Resources */,
 				1737A19F1EA897DB00C6D71E /* 4ABridgeHipLift.m4v in Resources */,
 				17E0BB3A1EA4125E001FC7F3 /* CoordinationViewController.xib in Resources */,
 				ABADA70B200E7266008C5977 /* StandingViewController.xib in Resources */,
+				16B3A5252027BCA20008C784 /* IMG_3712_converted.m4v in Resources */,
 				CC4C10BA1E7A26DE00515CDC /* Main.storyboard in Resources */,
+				16B3A51A2027B9C80008C784 /* IMG_3563_converted.m4v in Resources */,
+				16B3A52D2027BCCC0008C784 /* IMG_3569.mp4 in Resources */,
+				16B3A5232027BCA20008C784 /* IMG_3710_converted.m4v in Resources */,
 				CCB7B41C1E94139A0058C32E /* SurveysViewController.xib in Resources */,
 				1788309C1EA8985200690787 /* 5BMaleDocWaving.m4v in Resources */,
 				AB26779D1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 in Resources */,
 				1737A1A21EA897E800C6D71E /* 5AFemaleDocWaving.m4v in Resources */,
 				CC11D1341EB6504E0063E72A /* AddReminderTimesViewController.xib in Resources */,
+				16B3A5242027BCA20008C784 /* IMG_3711_converted.m4v in Resources */,
 				CC73E4461E842370001131AF /* Lato-LightItalic.ttf in Resources */,
 				CC73E4521E86AB1C001131AF /* HomeViewController.xib in Resources */,
 				17E0BB261EA40F9A001FC7F3 /* MindExercisesViewController.xib in Resources */,
+				16B3A5292027BCBA0008C784 /* 12_3567.mp4 in Resources */,
 				ABADA71E200E7266008C5977 /* ArmLevel4ViewController.xib in Resources */,
 				CCB7B3F01E8FF7E90058C32E /* Lato-Light.ttf in Resources */,
 				17E0BB2E1EA41069001FC7F3 /* VideoViewController.xib in Resources */,
 				1720A0691EA9E7DC009C2B87 /* DorsiflexorsViewController.xib in Resources */,
+				16B3A52E2027BCCC0008C784 /* IMG_3720.mp4 in Resources */,
+				16B3A5172027B9C80008C784 /* IMG_3565_converted.m4v in Resources */,
 				CC38386F1E95FCF400001213 /* InformationalViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1367,7 +1435,19 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AICubeIconImage.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AICubeIconImage@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AICubeIconImage@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AIMicrophoneControlImage.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AIMicrophoneControlImage@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AIMicrophoneControlImage@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AIVoiceRequestButton.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beep.caf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CardboardSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitCore.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitDialogs.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialRobotoFontLoader.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
