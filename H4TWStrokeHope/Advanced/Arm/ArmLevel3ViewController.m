@@ -110,35 +110,35 @@
 - (void)a1Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
     videoVC.title = NSLocalizedString(@"Exercises.arms.level3.1", nil) ;
-    [videoVC setUpVideo: VIDEO_ARM_LEVEL3_1];
+    [videoVC setUpVideo: VIDEO_ARM_LEVEL3_2];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
 - (void)b1Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
     videoVC.title = NSLocalizedString(@"Exercises.arms.level3.2", nil) ;
-    [videoVC setUpVideo: VIDEO_ARM_LEVEL3_2];
+    [videoVC setUpVideo: VIDEO_ARM_LEVEL3_4];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
 - (void)c1Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
     videoVC.title = NSLocalizedString(@"Exercises.arms.level3.3", nil) ;
-    [videoVC setUpVideo: VIDEO_ARM_LEVEL3_3];
+    [videoVC setUpVideo: VIDEO_ARM_LEVEL3_5];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
 - (void)d1Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
     videoVC.title = NSLocalizedString(@"Exercises.arms.level3.4", nil) ;
-    [videoVC setUpVideo: VIDEO_ARM_LEVEL3_4];
+    [videoVC setUpVideo: VIDEO_ARM_LEVEL3_7];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
 - (void)g1Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
     videoVC.title = NSLocalizedString(@"Exercises.arms.level3.5", nil) ;
-    [videoVC setUpVideo: VIDEO_ARM_LEVEL3_5];
+    [videoVC setUpVideo: VIDEO_ARM_LEVEL3_6];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 
