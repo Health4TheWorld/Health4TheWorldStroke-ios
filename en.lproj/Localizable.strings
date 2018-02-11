@@ -29,6 +29,8 @@
 "Enter.sixthAuthor" = "– Helen Keller";
 "Enter.seventhQuote" = "\"Setting goals is the first step in turning the invisible into the visible.\"";
 "Enter.seventhAuthor" = "– Tony Robbins";
+"Enter.enterButton" = "Enter";//MM
+
 "Enter.loginButton" = "Login";
 "Enter.usernamePlaceholder" = "username";
 "Enter.passwordPlaceholder" = "password";

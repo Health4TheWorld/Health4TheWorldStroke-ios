@@ -11,13 +11,14 @@
 #import "Utils.h"
 #import "HomeViewController.h"
 #import "TermsViewController.h"
-#import "AWSDynamoDBHelper.h"
 #import "LanguageManager.h"
 #import "AppDelegate.h"
+//#import "AWSDynamoDBHelper.h"
+
 
 @interface EnterViewController (){
     
-        NSArray *data;
+    NSArray *data;
     
 }
 @property (weak, nonatomic) IBOutlet UIButton *btnLanguage;
@@ -25,11 +26,6 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *languagePicker;
 @property (weak, nonatomic) IBOutlet UIView *viewForPicker;
 @property (strong, nonatomic) IBOutlet UIButton *enterButton;
-@property (strong, nonatomic) IBOutlet UITextField *usernameTF;
-@property (strong, nonatomic) IBOutlet UITextField *passwordTF;
-@property (strong, nonatomic) IBOutlet UIButton *signUpButton;
-@property (strong, nonatomic) IBOutlet UIButton *ForgotPasswordButton;
-@property (nonatomic, strong) AWSTaskCompletionSource<AWSCognitoIdentityPasswordAuthenticationDetails*>* passwordAuthenticationCompletion;
 @property CGPoint startPosition;
 @property NSString *langKey;
 @property NSMutableArray *quotes;
@@ -45,18 +41,6 @@
 #define BG_IMAGE_NAME @"Patagonia.jpg"
 
 @implementation EnterViewController
-
-//static NSString * const CurrentLanguageKey = @"currentLanguageKey";
-
-//+ (void) setUserPref:(NSString *)key withValue:(NSString*)value{
-//    [[NSUserDefaults standardUserDefaults] setObject:value forKey:key];
-//    [[NSUserDefaults standardUserDefaults] synchronize];
-//}
-//
-//+ (NSString*) getUserPref:(NSString*)key{
-//    return [[NSUserDefaults standardUserDefaults] valueForKey:key];
-//}
-
 -(void)restart
 {
     AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
@@ -64,32 +48,22 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:[NSBundle mainBundle]];
     delegate.window.rootViewController = [storyboard instantiateInitialViewController];
     [self.view setNeedsDisplay];
-
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     data = [LanguageManager languageStrings];
     //static NSString * const LanguageCodes[] = { @"en", @"es_MX", @"fr", @"fil",@"zh_Hans_CN",@"ne_NP",@"sw" };
-//    arrKey = [[NSArray alloc] initWithObjects:@"en",@"es",@"fr",@"fil",@"zh",@"ne",@"sw",nil];//MM
-    self.arrLanguage = [[NSArray alloc] initWithObjects:@"English",@"Español",@"Français",@"Filipino",@"汉语/漢語",@"नेपाली", @"Kiswahili", nil];//MM
-//        self.languagePicker.dataSource = self;
-//        self.languagePicker.delegate = self;
+    //    arrKey = [[NSArray alloc] initWithObjects:@"en",@"es",@"fr",@"fil",@"zh",@"ne",@"sw",nil];//MM
+    _arrLanguage = [[NSArray alloc] initWithObjects:@"English",@"Español",@"Français",@"Filipino",@"汉语/漢語",@"नेपाली", @"Kiswahili", nil];//MM
+    //        self.languagePicker.dataSource = self;
+    //        self.languagePicker.delegate = self;
     [self addBackgroundImage];
     [self setUpQuote];
-
+    
     [GraphicUtils styleButton:self.enterButton];
-    [self.enterButton setTitle:[NSLocalizedString(@"Enter.loginButton", nil) uppercaseString] forState:UIControlStateNormal];
-    [self setUpQuote];
-    
-    self.usernameTF.placeholder = NSLocalizedString(@"Enter.usernamePlaceholder", nil);
-    self.passwordTF.placeholder = NSLocalizedString(@"Enter.passwordPlaceholder", nil);
-    [self.signUpButton setTitle: [NSLocalizedString(@"Enter.signUpButton", nil) uppercaseString] forState:UIControlStateNormal ];
-    [self.ForgotPasswordButton setTitle: [NSLocalizedString(@"Enter.forgotPasswordButton", nil) lowercaseString] forState:UIControlStateNormal ];
-    
-    
-//     [self.enterButton setTitle:[NSLocalizedString(@"Enter.enterButton", nil) uppercaseString] forState:UIControlStateNormal];
-    //[GraphicUtils styleButton:self.languageButton];
+    [self.enterButton setTitle:[NSLocalizedString(@"Enter.enterButton", nil) uppercaseString] forState:UIControlStateNormal];
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedLeft:)];
     [swipeLeft setDirection:UISwipeGestureRecognizerDirectionLeft ];
     [self.view addGestureRecognizer:swipeLeft];
@@ -97,21 +71,10 @@
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedRight:)];
     [swipeRight setDirection:UISwipeGestureRecognizerDirectionRight ];
     [self.view addGestureRecognizer:swipeRight];
+}
+
+-(void) tap:(UITapGestureRecognizer *)recognizer{
     
-    /* User device info */
-    NSString *uniqueIdentifier = [Utils getUDID];
-    NSArray *array = [uniqueIdentifier componentsSeparatedByString:@"-"];
-    NSLog(@"unique Device ID: %@", [array objectAtIndex:0]);
-    
-    /* Retrieve current date time */
-    NSString *currentDateTime =  [Utils getCurrentDateTime];
-    NSLog(@"current Data & Time: %@", currentDateTime);
-    
-    /* Get device Name */
-    NSLog(@"Device Name : %@", [Utils deviceName]);
-    
-    self.passwordTF.text = nil;
-    self.usernameTF.text = self.usernameText;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -133,7 +96,7 @@
         // display the controller in the usual way
         [self presentViewController:controller animated:YES completion:nil];
     }
-
+    
 }
 
 
@@ -283,18 +246,9 @@
 }
 
 - (IBAction)enterPressed:(id)sender {
-        self.passwordAuthenticationCompletion.result = [[AWSCognitoIdentityPasswordAuthenticationDetails alloc] initWithUsername:self.usernameTF.text password:self.passwordTF.text];
-    
     HomeViewController *hvc = [[HomeViewController alloc] init];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     [self.navigationController pushViewController:hvc animated:YES];
-    
-      /* insert app usage info into table*/
-    NSArray *data = @[@"Tap",@"Login", @"NA"];
-    [AWSDynamoDBHelper detailedAppUsage: data];
-}
-- (IBAction)signUpPressed:(id)sender {
-    
 }
 
 #pragma mark – Swipe Gesture Recognizer
@@ -456,50 +410,14 @@
         } else {
             circle.alpha = 0.2;
         }
-    }
-    
+    }    
 }
 
-- (void)didCompletePasswordAuthenticationStepWithError:(NSError * _Nullable)error {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        if(error){
-            [[[UIAlertView alloc] initWithTitle:error.userInfo[@"__type"]
-                                        message:error.userInfo[@"message"]
-                                       delegate:nil
-                              cancelButtonTitle:nil
-                              otherButtonTitles:@"Retry", nil] show];
-        }else{
-            self.usernameText = nil;
-            [self dismissViewControllerAnimated:YES completion:nil];
-        }
-    });
-}
-
-- (void)getPasswordAuthenticationDetails:(nonnull AWSCognitoIdentityPasswordAuthenticationInput *)authenticationInput passwordAuthenticationCompletionSource:(nonnull AWSTaskCompletionSource<AWSCognitoIdentityPasswordAuthenticationDetails *> *)passwordAuthenticationCompletionSource {
-    self.passwordAuthenticationCompletion = passwordAuthenticationCompletionSource;
-    dispatch_async(dispatch_get_main_queue(), ^{
-        if(!self.usernameText)
-            self.usernameText = authenticationInput.lastKnownUsername;
-    });
-}
 #pragma UIPicker delegate
 -(void)showPicker{
-//    _viewForPicker.hidden = false;
     _tblList.hidden = false;
     [self.view bringSubviewToFront:self.tblList];
 }
-
-//- (NSString *) localizedString:(NSString *)key
-//{
-//    if ([EnterViewController getUserPref:CurrentLanguageKey] == nil) {
-//        self.langKey = @"en";
-//    }
-//    NSString* path = [[NSBundle mainBundle] pathForResource:[self.langKey lowercaseString] ofType:@"lproj"];
-//    NSBundle* languageBundle = [NSBundle bundleWithPath:path];
-//    [[NSUserDefaults standardUserDefaults] setObject:@[self.langKey] forKey:CurrentLanguageKey];
-//    [[NSUserDefaults standardUserDefaults] synchronize];    
-//    return [languageBundle localizedStringForKey:key value:@"" table:nil];
-//}
 
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     
@@ -508,15 +426,10 @@
     if (cell == nil) {
         cell = ([[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:(SimpleIdentifier)]);
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", [self.arrLanguage objectAtIndex:indexPath.row]];
-//    if (indexPath.row == [LanguageManager currentLanguageIndex]) {
-//        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-//    }
-//    else {
-//        cell.accessoryType = UITableViewCellAccessoryNone;
-//    }
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", [_arrLanguage objectAtIndex:indexPath.row]];
     return cell;
 }
+
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return ELanguageCount;//arrLanguage.count;
 }
@@ -524,12 +437,47 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     [_btnLanguage setTitle:cell.textLabel.text forState:UIControlStateNormal];
-//    self.langKey = [arrKey objectAtIndex:indexPath.row];
-//    [self localizedString:self.langKey];
-//    [EnterViewController setUserPref:CurrentLanguageKey withValue:self.langKey];
     [LanguageManager saveLanguageByIndex:indexPath.row];
     [self restart];
-//    [self closeList];
 }
 
 @end
+//- (IBAction)enterPressed:(id)sender {
+//        self.passwordAuthenticationCompletion.result = [[AWSCognitoIdentityPasswordAuthenticationDetails alloc] initWithUsername:self.usernameTF.text password:self.passwordTF.text];
+//
+//    HomeViewController *hvc = [[HomeViewController alloc] init];
+//    [self.navigationController setNavigationBarHidden:NO animated:YES];
+//    [self.navigationController pushViewController:hvc animated:YES];
+//
+//      /* insert app usage info into table*/
+//    NSArray *data = @[@"Tap",@"Login", @"NA"];
+//    [AWSDynamoDBHelper detailedAppUsage: data];
+//}
+//- (IBAction)signUpPressed:(id)sender {
+//
+//}
+
+//- (void)didCompletePasswordAuthenticationStepWithError:(NSError * _Nullable)error {
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        if(error){
+//            [[[UIAlertView alloc] initWithTitle:error.userInfo[@"__type"]
+//                                        message:error.userInfo[@"message"]
+//                                       delegate:nil
+//                              cancelButtonTitle:nil
+//                              otherButtonTitles:@"Retry", nil] show];
+//        }else{
+//            self.usernameText = nil;
+//            [self dismissViewControllerAnimated:YES completion:nil];
+//        }
+//    });
+//}
+//
+//- (void)getPasswordAuthenticationDetails:(nonnull AWSCognitoIdentityPasswordAuthenticationInput *)authenticationInput passwordAuthenticationCompletionSource:(nonnull AWSTaskCompletionSource<AWSCognitoIdentityPasswordAuthenticationDetails *> *)passwordAuthenticationCompletionSource {
+//    self.passwordAuthenticationCompletion = passwordAuthenticationCompletionSource;
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        if(!self.usernameText)
+//            self.usernameText = authenticationInput.lastKnownUsername;
+//    });
+//}
+
+//@end

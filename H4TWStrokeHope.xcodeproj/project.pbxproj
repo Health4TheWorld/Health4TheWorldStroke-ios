@@ -1028,8 +1028,8 @@
 			children = (
 				CC73E4571E86BD65001131AF /* HomeButton.h */,
 				CC73E4581E86BD65001131AF /* HomeButton.m */,
-				CC73E4261E841875001131AF /* EnterViewController.m */,
 				CC73E4251E841875001131AF /* EnterViewController.h */,
+				CC73E4261E841875001131AF /* EnterViewController.m */,
 				CC73E44E1E86AB1C001131AF /* HomeViewController.h */,
 				CC73E44F1E86AB1C001131AF /* HomeViewController.m */,
 				CC73E4501E86AB1C001131AF /* HomeViewController.xib */,
