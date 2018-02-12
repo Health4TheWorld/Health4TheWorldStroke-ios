@@ -8,8 +8,6 @@ target 'H4TWStrokeHope' do
     pod 'AWSCognito'
     pod 'AWSCognitoIdentityProvider'
     pod 'AWSDynamoDB'
-    pod 'AWSLambda'
-    pod 'AWSMachineLearning'
     pod 'AWSS3'
 
 

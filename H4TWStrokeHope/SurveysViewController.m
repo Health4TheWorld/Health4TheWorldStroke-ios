@@ -34,7 +34,7 @@
     self.passwordTextField.secureTextEntry = YES;
     self.passwordTextField.placeholder = NSLocalizedString(@"Surveys.password", nil);
     self.title = [NSLocalizedString(@"Home.surveys", nil) uppercaseString];
-    [self.enterButton setTitle:[NSLocalizedString(@"Enter.enterButton", nil) uppercaseString] forState:UIControlStateNormal];
+    [self.enterButton setTitle:[NSLocalizedString(@"Enter.loginButton", nil) uppercaseString] forState:UIControlStateNormal];
     
     /* Back button */
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
