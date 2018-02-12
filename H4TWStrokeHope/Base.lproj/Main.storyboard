@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UhO-rG-aJk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UhO-rG-aJk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -59,7 +59,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHg-ci-zdb">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHg-ci-zdb">
                                 <rect key="frame" x="234" y="561" width="115" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Cz2-aH-rUM"/>
@@ -89,7 +89,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Scg-Hg-SiD"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vbq-WS-nLJ">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vbq-WS-nLJ">
                                 <rect key="frame" x="26" y="559" width="61" height="31"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -102,9 +102,6 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
-                                <connections>
-                                    <action selector="signUpPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfY-d1-ad0"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -117,7 +114,7 @@
                             <constraint firstAttribute="bottom" secondItem="vbq-WS-nLJ" secondAttribute="bottom" constant="13" id="KVE-Bj-NRv"/>
                             <constraint firstItem="vL5-7R-kNE" firstAttribute="width" secondItem="RKs-n0-mSo" secondAttribute="width" id="L22-zZ-KUL"/>
                             <constraint firstItem="vbq-WS-nLJ" firstAttribute="top" secondItem="vL5-7R-kNE" secondAttribute="bottom" constant="10" id="RF0-UP-Ndn"/>
-                            <constraint firstItem="uHg-ci-zdb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vbq-WS-nLJ" secondAttribute="trailing" symbolic="YES" id="UgJ-Ix-irn"/>
+                            <constraint firstItem="uHg-ci-zdb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vbq-WS-nLJ" secondAttribute="trailing" constant="8" symbolic="YES" id="UgJ-Ix-irn"/>
                             <constraint firstItem="vL5-7R-kNE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="VbU-X1-tQB"/>
                             <constraint firstItem="uJJ-7z-HgC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Vpn-k8-tBF"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uHg-ci-zdb" secondAttribute="trailing" id="Yy9-pQ-l90"/>
@@ -137,14 +134,10 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="ForgotPasswordButton" destination="uHg-ci-zdb" id="WE8-6Z-fdT"/>
                         <outlet property="btnLanguage" destination="uJJ-7z-HgC" id="d93-ut-fn2"/>
                         <outlet property="enterButton" destination="vL5-7R-kNE" id="Iyu-DS-9tx"/>
                         <outlet property="languageButton" destination="uJJ-7z-HgC" id="SYq-wG-P0b"/>
-                        <outlet property="passwordTF" destination="zrf-N2-j5h" id="P3b-D5-CUf"/>
-                        <outlet property="signUpButton" destination="vbq-WS-nLJ" id="luZ-NG-IXP"/>
                         <outlet property="tblList" destination="T1D-4e-FNj" id="kq7-nm-7BR"/>
-                        <outlet property="usernameTF" destination="RKs-n0-mSo" id="77a-mc-XZ8"/>
                         <outlet property="viewForPicker" destination="3y5-j2-ZS1" id="Trb-0L-Jt7"/>
                     </connections>
                 </viewController>

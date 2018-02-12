@@ -91,6 +91,7 @@
 		9D97478370E7B7322756F1D2 /* libPods-H4TWStrokeHope.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 680C4F0184FB59272CA0743A /* libPods-H4TWStrokeHope.a */; };
 		AB070D041FA2CDDC00D1C6F7 /* LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB070D031FA2CDDC00D1C6F7 /* LanguageManager.m */; };
 		AB13483620157FA000DB143D /* 1FunctionalMobility.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB13483520157F9F00DB143D /* 1FunctionalMobility.mp4 */; };
+		AB1ED669202D669A000E7D5A /* 1AToeFlexion.m4v in Resources */ = {isa = PBXBuildFile; fileRef = AB1ED668202D669A000E7D5A /* 1AToeFlexion.m4v */; };
 		AB26779D1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB26779B1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 */; };
 		AB2677B81FFC30F300BB12E0 /* IMG_3574_Side.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677AA1FFC30F300BB12E0 /* IMG_3574_Side.mp4 */; };
 		AB2677BB1FFC30F300BB12E0 /* IMG_3575.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677AD1FFC30F300BB12E0 /* IMG_3575.mp4 */; };
@@ -334,6 +335,7 @@
 		AB070D031FA2CDDC00D1C6F7 /* LanguageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageManager.m; sourceTree = "<group>"; };
 		AB070D051FA2F43500D1C6F7 /* H4TWStrokeHope.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H4TWStrokeHope.pch; sourceTree = SOURCE_ROOT; };
 		AB13483520157F9F00DB143D /* 1FunctionalMobility.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1FunctionalMobility.mp4; sourceTree = "<group>"; };
+		AB1ED668202D669A000E7D5A /* 1AToeFlexion.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1AToeFlexion.m4v; sourceTree = "<group>"; };
 		AB26779B1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3FunctionalMobility.mp4; sourceTree = "<group>"; };
 		AB2677AA1FFC30F300BB12E0 /* IMG_3574_Side.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3574_Side.mp4; sourceTree = "<group>"; };
 		AB2677AD1FFC30F300BB12E0 /* IMG_3575.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3575.mp4; sourceTree = "<group>"; };
@@ -680,6 +682,7 @@
 				17593E781EA83B0300F37C74 /* 1BKneeFlexion.m4v */,
 				AB13483520157F9F00DB143D /* 1FunctionalMobility.mp4 */,
 				AB26779B1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 */,
+				AB1ED668202D669A000E7D5A /* 1AToeFlexion.m4v */,
 			);
 			name = Videos;
 			sourceTree = "<group>";
@@ -1025,8 +1028,8 @@
 			children = (
 				CC73E4571E86BD65001131AF /* HomeButton.h */,
 				CC73E4581E86BD65001131AF /* HomeButton.m */,
-				CC73E4261E841875001131AF /* EnterViewController.m */,
 				CC73E4251E841875001131AF /* EnterViewController.h */,
+				CC73E4261E841875001131AF /* EnterViewController.m */,
 				CC73E44E1E86AB1C001131AF /* HomeViewController.h */,
 				CC73E44F1E86AB1C001131AF /* HomeViewController.m */,
 				CC73E4501E86AB1C001131AF /* HomeViewController.xib */,
@@ -1254,6 +1257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB1ED669202D669A000E7D5A /* 1AToeFlexion.m4v in Resources */,
 				CC73E4481E842370001131AF /* OFL.txt in Resources */,
 				CC11D12F1EB650320063E72A /* AddReminderFrequencyViewController.xib in Resources */,
 				CC73E4401E842370001131AF /* Lato-Bold.ttf in Resources */,
@@ -1435,19 +1439,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AICubeIconImage.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AICubeIconImage@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AICubeIconImage@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AIMicrophoneControlImage.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AIMicrophoneControlImage@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AIMicrophoneControlImage@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AIVoiceRequestButton.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beep.caf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CardboardSDK.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitCore.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitDialogs.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitHUD.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialRobotoFontLoader.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

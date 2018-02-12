@@ -38,12 +38,12 @@
     UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
     [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
-    backBtn.frame = CGRectMake(0, 0, 15, 25);
+    backBtn.frame = CGRectMake(0, 0, 25, 25);
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     self.navigationItem.leftBarButtonItem = backButton;
     
 //  [self createLogoutButton];
-    [self createRateButton];
+//    [self createRateButton];
     self.title = [NSLocalizedString(@"Home.title", nil) uppercaseString];
     
     // User table
