@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
             <connections>
+                <outlet property="btnFeedback" destination="H59-Um-BK5" id="AuJ-OS-mTu"/>
+                <outlet property="btnTellStory" destination="kIa-he-bFQ" id="WIc-Nk-WoP"/>
                 <outlet property="contentView" destination="uFB-HL-wQA" id="Hrn-Ce-YFA"/>
                 <outlet property="scrollView" destination="brs-CE-kpn" id="7we-0u-IFm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -21,11 +23,42 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brs-CE-kpn">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIa-he-bFQ">
+                    <rect key="frame" x="199" y="610" width="166" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="166" id="Wj4-Jc-sQV"/>
+                        <constraint firstAttribute="height" constant="37" id="acU-o3-reT"/>
+                    </constraints>
+                    <state key="normal" title="TELL US YOUR STORY">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnTell:" destination="-1" eventType="touchUpInside" id="l2S-vo-M4T"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="J3G-yn-Hhe">
+                    <rect key="frame" x="10" y="610" width="166" height="37"/>
                     <subviews>
-                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uFB-HL-wQA">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H59-Um-BK5">
+                            <rect key="frame" x="0.0" y="0.0" width="166" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="166" id="M9s-OH-Zay"/>
+                                <constraint firstAttribute="height" constant="37" id="Pc8-FQ-sKE"/>
+                            </constraints>
+                            <state key="normal" title="FEEDBACK">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnFeedbackTapped:" destination="-1" eventType="touchUpInside" id="gKb-ve-I8A"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brs-CE-kpn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="590"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFB-HL-wQA">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                     </subviews>
@@ -36,25 +69,25 @@
                         <constraint firstAttribute="trailing" secondItem="uFB-HL-wQA" secondAttribute="trailing" id="v8k-Ah-IVW"/>
                     </constraints>
                 </scrollView>
-                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXO-rG-gy5">
-                    <rect key="frame" x="16" y="617" width="159" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Feedback"/>
-                </button>
-                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIa-he-bFQ">
-                    <rect key="frame" x="201" y="617" width="157" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Tell Us Your Story"/>
-                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="brs-CE-kpn" secondAttribute="bottom" id="3O8-lg-hdJ"/>
+                <constraint firstItem="brs-CE-kpn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2w9-zE-9oT"/>
+                <constraint firstItem="brs-CE-kpn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4bL-gO-xUH"/>
+                <constraint firstItem="brs-CE-kpn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FbA-xH-Ku5"/>
                 <constraint firstItem="uFB-HL-wQA" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="HFK-PQ-YkC"/>
+                <constraint firstAttribute="trailing" secondItem="brs-CE-kpn" secondAttribute="trailing" id="Sdy-OB-89k"/>
+                <constraint firstItem="J3G-yn-Hhe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="XFC-eA-dSG"/>
                 <constraint firstItem="uFB-HL-wQA" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="bM0-gc-7EN"/>
+                <constraint firstItem="brs-CE-kpn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ezw-uE-XeE"/>
                 <constraint firstAttribute="trailing" secondItem="brs-CE-kpn" secondAttribute="trailing" id="gQZ-xc-eX5"/>
                 <constraint firstItem="brs-CE-kpn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ggw-Dg-dS4"/>
+                <constraint firstAttribute="trailing" secondItem="brs-CE-kpn" secondAttribute="trailing" id="h4O-1I-Dhh"/>
+                <constraint firstAttribute="trailing" secondItem="kIa-he-bFQ" secondAttribute="trailing" constant="10" id="jVy-5C-VcW"/>
+                <constraint firstAttribute="bottom" secondItem="brs-CE-kpn" secondAttribute="bottom" constant="77" id="lwI-t8-WLC"/>
                 <constraint firstItem="brs-CE-kpn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qA3-GV-RWG"/>
+                <constraint firstItem="J3G-yn-Hhe" firstAttribute="top" secondItem="kIa-he-bFQ" secondAttribute="top" id="rap-nS-MgV"/>
+                <constraint firstAttribute="bottom" secondItem="kIa-he-bFQ" secondAttribute="bottom" constant="20" id="uZU-cP-A9c"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="54.5"/>
         </view>

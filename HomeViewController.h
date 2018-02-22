@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MFMailComposeViewController.h>
+#import <MessageUI/MessageUI.h>
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController<MFMailComposeViewControllerDelegate>
 // Smiley icons 
 @property (nonnull, retain) UIButton *chatbotsmiley1;
 @property (nonnull, retain) UIButton *chatbotsmiley2;

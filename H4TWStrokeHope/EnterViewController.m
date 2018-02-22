@@ -17,10 +17,9 @@
 
 
 @interface EnterViewController (){
-    
     NSArray *data;
-    
 }
+
 @property (weak, nonatomic) IBOutlet UIButton *btnLanguage;
 @property (weak, nonatomic) IBOutlet UITableView *tblList;
 @property (weak, nonatomic) IBOutlet UIPickerView *languagePicker;

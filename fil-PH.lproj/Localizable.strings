@@ -7,269 +7,277 @@
  */
 
 /* DISCLAIMER */
-"Disclaimer.paragraphOne" = "Although this application is to be used as an educational tool for stroke patients, nothing contained in any part of this application, creates, has created, or is intended to create, implicitly or explicitly, any manner of patient-physician relationship.";
-"Disclaimer.paragraphTwo" = "The instructions herein are based on general and well-accepted guidelines and expert opinions for post-stroke care and self-management. Although reasonable efforts have been made to ensure the information contained in these lectures was current and accurate at the time of publication, neither Health4TheWorld, nor any individual who has furnished content or been involved in the presentation of this material, either orally or in writing can guarantee that all information is accurate and valid.";
-"Disclaimer.paragraphThree" = "Each given situation requires an individual judgment and approach, and this application is intended only for educational purposes, and is not intended to be, and should not be interpreted as, medical advice.";
-"Disclaimer.paragraphFour" = "The use of this application and its content is at your own risk, and Health4TheWorld, or any individual who has furnished content or been involved in the design or development of the application and its content expressly disclaims any liability for any injury and/or damage to persons and/or property arising from the use of this application.";
-"Disclaimer.paragraphFive" = "Any usage of this application may be tracked to enable us to monitor usage patterns and progress.";
-"Disclaimer.paragraphSix" = "By clicking Accept, you agree with our Terms of Use and Privacy Policy.";
+"Disclaimer.paragraphOne" = "Kahit na ang aplikasyong ito ay gagamitin bilang isang kagamitang pang-edukasyon para sa mga pasyente ng stroke, hindi naglalaman saanmang parte ng aplikasyong ito, gumagawa, nagawa na, o may intensyong gumawa, nang tahasan o walang pahiwatig, sa anumang paraan ng relasyong pasyente at doktor.";
+"Disclaimer.paragraphTwo" = "Ang mga tagubilin dito ay batay sa pangkalhatan at mabuting-tinatanggap na mga alituntunin at ekspertong mga opinyon para sa pangangalaga ng matapos-maistroke at pamamahala sa sarili.  Bagaman may makatuwirang pagsisikap ang nagawa na para masiguro na ang mga impormasyong nakapaloob sa mga pagtuturo dito ay pangkasalukuyan at tumpak sa panahon ng paglilimbag, wala sa Health4TheWorld, o sa sinumang indibidwal na nakapagbigay ng nilalaman o naging bahagi sa pagtatanghal ng materyal na ito, maging sa pagsasabi o sa panulat ang makaka-garantiya na ang lahat ng impormasyon ay tumpak at may bisa.";
+"Disclaimer.paragraphThree" = "Bawat nasabing sitwasyon ay nangangailangan ng indibidwal na paghatol at pananaw, at ang intensyon ng aplikasyong ito ay para sa layuning pang-edukasyon, at hindi intensyon para maging, at hindi dapat ipakahulugan bilang, medikal na payo.";
+"Disclaimer.paragraphFour" = "Ang gamit at nilalaman ng aplikasyong ito ay nasa inyong sariling kapahamakan, at ang Health4TheWorld, o sinumang indibidwal na nakapagbigay ng nilalaman o naging bahagi sa pagdesinyo o pag-unlad ng aplikasyon at ang nilalaman nito ay hayagang tinatatwa ang anumang pananagutan para sa anumang sakuna at/ o pinsala sa mga tao at/ o ari-arian na magmumula sa paggamit ng aplikasyong ito.";
+"Disclaimer.paragraphFive" = "Anumang paggamit sa aplikasyong ito ay matukoy para magamit namin sa pagsubaybay sa paraan ng paggamit at pag-unlad.";
+"Disclaimer.paragraphSix" = "Sa pag-klik ng Accept, kayo ay sumasang-ayon sa aming Terms of Use and Privacy Policy.";
 
 /* ENTER VIEW CONTROLLER */
-"Enter.firstQuote" = "\"The best preparation for tomorrow is doing your best today.\"";
-"Enter.firstAuthor" = " – H. Jackson Brown, Jr";
-"Enter.secondQuote" = "\"Believe you can and you're halfway there.\"";
-"Enter.secondAuthor" = "– Theodore Roosevelt";
-"Enter.thirdQuote" = "\"Nothing is impossible, the word itself says 'I'm possible'!\"";
-"Enter.thirdAuthor" = "– Audrey Hepburn";
-"Enter.fourthQuote" = "\"Only I can change my life. No one can do it for me.\"";
-"Enter.fourthAuthor" = "– Carol Burnett";
-"Enter.fifthQuote" = "\"Always do your best. What you plant now will harvest later.\"";
-"Enter.fifthAuthor" = "– Og Mandino";
-"Enter.sixthQuote" = "\"Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.\"";
-"Enter.sixthAuthor" = "– Helen Keller";
-"Enter.seventhQuote" = "\"Setting goals is the first step in turning the invisible into the visible.\"";
-"Enter.seventhAuthor" = "– Tony Robbins";
-"Enter.loginButton" = "login";
+"Enter.firstQuote" = "\"Ang pinakamabuting paghahanda sa kinabukasan ay ang gawin mo ang buong husay ngayon.\"";
+"Enter.firstAuthor" = " – H. Jackson Brown, Jr";
+"Enter.secondQuote" = "\"Maniwala kang kaya mo at nasa kalagitnaan ka na.\"";
+"Enter.secondAuthor" = "– Theodore Roosevelt";
+"Enter.thirdQuote" = "\"Walang imposible, ang salita mismo ay nagsasabing ‘Ako ay posible’.\"";
+"Enter.thirdAuthor" = "– Audrey Hepburn";
+"Enter.fourthQuote" = "\"Ako lamang ang makakapagbago sa buhay ko.  Walang ibang makakagawa nito para sa akin.\"";
+"Enter.fourthAuthor" = "– Carol Burnett";
+"Enter.fifthQuote" = "Palaging gawin ang iyong pinakamahusay.  Anuman ang itinanim mongayon ay aaanihin mo rin sa susunod.";
+"Enter.fifthAuthor" = "– Og Mandino";
+"Enter.sixthQuote" = "\"Ang optimismo ay ang pananampalataya na naghahatid sa tagumpay. Walang magagawa kung walang pag-asa at tiwala sa sarili.\"";
+"Enter.sixthAuthor" = "– Helen Keller";
+"Enter.seventhQuote" = "\"Ang pagtatakda ng mga layunin ay ang unang hakbang para makita ang mga hindi nakikita\"";
+"Enter.seventhAuthor" = "– Tony Robbins";
+"Enter.enterButton" = "Enter";
 
 /* HOME VIEW CONTROLLER */
 "Home.title" = "Home";
-"Home.helpMeSpeak" = "Help Me Speak";
+"Home.helpMeSpeak" = "Tulungan Mo Akong Magsalita";
 "Home.exercises" = "Mga Ehersisyo";
-"Home.learn" = "Pagkatuto";
-"Home.reminders" = "Reminders";
-"Home.generalInfo" = "General Info";
-"Home.surveys" = "Surveys";
+"Home.learn" = "Mag-aral";
+"Home.reminders" = "Mga Paalala";
+"Home.generalInfo" = "Pangkalahatang Impormasyon";
+"Home.surveys" = "Mga Pagsisiyasat";
 "Home.chatBot" = "ChatBot";
 
 /* HELP ME SPEAK VIEW CONTROLLER */
-"HelpMeSpeak.title" = "Help Me Speak";
+"HelpMeSpeak.title" = " Tulungan Mo Akong Magsalita ";
 "HelpMeSpeak.yes" = "Oo";
 "HelpMeSpeak.no" = "Hindi";
 "HelpMeSpeak.thankYou" = "Salamat";
-"HelpMeSpeak.bathroom" = "Kailangan ko magbanyo";
-"HelpMeSpeak.water" = "Kailangan ko ng tubig";
-"HelpMeSpeak.hungry" = "Nagugutom ako";
+"HelpMeSpeak.bathroom" = "Kailangan ko ng Banyo";
+"HelpMeSpeak.water" = "Kailangan ko ng Tubig";
+"HelpMeSpeak.hungry" = "Ako ay nagugutom";
 "HelpMeSpeak.notGivingUp" = "Hindi ako susuko";
-"HelpMeSpeak.pain" = "Nasasaktan ako";
-"HelpMeSpeak.cantSpeak" = "Pasensya  na hindi ako makapagsalita";
-"HelpMeSpeak.iLoveYou" = "I love you";
-"HelpMeSpeak.imCold" = "I'm cold";
-"HelpMeSpeak.imHot" = "I'm hot";
-"HelpMeSpeak.dizzy" = "I'm dizzy";
-"HelpMeSpeak.lightsOn" = "Turn on the lights";
-"HelpMeSpeak.lightsOff" = "Turn off the lights";
-"HelpMeSpeak.getInBed" = "I want to get in bed";
-"HelpMeSpeak.getOutOfBed" = "I want to get out of bed";
-"HelpMeSpeak.howAreYou" = "How are you?";
-"HelpMeSpeak.ambulance" = "I need an ambulance";
-"HelpMeSpeak.inALittle" = "In a little";
-"HelpMeSpeak.now" = "Now";
-"HelpMeSpeak.goOutside" = "I want to go outside";
+"HelpMeSpeak.pain" = "Ako ay may nararamdamang sakit";
+"HelpMeSpeak.cantSpeak" = "Pasensiya na, hindi ako makapagsalita";
+"HelpMeSpeak.iLoveYou" = "Mahal kita";
+"HelpMeSpeak.imCold" = "Ako ay giniginaw";
+"HelpMeSpeak.imHot" = "Ako ay naiinitan";
+"HelpMeSpeak.dizzy" = "Ako ay nahihilo";
+"HelpMeSpeak.lightsOn" = "Buksan ang mga ilaw";
+"HelpMeSpeak.lightsOff" = "Patayin ang mga ilaw";
+"HelpMeSpeak.getInBed" = "Gusto ko nang mahiga sa kama";
+"HelpMeSpeak.getOutOfBed" = "Gusto kong bumangon mula sa kama";
+"HelpMeSpeak.howAreYou" = "Kamusta ka?";
+"HelpMeSpeak.ambulance" = "Kailangan ko ng ambulansya";
+"HelpMeSpeak.inALittle" = "Konti na lang";
+"HelpMeSpeak.now" = "Ngayon";
+"HelpMeSpeak.goOutside" = "Gusto kong lumabas";
 "HelpMeSpeak.sayHi" = "Hi!";
 
 /* EXERCISES VIEW CONTROLLER */
-"Exercises.title" = "Mga Ehersisyo";
-"Exercises.advancedExercises" = "Advanced Exercises";//MM
-"Exercises.strengthening" = "Pagpapalakas";
-"Exercises.stretching" = "Pag-iinat";
-"Exercises.functionalMobility" = "Magagamit sa Pagkilos/Paggalaw";
-"Exercises.mindExercises" = "Ehersisyo ng Kaisipan";
-"Exercises.instructions" = "Pakiulit ng 10 beses, isang beses sa isang araw nang may tulong mula sa tagapangalaga mula sa kapamilya kung kinakailangan. Komonsulta muna sa iyong doktor bago simulan ang programang pang-ehersisyo.";
+"Exercises.title" = "Mga ehersisyo";
+"Exercises.strengthening" = "Nagpapalakas";
+"Exercises.stretching" = "Umuunat-unat";
+"Exercises.functionalMobility" = "Gumaganang Pagkikilos";
+"Exercises.mindExercises" = "Mga Ehersisyo s Pag-iisip";
+"Exercises.instructions" = "Paki-ulit ang mga ehersisyo 10 beses sa isang araw na may tulong mula sa tagapag-alaga ng pamilya kung kinakailangan. Konsultahin ang iyong medikal na tagapagkaloob bago simulan ang programang pang-ehersiyo.";
 
 /* STRENGTHENING VIEW CONTROLLER */
-"Strengthening.title" = "Pagpapalakas";
-"Strenghtening.legs" = "Mga Binti";
-"Strengthening.arms" = "Mga Braso";
+"Strengthening.title" = "Nagpapalakas";
+"Strenghtening.legs" = "Mga paa";
+"Strengthening.arms" = "Mga braso";
 "Strengthening.coordination" = "Koordinasyon";
+
 /* LEGS VIEW CONTROLLER */
-"Legs.toe" = "Daliri sa paa";
-"Legs.knee" = "Tuhod";
-"Legs.hip" = "Balakang";
+"Legs.toe" = "Pagbaluktot ng mga Paa";
+"Legs.knee" = "Pagbaluktot ng Tuhod";
+"Legs.hip" = "Pagbaluktot ng Baywang";
 
 /* ARMS VIEW CONTROLLER */
-"Arms.elbow" = "Siko";
-"Arms.shoulder" = "Balikat";
+"Arms.elbow" = "Pagbaluktot ng Siko";
+"Arms.shoulder" = "Pagbaluktot ng Balikat";
 
 /* COORDINATION VIEW CONTROLLER */
-"Coordination.legControl1" = "Kontrol sa Binti 1";
-"Coordination.legControl2" = "Kontrol sa Binti 2";
-
-
-
+"Coordination.legControl1" = "Pagkontrol sa Paa 1";
+"Coordination.legControl2" = "Pagkontrol sa Paa 2";
 /* STRETCHING VIEW CONTROLLER */
-"Stretching.title" = "Pag-iinat";
-"Stretching.armsAndHands" = "Braso at Mga Kamay";
-"Stretching.legsAndFeet" = "Binti at paa";
-"Stretching.handStretch" = "Mga Kamay";
-"Stretching.shoulderStretch" = "Balikat";
-"Stretching.armStretch" = "Arm Stretch";
-"Stretching.adductors" = "Mga Hita";
-"Stretching.hamstrings" = "Gatil sa Likuran ng Binti";
-"Stretching.dorsiflexors" = ") Bukung-bukong";
-"Stretching.legStretch" = "Binti";
-"Stretching.kneeStretch" = "Knee Stretch";
-"Stretching.ankleStretch" = "Ankle Stretch";
-"Stretching.handStretch" = "Mga Kamay";
-"Stretching.adductorsInstructions" = "Maaari mong gawin ang ehersisyong ito sa pamamagitan ng paghiga at pag-upo sa isang matibay na  silya. Sa iyong paghiga ng nakatihaya, idausdos at ilabas ang apektadong binti sa kabilang bahagi sa loob ng 30 segundo at pabalik. Ulitin ng 3 beses.";
-"Stretching.hamstringsInstructions" = "Maaari mong gawin ang ehersisyong  ito ng nakahiga o nakaupo sa isang matibay na silya. Humiga ng patihaya nang nakabaluktot ang tuhod at ituwid itong pataas sa loob ng 30 segundo.";
-"Stretching.dorsiflexorsInstructions" = "Maari mong gawin ang ehersisyong ito nang nakahiga  o nakaupo sa isang matibay na silya. Itulak ang iyong paa paitaas papunta sa torso at pigilin sa loob ng 30 segundo. Ulitin ng 3 beses.";
-"Stretching.handStretchInstructions" = "Patagilid na humiga at ipahinga ang kamay sa iyong balakang. Suportahan ang siko sa hita ngunit gamitin ang kabilang kamay para maigalaw nang paitaas ang wrist at malayo mula sa tiyan. Ibalik ang wrist sa nakapahingang posisyon. Suportahan ang wrist ng isang kamay at subukang ibuka ang mga daliri gamit ang kabilang kamay.  Mas huhusay ito kung susubukan buksan ang kamay at igalaw ang wrist nang paitaas ng kabilang kamay. Panatlihin ito ng 30 segundo. Ulitin ng 3 beses.";
-"Stretching.shoulderStretchInstructions" = "Humiga ng nakatagilid na nakapahinga ang kamay sa iyong balakang. Itaas ang balikat papuntang tainga at dahan-dahan itong ibaba.";
-"Stretching.armStretchInstructions" = "Humiga ng nakatagilid na nakapahinga ang kamay sa iyong balakang. Dahan-dahang ibaba ang braso papuntang binti. Pigilin ng 30 segundo. Ulitin ng 3 beses. Siguraduhing hindi gumagalaw ang iyong balikat at pigilin ito sa paggalaw.";
+"Stretching.title" = "Pag-uunat-uunat";
+"Stretching.armsAndHands" = "Mga braso at mga kamay";
+"Stretching.legsAndFeet" = "Mga Paa at binti";
+"Stretching.handStretch" = "Pag-unat ng kamay";
+"Stretching.shoulderStretch" = "Pag-unat ng balikat";
+"Stretching.armStretch" = "Pag-unat ng Braso";
+"Stretching.adductors" = "Adductors";
+"Stretching.hamstrings" = "Mga Pilayan";
+"Stretching.dorsiflexors" = "Dorsiflexors";
+"Stretching.legStretch" = "Pag-unat ng binti";
+"Stretching.kneeStretch" = "Pag-unat ng tuhod";
+"Stretching.ankleStretch" = "Pag-unat ng bukung-bukong";
+"Stretching.handStretch" = "Pag-unat ng kamay";
+"Stretching.adductorsInstructions" = "Maaari mong gawin ang ehersisyong ito ng nakahiga o nakaupo sa isang matibay na upuan. Ihiga ang iyong likod, i-slide ang apektadong binti palabas sa loob ng 30 segondo and ibalik paloob.  Ulitin ng 3 beses";
+"Stretching.hamstringsInstructions" = "Gawin ang ehersisyong ito ng nakahiga o naka-upo sa matibay na upuan.  Ihiga ang iyong likod na nakabaluktot at i-derecho ang ang tuhod pataas patungo sa kalangitan sa loob ng 30 segundo.";
+
+"Stretching.dorsiflexorsInstructions" = "Gawin ang ehersisyong ito ng nakahiga o naka-upo sa matibay na upuan. Itulak ang iyong paa pataas sa katawan at panatilihin ng 30 sec.  Ulitin ng 3 beses.";
+"Stretching.handStretchInstructions" = "Patagilid na higa sa apektadong bahagi at nakalagay ang kamay sa baywang.  Suportahan ang siko sa baywang ngunit gamitin ang kabilang kamay para igalaw pataas ang pulso at ilayo sa tiyan.  Ibalik ang pulso sa nakapahingang posisyon.  Suportahan ang pulso ng isang kamay at subukang buksan ang mga daliri gamit ang isang kamay.  Ang patuloy na pagsubok na mabuksan ang kamay kung ang pulso ay itinaas at ilayo sa tiyan.  Panatilihing naka-unat ng 30 segundo.  Ulitin ng 3 beses.";
+"Stretching.shoulderStretchInstructions" = "Kung nakatagilid sa apektadong kamay na nakalagay sa baywang.  Ilagay ang balikat palapit sa tenga at dahan-dahang ibalik at ibaba.";
+"Stretching.armStretchInstructions" = "";
 
 /* MIND EXERCISES VIEW CONTROLLER */
-"MindExercises.bellsInstructions" = "* Umupo ng komportable at himinga nang malalim ng nakangiti. \n* Tumuon sa mapayapang tanawin at tunog sa bidyo.\n* Isipin mo na ikaw ang naglalakad sa bidyo.\n* Galawin ang telepono paitaas at patagilid para maaliw at masiyahan sa tanawin sa video.\n* Ipikit ang iyong mga mata at muling huminga ng malalim.\n* Ituon muli ang isipan pabalik sa iyong silid.";
-"MindExercises.buddhaInstructions" = "* Umupo ng komportable at himinga nang malalim ng nakangiti. \n* Tumuon sa mapayapang tanawin at tunog sa bidyo.\n* Isipin mo na ikaw ang naglalakad sa bidyo.\n* Galawin ang telepono paitaas at patagilid para maaliw at masiyahan sa tanawin sa video.\n* Ipikit ang iyong mga mata at muling huminga ng malalim.\n* Ituon muli ang isipan pabalik sa iyong silid.";
-"MindExercises.flagsInstructions" = "* Umupo ng komportable at himinga nang malalim ng nakangiti. \n* Tumuon sa mapayapang tanawin at tunog sa bidyo.\n* Isipin mo na ikaw ang naglalakad sa bidyo.\n* Galawin ang telepono paitaas at patagilid para maaliw at masiyahan sa tanawin sa video.\n* Ipikit ang iyong mga mata at muling huminga ng malalim.\n* Ituon muli ang isipan pabalik sa iyong silid.";
-"MindExercises.marketplace1Instructions" = "* Umupo ng komportable at himinga nang malalim ng nakangiti. \n* Tumuon sa mapayapang tanawin at tunog sa bidyo.\n* Isipin mo na ikaw ang naglalakad sa bidyo.\n* Galawin ang telepono paitaas at patagilid para maaliw at masiyahan sa tanawin sa video.\n* Ipikit ang iyong mga mata at muling huminga ng malalim.\n* Ituon muli ang isipan pabalik sa iyong silid.";
-"MindExercises.marketplace2Instructions" = "* Umupo ng komportable at himinga nang malalim ng nakangiti. \n* Tumuon sa mapayapang tanawin at tunog sa bidyo.\n* Isipin mo na ikaw ang naglalakad sa bidyo.\n* Galawin ang telepono paitaas at patagilid para maaliw at masiyahan sa tanawin sa video.\n* Ipikit ang iyong mga mata at muling huminga ng malalim.\n* Ituon muli ang isipan pabalik sa iyong silid.";
-"MindExercises.rockybeachInstructions" = "* Umupo ng komportable at himinga nang malalim ng nakangiti. \n* Tumuon sa mapayapang tanawin at tunog sa bidyo.\n* Isipin mo na ikaw ang naglalakad sa bidyo.\n* Galawin ang telepono paitaas at patagilid para maaliw at masiyahan sa tanawin sa video.\n* Ipikit ang iyong mga mata at muling huminga ng malalim.\n* Ituon muli ang isipan pabalik sa iyong silid.";
-"MindExercises.sandybeachInstructions" = "* Umupo ng komportable at himinga nang malalim ng nakangiti. \n* Tumuon sa mapayapang tanawin at tunog sa bidyo.\n* Isipin mo na ikaw ang naglalakad sa bidyo.\n* Galawin ang telepono paitaas at patagilid para maaliw at masiyahan sa tanawin sa video.\n* Ipikit ang iyong mga mata at muling huminga ng malalim.\n* Ituon muli ang isipan pabalik sa iyong silid.";
+"MindExercises.bellsInstructions" = "*Umupo ng kumportable at huminga ng malalim na may magiliw na ngiti.\n* Magpokus sa tahimik na paligid at mga tunog.\n* Isiping naglalakad sa kapaligirang ito.\n*  Igalaw patagilid ang telepono para masiyahan sa tanawin.\n*  Ipikit ang mga mata ngayon at huminga ulit ng malalim na hininga.\n*  Magpokus pabalik sa iyong kwarto.";
+"MindExercises.buddhaInstructions" = "*Umupo ng kumportable at huminga ng malalim na may magiliw na ngiti.\n* Magpokus sa tahimik na paligid at mga natural na mga tunog.\n* Isiping naglalakad patungo sa estatwa ng Buddha.\n*  Igalaw patagilid ang telepono para masiyahan sa tanawin.\n*  Ipikit ang mga mata ngayon at huminga ulit ng malalim na hininga.\n*  Magpokus pabalik sa iyong kwarto.";
+"MindExercises.flagsInstructions" = "*Umupo ng kumportable at huminga ng malalim na may magiliw na ngiti.\n* Magpokus sa tabing-dagat at sa tunog ng mga alon.\n* Isipin ang pakiramdam ng buhangin sa iyong mga paa.\n* Isipin ag paglalakad sa tabing-dagat at lumikha ng mga bakas ng paa sa buhangin.\n*  Igalaw patagilid ang telepono para masiyahan sa tabing-dagat.\n*  Ipikit ang mga mata ngayon at huminga ulit ng malalim na hininga.\n*  Magpokus pabalik sa iyong kwarto.";
+"MindExercises.marketplace1Instructions" = "*Umupo ng kumportable at huminga ng malalim na may magiliw na ngiti.\n* Magpokus sa eksena sa palengke at mga natural tunog.\n* Isipin na inaabot at may kinukuhang prutas.\n*  Igalaw patagilid ang telepono para masiyahan sa tanawin.\n*  Ipikit ang mga mata ngayon at huminga ulit ng malalim na hininga.\n*  Magpokus pabalik sa iyong kwarto.";
+"MindExercises.marketplace2Instructions" = "*Umupo ng kumportable at huminga ng malalim na may magiliw na ngiti.\n* Magpokus sa eksena sa palengke at mga natural tunog.\n* Isipin na naglalakad sa palengke.\n*  Igalaw patagilid ang telepono para masiyahan sa tanawin.\n*  Ipikit ang mga mata ngayon at huminga ulit ng malalim na hininga.\n*  Magpokus pabalik sa iyong kwarto.";
+"MindExercises.rockybeachInstructions" = "*Umupo ng kumportable at huminga ng malalim na may magiliw na ngiti.\n* Magpokus sa tabing-dagat at sa mga tunog ng mga alon.\n* Pansinin ang mga magagandang bato.\n* Isipin na may inaabot at may pinupulot na isang bato.\n* Isipin na may ginagawang tore ng mga bato.\n* Igalaw patagilid ang telepono para makita ang magandang kalangitan.\n*  Ipikit ang mga mata ngayon at huminga ulit ng malalim na hininga.\n*  Magpokus pabalik sa iyong kwarto.";
+"MindExercises.sandybeachInstructions" = "*Umupo ng kumportable at huminga ng malalim na may magiliw na ngiti.\n* Magpokus sa tabing-dagat at sa tunog ng mga alon.\n* Isipin ang pakiramdam ng buhangin sa iyong mga paa.\n* Isipin ag paglalakad sa tabing-dagat at lumikha ng mga bakas ng paa sa buhangin.\n*  Igalaw patagilid ang telepono para masiyahan sa tabing-dagat.\n*  Ipikit ang mga mata ngayon at huminga ulit ng malalim na hininga.\n*  Magpokus pabalik sa iyong kwarto.";
 
 /* FUNCTIONAL MOBILITY VIEW CONTROLLER */
-"FunctionalMobility.bridgeHipLift" = "Iangat ang balakang habang nakahiga";
-"FunctionalMobility.armTrunkStrengthening" = "Braso + trunk/balikat";
-"FunctionalMobility.sitToStand" = "Umupo at tumayo sa silya ";
+"FunctionalMobility.bridgeHipLift" = "Pagtaas ng Bridge Hip";
+"FunctionalMobility.armTrunkStrengthening" = "Pagpapalakas ng Braso ";
+"FunctionalMobility.sitToStand" = "Umupo para Makatayo";
 
 /* LEARN VIEW CONTROLLER */
-"Learn.title" = "Pagkatuto";
+"Learn.title" = "Pag-aralan";
 "Learn.b" = "B";
 "Learn.e" = "E";
 "Learn.f" = "F";
 "Learn.a" = "A";
 "Learn.s" = "S";
 "Learn.t" = "T";
-"Learn.befastB" = "Balanse: biglang pagkawala ng balanse.";
-"Learn.befastE" = "Mata: biglang pagkawala ng paningin sa isa o parehong mata.";
-"Learn.befastF" = "Mukha: Pagkalawit ng isang pisngi kapag pinangiti.";
-"Learn.befastA" = "Panghihina ng Braso: Hindi maitaas ang braso at hindi mapanatiling nakataas ito.";
-"Learn.befastS" = "Pagsasalita:  Hirap sa pagsasalita.";
-"Learn.befastT" = "Oras: Oras na para tumawag ng ambulansya.";
+"Learn.befastB" = "Balanse: Bilaang pagkawala ng balanse.";
+"Learn.befastE" = "Mata: Biglaang pagkawala ng paningin sa isa o dalawang mata.";
+"Learn.befastF" = "Pagkalaylay ng pisngi sa isang gilid kapag hiniling na.";
+"Learn.befastA" = "Panghihina ng braso; hindi maitaas ang mga braso at panatilihing nakataas.";
+"Learn.befastS" = "Hirap sa pagsasalita.";
+"Learn.befastT" = "Oras na para tumawag ng ambulansya.";
 "Learn.faq" = "FAQ";
+"Learn.signsOfStroke" = "Mga Palatandaan ng Stroke";
+"Learn.riskFactors" = "Mga Kadahilanan ng Panganib";
 "Learn.bloodPressure" = "Presyon ng Dugo";
-"Learn.heartRate" = "Pintig/Tibok ng Puso";
+"Learn.heartRate" = "Pintig ng Puso";
 "Learn.bloodSugar" = "Blood Sugar";
 "Learn.diet" = "Diyeta";
-"Learn.bladderBowel" = "Bladder/Bowel";
+"Learn.bladderBowel" = "Pantog/Bituka";
 "Learn.exercises" = "Mga Ehersisyo";
 "Learn.showerBath" = "Pagligo";
-"Learn.homeMod" = "Pagbabago sa Tahanan";
-"Learn.smoking" = "Smoking";
-"Learn.sleep" = "Sleep";
+"Learn.homeMod" = "Pagbabago sa ayos ng Bahay";
+"Learn.smoking" = "Paninigarilyo";
+"Learn.sleep" = "Tulog";
 "Learn.problem" = "PROBLEMA";
-"Learn.whatToDo" = "DAPAT GAWIN";
+"Learn.whatToDo" = "ANO ANG DAPAT GAWIN";
+"Learn.riskFactorsForStroke" = " MGA KADAHILANAN NG PANGANIB NG STROKE";
+"Learn.riskFactorsOne" = "MATAAS NA PRESYON NG DUGO";
+"Learn.riskFactorsTwo" = "SAKIT SA PUSO";
+"Learn.riskFactorsThree" = "PANINIGARILYOG";
+"Learn.riskFactorsFour" = "DIABETES";
+"Learn.riskFactorsFive" = "BAGO MA-STROKE";
 
 /* FAQ */
-"Faq.questionOne" = "Ano ang Stroke?";
-"Faq.answerOne" = "Sa stroke, naharang o pumuputok ang blood vessel na nagsu-supply sa partikular na bahagi ng utak. Nagreresulta ito ng pagkamatay ng cell sa apektadong bahagi ng utak. Maaaring pansamantala o habambuhay na pagkawala ng paggalaw ng isa o higit pang parte ng katawan.";
-"Faq.questionTwo" = "Sa iyong palagay, ano ang dapat gawin sa nakararanas ng stroke?";
-"Faq.answerTwo" = "Tumawag agad ng medikal na tulong sa isang propesyonal (doktor o nars).";
-"Faq.questionThree" = "Sa iyong palagay, baket kailangang umaksiyon agad?";
-"Faq.answerThree" = "S. Maaaring maiwasan ang panganib na magkaroon ng kapansanan o mahantong sa pagkamatay kung magamot agad ito.";
+"Faq.questionOne" = "Ano ang stroke?";
+"Faq.answerOne" = "Sa stroke, ang suplay ng dugo sa isang partikular na bahagi ng utak ay nabarahan o ang mga saluyan ng dugo na nagsusuplay sa isang bahagi ng utak ay pumutok.  Nagreresulta ito ng pagkamatay ng cell sa apektadong bahagi ng utak.  Maaaring magresulto ito ng pansamantala o permanenteng pagkawala ng pagpapaandar ng isa o higit pa na bahagi ng katawan.";
+"Faq.questionTwo" = "Ano ang dap at mong gawin kung sa tingin mo ang isang tao ay nakakaranas ng stroke?";
+"Faq.answerTwo" =  "Agad na tumawag ng propesyunal na tulong medikal (doktor/ nars).";
+"Faq.questionThree" = "Bakit kailangan mong mabilis na tumugon?";
+"Faq.answerThree" = "Ang mabilis na paglapat ng medikal na gamutan ay nakakapagpababa ng panganib na maging kapansanan o maging kamatayan.";
 
 /* BLOOD PRESSURE */
-"BloodPressure.problem" = "Maaaring maging sanhi ng stroke ang mataas na presyon ng dugo na makakapinsala sa mga ugat sa buong katawan na nagiging sanhi ng madaling  pagputok o  pagbara.";
+"BloodPressure.problem" = "Ang mataas na presyon sa dugo ay maaaring magdulot ng stroke na makakasira sa mga ugat sa buong katawan, na magiging sanhi ng pagputok o mas madaling pagbara.";
 "BloodPressure.problemBoldPart" = "Mataas na presyon ng dugo";
-"BloodPressure.problemNonBoldPart" = " can cause strokes by damaging arteries throughout the body, causing them to burst or clog more easily.";
-"BloodPressure.whatToDo" = "Sa pangkalahatan populasyon na may edad na 60 o higit pa, ang paggamot sa mataas na BP para mapababa ito sa 150/90 mm HG ay makakabawas sa stroke.";
-"BloodPressure.whatToDoBoldPart" = "lower than 150/90 mm Hg";
+"BloodPressure.problemNonBoldPart" = "maaaring maging sanhi ng stroke sa pagkasira ng mga ugat sa buong katawan, magiging sanhi ng pagputok o mas madaling pagbara.";
+"BloodPressure.whatToDo" = "Sa pangkalahatang populasyon na may edad 60 taon o mas matanda, ang paggamot sa BP na layuning maibaba kaysa 150/90 mm Hg ay nakakabawas ng stroke.";
+"BloodPressure.whatToDoBoldPart" = "mas mababa sa 150/90 mm Hg";
 
 /* HEART RATE */
-"HeartRate.problem" = "Atrial Fibrillation, o iregular na pintig ng puso, ay isang mapanganib na dahilan ng stroke.";
+"HeartRate.problem" = "Atrial Fibrillation, o hindi regular na pintig ng puso, ay isang panganiib na dahilan para sa stroke.";
 "HeartRate.problemBoldPart" = "Atrial Fibrillation";
-"HeartRate.whatToDo" = "Kung nakakaramdam ka na ng iregular na pagtibok ng iyong puso, tawagan agad ang iyong doktor para magpatingin,  kasama ang electrocardiogram (ECG/EKG). Batay sa iyong nakalipas na rekord ng kalusugan at sa panganib na ma-stroke sa hinaharap, maraming mga mapagpipilian sa paggamot tulad ng anticoagulants, na makakatulong sa pamamahala sa Afib.";
+"HeartRate.whatToDo" = "Kung kayo ay may hinala ng hindi regular na pintig ng puso, kontakin ang iyong doktor kaagad para masuri, na maaaring may kasamang electrocardiogram (ECG/EKG).  Base sa iyong nakalipas na kasaysayang medikal at ang iyong panganib sa pagkakaroon ng stroke sa hinaharap, may ilang mga opsyon para sa mga gamot, kagaya ng anticoagulants, na makakatulong na pamahalaan ang Afib.";
 "HeartRate.whatToDoFirstBoldPart" = "electrocardiogram";
 "HeartRate.whatToDoSecondBoldPart" = "anticoagulants";
 
 /* BLOOD SUGAR */
-"BloodSugar.problem" = "Ang Labis na asukal sa dugo ay maaaring makadagdag sa mapanganib ng namumuong stroke at sakit sa puso.  Ang pagsusuri sa dugo na tinatawag na HbA1c ay nagbibigay ng hitsura ng iyong katamtamang kontrol ng blood sugar para sa nakalipas na 2 hanggang 3 buwan.";
-"BloodSugar.problemBoldPart" = "High blood sugar";
-"BloodSugar.whatToDo" = "Nirerekomenda ng  Samahan ng American Heart na panatilihin ang antas ng blood sugar (Hgb1A1c) mababa sa 6% para sa mga pasyente na mayroong pre-diabetes at mababa sa 7% para sa mga pasyenteng diabetic.";
-"BloodSugar.whatToDoFirstBoldPart" = "below 6%";
-"BloodSugar.whatToDoSecondBoldPart" = "below 7%";
+"BloodSugar.problem" = "Ang mataas na presyon ng dugo ay makakadagdag sa panganib sa pagbubuo ng stroke at sakit sa puso.  Ang isang pagsusuri sa dugo na tinatawag na HbA1c ay makapagbibgay ng larawan para sa iyong karaniwang pagkontrol sa blood sugar sa nakalipas na 2 hanggang 3 buwan.";
+"BloodSugar.problemBoldPart" = "Mataas na blood sugar";
+"BloodSugar.whatToDo" = "Nirerekomenda ng American Heart Association ang pagpapanatili ng antas ng blood sugar (Hgb1A1c) na mababa sa 6% para sa mga pasyenteng may pre-diabetes at mababa sa 7% para sa mga pasyenteng may diabetes.";
+"BloodSugar.whatToDoFirstBoldPart" = "mababa sa 6%";
+"BloodSugar.whatToDoSecondBoldPart" = "mababa sa 7%";
 
 /* DIET */
-"Diet.problem" = "Mahalagang mapanatili ng mga pasyenteng na-stroke ang malusog na pamumuhay. Nanganganib naman sa kakulangan sa calcium at vitamin D ang mga pasyenteng na-stroke na matagal na nananatili sa isang pasilidad sa pangngalaga.";
-"Diet.whatToDo" = "Higit na makabubuti ang pagkain ng mga masustansiyang pagkain at may kasamang iba’t ibang prutas at gulay, whole grain, mga pagkaing low-fat, karneng walang taba at isdang walang balat, at mga mani at legumes. Bawasan ang  purong taba, trans fat, sodium, pulang karne, matatamis na pagkain at matatamis na inumin.";
+"Diet.problem" = "Importante sa mga pasyente ng stroke na mapanatili ang malusog na pamumuhay.  Ang mga pasyente ng stroke na nakatira sa mga pangmatagalang pangangalagang pasilidad ay nasa panganib ng kakulangan sa calcium at bitamina D.";
+"Diet.whatToDo" = "Mas mabuti ang pagkain ng pangkalahatang malusog na diyeta kasama ang iba’t ibang mga prutas at gulay, buong butil, mga produktong gatas na mababa ang taba, walang balat na mga karne at isda, at mga mani at mga butong gulay.  Magbawas sa mga saturated fat, trans fat, sodium, karneng may mapupulang laman, matatamis at mga inuming pinatamis ng asukal.";
 
 /* BLADDER/BOWEL */
-"BladderBowel.problem" = "Maakararanas ang ibang pasyente ng di-mapigilan ang pag-ihi o pagkalimot.";
-"BladderBowel.whatToDoBulletOne" = "Tasahin ang hindi pag-ihi sa pamamagitan ng pag-scan sa pantog o paminsan-minsang catheterizations pagkatapos umihi, at itala ang dami nito.";
-"BladderBowel.whatToDoBulletTwo" = "Magtungo ng regular sa banyo para masanay ang iyong pantog. Ang pag-ihi kada 2-3 oras ay makatutulong para maiwasan ang aksidente.";
-"BladderBowel.whatToDoBulletThree" = "Uminom ng maraming tubig sa maghapon para manatiling hydrated at maiwasan ang hirap sa pagdumi.";
+"BladderBowel.problem" = "May ibang mga pasyente ang makakaranas ng kawalan ng pagpigil ng ihi o pagpapanatili.";
+"BladderBowel.whatToDoBulletOne" = "Tantiyahin ang pagpapanatili ng ihi sa pamamagitan ng pag-scan ng pantog o paulit-ulit na pagkalilya matapos ang kawalan ng saysay, at maramihang tala.";
+"BladderBowel.whatToDoBulletTwo" = "Regular na magpunta sa banyo para masanay ang inyong pantog.  Ang pag-ihi kada 2-3 oras ay makakatulong upang maiwasan ang mga aksidente.";
+"BladderBowel.whatToDoBulletThree" = "Uminom ng maraming likido sa buong araw para mapanatiling hydrated para matulungan kayong maiwasan ang paninigas ng dumi.";
+
 
 /* EXERCISES */
-"Exercises.problem" = "Ang mga pasyenteng na stroke ay kadalasang may kahirapan sa pagpapanumbalik ng kanilang lakas at mga kakayahan.";
-"Exercises.parOne" = "Stroke survivors should receive rehabilitation at an intensity that matches with anticipated benefit and tolerance.";
-"Exercises.bulletOne" = "Para makatulong sa mayroong limitasyon sa paglakad: Kinailangan ng mga pasyente na magsagawa ng matindi, paulit-ulit, ibayong pagsasanay sa pagkilos sa ilalim ng pamamahala ng isang propesyonal na tagapangalaga ng kalusugan.";
-"Exercises.bulletOneBoldPart" = "mayroong limitasyon sa paglakad";
-"Exercises.bulletTwo" = "Para matulungan ang  mga pasyenteng natutumba kailangan silang magsanay sa pagbabalanse.";
-"Exercises.bulletTwoBoldPart" = "natutumba";
-"Exercises.bulletThree" = "Para makatulong habang nasa ospital at para sa mabilisang paggaling:  Inirerekomenda ng AHA/ASA ang mabagal na paglalakad, mga gawain sa pangangalaga sa sarili,  paminsan-minsang pag-upo at pagtayo, mga gawaing nakaupo, o iba’t ibang paggalaw. Dapat na ginagawa ang mga gawaing ito nang may pasensya kasama ang gabay na maabot ang 10 hanggang 20 tibok sa bawat minuto na pagtaas ng pintig ng puso, depende sa nirerekomenda ng iyong doktor.";
-"Exercises.bulletThreeBoldPart" = "habang nasa ospital at para sa mabilisang paggaling";
-"Exercises.bulletFour" = "Para matulungan ang mga pasyente sa gamutan o rehabilitasyon habang nasa loob at labas ng ospital: Inirerekomenda ng AHA/ASA ang mga aktibidad tulad ng paglalakad ng 3-5 araw kada linggo para sa 20-60 min/sesyon (o kasindami ng 10-min sesyon); pag-uunat ng 2-3 araw kada linggo para sa 10-30 segundo; Tai-Chi, yoga, at iba pang gawaing paglilibang bilang karagdagan sa  paglalakad o pag-uunat.";
-"Exercises.bulletFourBoldPart" = "pasyente sa gamutan o rehabilitasyon habang nasa loob at labas ng ospital";
-"Exercises.bulletFive" = "Para manatiling ligtas habang ginagawa ang pisikal na ehersisyo: Gumamit ng pantulong na kagamitan  para sa paglalakad at maingat na pag-eehersisyo, sa ilalim lamang ng pangangasiwa.";
-"Exercises.bulletFiveBoldPart" = "ligtas habang ginagawa ang pisikal na ehersisyo";
-"Exercises.bulletSix" = "Para mapanatili ang pisikal na kalusugan: Tiyakin sa inyong doktor  ang  ginawang plano ng aktibidad para sa pisikal na ehersisyo,  limitasyon ng tiyak na aktibidad, at ipinagbabawal na partisipasyon sa ehersisyo.";
-"Exercises.bulletSixBoldPart" = "ang pisikal na kalusugan:";
+"Exercises.problem" = "Ang mga pasyente ng stroke ay kadalasang nagkakaroon ng paghihirap maibalik ang pisikal na lakas at kakayahan.";
+"Exercises.parOne" = "Ang mga nakaligtas sa stroke ay dapat makatanggap ng rehabilitisasyon at ang tindi ay kailangang tumugma kasama ang benepisyo at kayang tiisin.";
+"Exercises.bulletOne" = "Para makatulong sa limitasyon sa paglalakad: Kailangang gumawa ang mga pasyente ng matindi, pauli-ulit, pagsasanay sa mga gawaing-panggalaw sa ilalim ng pangangasiwa ng isang propesyunal sa pangkalusugang pangangalaga.";
+"Exercises.bulletOneBoldPart" = "mga limitasyon sa paglalakad";
+"Exercises.bulletTwo" = "Para makatulong sa pagkakahulog: Ang mga pasyente ay kailangang gumawa ng mga pagsasanay sa pagbabalanse.";
+"Exercises.bulletTwoBoldPart" = "nahuhulog:";
+"Exercises.bulletThree" = "Para makatulog sa pagkaka-ospital at maagang paggaling: Iminumungkahi ng AHA/ASA ang mababang antas ng paglalakad, sariling pangangalagang gawain, paulit-ulit na upo o tayo, mga gawaing nakaupo, o iba pang mga gumagalaw na mga gawain.  Ang mga gawaing ito ay kailangang gawin na may panuntunan para makuha ang 10 hanggang 20 pintig na pagtaas kada minuto ng pintig ng puso, depende sa mungkahi ng inyong doktor.";
+"Exercises.bulletThreeBoldPart" = "pagka-ospital at maagang paggaling ";
+"Exercises.bulletFour" = "Para makatulong sa ga panloob at panlabas ng mga pasyente sa kanilang ehersisyong gamutan o rehabilitisasyon: Iminumungkahi ng AHA/ASA ang mga gawain gaya ng paglalakad ng 3-5 araw bawat linggo ng may 20-60 min/ sesyon (o maraming tig 10-min mga sesyon); pag-uunat ng 2-3 araw sa isang linggo sa loob ng 10-30 segundo; Tai chi, yoga, at mga gawaing panlibangan bilang pantulong sa paglalakad o pag-uunat.";
+"Exercises.bulletFourBoldPart" = "rehabilitisasyon at patuloy na pag-ehersisyo para sa panloob o panlabas na pasyente";
+"Exercises.bulletFive" = "Para manatiling ligtas sa twing magkakarron ng pisikal na ehersisyo:  Gumamit ng mga gamit na makakatulong sa paglalakad at mag-ingat sa pag-eehersisyo, sa ilalim ng nangangasiwa.";
+"Exercises.bulletFiveBoldPart" = "ligtas tuwing magpipisikal na ehersisyo";
+"Exercises.bulletSix" = "Para mapanatili ang pisikal na kalusugan: Isangguni sa inyong doktor para sa natatanging pisikal na gawain na gusto, partikular na limitasyon sa mga gawain, at ang mga paghihigpit sa pakikilahok sa pag-eehersisyo.";
+"Exercises.bulletSixBoldPart" = "pisikal na kalusugan:";
+
 
 /* SHOWER/BATH */
-"ShowerBath.problem" = "Getting in and out of bathtubs/showers can be dangerous, and patients are at risk of falling.";
-"ShowerBath.bulletOne" = "Pagligo>Planggana/Banyera:  Sa pangkalahatan mas ligtas ang pagligo gamit ang shower.";
-"ShowerBath.bulletOneBoldPart" = "Pagligo>Planggana/Banyera:";
-"ShowerBath.bulletTwo" = "Makatutulong  kung may makakapitan para mas madali ang pagkilos.";
-"ShowerBath.bulletTwoBoldPart" = "Grab bars";
-"ShowerBath.bulletThree" = "Bath mats with suction cups will help you avoid slipping.";
-"ShowerBath.bulletThreeBoldPart" = "Bath mats";
-"ShowerBath.paragraph" = "Siguraduhin na mayroong malapit na makakasamang maaaring tumulong kung kinakailangan. Hawakan ang bell o iba pang paraan para makatawag ng tulong. Ang pag-eensayo ng pagbalanse ay makatutulong sa taong may problema sa balanse.";
+"ShowerBath.problem" = "Pagpasok at paglabas sa bathtub/ paliguan ay maaaring mapanganib, at may panganib na mahulog ang pasyente.";
+"ShowerBath.bulletOne" = "Paliguan > tubs: Sa pangkalahatan ang mga paliguan ay mas ligtas kaysa sa mga tubs.";
+"ShowerBath.bulletOneBoldPart" = "Mga Paliguan > tubs:";
+"ShowerBath.bulletTwo" = "Ang mga grab bar ay maaaring makatulong para mas madaling kumilos.";
+"ShowerBath.bulletTwoBoldPart" = "Mga grab bar";
+"ShowerBath.bulletThree" = "Ang mga alpombra sa paliguan na may suction cups ay makakatulong para maiwasan ang pagkadulas.";
+"ShowerBath.bulletThreeBoldPart" = "Mga alpombra sa paliguan";
+"ShowerBath.paragraph" = "Siguruhin na may taong malapit na pwede kang tulungan kung kinakailangan.  Panatilihin ang kampanilya sa tabi mo o magkaroon ng ibang paraan para humingi ng tulong.  Ang pagsasanay sa pagbabalanse ay makakatulong sa mga indibidwal na may problema sa pagbabalanse.";
 
 /* HOME MOD */
-"HomeMod.problem" = "Dahil sa mararanasang limitadong pagkilos ng mga pasyente, mahalagang baguhin ang ayos ng inyong bahay para ito ay maging ligtas at madaling puntahan.";
-"HomeMod.subHeaderOne" = "Silid-Tulugan:";
-"HomeMod.contentOne" = "Para madaling puntahan ang silid-tulugan, maaari itong ayusin  sa pamamagitan ng pagtanggal sa mga nakaharang na bagay  para mabuksang mabuti  ang pintuan; lawakan ang daraanan; baligtarin ang bisagra para mabuksan ang pinto palabas sa halip na paloob. Kung kinakailangang nakasandal ang kama sa dingding, dapat na alam ito ng pasyente nang sa gayon ang apektadong parte ng katawan (mahinang parte) ay malapit sa dingding,  at ang malakas na parte ng katawan ang mahahawakan ng tutulong sa pagtayo ng pasyente mula sa higaan.";
-"HomeMod.subHeaderTwo" = "Pangkalahatan:";
-"HomeMod.contentTwo" = "Bawasan ang mga basahan para mas madaling makagalaw at maiwasan ang pagkadulas at pagkatumba.";
-"HomeMod.subHeaderThree" = "Pagligo:";
-"HomeMod.contentThree" = "Maaaring lawakan ang daraanan papunta sa banyo para magkasya at madaling makapasok ang wheelchair. Maaaring taasan ang upuan sa palikuran para mas madali itong maabot:  ang pagpapataas sa palikuran na nakapatong  sa pagitan ng sahig at palikuran; ang nakataas na upuan na nakakabit sa bowl at umaangat sa upuan;  paglalagay ng mga rehas sa palikuran para mas matibay ang suporta sa pagkilos.";
+"HomeMod.problem" = "Dahil ang mga pasyente ay maaaring makaanas ng limitadong paggalaw, mahalaga na ayusin ang inyong bahay upang it ay ligtas at magagalawan ng maayos.";
+"HomeMod.subHeaderOne" = "Kwarto:";
+"HomeMod.contentOne" = "Ang paggalaw sa kwarto ay maaaring mapabuti sa paglipat sa mga bagay upang ang pinto ay mabuksan ng mabuti; gawing malapad ang mga pintuan; ilipat ang mga bisagra upang ang pinto ay magbukas palabas sa halip na sa loob.  Kung ang kama ay kailangang nakasandal sa pader, ito ay dapat i-ayon sa apektadong bahagi ng pasyente (mahinang bahagi) malapit s apader, upang ang malakas nabahagi ay makatulong sa pasyente sa paglabas sa kama.";
+"HomeMod.subHeaderTwo" = "Heneral:";
+"HomeMod.contentTwo" = "Alisin ang mga alpombra na madaling gumalaw para maiwasan ang pagkadulas at pagka-hulog.";
+"HomeMod.subHeaderThree" = "Pagligo/ Paliguan:";
+"HomeMod.contentThree" = "Ang mga paliguan ay maaaring mas madaling galawan ng upuang-gulong sa pamamagitan ng pagpapalapad ng pintuan.  Ang mga inidoro sa banyo ay maaaring itaas para maging mas madali ang pagpunta at pag-alis ng inidoro;  isang toilet elevator na inilalagay sa pagitan ng sahig at inidoro;  isang seat elevator na inilalagay sa inidoro at nagtataas sa upuan; ang pagkabit ng toilet rails/ grab bars para mapabuti ang suporta paggalaw.";
 
 /* REMINDERS VIEW CONTROLLER */
-"Reminders.title" = "Reminders";
-"Reminders.todaysReminders" = "Today's reminders";
-"Reminders.allReminders" = "All reminders";
-"Reminders.addReminderButton" = "Add Reminder";
+"Reminders.title" = "Mga Paalala";
+"Reminders.todaysReminders" = "Mga paalala ngayong araw";
+"Reminders.allReminders" = "lahat ng mga paalala";
+"Reminders.addReminderButton" = "Magdagdag ng Paalala";
 
 /* ADDING REMINDERS */
-"Reminders.remindMeTo" = "Remind me to...";
-"Reminders.takeMedicine" = "Take my medicine";
-"Reminders.doctorsVisit" = "Doctor's visit";
-"Reminders.bloodTest" = "Blood test";
-"Reminders.exercise" = "Exercise";
-"Reminders.medication" = "Medication";
-"Reminders.howOften" = "How often?";
-"Reminders.daily" = "Daily";
-"Reminders.weekly" = "Weekly";
-"Reminders.custom" = "Custom";
-"Reminders.everyday" = "Everyday.";
-"Reminders.every" = "Every ";
-"Reminders.and" = "and";
-"Reminders.next" = "next";
-"Reminders.save" = "save";
-"Reminders.back" = "back";
-"Reminders.sunday" = "Sunday";
-"Reminders.monday" = "Monday";
-"Reminders.tuesday" = "Tuesday";
-"Reminders.wednesday" = "Wednesday";
-"Reminders.thursday" = "Thursday";
-"Reminders.friday" = "Friday";
-"Reminders.saturday" = "Saturday";
-"Reminders.sundays" = "Sundays";
-"Reminders.mondays" = "Mondays";
-"Reminders.tuesdays" = "Tuesdays";
-"Reminders.wednesdays" = "Wednesdays";
-"Reminders.thursdays" = "Thursdays";
-"Reminders.fridays" = "Fridays";
-"Reminders.saturdays" = "Saturdays";
+"Reminders.remindMeTo" = "Ipaalala mo sa akin na...";
+"Reminders.takeMedicine" = "Inumin ang gamot ko";
+"Reminders.doctorsVisit" = "Pagbisita ng Doktor";
+"Reminders.bloodTest" = "Pagsuri sa Dugo";
+"Reminders.exercise" = "Ehersisyo";
+"Reminders.medication" = "Gamutan";
+"Reminders.howOften" = "Gaano kadalas?";
+"Reminders.daily" = "Araw-araw";
+"Reminders.weekly" = "Kada Linggo";
+"Reminders.custom" = "Pasadya";
+"Reminders.everyday" = "Araw-araw.";
+"Reminders.every" = "Sa tuwing ";
+"Reminders.and" = "at";
+"Reminders.next" = "sunod";
+"Reminders.save" = "i-save";
+"Reminders.back" = "balik";
+"Reminders.sunday" = "Linggo";
+"Reminders.monday" = "Lunes";
+"Reminders.tuesday" = "Martes";
+"Reminders.wednesday" = "Miyerkules";
+"Reminders.thursday" = "Huwebes";
+"Reminders.friday" = "Biyernes";
+"Reminders.saturday" = "Sabado";
+"Reminders.sundays" = "Linggo";
+"Reminders.mondays" = "Lunes";
+"Reminders.tuesdays" = "Martes";
+"Reminders.wednesdays" = "Miyerkules";
+"Reminders.thursdays" = "Huwebes";
+"Reminders.fridays" = "Biyernes";
+"Reminders.saturdays" = "Sabado";
 "Reminders.sundayAbbrev" = "S";
 "Reminders.mondayAbbrev" = "M";
 "Reminders.tuesdayAbbrev" = "T";
@@ -277,191 +285,43 @@
 "Reminders.thursdayAbbrev" = "T";
 "Reminders.fridayAbbrev" = "F";
 "Reminders.saturdayAbbrev" = "S";
-"Reminders.atWhatTime" = "What time(s)?";
-"Reminders.remindMeAt" = "Remind me at:";
-"Reminders.addTime" = "Add Time";
-"Reminders.editTitle" = "Edit Reminder";
-"Reminders.saveChanges" = "Save changes";
-"Reminders.oneTimeReminder" = "Make this a one time reminder";
+"Reminders.atWhatTime" = "Anong (mga) oras?";
+"Reminders.remindMeAt" = "Ipaalala mo sa akin sa:";
+"Reminders.addTime" = "Magdagdag ng oras";
+"Reminders.editTitle" = "I-edit ang Paalala";
+"Reminders.saveChanges" = "I-save ang mga binago";
+"Reminders.oneTimeReminder" = "Gawin itong paalala ng makaisang beses lang";
+
 
 /* SURVEYS */
 "Surveys.password" = "Password";
 
 /* GENERAL INFO */
 "GeneralInfo.aboutUs" = "Tungkol sa Amin";
-"GeneralInfo.termsOfUse" = "Terms of Use";
-"GeneralInfo.privacyPolicy" = "Privacy Policy";
+"GeneralInfo.termsOfUse" = "Mga Tuntuning ng Paggamit";
+"GeneralInfo.privacyPolicy" = "Patakaran sa Pagka-pribado";
 "GeneralInfo.copyright" = "Copyright";
 
-/* ABOUT US */
-"AboutUs.aboutTheApp" = "Introduksiyon sa Mobile App";
-"AboutUs.paragraphOne" = "Ang HEALTH4THEWORLD STROKE HOPE APP ay isang libreng kagamitang pang-edukasyon para maipalaganap ang kaalaman ukol sa mapanganib na pangunahing  sanhi ng stroke, segundaryong pag-iingat, tamang pagkilos makaraang ma-stroke at pag-aaral ng tamang pag-eehersisyo at estratehiya sa pagsasalita.  Nilikha ito ng Health4TheWorld, isang organisasyong non-profit na binuo dahil sa nabigong  pandaigdigang pangangailangan sa medikal. Nilalayon ng organisasyon na mabigyan ng solusyon ang di-pagkakapantay-pantay na kalusugan sa pamamagitan ng makabagong teknolohiya at makapaghatid ng ngiti sa iba’t ibang dako ng mundo.";
-"AboutUs.paragraphTwo" = "With an estimated incidence of 16.9 million and a prevalence of 33 million according to the World Health Organization, stroke is a dominant diseased entity in the category of cardiovascular diseases, and is a leading cause of serious long-term disability. The global burden of stroke falls disproportionately on low and middle-income countries, prompting us to improve global health educational outreach. We hope that this stroke educational app will be helpful.";
-"AboutUs.paragraphThree" = "May iba’t ibang katangian ang app na ito na inaasahan naming makatutulong sa inyo";
-"AboutUs.featureOne" = "Pag-aaral ukol sa Stroke – Mga impormasyon ukol sa sanhi at pangunahing dahilan ng stroke na may kasamang gabay mula sa American Stroke Association, mga ebidensyang ibinatay sa mga artikulo at iba pang pinagmumulan nito. Magandang isipin na ang mga ito ay mga  pangkalahatang mungkahing pang-edukasyon at hindi rekomendasyon para sa panggagamot. Dapat na mag-usap ang pasyente at ang doktor para makagawa ng isang programa sa pangangasiwa kung paano maiiwasan ang stroke.";
-"AboutUs.featureTwo" = "Video Animation at Mga Mungkahing Ehersisyo para sa Paggaling mula sa pagkaka-stroke - Binuod ng mga eksperto sa Medisinang Pisikal at Rehabilitasyon mula sa Stanford, University of California, San Francisco at University of Southern California  ang pag-aaral para sa pag-eehersisyo at rehabilitasyon pagkatapos ng stroke. Pangkalahatang ehersisyo ito na naglalayong makapagbigay hindi lamang ng payong medikal kundi upang makapagbigay din ng gabay pang-edukasyon. Kailangan itong isagawa kasama ang occupational therapist at/o physical therapist, kung saan makatutulong sa tamang pamamaraan at pagdisenyo, at  tamang pangangasiwa na makatutulong ng mabuti sa pasyenteng na-stroke. Kailangan na laging naroon ang tagapangalaga para tumulong. Nahahati ito sa pagpapalakas, pag-uunat,  at tamang pagkilos. Mangyaring payuhan ang inyong pasyente tungkol sa tamang paraan, bilang o dami at pangangasiwa ng mga ehersisyong ito.";
-"AboutUs.featureThree" = "Paalala para sa Medikasyon at mga Pagkonsulta sa Doktor: Isang pangunahing isyu ang pagsunod sa medikasyon at pagkonsulta kaya inaasahan na makatutulong ang instrumento/kasangkapang ito! Kung maaari, mangyaring magtakda ng mga paalala para sa inyong mga pasyente.";
-"AboutUs.featureFour" = "•	Mga Estratehiya sa Pagsasalita pagkatapos ng Stroke-  Makatutulong ang resulta ng boses ng  press button kasama ang batayang komunikasyon.  Layuning maisalin ito sa iba’t ibang lenggwahe nang sa gayon mapakinabangan ito ng mga pangkalusugang propesyon at mga pasyenteng nasa malayo at liblib na lugar sa ating mundo na hindi makakapunta rito.";
-"AboutUs.team" = "Team";
-"AboutUs.teamIntro" = "Hindi magiging posible ang aplikasyong ito kundi dahil sa pagsisikap  ng dream team!";
-"AboutUs.founders" = "Mga Tagapagtatag";
-"AboutUs.developers" = "Software engineer at Tagapagbuo ng app";
-"AboutUs.animations" = "Mga Animasyon";
-"AboutUs.illustrations" = "Mga Ilustrasyon";
-"AboutUs.contentEditing" = "Nilalaman ng Pag-eedit";
-"AboutUs.movies" = "Mga Pelikula";
-"AboutUs.advisoryBoard" = "Lupon ng Tagapayong Medikal para sa App";
-"AboutUs.marcFisher" = "Dr. Marc Fisher: Si Dr. Fisher ay kasalukuyang nanunungkulan bilang punong editor ng Stroke at Mga Nakatataas na Manggagamot sa Serbisyong Stroke sa BIDMC, Paaralang Medikal sa Harvard. Isa siyang tanyag at malawak na nakapaglunsad na ng humigit sa 260 artikulong kasamang pinag-aralan at nag-edit o kasamang editor sa 13 aklat.";
-"AboutUs.jeffreyTeraoke" = "Dr. Jeffrey Teraoke: Si Dr. Teraoke ang Puno, PM & R sa Palo Alto Medical Center.  Siya ang Direktor ng Programa ng PM&R Residency Program at Direktor ng Polytrauma VA Palo Alto Health System.";
-"AboutUs.ericaPitsch" = "Dr. Erica A. Pitsch, PT, MPT, DPT, NCS: Katuwang na Tagasuring Propesor si Dr. Pitsch sa Agham Pangkalusugan, UCSF. Nagpakadalubhasa siya sa Physical therapy at gumagamit ng iba’t ibat estratehiya at lapit sa panggagamot, lahat ay nakatuon sa pagpapalaganap ng pinakamagagaling na hamon, at paggaling ng pasyenteng may roong sakit sa pag-iisip.";
-"AboutUs.lorenWard" = "Isang lisensyadong Physical Therapist si Loren Ward, PT, DPT kung saan nagsimula ang kanyang karera sa Physical Therapy noong 2007, habang tinatapos ang kanyang doktorado sa MGH Surian ng mga Propesyong Pangkalusugan sa Massachusetts.  Nagsanay siya ng panggagamot sa Rehabilitasyon ng Chicago,  Spaulding Rehabilitasyon at  Ospital ng Pambansang Rehabilitasyon at kasalukuyang nagtatrabaho sa Stanford Veteran’s Affairrs System.  Si Loren ay isang tagapagtaguyod ng sariling pagkilos at nagsusumikap para makatulong sa kanyang mga pasyente na maabot ang antas ng kanilang kalayaan sa kabila ng kanilang mga limitasyon.";
-"AboutUs.roseHamm" = "Rose Hamm, PT, DPT, CWS, FACCWS: Nagtamo si Rose ng BS Physical Therapy mula sa Unibersidad ng North Carolina, Chapel Hill, at isa rin siyang MS at DPT gradwadong pag-aaral mula sa Unibersidad ng Southern California. Siya ay kasalukuyang dagdag na Katuwang na Propesor ng Clinical Physical Therapy sa Unibersidad ng Southern California at mga gawain sa Ospital ng Keck at USC.";
-
-
-/* Quotes Section */
-"Quotes.title" = "Today's Inspirational Quote";
-
-/* Relaxing Music Section */
-"Music.title" = "Relaxing Music";
-
-/* TERMS OF USE */
-"Terms.thankYouParOne" = "These terms and conditions of use (\"Terms\") are an agreement between Health4TheWorld (the “Health4TheWorld,” “we,” “us,” or “our”) and you (either you as an individual or the entity or organization on whose behalf you are entering into these terms and conditions) for access to and use of this website, which includes, media, documentation, pictures and other content, (collectively, the \"Website\"), as well as for access to and use of any products, services, and downloadable applications provided by Health4TheWorld (the “Services”). Please read these Terms carefully, and contact us at contact@health4theworld.org for any questions. Our Services also include downloadable applications, cloud-based applications, mobile and desktop applications, and applications in which our content is distributed via third-party sites.";
-"Terms.thankYouParTwo" = "BY COPYING, DOWNLOADING OR OTHERWISE ACCESSING OR USING THE WEBSITE, APP OR SERVICES, YOU AGREE TO BE BOUND BY THESE TERMS, INCLUDING THE WARRANTY DISCLAIMERS AND LIMITATION OF LIABILITY PROVISIONS BELOW. IF YOU DO NOT UNDERSTAND OR AGREE TO THESE TERMS, DO NOT ACCESS OR USE THE WEBSITE OR SERVICES AND PLEASE EXIT THE WEBSITE NOW.";
-"Terms.thankYouParThree" = "Health4TheWorld reserves the right to modify these Terms at any time without advance notice. Any changes to these Terms will be effective immediately upon posting on this page, with an updated effective date. By accessing the Website or Services after any changes have been made, you signify your agreement on to the modified Terms and all of the changes.";
-"Terms.useSectionOneHeader" = "Access to and Use of Website, mobile app and Services";
-"Terms.useSectionOneParOne" = "You may use our Website, Mobile application and Services only if you can form a binding contract with Health4TheWorld, and only in compliance with these Terms and all applicable laws. When retrieving information from the Website or Services, you are prohibited from (a) using or attempting to use spiders, robots, avatars, intelligent agents, or any other extraction or navigation search except for a normal browser, (b) aggregating, copying or duplicating any of the materials or information available from the Website or Services except for the small amount of materials and information temporarily required for an ordinary single use of the Website and/or Services, or (c) accessing data not intended for you. As a condition of your use or access of the Website and Services, you agree as follows:";
-"Terms.useSectionOneBulletOne" = "Any use or access by anyone under the age of 13 is prohibited, and certain courses and materials provided on the Website and made available through the Services may have additional requirements and/or restrictions.";
-"Terms.useSectionOneBulletTwo" = "You shall provide us with accurate and complete information, and you agree to update your contact and account information and to keep it accurate and complete at all times.";
-"Terms.useSectionOneBulletThree" = "You shall only access or use the Website or Services with a compatible device or computer. We assume no responsibility or liability for loss resulting from failure to comply with this provision.";
-"Terms.useSectionOneBulletFour" = "You shall not use the Website or Services for any illegal or unauthorized purposes.";
-"Terms.useSectionOneBulletFive" = "You shall not duplicate or resell the Services.";
-"Terms.useSectionOneBulletSix" = "You shall not transmit worms, viruses or any code of a destructive nature to the Health4TheWorld, other users, the Website, or the Services.";
-"Terms.useSectionOneParTwo" = "Any use of the Website or the Services in violation of the foregoing violates these Terms and may result in, among other things, termination or suspension of your rights to use the Website and the Services. We reserve the right to monitor your use of the Website and the Services to ensure your compliance with these Terms, or pursuant to a court, administrative, or governmental order. Furthermore, we reserve the right to deactivate or suspend your use of the Website or the Services for any reason. In addition to these Terms, your use of the Website and/or Services is governed by our Privacy Policy. You agree that Health4TheWorld’s collection, use and sharing of any personal information will be as set forth in the Privacy Policy, which may be amended by us from time to time. The Privacy Policy and any posted terms or guidelines are hereby incorporated by reference into these Terms.";
-"Terms.useSectionTwoHeader" = "Our License to You";
-"Terms.useSectionTwoParagraph" = "Subject to your compliance with these Terms and our policies (including the Acceptable Use Policy, Honor Code, Privacy Policy and other terms), we grant you a limited, personal, non-exclusive, non-transferable, and revocable license to use our Website and Services. You may download content from our Website and Services only for your personal, non-commercial use, unless you obtain Health4TheWorld's written permission to otherwise use the content. All other rights are reserved. You also agree that you will create, access, and/or use only one user account, and you will not share with any third party access to or access information for your account. In consideration of this license, you agree that: (a) any copy you make of the pages, data, text, images, audio, video, or other content within the Website, Mobile application or Services shall retain all copyright and other proprietary notices contained in such materials; and (b) any such materials shall distributed solely in accordance with these Terms. Notwithstanding the foregoing, you may not sell, transfer, share, license, or sublicense the Website, mobile application or Services to any third party and you may not use the Website, Mobile application or Services for the purpose of indirectly or directly competing with Health4TheWorld. Using our Website, Mobile application or Services does not give you ownership of any intellectual property rights therein or to the content you access.  Furthermore, as some of our Services may be software that is downloaded to your computer, phone, tablet, or other device, you agree that we may automatically update this software, and that these Terms will apply to such updates.";
-"Terms.eduSectionOneHeader" = "Content Modifications";
-"Terms.eduSectionOnePar" = "While we take pride in our world-class educational content, unexpected events do occur. Health4TheWorld reserves the right to cancel, interrupt, reschedule or modify any educational content or the point value or weight of any assignment, quiz, or other assessment. Offered educational contents are subject to the Disclaimers and Limitation of Liability sections below.";
-"Terms.eduSectionTwoHeader" = "No Academic Credit";
-"Terms.eduSectionTwoPar" = "Unless otherwise explicitly indicated by a credit-granting institution, participation in or completion of a course provided through our Website or Services does NOT confer any academic credit. Even if credit is awarded by one institution, there is no presumption that other institutions will accept that credit. You agree not to accept credit for completing a course through our Website or Services unless you have earned a Course Certificate (or other equivalent Health4TheWorld credential) for that course. Health4TheWorld, the course instructors, and the associated participating institutions have no obligation to have a course recognized by any educational institution or accreditation organization.";
-"Terms.eduSectionThreeHeader" = "Disclaimer of Student-University Relationship";
-"Terms.eduSectionThreePar" = "Nothing in these Terms or otherwise with respect to your participation in any course: (a) establishes any relationship between you and any educational institution with which Health4TheWorld may be affiliated; (b) enrolls or registers you in any educational institution, or in any course offered by any educational institution; or (c) entitles you to use the resources of any educational institution beyond participation in the course.";
-"Terms.eduSectionFourHeader" = "Education Research";
-"Terms.eduSectionFourPar" = "Health4TheWorld is committed to advancing the science of learning and teaching, and records of your participation in courses may be used for education research. In the interest of this research, you may be exposed to variations in the course content. Research findings will typically be reported at the aggregate level. Your personal identity will not be publicly disclosed in any research findings without your express consent.";
-"Terms.eduSectionFiveHeader" = "Disclaimer about Medical Content and its Use";
-"Terms.eduSectionFivePar" = "The information provided and views and opinions expressed by any individuals during the course of lecturers, mobile application content or via any other services,  are their own and do not necessarily represent the views, opinions, or positions of the Health4TheWorld or any of its subsidiary programs or divisions. The channel, site, and all materials contained herein or otherwise affiliated with Health4TheWorld are intended only for educational purposes, and are not intended to be, and should not be interpreted as, medical advice. Although reasonable efforts have been made to ensure the information contained in these lectures and educational material in the mobile application was current and accurate at the time of publication, neither Health4TheWorld, nor any individual who has furnished content or been involved in the presentation of this material, either orally or in writing can guarantee that all information is accurate and valid. Health4TheWorld makes no warranty, express or implied, that any information provided in the lectures is accurate or has remained accurate due to advances in research, or changes to guidelines and other standards of care. Nothing contained in any lecture, podcast, mobile application or other media platform creates or has created or is intended to create, implicitly or explicitly, any manner of patient-physician relationship.";
-"Terms.yourContentSectionOneHeader" = "User Content";
-"Terms.yourContentSectionOnePar" = "The Website, Mobile application and Services enable you to share your content, such as quizzes, exams, projects, assignments, and other content you submit in association with your use of the Website and Services, including without limitation any data, text, links, video files, photos, posts you make in the forums, and the like (\"User Content\"), with Health4TheWorld, instructors, and/or other users. Such User Content will be deemed to be non-confidential and shall also include any content you submit to Health4TheWorld via our \"Contact Us\" page or by emailing any employees of Health4TheWorld. You represent and warrant that all User Content that you may send to Health4TheWorld shall be your wholly original material (except for material that you are using with the permission of its owner), and does not misappropriate, infringe or otherwise violate any copyright, trademark, intellectual property or other rights of any third party, including any rights of privacy or publicity.";
-"Terms.yourContentSectionTwoHeader" = "How Health4TheWorld and Others May Use User Content";
-"Terms.yourContentSectionTwoPar" = "To the extent that you provide User Content, you grant Health4TheWorld a fully-transferable, royalty-free, perpetual, sublicensable, non-exclusive, worldwide license to copy, distribute, modify, create derivative works based on, publicly perform, publicly display, and otherwise use the User Content. This license includes granting Health4TheWorld the right to authorize participating institutions to use User Content with their registered participants independent of the Website and Services. Nothing in these Terms shall restrict other legal rights Health4TheWorld may have to User Content, for example under other licenses, or our rights to use any User Content in any way we choose. We further reserve the right to remove or modify User Content for any reason, including User Content that we believe violates these Terms.";
-"Terms.yourContentSectionThreeHeader" = "Feedback";
-"Terms.yourContentSectionThreePar" = "We welcome your suggestions, ideas, comments, and other feedback regarding the Website or Services (\"Feedback\"). By submitting any Feedback, you grant us the right to use the Feedback without any restriction or any compensation to you. By accepting your Feedback, Health4TheWorld does not waive any rights to use similar or related Feedback previously known to Health4TheWorld, developed by its employees or contractors, or obtained from other sources.";
-"Terms.securityParagraph" = "We care about the security of our users. While we work to protect the security of your account and related information, Health4TheWorld cannot guarantee that unauthorized third parties will not be able to defeat our security measures. Please notify us immediately of any compromise or unauthorized use of your account by emailing contact@Health4TheWorld.org.";
-"Terms.thirdPartyContentPar" = "Through the Website and/or Services, you will have the ability to access and/or use content provided by instructors, other users, and/or other third parties and links to websites, software and services maintained and/or controlled by third parties. Health4TheWorld has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party websites or content providers and cannot guarantee that such third party content, in the Website, Services or elsewhere, will be free of material you may find objectionable or otherwise inappropriate or of malware or other contaminants that may harm your computer, mobile device, or any files therein. By using the Website, Mobile application or the Services, you expressly relieve the Health4TheWorld from and we expressly disclaim any responsibility or liability related to or arising from your access or use of such third party content or website. Any use of such third-party software or services is at your own risk and may subject you to additional or different terms and restrictions by the third party or third parties providing such software or operating such services.  Accordingly, we encourage you to be aware of and to read the terms and conditions and privacy policy for each item of third party software or each third party service through which you access the Website or Services.";
-"Terms.copyrightPar" = "Health4TheWorld respects the intellectual property rights of our users, participating institutions, and other third parties and expects our users to do the same when using the Website or Services. We have adopted and implemented the Health4TheWorld Copyright and Trademark Policy in accordance with applicable law, including the Digital Millennium Copyright Act.";
-"Terms.modifyingPar" = "We are constantly changing and improving our Website, Mobile Applications and Services. We may add or remove functions, features, or requirements, and we may suspend or stop a function of our Website or Services altogether. Accordingly, Health4TheWorld may terminate your use of the Website and any Services for any reason. If your use of a paid feature or the Website, Mobile application or Services is terminated, a refund may be available under our Refund Policy. None of Health4TheWorld, its participating institutions and instructors, its contributors, sponsors, and other business partners, and their respective employees, officers, directors, representatives, contractors, and other agents (collectively the \"Health4TheWorld Parties\") shall have any liability to you for any such action. You can stop using our Website or Services at any time.";
-"Terms.disclaimersParOne" = "THE WEBSITE, MOBILE APPLICATION AND ANY INFORMATION, CONTENT OR SERVICES MADE AVAILABLE ON OR THROUGH THE WEBSITE & MOBILE APPLICATION ARE PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTY OF ANY KIND (EXPRESS, IMPLIED OR OTHERWISE), INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT, EXCEPT INSOFAR AS ANY SUCH IMPLIED WARRANTIES MAY NOT BE DISCLAIMED UNDER APPLICABLE LAW.";
-"Terms.disclaimersParTwo" = "THE HEALTH4THEWORLD PARTIES DO NOT WARRANT THAT THE WEBSITE, MOBILE APPLICATION OR SERVICES WILL OPERATE IN AN UNINTERRUPTED OR ERROR-FREE MANNER, THAT THE WEBSITE OR SERVICES ARE FREE OF ERRORS, VIRUSES OR OTHER HARMFUL COMPONENTS, OR THAT THE COURSES OR CONTENT PROVIDED WILL MEET YOUR NEEDS OR EXPECTATIONS. THE HEALTH4THEWORLD PARTIES ALSO MAKE NO WARRANTY ABOUT THE ACCURACY, COMPLETENESS, TIMELINESS, OR QUALITY OF THE WEBSITE, MOBILE APPLICATION OR SERVICES OR ANY COURSES OR CONTENT, OR THAT ANY PARTICULAR COURSES OR CONTENT WILL CONTINUE TO BE MADE AVAILABLE. USE OF THE WEBSITE, MOBILE APPLICATION AND THE CONTENT AND SERVICES OBTAINED FROM OR THROUGH THE WEBSITE & MOBILE APPLICATION, IS AT YOUR OWN RISK. YOUR ACCESS TO OR DOWNLOAD OF INFORMATION, MATERIALS, SOFTWARE OR DATA THROUGH THE WEBSITE, MOBILE APPLICATIONS OR ANY REFERENCE SITES IS AT YOUR OWN DISCRETION AND RISK, AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR PROPERTY (INCLUDING YOUR COMPUTER SYSTEM) OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OR USE OF SUCH MATERIALS, SOFTWARE OR DATA, UNLESS OTHERWISE EXPRESSLY PROVIDED FOR IN THE HEALTH4THEWORLD PRIVACY POLICY. FOR THE AVOIDANCE OF DOUBT, IN NO EVENT SHALL THE HEALTH4THEWORLD PARTIES BE LIABLE TO YOU FOR ANY DEFICIENCY, ERROR, INACCURACY OR INTERRUPTION IN THE WEBSITE, MOBILE APPLICATION OR SERVICES OR FOR DAMAGES OF ANY KIND. YOUR SOLE REMEDY IN THE EVENT OF ANY DEFICIENCY, ERROR, OR INACCURACY SHALL BE TO REQUEST THAT HEALTH4THEWORLD CORRECT THE MATTER OR, IF WE FAIL TO DO SO, TO DISCONTINUE YOUR USE OF THE WEBSITE AND/OR SERVICES.";
-"Terms.limitationsParOne" = "TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE HEALTH4THEWORLD PARTIES SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM: (A) YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE THE WEBSITE, MOBILE APPLICATION OR SERVICES; (B) ANY CONDUCT OF ANY PARTY OTHER THAN THE APPLICABLE HEALTH4THEWORLD PARTIES, INCLUDING WITHOUT LIMITATION, ANY DEFAMATORY, OFFENSIVE, OR ILLEGAL CONDUCT ; (C) ANY CONTENT OBTAINED FROM THE WEBSITE, MOBILE APPLICATION OR SERVICES,; OR (C) UNAUTHORIZED ACCESS, USE, OR ALTERATION OF YOUR USER CONTENT OR ANY INFORMATION PROVIDED BY YOU. IN NO EVENT SHALL THE HEALTH4THEWORLD PARTIES’ AGGREGATE LIABILITY FOR ALL CLAIMS RELATED TO THE WEBSITE AND/OR SERVICES EXCEED THE GREATER OF TWENTY U.S. DOLLARS ($20) OR THE TOTAL AMOUNT OF FEES RECEIVED BY HEALTH4THEWORLD FROM YOU FOR THE USE OF PAID FUNCTIONS OF THE WEBSITE, MOBILE APPLICATION AND SERVICES DURING THE PAST SIX (6) MONTHS.";
-"Terms.limitationsParTwo" = "YOU ACKNOWLEDGE AND AGREE THAT THE DISCLAIMERS AND THE LIMITATIONS OF LIABILITY SET FORTH IN THE TERMS REFLECT A REASONABLE AND FAIR ALLOCATION OF RISK BETWEEN YOU AND THE HEALTH4THEWORLD PARTIES, AND THAT THESE LIMITATIONS ARE AN ESSENTIAL BASIS TO HEALTH4THEWORLD'S ABILITY TO MAKE THE WEBSITE AND SERVICES AVAILABLE TO YOU ON AN ECONOMICALLY FEASIBLE BASIS.";
-"Terms.limitationsParThree" = "YOU AGREE THAT ANY CAUSE OF ACTION RELATED TO THE WEBSITE, MOBILE APPLICATION OR SERVICES MUST COMMENCE WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES, OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY BARRED.";
-"Terms.idemnificationPar" = "You agree to indemnify, defend, and hold harmless the Health4TheWorld Parties from any and all claims, liabilities, expenses, and damages, including reasonable attorneys' fees and costs, made by any third party arising from or related to: (a) your use or attempted use of the Website and/or Services in violation of these Terms; (b) your violation of any law or rights of any third party;  (c) the User Content; or (d) or any claim of infringement or misappropriation of intellectual property or other proprietary rights of any person or entity by you.";
-"Terms.governingParOne" = "The Services are managed by Health4TheWorld, which is located in Palo Alto, California, USA. You agree that any dispute arising under or related to these Terms will be governed by the laws of the United States of America and the State of California, excluding its conflicts of law provisions. You further consent to the personal jurisdiction of and exclusive venue in the federal and state courts located in and serving Palo Alto, California as the legal forum for any such dispute, and waive any objection as to inconvenient forum.";
-"Terms.governingParTwo" = "Excluding claims for injunctive or other equitable relief, for claims related to the Services where the total amount sought is less than ten thousand U.S. Dollars ($10,000.00 USD), either you or Health4TheWorld may elect at any point during the dispute to resolve the claim through binding, non-appearance-based arbitration. The dispute will then be resolved using an established alternative dispute resolution (\"ADR\") provider, mutually agreed upon by you and Health4TheWorld. The parties and the selected ADR provider shall not involve any personal appearance by the parties or witnesses, unless otherwise mutually agreed by the parties; rather, the arbitration shall be conducted, at the option of the party seeking relief, online, by telephone, or via written submissions alone. Any judgment rendered by the arbitrator may be entered in any court of competent jurisdiction.";
-"Terms.generalTermsSectionOneHeader" = "Revisions to the Terms";
-"Terms.generalTermsSectionOnePar" = "We reserve the right to revise the Terms at our sole discretion at any time. Any revisions to the Terms will be effective immediately upon posting by us. For any material changes to the Terms, we will attempt to notify you of such changes; however, we do not assume any obligation to notify you of changes to these Terms. In all cases, your continued use of the Website and/or Services after publication of such changes, with or without notification, constitutes binding acceptance of the revised Terms.";
-"Terms.generalTermsSectionTwoHeader" = "Successors";
-"Terms.generalTermsSectionTwoPar" = "These Terms shall be binding on and inure to the benefit of your respective successors and assigns.";
-"Terms.generalTermsSectionThreeHeader" = "Severability";
-"Terms.generalTermsSectionThreePar" = "If it turns out that a particular provision of these Terms is not enforceable, this will not affect any other provisions of these Terms. If you do not comply with these Terms, and we do not take immediate action, this does not indicate that we relinquish any rights that we may have (such as taking action in the future).";
-"Terms.generalTermsSectionFourHeader" = "Participating";
-"Terms.generalTermsSectionFourPar" = "Health4TheWorld's participating institutions are third party beneficiaries of the Terms and may enforce those provisions of the Terms that relate to them.";
-"Terms.generalTermsSectionFiveHeader" = "Notice for California Users";
-"Terms.generalTermsSectionFivePar" = "Under California Civil Code Section 1789.3, California website users are entitled to the following specific consumer rights notice: The Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs may be contacted in writing at 1625 N. Market Blvd., Suite S-202, Sacramento, California 95834, or by telephone at (800) 952-5210.";
-"Terms.referencedPoliciesBulletOne" = "Acceptable Use Policy";
-"Terms.referencedPoliciesBulletTwo" = "Privacy Policy";
-"Terms.referencedPoliciesBulletThree" = "Copyright and Trademark Infringement Policy";
-"Terms.referencedPoliciesBulletFour" = "Honor Code";
-"Terms.acceptableUseParOne" = "Health4TheWorld's mission is to provide universal access to health educational materials to improve global health through the use of our website (www.Health4TheWorld.org), which includes, media, documentation, pictures and other content (collectively, the \"Website\"), as well as for access to and use of any products, services, and downloadable applications provided by Health4TheWorld (the \"Services\"). We believe strongly in preserving free speech and expression for our learners as well as academic freedom for our partner institutions and instructors. We also want to make sure that all of our learners and instructors feel safe and comfortable while using our Website and Services. We have drafted these guidelines to ensure that people understand and follow the rules when participating in our online community and otherwise using our Website and Services. Although we do not routinely screen or monitor content provided by users, we may remove or edit inappropriate content or activity reported to us or suspend, disable, or terminate a user's access to all or part of our Website or Services. Please keep in mind users who are as young as 13 years of age use our Website and Services, and we do not allow content that is inappropriate for these younger learners.";
-"Terms.acceptableUseSectionOneHeader" = "You are prohibited from using our Website or Services to share content that:";
-"Terms.acceptableUseSectionOneBulletOne" = "Contains illegal content or promotes illegal activities with the intent to commit such activities.";
-"Terms.acceptableUseSectionOneBulletTwo" = "Contains credible threats or organizes acts of real-world violence. We do not allow content that creates a genuine risk of physical injury or property damage, credibly threatens people or public safety, or organizes or encourages harm.";
-"Terms.acceptableUseSectionOneBulletThree" = "Harasses others. We encourage commentary about people and matters of public interest, but abusive or otherwise inappropriate content directed at private individuals is not allowed.";
-"Terms.acceptableUseSectionOneBulletFour" = "Violates the intellectual property, privacy, or other rights of third parties. Do not share content that you do not have the right to share, claim content that you did not create as your own, or otherwise infringe or misappropriate someone else’s intellectual property or other rights. Always attribute materials used or quoted by you to the original owner.";
-"Terms.acceptableUseSectionOneBulletFive" = "Spams others. Do not share irrelevant or inappropriate advertising, promotional, or solicitation content.";
-"Terms.acceptableUseSectionOneBulletSix" = "Otherwise violates the Health4TheWorld Terms of Use. Please note that specific courses may have additional rules and requirements.";
-"Terms.acceptableUseSectionTwoHeader" = "You also are not allowed to:";
-"Terms.acceptableUseSectionTwoBulletOne" = "Do anything that violates local, state, national or international law or breaches any of your contractual obligations or fiduciary duties.";
-"Terms.acceptableUseSectionTwoBulletTwo" = "Share your password, let anyone access your account, or do anything that might put your account at risk.";
-"Terms.acceptableUseSectionTwoBulletThree" = "Attempt to access any other user's account.";
-"Terms.acceptableUseSectionTwoBulletFour" = "Reproduce, transfer, sell, resell, or otherwise misuse any content from our Website or Services, unless specifically authorized to do so.";
-"Terms.acceptableUseSectionTwoBulletFive" = "Access, tamper with, or use non-public areas of our systems, unless specifically authorized to do so.";
-"Terms.acceptableUseSectionTwoBulletSix" = "Break or circumvent our authentication or security measures or otherwise test the vulnerability of our systems or networks, unless specifically authorized to do so.";
-"Terms.acceptableUseSectionTwoBulletSeven" = "Try to reverse engineer, reverse engineer, decompile, decode, decrypt, disassemble, or in any way derive source code from any portion of our Website or Services.";
-"Terms.acceptableUseSectionTwoBulletEight" = "Try to interfere with any user, host, or network, for example by sending a virus, overloading, spamming, or mail-bombing.";
-"Terms.acceptableUseSectionTwoBulletNine" = "Use our Website or Services to distribute malware, viruses, Trojan horses, worms, spyware, corrupted files or any other similar software that may damage the operation of another's computer or property.";
-"Terms.acceptableUseSectionTwoBulletTen" = "Impersonate or misrepresent your affiliation with any person or entity.";
-"Terms.acceptableUseSectionTwoBulletEleven" = "Encourage or help anyone do any of the things on this list.";
-"Terms.acceptableUseSectionThreeHeader" = "The following list of items is strictly prohibited on the Website:";
-
-"Terms.acceptableUseSectionThreeBulletOne" = "Content that defames, harasses or threatens others;";
-"Terms.acceptableUseSectionThreeBulletTwo" = "Content that discusses illegal activities with the intent to commit them;";
-"Terms.acceptableUseSectionThreeBulletThree" = "Content that infringes another's intellectual property, including, but not limited to, copyrights or trademarks;";
-"Terms.acceptableUseSectionThreeBulletFour" = "Profane, pornographic, obscene, indecent or unlawful content;";
-"Terms.acceptableUseSectionThreeBulletFive" = "Advertising or any form of commercial solicitation;";
-"Terms.acceptableUseSectionThreeBulletSix" = "Content related to partisan political activities;";
-"Terms.acceptableUseSectionThreeBulletSeven" = "Viruses, Trojan horses, worms, time bombs, corrupted files, malware, spyware or any other similar software that may damage the operation of another's computer or property; and";
-"Terms.acceptableUseSectionThreeBulletEight" = "Content that contains intentionally inaccurate information or that is posted with the intent of misleading others.";
-"Terms.acceptableUseSectionThreeParOne" = "Furthermore, you agree not to scrape, or otherwise download in bulk, any Website content, including but not limited to a list or directory of users on the system, on-line textbooks, User Content or user information. You agree not to misrepresent or attempt to misrepresent your identity while using the Website (although you are welcome and encouraged to use an anonymous username in the forums and to act in a manner that keeps your identity concealed).";
-"Terms.auUserContentSectionOneHeader" = "User Content Representations and Warranties";
-"Terms.auUserContentSectionOnePar" = "By submitting or distributing your User Content through the Website and/or Services, you affirm, represent and warrant (1) that you have the necessary rights, licenses, consents and/or permissions to reproduce and publish the User Content and to authorize Health4TheWorld and its users to reproduce, modify, publish and otherwise use and distribute your User Content in a manner consistent with the licenses granted by you below, and (2) that neither your submission of your User Content nor the exercise of the licenses granted below will infringe or violate the rights of any third party. You, are solely responsible for your User Content and the consequences of its posting or publishing. “User Content” is defined herein as any and all content shared or submitted by you in association with your use of the Website and/or Services, including without limitation any data, text, links, video files, photos, documents, materials, or posts you make in the forums, and the like (\"User Content\")";
-"Terms.auUserContentSectionTwoHeader" = "License Grant to Health4TheWorld";
-"Terms.auUserContentSectionTwoPar" = "By submitting or distributing your User Content, you hereby grant to Health4TheWorld a worldwide, non-exclusive, transferable, assignable, sub-licensable, fully paid-up, royalty-free, perpetual, irrevocable right and license to host, transfer, display, perform, reproduce, modify, distribute, re-distribute, relicense and otherwise use, make available and exploit your User Content, in whole or in part, in any form and in any media formats and through any media channels (now known or hereafter developed).";
-"Terms.auUserContentSectionThreeHeader" = "License Grant to Health4TheWorld Users";
-"Terms.auUserContentSectionThreePar" = "By submitting or distributing your User Content, you hereby grant to each user of the Website or Services a non-exclusive license to access and use your User Content in connection with their use of the Website and/or Services for their own personal purposes.";
-"Terms.copyRightParOne" = "Health4TheWorld respects the intellectual property rights of our instructors and other third parties and expects our users to do the same when using the Health4TheWorld.org website, and any associated media, documentation, pictures or other content (collectively the ”Website), or any related services, products or applications (the “Services”). We reserve the right to suspend, disable, or terminate the accounts of users who infringe or who are charged with infringing the copyrights, trademarks, or other intellectual property rights of third parties.";
-"Terms.copyrightSectionOneHeader" = "Copyrights";
-"Terms.copyrightSectionOneParOne" = "The Digital Millennium Copyright Act of 1998 (the \"DMCA\") provides recourse for copyright owners who believe that material appearing on the Internet infringes their rights under U.S. copyright law. A copy of the DMCA is available on the website of the U.S. Copyright Office, located at http://www.copyright.gov/legislation/dmca.pdf	";
-"Terms.copyrightSectionOneParagraphTwo" = "If you believe in good faith that any materials contained on the Website or provided through the Service infringe your copyright(s), the DMCA provides that you (or your agent) may send us a notice requesting that the infringing material be removed or access to it blocked.";
-"Terms.copyrightSectionOneParThree" = "Notices under the DMCA must include the following information:";
-"Terms.copyrightSectionOneBulletOne" = "The physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed;";
-"Terms.copyrightSectionOneBulletTwo" = "Identification of the copyrighted work claimed to have been infringed (or, if multiple copyrighted works located on the Website or provided through the Services are covered by a single notification, a representative list of such works);";
-"Terms.copyrightSectionOneBulletThree" = "Identification of the material that is claimed to be infringing or the subject of infringing activity, and information reasonably sufficient to allow Health4TheWorld to locate the material on the Website or in the Services;";
-"Terms.copyrightSectionOneBulletFour" = "The name, address, telephone number, and email address (if available) of the complaining party;";
-"Terms.copyrightSectionOneBulletFive" = "A statement that the complaining party has a good faith belief that use of the material in the alleged manner is not authorized by the copyright owner, its agent, or under law; and";
-"Terms.copyrightSectionOneBulletSix" = "A statement, under penalty of perjury, that the information in the notification is accurate and the complaining party is authorized to act on behalf of the owner of the copyright that is allegedly infringed.";
-"Terms.copyRightSectionOneParFour" = "Notices must meet the then-current statutory requirements imposed by the DMCA. Notices and counter-notices with respect to the Website and/or Services can either be sent:";
-"Terms.copyrightSectionOneBulletsTwoOne" = "Via mail to: Copyright Agent, Health4TheWorld, 501 Forest Ave Apt 1207, Palo Alto CA 94301";
-"Terms.copyrightSectionOneBulletsTwoTwo" = "Via email to: contact@health4theworld.org";
-"Terms.copyrightSectionOneParFive" = "We suggest that you consult your legal advisor before filing a DMCA notice, as false claims under the DMCA may subject filers to statutory penalties.";
-"Terms.copyrightSectionTwoHeader" = "Trademarks";
-"Terms.sectionTwoPar" = "Health4TheWorld also respects the trademark rights of others. Accounts containing content that intentionally misleads others or violates a third-party’s trademark rights may be modified, suspended, disabled, or terminated by Health4TheWorld in its sole discretion, without notice. If you are concerned that someone may be using your trademark in an infringing or unauthorized manner on our Website or Services, please email us at contact@Health4TheWorld.org, and we will review your complaint. If we deem appropriate, we may remove the offending content, warn the user who posted the content, and/or temporarily or permanently suspend or disable the individual’s account.";
-"Terms.honorCodeParOne" = "All users participating in any class must agree to abide by the following code of conduct. I hereby agree:";
-"Terms.honorCodeBulletOne" = "I will register for only one (1) user account on Health4TheWorld.com.";
-"Terms.honorCodeBulletTwo" = "My answers to quizzes, exams, projects, and other assignments will be my own work (except for assignments that explicitly permit collaboration).";
-"Terms.honorCodeBulletThree" = "I will not make solutions to quizzes, exams, projects, and other assignments available to anyone else (except to the extent an assignment explicitly permits sharing solutions). This includes both solutions written by me, as well as any solutions provided by the course staff or others.";
-"Terms.honorCodeBulletFour" = "I will not engage in any other activities that will dishonestly improve my results or dishonestly improve or hurt the results of others.";
-
 /* CHATBOT */
-"Chatbot.no" = "NO";
-"Chatbot.yes" = "YES";
-"Chatbot.lonelybutton1" = "Watch 360 videos";
-"Chatbot.lonelybutton2" = "Listen to music";
-"Chatbot.lonelybutton3" = "Inspiring quotes";
-"Chatbot.lonelybutton4" = "Stroke exercise video";
-"Chatbot.lonelybutton5" = "Get tips to tackle this";
-"Chatbot.lonelyoptions" = "What do you want to do";
-"Chatbot.exit" = "EXIT";
-"Chatbot.icon1message" = "good";
-"Chatbot.feelingbutton1" = "Lonely?";
-"Chatbot.feelingbutton2" = "Not Recovering soon?";
-"Chatbot.feelingbutton3" = "Anxious?";
-"Chatbot.feelingbutton4" = "Depressed?";
-"Chatbot.feelingbutton5" = "Can't Sleep?";
-"Chatbot.feelingbutton6" = "Feeling tired?";
-"Chatbot.feelingmessage1" = "Lonely";
-"Chatbot.feelingmessage2" = "recovery";
-"Chatbot.feelingmessage3" = "anxious";
-"Chatbot.feelingmessage4" = "Depressed";
-"Chatbot.feelingmessage5" = "sleepy";
-"Chatbot.feelingmessage6" = "fatigue";
-
+"Chatbot.no" = "HINDI";
+"Chatbot.yes" = "OO";
+"Chatbot.lonelybutton1" = "Manood ng naka-360 na mga bidyo";
+"Chatbot.lonelybutton2" = "Makinig sa musika";
+"Chatbot.lonelybutton3" = "Nagbibigay inspirasyon na mga talinhaga";
+"Chatbot.lonelybutton4" = "Bidyo para sa ehersisyo ng na-istroke";
+"Chatbot.lonelybutton5" = "Kumuha ng mga tip para harapin ito";
+"Chatbot.lonelyoptions" = "Ano ang gusto mong gawin";
+"Chatbot.exit" = "LABASAN";
+"Chatbot.icon1message" = "mabuti";
+"Chatbot.feelingbutton1" = "Nag-iisa?";
+"Chatbot.feelingbutton2" = "Hindi pa agad na gumagaling?";
+"Chatbot.feelingbutton3" = "Balisa?";
+"Chatbot.feelingbutton4" = "Nalulumbay?";
+"Chatbot.feelingbutton5" = "Hindi Makatulog?";
+"Chatbot.feelingbutton6" = "Nakakaramdam ng pagod?";
+"Chatbot.feelingmessage1" = "Malungkot";
+"Chatbot.feelingmessage2" = "pagaling na";
+"Chatbot.feelingmessage3" = "balisa";
+"Chatbot.feelingmessage4" = "Nalulumbay";
+"Chatbot.feelingmessage5" = "Inaantok";
+"Chatbot.feelingmessage6" = "Sobrang pagod";

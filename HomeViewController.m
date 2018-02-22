@@ -9,7 +9,6 @@
 #import "HomeViewController.h"
 #import "Constants.h"
 #import "HomeButton.h"
-
 #import "HelpMeSpeakViewController.h"
 #import "ExercisesViewController.h"
 #import "LearnViewController.h"
@@ -18,13 +17,13 @@
 #import "SurveysViewController.h"
 #import "ChatBotViewController.h"
 #import "EnterViewController.h"
-
 #import "AWSDynamoDBHelper.h"
-
-#import <StoreKit/StoreKit.h>
+#import <MessageUI/MessageUI.h>
 
 @interface HomeViewController ()
 @property (strong, nonatomic) IBOutlet UIView *contentView;
+@property (weak, nonatomic) IBOutlet UIButton *btnFeedback;
+@property (weak, nonatomic) IBOutlet UIButton *btnTellStory;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @end
 
@@ -32,8 +31,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    NSString *language = [[NSLocale preferredLanguages] objectAtIndex:0];
-//    NSLog(@"Language: %@", language);
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
     [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
@@ -41,15 +38,15 @@
     backBtn.frame = CGRectMake(0, 0, 25, 25);
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     self.navigationItem.leftBarButtonItem = backButton;
-    
-//  [self createLogoutButton];
+//    [self createLogoutButton];
 //    [self createRateButton];
     self.title = [NSLocalizedString(@"Home.title", nil) uppercaseString];
-    
     // User table
   /*  NSArray *userData = @[[NSNumber numberWithInteger:101],@"10/31/2017",@"10/31/2017",@"abc@gmail.com",@"abc",@"xyz",@"abcxyz"];
     [self insertUserData: userData];
    */
+    self.btnFeedback.backgroundColor = HFTW_PRIMARY;
+    self.btnTellStory.backgroundColor = HFTW_PRIMARY;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -57,19 +54,20 @@
     [self setUpView];
 }
 
-- (void) createRateButton {
-    UIButton *rateBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    rateBtn.frame = CGRectMake(0, 0, 25, 25);
-    [rateBtn setTitle:@"Rate" forState: UIControlStateNormal];
-    [rateBtn addTarget:self action:@selector(ratePressed) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *rateBtnButton = [[UIBarButtonItem alloc] initWithCustomView:rateBtn];
-    self.navigationItem.rightBarButtonItem = rateBtnButton;
-}
--(void)ratePressed{
-    if (@available(iOS 10.3, *)) {
-        [SKStoreReviewController requestReview];
-    }
-}
+//- (void) createRateButton {
+//    UIButton *rateBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+//    rateBtn.frame = CGRectMake(0, 0, 25, 25);
+//    [rateBtn setTitle:@"Rate" forState: UIControlStateNormal];
+//    [rateBtn addTarget:self action:@selector(ratePressed) forControlEvents:UIControlEventTouchUpInside];
+//    UIBarButtonItem *rateBtnButton = [[UIBarButtonItem alloc] initWithCustomView:rateBtn];
+//    self.navigationItem.rightBarButtonItem = rateBtnButton;
+//}
+//-(void)ratePressed{
+//    if (@available(iOS 10.3, *)) {
+//        [SKStoreReviewController requestReview];
+//    }
+//}
+
 - (void) createLogoutButton {
     UIButton *logoutBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     logoutBtn.frame = CGRectMake(0, 0, 35, 25);
@@ -84,25 +82,19 @@
     float cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
     
     float startingY = SPACE_BETWEEN_CELLS;
-     NSLog(@"%f",cellWidth);
-    // Chatbot images - doctor and chat message
-    
     UIView *chatbotView = [[UIView alloc] initWithFrame: CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth/6)];
     UIImageView *chatbotMessageImage = [[UIImageView alloc] init];
     chatbotMessageImage.image = [UIImage imageNamed:@"ChatMessage"];
-    
     UIImageView *chatbotDoctorImage = [[UIImageView alloc] init];
     chatbotDoctorImage.image = [UIImage imageNamed:@"Doctor"];
-    
     chatbotMessageImage.contentMode = UIViewContentModeScaleAspectFit;
     chatbotMessageImage.layer.masksToBounds =true;
     chatbotMessageImage.translatesAutoresizingMaskIntoConstraints = false;
     chatbotDoctorImage.contentMode = UIViewContentModeScaleAspectFit;
     chatbotDoctorImage.layer.masksToBounds =true;
     chatbotDoctorImage.translatesAutoresizingMaskIntoConstraints = false;
-    
     [chatbotView addSubview: chatbotMessageImage];
-     [chatbotView addSubview: chatbotDoctorImage];
+    [chatbotView addSubview: chatbotDoctorImage];
     
     //add constraints for  images
     NSDictionary *views = @{ @"chatbotMessageImage" :  chatbotMessageImage, @"chatbotDoctorImage" : chatbotDoctorImage};
@@ -112,17 +104,11 @@
     
     //chatbot  smiley icons
     startingY += (cellWidth/6);
-    //startingY += SPACE_BETWEEN_CELLS;
-    NSLog(@"%f",startingY);
-    
     UIView *chatbotView2 = [[UIView alloc] initWithFrame: CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, (cellWidth/8))];
-    
     chatbotView2 = [self smileyIconsSetup: chatbotView2];
     
     //Other home buttons
-    
     cellWidth = ([UIScreen mainScreen].bounds.size.width / 2) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
-    
     startingY += cellWidth/3;
     startingY += SPACE_BETWEEN_CELLS;
     
@@ -133,18 +119,15 @@
     HomeButton *exercisesButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.exercises", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
     [exercisesButton addImageCentered:[UIImage imageNamed:EXERCISE_ICON]];
     [exercisesButton addTarget:self action:@selector(exercisePressed) forControlEvents:UIControlEventTouchUpInside];
-
     startingY += cellWidth;
     startingY += SPACE_BETWEEN_CELLS;
     
     HomeButton *learnButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.learn", nil) withFrame:CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth)];
     [learnButton addImageBottomRight:[UIImage imageNamed:LEARN_ICON]];
     [learnButton addTarget:self action:@selector(learnPressed) forControlEvents:UIControlEventTouchUpInside];
-    
     HomeButton *remindersButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Home.reminders", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellWidth)];
     [remindersButton addImageBottomRight:[UIImage imageNamed:REMINDERS_ICON]];
     [remindersButton addTarget:self action:@selector(remindersPressed) forControlEvents:UIControlEventTouchUpInside];
-    
     startingY += cellWidth;
     startingY += SPACE_BETWEEN_CELLS;
     
@@ -167,10 +150,12 @@
     [self.contentView addSubview:surveysButton];
     [self.contentView addSubview:chatbotView];
     [self.contentView addSubview:chatbotView2];
-
-//    [self.contentView addSubview:contactUsButton];
 //    [self.contentView addSubview:rateButton];
+    
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
+    NSLog(@"%f",startingY);
+//    self.btnFeedback.frame = CGRectMake(SPACE_BETWEEN_CELLS, startingY + 20, cellWidth, 20);
+//    self.btnTellStory.frame = CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY + 20, cellWidth, 20);
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -181,8 +166,7 @@
 - (void)backPressed {
     [self.navigationController popViewControllerAnimated:YES];
      /* insert app usage info into table*/
-    [AWSDynamoDBHelper detailedAppUsage: @[@"tap",@"back",@"Home"]];
-    
+    [AWSDynamoDBHelper detailedAppUsage: @[@"tap",@"back",@"Home"]];    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -364,5 +348,27 @@
 
 - (void) insertUserData: (NSArray*) data{
     [AWSDynamoDBHelper InsertDataIntoUsersTable:data];
+}
+
+- (IBAction)btnFeedbackTapped:(id)sender {
+    NSLog(@"Feedback");
+}
+
+- (IBAction)btnTell:(id)sender {
+    if ([MFMailComposeViewController canSendMail]){
+        MFMailComposeViewController *mail = [[MFMailComposeViewController alloc] init];
+        mail.mailComposeDelegate = self;
+        [mail setSubject:@"Tell your story"];
+        [mail setMessageBody:@"We would love to hear from you!" isHTML:NO];
+        [mail setToRecipients:@[@"contact@health4theworld.org"]];
+        [self presentViewController:mail animated:YES completion:NULL];
+    }
+    else{
+        NSLog(@"This device cannot send email");
+    }
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
+    [self dismissModalViewControllerAnimated:YES];
 }
 @end

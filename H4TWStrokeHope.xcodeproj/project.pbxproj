@@ -91,6 +91,8 @@
 		9D97478370E7B7322756F1D2 /* libPods-H4TWStrokeHope.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 680C4F0184FB59272CA0743A /* libPods-H4TWStrokeHope.a */; };
 		AB070D041FA2CDDC00D1C6F7 /* LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB070D031FA2CDDC00D1C6F7 /* LanguageManager.m */; };
 		AB13483620157FA000DB143D /* 1FunctionalMobility.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB13483520157F9F00DB143D /* 1FunctionalMobility.mp4 */; };
+		AB180F68203E4B710016B8EC /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB180F66203E4B710016B8EC /* FeedbackViewController.m */; };
+		AB180F69203E4B710016B8EC /* FeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB180F67203E4B710016B8EC /* FeedbackViewController.xib */; };
 		AB1ED669202D669A000E7D5A /* 1AToeFlexion.m4v in Resources */ = {isa = PBXBuildFile; fileRef = AB1ED668202D669A000E7D5A /* 1AToeFlexion.m4v */; };
 		AB26779D1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB26779B1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 */; };
 		AB2677B81FFC30F300BB12E0 /* IMG_3574_Side.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677AA1FFC30F300BB12E0 /* IMG_3574_Side.mp4 */; };
@@ -335,6 +337,9 @@
 		AB070D031FA2CDDC00D1C6F7 /* LanguageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageManager.m; sourceTree = "<group>"; };
 		AB070D051FA2F43500D1C6F7 /* H4TWStrokeHope.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H4TWStrokeHope.pch; sourceTree = SOURCE_ROOT; };
 		AB13483520157F9F00DB143D /* 1FunctionalMobility.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1FunctionalMobility.mp4; sourceTree = "<group>"; };
+		AB180F65203E4B710016B8EC /* FeedbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		AB180F66203E4B710016B8EC /* FeedbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
+		AB180F67203E4B710016B8EC /* FeedbackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedbackViewController.xib; sourceTree = "<group>"; };
 		AB1ED668202D669A000E7D5A /* 1AToeFlexion.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1AToeFlexion.m4v; sourceTree = "<group>"; };
 		AB26779B1FF5B1D600BB12E0 /* 3FunctionalMobility.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3FunctionalMobility.mp4; sourceTree = "<group>"; };
 		AB2677AA1FFC30F300BB12E0 /* IMG_3574_Side.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3574_Side.mp4; sourceTree = "<group>"; };
@@ -1036,6 +1041,9 @@
 				CCDFBECB1ECDE5E700C09CC8 /* TermsViewController.h */,
 				CCDFBECC1ECDE5E700C09CC8 /* TermsViewController.m */,
 				CCDFBECD1ECDE5E700C09CC8 /* TermsViewController.xib */,
+				AB180F65203E4B710016B8EC /* FeedbackViewController.h */,
+				AB180F66203E4B710016B8EC /* FeedbackViewController.m */,
+				AB180F67203E4B710016B8EC /* FeedbackViewController.xib */,
 			);
 			name = "Home/Enter Screen";
 			sourceTree = "<group>";
@@ -1321,6 +1329,7 @@
 				1737A1A11EA897E400C6D71E /* 4CSitToStand.m4v in Resources */,
 				CCB7B3F11E8FF7ED0058C32E /* Lato-Regular.ttf in Resources */,
 				17E0BB3F1EA4127D001FC7F3 /* StretchingViewController.xib in Resources */,
+				AB180F69203E4B710016B8EC /* FeedbackViewController.xib in Resources */,
 				CCB7B40A1E9413590058C32E /* LearnViewController.xib in Resources */,
 				1720A0741EA9E841009C2B87 /* ShoulderStretchViewController.xib in Resources */,
 				CCB7B4161E9413820058C32E /* GeneralInfoViewController.xib in Resources */,
@@ -1491,6 +1500,7 @@
 				1720A0631EA9E7A3009C2B87 /* HamstringsViewController.m in Sources */,
 				1720A0731EA9E841009C2B87 /* ShoulderStretchViewController.m in Sources */,
 				17E0BB431EA41370001FC7F3 /* FunctionalMobilityViewController.m in Sources */,
+				AB180F68203E4B710016B8EC /* FeedbackViewController.m in Sources */,
 				17E0BB2D1EA41069001FC7F3 /* VideoViewController.m in Sources */,
 				16AC5DA91FAFE50C0092868B /* SessionDetails.m in Sources */,
 				CC9604931EA3DE110030D2C7 /* LearnContentTypeTableViewCell.m in Sources */,

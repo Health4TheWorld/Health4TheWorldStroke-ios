@@ -120,7 +120,7 @@
     if ([context hasChanges] && ![context save:&error]) {
         // Replace this implementation with code to handle the error appropriately.
         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        NSLog(@"Unresolved error %@, %@", error, error.userInfo);
+//        NSLog(@"Unresolved error %@, %@", error, error.userInfo);
         abort();
     }
 }
@@ -129,7 +129,7 @@
 {
     if( SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO( @"10.0" ) )
     {
-        NSLog( @"iOS version >= 10. Let NotificationCenter handle this one." );
+//        NSLog( @"iOS version >= 10. Let NotificationCenter handle this one." );
         // set a member variable to tell the new delegate that this is background
         return;
     }
@@ -137,13 +137,13 @@
 
 -(void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler{
     //Called when a notification is delivered to a foreground app.
-    NSLog(@"Userinfo %@",notification.request.content.userInfo);
+//    NSLog(@"Userinfo %@",notification.request.content.userInfo);
     completionHandler(UNNotificationPresentationOptionAlert);
 }
 
 -(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler{
     //Called to let your app know which action was selected by the user for a given notification.
-    NSLog(@"Userinfo %@",response.notification.request.content.userInfo);
+//    NSLog(@"Userinfo %@",response.notification.request.content.userInfo);
 }
 
 
