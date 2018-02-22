@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -54,7 +54,6 @@
                 <constraint firstItem="Vbh-eO-iER" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="JA7-fX-65e"/>
                 <constraint firstAttribute="trailing" secondItem="N8D-lq-KwD" secondAttribute="trailing" constant="16" id="MEe-F3-kYC"/>
                 <constraint firstItem="N8D-lq-KwD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="127" id="N2r-35-jPm"/>
-                <constraint firstAttribute="bottom" secondItem="Vbh-eO-iER" secondAttribute="bottom" constant="406" id="qE1-HF-ruZ"/>
             </constraints>
             <point key="canvasLocation" x="32.5" y="77.5"/>
         </view>

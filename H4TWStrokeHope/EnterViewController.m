@@ -102,7 +102,7 @@
 /* Creates a quote label with the given text in Lato-light 22.0, 120 pixels from the top of the screen, centered horizontally, with 20 pixel borders on left and right. */
 + (UILabel *)getQuoteLabelWithText:(NSString *)quoteText offscreen:(BOOL)isOffscreen {
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
-    UIFont *quoteFont = [UIFont fontWithName:@"Lato-light" size:22.0];
+    UIFont *quoteFont = [UIFont fontWithName:@"Lato-light" size:20.0];
     /* QUOTE */
     UILabel *quote = [[UILabel alloc] initWithFrame:CGRectMake(20, 120, screenWidth, 0)];
     quote.font = quoteFont;
@@ -115,7 +115,7 @@
     if (isOffscreen) {
         quoteFrame.origin.x = screenWidth + 20;
     }
-    quoteFrame.origin.y = ([UIScreen mainScreen].bounds.size.height /2) - 60;//MM
+    quoteFrame.origin.y = ([UIScreen mainScreen].bounds.size.height /2) - 160;//MM
     quoteFrame.size.height = [Utils heightOfString:quoteText containedToWidth:quoteFrame.size.width withFont:quoteFont];
     quote.frame = quoteFrame;
     return quote;
@@ -124,12 +124,13 @@
 /* Creates an author label with the given text, 20 pixels below the bottom of |quoteLabel|, centered horizontally on the screen, Lato-light 22.0 */
 + (UILabel *)getAuthorLabelWithText:(NSString *)authorName forQuoteLabel:(UILabel *)quoteLabel offScreen:(BOOL)isOffscreen {
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
-    UIFont *quoteFont = [UIFont fontWithName:@"Lato-light" size:22.0];
+    UIFont *quoteFont = [UIFont fontWithName:@"Lato-light" size:20.0];
     /* AUTHOR */
-    UILabel *authorLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, quoteLabel.frame.origin.y + quoteLabel.frame.size.height + 20, screenWidth, 0)];
+    UILabel *authorLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, quoteLabel.frame.origin.y + quoteLabel.frame.size.height + 20, screenWidth, 0)];
     authorLabel.font = quoteFont;
     authorLabel.text = authorName;
     authorLabel.textAlignment = NSTextAlignmentCenter;
+    authorLabel.numberOfLines = 0;
     [authorLabel sizeToFit];
     CGRect authorLabelFrame = authorLabel.frame;
     authorLabelFrame.size.width = screenWidth;
@@ -173,6 +174,16 @@
     
     [self.quotes addObject:secondQuote];
     [self.authors addObject:secondAuthorLabel];
+    
+    /* Fourth quote */
+    UILabel *thirdQuote = [EnterViewController getQuoteLabelWithText:NSLocalizedString(@"Enter.thirdQuote", nil) offscreen:YES];
+    UILabel *thirdAuthorLabel = [EnterViewController getAuthorLabelWithText:NSLocalizedString(@"Enter.thirdAuthor", nil) forQuoteLabel:thirdQuote offScreen:YES];
+    
+    [self.view addSubview:thirdQuote];
+    [self.view addSubview:thirdAuthorLabel];
+    
+    [self.quotes addObject:thirdQuote];
+    [self.authors addObject:thirdAuthorLabel];
     
     /* Fourth quote */
     UILabel *fourthQuote = [EnterViewController getQuoteLabelWithText:NSLocalizedString(@"Enter.fourthQuote", nil) offscreen:YES];
@@ -222,7 +233,7 @@
     static int circleWidth = 10;
     float totalWidth = (self.quotes.count * circleWidth) + ((self.quotes.count - 1) * spaceBetweenCircles);
     float startingX = self.view.center.x - (totalWidth/2);
-    float startingY = firstAuthorLabel.frame.origin.y + firstAuthorLabel.frame.size.height + 70;
+    float startingY = thirdAuthorLabel.frame.origin.y + thirdAuthorLabel.frame.size.height + 50;
     for (int i=0; i < self.quotes.count; i++) {
         UIButton *circle = [[UIButton alloc] initWithFrame:CGRectMake(startingX, startingY, circleWidth, circleWidth)];
         if (i > 0) {
