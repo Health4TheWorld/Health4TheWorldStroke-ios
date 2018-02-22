@@ -17,6 +17,7 @@
 #import "SurveysViewController.h"
 #import "ChatBotViewController.h"
 #import "EnterViewController.h"
+#import "FeedbackViewController.h"
 #import "AWSDynamoDBHelper.h"
 #import <MessageUI/MessageUI.h>
 
@@ -25,19 +26,20 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnFeedback;
 @property (weak, nonatomic) IBOutlet UIButton *btnTellStory;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+
 @end
 
 @implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
-    [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
-    [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
-    backBtn.frame = CGRectMake(0, 0, 25, 25);
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
-    self.navigationItem.leftBarButtonItem = backButton;
+//    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
+//    [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
+//    [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
+//    backBtn.frame = CGRectMake(0, 0, 25, 50);
+//    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+//    self.navigationItem.leftBarButtonItem = backButton;
 //    [self createLogoutButton];
 //    [self createRateButton];
     self.title = [NSLocalizedString(@"Home.title", nil) uppercaseString];
@@ -47,6 +49,8 @@
    */
     self.btnFeedback.backgroundColor = HFTW_PRIMARY;
     self.btnTellStory.backgroundColor = HFTW_PRIMARY;
+    self.btnFeedback.layer.cornerRadius = 5;
+    self.btnTellStory.layer.cornerRadius = 5;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -80,7 +84,6 @@
 - (void)setUpView {
     static int SPACE_BETWEEN_CELLS = 10;
     float cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
-    
     float startingY = SPACE_BETWEEN_CELLS;
     UIView *chatbotView = [[UIView alloc] initWithFrame: CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth/6)];
     UIImageView *chatbotMessageImage = [[UIImageView alloc] init];
@@ -151,11 +154,13 @@
     [self.contentView addSubview:chatbotView];
     [self.contentView addSubview:chatbotView2];
 //    [self.contentView addSubview:rateButton];
-    
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
-    NSLog(@"%f",startingY);
 //    self.btnFeedback.frame = CGRectMake(SPACE_BETWEEN_CELLS, startingY + 20, cellWidth, 20);
 //    self.btnTellStory.frame = CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY + 20, cellWidth, 20);
+    CGRect temp = self.btnTellStory.frame;
+    temp.size.width = [UIScreen mainScreen].bounds.size.width - 15;
+    self.btnTellStory.frame = temp;
+    self.btnFeedback.frame = temp;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -218,7 +223,6 @@
 
 // Smiley icons setup
 - (UIView*) smileyIconsSetup: (UIView*) chatbotView2{
-    
     // Setup welcome Icons
     self.chatbotsmiley1 = [self createButton:self.chatbotsmiley1 withImage:QUOTES_IMAGE1];
     self.chatbotsmiley1.translatesAutoresizingMaskIntoConstraints = false;
@@ -352,7 +356,19 @@
 
 - (IBAction)btnFeedbackTapped:(id)sender {
     NSLog(@"Feedback");
+    FeedbackViewController *vc = [[FeedbackViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+//    FeedbackViewController *controller = [[FeedbackViewController alloc] initWithNibName:@"FeedbackViewController" bundle:nil];
+//    controller.modalPresentationStyle = UIModalPresentationPopover;
+//    controller.preferredContentSize = CGSizeMake(150, 300);
+//    UIPopoverPresentationController *popover =  controller.popoverPresentationController;
+//    popover.sourceView = self.view;
+//    popover.sourceRect = self.view.frame;
+//    popover.permittedArrowDirections = UIPopoverArrowDirectionAny;
+//    // display the controller in the usual way
+//    [self presentViewController:controller animated:YES completion:nil];
 }
+
 
 - (IBAction)btnTell:(id)sender {
     if ([MFMailComposeViewController canSendMail]){
@@ -369,6 +385,7 @@
 }
 
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    //[self dismissModalViewControllerAnimated:YES];
 }
 @end
