@@ -537,6 +537,4 @@
 "Chatbot.feelingmessage6" = "fatigue";
 "Chatbot.sendButtonTitle" = "Send";
 "Chatbot.enterMessage" =  "Enter message...";
-
-
-
+"Feedback.msg" = "How would you rate this app today ?";

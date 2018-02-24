@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FeedbackViewController : UIViewController
+@interface FeedbackViewController : UIViewController<UITextViewDelegate>
+
+
 @property (nonnull, retain) UIButton *chatbotsmiley1;
 @property (nonnull, retain) UIButton *chatbotsmiley2;
 @property (nonnull, retain) UIButton *chatbotsmiley3;

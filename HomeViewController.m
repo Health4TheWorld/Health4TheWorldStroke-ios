@@ -33,13 +33,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
-//    [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
-//    [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
-//    backBtn.frame = CGRectMake(0, 0, 25, 50);
-//    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
-//    self.navigationItem.leftBarButtonItem = backButton;
+    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
+    [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
+    [backBtn setContentMode:UIViewContentModeCenter];
+    [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
+    backBtn.frame = CGRectMake(10, 0, 15, 25);
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+    self.navigationItem.leftBarButtonItem = backButton;
 //    [self createLogoutButton];
 //    [self createRateButton];
     self.title = [NSLocalizedString(@"Home.title", nil) uppercaseString];
@@ -155,12 +156,19 @@
     [self.contentView addSubview:chatbotView2];
 //    [self.contentView addSubview:rateButton];
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, startingY);
-//    self.btnFeedback.frame = CGRectMake(SPACE_BETWEEN_CELLS, startingY + 20, cellWidth, 20);
-//    self.btnTellStory.frame = CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY + 20, cellWidth, 20);
     CGRect temp = self.btnTellStory.frame;
-    temp.size.width = [UIScreen mainScreen].bounds.size.width - 15;
+    temp.size.width = cellWidth;
     self.btnTellStory.frame = temp;
     self.btnFeedback.frame = temp;
+    
+//    self.btnFeedback.frame = CGRectMake(SPACE_BETWEEN_CELLS, startingY + 20, cellWidth, 20);
+//    self.btnTellStory.frame = CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY + 20, cellWidth, 20);
+
+    
+    /* Fixed width */
+//    NSLayoutConstraint *widthConstraint = [NSLayoutConstraint constraintWithItem: self.btnTellStory attribute:NSLayoutAttributeWidth                                        relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:[UIScreen mainScreen].bounds.size.width - 15];
+//    [self.btnTellStory addConstraints:@[widthConstraint]];
+//    [self.btnFeedback addConstraints:@[widthConstraint]];    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -271,7 +279,6 @@
     [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-3-[icon3(41)]-1-|" options:0 metrics:nil views: viewsIconsButton]];
     [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-3-[icon4(41)]-1-|" options:0 metrics:nil views: viewsIconsButton]];
     [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-3-[icon5(41)]-1-|" options:0 metrics:nil views: viewsIconsButton]];
-    
     return chatbotView2;
 }
 

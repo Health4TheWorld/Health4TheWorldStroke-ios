@@ -10,12 +10,14 @@
 #import "Constants.h"
 
 @interface FeedbackViewController ()
+//@property (weak, nonatomic) UITextView *textFeedback;
 @end
 
 @implementation FeedbackViewController
 
-UITextField* textFeedback;
-
+UITextView* textFeedback;
+UILabel *lbl;
+NSString *rate;
 
 // Custom icon creator for Container View
 - (UIButton*) createButton: (UIButton*) button withImage: (NSString*) imageName{
@@ -26,14 +28,54 @@ UITextField* textFeedback;
     button.clipsToBounds = YES;
     return button;
 }
+- (void)backPressed {
+    [self.navigationController popViewControllerAnimated:YES];
+    /* insert app usage info into table*/
+}
+
+- (void)submitPressed {
+    [self.navigationController popViewControllerAnimated:YES];
+    //Save to AWS
+    NSLog(@"%@",textFeedback.text);
+    /* insert app usage info into table*/
+}
 
 - (void)setUpView {
+    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
+    [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
+    [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
+    backBtn.frame = CGRectMake(10, 0, 15, 20);
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+    self.navigationItem.leftBarButtonItem = backButton;
+    
+    UIButton *submitBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [submitBtn setTitle:@"Submit" forState:UIControlStateNormal];
+    [submitBtn addTarget:self action:@selector(submitPressed) forControlEvents:UIControlEventTouchUpInside];
+    submitBtn.frame = CGRectMake(0, 0, 55, 50);
+    UIBarButtonItem *submitButton = [[UIBarButtonItem alloc] initWithCustomView:submitBtn];
+    self.navigationItem.rightBarButtonItem = submitButton;
+
+    
     static int SPACE_BETWEEN_CELLS = 10;
     float cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
     float startingY = SPACE_BETWEEN_CELLS + 60;
+    
+    
+
     UIView *chatbotView = [[UIView alloc] initWithFrame: CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth/6)];
     UIImageView *chatbotMessageImage = [[UIImageView alloc] init];
+//      UILabel *chatbotMessageImage = [[UILabel alloc] init];
+//    chatbotMessageImage.text = @"How would you rate the app ?";
     chatbotMessageImage.image = [UIImage imageNamed:@"ChatMessage"];
+//    UIImage *img = [UIImage imageNamed:@"Chat"];
+//    CGSize imgSize = chatbotMessageImage.frame.size;
+//    UIGraphicsBeginImageContext(imgSize);
+//    [img drawInRect:CGRectMake(0,0,imgSize.width,imgSize.height)];
+//    UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    chatbotMessageImage.backgroundColor = [UIColor colorWithPatternImage:newImage];
+    //chatbotMessageImage.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Chat"]];
     UIImageView *chatbotDoctorImage = [[UIImageView alloc] init];
     chatbotDoctorImage.image = [UIImage imageNamed:@"Doctor"];
     chatbotMessageImage.contentMode = UIViewContentModeScaleAspectFit;
@@ -57,30 +99,57 @@ UITextField* textFeedback;
     chatbotView2 = [self smileyIconsSetup: chatbotView2];
     [self.view addSubview:chatbotView];
     [self.view addSubview:chatbotView2];
+    CGRect rect1 = CGRectMake(SPACE_BETWEEN_CELLS, startingY + 50, cellWidth - SPACE_BETWEEN_CELLS/2  , 40);
+    lbl = [[UILabel alloc] initWithFrame:rect1];
+    lbl.textAlignment = NSTextAlignmentCenter;
+    lbl.textColor = [UIColor whiteColor];
+    lbl.text = @"Select one smiley";
+    lbl.backgroundColor = HFTW_PRIMARY;
+    [self.view addSubview:lbl];
     
-    CGRect rect = CGRectMake(SPACE_BETWEEN_CELLS, startingY + 70, cellWidth, 200);
-    textFeedback = [[UITextField alloc] initWithFrame:rect];
-    textFeedback.placeholder = @"Tell us your feedback!";
-    textFeedback.backgroundColor = [UIColor grayColor];
+    CGRect rect2 = CGRectMake(SPACE_BETWEEN_CELLS, startingY + 90, cellWidth - SPACE_BETWEEN_CELLS/2, 30);
+    UILabel *lbl1 = [[UILabel alloc] initWithFrame:rect2];
+    lbl1.textAlignment = NSTextAlignmentLeft;
+    lbl1.textColor = HFTW_PRIMARY;
+    lbl1.text = @"Tell Us Your Feedback :";
+    //lbl1.backgroundColor = HFTW_PRIMARY;
+    [self.view addSubview:lbl1];
+    
+
+    CGRect rect = CGRectMake(SPACE_BETWEEN_CELLS, startingY + 125, cellWidth - SPACE_BETWEEN_CELLS/2  ,180);
+    textFeedback = [[UITextView alloc] initWithFrame:rect];
+    textFeedback.textAlignment = NSTextAlignmentLeft;
+    textFeedback.font = [UIFont fontWithName:@"Lato-light" size:20.0];
+    textFeedback.backgroundColor = HFTW_PRIMARY;
+    textFeedback.textColor = [UIColor whiteColor];
+    [textFeedback becomeFirstResponder];
     [self.view addSubview:textFeedback];
-
-
+    textFeedback.delegate = self;
 }
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    if ([text isEqualToString:@"\n"]) {
+        textFeedback.text = [NSString stringWithFormat:@"%@\n\t",textView.text];
+    } else {
+    }
+    return YES;
+}
+
 - (void) icon1Pressed {
-    textFeedback.textAlignment = NSTextAlignmentCenter;
-    textFeedback.text = @"Today's Rating : 5";
+    lbl.text = @"Today's Rating for App : 5";
 }
 - (void) icon2Pressed {
-    textFeedback.text = @"Today's Rating : 4";
+    lbl.text = @"Today's Rating for App  : 4";
 }
+
 - (void) icon3Pressed {
-    textFeedback.text = @"Today's Rating : 3";
+    lbl.text = @"Today's Rating for App  : 3";
 }
 - (void) icon4Pressed {
-    textFeedback.text = @"Today's Rating : 3";
+    lbl.text = @"Today's Rating for App  : 2";
 }
 - (void) icon5Pressed {
-    textFeedback.text = @"Today's Rating : 1";
+    lbl.text = @"Today's Rating for App  : 1";
 }
 // Smiley icons setup
 - (UIView*) smileyIconsSetup: (UIView*) chatbotView2{

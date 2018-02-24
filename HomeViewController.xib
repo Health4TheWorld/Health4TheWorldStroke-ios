@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -25,9 +24,8 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H59-Um-BK5">
-                    <rect key="frame" x="10" y="620" width="166" height="37"/>
+                    <rect key="frame" x="10" y="620" width="172.5" height="37"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="H59-Um-BK5" secondAttribute="height" multiplier="166:37" id="OgL-SS-eTv"/>
                         <constraint firstAttribute="height" constant="37" id="Pc8-FQ-sKE"/>
                     </constraints>
                     <state key="normal" title="FEEDBACK">
@@ -38,9 +36,8 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIa-he-bFQ">
-                    <rect key="frame" x="199" y="620" width="166" height="37"/>
+                    <rect key="frame" x="192.5" y="620" width="172.5" height="37"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="166" id="Wj4-Jc-sQV"/>
                         <constraint firstAttribute="height" constant="37" id="acU-o3-reT"/>
                     </constraints>
                     <state key="normal" title="TELL US YOUR STORY">
@@ -76,6 +73,7 @@
                 <constraint firstItem="uFB-HL-wQA" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="HFK-PQ-YkC"/>
                 <constraint firstAttribute="bottom" secondItem="H59-Um-BK5" secondAttribute="bottom" constant="10" id="PTg-6O-sv6"/>
                 <constraint firstAttribute="trailing" secondItem="brs-CE-kpn" secondAttribute="trailing" id="Sdy-OB-89k"/>
+                <constraint firstItem="kIa-he-bFQ" firstAttribute="leading" secondItem="H59-Um-BK5" secondAttribute="trailing" constant="10" id="aBu-wF-beJ"/>
                 <constraint firstItem="uFB-HL-wQA" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="bM0-gc-7EN"/>
                 <constraint firstItem="brs-CE-kpn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ezw-uE-XeE"/>
                 <constraint firstAttribute="trailing" secondItem="brs-CE-kpn" secondAttribute="trailing" id="gQZ-xc-eX5"/>
