@@ -133,9 +133,9 @@
     authorLabel.numberOfLines = 0;
     [authorLabel sizeToFit];
     CGRect authorLabelFrame = authorLabel.frame;
-    authorLabelFrame.size.width = screenWidth;
+    authorLabelFrame.size.width = screenWidth - 70;
     if (isOffscreen) {
-        authorLabelFrame.origin.x = screenWidth;
+        authorLabelFrame.origin.x = screenWidth + 40;
     }
     authorLabel.frame = authorLabelFrame;
     return authorLabel;
@@ -233,7 +233,7 @@
     static int circleWidth = 10;
     float totalWidth = (self.quotes.count * circleWidth) + ((self.quotes.count - 1) * spaceBetweenCircles);
     float startingX = self.view.center.x - (totalWidth/2);
-    float startingY = thirdAuthorLabel.frame.origin.y + thirdAuthorLabel.frame.size.height + 50;
+    float startingY = thirdAuthorLabel.frame.origin.y + thirdAuthorLabel.frame.size.height + 30;
     for (int i=0; i < self.quotes.count; i++) {
         UIButton *circle = [[UIButton alloc] initWithFrame:CGRectMake(startingX, startingY, circleWidth, circleWidth)];
         if (i > 0) {
