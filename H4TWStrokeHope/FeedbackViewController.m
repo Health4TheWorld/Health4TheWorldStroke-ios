@@ -18,6 +18,7 @@
 UITextView* textFeedback;
 UILabel *lbl;
 NSString *rate;
+static int rating;
 
 // Custom icon creator for Container View
 - (UIButton*) createButton: (UIButton*) button withImage: (NSString*) imageName{
@@ -137,19 +138,24 @@ NSString *rate;
 
 - (void) icon1Pressed {
     lbl.text = @"Today's Rating for App : 5";
+    rating = 5;
 }
 - (void) icon2Pressed {
     lbl.text = @"Today's Rating for App  : 4";
+    rating = 4;
 }
 
 - (void) icon3Pressed {
     lbl.text = @"Today's Rating for App  : 3";
+    rating = 3;
 }
 - (void) icon4Pressed {
     lbl.text = @"Today's Rating for App  : 2";
+    rating = 2;
 }
 - (void) icon5Pressed {
     lbl.text = @"Today's Rating for App  : 1";
+    rating = 1;
 }
 // Smiley icons setup
 - (UIView*) smileyIconsSetup: (UIView*) chatbotView2{
@@ -201,7 +207,6 @@ NSString *rate;
     [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-3-[icon3(41)]-1-|" options:0 metrics:nil views: viewsIconsButton]];
     [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-3-[icon4(41)]-1-|" options:0 metrics:nil views: viewsIconsButton]];
     [chatbotView2 addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-3-[icon5(41)]-1-|" options:0 metrics:nil views: viewsIconsButton]];
-    
     return chatbotView2;
 }
 - (void)viewDidLoad {

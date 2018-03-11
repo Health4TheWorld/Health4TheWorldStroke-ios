@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -23,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUz-6C-Kvo">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ql1-zS-vWU">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -41,13 +40,12 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="ql1-zS-vWU" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="QYs-Cd-GSw"/>
-                <constraint firstItem="tUz-6C-Kvo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Rlx-YC-ha1"/>
-                <constraint firstItem="tUz-6C-Kvo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="WsD-Fi-wgp"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="tUz-6C-Kvo" secondAttribute="bottom" id="f5O-lk-37D"/>
+                <constraint firstItem="tUz-6C-Kvo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Rlx-YC-ha1"/>
+                <constraint firstItem="tUz-6C-Kvo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WsD-Fi-wgp"/>
+                <constraint firstAttribute="bottom" secondItem="tUz-6C-Kvo" secondAttribute="bottom" id="f5O-lk-37D"/>
                 <constraint firstItem="ql1-zS-vWU" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="jC0-26-rKi"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="tUz-6C-Kvo" secondAttribute="trailing" id="yUH-sk-RYG"/>
+                <constraint firstAttribute="trailing" secondItem="tUz-6C-Kvo" secondAttribute="trailing" id="yUH-sk-RYG"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
     </objects>
 </document>

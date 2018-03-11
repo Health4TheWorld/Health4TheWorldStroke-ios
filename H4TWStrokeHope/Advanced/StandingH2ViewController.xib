@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -37,17 +36,15 @@
                         <constraint firstItem="9Gg-w9-SeC" firstAttribute="leading" secondItem="GDQ-uu-1Tl" secondAttribute="leading" id="wPT-gq-bAh"/>
                         <constraint firstItem="9Gg-w9-SeC" firstAttribute="centerY" secondItem="GDQ-uu-1Tl" secondAttribute="centerY" id="wer-tS-Sde"/>
                     </constraints>
-                    <viewLayoutGuide key="safeArea" id="bd5-XY-ccS"/>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="GDQ-uu-1Tl" secondAttribute="trailing" id="C5N-iM-o9x"/>
                 <constraint firstItem="GDQ-uu-1Tl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SOg-MC-2RU"/>
-                <constraint firstItem="GDQ-uu-1Tl" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="gJq-jY-gPk"/>
+                <constraint firstItem="GDQ-uu-1Tl" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="gJq-jY-gPk"/>
                 <constraint firstItem="GDQ-uu-1Tl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="o3b-1x-Vgc"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
     </objects>
 </document>

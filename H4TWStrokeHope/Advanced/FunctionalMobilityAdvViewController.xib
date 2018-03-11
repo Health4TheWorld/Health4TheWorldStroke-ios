@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -47,7 +46,6 @@
                 <constraint firstItem="hd8-Y3-Qpd" firstAttribute="leading" secondItem="Irw-cb-w5V" secondAttribute="leading" id="n8B-kP-WE1"/>
                 <constraint firstItem="UAh-LM-jID" firstAttribute="width" secondItem="Irw-cb-w5V" secondAttribute="width" id="zY6-Nt-L7h"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="519-oI-mbi"/>
             <point key="canvasLocation" x="26.5" y="52.5"/>
         </view>
     </objects>
