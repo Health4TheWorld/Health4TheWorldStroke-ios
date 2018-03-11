@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -38,17 +37,15 @@
                         <constraint firstAttribute="bottom" secondItem="D7Z-xy-F4P" secondAttribute="bottom" id="lsA-Ok-dVk"/>
                         <constraint firstItem="D7Z-xy-F4P" firstAttribute="leading" secondItem="kRj-8K-jwt" secondAttribute="leading" id="mAH-Le-jPu"/>
                     </constraints>
-                    <viewLayoutGuide key="safeArea" id="HPh-im-Myf"/>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="kRj-8K-jwt" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="50k-z2-l7Z"/>
+                <constraint firstItem="kRj-8K-jwt" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="50k-z2-l7Z"/>
                 <constraint firstItem="kRj-8K-jwt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AKb-Pe-Nch"/>
                 <constraint firstItem="kRj-8K-jwt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="H7U-BY-OVW"/>
                 <constraint firstAttribute="trailing" secondItem="kRj-8K-jwt" secondAttribute="trailing" id="sco-Fo-AJG"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
     </objects>
 </document>

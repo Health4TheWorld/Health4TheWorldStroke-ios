@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -28,12 +27,11 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="jeu-F2-G5Y" secondAttribute="bottom" id="Egq-Ck-ebF"/>
-                <constraint firstItem="jeu-F2-G5Y" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="FAc-Ud-H3G"/>
-                <constraint firstItem="jeu-F2-G5Y" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="Gnj-If-Gcj"/>
-                <constraint firstItem="jeu-F2-G5Y" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="fJi-NF-gjp"/>
-                <constraint firstItem="jeu-F2-G5Y" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="45" id="z2t-dR-GvO"/>
+                <constraint firstItem="jeu-F2-G5Y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FAc-Ud-H3G"/>
+                <constraint firstItem="jeu-F2-G5Y" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="Gnj-If-Gcj"/>
+                <constraint firstItem="jeu-F2-G5Y" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="fJi-NF-gjp"/>
+                <constraint firstItem="jeu-F2-G5Y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="z2t-dR-GvO"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="32.5" y="85.5"/>
         </view>
     </objects>
