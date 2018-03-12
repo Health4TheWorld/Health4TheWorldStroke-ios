@@ -85,7 +85,7 @@
 - (void)setUpView {
     static int SPACE_BETWEEN_CELLS = 10;
     float cellWidth = ([UIScreen mainScreen].bounds.size.width) - (SPACE_BETWEEN_CELLS) - (SPACE_BETWEEN_CELLS / 2);
-    float startingY = SPACE_BETWEEN_CELLS;
+    float startingY = SPACE_BETWEEN_CELLS + self.navigationController.navigationBar.frame.size.height + ([UIApplication sharedApplication].statusBarFrame.size.height);
     UIView *chatbotView = [[UIView alloc] initWithFrame: CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth/6)];
     UIImageView *chatbotMessageImage = [[UIImageView alloc] init];
     chatbotMessageImage.image = [UIImage imageNamed:@"ChatMessage"];

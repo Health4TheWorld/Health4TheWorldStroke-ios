@@ -55,7 +55,7 @@
     [a1Button addRoundImageCentered:[UIImage imageNamed:ArmLevel1Pic] ];
     [a1Button addTarget:self action:@selector(a1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
-    HomeButton *b1Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.arms.level2", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
+    HomeButton *b1Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.arms.level2", nil) withFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
     [b1Button addRoundImageCentered:[UIImage imageNamed:ArmLevel2Pic]];
     [b1Button addTarget:self action:@selector(b1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
@@ -66,7 +66,7 @@
     [c1Button addRoundImageCentered:[UIImage imageNamed:ArmLevel3Pic]];
     [c1Button addTarget:self action:@selector(c1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
-    HomeButton *d1Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.arms.level4", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
+    HomeButton *d1Button = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.arms.level4", nil) withFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), startingY, cellWidth, cellHeight)];
     [d1Button addRoundImageCentered: [UIImage imageNamed:ArmLevel4Pic]];
     [d1Button addTarget:self action:@selector(d1Pressed) forControlEvents:UIControlEventTouchUpInside];
     
