@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedbackViewController">
             <connections>
+                <outlet property="contentView" destination="ecU-uB-Krt" id="HNk-hd-MpA"/>
+                <outlet property="scrollView" destination="uqa-Wj-g5Z" id="tat-LH-maZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +20,37 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqa-Wj-g5Z">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="451"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecU-uB-Krt" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="451"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ecU-uB-Krt" secondAttribute="bottom" id="Hn0-U2-fXL"/>
+                        <constraint firstAttribute="trailing" secondItem="ecU-uB-Krt" secondAttribute="trailing" id="M5L-2P-5vj"/>
+                        <constraint firstItem="ecU-uB-Krt" firstAttribute="leading" secondItem="uqa-Wj-g5Z" secondAttribute="leading" id="myI-uW-Ura"/>
+                        <constraint firstItem="ecU-uB-Krt" firstAttribute="centerX" secondItem="uqa-Wj-g5Z" secondAttribute="centerX" id="ptB-Vb-k5J"/>
+                        <constraint firstItem="ecU-uB-Krt" firstAttribute="top" secondItem="uqa-Wj-g5Z" secondAttribute="top" id="yBR-Cu-6uA"/>
+                        <constraint firstItem="ecU-uB-Krt" firstAttribute="centerY" secondItem="uqa-Wj-g5Z" secondAttribute="centerY" id="zJa-vW-tyC"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="UQ0-QL-kL8"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="tintColor" red="0.95294117649999999" green="0.61960784310000006" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="uqa-Wj-g5Z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FxT-PS-TGX"/>
+                <constraint firstAttribute="trailing" secondItem="uqa-Wj-g5Z" secondAttribute="trailing" id="UGN-yp-eO2"/>
+                <constraint firstItem="uqa-Wj-g5Z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ouf-aL-CBk"/>
+                <constraint firstAttribute="bottom" secondItem="uqa-Wj-g5Z" secondAttribute="bottom" constant="216" id="u80-XQ-so6"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="64.5"/>
         </view>
     </objects>
 </document>

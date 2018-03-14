@@ -78,7 +78,7 @@
 
 /* Load all reminders, and then figure out which ones are today. */
 - (void)setUpTodayReminders {
-    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDateComponents *comps = [gregorian components:NSCalendarUnitWeekday fromDate:[NSDate date]];
     long weekday = [comps weekday];
     [self.todayReminders removeAllObjects];

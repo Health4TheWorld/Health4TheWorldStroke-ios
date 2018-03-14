@@ -333,6 +333,30 @@ static NSMutableArray *appSessionDetailsArray;
     return nil;
 }
 
++ (AWSTask *) InsertDataIntoFeedbackTable:(NSArray*) data {
+    AWSDynamoDBObjectMapper *dynamoDBObjectMapper = [AWSDynamoDBObjectMapper defaultDynamoDBObjectMapper];
+    
+    Feedback *feedback = [Feedback new];
+    /*Feedback : DeviceId, comment, rating, story, timestamp*/
+    feedback.DeviceId = [data objectAtIndex:0];
+    feedback.comment = [data objectAtIndex:1];
+    feedback.rating = [data objectAtIndex:2];
+    feedback.story  = [data objectAtIndex:3];
+    feedback.timestamp = [data objectAtIndex:4];
+    NSLog(@" current object : %@",feedback);
+    
+    [[dynamoDBObjectMapper save: chat_log]
+     continueWithBlock:^id(AWSTask *task) {
+         if (task.error) {
+             NSLog(@"The request failed. Error: [%@]", task.error);
+         } else {
+             //Do something with task.result or perform other operations.
+         }
+         return nil;
+     }];
+    return nil;
+}
+
 // Clear objects from User Defaults to retain only current session information
 + (void) clearSessionDataLog {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];

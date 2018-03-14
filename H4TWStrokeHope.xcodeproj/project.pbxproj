@@ -13,7 +13,6 @@
 		167883A91EE1029900B106AD /* ChatBotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883A71EE1029900B106AD /* ChatBotViewController.m */; };
 		167883AA1EE1029900B106AD /* ChatBotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167883A81EE1029900B106AD /* ChatBotViewController.xib */; };
 		167883AF1EE25EED00B106AD /* GVRVideoViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883AE1EE25EED00B106AD /* GVRVideoViewManager.m */; };
-		16811F411FA04720008B3E1F /* AWSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 16811F401FA04720008B3E1F /* AWSConstants.m */; };
 		16811F451FA3E433008B3E1F /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = 16811F441FA3E433008B3E1F /* Users.m */; };
 		16811F481FA80D95008B3E1F /* AWSDynamoDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 16811F471FA80D95008B3E1F /* AWSDynamoDBHelper.m */; };
 		168389811EC66D8F007D15C6 /* VRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1683897F1EC66D8F007D15C6 /* VRViewController.m */; };
@@ -101,6 +100,7 @@
 		AB2677BD1FFC30F300BB12E0 /* IMG_3580.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677AF1FFC30F300BB12E0 /* IMG_3580.mp4 */; };
 		AB2677BE1FFC30F300BB12E0 /* IMG_3578.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677B01FFC30F300BB12E0 /* IMG_3578.mp4 */; };
 		AB2677C41FFC30F300BB12E0 /* 3571_Back.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB2677B71FFC30F300BB12E0 /* 3571_Back.mp4 */; };
+		AB85255E20599D6B00B27467 /* Feedback.m in Sources */ = {isa = PBXBuildFile; fileRef = AB85255D20599D6B00B27467 /* Feedback.m */; };
 		ABADA70B200E7266008C5977 /* StandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6E2200E7266008C5977 /* StandingViewController.xib */; };
 		ABADA70C200E7266008C5977 /* SittingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA6E3200E7266008C5977 /* SittingViewController.m */; };
 		ABADA70D200E7266008C5977 /* FunctionalMobilityAdvViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA6E5200E7266008C5977 /* FunctionalMobilityAdvViewController.xib */; };
@@ -225,7 +225,6 @@
 		167883AD1EE25EED00B106AD /* GVRVideoViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVRVideoViewManager.h; sourceTree = "<group>"; };
 		167883AE1EE25EED00B106AD /* GVRVideoViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVRVideoViewManager.m; sourceTree = "<group>"; };
 		16811F3F1FA04720008B3E1F /* AWSConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSConstants.h; sourceTree = "<group>"; };
-		16811F401FA04720008B3E1F /* AWSConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWSConstants.m; sourceTree = "<group>"; };
 		16811F431FA3E433008B3E1F /* Users.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Users.h; sourceTree = "<group>"; };
 		16811F441FA3E433008B3E1F /* Users.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Users.m; sourceTree = "<group>"; };
 		16811F461FA80D95008B3E1F /* AWSDynamoDBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSDynamoDBHelper.h; sourceTree = "<group>"; };
@@ -351,6 +350,8 @@
 		AB78C48B1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		AB78C48C1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		AB78C48D1F61D72E00226869 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AB85255C20599D6B00B27467 /* Feedback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feedback.h; sourceTree = "<group>"; };
+		AB85255D20599D6B00B27467 /* Feedback.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Feedback.m; sourceTree = "<group>"; };
 		ABADA6E2200E7266008C5977 /* StandingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StandingViewController.xib; sourceTree = "<group>"; };
 		ABADA6E3200E7266008C5977 /* SittingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SittingViewController.m; sourceTree = "<group>"; };
 		ABADA6E4200E7266008C5977 /* StandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandingViewController.h; sourceTree = "<group>"; };
@@ -552,7 +553,6 @@
 			isa = PBXGroup;
 			children = (
 				16811F3F1FA04720008B3E1F /* AWSConstants.h */,
-				16811F401FA04720008B3E1F /* AWSConstants.m */,
 				16811F461FA80D95008B3E1F /* AWSDynamoDBHelper.h */,
 				16811F471FA80D95008B3E1F /* AWSDynamoDBHelper.m */,
 			);
@@ -570,6 +570,8 @@
 				16AC5DA81FAFE50C0092868B /* SessionDetails.m */,
 				16BB397D1FEC47AB00E3C7BD /* ChatbotLog.h */,
 				16BB397E1FEC47AB00E3C7BD /* ChatbotLog.m */,
+				AB85255C20599D6B00B27467 /* Feedback.h */,
+				AB85255D20599D6B00B27467 /* Feedback.m */,
 			);
 			name = "DynamoDb Object Models";
 			sourceTree = "<group>";
@@ -1496,6 +1498,7 @@
 				16AADA781F219CBD00D8A8EB /* RelaxingMusicViewCell.m in Sources */,
 				CC11D1451EB6E7D00063E72A /* TimeTableViewCell.m in Sources */,
 				1720A0781EA9E85D009C2B87 /* ArmStretchViewController.m in Sources */,
+				AB85255E20599D6B00B27467 /* Feedback.m in Sources */,
 				CCB7B3FD1E9412510058C32E /* HelpMeSpeakViewController.m in Sources */,
 				1720A0631EA9E7A3009C2B87 /* HamstringsViewController.m in Sources */,
 				1720A0731EA9E841009C2B87 /* ShoulderStretchViewController.m in Sources */,
@@ -1529,7 +1532,6 @@
 				ABADA722200E7266008C5977 /* StandingH1ViewController.m in Sources */,
 				ABADA713200E7266008C5977 /* FunctionalMobilityAdvViewController.m in Sources */,
 				1720A0681EA9E7DC009C2B87 /* DorsiflexorsViewController.m in Sources */,
-				16811F411FA04720008B3E1F /* AWSConstants.m in Sources */,
 				CC73E4271E841875001131AF /* EnterViewController.m in Sources */,
 				CCDFBECE1ECDE5E700C09CC8 /* TermsViewController.m in Sources */,
 				17DE3D4A1EA95F2300D350A1 /* LegAndFeetViewController.m in Sources */,

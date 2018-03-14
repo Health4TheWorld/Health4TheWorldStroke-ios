@@ -13,6 +13,7 @@
 #import "Utils.h"
 #import "SessionDetails.h"
 #import "ChatbotLog.h"
+#import "Feedback.h"
 #import "ChatBotViewController.h"
 
 @interface AWSDynamoDBHelper : NSObject
@@ -26,4 +27,6 @@
 + (void) detailedChatLog;
 + (AWSTask *) InsertDataIntoChatBotLogTable:(NSArray*) data;
 + (void) clearSessionDataLog;
++ (AWSTask *) InsertDataIntoFeedbackTable:(NSArray*) data;
+
 @end
