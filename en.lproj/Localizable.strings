@@ -56,6 +56,7 @@
 "Home.surveys" = "Surveys";
 "Home.chatBot" = "ChatBot";
 "Home.LogoutButtontitle" = "Logout";
+"Home.chatmessage.label" = "Hi! How are you feeling today?";
 
 /* HELP ME SPEAK VIEW CONTROLLER */
 "HelpMeSpeak.title" = "Help Me Speak";

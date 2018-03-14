@@ -42,6 +42,7 @@
 "Home.generalInfo" = "概況介紹";
 "Home.surveys" = "問卷";
 "Home.chatBot" = "聊天機器人";
+"Home.chatmessage.label" = "嗨！你今天感觉如何？";
 //
 ///* HELP ME SPEAK VIEW CONTROLLER */
 "HelpMeSpeak.title" = "我要說話";
