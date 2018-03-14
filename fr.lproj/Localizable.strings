@@ -39,6 +39,7 @@
 "Home.reminders" = "Rappels";
 "Home.generalInfo" = "Informations générales";
 "Home.surveys" = "Sondages";
+"Home.chatmessage.label" = "Salut! comment vous sentez-vous aujourd'hui?";
 
 /* HELP ME SPEAK VIEW CONTROLLER */
 "HelpMeSpeak.title" = "Aidez-moi à parler";

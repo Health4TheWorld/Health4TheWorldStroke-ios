@@ -88,7 +88,7 @@
     float startingY = SPACE_BETWEEN_CELLS + self.navigationController.navigationBar.frame.size.height + ([UIApplication sharedApplication].statusBarFrame.size.height);
     UIView *chatbotView = [[UIView alloc] initWithFrame: CGRectMake(SPACE_BETWEEN_CELLS, startingY, cellWidth, cellWidth/6)];
     UIImageView *chatbotMessageImage = [[UIImageView alloc] init];
-    chatbotMessageImage.image = [UIImage imageNamed:@"ChatMessage"];
+    chatbotMessageImage.image = [UIImage imageNamed:@"Chat"];
     UIImageView *chatbotDoctorImage = [[UIImageView alloc] init];
     chatbotDoctorImage.image = [UIImage imageNamed:@"Doctor"];
     chatbotMessageImage.contentMode = UIViewContentModeScaleAspectFit;
@@ -97,12 +97,23 @@
     chatbotDoctorImage.contentMode = UIViewContentModeScaleAspectFit;
     chatbotDoctorImage.layer.masksToBounds =true;
     chatbotDoctorImage.translatesAutoresizingMaskIntoConstraints = false;
+    
+    UILabel *chatMessageLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 0,0)];
+    UIFont *labelFont = [UIFont fontWithName:@"Lato-regular" size:18.0];
+    chatMessageLabel.text = NSLocalizedString(@"Home.chatmessage.label", nil);
+    chatMessageLabel.textColor = [UIColor whiteColor];
+    chatMessageLabel.font = labelFont;
+    chatMessageLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    chatMessageLabel.numberOfLines = 0;
+    [chatMessageLabel sizeToFit];
+    
+    [chatbotMessageImage addSubview: chatMessageLabel];
     [chatbotView addSubview: chatbotMessageImage];
     [chatbotView addSubview: chatbotDoctorImage];
     
     //add constraints for  images
     NSDictionary *views = @{ @"chatbotMessageImage" :  chatbotMessageImage, @"chatbotDoctorImage" : chatbotDoctorImage};
-    [chatbotView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[chatbotDoctorImage][chatbotMessageImage]|" options:0 metrics:nil views: views]];
+    [chatbotView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[chatbotDoctorImage][chatbotMessageImage(270)]|" options:0 metrics:nil views: views]];
     [chatbotView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[chatbotMessageImage]|" options:0 metrics:nil views: views]];
        [chatbotView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[chatbotDoctorImage]|" options:0 metrics:nil views: views]];
     
