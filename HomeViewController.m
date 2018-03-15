@@ -31,16 +31,21 @@
 
 @implementation HomeViewController
 
+-(void)viewDidDisappear:(BOOL)animated{
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+    [[self navigationItem] setBackBarButtonItem:backButton];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
+    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON];
     [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
     [backBtn setContentMode:UIViewContentModeCenter];
     [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
     backBtn.frame = CGRectMake(10, 0, 15, 25);
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
-    self.navigationItem.leftBarButtonItem = backButton;
+//    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+//    self.navigationItem.leftBarButtonItem = backButton;
 //    [self createLogoutButton];
 //    [self createRateButton];
     self.title = [NSLocalizedString(@"Home.title", nil) uppercaseString];

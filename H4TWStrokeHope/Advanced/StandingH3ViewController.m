@@ -21,20 +21,23 @@
 @end
 
 @implementation StandingH3ViewController
-
+-(void)viewDidDisappear:(BOOL)animated{
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+    [[self navigationItem] setBackBarButtonItem:backButton];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = [NSLocalizedString(@"Exercises.balanceTraining.Standing", nil) uppercaseString];
     
-    /* Back button */
-    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
-    [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
-    [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
-    backBtn.frame = CGRectMake(10, 0, 15, 25);
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
-    self.navigationItem.leftBarButtonItem = backButton;
+//    /* Back button */
+//    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
+//    [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
+//    [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
+//    backBtn.frame = CGRectMake(10, 0, 15, 25);
+//    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+//    self.navigationItem.leftBarButtonItem = backButton;
     
     /* Setup the view */
     [self setUpView];

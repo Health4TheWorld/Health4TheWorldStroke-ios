@@ -22,6 +22,10 @@
 
 @implementation TermsViewController
 
+-(void)viewDidDisappear:(BOOL)animated{
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+    [[self navigationItem] setBackBarButtonItem:backButton];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Terms";

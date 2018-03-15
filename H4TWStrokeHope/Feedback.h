@@ -10,11 +10,11 @@
 #import <AWSDynamoDB/AWSDynamoDB.h>
 
 @interface Feedback : AWSDynamoDBObjectModel <AWSDynamoDBModeling>
-/*Feedback : DeviceId, comment, rating, story, timestamp*/
-@property (nonatomic, strong) NSString *DeviceId;
+/*Feedback : DeviceId, comment, rating, story, timeStamp*/
+@property (nonatomic, strong) NSString *deviceID;
 @property (nonatomic, strong) NSString *comment;
 @property (nonatomic, strong) NSString *rating;
-@property (nonatomic, strong) NSString *timestamp;
+@property (nonatomic, strong) NSString *timeStamp;
 @property (nonatomic, strong) NSString *story;
 
 + (AWSTask *)describeTable ;

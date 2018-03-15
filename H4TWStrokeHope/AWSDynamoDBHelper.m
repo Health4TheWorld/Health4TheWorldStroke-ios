@@ -46,7 +46,6 @@ static NSMutableArray *appSessionDetailsArray;
 + (void) detailedAppUsage:(NSArray *) data {
     NSArray *dataToInsert = @[[Utils getUDID], [Utils getCurrentDateTime], [Utils deviceName],[data objectAtIndex:0], [data objectAtIndex: 1],  [data objectAtIndex: 2] ];
     [self InsertDataIntoAppUsageTable: dataToInsert];
-    
 }
 
 + (AWSTask *) InsertDataIntoAppUsageTable:(NSArray*) data {
@@ -335,17 +334,16 @@ static NSMutableArray *appSessionDetailsArray;
 
 + (AWSTask *) InsertDataIntoFeedbackTable:(NSArray*) data {
     AWSDynamoDBObjectMapper *dynamoDBObjectMapper = [AWSDynamoDBObjectMapper defaultDynamoDBObjectMapper];
-    
     Feedback *feedback = [Feedback new];
     /*Feedback : DeviceId, comment, rating, story, timestamp*/
-    feedback.DeviceId = [data objectAtIndex:0];
+    feedback.deviceID = [data objectAtIndex:0];
     feedback.comment = [data objectAtIndex:1];
     feedback.rating = [data objectAtIndex:2];
     feedback.story  = [data objectAtIndex:3];
-    feedback.timestamp = [data objectAtIndex:4];
+    feedback.timeStamp = [data objectAtIndex:4];
     NSLog(@" current object : %@",feedback);
     
-    [[dynamoDBObjectMapper save: chat_log]
+    [[dynamoDBObjectMapper save: feedback]
      continueWithBlock:^id(AWSTask *task) {
          if (task.error) {
              NSLog(@"The request failed. Error: [%@]", task.error);
@@ -356,6 +354,7 @@ static NSMutableArray *appSessionDetailsArray;
      }];
     return nil;
 }
+
 
 // Clear objects from User Defaults to retain only current session information
 + (void) clearSessionDataLog {

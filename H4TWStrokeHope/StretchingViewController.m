@@ -25,18 +25,23 @@
 #define VERTICAL_SPACE_BETWEEN_LABELS 10
 @implementation StretchingViewController
 
+-(void)viewDidDisappear:(BOOL)animated{
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+    [[self navigationItem] setBackBarButtonItem:backButton];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = [NSLocalizedString(@"Stretching.title", nil) uppercaseString];
     
     /* Back button */
-    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
-    [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
-    [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
-    backBtn.frame = CGRectMake(0, 0, 15, 25);
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
-    self.navigationItem.leftBarButtonItem = backButton;
+//    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
+//    [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
+//    [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
+//    backBtn.frame = CGRectMake(0, 0, 15, 25);
+//    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+//    self.navigationItem.leftBarButtonItem = backButton;
     
     [self setUpView];
 }

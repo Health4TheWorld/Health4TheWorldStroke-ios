@@ -10,8 +10,8 @@
 
 @implementation Feedback
 
-static NSString *const TableName = @"Feedback";
-static NSString *const HashKeyAttribute = @"DeviceId";
+static NSString *const TableName = @"feedback";
+static NSString *const HashKeyAttribute = @"deviceID";
 
 // Helper Tasks for the table
 + (AWSTask *)describeTable {

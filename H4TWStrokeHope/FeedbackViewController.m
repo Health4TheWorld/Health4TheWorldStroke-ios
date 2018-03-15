@@ -9,6 +9,7 @@
 #import "FeedbackViewController.h"
 #import "Constants.h"
 #import "GraphicUtils.h"
+#import "AWSDynamoDBHelper.h"
 
 @interface FeedbackViewController ()
 @property (weak, nonatomic) IBOutlet UIView *contentView;
@@ -40,37 +41,33 @@ static int rating;
     [self.navigationController popViewControllerAnimated:YES];
     //Save to AWS
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-
     formatter.dateFormat = @"MM-dd-yyyy HH:mm:ss";
     NSTimeInterval timeStamp = [[NSDate date] timeIntervalSince1970];
-
-    
     NSString *dateForToday = [formatter stringFromDate:[NSDate date]];
     NSString *uniqueIdentifier = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-    
     NSLog(@"%@",textFeedback.text);//comment
     NSLog(@"%d",rating);//rating
     NSLog(@"%@",dateForToday);
     NSLog(@"%f",timeStamp);//timestamp
     NSLog(@"%@", uniqueIdentifier);//DeviceId
     NSLog(@"%@",[[UIDevice currentDevice] systemVersion]);
-
+    if ([textFeedback.text length] == 0)
+        textFeedback.text = @" ";
+    [AWSDynamoDBHelper InsertDataIntoFeedbackTable: @[uniqueIdentifier,textFeedback.text,[NSString stringWithFormat:@"%d",rating], @"Tell us your story", [NSString stringWithFormat:@"%@",dateForToday]]];
     /* insert app usage info into table
          Feedback : DeviceId, comment, rating, story, timestamp
      */
-    
     //if not selected ask alert select your rating by selecting any smily.
-    
 }
 
 - (void)setUpView {
-    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
-    [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
-    [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
-    backBtn.frame = CGRectMake(10, 0, 15, 20);
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
-    self.navigationItem.leftBarButtonItem = backButton;
+//    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
+//    [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
+//    [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
+//    backBtn.frame = CGRectMake(10, 0, 15, 20);
+//    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+//    self.navigationItem.leftBarButtonItem = backButton;
 //    UIButton *submitBtn = [UIButton buttonWithType:UIButtonTypeCustom];
 //    [submitBtn setTitle:@"Submit" forState:UIControlStateNormal];
 //    [submitBtn addTarget:self action:@selector(submitPressed) forControlEvents:UIControlEventTouchUpInside];
@@ -87,6 +84,12 @@ static int rating;
     chatbotMessageImage.enabled = NO;
     [chatbotMessageImage setTitle:@"How would you rate the app ?" forState:UIControlStateDisabled];
     [chatbotMessageImage setBackgroundImage:[UIImage imageNamed:@"Chat"] forState:UIControlStateDisabled];
+    chatbotMessageImage.titleLabel.font = [UIFont fontWithName:@"Lato-regular" size:18.0];
+    chatbotMessageImage.contentMode = UIViewContentModeScaleAspectFit;
+    chatbotMessageImage.layer.masksToBounds =true;
+    chatbotMessageImage.titleLabel.font = [UIFont fontWithName:@"Lato-regular" size:18.0];
+    chatbotMessageImage.translatesAutoresizingMaskIntoConstraints = false;
+    
 //    UIImage *img = [UIImage imageNamed:@"Chat"];
 //    CGSize imgSize = chatbotMessageImage.frame.size;
 //    UIGraphicsBeginImageContext(imgSize);
@@ -97,10 +100,7 @@ static int rating;
     //chatbotMessageImage.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Chat"]];
     UIImageView *chatbotDoctorImage = [[UIImageView alloc] init];
     chatbotDoctorImage.image = [UIImage imageNamed:@"Doctor"];
-    chatbotMessageImage.contentMode = UIViewContentModeScaleAspectFit;
-    chatbotMessageImage.layer.masksToBounds =true;
-    chatbotMessageImage.titleLabel.font = [UIFont fontWithName:@"Lato-light" size:18.0];
-    chatbotMessageImage.translatesAutoresizingMaskIntoConstraints = false;
+  
     chatbotDoctorImage.contentMode = UIViewContentModeScaleAspectFit;
     chatbotDoctorImage.layer.masksToBounds =true;
     chatbotDoctorImage.translatesAutoresizingMaskIntoConstraints = false;
