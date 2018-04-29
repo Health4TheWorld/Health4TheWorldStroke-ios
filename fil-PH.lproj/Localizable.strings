@@ -7,6 +7,8 @@
  */
 
 /* DISCLAIMER */
+"Feedback.title" = "Feedback";
+
 "Disclaimer.paragraphOne" = "Kahit na ang aplikasyong ito ay gagamitin bilang isang kagamitang pang-edukasyon para sa mga pasyente ng stroke, hindi naglalaman saanmang parte ng aplikasyong ito, gumagawa, nagawa na, o may intensyong gumawa, nang tahasan o walang pahiwatig, sa anumang paraan ng relasyong pasyente at doktor.";
 "Disclaimer.paragraphTwo" = "Ang mga tagubilin dito ay batay sa pangkalhatan at mabuting-tinatanggap na mga alituntunin at ekspertong mga opinyon para sa pangangalaga ng matapos-maistroke at pamamahala sa sarili.  Bagaman may makatuwirang pagsisikap ang nagawa na para masiguro na ang mga impormasyong nakapaloob sa mga pagtuturo dito ay pangkasalukuyan at tumpak sa panahon ng paglilimbag, wala sa Health4TheWorld, o sa sinumang indibidwal na nakapagbigay ng nilalaman o naging bahagi sa pagtatanghal ng materyal na ito, maging sa pagsasabi o sa panulat ang makaka-garantiya na ang lahat ng impormasyon ay tumpak at may bisa.";
 "Disclaimer.paragraphThree" = "Bawat nasabing sitwasyon ay nangangailangan ng indibidwal na paghatol at pananaw, at ang intensyon ng aplikasyong ito ay para sa layuning pang-edukasyon, at hindi intensyon para maging, at hindi dapat ipakahulugan bilang, medikal na payo.";
@@ -15,24 +17,30 @@
 "Disclaimer.paragraphSix" = "Sa pag-klik ng Accept, kayo ay sumasang-ayon sa aming Terms of Use and Privacy Policy.";
 
 /* ENTER VIEW CONTROLLER */
-"Enter.firstQuote" = "\"Ang pinakamabuting paghahanda sa kinabukasan ay ang gawin mo ang buong husay ngayon.\"";
-"Enter.firstAuthor" = " – H. Jackson Brown, Jr";
-"Enter.secondQuote" = "\"Maniwala kang kaya mo at nasa kalagitnaan ka na.\"";
-"Enter.secondAuthor" = "– Theodore Roosevelt";
-"Enter.thirdQuote" = "\"Walang imposible, ang salita mismo ay nagsasabing ‘Ako ay posible’.\"";
-"Enter.thirdAuthor" = "– Audrey Hepburn";
+"Enter.firstQuote" = "\"Nabago ang buhay ko ng stroke sa isang tulog lamang at nawalan ako ng pag-asa. Ang Health4TheWorld app na ito ay malaking tulong sa katulad kong pasyente na nag-karoon ng stroke dahil sa mayroon itong mahalagang payo at nag-bigay ng saya sa aking buhay.\"";
+"Enter.firstAuthor" = "- Chitra, Sobreviviente, Nepal";
+"Enter.secondQuote" = "\"Gustong gusto ko ang app na ito. Isang pindot lang ng screen, nalalaman ka agad ang pangangailangan mo. Noong magkaroon ako ng stroke, hindi ako maintindihan ng aking pamilya at ng doctor. Kung sana mayroon ako nitong app, mas madali akong maintindihan.\"";
+"Enter.secondAuthor" = "- Njoh Ephraim, Stroke Survivor, Camerron, Africa";
+"Enter.thirdQuote" = "\"Ilang araw lang ang nakaraan naging mahina ang kaliwang bahagi ng aking katawan, kaya nahirapan akong mag-lakad at gawin ang pangaraw araw na gawain. Ang aking doctor pinayuhan akong mag ehersisyo sa tulong ng physical therapists kaya lang wala kaming sapat na pera na pambayad kaya hindi naging posible ang lahat. Dahil dito sa app na ito, natulongan ako ng aking anak na gawin ang regular na ehersisyo sa bahay sa pagsunod ng mga tagubilin.\"";
+"Enter.thirdAuthor" = "- Anjali Shaha, sobreviviente, Bangladesh";
 "Enter.fourthQuote" = "\"Ako lamang ang makakapagbago sa buhay ko.  Walang ibang makakagawa nito para sa akin.\"";
 "Enter.fourthAuthor" = "– Carol Burnett";
-"Enter.fifthQuote" = "Palaging gawin ang iyong pinakamahusay.  Anuman ang itinanim mongayon ay aaanihin mo rin sa susunod.";
-"Enter.fifthAuthor" = "– Og Mandino";
+"Enter.fifthQuote" = "Mayron akong malubhang stroke pitong buwan ang nakakaraan at lahat nang bagay sa aking kapaligiran ay biglang nag-bago. Dahil ako ay makakalimutin, natutulungan ako nang app na ito para maalala ko ang pag-inon nang aking gamot sa tamang oras at makatipid ng pera at makapag ehersisyo sa bahay. Maraming mga bagay na ito para makatulong na maiwasan ang pagkakaroon ng stroke at para maibahagi ang malusog na pamumuhay.";
+"Enter.fifthAuthor" = "- Thaman Bahadur B.K, Sobreviviente, Nepal";
 "Enter.sixthQuote" = "\"Ang optimismo ay ang pananampalataya na naghahatid sa tagumpay. Walang magagawa kung walang pag-asa at tiwala sa sarili.\"";
 "Enter.sixthAuthor" = "– Helen Keller";
 "Enter.seventhQuote" = "\"Ang pagtatakda ng mga layunin ay ang unang hakbang para makita ang mga hindi nakikita\"";
 "Enter.seventhAuthor" = "– Tony Robbins";
 "Enter.enterButton" = "Enter";
+//"Enter.eighthQuote" = "\"Maniwala kang kaya mo yan at ikaw ay nasakalagitnaan na.\"";
+//"Enter.eighthAuthor" = " - Theodore Roosevelt";
+//"Enter.ninethQuote" = "\"Nothing is impossible, the word itself says 'I'm possible'!\"";
+//"Enter.ninethAuthor" = "– Audrey Hepburn";
+//"Enter.tenthQuote" = "\"Only I can change my life. No one can do it for me.\"";
+//"Enter.tenthAuthor" = "– Carol Burnett";
 
 /* HOME VIEW CONTROLLER */
-"Home.title" = "Home";
+"Home.title" = "Bahay";
 "Home.helpMeSpeak" = "Tulungan Mo Akong Magsalita";
 "Home.exercises" = "Mga Ehersisyo";
 "Home.learn" = "Mag-aral";
@@ -69,6 +77,54 @@
 
 /* EXERCISES VIEW CONTROLLER */
 "Exercises.title" = "Mga ehersisyo";
+
+"Exercises.advancedExercises" = "Bagong ehesisyo";//MM
+
+"Exercises.arms" = "Pagsasanay ng kamay";//MM
+"Exercises.balanceTraining" = "Balansing pag-i-ensayo";//MM
+
+"Exercises.functionalMobility.Instructions" = "Ilagay ang braso kapantay ng balikat o mas-mababa dito";//MM
+"Exercises.functionalMobility.h1" = "Gumulong sa kama";//MM
+"Exercises.functionalMobility.h2" = "Gumulong palabas sa kama";//MM
+
+//"Arms "//MM
+"Exercises.arms.level1" = "Antas 1";
+"Exercises.arms.level2" = "Antas 2";
+"Exercises.arms.level3" = "Antas 3";
+"Exercises.arms.level4" = "Antas 4";
+
+"Exercises.arms.level1.instruction" = "Antas  1: Walang Voluntary Movement";
+"Exercises.arms.level2.instruction" = "Antas 2: Ilang galaw ng braso pataas pero hindi ang kamay";
+"Exercises.arms.level3.instruction" = "Antas 3: itikum at ibuka ang kamay";
+"Exercises.arms.level4.instruction" = "Antas 4: Eksaktong hawak";
+
+"Exercises.arms.level2.1" = "Antas 2.1";
+"Exercises.arms.level2.2" = "Antas 2.2";
+"Exercises.arms.level2.3" = "Antas 2.3";
+"Exercises.arms.level2.4" = "Antas 2.4";
+
+"Exercises.arms.level3.1" = "Antas 3.1";
+"Exercises.arms.level3.2" = "Antas 3.2";
+"Exercises.arms.level3.3" = "Antas 3.3";
+"Exercises.arms.level3.4" = "Malaking bagay 1";
+"Exercises.arms.level3.5" = "Malaking bagay 2";
+
+"Exercises.arms.level4.1" = "Antas 4.1";
+"Exercises.arms.level4.2" = "Antas 4.2";
+
+
+//"Balance Training"//MM
+"Exercises.balanceTraining.sitting" = "Nakaupo";
+"Exercises.balanceTraining.sitting.H1" = "Nakaupong naka-suporta ang isang kamay";// 3721";
+"Exercises.balanceTraining.sitting.H2" = "Nakaupong walang nakasuportang kamay";// 3722";
+"Exercises.balanceTraining.sitting.H3" = "Nakaupo at nakahilig sa ibat-ibang direksyones";//: #3571, 3572"
+
+"Exercises.balanceTraining.Standing" = "Nakatayo";
+"Exercises.balanceTraining.Standing.H1" = "Pagasasanay sa pag-tayo";// Pics #3729-3732";
+"Exercises.balanceTraining.Standing.H2" = "Nakatayo at nagbabago ang bahagi ng timbang sa gilid";// (Video #3574, 3580)";
+"Exercises.balanceTraining.Standing.H3" = "Tapikin ang hakbang sa laki ng slab";//(Video #3575, 3576, 3578 )
+//MM
+
 "Exercises.strengthening" = "Nagpapalakas";
 "Exercises.stretching" = "Umuunat-unat";
 "Exercises.functionalMobility" = "Gumaganang Pagkikilos";
@@ -302,6 +358,37 @@
 "GeneralInfo.privacyPolicy" = "Patakaran sa Pagka-pribado";
 "GeneralInfo.copyright" = "Copyright";
 
+/* ABOUT US */
+"AboutUs.aboutTheApp" = "Tungkol sa app";
+"AboutUs.paragraphOne" = "Ang HEALTH4THEWORLD STROKE HOPE APP ay libre ng gastos na tool na pang-edukasyon upang maikalat ang kaalaman tungkol sa mga kadahilanan ng panganib ng stroke, sekundaryong pag-iwas, post-stroke mobilization at pag-eehersisyo sa edukasyon at mga diskarte sa pagsasalita. Nilikha ito ng Health4TheWorld na isang non profit na organisasyon na inspirasyon ng mga hindi na kailangang medikal na pangangailangan sa buong mundo. Ang misyon ng samahan ay nilulutas ang mga katiwasayan sa kalusugan sa pamamagitan ng pagbabago at teknolohiya at nagdadala ng mga ngiti sa buong mundo. Mangyaring matuto nang higit pa tungkol sa amin sa health4theworld.org.";
+"AboutUs.paragraphTwo" = "Sa tinatayang insidente ng 16.9 milyon at isang pagkalat ng 33 milyon ayon sa World Health Organization, ang stroke ay isang nangingibabaw na nilalang na may sakit sa kategorya ng mga sakit sa cardiovascular, at isang pangunahing sanhi ng malubhang pangmatagalang kapansanan. Ang pandaigdigang pasanin ng stroke ay hindi katimbang sa mga bansa na mababa at gitna ang kita, na nagdudulot sa atin na mapabuti ang pang-edukasyon na pang-edukasyon sa kalusugan ng mundo. Umaasa kami na makakatulong ang app na pang-edukasyon ng stroke na ito.";
+"AboutUs.paragraphThree" = "Ang app ay may ilang mga tampok na inaasahan naming makikita mo ang kapaki-pakinabang!";
+"AboutUs.featureOne" = "Nilalaman ng Pang-edukasyon sa Stroke - Impormasyon tungkol sa mga sanhi at panganib na mga kadahilanan ng stroke na may mga alituntunin mula sa American Stroke Association, American Heart Association, mga artikulo batay sa ebidensya at iba pang mga mapagkukunang pangkalusugan. Mahalagang tandaan na ang mga ito ay pangkalahatang mga tip sa pag-aaral at hindi mga rekomendasyon para sa pangangalagang klinikal. Ang parehong mga pasyente at sinanay na mga propesyonal sa kalusugan ay dapat umupo nang magkasama upang magtrabaho sa isang ispesyal na pag-iwas sa pamumuhay para sa stroke.";
+"AboutUs.featureTwo" = "Mga Animation at Mga Tip sa Paggamit ng Video para sa Pagbawi ng Stroke-Ang edukasyon para sa ehersisyo at pagbabagong-tatag pagkatapos ng stroke ay na-summaris sa pamamagitan ng mga dalubhasang Physical Medicine at Rehabilitasyon mula sa Stanford, University of California, San Francisco at University of Southern California. Ang mga ehersisyo dito ay pangkalahatan at nilayon upang maghatid bilang pang-edukasyon na gabay na hindi bilang medikal na payo. Ang mga ito ay dapat gawin sa isang occupational therapist at / o pisikal na therapist, na makakatulong sa tamang pamamaraan at pagdidisenyo ng isang pamumuhay na makikinabang sa pinakamahusay na pasyente ng stroke. Ang isang tagapag-alaga ay dapat laging naroroon upang makatulong. Ang mga ito ay nahahati sa pagpapalakas, pagpapalawak at functional na kadaliang kumilos. Mangyaring payuhan ang iyong mga pasyente tungkol sa tamang pamamaraan, dalas at pamumuhay ng mga pagsasanay na ito.";
+"AboutUs.featureThree" = "Mga Paalala para sa mga Gamot at Paghirang: Ang pagsunod sa Medication at Appointment ay isang pangunahing isyu at kapaki-pakinabang ang tool na ito! Mangyaring itakda ang mga paalala para sa iyong mga pasyente kung maaari.";
+"AboutUs.featureFour" = "Mga Istratehiya sa Pagsasalita Pagkatapos ng Stroke: Ang pindutang pindutan ng boses na output ay makakatulong sa napakahalagang komunikasyon. Ang layunin ay upang isalin ang mga ito sa iba't ibang mga wika kaya ang mga propesyon sa kalusugan at mga pasyente sa malalayong bahagi ng mundo na kulang sa pag-access sa kalusugan ay maaaring makinabang mula sa mga ito.";
+"AboutUs.team" = "Koponan";
+"AboutUs.teamIntro" = "Ang application na ito ay hindi posible na walang trabaho ng isang koponan sa panaginip!";
+"AboutUs.founders" = "Tagapagtatag";
+"AboutUs.developers" = "Mga Nag-develop";
+"AboutUs.animations" = "Mga animation";
+"AboutUs.illustrations" = "Mga ilustrasyon";
+"AboutUs.contentEditing" = "Pag-edit ng nilalaman";
+"AboutUs.movies" = "Mga Pelikula";
+"AboutUs.advisoryBoard" = "Medical Advisory Board para sa App";
+"AboutUs.marcFisher" = "Si Dr. Fisher Fisher: Si Dr. Fisher ay kasalukuyang nagsisilbing editor-in-chief ng Stroke at Senior Physician sa Stroke Service sa BIDMC, Harvard Medical School. Siya ay mahusay na kilala at nai-publish na malawakan sa 260 mga artikulo na na-review at na-edit o na-edit na 13 mga libro.";
+"AboutUs.jeffreyTeraoke" = "Dr. Jeffrey Teraoke: Si Dr. Teraoke ay Punong, PM & R sa Palo Alto VA Medical Center. Siya ang program director ng PM & R Residency Program at Direktor, Polytrauma, VA Palo Alto Health System";
+"AboutUs.ericaPitsch" = "Dr. Erica A Pitsch, PT, MPT, DPT, NCS: Propesor sa Pangangalagang Pangkalusugan sa Kalusugan ng Klinika, UCSF. Dalubhasa si Dr. Pitsch sa neurologic physical therapy at gumagamit ng maraming diskarte at diskarte sa paggamot, ang lahat ay nakatuon sa pagtataguyod ng pinakamainam na hamon, pag-andar, at paggaling sa mga taong may sakit sa neurologic";
+"AboutUs.lorenWard" = "Ang Loren Ward, PT, DPT ay lisensiyado ng Physical Therapist na nagsimula sa kanyang karera sa Physical Therapy noong 2007, habang nakakuha ng kanyang Doktor sa MGH Institute of Health Professions sa Massachusetts. Ginawa niya ang mga internships sa Rehabilitation ng Chicago, Spaulding Rehabilitation at National Rehabilitation Hospital at ngayon ay gumagana sa Sistema ng Sistema ng Stanford Veteran. Si Loren ay isang tagapagtaguyod ng functional independence at nagsusumikap na tulungan ang kanyang mga pasyente na maabot ang kanilang sariling antas ng kalayaan anuman ang kanilang mga limitasyon.";
+"AboutUs.roseHamm" = "Rose Hamm, PT, DPT, CWS, FACCWS: Si Rose ay nakatanggap ng BS sa Physical Therapy mula sa University of North Carolina, Chapel Hill, at isang MS at post-graduate na DPT mula sa University of Southern California. Siya ay kasalukuyang Adjunct Assistant Professor ng Clinical Physical Therapy sa University of Southern California at mga kasanayan sa Keck Hospital sa USC.";
+
+
+/* Quotes Section */
+"Quotes.title" = "Ang inspirational quote ngayong araw";
+
+/* Relaxing Music Section */
+"Music.title" = "Nakakarelaks na musika";
+
 /* CHATBOT */
 "Chatbot.no" = "HINDI";
 "Chatbot.yes" = "OO";
@@ -325,3 +412,4 @@
 "Chatbot.feelingmessage4" = "Nalulumbay";
 "Chatbot.feelingmessage5" = "Inaantok";
 "Chatbot.feelingmessage6" = "Sobrang pagod";
+"Feedback.msg" = "Paano mo i-rate ang app na ito ngayon?";

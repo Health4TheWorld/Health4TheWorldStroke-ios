@@ -7,6 +7,8 @@
 */
 
 /* DISCLAIMER */
+"Feedback.title" = "realimentación";//MM
+
 "Disclaimer.paragraphOne" = "Aunque esta aplicación es de utilizarse como una herramienta educativa para los pacientes de accidente cerebrovascular, nada contenido en ninguna parte de esta aplicación, crea, ha creado o tiene intención de crear, implícita o explícitamente, cualquier tipo de relación paciente-médico.";
 "Disclaimer.paragraphTwo" = "Las instrucciones en este documento se basan en directrices generales y bien aceptadas y opiniones de expertos para el cuidado y la autogestión después de un accidente cerebrovascular. Aunque se han realizado esfuerzos razonables para asegurar que la información contenida en estas conferencias sea actual y precisa al momento de la publicación, ni Health4TheWorld, ni ninguna persona que haya proporcionado contenido o haya participado en la presentación de este material, ya sea oralmente o por escrito, garantiza que toda la información es precisa y válida.";
 "Disclaimer.paragraphThree" = "Cada situación es única y requiere criterio y enfoque individual, y esta aplicación fue creada para fines educativos y no pretende ser y no debe interpretarse como consejo médico.";
@@ -15,16 +17,16 @@
 "Disclaimer.paragraphSix" = "Al hacer clic en aceptar, acepta nuestras condiciones de uso y política de privacidad.";
 
 /* ENTER VIEW CONTROLLER */
-"Enter.firstQuote" = "\"La mejor preparación para mañana es hacer lo mejor que puedas hoy.\"";
-"Enter.firstAuthor" = " – H. Jackson Brown, Jr";
-"Enter.secondQuote" = "\"Cree en que puedes y estarás a mitad de camino.\"";
-"Enter.secondAuthor" = "– Theodore Roosevelt";
-"Enter.thirdQuote" = "\"Nothing is impossible, the word itself says 'I'm possible'!\"";
-"Enter.thirdAuthor" = "– Audrey Hepburn";
+"Enter.firstQuote" = "\"El accidente cerebrovascular cambió mi vida de la noche a la mañana y perdí la esperanza. La aplicación Health4TheWorld stroke es una herramienta útil para pacientes con accidente cerebrovascular como yo para con consejos útiles y me hace sonreír.\"";
+"Enter.firstAuthor" = " - Chitra, Sobreviviente, Nepal";
+"Enter.secondQuote" = "\"La aplicación me gusta mucho. Sólo con tocar la pantalla le puedes decir a alguien “quiero usar el baño”. Cuando tuve mi infarto cerebral, ni mi familia ni mis doctores podían entenderme. Si hubiese tendido esto, mi vida hubiese sido diferente cuando estaba deprimido.\"";
+"Enter.secondAuthor" = "- Njoh Ephraim, sobreviviente de accidente cerebrovascular, Cameroon, Africa";
+"Enter.thirdQuote" = "\"Hace unos días, de repente, desarrollé debilidad en el lado izquierdo, por lo cual no podía caminar o hacer mi trabajo de diario. Mi médico me aconsejó que hiciera fisioterapia con regularidad, pero debido a los gastos no es posible. Pero con esta aplicación, mi hija me ayuda a hacer el ejercicio regularmente en casa siguiendo las instrucciones.\"";
+"Enter.thirdAuthor" = "- Anjali Shaha, sobreviviente, Bangladesh";
 "Enter.fourthQuote" = "\"Sólo yo puedo cambiar mi vida, nadie puede hacerlo por mí.\"";
 "Enter.fourthAuthor" = "– Carol Burnett";
-"Enter.fifthQuote" = "\"Siempre haz lo mejor que puedas. Lo que siembres hoy lo cosecharás luego.\"";
-"Enter.fifthAuthor" = "– Og Mandino";
+"Enter.fifthQuote" = "\"Tuve un infarto devastador hace 7 meses y todo a mi alrededor cambió drásticamente. Como soy bastante olvidadizo, la aplicaciónme  acuerda constatemente cuando me toca la medicina y me ahorra dinero y hago ejercicios en casa. Tiene varias cosas que ayudarían en la prevención de accidentes cerebrovasculares y para una vida sana.\"";
+"Enter.fifthAuthor" = "- Thaman Bahadur B.K, Sobreviviente, Nepal";
 "Enter.sixthQuote" = "\"El optimismo es la fé que dirige al éxito. No se puede lograr nada sin esperanza o confianza.\"";
 "Enter.sixthAuthor" = "– Helen Keller";
 "Enter.seventhQuote" = "\"Establecer objetivos es el primer paso para convertir lo invisible en visible.\"";
@@ -55,21 +57,68 @@
 "HelpMeSpeak.iLoveYou" = "Te quiero";
 "HelpMeSpeak.imCold" = "Hace frío";
 "HelpMeSpeak.imHot" = "Hace calor";
-"HelpMeSpeak.dizzy" = "I'm dizzy";
-"HelpMeSpeak.lightsOn" = "Turn on the lights";
-"HelpMeSpeak.lightsOff" = "Turn off the lights";
-"HelpMeSpeak.getInBed" = "I want to get in bed";
-"HelpMeSpeak.getOutOfBed" = "I want to get out of bed";
+"HelpMeSpeak.dizzy" = "estoy mareado";
+"HelpMeSpeak.lightsOn" = "Enciende las luces";//MM
+"HelpMeSpeak.lightsOff" = "Apagar las luces";//MM
+"HelpMeSpeak.getInBed" = "Quiero meterme en la cama";//MM
+"HelpMeSpeak.getOutOfBed" = "Quiero salir de la cama";//MM
 "HelpMeSpeak.howAreYou" = "¿Como estás?";
-"HelpMeSpeak.ambulance" = "I need an ambulance";
+"HelpMeSpeak.ambulance" = "Necesito una ambulancia";//MM
 "HelpMeSpeak.inALittle" = "En un rato";
 "HelpMeSpeak.now" = "Ahora";
-"HelpMeSpeak.goOutside" = "I want to go outside";
+"HelpMeSpeak.goOutside" = "quiero ir afuera";//MM
 "HelpMeSpeak.sayHi" = "Hola!";
 
 /* EXERCISES VIEW CONTROLLER */
 "Exercises.title" = "Ejercicios";
-"Exercises.advancedExercises" = "Advanced Exercises";//MM
+"Exercises.advancedExercises" = "Ejercicios nuevos";//MM
+
+"Exercises.arms" = "Ejercicios de brazo";
+"Exercises.balanceTraining" = "Entrenamiento de balance";//MM
+
+"Exercises.functionalMobility.Instructions" = "Mantenga los brazos al nivel de los hombros o debajo";//MM
+"Exercises.functionalMobility.h1" = "Ruede en la cama";//MM
+"Exercises.functionalMobility.h2" = "Salga de la cama";//MM
+
+//"Arms "//MM
+"Exercises.arms.level1" = "Nivel 1";
+"Exercises.arms.level2" = "Nivel 2";
+"Exercises.arms.level3" = "Nivel 3";
+"Exercises.arms.level4" = "Nivel 4";
+
+"Exercises.arms.level1.instruction" = "Nivel 1: sin movimiento voluntario";
+"Exercises.arms.level2.instruction" = "Nivel 2: Movimientos de brazo en contra de la gravedad pero sin mano";
+"Exercises.arms.level3.instruction" = "Nivel 3: Agarre y suelte";
+"Exercises.arms.level4.instruction" = "Nivel 4: Agarre con precisión";
+
+"Exercises.arms.level2.1" = "Nivel 2.1";
+"Exercises.arms.level2.2" = "Nivel 2.2";
+"Exercises.arms.level2.3" = "Nivel 2.3";
+"Exercises.arms.level2.4" = "Nivel 2.4";
+
+"Exercises.arms.level3.1" = "Nivel 3.1";
+"Exercises.arms.level3.2" = "Nivel 3.2";
+"Exercises.arms.level3.3" = "Nivel 3.3";
+"Exercises.arms.level3.4" = "Objeto grande 1";
+"Exercises.arms.level3.5" = "Objeto grande 22";
+
+"Exercises.arms.level4.1" = "Nivel 4.1";
+"Exercises.arms.level4.2" = "Nivel 4.2";
+
+
+//"Balance Training"//MM
+"Exercises.balanceTraining.sitting" = "Sentado";
+"Exercises.balanceTraining.sitting.H1" = "Sentado/a con una mano de apoyot";// 3721";
+"Exercises.balanceTraining.sitting.H2" = "Sentado/a sin apoyarse";// 3722";
+"Exercises.balanceTraining.sitting.H3" = "Sentado/a e inclinado/a en diferentes direcciones";//: #3571, 3572"
+
+"Exercises.balanceTraining.Standing" = "De pie";
+"Exercises.balanceTraining.Standing.H1" = "Práctica de pie.";// Pics #3729-3732";
+"Exercises.balanceTraining.Standing.H2" = "De pie y cambiando de lado a lado";// (Video #3574, 3580)";
+"Exercises.balanceTraining.Standing.H3" = "Paso tap por tamaño de losa";//(Video #3575, 3576, 3578 )
+//MM
+
+
 "Exercises.strengthening" = "Fortalecimiento";
 "Exercises.stretching" = "Estiramiento ";
 "Exercises.functionalMobility" = "Movilidad funcional";
@@ -82,17 +131,17 @@
 "Strengthening.arms" = "Brazos";
 "Strengthening.coordination" = "Coordinación";
 /* LEGS VIEW CONTROLLER */
-"Legs.toe" = "Toe Flexion";
-"Legs.knee" = "Knee Flexion";
-"Legs.hip" = "Hip Flexion";
+"Legs.toe" = "Flexión del dedo del pie";
+"Legs.knee" = "Flexión de la rodilla";
+"Legs.hip" = "Flexión de cadera";
 
 /* ARMS VIEW CONTROLLER */
-"Arms.elbow" = "Elbow Flexion";
-"Arms.shoulder" = "Shoulder Flexion";
+"Arms.elbow" = "Flexión de codo";
+"Arms.shoulder" = "Flexión de hombro";
 
 /* COORDINATION VIEW CONTROLLER */
-"Coordination.legControl1" = "Leg Control 1";
-"Coordination.legControl2" = "Leg Control 2";
+"Coordination.legControl1" = "Control de pierna 1";
+"Coordination.legControl2" = "Control de pierna 2";
 
 /* STRETCHING VIEW CONTROLLER */
 "Stretching.title" = "Fortalecimiento";
@@ -122,18 +171,18 @@
 
 /* LEARN VIEW CONTROLLER */
 "Learn.title" = "Aprenda";
-"Learn.b" = "B";
-"Learn.e" = "E";
-"Learn.f" = "F";
-"Learn.a" = "A";
-"Learn.s" = "S";
-"Learn.t" = "T";
-"Learn.befastB" = "Balance: Sudden loss of balance.";
-"Learn.befastE" = "Eye: Sudden loss of vision in one or both eyes.";
-"Learn.befastF" = "Face drooping on one side when asked to smile.";
-"Learn.befastA" = "Arm weakness; can't raise arms and keep them there.";
-"Learn.befastS" = "Speech difficulty.";
-"Learn.befastT" = "Time to call an ambulance.";
+"Learn.b" = "segundo";//MM
+"Learn.e" = "mi";//MM
+"Learn.f" = "F";//MM
+"Learn.a" = "Un";//MM
+"Learn.s" = "S";//MM
+"Learn.t" = "T";//MM
+"Learn.befastB" = "Equilibrio: pérdida repentina de equilibrio.";//MM
+"Learn.befastE" = "Ojo: pérdida repentina de visión en uno o ambos ojos.";//MM
+"Learn.befastF" = "La cara inclinada hacia un lado cuando se le pide que sonría.";//MM
+"Learn.befastA" = "Debilidad del brazo; no puede levantar los brazos y mantenerlos allí.";//MM
+"Learn.befastS" = "Dificultad del habla";//MM
+"Learn.befastT" = "Es hora de llamar a una ambulancia.";//MM
 "Learn.faq" = "Preguntas frequentes";
 "Learn.bloodPressure" = "Presión sanguinea";
 "Learn.heartRate" = "Ritmo cardiaco";
@@ -269,7 +318,7 @@
 "Reminders.addTime" = "Agregar";
 "Reminders.editTitle" = "Editar";
 "Reminders.saveChanges" = "Guardar";
-"Reminders.oneTimeReminder" = "Make this a one time reminder";
+"Reminders.oneTimeReminder" = "Hacer esto un recordatorio de una sola vez";//MM
 
 /* SURVEYS */
 "Surveys.password" = "Contraseña";
@@ -278,10 +327,10 @@
 "GeneralInfo.aboutUs" = "Sobre nosotros";
 "GeneralInfo.termsOfUse" = "Términos de uso";
 "GeneralInfo.privacyPolicy" = "Política de privacidad";
-"GeneralInfo.copyright" = "Copyright";
+"GeneralInfo.copyright" = "Copyright";//MM
 
 /* ABOUT US */
-"AboutUs.aboutTheApp" = "About the app";
+"AboutUs.aboutTheApp" = "Acerca de la aplicación";//MM
 "AboutUs.paragraphOne" = "La APLICACIÓN HEALTH4THWORD STROKE HOPE es una herramienta educativa gratuita con el propósito difundir conocimiento sobre los factores de riesgo de los accidentes/ataques cerebrovasculares, la prevención secundaria, la movilidad post-accidente, ejercicios y estrategias de habla. La aplicación fue creada por Health4TheWorld, una organización sin fines de lucro inspirada en las necesidades médicas no satisfechas en el mundo. La misión de la organización es solucionar las desigualdades de la salud a través de inovación y tecnología y traer sonrisas alrededor del mundo. La misión de la organización es solucionar las desigualdades de la salud a través de inovación y tecnología y traer sonrisas alrededor del mundo. ";
 "AboutUs.paragraphTwo" = "Con una incidencia estimada de 16.9 millones y una prevalencia de 33 millones según la Organización Mundial de la Salud, el ataque cerebral es una entidad dominante en la categoría de enfermedades cardiovasculares y una de las principales causas de discapacidad grave a largo plazo. La carga mundial de accidentes cerebrovasculares recae desproporcionadamente en los países de ingresos bajos y medianos, lo que nos inspira a mejorar el alcance de educación a nivel mundial. Esperamos que esta aplicación educativa sea útil.";
 "AboutUs.paragraphThree" = "La aplicación tiene varias herramientas que esperamos le resulten útiles!";
@@ -307,10 +356,10 @@
 
 
 /* Quotes Section */
-"Quotes.title" = "Today's Inspirational Quote";
+"Quotes.title" = "Cita inspiradora de hoy";//MM
 
 /* Relaxing Music Section */
-"Music.title" = "Relaxing Music";
+"Music.title" = "Música relajante";//MM
 
 /* TERMS OF USE */
 "Terms.thankYouParOne" = "These terms and conditions of use (\"Terms\") are an agreement between Health4TheWorld (the “Health4TheWorld,” “we,” “us,” or “our”) and you (either you as an individual or the entity or organization on whose behalf you are entering into these terms and conditions) for access to and use of this website, which includes, media, documentation, pictures and other content, (collectively, the \"Website\"), as well as for access to and use of any products, services, and downloadable applications provided by Health4TheWorld (the “Services”). Please read these Terms carefully, and contact us at contact@health4theworld.org for any questions. Our Services also include downloadable applications, cloud-based applications, mobile and desktop applications, and applications in which our content is distributed via third-party sites.";
@@ -430,7 +479,7 @@
 "Terms.honorCodeBulletFour" = "I will not engage in any other activities that will dishonestly improve my results or dishonestly improve or hurt the results of others.";
 
 /* CHATBOT */
-"Chatbot.no" = "NO";
+"Chatbot.no" = "NO";//MM
 "Chatbot.yes" = "SI";
 "Chatbot.lonelybutton1" = "Ver 360 videos";
 "Chatbot.lonelybutton2" = "Escuchar música";

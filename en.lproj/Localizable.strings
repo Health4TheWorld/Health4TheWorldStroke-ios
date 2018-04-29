@@ -20,12 +20,12 @@
 /* ENTER VIEW CONTROLLER */
 "Enter.firstQuote" = "\"Stroke changed my life overnight and I had lost hope. Health4TheWorld stroke app is a helpful tool for stroke patients like me to fight stroke with useful tips and makes me smile.\"";
 "Enter.firstAuthor" = "– Chitra,\n Stroke Survivor, Nepal";
-//"Enter.secondQuote" = "\"Believe you can and you're halfway there.\"";
-//"Enter.secondAuthor" = "– Theodore Roosevelt";
-//"Enter.thirdQuote" = "\"Nothing is impossible, the word itself says 'I'm possible'!\"";
-//"Enter.thirdAuthor" = "– Audrey Hepburn";
-//"Enter.fourthQuote" = "\"Only I can change my life. No one can do it for me.\"";
-//"Enter.fourthAuthor" = "– Carol Burnett";
+//"Enter.eighthQuote" = "\"Believe you can and you're halfway there.\"";
+//"Enter.eighthAuthor" = "– Theodore Roosevelt";
+//"Enter.ninethQuote" = "\"Nothing is impossible, the word itself says 'I'm possible'!\"";
+//"Enter.ninethAuthor" = "– Audrey Hepburn";
+//"Enter.tenthQuote" = "\"Only I can change my life. No one can do it for me.\"";
+//"Enter.tenthAuthor" = "– Carol Burnett";
 "Enter.secondQuote" = "\"I like the app a lot. Just by touching the screen, you can tell somebody ‘I want to use the bathroom’. When I had my stroke, my family and the doctors could not understand me. If I had this, I tell you, my life would have been different when I was down!\"";
 "Enter.secondAuthor" = "– Njoh Ephraim,\n Stroke Survivor,\n Cameroon, Africa";
 "Enter.thirdQuote" = "\"A few days back I suddenly developed left sided weakness, causing difficulty with walking and do day to day work. My doctor has advised me to do regular physiotherapy but due to expense it was not possible. But with this app my daughter helps me to do the exercise regularly at home by following the instructions.\"";
@@ -93,8 +93,8 @@
 "Exercises.balanceTraining" = "Balance Training";//MM
 
 "Exercises.functionalMobility.Instructions" = "Keep Arms at shoulder level or below";//MM
-"Exercises.functionalMobility.h1" = "Rolling in Bed";//MM
-"Exercises.functionalMobility.h2" = "Rolling out of Bed";//MM
+"Exercises.functionalMobility.h1" = "Roll in Bed";//MM
+"Exercises.functionalMobility.h2" = "Roll out of Bed";//MM
 
 //"Arms "//MM
 "Exercises.arms.level1" = "Level 1";

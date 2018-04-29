@@ -7,6 +7,8 @@
  */
 
 /* DISCLAIMER */
+"Feedback.title" = "retour d'information";
+
 "Disclaimer.paragraphOne" = "Bien que cette application soit utilisée comme outil éducatif pour les patients atteints d'un accident vasculaire cérébral, rien contenu dans toute partie de cette application, ne crée, n'a créé ou est destiné à créer, de manière implicite ou explicite, toute forme de relation patient-médecin.";
 "Disclaimer.paragraphTwo" = "Les instructions ci-après sont basées sur des lignes directrices générales et bien acceptées et des avis d'experts pour les soins post-AVC et l'autogestion. Bien que des efforts raisonnables aient été faits pour s'assurer que l'information contenue dans ces conférences était actuelle et précise au moment de publication, ni Health4TheWorld, ni aucune personne qui a fourni du contenu ou n'a participé à la présentation de ce matériel, oralement ou par écrit, peut garantir que toutes les informations sont exactes et valides.";
 "Disclaimer.paragraphThree" = "Chaque situation donnée nécessite un jugement et une approche individuel, et cette demande est destinée uniquement à des fins éducatives et n'est pas destinée à être, et ne devrait pas être, interprétée comme un conseil médical.";
@@ -15,21 +17,27 @@
 "Disclaimer.paragraphSix" = "En cliquant sur Accepter, vous acceptez nos Conditions d'utilisation et notre Politique de confidentialité.";
 
 /* ENTER VIEW CONTROLLER */
-"Enter.firstQuote" = "\"La meilleure préparation pour demain est de faire votre mieux aujourd’hui.\"";
-"Enter.firstAuthor" = " – H. Jackson Brown, Jr";
-"Enter.secondQuote" = "\"Croyez que vous pouvez et vous êtes à mi-chemin.\"";
-"Enter.secondAuthor" = "– Theodore Roosevelt";
-"Enter.thirdQuote" = "\"Rien n'est impossible, le mot lui-même dit 'Je suis possible'!\"";
-"Enter.thirdAuthor" = "– Audrey Hepburn";
+"Enter.firstQuote" = "\"Un AVC a changé ma vie du jour au lendemain et j'avais perdu l'espoir. L'application d'AVC Health4TheWorld est un outil utile pour les patients d'AVC comme moi pour lutter contre les AVC avec des conseils utiles et me fait sourire.\"";
+"Enter.firstAuthor" = "– Chitra, survivant d'AVC, Népal";
+"Enter.secondQuote" = "\"J'aime beaucoup l'application. Juste en touchant l'écran, vous pouvez dire à quelqu'un \"Je veux utiliser la toilet\". Quand j'ai eu mon AVC, ma famille et les médecins ne pouvaient pas me comprendre. Si j'avais l'application, je te le dis, ma vie aurait été différente quand j'étais déprimé!\"";
+"Enter.secondAuthor" = "– Njoh Ephraim, survivant d'AVC, Cameroun";
+"Enter.thirdQuote" = "\"Il y a quelques jours, j'ai soudainement développé une faiblesse du côté gauche, ce qui rendait difficile la marche et le travail quotidien. Mon médecin m'a conseillé de faire régulièrement de la physiothérapie, mais à cause des coûts, ce n'était pas possible. Mais avec cette application, ma fille m'aide à faire les exercices régulièrement à la maison en suivant les instructions.\"";
+"Enter.thirdAuthor" = "– Anjali Shaha, survivant d'AVC, Bangladesh";
 "Enter.fourthQuote" = "\"Je suis la seul qui peux changer ma vie. Personne ne peut le faire pour moi.\"";
 "Enter.fourthAuthor" = "– Carol Burnett";
-"Enter.fifthQuote" = "\"Toujours faire de votre mieux. Ce que vous plantez maintenant, récoltera plus tard.\"";
-"Enter.fifthAuthor" = "– Og Mandino";
+"Enter.fifthQuote" = "\"J'ai eu cet accident vasculaire cérébral dévastateur il y a 7 mois et tout autour de moi a changé radicalement. Comme je suis tout à fait oublieux, l'application prend soin de mes horaires de médicaments et me fait économiser de l'argent en faisant des exercices à la maison. Il a diverses choses qui aideraient à prévenir l'AVC et à mener une vie saine.\"";
+"Enter.fifthAuthor" = "– Thaman Bahadur B.K, survivant d'AVC, Népal";
 "Enter.sixthQuote" = "\"L'optimisme est la foi qui mène à la réussite. Rien ne peut être fait sans espoir et confiance.\"";
 "Enter.sixthAuthor" = "– Helen Keller";
 "Enter.seventhQuote" = "\"Définir les objectifs est la première étape pour transformer l'invisible en visible.\"";
 "Enter.seventhAuthor" = "– Tony Robbins";
 "Enter.loginButton" = "s'identifier";
+//"Enter.eighthQuote" = "\"Crois que tu le peux et tu es à la moitié du chemin.\"";
+//"Enter.eighthAuthor" = "Théodore Roosevelt";
+//"Enter.ninethQuote" = "\"Nothing is impossible, the word itself says 'I'm possible'!\"";
+//"Enter.ninethAuthor" = "– Audrey Hepburn";
+//"Enter.tenthQuote" = "\"Only I can change my life. No one can do it for me.\"";
+//"Enter.tenthAuthor" = "– Carol Burnett";
 
 /* HOME VIEW CONTROLLER */
 "Home.title" = "Accueil";
@@ -52,10 +60,70 @@
 "HelpMeSpeak.notGivingUp" = "Je ne renonce pas";
 "HelpMeSpeak.pain" = "Ça fait mal";
 "HelpMeSpeak.cantSpeak" = "Désolé, je ne peux pas parler";
+"HelpMeSpeak.iLoveYou" = "je t'aime";
+"HelpMeSpeak.imCold" = "j'ai froid";
+"HelpMeSpeak.imHot" = "J'ai chaud";
+"HelpMeSpeak.dizzy" = "J'ai la tête qui tourne";
+"HelpMeSpeak.lightsOn" = "Allume la lumière";
+"HelpMeSpeak.lightsOff" = "Éteindre les lumières";
+"HelpMeSpeak.getInBed" = "Je veux aller au lit";
+"HelpMeSpeak.getOutOfBed" = "Je veux sortir du lit";
+"HelpMeSpeak.howAreYou" = "Comment allez-vous?";
+"HelpMeSpeak.ambulance" = "J'ai besoin d'une ambulance";
+"HelpMeSpeak.inALittle" = "Dans un petit";
+"HelpMeSpeak.now" = "À présent";
+"HelpMeSpeak.goOutside" = "Je veux sortir";
+"HelpMeSpeak.sayHi" = "Salut!";
 
 /* EXERCISES VIEW CONTROLLER */
 "Exercises.title" = "Exercices";
-"Exercises.advancedExercises" = "Advanced Exercises";//MM
+"Exercises.advancedExercises" = "Nouveaux exercices";//MM
+
+"Exercises.arms" = "Exercices de bras";
+"Exercises.balanceTraining" = "Entraînement pour l'équilibre";//MM
+
+"Exercises.functionalMobility.Instructions" = "Gardez les bras au niveau des épaules ou en-dessous";//MM
+"Exercises.functionalMobility.h1" = "Rouler au lit";//MM
+"Exercises.functionalMobility.h2" = "Rouler hors du lit";//MM
+
+//"Arms "//MM
+"Exercises.arms.level1" = "Niveau 1";
+"Exercises.arms.level2" = "Niveau 2";
+"Exercises.arms.level3" = "Niveau 3";
+"Exercises.arms.level4" = "Niveau 4";
+
+"Exercises.arms.level1.instruction" = "Niveau 1: Pas de mouvement volontaire";
+"Exercises.arms.level2.instruction" = "Niveau 2: Mouvement du bras contre la gravité, sans la main";
+"Exercises.arms.level3.instruction" = "Niveau 3: Empreinte brute et libération";
+"Exercises.arms.level4.instruction" = "Niveau 4: Poigne précise";
+
+"Exercises.arms.level2.1" = "Niveau 2.1";
+"Exercises.arms.level2.2" = "Niveau 2.2";
+"Exercises.arms.level2.3" = "Niveau 2.3";
+"Exercises.arms.level2.4" = "Niveau 2.4";
+
+"Exercises.arms.level3.1" = "Niveau 3.1";
+"Exercises.arms.level3.2" = "Niveau 3.2";
+"Exercises.arms.level3.3" = "Niveau 3.3";
+"Exercises.arms.level3.4" = "Grand objet 1";
+"Exercises.arms.level3.5" = "Grand objet 2";
+
+"Exercises.arms.level4.1" = "Niveau 4.1";
+"Exercises.arms.level4.2" = "Niveau 4.2";
+
+
+//"Balance Training"//MM
+"Exercises.balanceTraining.sitting" = "Assis";
+"Exercises.balanceTraining.sitting.H1" = "Assis avec un soutien de la main";// 3721";
+"Exercises.balanceTraining.sitting.H2" = "Assis sans soutien de la main";// 3722";
+"Exercises.balanceTraining.sitting.H3" = "Assis et penchés dans des directions différentes";//: #3571, 3572"
+
+"Exercises.balanceTraining.Standing" = "Debout";
+"Exercises.balanceTraining.Standing.H1" = "Entraînement debout";// Pics #3729-3732";
+"Exercises.balanceTraining.Standing.H2" = "Debout et déplacement du poids d'un côté à l'autre";// (Video #3574, 3580)";
+"Exercises.balanceTraining.Standing.H3" = "Étape robinet par la taille de la dalle";//(Video #3575, 3576, 3578 )
+//MM
+
 "Exercises.strengthening" = "Renforcement";
 "Exercises.stretching" = "Étirage";
 "Exercises.functionalMobility" = "Mobilité fonctionnelle";
@@ -474,3 +542,8 @@
 "Learn.riskFactorsFive" = "PATIENT ATTEINT D’AVC DÉJÀ";
 "Reminders.oneTimeReminder" = "Faites-en un rappel unique";
 
+/* Quotes Section */
+"Quotes.title" = "Citation inspirante d'aujourd'hui"; //mm
+
+/* Relaxing Music Section */
+"Music.title" = "Musique relaxante"; //mm
