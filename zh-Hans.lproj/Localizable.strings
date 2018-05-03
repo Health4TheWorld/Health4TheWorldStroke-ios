@@ -32,6 +32,7 @@
 "Enter.seventhQuote" = "\"制定目標是願望成真的第一步。\"";
 "Enter.seventhAuthor" = "– Tony Robbins";
 "Enter.loginButton" = "登录";
+"Enter.enterButton" = "Enter";//MM
 //
 ///* HOME VIEW CONTROLLER */
 "Home.title" = "主界面";

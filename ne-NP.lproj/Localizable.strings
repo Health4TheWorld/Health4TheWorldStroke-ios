@@ -70,6 +70,7 @@
 "Home.surveys" = "सर्वेक्षणहरू";
 
 "Home.chatBot" = "ChatBot";
+"Home.chatmessage.label" = "Hi! How are you feeling today?";//MM
 
 /* HELP ME SPEAK VIEW CONTROLLER */
 "HelpMeSpeak.title" = "मलाई बोल्न सहयोग  गर्नुहोस्";

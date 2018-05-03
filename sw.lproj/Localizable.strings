@@ -33,6 +33,7 @@
 "Home.generalInfo" = "Maelezo ya jumla";
 "Home.surveys" = "Utafiti";
 "Home.chatBot" = "ChatBot";
+"Home.chatmessage.label" = "Hi! How are you feeling today?";//MM
 //
 ///* HELP ME SPEAK VIEW CONTROLLER */
 "HelpMeSpeak.title" = "Nisaidie Kuzungumza";

@@ -32,6 +32,7 @@
 "Enter.seventhQuote" = "\"Establecer objetivos es el primer paso para convertir lo invisible en visible.\"";
 "Enter.seventhAuthor" = "– Tony Robbins";
 "Enter.loginButton" = "iniciar sesión";
+"Enter.enterButton" = "Entrar";//MM
 
 /* HOME VIEW CONTROLLER */
 "Home.title" = "Inicio";
@@ -125,6 +126,21 @@
 "Exercises.mindExercises" = "Ejercicios de la mente";
 "Exercises.instructions" = "Por favor, repita 10 veces, una vez al día con la ayuda de un cuidador o familiar si es necesario. Consulte a su médico antes de iniciar el programa de ejercicios.";
 
+"Exercises.generalInstructions" =  "Aquí hay algunas instrucciones generales"; //MM
+"Exercises.generalInstructionsBullet1" = "\"Detener si causa dolor\". Haz estos ejercicios suavemente."; //MM
+"Exercises.generalInstructionsBullet2" = "La simetría del cuerpo y del cerebro, así que cualquier cosa que le hagas al \"lado bueno\" hará exactamente lo mismo con el lado afectado.";//MM
+"Exercises.generalInstructionsBullet3" = "Si usted es un paciente, hágalo bajo la supervisión de un profesional de la salud capacitado la primera vez para obtener la capacitación adecuada para usted y su familiar y para prevenir lesiones. No queremos que te lastimes, ¡ten cuidado!";//MM
+"Exercises.generalInstructionsBullet4" = "Pregúntele a sus profesionales de la salud cuál de estos sería el mejor para usted y si necesita alguna modificación.";//MM
+"Exercises.generalInstructionsBullet5" = "Cada ejercicio dado requiere un juicio y enfoque individual, y esta aplicación está destinada solo con fines educativos, y no pretende ser, y no debe interpretarse como, consejo médico. Nada de lo contenido en ninguna parte de esta aplicación, crea o ha creado o tiene la intención de crear, implícita o explícitamente, cualquier tipo de relación paciente-médico. Esperamos que este contenido educativo sea útil para aprender a mejorar la movilidad después de un evento que cambia la vida, como un accidente cerebrovascular.";//MM
+
+"Exercises.stretching.end" = "¡Guau, eres genial! lo hiciste !";//MM
+
+"Stretching.instructions.bullet1" = "Haga los estiramientos 3 veces y sostenga durante 30 segundos";//MM
+"Stretching.instructions.bullet2" = "Estírese hasta un punto de ligera incomodidad y sosténgalo. Reducir el estiramiento si es doloroso";//MM
+"Stretching.instructions.bullet3" = "Detener si causa dolor. Haz estos ejercicios suavemente.";//MM
+"Stretching.instructions.bullet4" = "Si es paciente, hágalo bajo la supervisión de un profesional de la salud capacitado la primera vez para obtener la capacitación adecuada para usted y su familiar y para evitar lesiones. No queremos que te lastimes, ¡ten cuidado!";//MM
+"Stretching.instructions.title" = "Instrucciones de estiramiento"; //MM
+
 /* STRENGTHENING VIEW CONTROLLER */
 "Strengthening.title" = "Fortalecimiento";
 "Strenghtening.legs" = "Piernas";
@@ -168,6 +184,23 @@
 "FunctionalMobility.bridgeHipLift" = "Puente de la cadera";
 "FunctionalMobility.armTrunkStrengthening" = "Brazo y tronco";
 "FunctionalMobility.sitToStand" = "Sentarse a pararse";
+
+/* MIND EXERCISES VIEW CONTROLLER */
+"MindExercises.bellsInstructions" = "* Siéntese cómodamente y tome una respiración profunda con una sonrisa suave. \ N * Concéntrese en el entorno tranquilo y los sonidos. \ N * Imagine caminar en este entorno. \ N * Mueva el teléfono hacia un lado para disfrutar de la vista. \ N * Cierra los ojos y respira profundamente otra vez. \ N * Enfócate en tu habitación.";
+"MindExercises.buddhaInstructions" = "* Siéntate cómodamente y respira profundo con una sonrisa suave. \ N * Concéntrate en la escena pacífica y los sonidos naturales. \ N * Imagínate caminando hacia la estatua de Buda. \ N * Mueve el teléfono hacia arriba para ver el cielo y las vías laterales para disfrutar de la vista. \ n * Cierra los ojos y respira profundamente otra vez. \ n * Enfócate en tu habitación.";
+"MindExercises.flagsInstructions" = "* Siéntate cómodamente y respira hondo con una sonrisa suave. \ N * Concéntrate en esta playa y en el sonido de las olas. \ N * Imagina la sensación de arena en tus pies. \ N * Imagina caminar sobre la playa y crear tu Huellas propias en la arena. \ n * Mueva las formas del lado del teléfono para disfrutar de la playa. \ n * Cierre los ojos y respire profundamente otra vez. \ nEnfoque de regreso a su habitación.";
+"MindExercises.marketplace1Instructions" = "* Siéntese cómodamente y respire hondo con una sonrisa suave. \ N * Concéntrese en la escena del mercado y en los sonidos naturales. \ N * Imagine que extiende la mano y toma la fruta. \ N * Mueva el teléfono hacia un lado para disfrutar de la vista . \ n * Cierre los ojos y respire profundamente otra vez. \ n * Enfóquese de nuevo en su habitación.";
+"MindExercises.marketplace2Instructions" = "* Siéntese cómodamente y respire hondo con una sonrisa suave. \ N * Concéntrese en la escena del mercado y en los sonidos naturales. \ N * Imagine caminar en el mercado. \ N * Mueva el teléfono hacia los lados para disfrutar de la vista. \ n * Cierre los ojos ahora y respire profundamente otra vez. \ n * Enfóquese de nuevo en su habitación.";
+"MindExercises.rockybeachInstructions" = "* Siéntate cómodamente y toma una respiración profunda con una sonrisa suave. \ N * Concéntrate en esta playa y en el sonido de las olas. \ n * Observe las hermosas rocas. \ n * Imagine que busca y agarra una roca. \ n * Imagine que hace una torre de rocas. \ n * Mueva el teléfono hacia arriba para ver el hermoso cielo. \ n * Cierre los ojos y respira profundamente otra vez. \ n * Enfócate de nuevo en tu habitación.";
+"MindExercises.sandybeachInstructions" = "* Siéntate cómodamente y respira hondo con una sonrisa suave. \ N * Concéntrate en esta playa y en el sonido de las olas. \ N * Imagina la sensación de arena en tus pies. \ N * Imagina caminar sobre la playa y crear tu huellas de pie en la arena. \ n * Mueva las formas del lado del teléfono para disfrutar de la playa. \ n * Cierre los ojos y respire profundamente otra vez. \ n * Enfóquese de nuevo en su habitación.";
+"Mindexercises.title" = "EJERCICIOS MENTALES";
+"Mindexercises.sandybeach" = "Playa de arena";
+"Mindexercises.rockybeach" = "Playa rocosa";
+"Mindexercises.marketplace.2" = "Mercado 2";
+"Mindexercises.marketplace.1" = "Mercado 1"
+"Mindexercises.flags" = "Banderas";
+"Mindexercises.buddha" =  "Buda";
+"Mindexercises.bells" = "Campanas";
 
 /* LEARN VIEW CONTROLLER */
 "Learn.title" = "Aprenda";

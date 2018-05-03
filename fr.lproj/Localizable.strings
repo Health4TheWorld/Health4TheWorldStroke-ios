@@ -32,6 +32,7 @@
 "Enter.seventhQuote" = "\"Définir les objectifs est la première étape pour transformer l'invisible en visible.\"";
 "Enter.seventhAuthor" = "– Tony Robbins";
 "Enter.loginButton" = "s'identifier";
+"Enter.enterButton" = "Entrer";//MM
 //"Enter.eighthQuote" = "\"Crois que tu le peux et tu es à la moitié du chemin.\"";
 //"Enter.eighthAuthor" = "Théodore Roosevelt";
 //"Enter.ninethQuote" = "\"Nothing is impossible, the word itself says 'I'm possible'!\"";
@@ -129,6 +130,21 @@
 "Exercises.functionalMobility" = "Mobilité fonctionnelle";
 "Exercises.mindExercises" = "Exercices de l’esprit";
 "Exercises.instructions" = "Veuillez répéter les exercices 10 fois par jour avec l'aide du soignant familial si nécessaire. Consultez votre fournisseur médical avant de commencer le programme d'exercice.";
+
+"Exercises.generalInstructions" =  "Voici quelques instructions générales"; //MM
+"Exercises.generalInstructionsBullet1" = "\"Arrêtez si cela provoque de la douleur\". Faites ces exercices doucement."; //MM
+"Exercises.generalInstructionsBullet2" = "Le corps et le cerveau aiment la symétrie donc tout ce que vous faites au \"bon côté\" fait exactement la même chose pour le côté concerné.";//MM
+"Exercises.generalInstructionsBullet3" = "Si vous êtes un patient, faites-le sous la supervision d'un professionnel de la santé qualifié pour obtenir une formation appropriée pour vous et votre membre de la famille et pour prévenir les blessures. Nous ne voulons pas que vous soyez blessé alors faites attention!";//MM
+"Exercises.generalInstructionsBullet4" = "Demandez à vos professionnels de la santé lesquels de ces produits vous conviendraient le mieux et si des modifications sont nécessaires.";//MM
+"Exercises.generalInstructionsBullet5" = "Chaque exercice nécessite un jugement et une approche individuels, et cette application est destinée uniquement à des fins éducatives, et n'est pas destinée à être, et ne doit pas être interprétée comme un avis médical. Rien dans une partie de cette demande ne crée ou n'a créé ou n'est censé créer, implicitement ou explicitement, une quelconque relation patient-médecin. Nous espérons que vous trouverez ce contenu éducatif utile pour apprendre comment améliorer la mobilité après un événement qui change la vie comme un accident vasculaire cérébral.";//MM
+
+"Exercises.stretching.end" = "Wow, vous êtes génial !! tu l'as fait !";//MM
+
+"Stretching.instructions.bullet1" = "Faites les étirements 3 fois et maintenez pendant 30 secondes";//MM
+"Stretching.instructions.bullet2" = "\S'étirer jusqu'à un point d'inconfort léger et tenir. Réduire l'étirement si douloureux";//MM
+"Stretching.instructions.bullet3" = "Arrêtez si cela cause de la douleur";//MM
+"Stretching.instructions.bullet4" = "Si vous êtes un patient, faites-le sous la supervision d'un professionnel de la santé qualifié pour obtenir une formation appropriée pour vous et votre membre de la famille et pour prévenir les blessures. Nous ne voulons pas que vous soyez blessé alors faites attention!";//MM
+"Stretching.instructions.title" = "Instructions d'étirement"; //MM
 
 /* STRENGTHENING VIEW CONTROLLER */
 "Strengthening.title" = "Renforcement";
@@ -533,6 +549,15 @@
 "MindExercises.marketplace2Instructions" = "* Asseyez-vous confortablement et respirez profondément avec un sourire doux.\n*Concentrez-vous sur la scène du marché et les sons naturels.\n* Imaginez-vous marcher sur le marché.\n* Déplacer le téléphone du côté pour profiter de la vue.\n* Fermez les yeux maintenant et prenez une autre respiration profonde.\n* Rapportez le focus dans votre chambre.";
 "MindExercises.rockybeachInstructions" = "* Asseyez-vous confortablement et respirez profondément avec un doux sourire.\n*Focalisez-vous sur cette plage et le bruit des vagues. \n* Remarquez les rochers magnifiques.\n* Imaginez-vous en train de chercher et de cueillir un roche.\n* Imaginez-vous en train de faire une tour avec les roches.\n* Bougez le téléphone en haut pour voir le beau ciel.\n* Fermez les yeux maintenant et prenez une autre respiration profonde.\n* Rapportez le focus dans votre chambre.";
 "MindExercises.sandybeachInstructions" = "* Asseyez-vous confortablement et prenez une grande respiration avec un doux sourire.\n*Focus sur cette plage et le bruit des vagues.\n* Imaginez la sensation de sable sur vos pieds.\n* Imaginez marcher sur la plage et créer vos propres empreintes dans le sable.\n* Déplacer le téléphone sur le côté pour profiter de la plage.\n* Fermez les yeux maintenant et respirez profondément.\n* Recentrez-vous dans votre chambre.";
+
+"Mindexercises.title" = "EXERCICES D'ESPRIT";
+"Mindexercises.sandybeach" = "Plage de sable";
+"Mindexercises.rockybeach" = "Plage rocheuse";
+"Mindexercises.marketplace.2" = "Place du marché 2";
+"Mindexercises.marketplace.1" = "Place du marché 1"
+"Mindexercises.flags" = "Drapeaux";
+"Mindexercises.buddha" =  "Bouddha";
+"Mindexercises.bells" = "Cloches";
 
 "Learn.riskFactorsForStroke" = "FACTEURS DE RISQUE POUR L'AVC";
 "Learn.riskFactorsOne" = "PRESSION SANGUINE ÉLEVÉE";

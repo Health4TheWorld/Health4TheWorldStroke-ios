@@ -18,20 +18,21 @@
 
 /* ENTER VIEW CONTROLLER */
 "Enter.firstQuote" = "\"Nabago ang buhay ko ng stroke sa isang tulog lamang at nawalan ako ng pag-asa. Ang Health4TheWorld app na ito ay malaking tulong sa katulad kong pasyente na nag-karoon ng stroke dahil sa mayroon itong mahalagang payo at nag-bigay ng saya sa aking buhay.\"";
-"Enter.firstAuthor" = "- Chitra, Sobreviviente, Nepal";
+"Enter.firstAuthor" = "- Chitra, Stroke Survivor, Nepal";
 "Enter.secondQuote" = "\"Gustong gusto ko ang app na ito. Isang pindot lang ng screen, nalalaman ka agad ang pangangailangan mo. Noong magkaroon ako ng stroke, hindi ako maintindihan ng aking pamilya at ng doctor. Kung sana mayroon ako nitong app, mas madali akong maintindihan.\"";
 "Enter.secondAuthor" = "- Njoh Ephraim, Stroke Survivor, Camerron, Africa";
 "Enter.thirdQuote" = "\"Ilang araw lang ang nakaraan naging mahina ang kaliwang bahagi ng aking katawan, kaya nahirapan akong mag-lakad at gawin ang pangaraw araw na gawain. Ang aking doctor pinayuhan akong mag ehersisyo sa tulong ng physical therapists kaya lang wala kaming sapat na pera na pambayad kaya hindi naging posible ang lahat. Dahil dito sa app na ito, natulongan ako ng aking anak na gawin ang regular na ehersisyo sa bahay sa pagsunod ng mga tagubilin.\"";
-"Enter.thirdAuthor" = "- Anjali Shaha, sobreviviente, Bangladesh";
+"Enter.thirdAuthor" = "- Anjali Shaha, Stroke Survivor, Bangladesh";
 "Enter.fourthQuote" = "\"Ako lamang ang makakapagbago sa buhay ko.  Walang ibang makakagawa nito para sa akin.\"";
 "Enter.fourthAuthor" = "– Carol Burnett";
 "Enter.fifthQuote" = "Mayron akong malubhang stroke pitong buwan ang nakakaraan at lahat nang bagay sa aking kapaligiran ay biglang nag-bago. Dahil ako ay makakalimutin, natutulungan ako nang app na ito para maalala ko ang pag-inon nang aking gamot sa tamang oras at makatipid ng pera at makapag ehersisyo sa bahay. Maraming mga bagay na ito para makatulong na maiwasan ang pagkakaroon ng stroke at para maibahagi ang malusog na pamumuhay.";
-"Enter.fifthAuthor" = "- Thaman Bahadur B.K, Sobreviviente, Nepal";
+"Enter.fifthAuthor" = "– Thaman Bahadur B.K, Stroke Survivor, Nepal";
 "Enter.sixthQuote" = "\"Ang optimismo ay ang pananampalataya na naghahatid sa tagumpay. Walang magagawa kung walang pag-asa at tiwala sa sarili.\"";
 "Enter.sixthAuthor" = "– Helen Keller";
 "Enter.seventhQuote" = "\"Ang pagtatakda ng mga layunin ay ang unang hakbang para makita ang mga hindi nakikita\"";
 "Enter.seventhAuthor" = "– Tony Robbins";
-"Enter.enterButton" = "Enter";
+"Enter.enterButton" = "Ipasok";
+"Enter.loginButton" = "Mag log in";
 //"Enter.eighthQuote" = "\"Maniwala kang kaya mo yan at ikaw ay nasakalagitnaan na.\"";
 //"Enter.eighthAuthor" = " - Theodore Roosevelt";
 //"Enter.ninethQuote" = "\"Nothing is impossible, the word itself says 'I'm possible'!\"";
@@ -48,6 +49,7 @@
 "Home.generalInfo" = "Pangkalahatang Impormasyon";
 "Home.surveys" = "Mga Pagsisiyasat";
 "Home.chatBot" = "ChatBot";
+"Home.chatmessage.label" = "Hi! Ano ang pakiramdam mo ngayon?";
 
 /* HELP ME SPEAK VIEW CONTROLLER */
 "HelpMeSpeak.title" = " Tulungan Mo Akong Magsalita ";
@@ -131,6 +133,21 @@
 "Exercises.mindExercises" = "Mga Ehersisyo s Pag-iisip";
 "Exercises.instructions" = "Paki-ulit ang mga ehersisyo 10 beses sa isang araw na may tulong mula sa tagapag-alaga ng pamilya kung kinakailangan. Konsultahin ang iyong medikal na tagapagkaloob bago simulan ang programang pang-ehersiyo.";
 
+"Exercises.generalInstructions" =  "Narito ang ilang mga pangkalahatang tagubilin"; //MM
+"Exercises.generalInstructionsBullet1" = "\"Itigil kung nagdudulot ito ng sakit\". Gawin ito malumanay."; //MM
+"Exercises.generalInstructionsBullet2" = "Ang katawan at utak tulad ng mahusay na simetrya kaya kahit anong gawin mo sa \"magandang bahagi \" gawin eksakto ang parehong sa kasangkot na bahagi.";//MM
+"Exercises.generalInstructionsBullet3" = "Kung ikaw ay isang pasyente, gawin ang mga ito sa ilalim ng pangangasiwa ng isang sanay na propesyonal na propesyonal sa unang pagkakataon upang makakuha ng tamang pagsasanay para sa iyo at sa iyong kapamilya at upang maiwasan ang mga pinsala. Hindi namin nais mong masaktan kaya maging maingat !.";//MM
+"Exercises.generalInstructionsBullet4" = "Tanungin ang iyong mga propesyonal sa kalusugan kung alin sa mga ito ang pinakamainam para sa iyo at kung kailangan ang anumang pagbabago.";//MM
+"Exercises.generalInstructionsBullet5" = "Ang bawat ibinigay na ehersisyo ay nangangailangan ng isang indibidwal na paghatol at diskarte, at ang application na ito ay inilaan lamang para sa mga layuning pang-edukasyon, at hindi nilayon upang maging, at hindi dapat ipakahulugan bilang, medikal na payo. Walang nilalaman sa anumang bahagi ng application na ito, lumilikha o nilikha o nilayon upang lumikha, nang walang pahiwatig o tahasang, anumang paraan ng pasyente-manggagamot na relasyon. Umaasa kami na nakita mo ang nilalamang pang-edukasyon na ito na nakatutulong upang matutunan kung paano mapagbuti ang kadaliang kumilos pagkatapos ng pagbabago ng buhay na kaganapan tulad ng stroke.";//MM
+
+"Exercises.stretching.end" = "Nag-stretch ang 3 beses at humawak ng 30 segundo";//MM
+
+"Stretching.instructions.bullet1" = "Nag-stretch ang 3 beses at humawak ng 30 segundo";//MM
+"Stretching.instructions.bullet2" = "Mag-stretch sa isang punto ng bahagyang kakulangan sa ginhawa at hold. Bawasan ang kahabaan kung masakit";//MM
+"Stretching.instructions.bullet3" = "Itigil kung nagdudulot ito ng sakit";//MM
+"Stretching.instructions.bullet4" = "Kung ikaw ay isang pasyente, gawin ang mga ito sa ilalim ng pangangasiwa ng isang sanay na propesyonal na propesyonal sa unang pagkakataon upang makakuha ng tamang pagsasanay para sa iyo at sa iyong kapamilya at upang maiwasan ang mga pinsala. Hindi namin nais mong masaktan kaya maging maingat !.";//MM
+"Stretching.instructions.title" = "Mga tagubilin sa pag-stretch"; //MM
+
 /* STRENGTHENING VIEW CONTROLLER */
 "Strengthening.title" = "Nagpapalakas";
 "Strenghtening.legs" = "Mga paa";
@@ -179,6 +196,15 @@
 "MindExercises.marketplace2Instructions" = "*Umupo ng kumportable at huminga ng malalim na may magiliw na ngiti.\n* Magpokus sa eksena sa palengke at mga natural tunog.\n* Isipin na naglalakad sa palengke.\n*  Igalaw patagilid ang telepono para masiyahan sa tanawin.\n*  Ipikit ang mga mata ngayon at huminga ulit ng malalim na hininga.\n*  Magpokus pabalik sa iyong kwarto.";
 "MindExercises.rockybeachInstructions" = "*Umupo ng kumportable at huminga ng malalim na may magiliw na ngiti.\n* Magpokus sa tabing-dagat at sa mga tunog ng mga alon.\n* Pansinin ang mga magagandang bato.\n* Isipin na may inaabot at may pinupulot na isang bato.\n* Isipin na may ginagawang tore ng mga bato.\n* Igalaw patagilid ang telepono para makita ang magandang kalangitan.\n*  Ipikit ang mga mata ngayon at huminga ulit ng malalim na hininga.\n*  Magpokus pabalik sa iyong kwarto.";
 "MindExercises.sandybeachInstructions" = "*Umupo ng kumportable at huminga ng malalim na may magiliw na ngiti.\n* Magpokus sa tabing-dagat at sa tunog ng mga alon.\n* Isipin ang pakiramdam ng buhangin sa iyong mga paa.\n* Isipin ag paglalakad sa tabing-dagat at lumikha ng mga bakas ng paa sa buhangin.\n*  Igalaw patagilid ang telepono para masiyahan sa tabing-dagat.\n*  Ipikit ang mga mata ngayon at huminga ulit ng malalim na hininga.\n*  Magpokus pabalik sa iyong kwarto.";
+
+"Mindexercises.title" = "MINDING PAG-AARAL";
+"Mindexercises.sandybeach" = "Sandy Beach";
+"Mindexercises.rockybeach" = "Rocky Beach";
+"Mindexercises.marketplace.2" = "Lugar ng Market 2";
+"Mindexercises.marketplace.1" = "Lugar ng Market 1"
+"Mindexercises.flags" = "Mga Flag";
+"Mindexercises.buddha" =  "Buddha";
+"Mindexercises.bells" = "Bells";
 
 /* FUNCTIONAL MOBILITY VIEW CONTROLLER */
 "FunctionalMobility.bridgeHipLift" = "Pagtaas ng Bridge Hip";

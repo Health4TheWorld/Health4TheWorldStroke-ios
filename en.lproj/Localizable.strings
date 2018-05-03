@@ -56,7 +56,7 @@
 "Home.surveys" = "Surveys";
 "Home.chatBot" = "ChatBot";
 "Home.LogoutButtontitle" = "Logout";
-"Home.chatmessage.label" = "Hi! How are you feeling today?";
+"Home.chatmessage.label" = "Hi! How are you feeling today?";//MM
 
 /* HELP ME SPEAK VIEW CONTROLLER */
 "HelpMeSpeak.title" = "Help Me Speak";
@@ -140,6 +140,21 @@
 "Exercises.mindExercises" = "Mind Exercises";
 "Exercises.instructions" = "Please repeat the exercises 10 times a day with assistance from family caregiver if needed. Consult your medical provider before starting the exercise program.";
 
+"Exercises.generalInstructions" =  "Here are some general instructions"; //MM
+"Exercises.generalInstructionsBullet1" = "\"Stop if it causes pain\". Do these exercises gently."; //MM
+"Exercises.generalInstructionsBullet2" = "The body and brain like symmetry so whatever you do to the \"good side\" do exactly the same to the involved side.";//MM
+"Exercises.generalInstructionsBullet3" = "If you are a patient, do these under supervision of a trained health professional first time to get right training for you  and your family member and to prevent injuries. We don't want you to be injured so be careful!.";//MM
+"Exercises.generalInstructionsBullet4" = "Ask your health professionals which of these would work best for you and if any modifications are needed.";//MM
+"Exercises.generalInstructionsBullet5" = "Each given exercise requires an individual judgement and approach, and this application is intended only for educational  purposes, and is not intended to be, and should not be interpreted as, medical advice. Nothing contained in any part of this application, creates or has created or is intended to create, implicitly or explicitly, any manner of patient-physician relationship. We hope you find this educational content helpful to learn how to improve mobility after  a life changing event like stroke.";//MM
+
+"Exercises.stretching.end" = "WOW, YOU ARE GREAT!! YOU DID IT !";//MM
+
+"Stretching.instructions.bullet1" = "Do the stretches 3 times and hold for 30 seconds";//MM
+"Stretching.instructions.bullet2" = "Stretch to a point of slight discomfort and hold. Reduce stretch if painful";//MM
+"Stretching.instructions.bullet3" = "Stop if it causes pain";//MM
+"Stretching.instructions.bullet4" = "If you are a patient, do these under supervision of a trained health professional first time to get right training for you and your family member and to prevent injuries.";//MM
+"Stretching.instructions.title" = "Stretching Instructions"; //MM
+
 /* STRENGTHENING VIEW CONTROLLER */
 "Strengthening.title" = "Strengthening";
 "Strenghtening.legs" = "Legs";
@@ -189,6 +204,15 @@
 "MindExercises.marketplace2Instructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on the market scene and the natural sounds.\n* Imagine walking in the market place.\n* Move the phone side ways to enjoy the view.\n* Close your eyes now and take another deep breath.\n* Focus back in to your room.";
 "MindExercises.rockybeachInstructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on this beach and the sound of the waves. \n* Notice the beautiful rocks.\n* Imagine reaching for and picking one rock.\n* Imagine making a tower of rocks.\n* Move the phone up to see the beautiful sky.\n* Close your eyes now and take another deep breath.\n* Focus back in to your room.";
 "MindExercises.sandybeachInstructions" = "* Sit comfortably and take a deep breath with a gentle smile.\n* Focus on this beach and the sound of the waves.\n* Imagine the feeling of sand on your feet.\n* Imagine walking on the beach and creating your own foot prints in sand.\n* Move the phone side ways to enjoy the beach.\n* Close your eyes now and take another deep breath.\n* Focus back in to your room.";
+
+"Mindexercises.title" = "MIND EXERCISES";
+"Mindexercises.sandybeach" = "Sandy Beach";
+"Mindexercises.rockybeach" = "Rocky Beach";
+"Mindexercises.marketplace.2" = "Market Place 2";
+"Mindexercises.marketplace.1" = "Market Place 1"
+"Mindexercises.flags" = "Flags";
+"Mindexercises.buddha" =  "Buddha";
+"Mindexercises.bells" = "Bells";
 
 /* FUNCTIONAL MOBILITY VIEW CONTROLLER */
 "FunctionalMobility.bridgeHipLift" = "Bridge Hip Lift";

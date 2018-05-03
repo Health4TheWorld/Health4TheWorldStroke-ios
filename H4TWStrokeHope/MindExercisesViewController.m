@@ -19,13 +19,13 @@
 
 @end
 
-#define VR_TITLE_BELLS @"Bells"
-#define VR_TITLE_BUDDHA @"Buddha"
-#define VR_TITLE_FLAGS @"Flags"
-#define VR_TITLE_MARKET_PLACE_1 @"Market Place 1"
-#define VR_TITLE_MARKET_PLACE_2 @"Market Place 2"
-#define VR_TITLE_ROCKY_BEACH @"Rocky Beach"
-#define VR_TITLE_SANDY_BEACH @"Sandy Beach"
+#define VR_TITLE_BELLS NSLocalizedString(@"Mindexercises.bells", nil)
+#define VR_TITLE_BUDDHA NSLocalizedString(@"Mindexercises.buddha", nil)
+#define VR_TITLE_FLAGS NSLocalizedString(@"Mindexercises.flags", nil)
+#define VR_TITLE_MARKET_PLACE_1 NSLocalizedString(@"Mindexercises.marketplace.1", nil)
+#define VR_TITLE_MARKET_PLACE_2 NSLocalizedString(@"Mindexercises.marketplace.2", nil)
+#define VR_TITLE_ROCKY_BEACH NSLocalizedString(@"Mindexercises.rockybeach", nil)
+#define VR_TITLE_SANDY_BEACH NSLocalizedString(@"Mindexercises.sandybeach", nil)
 @implementation MindExercisesViewController
 
 -(void)viewDidDisappear:(BOOL)animated{
@@ -35,7 +35,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"MIND EXERCISES";
+    self.title = [NSLocalizedString(@"Mindexercises.title", nil) uppercaseString];
     
     /* Back button */
 //    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
