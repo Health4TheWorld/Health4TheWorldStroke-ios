@@ -34,6 +34,11 @@
 "Enter.loginButton" = "iniciar sesión";
 "Enter.enterButton" = "Entrar";//MM
 
+"Enter.usernamePlaceholder" = "usuario";
+"Enter.passwordPlaceholder" = "contraseña";
+"Enter.signUpButton" = "Regístrate";
+"Enter.forgotPasswordButton" = "Se te olvidó tu contraseña";
+
 /* HOME VIEW CONTROLLER */
 "Home.title" = "Inicio";
 "Home.helpMeSpeak" = "Ayúdame a hablar";
@@ -227,6 +232,14 @@
 "Learn.homeMod" = "Modificación del hogar";
 "Learn.problem" = "PROBLEMA";
 "Learn.whatToDo" = "QUÉ HACER";
+"Learn.signsOfStroke" = "Signos de apoplejía";
+"Learn.riskFactors" = "Factores de riesgo";
+"Learn.riskFactorsForStroke" = "FACTORES DE RIESGO PARA EL ACCIDENTE";
+"Learn.riskFactorsOne" = "ALTA PRESION SANGUINEA";
+"Learn.riskFactorsTwo" = "ENFERMEDAD DEL CORAZÓN";
+"Learn.riskFactorsThree" = "DE FUMAR";
+"Learn.riskFactorsFour" = "DIABETES";
+"Learn.riskFactorsFive" = "Carrera anterior";
 
 /* FAQ */
 "Faq.questionOne" = "Qué es un  derrame or ataque cerebral (clinicamente conocido como un accidente cerebrovascular)?";
@@ -534,4 +547,7 @@
 "Chatbot.feelingmessage4" = "Deprimido";
 "Chatbot.feelingmessage5" = "Con sueño";
 "Chatbot.feelingmessage6" = "fatigado";
+"Chatbot.sendButtonTitle" = "Enviar";
+"Chatbot.enterMessage" =  "Ingrese el mensaje ...";
+"Feedback.msg" = "¿Cómo calificaría esta aplicación hoy?";
 

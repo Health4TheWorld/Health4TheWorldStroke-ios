@@ -40,6 +40,11 @@
 //"Enter.tenthQuote" = "\"Only I can change my life. No one can do it for me.\"";
 //"Enter.tenthAuthor" = "– Carol Burnett";
 
+"Enter.usernamePlaceholder" = "username";
+"Enter.passwordPlaceholder" = "password";
+"Enter.signUpButton" = "Mag-sign up";
+"Enter.forgotPasswordButton" = "Nakalimutan ang password";
+
 /* HOME VIEW CONTROLLER */
 "Home.title" = "Bahay";
 "Home.helpMeSpeak" = "Tulungan Mo Akong Magsalita";
@@ -438,4 +443,7 @@
 "Chatbot.feelingmessage4" = "Nalulumbay";
 "Chatbot.feelingmessage5" = "Inaantok";
 "Chatbot.feelingmessage6" = "Sobrang pagod";
+"Feedback.msg" = "Paano mo i-rate ang app na ito ngayon?";
+"Chatbot.sendButtonTitle" = "Ipadala";
+"Chatbot.enterMessage" =  "Ipasok ang mensahe ...";
 "Feedback.msg" = "Paano mo i-rate ang app na ito ngayon?";

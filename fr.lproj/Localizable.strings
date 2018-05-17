@@ -40,6 +40,11 @@
 //"Enter.tenthQuote" = "\"Only I can change my life. No one can do it for me.\"";
 //"Enter.tenthAuthor" = "– Carol Burnett";
 
+"Enter.usernamePlaceholder" = "Nom d'utilisateur";
+"Enter.passwordPlaceholder" = "mot de passe";
+"Enter.signUpButton" = "S'inscrire";
+"Enter.forgotPasswordButton" = "Mot de passe oublié";
+
 /* HOME VIEW CONTROLLER */
 "Home.title" = "Accueil";
 "Home.helpMeSpeak" = "Aidez-moi à parler";
@@ -210,6 +215,7 @@
 "Learn.riskFactorsThree" = "SMOKING";
 "Learn.riskFactorsFour" = "DIABETES";
 "Learn.riskFactorsFive" = "PRIOR STROKE";
+"Learn.signsOfStroke" = "Signes d'AVC";
 
 /* FAQ */
 "Faq.questionOne" = "Qu’est-ce que c’est l’AVC?";
@@ -512,6 +518,9 @@
 "Chatbot.feelingmessage4" = "Déprimé";
 "Chatbot.feelingmessage5" = "somnolent";
 "Chatbot.feelingmessage6" = "fatiguer";
+"Chatbot.sendButtonTitle" = "Envoyer";
+"Chatbot.enterMessage" =  "Entrez un message ...";
+"Feedback.msg" = "Comment évalueriez-vous cette application aujourd'hui?";
 
 "HelpMeSpeak.iLoveYou" = "Je t’aime";
 "HelpMeSpeak.imCold" = "J'ai froid";
