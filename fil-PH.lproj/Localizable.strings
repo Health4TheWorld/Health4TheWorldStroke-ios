@@ -7,7 +7,10 @@
  */
 
 /* DISCLAIMER */
+
+"All.backButton" = "Bumalik";//MM
 "Feedback.title" = "Feedback";
+"Feedback.Story" = "Sabihin sa Amin ang iyong Kwento"; //MM
 
 "Disclaimer.paragraphOne" = "Kahit na ang aplikasyong ito ay gagamitin bilang isang kagamitang pang-edukasyon para sa mga pasyente ng stroke, hindi naglalaman saanmang parte ng aplikasyong ito, gumagawa, nagawa na, o may intensyong gumawa, nang tahasan o walang pahiwatig, sa anumang paraan ng relasyong pasyente at doktor.";
 "Disclaimer.paragraphTwo" = "Ang mga tagubilin dito ay batay sa pangkalhatan at mabuting-tinatanggap na mga alituntunin at ekspertong mga opinyon para sa pangangalaga ng matapos-maistroke at pamamahala sa sarili.  Bagaman may makatuwirang pagsisikap ang nagawa na para masiguro na ang mga impormasyong nakapaloob sa mga pagtuturo dito ay pangkasalukuyan at tumpak sa panahon ng paglilimbag, wala sa Health4TheWorld, o sa sinumang indibidwal na nakapagbigay ng nilalaman o naging bahagi sa pagtatanghal ng materyal na ito, maging sa pagsasabi o sa panulat ang makaka-garantiya na ang lahat ng impormasyon ay tumpak at may bisa.";

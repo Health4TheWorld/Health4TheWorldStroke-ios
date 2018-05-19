@@ -26,13 +26,13 @@
 static NSString * const reuseIdentifier = @"QuotesCell";
 
 -(void)viewDidDisappear:(BOOL)animated{
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"All.backButton", nil) style:UIBarButtonItemStylePlain target:nil action:nil];
     [[self navigationItem] setBackBarButtonItem:backButton];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"Quotes";
+    self.title = NSLocalizedString(@"Quotes.title", nil);;
     
     /* Back button */
 //    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];

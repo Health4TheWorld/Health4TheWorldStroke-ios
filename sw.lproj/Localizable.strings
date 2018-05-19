@@ -1,4 +1,9 @@
 ///* DISCLAIMER */
+"All.backButton" = "Rudi";//MM
+
+"Feedback.title" = "MAONI";
+"Feedback.Story" = "Tuambie hadithi yako"; //MM
+
 "Disclaimer.paragraphOne" = "Ingawa Programu hii itatumika kama chombo cha elimu kwa wagonjwa wa Kiharusi,hakuna sehemu ya programu hii, inajenga, au ina nia ya kujenga ,kikamilifu au waziwazi, uhusiano wowote kati ya mgonjwa na daktari.";
 "Disclaimer.paragraphTwo" = "Maagizo yaliyomo hapa yanategemea miongozo ya jumla na yenye kukubalika, na maoni ya wataalam kuhusu utunzaji baada ya kiharusi na utunzaji wa kujitegemea. Ingawa jitihada zimefanyika ili kuhakikisha taarifa zilizomo katika mihadhara hii ni ya sasa na sahihi wakati wa kuchapishwa, wala Health4TheWorld, wala mtu yeyote ambaye ametoa maudhui au amehusika katika uwasilishaji wa taarifa hii, kwa maneno au kwa maandiko, anaweza kuhakikisha kuwa habari zote  ni sahihi na halali .";
 "Disclaimer.paragraphThree" = "Kila hali tofauti inahitaji hukumu na mbinu ya kibinafsi, na Programu hii inapaswa kutumika kwa madhumuni ya elimu tu,na haikusidiwa kuwa, na haipaswi kutafsiriwa kama ushauri wa matibabu.";

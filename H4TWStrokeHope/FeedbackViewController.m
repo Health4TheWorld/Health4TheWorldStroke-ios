@@ -53,7 +53,7 @@ static int rating;
     NSLog(@"%@",[[UIDevice currentDevice] systemVersion]);
     if ([textFeedback.text length] == 0)
         textFeedback.text = @" ";
-    [AWSDynamoDBHelper InsertDataIntoFeedbackTable: @[uniqueIdentifier,textFeedback.text,[NSString stringWithFormat:@"%d",rating], @"Tell us your story", [NSString stringWithFormat:@"%@",dateForToday]]];
+    [AWSDynamoDBHelper InsertDataIntoFeedbackTable: @[uniqueIdentifier,textFeedback.text,[NSString stringWithFormat:@"%d",rating], NSLocalizedString(@"Feedback.Story", nil), [NSString stringWithFormat:@"%@",dateForToday]]];
     /* insert app usage info into table
          Feedback : DeviceId, comment, rating, story, timestamp
      */

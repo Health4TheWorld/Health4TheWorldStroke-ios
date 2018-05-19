@@ -8,6 +8,11 @@
 
 
 /* DISCLAIMER */
+
+"All.backButton" = "背部";//MM
+"Feedback.title" = "反馈";
+"Feedback.Story" = "告訴我們你的故事"; //MM
+
 "Disclaimer.paragraphOne" = "這個軟件是為中風病人設計的教學工具，不旨在幫助建立任何病人與醫生之間的私人關系。";
 "Disclaimer.paragraphTwo" = "軟件內的指導方針均來自於專家建議，用於指導中風病人康復階段的自我管理和康復訓練。雖然我們講座內容均來自於最前沿的醫學論文，但是，無論是health4theworld，還是任何口頭或者書面參與材料編寫的個人，都不對內容的準確性和有效性負責。";
 "Disclaimer.paragraphThree" = "每個特定的情況都需要根據個人做判斷，這個軟件主要用於教學目的，並不是醫療指導。";

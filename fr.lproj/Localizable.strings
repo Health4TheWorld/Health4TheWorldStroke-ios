@@ -7,7 +7,10 @@
  */
 
 /* DISCLAIMER */
+
+"All.backButton" = "Arrière";//MM
 "Feedback.title" = "retour d'information";
+"Feedback.Story" = "Dites-nous votre histoire"; //MM
 
 "Disclaimer.paragraphOne" = "Bien que cette application soit utilisée comme outil éducatif pour les patients atteints d'un accident vasculaire cérébral, rien contenu dans toute partie de cette application, ne crée, n'a créé ou est destiné à créer, de manière implicite ou explicite, toute forme de relation patient-médecin.";
 "Disclaimer.paragraphTwo" = "Les instructions ci-après sont basées sur des lignes directrices générales et bien acceptées et des avis d'experts pour les soins post-AVC et l'autogestion. Bien que des efforts raisonnables aient été faits pour s'assurer que l'information contenue dans ces conférences était actuelle et précise au moment de publication, ni Health4TheWorld, ni aucune personne qui a fourni du contenu ou n'a participé à la présentation de ce matériel, oralement ou par écrit, peut garantir que toutes les informations sont exactes et valides.";

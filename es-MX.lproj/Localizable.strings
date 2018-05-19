@@ -7,6 +7,8 @@
 */
 
 /* DISCLAIMER */
+
+"All.backButton" = "Espalda";//MM
 "Feedback.title" = "realimentación";//MM
 
 "Disclaimer.paragraphOne" = "Aunque esta aplicación es de utilizarse como una herramienta educativa para los pacientes de accidente cerebrovascular, nada contenido en ninguna parte de esta aplicación, crea, ha creado o tiene intención de crear, implícita o explícitamente, cualquier tipo de relación paciente-médico.";
@@ -550,4 +552,4 @@
 "Chatbot.sendButtonTitle" = "Enviar";
 "Chatbot.enterMessage" =  "Ingrese el mensaje ...";
 "Feedback.msg" = "¿Cómo calificaría esta aplicación hoy?";
-
+"Feedback.Story" = "Cuéntanos tu historia"; //MM

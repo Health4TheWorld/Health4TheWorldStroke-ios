@@ -26,14 +26,14 @@
 static NSString * const reuseIdentifier = @"RelaxingMusicCell";
 
 -(void)viewDidDisappear:(BOOL)animated{
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"All.backButton", nil) style:UIBarButtonItemStylePlain target:nil action:nil];
     [[self navigationItem] setBackBarButtonItem:backButton];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"Relaxing Music";
+    self.title = NSLocalizedString(@"Music.title", nil);
     
     /* Back button */
 //    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];

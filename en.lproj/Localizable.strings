@@ -7,7 +7,7 @@
 */
 
 /* DISCLAIMER */
-
+"All.backButton" = "Back";//MM
 "Feedback.title" = "Feedback";
 
 "Disclaimer.paragraphOne" = "Although this application is to be used as an educational tool for stroke patients, nothing contained in any part of this application, creates, has created, or is intended to create, implicitly or explicitly, any manner of patient-physician relationship.";
@@ -416,6 +416,7 @@
 
 /* Quotes Section */
 "Quotes.title" = "Today's Inspirational Quote";
+@"Quotes"
 
 /* Relaxing Music Section */
 "Music.title" = "Relaxing Music";
@@ -563,3 +564,4 @@
 "Chatbot.sendButtonTitle" = "Send";
 "Chatbot.enterMessage" =  "Enter message...";
 "Feedback.msg" = "How would you rate this app today ?";
+"Feedback.Story" = "Tell us your story"; //MM
