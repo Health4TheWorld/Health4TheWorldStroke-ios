@@ -28,6 +28,8 @@
 "Enter.seventhAuthor" = "– Tony Robbins";
 "Enter.enterButton" = "Ingia";
 "Enter.LanguageChange" = "Mabadiliko ya lugha";
+"Home.LogoutButtontitle" = "kuingia";
+"Enter.loginButton" = "Ingia";
 //
 ///* HOME VIEW CONTROLLER */
 "Home.title" = "Nyumbani";

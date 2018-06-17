@@ -119,7 +119,7 @@
 - (void)b3Pressed {
     VideoViewController *videoVC = [[VideoViewController alloc] init];
     videoVC.title = NSLocalizedString(@"Exercises.balanceTraining.sitting.H3", nil) ;
-    [videoVC setUpVideo: VIDEO_BT_SITTING_3571];
+    [videoVC setUpVideo: VIDEO_BT_SITTING_3572];
     [self.navigationController pushViewController:videoVC animated:YES];
 }
 

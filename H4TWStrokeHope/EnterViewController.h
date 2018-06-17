@@ -15,11 +15,13 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 //#import <AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.h>
 
 
 @interface EnterViewController : UIViewController
-<UIGestureRecognizerDelegate, UITableViewDataSource,UITableViewDelegate>//AWSCognitoIdentityPasswordAuthentication
+<UIGestureRecognizerDelegate, UITableViewDataSource,UITableViewDelegate,FBSDKLoginButtonDelegate>//AWSCognitoIdentityPasswordAuthentication
     @property (nonatomic, strong) NSString * usernameText;
     //UIPickerViewDelegate, UIPickerViewDataSource
     @property NSArray *arrLanguage;

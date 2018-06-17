@@ -25,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *languagePicker;
 @property (weak, nonatomic) IBOutlet UIView *viewForPicker;
 @property (strong, nonatomic) IBOutlet UIButton *enterButton;
+//@property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
 @property CGPoint startPosition;
 @property NSString *langKey;
 @property NSMutableArray *quotes;
@@ -32,6 +33,7 @@
 @property NSMutableArray *circles; /* Circles to navigate between quotes */
 @property (weak, nonatomic) IBOutlet UIButton *languageButton;
 @property int currentQuoteIndex;
+@property (strong, nonatomic) FBSDKLoginButton *loginButton;
 @end
 
 /* Dimensions of image so we can scale it proportionally. */
@@ -52,6 +54,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // Check if user has already given permissions to this app.
+    if ([FBSDKAccessToken currentAccessToken]) {
+        // User is logged in, go to next view controller.
+        [self pushToHomeViewController ];
+    }
+    
     data = [LanguageManager languageStrings];
     //static NSString * const LanguageCodes[] = { @"en", @"es_MX", @"fr", @"fil",@"zh_Hans_CN",@"ne_NP",@"sw" };
     //    arrKey = [[NSArray alloc] initWithObjects:@"en",@"es",@"fr",@"fil",@"zh",@"ne",@"sw",nil];//MM
@@ -66,6 +75,34 @@
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedLeft:)];
     [swipeLeft setDirection:UISwipeGestureRecognizerDirectionLeft ];
     [self.view addGestureRecognizer:swipeLeft];
+    
+    self.loginButton = [[FBSDKLoginButton alloc] initWithFrame:(CGRectMake(20, self.view.bounds.size.height - 40, 90, 25))];
+    // Optional: Place the button in the center of your view.
+    //loginButton.center = self.view.center;
+    self.loginButton.readPermissions = @[@"public_profile", @"email"];
+    
+    //Facebook Login Button
+    UIFont *keyFont = [UIFont fontWithName:@"Lato-light" size:14];
+    NSDictionary *attributes = [NSDictionary dictionaryWithObject:keyFont forKey:NSFontAttributeName];
+    NSAttributedString *loginButtonTitle;
+    if ([FBSDKAccessToken currentAccessToken] != nil) {
+        // User is logged in, do work such as go to next view controller.
+         loginButtonTitle = [[NSAttributedString alloc] initWithString:NSLocalizedString(@"Home.LogoutButtontitle", nil) attributes:attributes];
+    }else{
+         loginButtonTitle = [[NSAttributedString alloc] initWithString:NSLocalizedString(@"Enter.loginButton", nil) attributes:attributes];
+    }
+    
+    [self.loginButton setAttributedTitle: loginButtonTitle forState:UIControlStateNormal];
+    
+    // Resize a UIButton according to its title's length.
+    CGSize stringSize = [self.loginButton.titleLabel.text sizeWithAttributes: attributes];
+    CGRect frame = self.loginButton.frame;
+    frame.size.width = stringSize.width + 50;
+    [self.loginButton setFrame:frame];
+
+    //[self loginButtonClicked];
+    // Handle clicks on the button
+    [self.view addSubview:self.loginButton];
     
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedRight:)];
     [swipeRight setDirection:UISwipeGestureRecognizerDirectionRight ];
@@ -95,7 +132,68 @@
         // display the controller in the usual way
         [self presentViewController:controller animated:YES completion:nil];
     }
+    else{
+        UIFont *keyFont = [UIFont fontWithName:@"Lato-light" size:14];
+        NSDictionary *attributes = [NSDictionary dictionaryWithObject:keyFont forKey:NSFontAttributeName];
+        NSAttributedString *loginButtonTitle;
+        if ([FBSDKAccessToken currentAccessToken] != nil) {
+            // User is logged in, do work such as go to next view controller.
+            loginButtonTitle = [[NSAttributedString alloc] initWithString:NSLocalizedString(@"Home.LogoutButtontitle", nil) attributes:attributes];
+        }else{
+            loginButtonTitle = [[NSAttributedString alloc] initWithString:NSLocalizedString(@"Enter.loginButton", nil) attributes:attributes];
+        }
+        
+        [self.loginButton setAttributedTitle: loginButtonTitle forState:UIControlStateNormal];
+    }
     
+}
+
+// FBSDK Login Button delegate
+- (void)loginButton:(FBSDKLoginButton *)loginButton
+didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
+              error:(NSError *)error {
+    if (error) {
+        NSLog(@"Process error");
+    } else if (result.isCancelled) {
+        NSLog(@"Cancelled");
+        [self pushToHomeViewController ];
+    } else {
+        NSLog(@"Logged in");
+
+        [self pushToHomeViewController ];
+    }
+};
+
+/**
+ Sent to the delegate when the button was used to logout.
+ - Parameter loginButton: The button that was clicked.
+ */
+- (void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton{
+    //[loginButton setTitle: NSLocalizedString(@"Home.LogoutButtontitle", nil) forState:UIControlStateNormal];
+}
+
+- (void) loginButtonClicked {
+    FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
+    [login
+     logInWithReadPermissions: @[@"public_profile",@"email"]
+     fromViewController:self
+     handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+         if (error) {
+             NSLog(@"Process error");
+         } else if (result.isCancelled) {
+             NSLog(@"Cancelled");
+             [self pushToHomeViewController ];
+         } else {
+             NSLog(@"Logged in");
+             [self pushToHomeViewController ];
+         }
+     }];
+}
+
+- (void) pushToHomeViewController{
+    HomeViewController *hvc = [[HomeViewController alloc] init];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self.navigationController pushViewController:hvc animated:YES];
 }
 
 

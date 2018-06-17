@@ -35,6 +35,7 @@
 "Enter.seventhAuthor" = "– Tony Robbins";
 "Enter.loginButton" = "iniciar sesión";
 "Enter.enterButton" = "Entrar";//MM
+"Home.LogoutButtontitle" = "cerrar sesión";
 
 "Enter.usernamePlaceholder" = "usuario";
 "Enter.passwordPlaceholder" = "contraseña";

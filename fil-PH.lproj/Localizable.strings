@@ -47,6 +47,7 @@
 "Enter.passwordPlaceholder" = "password";
 "Enter.signUpButton" = "Mag-sign up";
 "Enter.forgotPasswordButton" = "Nakalimutan ang password";
+"Home.LogoutButtontitle" = "logout";
 
 /* HOME VIEW CONTROLLER */
 "Home.title" = "Bahay";

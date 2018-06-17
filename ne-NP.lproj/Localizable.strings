@@ -57,6 +57,8 @@
 
 "Enter.enterButton" = "प्रबेश् गर्नुहोस्";
 
+"Home.LogoutButtontitle" = "बाहिर निस्कनु";
+
 
 /* HOME VIEW CONTROLLER */
 "Home.title" = "घर";

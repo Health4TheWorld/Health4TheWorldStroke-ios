@@ -42,5 +42,27 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+    
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb214092062525832</string>
+            </array>
+        </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>214092062525832</string>
+    <key>FacebookDisplayName</key>
+    <string>Health4TheWorld</string>
+    
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbapi</string>
+        <string>fb-messenger-share-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
+    </array>
 </dict>
 </plist>

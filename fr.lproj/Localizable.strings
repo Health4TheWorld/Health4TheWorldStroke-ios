@@ -47,6 +47,7 @@
 "Enter.passwordPlaceholder" = "mot de passe";
 "Enter.signUpButton" = "S'inscrire";
 "Enter.forgotPasswordButton" = "Mot de passe oublié";
+"Home.LogoutButtontitle" = "Connectez - Out";
 
 /* HOME VIEW CONTROLLER */
 "Home.title" = "Accueil";

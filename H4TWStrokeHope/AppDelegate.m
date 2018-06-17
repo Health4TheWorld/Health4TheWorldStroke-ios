@@ -15,6 +15,8 @@
 #import "AWSCognitoIdentityProvider.h"
 #import "AWSConstants.h"
 
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+
 @interface AppDelegate ()
 
 @end
@@ -68,6 +70,11 @@
     [AWSCognitoIdentityUserPool registerCognitoIdentityUserPoolWithConfiguration:serviceConfiguration userPoolConfiguration:config forKey:@"UserPool"];
 //    AWSCognitoIdentityUserPool *pool = [AWSCognitoIdentityUserPool CognitoIdentityUserPoolForKey:@"UserPool"];
     
+    /* Facebook Integration*/
+    [[FBSDKApplicationDelegate sharedInstance] application:application
+                             didFinishLaunchingWithOptions:launchOptions];
+    // Add any custom logic here.
+    
     return YES;
 }
 
@@ -77,6 +84,11 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+}
+
+// FB Analytics activated
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [FBSDKAppEvents activateApp];
 }
 
 
@@ -144,6 +156,20 @@
 -(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler{
     //Called to let your app know which action was selected by the user for a given notification.
 //    NSLog(@"Userinfo %@",response.notification.request.content.userInfo);
+}
+
+// Facebook App delegates
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+            options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    
+    BOOL handled = [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                                  openURL:url
+                                                        sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
+                                                               annotation:options[UIApplicationOpenURLOptionsAnnotationKey]
+                    ];
+    // Add any custom logic here.
+    return handled;
 }
 
 

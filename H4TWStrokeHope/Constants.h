@@ -105,7 +105,7 @@
 //Functional Mobility
 #define VIDEO_FM_ROLLINGINBED @"1FunctionalMobility.mp4"//MM
 #define VIDEO_FM_ROLLINGOUTBED @"3FunctionalMobility.mp4"//MM
-#define VIDEO_BT_SITTING_3572 @"3572_side.mp4"//MM
+#define VIDEO_BT_SITTING_3572 @"IMG_3572.mp4"//MM
 #define VIDEO_BT_SITTING_3571 @"3571_Back.mp4"//MM
 #define BT_Sitting_3572 @"3572_side.mp4"
 //#define BT_Sitting_3571 @"3571_Back.mp4"
@@ -174,18 +174,18 @@
 
 
 
-#define VIDEO_ARM_LEVEL2_1 @"IMG_3561_Converted.m4v"
-#define VIDEO_ARM_LEVEL2_2 @"IMG_3562_converted.m4v"
-#define VIDEO_ARM_LEVEL2_3 @"IMG_3563_converted.m4v"
-#define VIDEO_ARM_LEVEL2_4 @"IMG_3565_converted.m4v"
+#define VIDEO_ARM_LEVEL2_1 @"IMG_3561.mp4"
+#define VIDEO_ARM_LEVEL2_2 @"IMG_3562.mp4"
+#define VIDEO_ARM_LEVEL2_3 @"IMG_3563.mp4"
+#define VIDEO_ARM_LEVEL2_4 @"IMG_3565.mp4"
 
 #define VIDEO_ARM_LEVEL3_1 @"IMG_3710_converted.m4v"
 #define VIDEO_ARM_LEVEL3_2 @"IMG_3711_converted.m4v"
 #define VIDEO_ARM_LEVEL3_3 @"IMG_3712_converted.m4v"
 #define VIDEO_ARM_LEVEL3_4 @"IMG_3713_converted.m4v"
 #define VIDEO_ARM_LEVEL3_5 @"IMG_3714_converted.m4v"
-#define VIDEO_ARM_LEVEL3_6 @"12_3567.mp4"
-#define VIDEO_ARM_LEVEL3_7 @"4_3566-2.mp4"
+#define VIDEO_ARM_LEVEL3_6 @"IMG_3567.mp4"
+#define VIDEO_ARM_LEVEL3_7 @"IMG_3566.mp4"
 
 #define VIDEO_ARM_LEVEL4_1 @"IMG_3569.mp4"
 #define VIDEO_ARM_LEVEL4_2 @"IMG_3720.mp4"

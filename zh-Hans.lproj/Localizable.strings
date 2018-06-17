@@ -38,6 +38,7 @@
 "Enter.seventhAuthor" = "– Tony Robbins";
 "Enter.loginButton" = "登录";
 "Enter.enterButton" = "Enter";//MM
+"Home.LogoutButtontitle" = "登出";
 //
 ///* HOME VIEW CONTROLLER */
 "Home.title" = "主界面";
