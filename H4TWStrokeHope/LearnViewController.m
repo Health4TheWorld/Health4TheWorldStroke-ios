@@ -13,7 +13,7 @@
 #import "LearnContent.h"
 #import "LearnContentTypeTableViewCell.h"
 #import "AWSDynamoDBHelper.h"
-#import "CareGiverViewController.h"
+//#import "CareGiverViewController.h"
 
 #define SPACE_BETWEEN_BEFAST_BUTTONS 10
 
@@ -213,8 +213,8 @@
 //            dest.justImage = FALSE;
 //        }
     if(indexPath.row==0){
-        CareGiverViewController *dest = [[CareGiverViewController alloc] initWithNibName:@"CareGiverViewController" bundle:nil];
-        [self.navigationController pushViewController:dest animated:YES];
+       // CareGiverViewController *dest = [[CareGiverViewController alloc] initWithNibName:@"CareGiverViewController" bundle:nil];
+       // [self.navigationController pushViewController:dest animated:YES];
 
     }else{
         dest.content = [[LearnContent alloc] initWithContentTitle:[self.learnCategories objectAtIndex:indexPath.row]];
