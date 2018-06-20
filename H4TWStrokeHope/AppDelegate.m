@@ -65,11 +65,12 @@
     AWSServiceManager.defaultServiceManager.defaultServiceConfiguration = serviceConfiguration;
      
     //create a pool
-    
+    /*
     AWSCognitoIdentityUserPoolConfiguration *config = [[AWSCognitoIdentityUserPoolConfiguration alloc] initWithClientId: AWS_APP_CLIENT_ID clientSecret: AWS_APP_CLIENT_SECRET poolId: USERPOOL_ID];
     [AWSCognitoIdentityUserPool registerCognitoIdentityUserPoolWithConfiguration:serviceConfiguration userPoolConfiguration:config forKey:@"UserPool"];
 //    AWSCognitoIdentityUserPool *pool = [AWSCognitoIdentityUserPool CognitoIdentityUserPoolForKey:@"UserPool"];
-    
+    */
+     
     /* Facebook Integration*/
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
