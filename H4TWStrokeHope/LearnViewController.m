@@ -13,6 +13,7 @@
 #import "LearnContent.h"
 #import "LearnContentTypeTableViewCell.h"
 #import "AWSDynamoDBHelper.h"
+#import "CareGiverViewController.h"
 
 #define SPACE_BETWEEN_BEFAST_BUTTONS 10
 
@@ -33,13 +34,14 @@
 
 -(void)viewDidDisappear:(BOOL)animated{
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"All.backButton", nil) style:UIBarButtonItemStylePlain target:nil action:nil];
+    [backButton setTintColor: HFTW_DARK];
     [[self navigationItem] setBackBarButtonItem:backButton];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = [NSLocalizedString(@"Learn.title", nil) uppercaseString];
     self.befastExplanationLabel.text = BEFAST_B;
-    self.learnCategories = @[CONTENT_TYPE_FAQ,CONTENT_TYPE_SIGNSOFSTROKE, CONTENT_TYPE_RISKFACTORS,  CONTENT_TYPE_BLOOD_PRESSURE, CONTENT_TYPE_HEART_RATE, CONTENT_TYPE_BLOOD_SUGAR, CONTENT_TYPE_DIET, CONTENT_TYPE_BLADDER_BOWEL, CONTENT_TYPE_EXERCISES, CONTENT_TYPE_SHOWER_BATH, CONTENT_TYPE_HOME_MOD];
+    self.learnCategories = @[CONTENT_TYPE_CareGiver,CONTENT_TYPE_FAQ,CONTENT_TYPE_SIGNSOFSTROKE, CONTENT_TYPE_RISKFACTORS,  CONTENT_TYPE_BLOOD_PRESSURE, CONTENT_TYPE_HEART_RATE, CONTENT_TYPE_BLOOD_SUGAR, CONTENT_TYPE_DIET, CONTENT_TYPE_BLADDER_BOWEL, CONTENT_TYPE_EXERCISES, CONTENT_TYPE_SHOWER_BATH, CONTENT_TYPE_HOME_MOD];
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     /* Gets rid of extra blank cells */
@@ -60,7 +62,7 @@
 - (void)setUpColors {
     self.topicsLabel.textColor = HFTW_TEXT_GRAY;
     self.signsOfStrokeLabel.textColor = HFTW_TEXT_GRAY;
-    self.befastExplanationLabel.textColor = HFTW_TEXT_GRAY;
+    self.befastExplanationLabel.textColor = HFTW_TEXT_GRAY;    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -210,8 +212,14 @@
 //        }else{
 //            dest.justImage = FALSE;
 //        }
+    if(indexPath.row==0){
+        CareGiverViewController *dest = [[CareGiverViewController alloc] initWithNibName:@"CareGiverViewController" bundle:nil];
+        [self.navigationController pushViewController:dest animated:YES];
+
+    }else{
         dest.content = [[LearnContent alloc] initWithContentTitle:[self.learnCategories objectAtIndex:indexPath.row]];
         [self.navigationController pushViewController:dest animated:YES];
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;

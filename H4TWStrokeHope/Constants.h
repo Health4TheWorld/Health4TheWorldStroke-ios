@@ -45,6 +45,7 @@
 #define LIGHTS_ON_ICON @"LightsOnIcon"
 #define LIGHTS_OFF_ICON @"LightsOffIcon"
 #define AMBULANCE_ICON @"AmbulanceIcon"
+#define CAREGIVER_ICON @"Note"//MM
 #define BATHROOM_ICON @"BathroomIcon"
 #define CANT_SPEAK_ICON @"CantSpeakIcon"
 #define BED_ICON @"BedIcon"

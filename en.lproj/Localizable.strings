@@ -7,6 +7,28 @@
 */
 
 /* DISCLAIMER */
+"Learn.PostStrokeConcerns" = "Post Stroke Concerns";
+"Learn.Aphasia" = "Aphasia";
+"Learn.Cognition" = "Cognition";
+"Learn.ManagingAndImprovingCognitiveDeficits" = "Managing And Improving Cognitive Deficits";
+"Learn.Dysphagia" = "Dysphagia";
+"Learn.HomeModifications" = "Home Modifications";
+"Learn.Incontinence" = "Incontinence";
+"Learn.ManagingIncontinence" = "Managing Incontinence";
+"Learn.MuscleParalysisAndWeakness" = "Muscle Paralysis And Weakness";
+"Learn.MedicationAdherenceAndCompliance" = "Medication Adherence And Compliance";
+"Learn.MedicationAdherence" = "Medication Adherence";
+"Learn.Nutrition" = "Nutrition";
+"Learn.PersonalCare" = "PersonalCare";
+"Learn.SelfCareForTheCaregiver" = "Self Care For The Caregiver";
+"Learn.RespiteCare" = "Respite Care";
+"Learn.Seizures" = "Seizures";
+"Learn.Sleep" = "Sleep";
+"Learn.EmotionalReactionsPostStroke" = "Emotional Reactions Post Stroke";
+"Learn.NavigatingEmotionalAndBehavioralChanges" = "Navigating Emotional And Behavioral Changes";
+"Learn.WorksCited" = "Works Cited";
+
+"Learn.careGiver" = "Care Giver";//MM
 "All.backButton" = "Back";//MM
 "Feedback.title" = "Feedback";
 
