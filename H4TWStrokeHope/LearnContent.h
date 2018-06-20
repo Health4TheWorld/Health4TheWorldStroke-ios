@@ -9,6 +9,30 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#define CONTENT_TYPE_PostStrokeConcerns NSLocalizedString(@"Learn.PostStrokeConcerns", nil)//MM
+#define CONTENT_TYPE_Aphasia NSLocalizedString(@"Learn.Aphasia", nil)//MM
+#define CONTENT_TYPE_Cognition NSLocalizedString(@"Learn.Cognition", nil)//MM
+#define CONTENT_TYPE_ManagingAndImprovingCognitiveDeficits NSLocalizedString(@"Learn.ManagingAndImprovingCognitiveDeficits", nil)//MM
+#define CONTENT_TYPE_Dysphagia NSLocalizedString(@"Learn.Dysphagia", nil)//MM
+#define CONTENT_TYPE_Confinement NSLocalizedString(@"Learn.Confinement", nil)//MM
+#define CONTENT_TYPE_HomeModifications NSLocalizedString(@"Learn.HomeModifications", nil)//MM
+#define CONTENT_TYPE_Incontinence NSLocalizedString(@"Learn.Incontinence", nil)//MM
+#define CONTENT_TYPE_ManagingIncontinence NSLocalizedString(@"Learn.ManagingIncontinence", nil)//MM
+#define CONTENT_TYPE_MuscleParalysisAndWeakness NSLocalizedString(@"Learn.MuscleParalysisAndWeakness", nil)//MM
+#define CONTENT_TYPE_MedicationAdherenceAndCompliance NSLocalizedString(@"Learn.MedicationAdherenceAndCompliance", nil)//MM
+#define CONTENT_TYPE_MedicationAdherence NSLocalizedString(@"Learn.MedicationAdherence", nil)//MM
+#define CONTENT_TYPE_Nutrition NSLocalizedString(@"Learn.Nutrition", nil)//MM
+#define CONTENT_TYPE_PersonalCare NSLocalizedString(@"Learn.PersonalCare", nil)//MM
+#define CONTENT_TYPE_SelfCareForTheCaregiver NSLocalizedString(@"Learn.SelfCareForTheCaregiver", nil)//MM
+#define CONTENT_TYPE_RespiteCare NSLocalizedString(@"Learn.RespiteCare", nil)//MM
+#define CONTENT_TYPE_Seizures NSLocalizedString(@"Learn.Seizures", nil)//MM
+#define CONTENT_TYPE_Sleep NSLocalizedString(@"Learn.Sleep", nil)//MM
+#define CONTENT_TYPE_EmotionalReactionsPostStroke NSLocalizedString(@"Learn.EmotionalReactionsPostStroke", nil)//MM
+#define CONTENT_TYPE_NavigatingEmotionalAndBehavioralChanges NSLocalizedString(@"Learn.NavigatingEmotionalAndBehavioralChanges", nil)//MM
+#define CONTENT_TYPE_WorksCited NSLocalizedString(@"Learn.WorksCited", nil)//MM
+
+//////
+#define CONTENT_TYPE_CareGiver NSLocalizedString(@"Learn.careGiver", nil)//MM
 #define CONTENT_TYPE_FAQ NSLocalizedString(@"Learn.faq", nil)
 #define CONTENT_TYPE_SIGNSOFSTROKE NSLocalizedString(@"Learn.signsOfStroke", nil)//MM
 #define CONTENT_TYPE_RISKFACTORS NSLocalizedString(@"Learn.riskFactors", nil)//MM

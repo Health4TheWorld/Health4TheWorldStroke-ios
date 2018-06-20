@@ -26,6 +26,7 @@
 
 -(void)viewDidDisappear:(BOOL)animated{
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"All.backButton", nil) style:UIBarButtonItemStylePlain target:nil action:nil];
+    [backButton setTintColor:HFTW_DARK];
     [[self navigationItem] setBackBarButtonItem:backButton];
 }
 
@@ -33,8 +34,7 @@
     [super viewDidLoad];
     self.currentY = 0;
     self.alreadyAddedText = NO;
-    
-    self.automaticallyAdjustsScrollViewInsets = YES;
+//    self.automaticallyAdjustsScrollViewInsets = FALSE;
     
     /* Back button */
 //    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -74,7 +74,7 @@
         self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
         [self.scrollView setBackgroundColor:[UIColor clearColor]];
         self.scrollView.bounces = NO;
-        self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 20000)];
+        self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 800)];
         [self.contentView setBackgroundColor:[UIColor clearColor]];
         [self.scrollView addSubview:self.contentView];
         self.currentY = 15;
@@ -109,9 +109,9 @@
         }
         
         self.alreadyAddedText = YES;
-        self.currentY += 140;
+        self.currentY += 40;
         if(_justImage){//786 × 587
-            self.scrollView.contentSize = CGSizeMake(990, 587);
+            self.scrollView.contentSize = CGSizeMake(786, 587);
         }else{
             self.scrollView.contentSize = CGSizeMake(self.contentView.frame.size.width, self.currentY);
         }
@@ -247,7 +247,6 @@
         self.currentY += 5;
     }
     self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
-
 }
 
 @end

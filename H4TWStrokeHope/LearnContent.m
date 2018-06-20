@@ -8,6 +8,7 @@
 
 #import "LearnContent.h"
 #import "Constants.h"
+#import "CareGiverViewController.h"
 
 @implementation LearnContent
 
@@ -18,7 +19,10 @@
 - (id)initWithContentTitle:(NSString *)title {
     self = [super init];
     if (self) {
-        if ([title isEqualToString:CONTENT_TYPE_SIGNSOFSTROKE]) {//MM
+        
+        if ([title isEqualToString:CONTENT_TYPE_CareGiver]) {//MM
+            [self setUpCareGiver];
+        }else if ([title isEqualToString:CONTENT_TYPE_SIGNSOFSTROKE]) {//MM
             [self setUpSignsOFStroke];
         }else if ([title isEqualToString:CONTENT_TYPE_RISKFACTORS]) {//MM
             [self setUpRiskFactors];
@@ -45,10 +49,11 @@
     return self; 
 }
 
-
 + (NSString *)getImageNameForType:(NSString *)type {
     NSString *imageName = @"";
-    if ([type isEqualToString:CONTENT_TYPE_SIGNSOFSTROKE]) {//MM
+    if ([type isEqualToString:CONTENT_TYPE_CareGiver]) {//MM
+        return CAREGIVER_ICON;//MM
+    } else if ([type isEqualToString:CONTENT_TYPE_SIGNSOFSTROKE]) {//MM
         return AMBULANCE_ICON;//MM
     }//
     else if ([type isEqualToString:CONTENT_TYPE_RISKFACTORS]) {//MM
@@ -102,6 +107,13 @@
     [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.riskFactorsForStroke", nil)]];
     NSArray *bullets = @[(NSLocalizedString(@"Learn.riskFactorsOne", nil)), (NSLocalizedString(@"Learn.riskFactorsTwo", nil)), (NSLocalizedString(@"Learn.riskFactorsThree", nil)),(NSLocalizedString(@"Learn.riskFactorsFour", nil)),         (NSLocalizedString(@"Learn.riskFactorsFive", nil))];
     [self.content addObject:[self bulletsWithText:bullets]];
+}//MM
+
+-(void) setUpCareGiver{//MM
+    self.contentTitle = CONTENT_TYPE_CareGiver;
+    self.contentBGColor = HFTW_DARK;
+    self.textColor = [UIColor whiteColor];
+  
 }//MM
 
 - (void)setUpSignsOFStroke {//MM
