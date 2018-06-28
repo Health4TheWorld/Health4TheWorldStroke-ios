@@ -55,6 +55,7 @@
 #define TEXT_TYPE_BULLETS @"BulletPoints" // value
 #define TEXT_TYPE_ATTRIBUTED_BULLETS @"AttributedBulletPoints" // value
 #define TEXT_KEY @"Text"
+#define TEXT_TYPE_SUB_BULLETS @"SubBulletPoints" // value
 
 #define LEARN_PARAGRAPH_FONT [UIFont fontWithName:@"Lato-light" size:18.0]
 #define LEARN_PARAGRAPH_FONT_BOLD [UIFont fontWithName:@"Lato-bold" size:18.0]

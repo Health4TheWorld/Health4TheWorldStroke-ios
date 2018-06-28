@@ -44,7 +44,12 @@
             [self setUpBladderBowel];
         } else if ([title isEqualToString:CONTENT_TYPE_DIET]) {
             [self setUpDiet];
-        } 
+        }
+        
+        /* Care giver section */
+        else if([title isEqualToString:CONTENT_TYPE_SelfCareForTheCaregiver]){
+            [self setUpSelfCareForCareGiver];
+        }
     }
     return self; 
 }
@@ -397,6 +402,40 @@
     [self.content addObject:[self attributedParagraphWithText:subheaderThree]];
     [self.content addObject:[self paragraphWithText:HOME_MOD_CONTENT_THREE]];
 }
+
+/*Care-giver section Content types
+ *----------------------------------
+ */
+-(void)setUpSelfCareForCareGiver {
+    self.contentTitle = CONTENT_TYPE_SelfCareForTheCaregiver;
+    self.contentBGColor = HFTW_DARK;
+    self.textColor = [UIColor whiteColor];
+    self.backButtonImageStr = BLUE_BACK_BUTTON;
+    self.content = [[NSMutableArray alloc] init];
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 350)];
+    [imgView setImage:[UIImage imageNamed:YOGA_IMAGE]];
+    /*
+    UIImageView *imgViewTwo = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    [imgViewTwo setImage:[UIImage imageNamed:CANE_WALKER]];
+    self.images = @[imgView, imgViewTwo];
+
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.problem", nil)]];
+    [self.content addObject:[self paragraphWithText:EXERCISES_PROBLEM]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Learn.whatToDo", nil)]];
+    [self.content addObject:[self paragraphWithText:EXERCISES_PARAGRAPH_ONE]];
+     */
+    
+    /* First bullet */
+    NSArray *bullet1 = @[(NSLocalizedString(@"SelfCare.bulletOne", nil)), (NSLocalizedString(@"SelfCare.bulletTwo", nil))];
+    NSArray *bullet2 = @[NSLocalizedString(@"SelfCare.bulletTwo.1", nil), NSLocalizedString(@"SelfCare.bulletTwo.2", nil),
+                         NSLocalizedString(@"SelfCare.bulletTwo.3", nil),NSLocalizedString(@"SelfCare.bulletTwo.4", nil)];
+    [self.content addObject:[self bulletsWithText:bullet1]];
+    [self.content addObject:[self subBulletsWithText: bullet2]];
+    
+}
+
+
+
 /* Dictionaries that represent a chunk of text
  * --------------------------------------------
  */
@@ -432,6 +471,13 @@
 - (NSDictionary *)attributedBulletsWithText:(NSArray *)bullets {
     NSMutableDictionary *bulletDict = [[NSMutableDictionary alloc] init];
     [bulletDict setObject:TEXT_TYPE_ATTRIBUTED_BULLETS forKey:TEXT_TYPE_KEY];
+    [bulletDict setObject:bullets forKey:TEXT_KEY];
+    return bulletDict;
+}
+
+- (NSDictionary *)subBulletsWithText:(NSArray *)bullets {
+    NSMutableDictionary *bulletDict = [[NSMutableDictionary alloc] init];
+    [bulletDict setObject:TEXT_TYPE_SUB_BULLETS forKey:TEXT_TYPE_KEY];
     [bulletDict setObject:bullets forKey:TEXT_KEY];
     return bulletDict;
 }

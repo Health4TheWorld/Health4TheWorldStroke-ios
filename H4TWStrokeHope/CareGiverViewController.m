@@ -49,7 +49,7 @@
     self.learnCategories = @[CONTENT_TYPE_PostStrokeConcerns,CONTENT_TYPE_Aphasia,CONTENT_TYPE_Cognition, CONTENT_TYPE_ManagingAndImprovingCognitiveDeficits,  CONTENT_TYPE_Dysphagia, CONTENT_TYPE_Confinement, CONTENT_TYPE_Incontinence, CONTENT_TYPE_ManagingIncontinence, CONTENT_TYPE_MuscleParalysisAndWeakness, CONTENT_TYPE_MedicationAdherenceAndCompliance, CONTENT_TYPE_MedicationAdherence, CONTENT_TYPE_Nutrition, CONTENT_TYPE_PersonalCare,CONTENT_TYPE_SelfCareForTheCaregiver,CONTENT_TYPE_RespiteCare, CONTENT_TYPE_Seizures, CONTENT_TYPE_Sleep, CONTENT_TYPE_EmotionalReactionsPostStroke, CONTENT_TYPE_NavigatingEmotionalAndBehavioralChanges, CONTENT_TYPE_WorksCited];
 
     _tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    _tableView.scrollEnabled = NO;
+    _tableView.scrollEnabled = YES;
 }
 
 
@@ -86,15 +86,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     self.selectedIndexPath = indexPath;
- //   LearnContentViewController *dest = [[LearnContentViewController alloc] init];
+    LearnContentViewController *dest = [[LearnContentViewController alloc] init];
     //        if(indexPath.row == 1 || indexPath.row == 2){
     //            dest.justImage = TRUE;
     //            NSLog(@"Change scrollview size");
     //        }else{
     //            dest.justImage = FALSE;
     //        }
-//    dest.content = [[LearnContent alloc] initWithContentTitle:[self.learnCategories objectAtIndex:indexPath.row]];
-//    [self.navigationController pushViewController:dest animated:YES];
+   dest.content = [[LearnContent alloc] initWithContentTitle:[self.learnCategories objectAtIndex:indexPath.row]];
+    [self.navigationController pushViewController:dest animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;

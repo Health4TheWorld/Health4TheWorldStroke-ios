@@ -351,6 +351,23 @@
 "HomeMod.subHeaderThree" = "Bath:";
 "HomeMod.contentThree" = "Bathrooms can be made more accessible to wheelchairs by widening the doorway. Toilet seats can be raised to make it less challenging in getting to and from the toilet: a toilet elevator that mounts between the floor and toilet; a seat elevator that attaches to the bowl and raises the seat; installing toilet rails/grab bars to improve support for mobility.";
 
+/* CARE GIVER SECTION */
+/* -------------------- */
+"SelfCare.bulletOne" = "You may be spending many hours or days at the hospital, depending on the health of your loved one";
+"SelfCare.bulletTwo" = "Remember  to: ";
+"SelfCare.bulletOne.1" = "While  this  may  be  a  stressful  time,  taking  care  of  yourself  will  enable  you  to  provide  better  care  for  your  loved  one";
+"SelfCare.bulletTwo.1" = "Eat  and  nourish  yourself ";
+"SelfCare.bulletTwo.2" = "Rest,  nap,  and  shower";
+"SelfCare.bulletTwo.3" = "Exercise  ";
+"SelfCare.bulletTwo.4" = "Journal ";
+"SelfCare.bulletTwo.2.1" = "See  whether  the  hospital  has  an  area  for  your  use  ";
+"SelfCare.bulletTwo.3.1" = "Go  for  a  walk  to  relieve  stress  and  clear  your  mind ";
+"SelfCare.bulletTwo.4.1" = "Write  down  your  thoughts,  feelings,  and  concerns ";
+
+
+
+/* ---------------------*/
+
 /* REMINDERS VIEW CONTROLLER */
 "Reminders.title" = "Reminders";
 "Reminders.todaysReminders" = "Today's reminders";
@@ -438,7 +455,7 @@
 
 /* Quotes Section */
 "Quotes.title" = "Today's Inspirational Quote";
-@"Quotes"
+//@"Quotes"
 
 /* Relaxing Music Section */
 "Music.title" = "Relaxing Music";

@@ -92,6 +92,8 @@
                 [self addBullets:[text objectForKey:TEXT_KEY]];
             } else if ([textType isEqualToString:TEXT_TYPE_ATTRIBUTED_BULLETS]) {
                 [self addAttributedBullets:[text objectForKey:TEXT_KEY]];
+            }else if ([textType isEqualToString:TEXT_TYPE_SUB_BULLETS]) {
+                [self addSubBullets:[text objectForKey:TEXT_KEY]];
             }
         }
         
@@ -241,6 +243,35 @@
         CGRect bulletFrame = bulletLabel.frame;
         bulletFrame.size.width = screenWidth - (2 * textStartingX);
         bulletFrame.size.height = [Utils heightOfAttributedString:bulletPoint containedToWidth:bulletFrame.size.width withFont:bulletLabel.font];
+        bulletLabel.frame = bulletFrame;
+        [self.contentView addSubview:bulletLabel];
+        self.currentY += bulletLabel.frame.size.height;
+        self.currentY += 5;
+    }
+    self.currentY += VERTICAL_SPACE_BETWEEN_LABELS;
+}
+- (void)addSubBullets:(NSArray *)bullets{
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    for (NSString *bulletPoint in bullets) {
+        UILabel *bullet = [[UILabel alloc] initWithFrame:CGRectMake(PAGE_MARGIN + 20, self.currentY, 0, 0)];
+        bullet.font = LEARN_PARAGRAPH_FONT;
+        bullet.textAlignment = NSTextAlignmentLeft;
+        bullet.text = @"-";
+        bullet.textColor = self.content.textColor;
+        [bullet sizeToFit];
+        [self.contentView addSubview:bullet];
+        
+        float textStartingX = bullet.frame.origin.x + bullet.frame.size.width + 10 ;
+        UILabel *bulletLabel = [[UILabel alloc] initWithFrame:CGRectMake(textStartingX, self.currentY, 0, 0)];
+        bulletLabel.font = LEARN_PARAGRAPH_FONT;
+        bulletLabel.textAlignment = NSTextAlignmentLeft;
+        bulletLabel.textColor = self.content.textColor;
+        bulletLabel.numberOfLines = 0;
+        bulletLabel.text = bulletPoint;
+        [bulletLabel sizeToFit];
+        CGRect bulletFrame = bulletLabel.frame;
+        bulletFrame.size.width = screenWidth - (2 * textStartingX);
+        bulletFrame.size.height = [Utils heightOfString:bulletPoint containedToWidth:bulletFrame.size.width withFont:bulletLabel.font];
         bulletLabel.frame = bulletFrame;
         [self.contentView addSubview:bulletLabel];
         self.currentY += bulletLabel.frame.size.height;
