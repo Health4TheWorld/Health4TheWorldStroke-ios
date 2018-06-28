@@ -18,6 +18,8 @@
 		163FE09720D5F3BA0096656D /* IMG_3566.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 163FE09520D5F3B90096656D /* IMG_3566.mp4 */; };
 		163FE09920D5F3D80096656D /* IMG_3569.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 163FE09820D5F3D70096656D /* IMG_3569.mp4 */; };
 		163FE09B20D5F46A0096656D /* IMG_3572.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 163FE09A20D5F46A0096656D /* IMG_3572.mp4 */; };
+		163FE09E20E488F30096656D /* CareGiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163FE09D20E488F30096656D /* CareGiverViewController.m */; };
+		163FE0A020E488FA0096656D /* CareGiverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 163FE09F20E488FA0096656D /* CareGiverViewController.xib */; };
 		167883A91EE1029900B106AD /* ChatBotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883A71EE1029900B106AD /* ChatBotViewController.m */; };
 		167883AA1EE1029900B106AD /* ChatBotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 167883A81EE1029900B106AD /* ChatBotViewController.xib */; };
 		167883AF1EE25EED00B106AD /* GVRVideoViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 167883AE1EE25EED00B106AD /* GVRVideoViewManager.m */; };
@@ -130,8 +132,6 @@
 		ABADA73220112D56008C5977 /* StandingH3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABADA73020112D56008C5977 /* StandingH3ViewController.m */; };
 		ABADA73320112D56008C5977 /* StandingH3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABADA73120112D56008C5977 /* StandingH3ViewController.xib */; };
 		ABCD3CA11F9AA7D500BA412E /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCD3CA01F9AA7D500BA412E /* NSBundle+Language.m */; };
-		ABED228E20DA23DB00CBCAA7 /* CareGiverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABED228C20DA23DA00CBCAA7 /* CareGiverViewController.xib */; };
-		ABED228F20DA23DB00CBCAA7 /* CareGiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABED228D20DA23DA00CBCAA7 /* CareGiverViewController.m */; };
 		ABFAAED92023D6160099203F /* ArmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABFAAED82023D6150099203F /* ArmViewController.xib */; };
 		CC11D11B1EB3B8DE0063E72A /* ReminderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC11D1191EB3B8DE0063E72A /* ReminderTableViewCell.m */; };
 		CC11D11C1EB3B8DE0063E72A /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC11D11A1EB3B8DE0063E72A /* ReminderTableViewCell.xib */; };
@@ -231,6 +231,9 @@
 		163FE09520D5F3B90096656D /* IMG_3566.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3566.mp4; sourceTree = "<group>"; };
 		163FE09820D5F3D70096656D /* IMG_3569.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3569.mp4; sourceTree = "<group>"; };
 		163FE09A20D5F46A0096656D /* IMG_3572.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_3572.mp4; sourceTree = "<group>"; };
+		163FE09C20E488E90096656D /* CareGiverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CareGiverViewController.h; sourceTree = "<group>"; };
+		163FE09D20E488F30096656D /* CareGiverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CareGiverViewController.m; sourceTree = "<group>"; };
+		163FE09F20E488FA0096656D /* CareGiverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CareGiverViewController.xib; sourceTree = "<group>"; };
 		167883A61EE1029900B106AD /* ChatBotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotViewController.h; sourceTree = "<group>"; };
 		167883A71EE1029900B106AD /* ChatBotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBotViewController.m; sourceTree = "<group>"; };
 		167883A81EE1029900B106AD /* ChatBotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatBotViewController.xib; sourceTree = "<group>"; };
@@ -401,9 +404,6 @@
 		ABCD3C9E1F9AA67700BA412E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		ABCD3C9F1F9AA7D500BA412E /* NSBundle+Language.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
 		ABCD3CA01F9AA7D500BA412E /* NSBundle+Language.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
-		ABED228B20DA23DA00CBCAA7 /* CareGiverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CareGiverViewController.h; path = "../../../Health4TheWorldStroke-ios/H4TWStrokeHope/CareGiverViewController.h"; sourceTree = "<group>"; };
-		ABED228C20DA23DA00CBCAA7 /* CareGiverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CareGiverViewController.xib; path = "../../../Health4TheWorldStroke-ios/H4TWStrokeHope/CareGiverViewController.xib"; sourceTree = "<group>"; };
-		ABED228D20DA23DA00CBCAA7 /* CareGiverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CareGiverViewController.m; path = "../../../Health4TheWorldStroke-ios/H4TWStrokeHope/CareGiverViewController.m"; sourceTree = "<group>"; };
 		ABFAAED82023D6150099203F /* ArmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArmViewController.xib; sourceTree = "<group>"; };
 		CAB005F6C1031EB530EC7DE2 /* Pods-H4TWStrokeHope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H4TWStrokeHope.debug.xcconfig"; path = "Pods/Target Support Files/Pods-H4TWStrokeHope/Pods-H4TWStrokeHope.debug.xcconfig"; sourceTree = "<group>"; };
 		CC11D1181EB3B8DE0063E72A /* ReminderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderTableViewCell.h; sourceTree = "<group>"; };
@@ -1112,9 +1112,9 @@
 				CC3CB6451EA11EC800CA9429 /* LearnContentViewController.h */,
 				CC3CB6461EA11EC800CA9429 /* LearnContentViewController.m */,
 				CC3CB6471EA11EC800CA9429 /* LearnContentViewController.xib */,
-				ABED228B20DA23DA00CBCAA7 /* CareGiverViewController.h */,
-				ABED228D20DA23DA00CBCAA7 /* CareGiverViewController.m */,
-				ABED228C20DA23DA00CBCAA7 /* CareGiverViewController.xib */,
+				163FE09D20E488F30096656D /* CareGiverViewController.m */,
+				163FE09F20E488FA0096656D /* CareGiverViewController.xib */,
+				163FE09C20E488E90096656D /* CareGiverViewController.h */,
 			);
 			name = Learn;
 			sourceTree = "<group>";
@@ -1299,7 +1299,6 @@
 				CC4C10C21E7A26DE00515CDC /* LaunchScreen.storyboard in Resources */,
 				CC11D1461EB6E7D00063E72A /* TimeTableViewCell.xib in Resources */,
 				CC73E4441E842370001131AF /* Lato-Italic.ttf in Resources */,
-				ABED228E20DA23DB00CBCAA7 /* CareGiverViewController.xib in Resources */,
 				CC73E4411E842370001131AF /* Lato-BoldItalic.ttf in Resources */,
 				179726B61EB3109B0053378E /* WebViewController.xib in Resources */,
 				CC3CB6491EA11EC800CA9429 /* LearnContentViewController.xib in Resources */,
@@ -1334,6 +1333,7 @@
 				17E0BB351EA41201001FC7F3 /* StrengtheningViewController.xib in Resources */,
 				ABADA719200E7266008C5977 /* ArmLevel2ViewController.xib in Resources */,
 				163FE09020D5F3970096656D /* IMG_3563.mp4 in Resources */,
+				163FE0A020E488FA0096656D /* CareGiverViewController.xib in Resources */,
 				1737A1991EA8976F00C6D71E /* 1BKneeFlexion.m4v in Resources */,
 				ABADA71A200E7266008C5977 /* ArmLevel3ViewController.xib in Resources */,
 				AB2677BB1FFC30F300BB12E0 /* IMG_3575.mp4 in Resources */,
@@ -1514,7 +1514,6 @@
 				CCB7B4151E9413820058C32E /* GeneralInfoViewController.m in Sources */,
 				ABADA721200E7266008C5977 /* ArmLevel1ViewController.m in Sources */,
 				CC11D1381EB6B7BC0063E72A /* NoResultsTableViewCell.m in Sources */,
-				ABED228F20DA23DB00CBCAA7 /* CareGiverViewController.m in Sources */,
 				CC3CB6481EA11EC800CA9429 /* LearnContentViewController.m in Sources */,
 				16811F451FA3E433008B3E1F /* Users.m in Sources */,
 				16EDA5641F00934100906891 /* QuotesCollectionViewCell.m in Sources */,
@@ -1543,6 +1542,7 @@
 				CCAE42A81E7C2F33006F490E /* Utils.m in Sources */,
 				CC11D1291EB650150063E72A /* AddReminderTitleViewController.m in Sources */,
 				17E0BB1B1EA40F5A001FC7F3 /* LegsViewController.m in Sources */,
+				163FE09E20E488F30096656D /* CareGiverViewController.m in Sources */,
 				CC11D1331EB6504E0063E72A /* AddReminderTimesViewController.m in Sources */,
 				CC4C10B11E7A26DE00515CDC /* main.m in Sources */,
 				16C3C37C1EEA37EF005991D5 /* ChatBotViewCell.m in Sources */,
