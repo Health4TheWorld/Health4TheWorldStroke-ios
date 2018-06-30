@@ -100,6 +100,12 @@
 #define FEMALE_DOC_5A @"FemaleDoc5a"
 #define MALE_DOC_5B @"MaleDoc5b"
 
+// CareGiver Section
+#define SelfCareImage @"SelfCarePic.jpg"
+#define RespiteCareImage @"RespiteCarePic.jpg"
+#define EmoReactionsImage @"EmoReactionsPic.jpg"
+#define EmoReactionsImage2 @"EmoReactionsPic2.jpg"
+
 
 //MM
 #define ADVANCED_EXERCISES @"Advanced Exercises"

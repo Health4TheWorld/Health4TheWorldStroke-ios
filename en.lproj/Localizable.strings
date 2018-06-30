@@ -353,18 +353,110 @@
 
 /* CARE GIVER SECTION */
 /* -------------------- */
+// Self Care
 "SelfCare.bulletOne" = "You may be spending many hours or days at the hospital, depending on the health of your loved one";
 "SelfCare.bulletTwo" = "Remember  to: ";
 "SelfCare.bulletOne.1" = "While  this  may  be  a  stressful  time,  taking  care  of  yourself  will  enable  you  to  provide  better  care  for  your  loved  one";
 "SelfCare.bulletTwo.1" = "Eat  and  nourish  yourself ";
-"SelfCare.bulletTwo.2" = "Rest,  nap,  and  shower";
-"SelfCare.bulletTwo.3" = "Exercise  ";
-"SelfCare.bulletTwo.4" = "Journal ";
-"SelfCare.bulletTwo.2.1" = "See  whether  the  hospital  has  an  area  for  your  use  ";
-"SelfCare.bulletTwo.3.1" = "Go  for  a  walk  to  relieve  stress  and  clear  your  mind ";
-"SelfCare.bulletTwo.4.1" = "Write  down  your  thoughts,  feelings,  and  concerns ";
+"SelfCare.bulletTwo.2" = "Rest,  nap,  and  shower: See  whether  the  hospital  has  an  area  for  your  use";
+"SelfCare.bulletTwo.3" = "Exercise: Go  for  a  walk  to  relieve  stress  and  clear  your  mind";
+"SelfCare.bulletTwo.4" = "Journal: Write  down  your  thoughts,  feelings,  and  concerns";
+//"SelfCare.bulletTwo.2.1" = "See  whether  the  hospital  has  an  area  for  your  use";
+//"SelfCare.bulletTwo.3.1" = "Go  for  a  walk  to  relieve  stress  and  clear  your  mind";
+//"SelfCare.bulletTwo.4.1" = "Write  down  your  thoughts,  feelings,  and  concerns";
 
+// Respite Care
+"RespiteCare.paragraph1" = "Short-term  relief  services  for  the  stroke  survivor so  caregivers  can  take  a  break";
+"RespiteCare.bullet1" = "When  choosing  a  respite  care  provider:  ";
+"RespiteCare.bullet1.1" = "Screen  and  interview  each  provider";
+"RespiteCare.bullet1.2" = "Ask  for  work  and  personal  references";
+"RespiteCare.bullet1.3" = "Discuss  payment  in  advance";
+"RespiteCare.bullet1.4" = "Conduct  background  checks  if  possible";
 
+// Seizures
+"Seizures.paragraph1" = "Episodes  of  abnormal  or  disorganized  electrical  activity  in  the  brain";
+"Seizures.bullet1.1" = "Stroke  is  the  most  common  cause  of  seizures  in  middle-aged and  aging  adults";
+"Seizures.bullet1.2" = "10%  of  ischemic  (blood  clot)  stroke  survivors  experience  a seizure  post-stroke";
+"Seizures.bullet1.3" = "27-34%  of  hemorrhagic  (bleeding  or  abnormal  blood  flow) stroke  survivors  experience  a  seizure";
+"Seizures.bullet1.4" = "2-4%  of  stroke  survivors  report  recurrent  seizures";
+
+"Seizures.paragraph2" = "Just  because  a  stroke  survivor  has  a  seizure  does  not  mean  that  he/she  has  epilepsy";
+"Seizures.bullet2.1" = "Only  healthcare  professionals  can  diagnose  a  person  with epilepsy";
+"Seizures.bullet2.2" = "Sometimes  seizures  and  strokes  can  be  confused  for  one another";
+"Seizures.bullet2.3" = "Symptoms  of  the  seizure  depend  on  the  type  of  seizure ";
+"Seizures.bullet2.3.1" = "A  seizure  may  cause  someone  to  spasm  or  convulse,  stare  in  to  space,  or  spontaneously  start  laughing ";
+
+"Seizures.paragraph3" = "Epilepsy  and  seizures  are  manageable  with  medication";
+"Seizures.bullet3.1" = "Missing  a  medication  dose,  not  getting  enough  sleep,  and/or drinking  alcohol  can  make  seizures  worse";
+"Seizures.bullet3.2" = "There  are  social  and  psychological  effects  of  being  diagnosed with  epilepsy";
+"Seizures.bullet3.3" = "If  your  loved  one  experiences  recurrent  seizures,  talk  with his/her  medical  care  team  about  what  you  can  do  to  help during  seizures  to  help  prevent  injuries";
+
+"Seizures.paragraph4" = "The  National  Institutes  of  Health  has  established  guidelines  for \"What  to  Do  if  Someone  is  Having  a  Seizure\"";
+"Seizures.bullet4.1" = "Roll  the  person  on  his/her  side  to  prevent  choking  or  vomiting";
+"Seizures.bullet4.2" = "Cushion  the  person’s  head";
+"Seizures.bullet4.3" = "Loosen  any  tight  clothing  around  the  neck";
+"Seizures.bullet4.4" = "Keep  the  person’s  airway  open.  If  necessary,  grip  the  person’s jaw  gently  and  tilt  his  or  her  head  back";
+"Seizures.bullet4.5" = "Do  not  restrict  the  person  from  moving  if  he/she  is  in  danger";
+"Seizures.bullet4.6" = "Do  not  put  anything  in  the  person’s  mouth,  not  even  medicine  or  liquid";
+"Seizures.bullet4.7" = "Remove  any  sharp  or  solid  objects  that  the  person  might  hit during  the  seizure";
+"Seizures.bullet4.8" = "Note  how  long  the  seizure  lasts  and  what  symptoms  occurred  in order  to  inform  a  doctor  or  emergency  personnel  if  necessary";
+"Seizures.bullet4.9" = "Stay  with  the  person  until  the  seizure  ends";
+
+//Sleep
+"Sleep.paragraph1" = "Sleep  Disruptions  are  possible  post-stroke,  the  most  common  of  which relate  to  breathing";
+"Sleep.bullet1" = "Sleep  Apnea ";
+"Sleep.bullet1.1" = "a  disorder  where  a  person’s  breathing  is  obstructed  while  they  are sleeping";
+"Sleep.bullet1.2" = "loss  of  muscle,  fat  buildup,  or  misfiring  neurons  can  cause  the windpipe  to  collapse  when  throat  muscles  relax  during  sleep";
+"Sleep.bullet1.3" = "if  a  stroke  survivor’s  wind  pipe  collapses";
+"Sleep.bullet1.4" = "blocking  airflow";
+"Sleep.bullet1.5" = "the  lack  of  oxygen  to  the  brain  can  cause  the  stroke  survivor  to  wake  up  with  a  headache,  become  irritable,  or  lose  cognitive  function";
+
+"Sleep.bullet2" = "Snoring  can  also  cause  sleep  apnea";
+"Sleep.bullet3" = "The  lack  of  oxygen  to  the  brain  can  also  increase  blood  pressure  and  increase  the  stroke  survivor’s  risk  for  another  stroke";
+"Sleep.bullet4" = "This  can  be  scary,  so  consult  with  the  medical  care  team  about  the  need  for  the  stroke survivor  to  change  sleeping  position,  lose  weight,  or  receive  a  medical  intervention";
+"Sleep.bullet5" = "Other  ways  stroke  affects  sleep  is  changing  sleep  patterns,  as  in  sleeping  more  during  the  day  than  at  night,  and  insomnia";
+"Sleep.bullet5.1" = "Insomnia  refers  to  the  inability  to  fall  or  stay  asleep  and  can have  negative  impact  on  the  stroke  survivor‘s  recovery";
+"Sleep.bullet6" = "Ongoing  insomnia  can  be  treated  with  sleeping  medications,  lifestyle  changes,  or  behavioral  training";
+"Sleep.bullet7" = "See  the  Sleep  Disorders  fact  sheet  at  www.stroke.org/factsheets for  more  detailed  information";
+
+// Emotional Reactions Post-stroke
+"EmotionalReactions.paragraph1" = "Stroke  is  sudden  and  often  unexpected,  many  stroke  survivors  experience  a  variety  of  intense  emotions";
+"EmotionalReactions.bullet1" = "Common  emotions  include  anger,  frustration,  anxiety,  depression,  sadness,  hopelessness,  and/or  denial";
+"EmotionalReactions.bullet2" = "Stroke  survivors  may  also  struggle  with  the  sudden  loss  of  control  they  feel  or  are  experiencing";
+"EmotionalReactions.bullet3" = "These  feelings  can  be  experienced  at  varying  degrees  at  any  phase  of  recovery";
+"EmotionalReactions.bullet4" = "A  counselor,  social  worker,  or  psychologist  can  assist  with  the  emotional  aspects  of  recovery";
+"EmotionalReactions.bullet4.1" = "These  professionals  can  be  helpful  as  you  and  your  loved  one  adapt  to  the  “new  normal” post-stroke";
+"EmotionalReactions.bullet5" = "Recent  studies  show  that  antidepressant  medication  can  help  improve  the  emotional  and  physical  health  of  a  stroke  survivor";
+"EmotionalReactions.bullet6" = "If  the  stroke  survivor  has  been  prescribed  an  antidepressant  and  there  is  little  to  no improvement  after  the  time  frame  specified  per  the  medication,  speak  with  the prescribing  healthcare  professional";
+"EmotionalReactions.bullet7" = "There are many medications available";
+"EmotionalReactions.bullet7.1" = "What works for one  person  may  not  work  for  another  and  medications do  not  work  for  everyone";
+"EmotionalReactions.bullet8" = "Keep communication with  your  healthcare  professional  open  and  clear  to  make  sure  the  stroke  survivor  receive  the  correct  medication(s)  to  manage  their  post-stroke  symptoms,  including  emotional  challenges";
+"EmotionalReactions.bullet9" = "Pseudobulbar  affect  (PBA)";
+"EmotionalReactions.bullet9.1" = "a  condition  characterized  by  episodes  of  uncontrollable  laughing  and/or  crying  that  may  be  inappropriate,  unrelated  to  the  situation  at  hand,  or  not  reflecting  the  person’s  actual  mood";
+"EmotionalReactions.bullet9.2" = "the  condition  is  known  by  other  terms,  including  emotional  lability,  emotional  incontinence,  and  pathological  laughing  and  crying";
+"EmotionalReactions.bullet10" = "Talk  to  your  medical  and  rehab  care  teams  for  more  information  on  treatment  options";
+"EmotionalReactions.bullet11" = "Learn  more  about  the  condition  at  www.stroke.org/PBA";
+
+// Navigating Emotional and Behav changes
+"NavEmoAndBehavChanges.header1" = "Caring  for  the  stroke  survivor  can  be  challenging  when  the  stroke  survivor  experiences   emotional  and  behavioral  changes";
+"NavEmoAndBehavChanges.paragraph1" = "Some  suggested  strategies: ";
+"NavEmoAndBehavChanges.bullet1" = "Treat  your  loved  one  with  patience;  take  one  day  at  a  time";
+"NavEmoAndBehavChanges.bullet2" = "Maintain  open  communication  and  involve  the  stroke  survivor  in  as  much  decision-making  as  possible";
+"NavEmoAndBehavChanges.bullet3" = "Encourage  independence  as  much  as  possible.  Promote  self  acceptance  and  celebrate  even  the  smallest  victories";
+"NavEmoAndBehavChanges.bullet4" = "Establishing  a  routine  will  help  you  and  the  stroke  survivor  manage  stress";
+"NavEmoAndBehavChanges.bullet5" = "Seek  out  a  stroke  support  group  in  your  area  or  online  to  connect  with  other  caregivers  and  stroke  survivors  to  share  advice";
+"NavEmoAndBehavChanges.bullet5.1" = "www.stroke.org/supportgroups";
+"NavEmoAndBehavChanges.bullet6" = "Stay  active  and  exercise";
+"NavEmoAndBehavChanges.bullet6.1" = "Structured  exercise  training  can  significantly  improve  brain  function  in  stroke  survivors";
+"NavEmoAndBehavChanges.bullet6.2" = "Aerobic  exercise  training  can  be  modified  for  patients  with  mobility  limitations";
+
+// Works Cited
+"WorksCited.bullet1" = "American Heart Association. “high Blood Pressure Guidelines.” American Stroke Association Building. Healthier  Lives,  Free  of  Stroke  and  Cardiovascular  Diseases., www.strokeassociation.org/STROKEORG.";
+"WorksCited.bullet2" = "“Free  Images  -  Pixabay”. Free  Images  -  Pixabay,  pixabay.com.";
+"WorksCited.bullet3" = "“Free  High  Quality  Photos  ·  Pexels.”  Free  Stock  Photos,  www.pexels.com.";
+"WorksCited.bullet4" = "”In-Home  Care  Supports  Stroke  Recovery.” Start  Page, www.caringnews.com/en/118/1/189/In-Home-Care-Supports-Stroke-Recovery.htm.";
+"WorksCited.bullet5" = "“Stroke.” Healthtalk.orgYouthhealthtalk.org,  www.healthtalk.org/peoples-experiences/nerves-brain/stroke/stroke-recovery-daily-activities-and-personal-care.";
+"WorksCited.bullet6" = "The  National  Stroke  Association. “Careliving  Guide.” Stroke.org, 20  Nov.  2014, www.stroke.org/we-can-help/caregivers-and-family/careliving-guide.";
 
 /* ---------------------*/
 
