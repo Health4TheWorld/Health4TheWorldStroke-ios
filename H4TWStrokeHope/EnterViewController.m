@@ -76,6 +76,7 @@
     [swipeLeft setDirection:UISwipeGestureRecognizerDirectionLeft ];
     [self.view addGestureRecognizer:swipeLeft];
     
+    /*
     self.loginButton = [[FBSDKLoginButton alloc] initWithFrame:(CGRectMake(20, self.view.bounds.size.height - 40, 90, 25))];
     // Optional: Place the button in the center of your view.
     //loginButton.center = self.view.center;
@@ -102,7 +103,8 @@
 
     //[self loginButtonClicked];
     // Handle clicks on the button
-    [self.view addSubview:self.loginButton];
+    //[self.view addSubview:self.loginButton];
+     */
     
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedRight:)];
     [swipeRight setDirection:UISwipeGestureRecognizerDirectionRight ];
