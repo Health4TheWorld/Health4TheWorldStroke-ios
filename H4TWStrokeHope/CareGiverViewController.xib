@@ -20,9 +20,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hVa-E9-VT4">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hVa-E9-VT4">
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="KhI-lI-MHx"/>
@@ -31,6 +30,12 @@
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hVa-E9-VT4" secondAttribute="bottom" id="4db-h8-6LT"/>
+                <constraint firstAttribute="trailing" secondItem="hVa-E9-VT4" secondAttribute="trailing" id="FqB-DZ-cCM"/>
+                <constraint firstItem="hVa-E9-VT4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Q2g-ey-iUa"/>
+                <constraint firstItem="hVa-E9-VT4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="SyX-pt-exg"/>
+            </constraints>
             <point key="canvasLocation" x="31.5" y="64.5"/>
         </view>
     </objects>

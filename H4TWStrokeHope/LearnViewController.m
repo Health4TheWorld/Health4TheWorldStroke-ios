@@ -46,16 +46,7 @@
     
     /* Gets rid of extra blank cells */
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    
-    /* Back button */
-//    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    UIImage *backBtnImage = [UIImage imageNamed:WHITE_BACK_BUTTON]  ;
-//    [backBtn setBackgroundImage:backBtnImage forState:UIControlStateNormal];
-//    [backBtn addTarget:self action:@selector(backPressed) forControlEvents:UIControlEventTouchUpInside];
-//    backBtn.frame = CGRectMake(0, 0, 15, 25);
-//    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
-//    self.navigationItem.leftBarButtonItem = backButton;
-    
+
     [self setUpColors];
 }
 
@@ -169,7 +160,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - TableView Delegate
@@ -205,24 +195,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     self.selectedIndexPath = indexPath;
-        LearnContentViewController *dest = [[LearnContentViewController alloc] init];
-//        if(indexPath.row == 1 || indexPath.row == 2){
-//            dest.justImage = TRUE;
-//            NSLog(@"Change scrollview size");
-//        }else{
-//            dest.justImage = FALSE;
-//        }
+    LearnContentViewController *dest = [[LearnContentViewController alloc] init];
     if(indexPath.row==0){
         CareGiverViewController *dest = [[CareGiverViewController alloc] initWithNibName:@"CareGiverViewController" bundle:nil];
         [self.navigationController pushViewController:dest animated:YES];
-
     }else{
         dest.content = [[LearnContent alloc] initWithContentTitle:[self.learnCategories objectAtIndex:indexPath.row]];
         [self.navigationController pushViewController:dest animated:YES];
     }
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return LEARN_CONTENT_CELL_HEIGHT;
 }

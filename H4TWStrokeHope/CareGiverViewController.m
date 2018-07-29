@@ -28,8 +28,7 @@
     [self.navigationController.navigationBar
      setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     self.navigationController.navigationBar.barTintColor = HFTW_RED;
-    self.navigationController.title = @"Care Giver";
-
+    self.title = [NSLocalizedString(@"Learn.careGiver", nil) uppercaseString];
     if (self.selectedIndexPath) {
         [self.tableView deselectRowAtIndexPath:self.selectedIndexPath animated:YES];
     }
@@ -44,12 +43,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    self.learnCategories = @[CONTENT_TYPE_PostStrokeConcerns,CONTENT_TYPE_Aphasia,CONTENT_TYPE_Cognition, CONTENT_TYPE_ManagingAndImprovingCognitiveDeficits,  CONTENT_TYPE_Dysphagia, CONTENT_TYPE_Confinement, CONTENT_TYPE_Incontinence, CONTENT_TYPE_ManagingIncontinence, CONTENT_TYPE_MuscleParalysisAndWeakness, CONTENT_TYPE_MedicationAdherenceAndCompliance, CONTENT_TYPE_MedicationAdherence, CONTENT_TYPE_Nutrition, CONTENT_TYPE_PersonalCare,CONTENT_TYPE_SelfCareForTheCaregiver,CONTENT_TYPE_RespiteCare, CONTENT_TYPE_Seizures, CONTENT_TYPE_Sleep, CONTENT_TYPE_EmotionalReactionsPostStroke, CONTENT_TYPE_NavigatingEmotionalAndBehavioralChanges, CONTENT_TYPE_WorksCited];
-
+    self.learnCategories = @[CONTENT_TYPE_PostStrokeConcerns,CONTENT_TYPE_Aphasia,CONTENT_TYPE_Cognition,  CONTENT_TYPE_Dysphagia, CONTENT_TYPE_Confinement,CONTENT_TYPE_HomeModifications, CONTENT_TYPE_Incontinence, CONTENT_TYPE_MuscleParalysisAndWeakness, CONTENT_TYPE_MedicationAdherenceAndCompliance, CONTENT_TYPE_MedicationAdherence, CONTENT_TYPE_Nutrition, CONTENT_TYPE_PersonalCare,CONTENT_TYPE_SelfCareForTheCaregiver,CONTENT_TYPE_RespiteCare, CONTENT_TYPE_Seizures, CONTENT_TYPE_Sleep, CONTENT_TYPE_EmotionalReactionsPostStroke, CONTENT_TYPE_NavigatingEmotionalAndBehavioralChanges, CONTENT_TYPE_WorksCited];
     _tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     _tableView.scrollEnabled = YES;
+    self.automaticallyAdjustsScrollViewInsets = NO;    
+    /* Gets rid of extra blank cells */
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
 
@@ -87,13 +87,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     self.selectedIndexPath = indexPath;
     LearnContentViewController *dest = [[LearnContentViewController alloc] init];
-    //        if(indexPath.row == 1 || indexPath.row == 2){
-    //            dest.justImage = TRUE;
-    //            NSLog(@"Change scrollview size");
-    //        }else{
-    //            dest.justImage = FALSE;
-    //        }
-   dest.content = [[LearnContent alloc] initWithContentTitle:[self.learnCategories objectAtIndex:indexPath.row]];
+    dest.content = [[LearnContent alloc] initWithContentTitle:[self.learnCategories objectAtIndex:indexPath.row]];
     [self.navigationController pushViewController:dest animated:YES];
 }
 

@@ -12,14 +12,9 @@
 
 @implementation LearnContent
 
--(void) addWeb{
-    
-}
-
 - (id)initWithContentTitle:(NSString *)title {
     self = [super init];
     if (self) {
-        
         if ([title isEqualToString:CONTENT_TYPE_CareGiver]) {//MM
             [self setUpCareGiver];
         }else if ([title isEqualToString:CONTENT_TYPE_SIGNSOFSTROKE]) {//MM
@@ -45,8 +40,43 @@
         } else if ([title isEqualToString:CONTENT_TYPE_DIET]) {
             [self setUpDiet];
         }
-        
         /* Care giver section */
+        else if([title isEqualToString:CONTENT_TYPE_PostStrokeConcerns]){
+            [self setUpPostStrokeConcerns];
+        }
+        else if([title isEqualToString:CONTENT_TYPE_Aphasia]){
+            [self setUpAphasia];
+        }
+        else if([title isEqualToString:CONTENT_TYPE_Cognition]){
+            [self setUpCognition];
+        }
+        else if([title isEqualToString:CONTENT_TYPE_Dysphagia]){
+            [self setUpDysphagia];
+        }
+        else if([title isEqualToString:CONTENT_TYPE_Confinement]){
+            [self setUpConfinement];
+        }
+        else if([title isEqualToString:CONTENT_TYPE_HomeModifications]){
+            [self setUpHomeModifications];
+        }
+        else if([title isEqualToString:CONTENT_TYPE_Incontinence]){
+            [self setUpIncontinence];
+        }
+        else if([title isEqualToString:CONTENT_TYPE_MuscleParalysisAndWeakness]){
+            [self setUpMuscleParalysisAndWeakness];
+        }
+        else if([title isEqualToString:CONTENT_TYPE_MedicationAdherenceAndCompliance]){
+            [self setUpMedicationAdherenceAndCompliance];
+        }
+        else if([title isEqualToString:CONTENT_TYPE_MedicationAdherence]){
+            [self setUpMedicationAdherence];
+        }
+        else if([title isEqualToString:CONTENT_TYPE_Nutrition]){
+            [self setUpNutrition];
+        }
+        else if([title isEqualToString:CONTENT_TYPE_PersonalCare]){
+            [self setUpPersonalCare];
+        }
         else if([title isEqualToString:CONTENT_TYPE_SelfCareForTheCaregiver]){
             [self setUpSelfCareForCareGiver];
         }
@@ -68,18 +98,65 @@
         else if([title isEqualToString:CONTENT_TYPE_WorksCited]){
             [self setUpWorksCited];
         }
-        
     }
     return self; 
 }
 
 + (NSString *)getImageNameForType:(NSString *)type {
     NSString *imageName = @"";
-    if ([type isEqualToString:CONTENT_TYPE_CareGiver]) {//MM
+    if ([type isEqualToString:CONTENT_TYPE_PostStrokeConcerns]) {//MM
+        return POST_STROKE_ICON;//MM
+    } else  if ([type isEqualToString:CONTENT_TYPE_Aphasia]) {//MM
+        return Aphasia_ICON;//MM
+    } else  if ([type isEqualToString:CONTENT_TYPE_Cognition]) {//MM
+        return Cognition_ICON;//MM
+    } else if ([type isEqualToString:CONTENT_TYPE_ManagingAndImprovingCognitiveDeficits]) {//MM
+        return ManagingCognitiveDeficits_ICON;//MM
+    } else if ([type isEqualToString:CONTENT_TYPE_Dysphagia]) {//MM
+        return Dysphagia_ICON;//MM
+    } else if ([type isEqualToString:CONTENT_TYPE_Confinement]) {//MM
+        return Confinement_ICON;//MM
+    } else if ([type isEqualToString:CONTENT_TYPE_HomeModifications]) {//MM
+        return HomeModifications_ICON;//MM
+    } else if ([type isEqualToString:CONTENT_TYPE_Incontinence]) {//MM
+        return Incontinence_ICON;//MM
+    } else if ([type isEqualToString:CONTENT_TYPE_ManagingIncontinence]) {//MM
+        return ManagingIncontinence_ICON;//MM
+    }else if ([type isEqualToString:CONTENT_TYPE_MuscleParalysisAndWeakness]) {//MM
+        return MuscleParalysis_ICON;//MM
+    }else if ([type isEqualToString:CONTENT_TYPE_MedicationAdherenceAndCompliance]) {//MM
+        return MedicationAdherence_ICON;//MM
+    } else if ([type isEqualToString:CONTENT_TYPE_MedicationAdherence]) {//MM
+        return MedicationAdherence_ICON;//MM
+    } else if ([type isEqualToString:CONTENT_TYPE_Nutrition]) {//MM
+        return Nutrition_ICON;//MM
+    } else if ([type isEqualToString:CONTENT_TYPE_PersonalCare]) {//MM
+        return PersonalCare_Icon;//MM
+    }else if ([type isEqualToString:CONTENT_TYPE_SelfCareForTheCaregiver]) {//MM
+        return SelfCareImage;//MM
+    }else if ([type isEqualToString:CONTENT_TYPE_RespiteCare]) {//MM
+        return RespiteCareImage;//MM
+    }
+    else if ([type isEqualToString:CONTENT_TYPE_Seizures]) {//MM
+            return CAREGIVER_ICON;//MM
+    }else if ([type isEqualToString:CONTENT_TYPE_Sleep]) {//MM
+            return CAREGIVER_ICON;//MM
+    }else if ([type isEqualToString:CONTENT_TYPE_Seizures]) {//MM
+        return CAREGIVER_ICON;//MM
+    }else if ([type isEqualToString:CONTENT_TYPE_EmotionalReactionsPostStroke]) {//MM
+        return EmoReactionsImage;//MM
+    }
+    else if ([type isEqualToString:CONTENT_TYPE_NavigatingEmotionalAndBehavioralChanges]) {//MM
+        return EmoReactionsImage2;//MM
+    }
+    else if ([type isEqualToString:CONTENT_TYPE_WorksCited]) {//MM
+        return CAREGIVER_ICON;//MM
+    }
+    else if ([type isEqualToString:CONTENT_TYPE_CareGiver]) {//MM
         return CAREGIVER_ICON;//MM
     } else if ([type isEqualToString:CONTENT_TYPE_SIGNSOFSTROKE]) {//MM
         return AMBULANCE_ICON;//MM
-    }//
+    }
     else if ([type isEqualToString:CONTENT_TYPE_RISKFACTORS]) {//MM
         return CANE_WALKER;//MM
     }else if ([type isEqualToString:CONTENT_TYPE_BLOOD_PRESSURE]) {
@@ -425,6 +502,348 @@
 /*Care-giver section Content types
  *----------------------------------
  */
+
+-(void)setUpPostStrokeConcerns {
+    self.contentTitle = CONTENT_TYPE_PostStrokeConcerns;
+    self.contentBGColor = HFTW_DARK;
+    self.textColor = [UIColor whiteColor];
+    self.backButtonImageStr = BLUE_BACK_BUTTON;
+    self.content = [[NSMutableArray alloc] init];
+
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    [imgView setImage:[UIImage imageNamed:POST_STROKE_ICON]];
+    self.images = @[imgView];
+
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"PostStroke.title", nil)]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"PostStroke.bulletOne", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"PostStroke.bulletTwo", nil), NSLocalizedString(@"PostStroke.bulletThree", nil),NSLocalizedString(@"PostStroke.bulletFour", nil),NSLocalizedString(@"PostStroke.bulletFive", nil),NSLocalizedString(@"PostStroke.bulletSix", nil),NSLocalizedString(@"PostStroke.bulletSeven", nil)]]];
+}
+
+-(void)setUpAphasia {
+    self.contentTitle = CONTENT_TYPE_Aphasia;
+    self.contentBGColor = HFTW_DARK;
+    self.textColor = [UIColor whiteColor];
+    self.backButtonImageStr = BLUE_BACK_BUTTON;
+    self.content = [[NSMutableArray alloc] init];
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 228, 228)];
+    [imgView setImage:[UIImage imageNamed:Aphasia_ICON]];
+    self.images = @[imgView];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Aphasia.paragraph", nil)]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Aphasia.bullet1", nil)]]];
+    [self.content addObject:[self subBulletsWithText: @[NSLocalizedString(@"Aphasia.bullet1.1", nil), NSLocalizedString(@"Aphasia.bullet1.2", nil),NSLocalizedString(@"Aphasia.bullet1.3", nil),NSLocalizedString(@"Aphasia.bullet1.4", nil),NSLocalizedString(@"Aphasia.bullet1.5", nil)]]];
+    
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Aphasia.bullet2", nil)]]];
+    [self.content addObject:[self subBulletsWithText: @[NSLocalizedString(@"Aphasia.bullet2.1", nil), NSLocalizedString(@"Aphasia.bullet2.2", nil)]]];
+}
+
+-(void)setUpCognition {
+    self.contentTitle = CONTENT_TYPE_Cognition;
+    self.contentBGColor = HFTW_DARK;
+    self.textColor = [UIColor whiteColor];
+    self.backButtonImageStr = BLUE_BACK_BUTTON;
+    UIImageView *zero = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 135, 135)];
+    [zero setImage:[UIImage imageNamed:Cognition_ICON]];
+    UIImageView *one = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 120, 61)];
+    [one setImage:[UIImage imageNamed:ManagingCognitiveDeficits_ICON]];
+    UIImageView *two = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 157, 157)];
+    [two setImage:[UIImage imageNamed:ManagingCognitiveDeficits2_ICON]];
+    UIImageView *three = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 224, 149)];
+    [three setImage:[UIImage imageNamed:ManagingCognitiveDeficits3_ICON]];
+    self.images = @[zero, one, two, three];
+    self.content = [[NSMutableArray alloc] init];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Cognition.paragraph", nil)]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Cognition.bullet1", nil)]]];
+    [self.content addObject:[self headerWithTitle:CONTENT_TYPE_ManagingAndImprovingCognitiveDeficits]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"CognitiveDeficits.bullet1", nil), NSLocalizedString(@"CognitiveDeficits.bullet2",nil),
+        NSLocalizedString(@"CognitiveDeficits.bullet3",nil),
+        NSLocalizedString(@"CognitiveDeficits.bullet4",nil),
+        NSLocalizedString(@"CognitiveDeficits.bullet5",nil),
+        NSLocalizedString(@"CognitiveDeficits.bullet6",nil),
+        NSLocalizedString(@"CognitiveDeficits.bullet7",nil),
+        NSLocalizedString(@"CognitiveDeficits.bullet8", nil)]]];
+}
+
+-(void)setUpDysphagia{
+    self.contentTitle = CONTENT_TYPE_Dysphagia;
+    self.contentBGColor = HFTW_DARK;
+    self.textColor = [UIColor whiteColor];
+    self.backButtonImageStr = BLUE_BACK_BUTTON;
+    self.content = [[NSMutableArray alloc] init];
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 228, 228)];
+    [imgView setImage:[UIImage imageNamed:Dysphagia_ICON]];
+    self.images = @[imgView];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Dysphagia.paragraph", nil)]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Dysphagia.bullet1", nil), NSLocalizedString(@"Dysphagia.bullet2",nil), NSLocalizedString(@"Dysphagia.bullet3",nil)]]];
+    [self.content addObject:[self subBulletsWithText: @[NSLocalizedString(@"Dysphagia.bullet3.1", nil), NSLocalizedString(@"Dysphagia.bullet3.2", nil),NSLocalizedString(@"Dysphagia.bullet3.3", nil),NSLocalizedString(@"Dysphagia.bullet3.4", nil)]]];
+}
+
+//Confinement
+-(void)setUpConfinement{
+    self.contentTitle = CONTENT_TYPE_Confinement;
+    self.contentBGColor = HFTW_DARK;
+    self.textColor = [UIColor whiteColor];
+    self.backButtonImageStr = BLUE_BACK_BUTTON;
+    UIImageView *one = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 112, 84)];
+    [one setImage:[UIImage imageNamed:Confinement_ICON]];
+    UIImageView *two = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 134, 89)];
+    [two setImage:[UIImage imageNamed:Confinement2_ICON]];
+    UIImageView *three = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 98, 65)];
+    [three setImage:[UIImage imageNamed:Confinement3_ICON]];
+    self.images = @ [one, two, three];
+    self.content = [[NSMutableArray alloc] init];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"Confinement.header", nil)]];
+    [self.content addObject:[self paragraphWithText:NSLocalizedString(@"Confinement.paragraph", nil)]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Confinement.bullet1", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"Confinement.bullet1.1", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Confinement.bullet2", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"Confinement.bullet2.1", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"Confinement.bullet2.2", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Confinement.bullet3", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Confinement.bullet4", nil)]]];
+}
+
+//Home Modifications
+-(void)setUpHomeModifications{
+    self.contentTitle = CONTENT_TYPE_HomeModifications;
+    self.contentBGColor = HFTW_DARK;
+    self.textColor = [UIColor whiteColor];
+    self.backButtonImageStr = BLUE_BACK_BUTTON;
+    UIImageView *two = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 111, 110)];
+    [two setImage:[UIImage imageNamed:HomeModifications_ICON]];
+    UIImageView *three = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 135, 202)];
+    [three setImage:[UIImage imageNamed:HomeModifications2_ICON]];
+    self.images = @  [two, three];
+    self.content = [[NSMutableArray alloc] init];
+    [self.content addObject:[self paragraphWithText:NSLocalizedString(@"HomeModifications.paragraph", nil)]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"HomeModifications.bullet1", nil)]]];
+    [self.content addObject:[self subBulletsWithText: @[NSLocalizedString(@"HomeModifications.bullet1.1", nil), NSLocalizedString(@"HomeModifications.bullet1.2", nil),NSLocalizedString(@"HomeModifications.bullet1.3", nil),NSLocalizedString(@"HomeModifications.bullet1.4", nil),NSLocalizedString(@"HomeModifications.bullet1.5", nil)]]];
+}
+//Incontinence
+
+-(void)setUpIncontinence{
+    self.contentTitle = CONTENT_TYPE_Incontinence;
+    self.contentBGColor = HFTW_DARK;
+    self.textColor = [UIColor whiteColor];
+    self.backButtonImageStr = BLUE_BACK_BUTTON;
+    UIImageView *two = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 113, 112)];
+    [two setImage:[UIImage imageNamed:Incontinence_ICON]];
+    UIImageView *three = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 180, 120)];
+    [three setImage:[UIImage imageNamed:Incontinence2_ICON]];
+    UIImageView *four = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 108, 140)];
+    [four setImage:[UIImage imageNamed:ManagingIncontinence1_ICON]];
+    UIImageView *five = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 126, 78)];
+    [five setImage:[UIImage imageNamed:ManagingIncontinence_ICON]];
+    self.images = @  [two, three,four,five];
+    self.content = [[NSMutableArray alloc] init];
+    [self.content addObject:[self paragraphWithText:NSLocalizedString(@"Incontinence.pargraph", nil)]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Incontinence.bullet1", nil),NSLocalizedString(@"Incontinence.bullet2",nil),NSLocalizedString(@"Incontinence.bullet3",nil),]]];
+    [self.content addObject:[self headerWithTitle:CONTENT_TYPE_ManagingIncontinence]];
+    [self.content addObject:[self paragraphWithText:NSLocalizedString(@"ManagingIncontinence.paragraph", nil)]];    
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"ManagingIncontinence.bullet1", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"ManagingIncontinence.bullet1.1", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"ManagingIncontinence.bullet1.1.1", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"ManagingIncontinence.bullet2", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"ManagingIncontinence.bullet2.1", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"ManagingIncontinence.bullet2.1.1", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"ManagingIncontinence.bullet3", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"ManagingIncontinence.bullet4", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"ManagingIncontinence.bullet5", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"ManagingIncontinence.bullet5.1", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"ManagingIncontinence.bullet5.2", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"ManagingIncontinence.bullet6", nil)]]];
+}
+
+-(void) setUpMuscleParalysisAndWeakness{
+    self.contentTitle = CONTENT_TYPE_MuscleParalysisAndWeakness;
+    self.contentBGColor = HFTW_DARK;
+    self.textColor = [UIColor whiteColor];
+    self.backButtonImageStr = BLUE_BACK_BUTTON;
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 94, 125)];
+    [imgView setImage:[UIImage imageNamed:MuscleParalysis_ICON]];
+    self.images = @[imgView];
+    self.content = [[NSMutableArray alloc] init];
+    [self.content addObject:[self paragraphWithText:NSLocalizedString(@"MuscleParalysisWeakness.paragraph", nil)]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"MuscleParalysisWeakness.bullet1", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"MuscleParalysisWeakness.bullet1.1", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"MuscleParalysisWeakness.bullet1.2", nil)]]];
+    [self.content addObject:[self paragraphWithText:NSLocalizedString(@"MuscleParalysisWeakness.paragraph1", nil)]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"MuscleParalysisWeakness.bullet2", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"MuscleParalysisWeakness.bullet3", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"MuscleParalysisWeakness.bullet4", nil)]]];
+    
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"MuscleParalysisWeakness.bullet5", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"MuscleParalysisWeakness.bullet6", nil)]]];
+}
+
+-(void)setUpMedicationAdherenceAndCompliance{
+    self.contentTitle = CONTENT_TYPE_MedicationAdherenceAndCompliance;
+    self.contentBGColor = HFTW_DARK;
+    self.textColor = [UIColor whiteColor];
+    self.backButtonImageStr = BLUE_BACK_BUTTON;
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 104, 207)];
+    [imgView setImage:[UIImage imageNamed:MedicationAdherence_ICON]];
+    self.images = @[imgView];
+    self.content = [[NSMutableArray alloc] init];
+    [self.content addObject:[self paragraphWithText:NSLocalizedString(@"MuscleParalysisWeakness.paragraph", nil)]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"MedicationAdherenceCompliance.bullet1", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"MedicationAdherenceCompliance.bullet2", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"MedicationAdherenceCompliance.bullet3", nil)]]];
+}
+
+-(void)setUpMedicationAdherence{
+    self.contentTitle = CONTENT_TYPE_MedicationAdherence;
+    self.contentBGColor = HFTW_DARK;
+    self.textColor = [UIColor whiteColor];
+    self.backButtonImageStr = BLUE_BACK_BUTTON;
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 104, 207)];
+    [imgView setImage:[UIImage imageNamed:MedicationAdherence_ICON]];
+    self.images = @[imgView];
+    self.content = [[NSMutableArray alloc] init];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"MedicationAdherence.header1", nil)]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"MedicationAdherenceCompliance.bullet1", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"MedicationAdherence.bullet1", nil),NSLocalizedString(@"MedicationAdherence.bullet2", nil),NSLocalizedString(@"MedicationAdherence.bullet3", nil),NSLocalizedString(@"MedicationAdherence.bullet4",
+        nil),NSLocalizedString(@"MedicationAdherence.bullet5",
+    nil),NSLocalizedString(@"MedicationAdherence.bullet6",
+    nil),NSLocalizedString(@"MedicationAdherence.bullet7",
+    nil),NSLocalizedString(@"MedicationAdherence.bullet8",
+    nil),NSLocalizedString(@"MedicationAdherence.bullet9",
+    nil),NSLocalizedString(@"MedicationAdherence.bullet10", nil)]]];
+    [self.content addObject:[self paragraphWithText:NSLocalizedString(@"MedicationAdherence.paragraph1", nil)]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"MedicationAdherence.bullet11", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"MedicationAdherence.bullet0", nil)]]];
+    [self.content addObject:[self subBulletsWithText: @[NSLocalizedString(@"MedicationAdherence.bullet0.1", nil), NSLocalizedString(@"MedicationAdherence.bullet0.2", nil),
+        NSLocalizedString(@"MedicationAdherence.bullet0.3", nil),
+        NSLocalizedString(@"MedicationAdherence.bullet0.4",nil),
+        NSLocalizedString(@"MedicationAdherence.bullet0.5",                                                                                                                                                                                                                                               nil),
+        NSLocalizedString(@"MedicationAdherence.bullet0.6",nil),
+        NSLocalizedString(@"MedicationAdherence.bullet0.7", nil)]]];
+}
+
+-(void)setUpNutrition{
+    self.contentTitle = CONTENT_TYPE_Nutrition;
+    self.contentBGColor = HFTW_DARK;
+    self.textColor = [UIColor whiteColor];
+    self.backButtonImageStr = BLUE_BACK_BUTTON;
+    UIImageView *one = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 275, 161)];
+    [one setImage:[UIImage imageNamed:Nutrition_ICON]];
+    UIImageView *two = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 138, 92)];
+    [two setImage:[UIImage imageNamed:Nutrition2_ICON]];
+    self.images = @ [one, two];
+    self.content = [[NSMutableArray alloc] init];
+    [self.content addObject:[self headerWithTitle:CONTENT_TYPE_Nutrition]];
+    [self.content addObject:[self paragraphWithText:NSLocalizedString(@"Nutrition.paragraph1", nil)]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet1", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"Nutrition.bullet1.1", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet2", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet3", nil)]]];
+    [self.content addObject:[self subBulletsWithText: @[NSLocalizedString(@"Nutrition.bullet3.1", nil), NSLocalizedString(@"Nutrition.bullet3.2", nil),NSLocalizedString(@"Nutrition.bullet3.3", nil),NSLocalizedString(@"Nutrition.bullet3.4", nil)]]];
+    [self.content addObject:[self paragraphWithText:NSLocalizedString(@"Nutrition.paragraph2", nil)]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet22", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"Nutrition.bullet22.1", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet3", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"Nutrition.bullet3.1", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet4", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"Nutrition.bullet4.1", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet5", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"Nutrition.bullet5.1", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"Nutrition.bullet5.2", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"Nutrition.bullet5.2.1", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"Nutrition.bullet5.2.2", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"Nutrition.bullet5.2.3", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"Nutrition.bullet5.2.4", nil)]]];
+    [self.content addObject:[self paragraphWithText:NSLocalizedString(@"Nutrition.paragraph3", nil)]];
+
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet6", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet7", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"Nutrition.bullet7.1", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet8", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet9", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet10", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet11", nil)]]];
+    [self.content addObject:[self subBulletsWithText: @[NSLocalizedString(@"Nutrition.bullet11.1", nil), NSLocalizedString(@"Nutrition.bullet11.2", nil),
+        NSLocalizedString(@"Nutrition.bullet11.3", nil),
+        NSLocalizedString(@"Nutrition.bullet11.4",nil),
+        NSLocalizedString(@"Nutrition.bullet11.5",                                                                                                                                                                                                                                          nil),NSLocalizedString(@"Nutrition.bullet11.6",nil),
+        NSLocalizedString(@"Nutrition.bullet11.7", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet12", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet13", nil)]]];
+    [self.content addObject:[self subBulletsWithText: @[NSLocalizedString(@"Nutrition.bullet13.1", nil), NSLocalizedString(@"Nutrition.bullet13.2", nil),
+              NSLocalizedString(@"Nutrition.bullet13.3", nil),
+              NSLocalizedString(@"Nutrition.bullet13.4",nil),
+NSLocalizedString(@"Nutrition.bullet13.5",nil),NSLocalizedString(@"Nutrition.bullet13.6",nil),
+NSLocalizedString(@"Nutrition.bullet13.7",nil),NSLocalizedString(@"Nutrition.bullet13.8",nil),
+              NSLocalizedString(@"Nutrition.bullet13.9", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet14", nil)]]];
+    [self.content addObject:[self subBulletsWithText:@[NSLocalizedString(@"Nutrition.bullet14.1", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet15", nil)]]];
+    [self.content addObject:[self bulletsWithText: @[NSLocalizedString(@"Nutrition.bullet16", nil)]]];
+    [self.content addObject:[self subBulletsWithText: @[NSLocalizedString(@"Nutrition.bullet16.1", nil), NSLocalizedString(@"Nutrition.bullet16.2", nil),
+                NSLocalizedString(@"Nutrition.bullet16.3", nil)]]];
+}
+-(void)setUpPersonalCare {
+    /*
+     "PersonalCare.bullet1"
+     "PersonalCare.bullet1.1"
+     "PersonalCare.bullet1.2"
+     "PersonalCare.bullet1.3"
+     "PersonalCare.bullet1.4"     
+     "PersonalCare.bullet2"
+     "PersonalCare.paragraph1"
+     "PersonalCare.bullet3"
+     "PersonalCare.bullet3.1"
+     "PersonalCare.bullet3.1.1"
+     "PersonalCare.bullet3.1.2"
+     "PersonalCare.bullet3.1.3"
+     "PersonalCare.bullet3.1.4"
+     "PersonalCare.bullet3.1.5"
+     "PersonalCare.bullet4"
+     "PersonalCare.bullet5"
+     "PersonalCare.bullet6"
+     "PersonalCare.paragraph2"
+     "PersonalCare.bullet7"
+     "PersonalCare.bullet7.1"
+     "PersonalCare.bullet7.2"
+     "PersonalCare.bullet7.3"
+     "PersonalCare.bullet7.4"
+     "PersonalCare.bullet7.5"
+     "PersonalCare.bullet8"
+     "PersonalCare.bullet9"
+     "PersonalCare.bullet9.1"
+     "PersonalCare.bullet9.2"
+     */
+    self.contentTitle = CONTENT_TYPE_PersonalCare;
+    self.contentBGColor = HFTW_DARK;
+    self.textColor = [UIColor whiteColor];
+    self.backButtonImageStr = BLUE_BACK_BUTTON;
+    self.content = [[NSMutableArray alloc] init];
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 330, 237)];
+    [imgView setImage:[UIImage imageNamed:PersonalCare_Icon]];
+    self.images = @[imgView];
+    NSArray *bullet1 = @[(NSLocalizedString(@"PersonalCare.bullet1", nil))];
+    [self.content addObject:[self bulletsWithText:bullet1]];
+    [self.content addObject:[self subBulletsWithText: @[NSLocalizedString(@"PersonalCare.bullet1.1", nil), NSLocalizedString(@"PersonalCare.bullet1.2", nil),NSLocalizedString(@"PersonalCare.bullet1.3", nil),NSLocalizedString(@"PersonalCare.bullet1.4", nil)]]];
+    NSArray *bullet2 = @[(NSLocalizedString(@"PersonalCare.bullet2", nil))];
+    [self.content addObject:[self bulletsWithText:bullet2]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"PersonalCare.paragraph1", nil)]];
+    NSArray *bullet3 = @[(NSLocalizedString(@"PersonalCare.bullet3", nil))];
+    [self.content addObject:[self bulletsWithText:bullet3]];
+    [self.content addObject:[self subBulletsWithText: @[NSLocalizedString(@"PersonalCare.bullet3.1", nil), NSLocalizedString(@"PersonalCare.bullet3.2", nil),NSLocalizedString(@"PersonalCare.bullet3.3", nil),NSLocalizedString(@"PersonalCare.bullet3.4", nil),NSLocalizedString(@"PersonalCare.bullet3.5", nil)]]];
+    NSArray *bullet4 = @[(NSLocalizedString(@"PersonalCare.bullet4", nil))];
+    [self.content addObject:[self bulletsWithText:bullet4]];
+    NSArray *bullet5 = @[(NSLocalizedString(@"PersonalCare.bullet5", nil))];
+    [self.content addObject:[self bulletsWithText:bullet5]];
+    NSArray *bullet6 = @[(NSLocalizedString(@"PersonalCare.bullet6", nil))];
+    [self.content addObject:[self bulletsWithText:bullet6]];
+    [self.content addObject:[self headerWithTitle:NSLocalizedString(@"PersonalCare.paragraph2", nil)]];
+    NSArray *bullet7 = @[(NSLocalizedString(@"PersonalCare.bullet7", nil))];
+    [self.content addObject:[self bulletsWithText:bullet7]];
+        [self.content addObject:[self subBulletsWithText: @[NSLocalizedString(@"PersonalCare.bullet7.1", nil), NSLocalizedString(@"PersonalCare.bullet7.2", nil),NSLocalizedString(@"PersonalCare.bullet7.3", nil),NSLocalizedString(@"PersonalCare.bullet7.4", nil),NSLocalizedString(@"PersonalCare.bullet7.5", nil)]]];
+    NSArray *bullet8 = @[(NSLocalizedString(@"PersonalCare.bullet8", nil))];
+    [self.content addObject:[self bulletsWithText:bullet8]];
+    NSArray *bullet9 = @[(NSLocalizedString(@"PersonalCare.bullet9", nil))];
+    [self.content addObject:[self bulletsWithText:bullet9]];
+    [self.content addObject:[self subBulletsWithText: @[NSLocalizedString(@"PersonalCare.bullet9.1", nil), NSLocalizedString(@"PersonalCare.bullet9.2", nil)]]];
+}
 -(void)setUpSelfCareForCareGiver {
     self.contentTitle = CONTENT_TYPE_SelfCareForTheCaregiver;
     self.contentBGColor = HFTW_DARK;
@@ -455,14 +874,10 @@
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 350)];
     [imgView setImage:[UIImage imageNamed:RespiteCareImage]];
     self.images = @[imgView];
-    
-    /* First bullet */
     NSArray *bullet1 = @[(NSLocalizedString(@"RespiteCare.bullet1", nil))];
-    
     [self.content addObject:[self headerWithTitle:NSLocalizedString(@"RespiteCare.paragraph1", nil)]];
     [self.content addObject:[self bulletsWithText:bullet1]];
     [self.content addObject:[self subBulletsWithText: @[NSLocalizedString(@"RespiteCare.bullet1.1", nil), NSLocalizedString(@"RespiteCare.bullet1.2", nil),NSLocalizedString(@"RespiteCare.bullet1.3", nil),NSLocalizedString(@"RespiteCare.bullet1.4", nil)]]];
-    
 }
 
 -(void)setUpSeizures {

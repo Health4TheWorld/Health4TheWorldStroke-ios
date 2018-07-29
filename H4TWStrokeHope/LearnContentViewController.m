@@ -16,7 +16,7 @@
 @interface LearnContentViewController ()
 /* We add labels on this page verticaly, so need to keep track of current Y value */
 @property CGFloat currentY;
-@property UIScrollView *scrollView;
+@property IBOutlet UIScrollView *scrollView;
 @property UIView *contentView;
 @property BOOL alreadyAddedText;
 
@@ -35,7 +35,6 @@
     self.currentY = 0;
     self.alreadyAddedText = NO;
 //    self.automaticallyAdjustsScrollViewInsets = FALSE;
-    
     /* Back button */
 //    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
 //    UIImage *backBtnImage = [UIImage imageNamed:self.content.backButtonImageStr];
@@ -71,15 +70,18 @@
 /* Loop through data and add labels for each text */
 - (void)addText {
     if (!self.alreadyAddedText) {
-        self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+//        self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+        self.scrollView.frame = self.view.frame;
+//        self.automaticallyAdjustsScrollViewInsets = NO;
         [self.scrollView setBackgroundColor:[UIColor clearColor]];
         self.scrollView.bounces = NO;
-        self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 800)];
+        self.currentY = 10;
+
+        self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.currentY)];
+        self.contentView.backgroundColor = [UIColor grayColor];
+
         [self.contentView setBackgroundColor:[UIColor clearColor]];
         [self.scrollView addSubview:self.contentView];
-        self.currentY = 15;
-        
-        /* Add labels */
         for (NSDictionary *text in self.content.content) {
             NSString *textType = [text objectForKey:TEXT_TYPE_KEY];
             if ([textType isEqualToString:TEXT_TYPE_HEADER]) {
@@ -96,10 +98,8 @@
                 [self addSubBullets:[text objectForKey:TEXT_KEY]];
             }
         }
-        
         NSArray *imgs = self.content.images;
         for (UIImageView *imgView in imgs) {
-           // imgView.center = self.view.center;
             CGRect imgViewFrame = imgView.frame;
             imgViewFrame.origin.y = self.currentY;
             CGFloat width = [UIScreen mainScreen].bounds.size.width;
@@ -109,14 +109,9 @@
             self.currentY += imgViewFrame.size.height;
             self.currentY += 60;
         }
-        
         self.alreadyAddedText = YES;
-        self.currentY += 40;
-        if(_justImage){//786 × 587
-            self.scrollView.contentSize = CGSizeMake(786, 587);
-        }else{
-            self.scrollView.contentSize = CGSizeMake(self.contentView.frame.size.width, self.currentY);
-        }
+        self.currentY += 20;
+        self.scrollView.contentSize = CGSizeMake(self.contentView.frame.size.width, self.currentY);
         [self.view addSubview:self.scrollView];
     }
 }

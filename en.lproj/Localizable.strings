@@ -12,6 +12,7 @@
 "Learn.Cognition" = "Cognition";
 "Learn.ManagingAndImprovingCognitiveDeficits" = "Managing And Improving Cognitive Deficits";
 "Learn.Dysphagia" = "Dysphagia";
+"Learn.Confinement" = "Confinement";
 "Learn.HomeModifications" = "Home Modifications";
 "Learn.Incontinence" = "Incontinence";
 "Learn.ManagingIncontinence" = "Managing Incontinence";
@@ -19,7 +20,7 @@
 "Learn.MedicationAdherenceAndCompliance" = "Medication Adherence And Compliance";
 "Learn.MedicationAdherence" = "Medication Adherence";
 "Learn.Nutrition" = "Nutrition";
-"Learn.PersonalCare" = "PersonalCare";
+"Learn.PersonalCare" = "Personal Care";
 "Learn.SelfCareForTheCaregiver" = "Self Care For The Caregiver";
 "Learn.RespiteCare" = "Respite Care";
 "Learn.Seizures" = "Seizures";
@@ -353,6 +354,230 @@
 
 /* CARE GIVER SECTION */
 /* -------------------- */
+/* CARE GIVER SECTION */
+/* -------------------- */
+//Post Stroke Concerns
+"PostStroke.title" = "Damage to brain tissue can cause a variety of challenges to a stroke survivor";
+"PostStroke.bulletOne" = "Aphasia: impairment of ability to use and comprehend words";
+"PostStroke.bulletTwo" = "Decreased Cognition: memory, attention span, self-awareness, and ability to learn new tasks may be diminished";
+"PostStroke.bulletThree" = "Limited Movement: impairment of ability to move, walk, or balance";
+"PostStroke.bulletFour" = "Incontinence: inability to control the bladder and/or bowels";
+"PostStroke.bulletFive" = "Dysphagia: trouble swallowing";
+"PostStroke.bulletSix" = "Paralysis: inability to move a group of muscles voluntarily";
+"PostStroke.bulletSeven" = "Seek advice and guidance from medical and rehabilitation care team members";
+//Aphasia
+"Aphasia.paragraph" = "Impairment of language that affects ability to use or comprehend words";
+"Aphasia.bullet1" = "Common problems for stroke survivors:";
+"Aphasia.bullet1.1" ="Talking";
+"Aphasia.bullet1.2" ="Understanding what others say";
+"Aphasia.bullet1.3" ="Reading";
+"Aphasia.bullet1.4" ="Writing";
+"Aphasia.bullet1.5" ="Using numbers or doing calculations";
+"Aphasia.bullet2"= "Language abilities can improve with speech therapy";
+"Aphasia.bullet2.1"= "Ask your speech therapist for exercises you can do with the stroke survivor";
+"Aphasia.bullet2.2"= "Computer, word games, and puzzles will promote improvement (depending on ability, children’s learning tools can be very helpful)";
+
+//Cognition
+"Cognition.paragraph" = "Memory, attention span, self-awareness, and comprehension skills may be diminished";
+"Cognition.bullet1" = "A stroke survivor may lose the ability to learn new tasks, remember things, problem-solve, understand things, make plans, or acknowledge the reality of his/her physical limitations";
+
+//Managing and Improving Cognitive Deficits
+"CognitiveDeficits.bullet1" = "Break tasks into simple steps";
+"CognitiveDeficits.bullet2" = "Set a routine";
+"CognitiveDeficits.bullet3" = "Keep things the stroke survivor regularly uses (such as a toothbrush) in the same place";
+"CognitiveDeficits.bullet4" = "Use reminders";
+"CognitiveDeficits.bullet5" = "Repeat exercises";
+"CognitiveDeficits.bullet6" = "Read";
+"CognitiveDeficits.bullet7" = "Play card games, memory games, puzzles, and crosswords to improve memory, focus, and thinking skills";
+"CognitiveDeficits.bullet8" = "Consult with a speech therapist and/or an occupational therapist for more exercises";
+
+//Dysphagia
+"Dysphagia.paragraph" = "Trouble Swallowing";
+"Dysphagia.bullet1" = "Depending on the stroke survivor: paralysis, one-sided weakness, and/or dysphagia can make feeding oneself difficult";
+"Dysphagia.bullet2" = "Pay close attention to breathing and swallowing issues to avoid choking";
+"Dysphagia.bullet3" = "Suggested meal-time aids:";
+"Dysphagia.bullet3.1" = "Adaptive utensils with foam handles/grips";
+"Dysphagia.bullet3.2" = "Plate guards";
+"Dysphagia.bullet3.3" = "Cups with handles";
+"Dysphagia.bullet3.4" = "Liquid thickeners";
+
+//Confinement
+"Confinement.header" = "Confinement (Limited Movement)";
+"Confinement.paragraph" = "Impairment of ability to move, walk, or balance";
+"Confinement.bullet1" = "If the stroke survivor is confined to a bed:";
+"Confinement.bullet1.1" = "Move him/her often to protect against bed sores and skin irritations";
+"Confinement.bullet2" = "Exercises to Improve Muscle Strength:";
+"Confinement.bullet2.1" = "Range-of-motion exercises and leg lifts";
+"Confinement.bullet2.2" = "Consult a physical therapist and/or occupational therapist if possible";
+"Confinement.bullet3" = "Installing bed rails is an essential safety feature";
+"Confinement.bullet4" = "Safety monitors and walkie-talkies can also help you communicate with the stroke survivor when you are in another room";
+
+//Home Modifications
+"HomeModifications.paragraph" = "Enable the stroke survivor to regain independence throughout recovery";
+"HomeModifications.bullet1" = "Examples";
+"HomeModifications.bullet1.1" = "Installing ramps";
+"HomeModifications.bullet1.2" = "Installing grab bars, shower chairs, or raised toilet seats in the bathroom";
+"HomeModifications.bullet1.3" = "Acquire an emergency alert device for falls and safety monitors to listen when in another room";
+"HomeModifications.bullet1.4" = "Acquire assistive living devices such as gait belts, adaptive cups, and  adaptive utensils";
+"HomeModifications.bullet1.5" = "Have an emergency access key for the stroke survivor’s home";
+
+//Incontinence
+"Incontinence.pargraph" ="Inability to control the bladder (urinary incontinence) and/or bowels (fecal incontinence)";
+"Incontinence.bullet1" = "Incontinence is more common in the early stages of stroke";
+"Incontinence.bullet2" = "Both types of incontinence are characterized by involuntary leakage";
+"Incontinence.bullet3" = "Incontinence issues may be uncomfortable to deal with and/or cause embarrassment, so try to be sensitive";
+
+//Managing Incontinence
+"ManagingIncontinence.paragraph" = "Having a nurse conduct an evaluation and assessment will be very helpful in determining individualized strategies";
+"ManagingIncontinence.bullet1" = "Behavioral and Physical Therapies";
+"ManagingIncontinence.bullet1.1" = "Exercises to help the stroke survivor regain control of his/her bladder and/or bowels";
+"ManagingIncontinence.bullet1.1.1" = "Kegel exercises (for men and women)";
+"ManagingIncontinence.bullet2" = "Bladder training (prompted voiding)";
+"ManagingIncontinence.bullet2.1" = "Work with a healthcare professional to set up a “voiding schedule,” assigning times to use the bathroom";
+"ManagingIncontinence.bullet2.1.1" = "Adhere to the schedule as closely as possible, with planning, deep breathing, and mental exercises";
+"ManagingIncontinence.bullet3" = "Adjust the stroke survivor’s diet";
+"ManagingIncontinence.bullet4" = "Disposable undergarments, a bedside commode, catheters, and some medications may also help";
+"ManagingIncontinence.bullet5" = "Constipation";
+"ManagingIncontinence.bullet5.1" = "Limited mobility and activity, depression, anxiety, dehydration, and diet can lead to constipation";
+"ManagingIncontinence.bullet5.2" = "Narcotic medications often cause constipation, which can be aided by the use of stool softeners";
+"ManagingIncontinence.bullet6" = "For treatment descriptions, management suggestions, and available supplies see “Bladder and Bowel Function fact sheet” at www.stroke.org/factsheets";
+
+//Muscle Paralysis and Weakness
+"MuscleParalysisWeakness.header" = "Muscle Paralysis and Weakness";
+"MuscleParalysisWeakness.paragraph" = "Paralysis refers to a person’s inability to move a muscle or group of muscles voluntarily";
+"MuscleParalysisWeakness.bullet1" = "When messages from the stroke survivor’s brain to his/her muscles don’t work properly after a stroke, a limb can become paralyzed or develop spasticity (when muscles become tight or stiff, restricting movement)";
+"MuscleParalysisWeakness.bullet1.1" = "Stiffness, painful muscle spasms, or a series of involuntary rhythmic muscle contractions and relaxations can lead to uncontrollable movement or jerking";
+"MuscleParalysisWeakness.bullet1.2" = "Upper and lower limb movement issues can make balance and coordination difficult, which increases the risk of falling";
+
+"MuscleParalysisWeakness.paragraph1" = "Circuits in the brain reconnect and heal over time. Recovery is possible.";
+
+"MuscleParalysisWeakness.bullet2" = "Paralysis and weakness disrupt movement and make daily activities difficult";
+"MuscleParalysisWeakness.bullet3" = "There are a variety of therapies available to relearn motor skills and strengthen the arms and legs";
+"MuscleParalysisWeakness.bullet4" = "Physical therapists recommend stretching, walking, or range-of-motion exercises";
+"MuscleParalysisWeakness.bullet5" = "the iHOPE: Spasticity webinar at www.stroke.org/ihope offers information about treatment and management";
+"MuscleParalysisWeakness.bullet6" = "The Hemiparesis brochure at www.stroke.org/brochures provides information on different types of one-sided weakness or paralysis and the types of treatment and rehab available";
+
+//Medication Adherence and Compliance
+"MedicationAdherenceCompliance.paragraph" = "Taking medications as prescribed is central to recovery post-stroke and recurrent stroke prevention";
+"MedicationAdherenceCompliance.bullet1" = "Medication adherence is a prevalent issue surrounding recurrent stroke prevention";
+"MedicationAdherenceCompliance.bullet2" = "Many patients report not taking their medications exactly as prescribed";
+"MedicationAdherenceCompliance.bullet3" = "50% of aging patients on multiple prescriptions admit that they forget to take their medications to varying degrees";
+
+//Medication Adherence
+"MedicationAdherence.header1" = "Questions to ask the prescribing healthcare professional and/or pharmacist:";
+"MedicationAdherence.bullet1" = "What is the medicine’s name and what is it for?";
+"MedicationAdherence.bullet2" = "When and how should the medicine be taken?";
+"MedicationAdherence.bullet3" = "What are the possible side effects?";
+"MedicationAdherence.bullet4" = "When should I expect the medicine to start working?";
+"MedicationAdherence.bullet5" = "Will the medicine interact with any other of the stroke survivor’s other medicines?";
+"MedicationAdherence.bullet5" = "Is it okay to take this with supplements? (vitamins, omega-3s, etc.)";
+"MedicationAdherence.bullet6" = "What should the medicine look like?";
+"MedicationAdherence.bullet7" = "What do I do if the stroke survivor forgets a dose?";
+"MedicationAdherence.bullet8" = "What are the repercussions if the stroke survivor stops taking it altogether?";
+"MedicationAdherence.bullet9" = "Besides time of day, are there any other things I should know about the stroke survivor taking medications? ( e.g. on a full stomach or with milk)";
+"MedicationAdherence.bullet10" = "Are there foods to avoid?";
+"MedicationAdherence.paragraph1" = "Taking so many medications can become expensive. Many medications are available in generic form.";
+"MedicationAdherence.bullet11" = "You and the stroke survivor should talk to the prescribing healthcare professional about available options";
+"MedicationAdherence.bullet0" = "Ideas for managing medications:";
+"MedicationAdherence.bullet0.1" = "Medication organizers";
+"MedicationAdherence.bullet0.2" = "Home delivery";
+"MedicationAdherence.bullet0.3" = "Auto-refills";
+"MedicationAdherence.bullet0.4" = "Numbering medications";
+"MedicationAdherence.bullet0.5" = "Medication trackers";
+"MedicationAdherence.bullet0.6" = "Pill boxes";
+"MedicationAdherence.bullet0.7" = "Alarms";
+//Nutrition
+"Nutrition.paragraph1" = "Eating a healthy diet can reduce the risk of having another stroke";
+"Nutrition.bullet1" = "Stroke risk factors include: high cholesterol, high blood pressure, diabetes, and being overweight";
+"Nutrition.bullet1.1" = "These risk factors can be decreased by eating a diet low in salt and fat, and high in vegetables";
+"Nutrition.bullet2" = "After a stroke, there is a higher risk of poor nutrition, leading to weight loss that can slow down recovery";
+"Nutrition.bullet3" = "Poor nutrition can be due to:";
+"Nutrition.bullet3.1" = "Dysphagia (swallowing problems)";
+"Nutrition.bullet3.2" = "Impaired ability to use utensils)";
+"Nutrition.bullet3.3" = "Problems with memory (example: forgetting to eat or drink)";
+"Nutrition.bullet3.4" = "Loss of appetite";
+
+"Nutrition.paragraph2" = "No sole food can provide your body with all the nutrients you need for good health, so it is important to eat a variety of healthy foods every day";
+"Nutrition.bullet22" = "Fruits and Vegetables";
+"Nutrition.bullet22.1" = "Eat plenty of fruits and vegetables, especially vegetables. Aim for between 5 to 7 servings per day (limit fruits if the stroke survivor has diabetes)";
+"Nutrition.bullet3" ="Grains";
+"Nutrition.bullet3.1" ="Whole grain breads and cereals contain fiber and vitamins, which may reduce the risk of a stroke. 2 to 4 small servings of whole grain are recommended daily (limit grains if the stroke survivor has diabetes)";
+"Nutrition.bullet4" = "Protein";
+"Nutrition.bullet4.1" = "Choose 2 servings of protein per day";
+"Nutrition.bullet5" = "Limit Salt (sodium)";
+"Nutrition.bullet5.1" = "Eating too much salt/sodium may cause you to retain water and raise your blood pressure";
+"Nutrition.bullet5.2" = "Cut down on sodium by:";
+"Nutrition.bullet5.2.1" = "Using herbs and spices for flavoring";
+"Nutrition.bullet5.2.2" = "Limiting processed foods and snack foods";
+"Nutrition.bullet5.2.3" = "Not adding extra salt at the table";
+"Nutrition.bullet5.2.4" = "Reading labels and avoiding foods with high sodium content";
+
+"Nutrition.paragraph3" = "Understanding dietary restrictions, needs, and supplements is very important";
+"Nutrition.bullet6" = "The stroke survivor may need to modify his/her diet to lower blood pressure, lose weight, or control blood sugar";
+"Nutrition.bullet7" = "If unsure about the stroke survivor’s needs, consult members of the stroke survivor’s medical and rehab care teams, or ask for a referral to a nutritionist";
+"Nutrition.bullet7.1" = "There may be foods that interact with the stroke survivor’s medications and need to be avoided";
+"Nutrition.bullet8" = "Stroke survivors with diabetes should avoid foods rich in sodium, sugar, or carbohydrates";
+"Nutrition.bullet9" = "Bringing stroke survivors on grocery store trips keeps them involved and allows them to gain a greater understanding of their nutritional needs";
+"Nutrition.bullet10" = "Healthy and delicious recipes and meal examples can be downloaded online";
+"Nutrition.bullet11" ="Healthful websites";
+"Nutrition.bullet11.1" = "www.cookinglight.com";
+"Nutrition.bullet11.2" = "www.dailyhealthyfood.com";
+"Nutrition.bullet11.3" = "www.diabetes.org";
+"Nutrition.bullet11.4" = "www.eatingwell.com";
+"Nutrition.bullet11.5" = "www.hearthealthyonline.com";
+"Nutrition.bullet11.6" = "www.myfoodhealth.com";
+"Nutrition.bullet11.7" = "www.wholefoods.com/recipes";
+"Nutrition.bullet12" = "If you are planning to go to a restaurant, make sure the menu has choices that are not only pleasing to everyone, but also meet the stroke survivor’s nutritional needs";
+"Nutrition.bullet13" = "Eating certain energy-packed foods may help fight fatigue";
+"Nutrition.bullet13.1" = "Dark chocolate";
+"Nutrition.bullet13.2" = "Pumpkin seeds";
+"Nutrition.bullet13.3" = "Red bell peppers";
+"Nutrition.bullet13.4" = "Tea";
+"Nutrition.bullet13.5" = "Walnuts";
+"Nutrition.bullet13.6" = "Watermelon";
+"Nutrition.bullet13.7" = "Wheat bran cereal";
+"Nutrition.bullet13.8" = "Whole grain";
+"Nutrition.bullet13.9" = "Yogurt";
+
+"Nutrition.bullet14" = "Stroke survivors should practice tasks in the kitchen to work toward independence";
+"Nutrition.bullet14.1" = "Start with simpler tasks like making a cup of tea";
+"Nutrition.bullet15" = "Completing tasks in the kitchen can give stroke survivors a great sense of achievement, particularly when they are able to prepare something for a friend or family member";
+"Nutrition.bullet16" = "Practicing cooking skills can be very challenging";
+"Nutrition.bullet16.1" = "Carrying hot pots and pans can be quite scary if the stroke survivor does not have full control";
+"Nutrition.bullet16.2" = "Preparing a meal can be tiring";
+"Nutrition.bullet16.3" = "Visits and help from an occupational therapist or nurse can help with planning these tasks and reassuring stroke survivors to help them gain confidence";
+
+//Personal Care
+"PersonalCare.bullet1" = "It is important to help keep the stroke survivor’s personal hygiene up to date";
+"PersonalCare.bullet1.1" = "Dental hygiene";
+"PersonalCare.bullet1.2" = "Bathing";
+"PersonalCare.bullet1.3" = "Grooming";
+"PersonalCare.bullet1.4" = "Etc.";
+
+"PersonalCare.bullet2" = "Shower chairs, hand-held showerheads, safety rails, and adaptive dressing/grooming tools are helpful";
+"PersonalCare.paragraph1" = "During recovery, most patients need quite a lot of help if they are going to stay at home";
+"PersonalCare.bullet3" = "Nonmedical companion in-home care” can be the ideal solution";
+"PersonalCare.bullet3.1" = "An “in-home caregiver” assists the stroke survivor with activities of daily living";
+"PersonalCare.bullet3.1.1" = "Bathing";
+"PersonalCare.bullet3.1.2" = "Grooming";
+"PersonalCare.bullet3.1.3" = "Dressing";
+"PersonalCare.bullet3.1.4" = "Using the toilet";
+"PersonalCare.bullet3.1.5" = "and other personal care tasks that they are unable to do by themselveS";
+"PersonalCare.bullet4" = "Because a stroke can cause loss of control over an arm or leg, the stroke survivor’s abilities to care for themselves in simple ways, prepare meals, clean, and go grocery shopping are often affected";
+"PersonalCare.bullet5" = "Even simple tasks such as brushing their teeth, shaving, or getting toilet roll out of a dispenser can become seemingly unmanageable";
+"PersonalCare.bullet6" = "Part of rehabilitation is to help stroke survivors relearn basic skills and learn new techniques to look after themselves";
+"PersonalCare.paragraph2" = "The goal is to help stroke survivors become independent as quickly as possible";
+"PersonalCare.bullet7" = "Tips for gaining independence:";
+"PersonalCare.bullet7.1" = "Try using an electric razor instead of a wet shave";
+"PersonalCare.bullet7.2" = "Put the affected limb into the clothing first";
+"PersonalCare.bullet7.3" = "Choose clothing that is easier to dress into, such as pants with elastic waists, t-shirts, and shoes with Velcro fasteners";
+"PersonalCare.bullet7.4" = "Use hooks to pull up pants";
+"PersonalCare.bullet7.5" = "Break tasks into smaller parts, resting in between";
+"PersonalCare.bullet8" = "Even though personal care will be a struggle and take longer than before, stroke survivors often prefer to do these things by themselves whenever possible";
+"PersonalCare.bullet9" = "Some things may remain out of reach for stroke survivors to do on their own, such as:";
+"PersonalCare.bullet9.1" = "Buttoning up a shirt";
+"PersonalCare.bullet9.2" = "Putting on and fastening bras";
+//////MM/////
 // Self Care
 "SelfCare.bulletOne" = "You may be spending many hours or days at the hospital, depending on the health of your loved one";
 "SelfCare.bulletTwo" = "Remember  to: ";

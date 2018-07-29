@@ -22,6 +22,7 @@
 #define HFTW_MAGENTA [UIColor colorWithRed:0.85 green:0.18 blue:0.31 alpha:1.0] // #D82F50
 
 /* IMAGES */
+
 #define RISK_FACTORS @"RiskFactors"
 #define BEFAST @"BEFAST"
 #define WHITE_BACK_BUTTON @"WhiteBackArrow"
@@ -46,6 +47,32 @@
 #define LIGHTS_OFF_ICON @"LightsOffIcon"
 #define AMBULANCE_ICON @"AmbulanceIcon"
 #define CAREGIVER_ICON @"Note"//MM
+////s
+#define POST_STROKE_ICON @"PostStroke"//MM
+#define Aphasia_ICON @"Aphasia"//MM
+#define Cognition_ICON @"Cognition"//MM
+#define ManagingCognitiveDeficits_ICON @"CognitiveDeficits1"//MM
+#define ManagingCognitiveDeficits2_ICON @"CognitiveDeficits2"//MM
+#define ManagingCognitiveDeficits3_ICON @"CognitiveDeficits3"//MM
+#define Dysphagia_ICON @"Dysphagia"//MM
+#define Confinement_ICON @"Confinement1"//MM
+#define Confinement2_ICON @"Confinement2"//MM
+#define Confinement3_ICON @"Confinement3"//MM
+#define HomeModifications_ICON @"HomeModification1"//MM
+#define HomeModifications2_ICON @"HomeModification2"//MM
+#define Incontinence_ICON @"Incontinence"//MM
+#define Incontinence2_ICON @"Incontinence2"//MM
+#define ManagingIncontinence1_ICON @"ManagingIncontinence"//MM
+#define ManagingIncontinence_ICON @"ManagingIncontinence2"//MM
+#define MuscleParalysis_ICON @"MuscleParalysis"//MM
+#define MedicationAdherence_ICON @"MedicationAdherenceCompliance1"//MM
+#define Nutrition_ICON @"Nutrition"//MM
+#define Nutrition2_ICON @"Nutrition2"//MM
+#define PersonalCare_Icon @"PersonalCare"
+#define PersonalCareBg_Icon @"PersonalCareBg"
+#define NutritionBg_Icon @"NutritionBg"
+#define MuscleParalysisWeaknessBg_Icon @"MuscleParalysisWeaknessBg"
+////
 #define BATHROOM_ICON @"BathroomIcon"
 #define CANT_SPEAK_ICON @"CantSpeakIcon"
 #define BED_ICON @"BedIcon"
