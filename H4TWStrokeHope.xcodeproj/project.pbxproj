@@ -1241,6 +1241,9 @@
 							com.apple.Keychain = {
 								enabled = 1;
 							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 						};
 					};
 					CC4C10C71E7A26DE00515CDC = {

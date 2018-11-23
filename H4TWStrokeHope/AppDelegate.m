@@ -21,6 +21,8 @@
 
 @end
 
+bool isGrantedNotificationAccess;
+
 @implementation AppDelegate
 
 #define APIAI_CLIENT_ACCESS_TOKEN @"15d1973433dd45df966ef1b4fc750daf"
@@ -45,8 +47,12 @@
     UNAuthorizationOptions options = UNAuthorizationOptionAlert + UNAuthorizationOptionSound;
     [center requestAuthorizationWithOptions:options
                           completionHandler:^(BOOL granted, NSError * _Nullable error) {
+                              isGrantedNotificationAccess = granted;
                               if (!granted) {
                                   NSLog(@"Something went wrong");
+                                  NSLog(@"error : %@", error);
+                              }else{
+                                  NSLog(@"Permissions granted !");
                               }
                           }];
     
@@ -79,6 +85,14 @@
     return YES;
 }
 
+- (void) applicationDidEnterBackground:(UIApplication *)application{
+    
+    NSCalendar *calender = [[NSCalendar alloc] initWithCalendarIdentifier: NSCalendarIdentifierGregorian];
+    NSDateComponents *dateComponents = [calender components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute fromDate:[NSDate date]];
+    
+    [self setRemoteNotificationForQuotes: 24*60*60 withRepeat:YES];
+}
+
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -89,7 +103,7 @@
 
 // FB Analytics activated
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    [FBSDKAppEvents activateApp];
+    //[FBSDKAppEvents activateApp];
 }
 
 
@@ -157,7 +171,105 @@
 -(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler{
     //Called to let your app know which action was selected by the user for a given notification.
 //    NSLog(@"Userinfo %@",response.notification.request.content.userInfo);
+    // Determine the user action
+    NSArray *items = @[@"UNNotificationDismissActionIdentifier",@"UNNotificationDefaultActionIdentifier", @"Snooze", @"Delete"];
+    NSInteger item = [items indexOfObject:response.actionIdentifier];
+    switch(item) {
+    case 0:
+            NSLog(@"Dismiss Action");
+    case 1:
+            NSLog(@"Default");
+    case 2:
+            NSLog(@"Snooze");
+    case 3:
+            NSLog(@"Delete");
+    default:
+            NSLog(@"Unknown action");
+    }
 }
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(nonnull NSData *)deviceToken{
+    //NSString *deviceToken = [NSString stringWithFormat:@"%@", deviceToken];
+    NSLog(@"\n Token: %@",deviceToken);
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(nonnull NSError *)error{
+    NSLog(@"\n Error : %@", error);
+}
+
+// Set push notifications for Inspiring quotes
+
+-(void) setRemoteNotificationForQuotes: (NSUInteger)timeInterval withRepeat:(BOOL)repeat{
+
+    if(isGrantedNotificationAccess){
+        if([[UIApplication sharedApplication] scheduledLocalNotifications] == NULL){
+            
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+        content.title = @"Inspiring Quotes";
+        content.subtitle = @"";
+        content.body = @"Take a look at our Inspiring quote of the day !";
+        content.sound = [UNNotificationSound defaultSound];
+    
+        UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:timeInterval repeats:repeat];
+        // Setting up the notification for request
+        UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:@"UNQuotesNotification" content:content trigger:trigger];
+        [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+            if(error){
+                NSLog(@"\n Error : %@", error);
+            }
+        }];
+        UNNotificationAction *deleteAction = [UNNotificationAction actionWithIdentifier:@"Delete"
+                                                                                      title:@"Delete" options:UNNotificationActionOptionDestructive];
+        UNNotificationCategory *category = [UNNotificationCategory categoryWithIdentifier:@"UYLReminderCategory"
+                                                                                      actions:@[deleteAction] intentIdentifiers:@[]
+                                                                                  options:UNNotificationCategoryOptionNone];
+            NSSet *categories = [NSSet setWithObject:category];
+            [center setNotificationCategories:categories];
+            content.categoryIdentifier = @"UYLReminderCategory";
+        }
+        
+        
+        BOOL isNotificationActive = NO;
+        //Check active notifications
+        
+             if ([[UIApplication sharedApplication] respondsToSelector:@selector(currentUserNotificationSettings)]){ // Check it's iOS 8 and above
+             UIUserNotificationSettings *grantedSettings = [[UIApplication sharedApplication] currentUserNotificationSettings];
+             
+             if (grantedSettings.types == UIUserNotificationTypeNone) {
+             NSLog(@"No permiossion granted");
+             }
+             else if (grantedSettings.types & UIUserNotificationTypeSound & UIUserNotificationTypeAlert ){
+             NSLog(@"Sound and alert permissions ");
+             isNotificationActive = YES;
+             }
+             else if (grantedSettings.types  & UIUserNotificationTypeAlert){
+             NSLog(@"Alert Permission Granted");
+             isNotificationActive = YES;
+             }
+         }
+        /*
+        
+        // Schedule the notifications
+        
+        if(!isNotificationActive){
+            
+            NSLog(@"\n Notifications are scheduled");
+            NSTimeInterval interval = 60;
+            
+            UILocalNotification *notification = [[UILocalNotification alloc] init];
+            notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:interval];
+            notification.alertTitle = @"Inspiring Quotes";
+            notification.alertBody = @"Take a look at our Inspiring quote of the day !";
+            notification.timeZone = [NSTimeZone defaultTimeZone];
+            notification.repeatInterval = NSCalendarUnitMinute;
+            notification.soundName = UILocalNotificationDefaultSoundName;
+            [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+        }
+         */
+    }
+}
+
 
 // Facebook App delegates
 - (BOOL)application:(UIApplication *)application

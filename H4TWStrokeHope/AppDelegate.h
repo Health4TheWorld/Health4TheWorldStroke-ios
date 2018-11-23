@@ -17,7 +17,7 @@
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
 - (void)saveContext;
-
+-(void) setRemoteNotificationForQuotes: (NSUInteger)timeInterval withRepeat:(BOOL)repeat;
 
 @end
 
