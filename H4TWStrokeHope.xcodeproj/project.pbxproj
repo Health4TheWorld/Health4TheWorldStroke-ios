@@ -1263,6 +1263,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				fr,
@@ -1270,6 +1271,7 @@
 				"fil-PH",
 				"zh-Hans",
 				sw,
+				"es-MX",
 			);
 			mainGroup = CC4C10A31E7A26DE00515CDC;
 			productRefGroup = CC4C10AD1E7A26DE00515CDC /* Products */;
