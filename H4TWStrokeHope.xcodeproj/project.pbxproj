@@ -444,7 +444,7 @@
 		CC3CB6471EA11EC800CA9429 /* LearnContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearnContentViewController.xib; sourceTree = "<group>"; };
 		CC3CB64B1EA11F9E00CA9429 /* LearnContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnContent.h; sourceTree = "<group>"; };
 		CC3CB64C1EA11F9E00CA9429 /* LearnContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnContent.m; sourceTree = "<group>"; };
-		CC4C10AC1E7A26DE00515CDC /* H4TWStrokeHope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H4TWStrokeHope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4C10AC1E7A26DE00515CDC /* Health4TheWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Health4TheWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4C10B01E7A26DE00515CDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC4C10B21E7A26DE00515CDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CC4C10B31E7A26DE00515CDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -925,7 +925,7 @@
 		CC4C10AD1E7A26DE00515CDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC4C10AC1E7A26DE00515CDC /* H4TWStrokeHope.app */,
+				CC4C10AC1E7A26DE00515CDC /* Health4TheWorld.app */,
 				CC4C10C81E7A26DE00515CDC /* H4TWStrokeHopeTests.xctest */,
 				CC4C10D31E7A26DE00515CDC /* H4TWStrokeHopeUITests.xctest */,
 			);
@@ -1185,7 +1185,7 @@
 			);
 			name = H4TWStrokeHope;
 			productName = H4TWStrokeHope;
-			productReference = CC4C10AC1E7A26DE00515CDC /* H4TWStrokeHope.app */;
+			productReference = CC4C10AC1E7A26DE00515CDC /* Health4TheWorld.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CC4C10C71E7A26DE00515CDC /* H4TWStrokeHopeTests */ = {
@@ -1763,13 +1763,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Health4TheWorld (VQM3AFB3H9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
 				DEVELOPMENT_TEAM = VQM3AFB3H9;
 				GCC_PREFIX_HEADER = H4TWStrokeHope.pch;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Health4TheWorld;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -1784,13 +1785,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Health4TheWorld (VQM3AFB3H9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = H4TWStrokeHope.pch;
 				INFOPLIST_FILE = H4TWStrokeHope/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachelgrau.Health4TheWorldStroke;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Health4TheWorld;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
