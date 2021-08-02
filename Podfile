@@ -9,7 +9,6 @@ target 'H4TWStrokeHope' do
     pod 'AWSCognitoIdentityProvider'
     pod 'AWSDynamoDB'
     pod 'AWSS3'
-    pod 'FBSDKLoginKit'
 
 
 end

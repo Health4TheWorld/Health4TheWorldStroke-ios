@@ -24,7 +24,7 @@
 @end
 
 
-#define SURVEY_PASSWORD @"stroke"
+#define SURVEY_PASSWORD @"stroke_h4tw"
 
 @implementation SurveysViewController
 

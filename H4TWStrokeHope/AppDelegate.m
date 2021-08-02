@@ -15,7 +15,7 @@
 #import "AWSCognitoIdentityProvider.h"
 #import "AWSConstants.h"
 
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
+// #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @interface AppDelegate ()
 
@@ -78,8 +78,8 @@ bool isGrantedNotificationAccess;
     */
      
     /* Facebook Integration*/
-    [[FBSDKApplicationDelegate sharedInstance] application:application
-                             didFinishLaunchingWithOptions:launchOptions];
+    //[[FBSDKApplicationDelegate sharedInstance] application:application
+    //                         didFinishLaunchingWithOptions:launchOptions];
     // Add any custom logic here.
     
     return YES;
@@ -270,7 +270,7 @@ bool isGrantedNotificationAccess;
     }
 }
 
-
+/*
 // Facebook App delegates
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
@@ -284,6 +284,7 @@ bool isGrantedNotificationAccess;
     // Add any custom logic here.
     return handled;
 }
-
+*/
 
 @end
+

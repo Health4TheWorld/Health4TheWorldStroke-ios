@@ -33,7 +33,7 @@
 @property NSMutableArray *circles; /* Circles to navigate between quotes */
 @property (weak, nonatomic) IBOutlet UIButton *languageButton;
 @property int currentQuoteIndex;
-@property (strong, nonatomic) FBSDKLoginButton *loginButton;
+// @property (strong, nonatomic) FBSDKLoginButton *loginButton;
 @end
 
 /* Dimensions of image so we can scale it proportionally. */
@@ -56,10 +56,10 @@
     [super viewDidLoad];
     
     // Check if user has already given permissions to this app.
-    if ([FBSDKAccessToken currentAccessToken]) {
+    /* if ([FBSDKAccessToken currentAccessToken]) {
         // User is logged in, go to next view controller.
         [self pushToHomeViewController ];
-    }
+    } */
     
     data = [LanguageManager languageStrings];
     //static NSString * const LanguageCodes[] = { @"en", @"es_MX", @"fr", @"fil",@"zh_Hans_CN",@"ne_NP",@"sw" };
@@ -138,20 +138,20 @@
         UIFont *keyFont = [UIFont fontWithName:@"Lato-light" size:14];
         NSDictionary *attributes = [NSDictionary dictionaryWithObject:keyFont forKey:NSFontAttributeName];
         NSAttributedString *loginButtonTitle;
-        if ([FBSDKAccessToken currentAccessToken] != nil) {
+        /* if ([FBSDKAccessToken currentAccessToken] != nil) {
             // User is logged in, do work such as go to next view controller.
             loginButtonTitle = [[NSAttributedString alloc] initWithString:NSLocalizedString(@"Home.LogoutButtontitle", nil) attributes:attributes];
         }else{
             loginButtonTitle = [[NSAttributedString alloc] initWithString:NSLocalizedString(@"Enter.loginButton", nil) attributes:attributes];
-        }
+        } */
         
-        [self.loginButton setAttributedTitle: loginButtonTitle forState:UIControlStateNormal];
+        // [self.loginButton setAttributedTitle: loginButtonTitle forState:UIControlStateNormal];
     }
     
 }
 
 // FBSDK Login Button delegate
-- (void)loginButton:(FBSDKLoginButton *)loginButton
+/* - (void)loginButton:(FBSDKLoginButton *)loginButton
 didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
               error:(NSError *)error {
     if (error) {
@@ -164,18 +164,15 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
 
         [self pushToHomeViewController ];
     }
-};
+}; */
 
 /**
  Sent to the delegate when the button was used to logout.
  - Parameter loginButton: The button that was clicked.
  */
-- (void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton{
-    //[loginButton setTitle: NSLocalizedString(@"Home.LogoutButtontitle", nil) forState:UIControlStateNormal];
-}
 
 - (void) loginButtonClicked {
-    FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
+    /* FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
     [login
      logInWithReadPermissions: @[@"public_profile",@"email"]
      fromViewController:self
@@ -189,7 +186,7 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
              NSLog(@"Logged in");
              [self pushToHomeViewController ];
          }
-     }];
+     }]; */
 }
 
 - (void) pushToHomeViewController{

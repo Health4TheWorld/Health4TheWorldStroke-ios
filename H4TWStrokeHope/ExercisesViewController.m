@@ -105,9 +105,9 @@
         [functionalMobilityButton addImageBottomRight:[UIImage imageNamed:FUNCTIONAL_MOBILITY_ICON]];
         [functionalMobilityButton addTarget:self action:@selector(functionalMobilityPressed) forControlEvents:UIControlEventTouchUpInside];
         
-        HomeButton *mindExercisesButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.mindExercises", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), self.currentY, cellWidth, cellWidth)];
-        [mindExercisesButton addImageBottomRight:[UIImage imageNamed:MIND_ICON]];
-        [mindExercisesButton addTarget:self action:@selector(mindExercisesPressed) forControlEvents:UIControlEventTouchUpInside];
+        // HomeButton *mindExercisesButton = [[HomeButton alloc] initWithText:NSLocalizedString(@"Exercises.mindExercises", nil) withFrame:CGRectMake((self.view.frame.size.width / 2) + (SPACE_BETWEEN_CELLS / 2), self.currentY, cellWidth, cellWidth)];
+        // [mindExercisesButton addImageBottomRight:[UIImage imageNamed:MIND_ICON]];
+        // [mindExercisesButton addTarget:self action:@selector(mindExercisesPressed) forControlEvents:UIControlEventTouchUpInside];
         
         self.currentY += cellWidth;
         self.currentY += SPACE_BETWEEN_CELLS;
@@ -119,7 +119,7 @@
         [self.contentView addSubview: strengtheningButton];
         [self.contentView addSubview: stretchingButton];
         [self.contentView addSubview: functionalMobilityButton];
-        [self.contentView addSubview: mindExercisesButton];
+        // [self.contentView addSubview: mindExercisesButton];
         
         /* Text view */
         [self addHeaderWithText:EXERCISES_GENERAL_INSTRUCTIONS_TITLE];
@@ -239,10 +239,12 @@
 }
 
 - (void)mindExercisesPressed {
-    MindExercisesViewController *vc = [[MindExercisesViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    
+    // MindExercisesViewController *vc = [[MindExercisesViewController alloc] init];
+    // [self.navigationController pushViewController:vc animated:YES];
     /* insert app usage info into table*/
     [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"MindExercises", @"Sub-Section"]];
+    
 }
 /*
  #pragma mark - Navigation

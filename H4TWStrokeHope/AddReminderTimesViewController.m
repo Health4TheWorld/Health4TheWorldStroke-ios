@@ -63,6 +63,11 @@
 - (void)setUpPicker {
     self.timePicker = [[UIDatePicker alloc]init];
     self.timePicker.datePickerMode=UIDatePickerModeTime;
+    if (@available(iOS 13.4, *)) {
+            self.timePicker.preferredDatePickerStyle = UIDatePickerStyleWheels;
+    }  else {
+        // Fallback on earlier versions
+    }
     [self.timeTextField setInputView:self.timePicker];
     
     UIToolbar *toolBar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];

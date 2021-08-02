@@ -305,52 +305,52 @@
 
 // Smiley icon1 pressed
 - (void) icon1Pressed {
-    UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout alloc];
-    ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
-    vc.welcomeText = @"good";
-    [self.navigationController pushViewController:vc animated:YES];
-    /* insert app usage info into table*/
-    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 1", @"Icon"]];
+//    UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout alloc];
+//    ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
+//    vc.welcomeText = @"good";
+//    [self.navigationController pushViewController:vc animated:YES];
+//    /* insert app usage info into table*/
+//    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 1", @"Icon"]];
 }
 
 // Smiley icon2 pressed
 - (void) icon2Pressed {
-    UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout alloc];
-    ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
-    vc.welcomeText = @"good";
-    [self.navigationController pushViewController:vc animated:YES];
-    /* insert app usage info into table*/
-    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 2", @"Icon"]];
+//    UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout alloc];
+//    ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
+//    vc.welcomeText = @"good";
+//    [self.navigationController pushViewController:vc animated:YES];
+//    /* insert app usage info into table*/
+//    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 2", @"Icon"]];
 }
 
 // Smiley icon3 pressed
 - (void) icon3Pressed {
-    UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout alloc];
-    ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
-    vc.welcomeText = @"sad";
-    [self.navigationController pushViewController:vc animated:YES];
-    /* insert app usage info into table*/
-    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 3", @"Icon"]];
+//    UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout alloc];
+//    ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
+//    vc.welcomeText = @"sad";
+//    [self.navigationController pushViewController:vc animated:YES];
+//    /* insert app usage info into table*/
+//    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 3", @"Icon"]];
 }
 
 // Smiley icon4 pressed
 - (void) icon4Pressed {
-    UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout alloc];
-    ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
-    vc.welcomeText = @"very sad";
-    [self.navigationController pushViewController:vc animated:YES];
-    /* insert app usage info into table*/
-    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 4", @"Icon"]];
+//    UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout alloc];
+//    ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
+//    vc.welcomeText = @"very sad";
+//    [self.navigationController pushViewController:vc animated:YES];
+//    /* insert app usage info into table*/
+//    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 4", @"Icon"]];
 }
 
 // Smiley icon5 pressed
 - (void) icon5Pressed {
-    UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout alloc];
-    ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
-    vc.welcomeText = @"painful";
-    [self.navigationController pushViewController:vc animated:YES];
-    /* insert app usage info into table*/
-    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 5", @"Icon"]];
+//    UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout alloc];
+//    ChatBotViewController *vc = [[ChatBotViewController alloc] initWithCollectionViewLayout:flowLayout];
+//    vc.welcomeText = @"painful";
+//    [self.navigationController pushViewController:vc animated:YES];
+//    /* insert app usage info into table*/
+//    [AWSDynamoDBHelper detailedAppUsage: @[@"Tap",@"Smiley 5", @"Icon"]];
 }
 
 // Custom icon creator for Container View
